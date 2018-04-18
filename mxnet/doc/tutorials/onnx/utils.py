@@ -16,12 +16,12 @@ def  _plot_image(ax, img):
     ax.imshow(img)
     ax.tick_params(axis='both',       
                    which='both',      
-                   bottom='off',      
-                   top='off',         
-                   left='off',
-                   right='off',
-                   labelleft='off',
-                   labelbottom='off') 
+                   bottom=False,      
+                   top=False,         
+                   left=False,
+                   right=False,
+                   labelleft=False,
+                   labelbottom=False) 
     return ax
 
 
@@ -31,11 +31,11 @@ def _plot_prediction_bar(ax, result):
     ax.barh(range(len(perf)), perf, align='center', color='#33ccff')
     ax.tick_params(axis='both',       
                    which='both',      
-                   bottom='off',      
-                   top='off',         
-                   left='off',
-                   right='off',
-                   labelbottom='off') 
+                   bottom=False,      
+                   top=False,         
+                   left=False,
+                   right=False,
+                   labelbottom=False) 
     tick_labels = [category[1].split(',')[0] for category in result]
     ax.yaxis.set_ticks(range(len(perf)))
     ax.yaxis.set_ticklabels(tick_labels, position=(0.5,0), minor=False, horizontalalignment='center')
