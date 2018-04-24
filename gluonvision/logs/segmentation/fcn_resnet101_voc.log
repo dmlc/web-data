@@ -1,0 +1,913 @@
+Downloading /home/ubuntu/.mxnet/models/resnet101_v0-d1712c76.zip from https://apache-mxnet.s3-accelerate.dualstack.amazonaws.com/gluon/models/resnet101_v0-d1712c76.zip...
+FCN(
+  (conv1): Conv2D(3 -> 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias=False)
+  (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=64)
+  (relu): Activation(relu)
+  (maxpool): MaxPool2D(size=(3, 3), stride=(2, 2), padding=(1, 1), ceil_mode=False)
+  (layer1): HybridSequential(
+    (0): DilatedBottleneckV0(
+      (conv1): Conv2D(64 -> 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=64)
+      (conv2): Conv2D(64 -> 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=64)
+      (conv3): Conv2D(64 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (relu): Activation(relu)
+      (downsample): HybridSequential(
+        (0): Conv2D(64 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      )
+    )
+    (1): DilatedBottleneckV0(
+      (conv1): Conv2D(256 -> 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=64)
+      (conv2): Conv2D(64 -> 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=64)
+      (conv3): Conv2D(64 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (relu): Activation(relu)
+    )
+    (2): DilatedBottleneckV0(
+      (conv1): Conv2D(256 -> 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=64)
+      (conv2): Conv2D(64 -> 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=64)
+      (conv3): Conv2D(64 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (relu): Activation(relu)
+    )
+  )
+  (layer2): HybridSequential(
+    (0): DilatedBottleneckV0(
+      (conv1): Conv2D(256 -> 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=128)
+      (conv2): Conv2D(128 -> 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=128)
+      (conv3): Conv2D(128 -> 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=512)
+      (relu): Activation(relu)
+      (downsample): HybridSequential(
+        (0): Conv2D(256 -> 512, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=512)
+      )
+    )
+    (1): DilatedBottleneckV0(
+      (conv1): Conv2D(512 -> 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=128)
+      (conv2): Conv2D(128 -> 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=128)
+      (conv3): Conv2D(128 -> 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=512)
+      (relu): Activation(relu)
+    )
+    (2): DilatedBottleneckV0(
+      (conv1): Conv2D(512 -> 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=128)
+      (conv2): Conv2D(128 -> 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=128)
+      (conv3): Conv2D(128 -> 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=512)
+      (relu): Activation(relu)
+    )
+    (3): DilatedBottleneckV0(
+      (conv1): Conv2D(512 -> 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=128)
+      (conv2): Conv2D(128 -> 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=128)
+      (conv3): Conv2D(128 -> 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=512)
+      (relu): Activation(relu)
+    )
+  )
+  (layer3): HybridSequential(
+    (0): DilatedBottleneckV0(
+      (conv1): Conv2D(512 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      (relu): Activation(relu)
+      (downsample): HybridSequential(
+        (0): Conv2D(512 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      )
+    )
+    (1): DilatedBottleneckV0(
+      (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      (relu): Activation(relu)
+    )
+    (2): DilatedBottleneckV0(
+      (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      (relu): Activation(relu)
+    )
+    (3): DilatedBottleneckV0(
+      (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      (relu): Activation(relu)
+    )
+    (4): DilatedBottleneckV0(
+      (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      (relu): Activation(relu)
+    )
+    (5): DilatedBottleneckV0(
+      (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      (relu): Activation(relu)
+    )
+    (6): DilatedBottleneckV0(
+      (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      (relu): Activation(relu)
+    )
+    (7): DilatedBottleneckV0(
+      (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      (relu): Activation(relu)
+    )
+    (8): DilatedBottleneckV0(
+      (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      (relu): Activation(relu)
+    )
+    (9): DilatedBottleneckV0(
+      (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      (relu): Activation(relu)
+    )
+    (10): DilatedBottleneckV0(
+      (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      (relu): Activation(relu)
+    )
+    (11): DilatedBottleneckV0(
+      (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      (relu): Activation(relu)
+    )
+    (12): DilatedBottleneckV0(
+      (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      (relu): Activation(relu)
+    )
+    (13): DilatedBottleneckV0(
+      (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      (relu): Activation(relu)
+    )
+    (14): DilatedBottleneckV0(
+      (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      (relu): Activation(relu)
+    )
+    (15): DilatedBottleneckV0(
+      (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      (relu): Activation(relu)
+    )
+    (16): DilatedBottleneckV0(
+      (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      (relu): Activation(relu)
+    )
+    (17): DilatedBottleneckV0(
+      (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      (relu): Activation(relu)
+    )
+    (18): DilatedBottleneckV0(
+      (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      (relu): Activation(relu)
+    )
+    (19): DilatedBottleneckV0(
+      (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      (relu): Activation(relu)
+    )
+    (20): DilatedBottleneckV0(
+      (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      (relu): Activation(relu)
+    )
+    (21): DilatedBottleneckV0(
+      (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      (relu): Activation(relu)
+    )
+    (22): DilatedBottleneckV0(
+      (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      (relu): Activation(relu)
+    )
+  )
+  (layer4): HybridSequential(
+    (0): DilatedBottleneckV0(
+      (conv1): Conv2D(1024 -> 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=512)
+      (conv2): Conv2D(512 -> 512, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=512)
+      (conv3): Conv2D(512 -> 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=2048)
+      (relu): Activation(relu)
+      (downsample): HybridSequential(
+        (0): Conv2D(1024 -> 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=2048)
+      )
+    )
+    (1): DilatedBottleneckV0(
+      (conv1): Conv2D(2048 -> 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=512)
+      (conv2): Conv2D(512 -> 512, kernel_size=(3, 3), stride=(1, 1), padding=(4, 4), dilation=(4, 4), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=512)
+      (conv3): Conv2D(512 -> 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=2048)
+      (relu): Activation(relu)
+    )
+    (2): DilatedBottleneckV0(
+      (conv1): Conv2D(2048 -> 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=512)
+      (conv2): Conv2D(512 -> 512, kernel_size=(3, 3), stride=(1, 1), padding=(4, 4), dilation=(4, 4), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=512)
+      (conv3): Conv2D(512 -> 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=2048)
+      (relu): Activation(relu)
+    )
+  )
+  (head): _FCNHead(
+    (block): HybridSequential(
+      (0): Conv2D(2048 -> 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=512)
+      (2): Activation(relu)
+      (3): Dropout(p = 0.1, axes=())
+      (4): Conv2D(512 -> 21, kernel_size=(1, 1), stride=(1, 1))
+    )
+  )
+  (auxlayer): _FCNHead(
+    (block): HybridSequential(
+      (0): Conv2D(1024 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (2): Activation(relu)
+      (3): Dropout(p = 0.1, axes=())
+      (4): Conv2D(256 -> 21, kernel_size=(1, 1), stride=(1, 1))
+    )
+  )
+)
+  0%|          | 0/709 [00:00<?, ?it/s]
+Starting Epoch: 0
+Total Epoches: 50
+[02:25:11] src/operator/nn/./cudnn/./cudnn_algoreg-inl.h:107: Running performance tests to find the best convolution algorithm, this can take a while... (setting env variable MXNET_CUDNN_AUTOTUNE_DEFAULT to 0 to disable)
+Epoch 0, training loss 0.301: 100%|██████████| 709/709 [08:34<00:00,  1.38it/s]
+Epoch 0, validation pixAcc: 0.859, mIoU: 0.547:  99%|█████████▉| 178/179 [02:29<00:00,  1.19it/s][02:36:13] src/operator/nn/./cudnn/./cudnn_algoreg-inl.h:107: Running performance tests to find the best convolution algorithm, this can take a while... (setting env variable MXNET_CUDNN_AUTOTUNE_DEFAULT to 0 to disable)
+Epoch 0, validation pixAcc: 0.859, mIoU: 0.547: 100%|██████████| 179/179 [02:32<00:00,  1.17it/s]
+Epoch 1, training loss 0.229: 100%|██████████| 710/710 [08:26<00:00,  1.40it/s]
+Epoch 1, validation pixAcc: 0.871, mIoU: 0.573: 100%|██████████| 179/179 [02:29<00:00,  1.19it/s]
+Epoch 2, training loss 0.205: 100%|██████████| 710/710 [08:27<00:00,  1.40it/s]
+Epoch 2, validation pixAcc: 0.878, mIoU: 0.587: 100%|██████████| 179/179 [02:29<00:00,  1.19it/s]
+Epoch 3, training loss 0.199: 100%|██████████| 709/709 [08:24<00:00,  1.40it/s]
+Epoch 3, validation pixAcc: 0.884, mIoU: 0.606: 100%|██████████| 179/179 [02:30<00:00,  1.19it/s]
+Epoch 4, training loss 0.183: 100%|██████████| 710/710 [08:26<00:00,  1.40it/s]
+Epoch 4, validation pixAcc: 0.886, mIoU: 0.621: 100%|██████████| 179/179 [02:30<00:00,  1.19it/s]
+Epoch 5, training loss 0.180: 100%|██████████| 710/710 [08:27<00:00,  1.40it/s]
+Epoch 5, validation pixAcc: 0.892, mIoU: 0.637: 100%|██████████| 179/179 [02:30<00:00,  1.19it/s]
+Epoch 6, training loss 0.171: 100%|██████████| 709/709 [08:26<00:00,  1.40it/s]
+Epoch 6, validation pixAcc: 0.892, mIoU: 0.641: 100%|██████████| 179/179 [02:30<00:00,  1.19it/s]
+Epoch 7, training loss 0.165: 100%|██████████| 710/710 [08:25<00:00,  1.40it/s]
+Epoch 7, validation pixAcc: 0.894, mIoU: 0.647: 100%|██████████| 179/179 [02:30<00:00,  1.19it/s]
+Epoch 8, training loss 0.160: 100%|██████████| 710/710 [08:26<00:00,  1.40it/s]
+Epoch 8, validation pixAcc: 0.893, mIoU: 0.642: 100%|██████████| 179/179 [02:29<00:00,  1.19it/s]
+Epoch 9, training loss 0.160: 100%|██████████| 709/709 [08:25<00:00,  1.40it/s]
+Epoch 9, validation pixAcc: 0.899, mIoU: 0.660: 100%|██████████| 179/179 [02:30<00:00,  1.19it/s]
+Epoch 10, training loss 0.158: 100%|██████████| 710/710 [08:26<00:00,  1.40it/s]
+Epoch 10, validation pixAcc: 0.895, mIoU: 0.656: 100%|██████████| 179/179 [02:29<00:00,  1.19it/s]
+Epoch 11, training loss 0.147: 100%|██████████| 710/710 [08:25<00:00,  1.41it/s]
+Epoch 11, validation pixAcc: 0.899, mIoU: 0.668: 100%|██████████| 179/179 [02:29<00:00,  1.19it/s]
+Epoch 12, training loss 0.144: 100%|██████████| 709/709 [08:26<00:00,  1.40it/s]
+Epoch 12, validation pixAcc: 0.900, mIoU: 0.679: 100%|██████████| 179/179 [02:29<00:00,  1.20it/s]
+Epoch 13, training loss 0.144: 100%|██████████| 710/710 [08:25<00:00,  1.40it/s]
+Epoch 13, validation pixAcc: 0.891, mIoU: 0.655: 100%|██████████| 179/179 [02:29<00:00,  1.19it/s]
+Epoch 14, training loss 0.142: 100%|██████████| 710/710 [08:26<00:00,  1.40it/s]
+Epoch 14, validation pixAcc: 0.899, mIoU: 0.673: 100%|██████████| 179/179 [02:30<00:00,  1.19it/s]
+Epoch 15, training loss 0.139: 100%|██████████| 710/710 [08:27<00:00,  1.40it/s]
+Epoch 15, validation pixAcc: 0.907, mIoU: 0.690: 100%|██████████| 179/179 [02:30<00:00,  1.19it/s]
+Epoch 16, training loss 0.135: 100%|██████████| 709/709 [08:27<00:00,  1.40it/s]
+Epoch 16, validation pixAcc: 0.906, mIoU: 0.687: 100%|██████████| 179/179 [02:29<00:00,  1.19it/s]
+Epoch 17, training loss 0.131: 100%|██████████| 710/710 [08:25<00:00,  1.41it/s]
+Epoch 17, validation pixAcc: 0.905, mIoU: 0.692: 100%|██████████| 179/179 [02:30<00:00,  1.19it/s]
+Epoch 18, training loss 0.132: 100%|██████████| 710/710 [08:25<00:00,  1.40it/s]
+Epoch 18, validation pixAcc: 0.904, mIoU: 0.689: 100%|██████████| 179/179 [02:30<00:00,  1.19it/s]
+Epoch 19, training loss 0.131: 100%|██████████| 709/709 [08:24<00:00,  1.41it/s]
+Epoch 19, validation pixAcc: 0.904, mIoU: 0.684: 100%|██████████| 179/179 [02:29<00:00,  1.20it/s]
+Epoch 20, training loss 0.120: 100%|██████████| 710/710 [08:25<00:00,  1.41it/s]
+Epoch 20, validation pixAcc: 0.910, mIoU: 0.697: 100%|██████████| 179/179 [02:30<00:00,  1.19it/s]
+Epoch 21, training loss 0.125: 100%|██████████| 710/710 [08:26<00:00,  1.40it/s]
+Epoch 21, validation pixAcc: 0.905, mIoU: 0.683: 100%|██████████| 179/179 [02:30<00:00,  1.19it/s]
+Epoch 22, training loss 0.117: 100%|██████████| 709/709 [08:25<00:00,  1.40it/s]
+Epoch 22, validation pixAcc: 0.908, mIoU: 0.699: 100%|██████████| 179/179 [02:29<00:00,  1.19it/s]
+Epoch 23, training loss 0.125: 100%|██████████| 710/710 [08:26<00:00,  1.40it/s]
+Epoch 23, validation pixAcc: 0.902, mIoU: 0.677: 100%|██████████| 179/179 [02:29<00:00,  1.19it/s]
+Epoch 24, training loss 0.117: 100%|██████████| 710/710 [08:27<00:00,  1.40it/s]
+Epoch 24, validation pixAcc: 0.911, mIoU: 0.700: 100%|██████████| 179/179 [02:29<00:00,  1.19it/s]
+Epoch 25, training loss 0.120: 100%|██████████| 709/709 [08:25<00:00,  1.40it/s]
+Epoch 25, validation pixAcc: 0.911, mIoU: 0.701: 100%|██████████| 179/179 [02:29<00:00,  1.20it/s]
+Epoch 26, training loss 0.115: 100%|██████████| 710/710 [08:25<00:00,  1.40it/s]
+Epoch 26, validation pixAcc: 0.913, mIoU: 0.708: 100%|██████████| 179/179 [02:29<00:00,  1.20it/s]
+Epoch 27, training loss 0.108: 100%|██████████| 710/710 [08:25<00:00,  1.41it/s]
+Epoch 27, validation pixAcc: 0.909, mIoU: 0.695: 100%|██████████| 179/179 [02:29<00:00,  1.20it/s]
+Epoch 28, training loss 0.115: 100%|██████████| 709/709 [08:26<00:00,  1.40it/s]
+Epoch 28, validation pixAcc: 0.903, mIoU: 0.678: 100%|██████████| 179/179 [02:29<00:00,  1.20it/s]
+Epoch 29, training loss 0.113: 100%|██████████| 710/710 [08:25<00:00,  1.40it/s]
+Epoch 29, validation pixAcc: 0.912, mIoU: 0.706: 100%|██████████| 179/179 [02:29<00:00,  1.20it/s]
+Epoch 30, training loss 0.108: 100%|██████████| 710/710 [08:26<00:00,  1.40it/s]
+Epoch 30, validation pixAcc: 0.900, mIoU: 0.690: 100%|██████████| 179/179 [02:29<00:00,  1.20it/s]
+Epoch 31, training loss 0.110: 100%|██████████| 710/710 [08:25<00:00,  1.40it/s]
+Epoch 31, validation pixAcc: 0.917, mIoU: 0.723: 100%|██████████| 179/179 [02:29<00:00,  1.20it/s]
+Epoch 32, training loss 0.106: 100%|██████████| 709/709 [08:25<00:00,  1.40it/s]
+Epoch 32, validation pixAcc: 0.913, mIoU: 0.713: 100%|██████████| 179/179 [02:29<00:00,  1.20it/s]
+Epoch 33, training loss 0.104: 100%|██████████| 710/710 [08:26<00:00,  1.40it/s]
+Epoch 33, validation pixAcc: 0.914, mIoU: 0.714: 100%|██████████| 179/179 [02:29<00:00,  1.20it/s]
+Epoch 34, training loss 0.104: 100%|██████████| 710/710 [08:25<00:00,  1.41it/s]
+Epoch 34, validation pixAcc: 0.902, mIoU: 0.682: 100%|██████████| 179/179 [02:30<00:00,  1.19it/s]
+Epoch 35, training loss 0.104: 100%|██████████| 709/709 [08:24<00:00,  1.40it/s]
+Epoch 35, validation pixAcc: 0.909, mIoU: 0.692: 100%|██████████| 179/179 [02:29<00:00,  1.20it/s]
+Epoch 36, training loss 0.106: 100%|██████████| 710/710 [08:25<00:00,  1.40it/s]
+Epoch 36, validation pixAcc: 0.912, mIoU: 0.702: 100%|██████████| 179/179 [02:29<00:00,  1.20it/s]
+Epoch 37, training loss 0.099: 100%|██████████| 710/710 [08:27<00:00,  1.40it/s]
+Epoch 37, validation pixAcc: 0.915, mIoU: 0.714: 100%|██████████| 179/179 [02:29<00:00,  1.19it/s]
+Epoch 38, training loss 0.105: 100%|██████████| 709/709 [08:24<00:00,  1.40it/s]
+Epoch 38, validation pixAcc: 0.913, mIoU: 0.705: 100%|██████████| 179/179 [02:30<00:00,  1.19it/s]
+Epoch 39, training loss 0.100: 100%|██████████| 710/710 [08:26<00:00,  1.40it/s]
+Epoch 39, validation pixAcc: 0.912, mIoU: 0.701: 100%|██████████| 179/179 [02:29<00:00,  1.20it/s]
+Epoch 40, training loss 0.100: 100%|██████████| 710/710 [08:25<00:00,  1.40it/s]
+Epoch 40, validation pixAcc: 0.915, mIoU: 0.712: 100%|██████████| 179/179 [02:29<00:00,  1.20it/s]
+Epoch 41, training loss 0.097: 100%|██████████| 709/709 [08:24<00:00,  1.41it/s]
+Epoch 41, validation pixAcc: 0.912, mIoU: 0.707: 100%|██████████| 179/179 [02:30<00:00,  1.19it/s]
+Epoch 42, training loss 0.097: 100%|██████████| 710/710 [08:25<00:00,  1.40it/s]
+Epoch 42, validation pixAcc: 0.915, mIoU: 0.711: 100%|██████████| 179/179 [02:30<00:00,  1.19it/s]
+Epoch 43, training loss 0.097: 100%|██████████| 710/710 [08:26<00:00,  1.40it/s]
+Epoch 43, validation pixAcc: 0.912, mIoU: 0.703: 100%|██████████| 179/179 [02:29<00:00,  1.20it/s]
+Epoch 44, training loss 0.096: 100%|██████████| 709/709 [08:24<00:00,  1.41it/s]
+Epoch 44, validation pixAcc: 0.913, mIoU: 0.711: 100%|██████████| 179/179 [02:29<00:00,  1.20it/s]
+Epoch 45, training loss 0.097: 100%|██████████| 710/710 [08:25<00:00,  1.40it/s]
+Epoch 45, validation pixAcc: 0.916, mIoU: 0.712: 100%|██████████| 179/179 [02:29<00:00,  1.20it/s]
+Epoch 46, training loss 0.096: 100%|██████████| 710/710 [08:27<00:00,  1.40it/s]
+Epoch 46, validation pixAcc: 0.911, mIoU: 0.703: 100%|██████████| 179/179 [02:29<00:00,  1.20it/s]
+Epoch 47, training loss 0.092: 100%|██████████| 710/710 [08:26<00:00,  1.40it/s]
+Epoch 47, validation pixAcc: 0.912, mIoU: 0.696: 100%|██████████| 179/179 [02:29<00:00,  1.19it/s]
+Epoch 48, training loss 0.095: 100%|██████████| 709/709 [08:24<00:00,  1.41it/s]
+Epoch 48, validation pixAcc: 0.914, mIoU: 0.700: 100%|██████████| 179/179 [02:29<00:00,  1.20it/s]
+Epoch 49, training loss 0.092: 100%|██████████| 710/710 [08:26<00:00,  1.40it/s]
+Epoch 49, validation pixAcc: 0.915, mIoU: 0.714: 100%|██████████| 179/179 [02:29<00:00,  1.20it/s]
+  0%|          | 0/179 [00:00<?, ?it/s]Evaluating model:  None
+Epoch 0, validation pixAcc: 0.915, mIoU: 0.714: 100%|██████████| 179/179 [02:29<00:00,  1.20it/s]
+Number of GPUs: 4
+FCN(
+  (conv1): Conv2D(3 -> 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias=False)
+  (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=64)
+  (relu): Activation(relu)
+  (maxpool): MaxPool2D(size=(3, 3), stride=(2, 2), padding=(1, 1), ceil_mode=False)
+  (layer1): HybridSequential(
+    (0): DilatedBottleneckV0(
+      (conv1): Conv2D(64 -> 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=64)
+      (conv2): Conv2D(64 -> 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=64)
+      (conv3): Conv2D(64 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (relu): Activation(relu)
+      (downsample): HybridSequential(
+        (0): Conv2D(64 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      )
+    )
+    (1): DilatedBottleneckV0(
+      (conv1): Conv2D(256 -> 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=64)
+      (conv2): Conv2D(64 -> 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=64)
+      (conv3): Conv2D(64 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (relu): Activation(relu)
+    )
+    (2): DilatedBottleneckV0(
+      (conv1): Conv2D(256 -> 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=64)
+      (conv2): Conv2D(64 -> 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=64)
+      (conv3): Conv2D(64 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (relu): Activation(relu)
+    )
+  )
+  (layer2): HybridSequential(
+    (0): DilatedBottleneckV0(
+      (conv1): Conv2D(256 -> 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=128)
+      (conv2): Conv2D(128 -> 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=128)
+      (conv3): Conv2D(128 -> 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=512)
+      (relu): Activation(relu)
+      (downsample): HybridSequential(
+        (0): Conv2D(256 -> 512, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=512)
+      )
+    )
+    (1): DilatedBottleneckV0(
+      (conv1): Conv2D(512 -> 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=128)
+      (conv2): Conv2D(128 -> 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=128)
+      (conv3): Conv2D(128 -> 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=512)
+      (relu): Activation(relu)
+    )
+    (2): DilatedBottleneckV0(
+      (conv1): Conv2D(512 -> 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=128)
+      (conv2): Conv2D(128 -> 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=128)
+      (conv3): Conv2D(128 -> 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=512)
+      (relu): Activation(relu)
+    )
+    (3): DilatedBottleneckV0(
+      (conv1): Conv2D(512 -> 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=128)
+      (conv2): Conv2D(128 -> 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=128)
+      (conv3): Conv2D(128 -> 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=512)
+      (relu): Activation(relu)
+    )
+  )
+  (layer3): HybridSequential(
+    (0): DilatedBottleneckV0(
+      (conv1): Conv2D(512 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      (relu): Activation(relu)
+      (downsample): HybridSequential(
+        (0): Conv2D(512 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      )
+    )
+    (1): DilatedBottleneckV0(
+      (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      (relu): Activation(relu)
+    )
+    (2): DilatedBottleneckV0(
+      (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      (relu): Activation(relu)
+    )
+    (3): DilatedBottleneckV0(
+      (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      (relu): Activation(relu)
+    )
+    (4): DilatedBottleneckV0(
+      (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      (relu): Activation(relu)
+    )
+    (5): DilatedBottleneckV0(
+      (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      (relu): Activation(relu)
+    )
+    (6): DilatedBottleneckV0(
+      (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      (relu): Activation(relu)
+    )
+    (7): DilatedBottleneckV0(
+      (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      (relu): Activation(relu)
+    )
+    (8): DilatedBottleneckV0(
+      (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      (relu): Activation(relu)
+    )
+    (9): DilatedBottleneckV0(
+      (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      (relu): Activation(relu)
+    )
+    (10): DilatedBottleneckV0(
+      (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      (relu): Activation(relu)
+    )
+    (11): DilatedBottleneckV0(
+      (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      (relu): Activation(relu)
+    )
+    (12): DilatedBottleneckV0(
+      (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      (relu): Activation(relu)
+    )
+    (13): DilatedBottleneckV0(
+      (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      (relu): Activation(relu)
+    )
+    (14): DilatedBottleneckV0(
+      (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      (relu): Activation(relu)
+    )
+    (15): DilatedBottleneckV0(
+      (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      (relu): Activation(relu)
+    )
+    (16): DilatedBottleneckV0(
+      (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      (relu): Activation(relu)
+    )
+    (17): DilatedBottleneckV0(
+      (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      (relu): Activation(relu)
+    )
+    (18): DilatedBottleneckV0(
+      (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      (relu): Activation(relu)
+    )
+    (19): DilatedBottleneckV0(
+      (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      (relu): Activation(relu)
+    )
+    (20): DilatedBottleneckV0(
+      (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      (relu): Activation(relu)
+    )
+    (21): DilatedBottleneckV0(
+      (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      (relu): Activation(relu)
+    )
+    (22): DilatedBottleneckV0(
+      (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      (relu): Activation(relu)
+    )
+  )
+  (layer4): HybridSequential(
+    (0): DilatedBottleneckV0(
+      (conv1): Conv2D(1024 -> 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=512)
+      (conv2): Conv2D(512 -> 512, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=512)
+      (conv3): Conv2D(512 -> 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=2048)
+      (relu): Activation(relu)
+      (downsample): HybridSequential(
+        (0): Conv2D(1024 -> 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=2048)
+      )
+    )
+    (1): DilatedBottleneckV0(
+      (conv1): Conv2D(2048 -> 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=512)
+      (conv2): Conv2D(512 -> 512, kernel_size=(3, 3), stride=(1, 1), padding=(4, 4), dilation=(4, 4), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=512)
+      (conv3): Conv2D(512 -> 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=2048)
+      (relu): Activation(relu)
+    )
+    (2): DilatedBottleneckV0(
+      (conv1): Conv2D(2048 -> 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=512)
+      (conv2): Conv2D(512 -> 512, kernel_size=(3, 3), stride=(1, 1), padding=(4, 4), dilation=(4, 4), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=512)
+      (conv3): Conv2D(512 -> 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=2048)
+      (relu): Activation(relu)
+    )
+  )
+  (head): _FCNHead(
+    (block): HybridSequential(
+      (0): Conv2D(2048 -> 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=512)
+      (2): Activation(relu)
+      (3): Dropout(p = 0.1, axes=())
+      (4): Conv2D(512 -> 21, kernel_size=(1, 1), stride=(1, 1))
+    )
+  )
+  (auxlayer): _FCNHead(
+    (block): HybridSequential(
+      (0): Conv2D(1024 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (2): Activation(relu)
+      (3): Dropout(p = 0.1, axes=())
+      (4): Conv2D(256 -> 21, kernel_size=(1, 1), stride=(1, 1))
+    )
+  )
+)/home/ubuntu/anaconda3/lib/python3.6/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+/home/ubuntu/anaconda3/lib/python3.6/site-packages/urllib3/contrib/pyopenssl.py:46: DeprecationWarning: OpenSSL.rand is deprecated - you should use os.urandom instead
+  import OpenSSL.SSL
+/home/ubuntu/anaconda3/lib/python3.6/site-packages/matplotlib/__init__.py:962: UserWarning: Duplicate key in file "/home/ubuntu/.config/matplotlib/matplotlibrc", line #2
+  (fname, cnt))
+/home/ubuntu/anaconda3/lib/python3.6/site-packages/matplotlib/__init__.py:962: UserWarning: Duplicate key in file "/home/ubuntu/.config/matplotlib/matplotlibrc", line #3
+  (fname, cnt))
+  0%|          | 0/182 [00:00<?, ?it/s]
+Starting Epoch: 0
+Total Epoches: 50
+[11:35:28] src/operator/nn/./cudnn/./cudnn_algoreg-inl.h:107: Running performance tests to find the best convolution algorithm, this can take a while... (setting env variable MXNET_CUDNN_AUTOTUNE_DEFAULT to 0 to disable)
+Epoch 0, training loss 0.169: 100%|██████████| 182/182 [02:23<00:00,  1.27it/s]
+Epoch 0, validation pixAcc: 0.837, mIoU: 0.583:  99%|█████████▉| 90/91 [01:17<00:00,  1.16it/s][11:39:06] src/operator/nn/./cudnn/./cudnn_algoreg-inl.h:107: Running performance tests to find the best convolution algorithm, this can take a while... (setting env variable MXNET_CUDNN_AUTOTUNE_DEFAULT to 0 to disable)
+Epoch 0, validation pixAcc: 0.836, mIoU: 0.583: 100%|██████████| 91/91 [01:21<00:00,  1.11it/s]
+Epoch 1, training loss 0.143: 100%|██████████| 182/182 [02:13<00:00,  1.36it/s]
+Epoch 1, validation pixAcc: 0.845, mIoU: 0.598: 100%|██████████| 91/91 [01:18<00:00,  1.16it/s]
+Epoch 2, training loss 0.145: 100%|██████████| 182/182 [02:13<00:00,  1.36it/s]
+Epoch 2, validation pixAcc: 0.849, mIoU: 0.602: 100%|██████████| 91/91 [01:17<00:00,  1.17it/s]
+Epoch 3, training loss 0.144: 100%|██████████| 182/182 [02:12<00:00,  1.37it/s]
+Epoch 3, validation pixAcc: 0.852, mIoU: 0.628: 100%|██████████| 91/91 [01:18<00:00,  1.17it/s]
+Epoch 4, training loss 0.139: 100%|██████████| 182/182 [02:12<00:00,  1.37it/s]
+Epoch 4, validation pixAcc: 0.848, mIoU: 0.619: 100%|██████████| 91/91 [01:18<00:00,  1.17it/s]
+Epoch 5, training loss 0.129: 100%|██████████| 182/182 [02:12<00:00,  1.37it/s]
+Epoch 5, validation pixAcc: 0.856, mIoU: 0.630: 100%|██████████| 91/91 [01:18<00:00,  1.16it/s]
+Epoch 6, training loss 0.139: 100%|██████████| 182/182 [02:12<00:00,  1.37it/s]
+Epoch 6, validation pixAcc: 0.851, mIoU: 0.629: 100%|██████████| 91/91 [01:18<00:00,  1.16it/s]
+Epoch 7, training loss 0.135: 100%|██████████| 182/182 [02:12<00:00,  1.37it/s]
+Epoch 7, validation pixAcc: 0.856, mIoU: 0.642: 100%|██████████| 91/91 [01:18<00:00,  1.16it/s]
+Epoch 8, training loss 0.123: 100%|██████████| 182/182 [02:12<00:00,  1.37it/s]
+Epoch 8, validation pixAcc: 0.852, mIoU: 0.626: 100%|██████████| 91/91 [01:18<00:00,  1.16it/s]
+Epoch 9, training loss 0.133: 100%|██████████| 182/182 [02:12<00:00,  1.37it/s]
+Epoch 9, validation pixAcc: 0.856, mIoU: 0.630: 100%|██████████| 91/91 [01:18<00:00,  1.17it/s]
+Epoch 10, training loss 0.122: 100%|██████████| 182/182 [02:13<00:00,  1.37it/s]
+Epoch 10, validation pixAcc: 0.861, mIoU: 0.645: 100%|██████████| 91/91 [01:18<00:00,  1.16it/s]
+Epoch 11, training loss 0.125: 100%|██████████| 182/182 [02:13<00:00,  1.36it/s]
+Epoch 11, validation pixAcc: 0.860, mIoU: 0.654: 100%|██████████| 91/91 [01:18<00:00,  1.16it/s]
+Epoch 12, training loss 0.123: 100%|██████████| 182/182 [02:12<00:00,  1.37it/s]
+Epoch 12, validation pixAcc: 0.855, mIoU: 0.632: 100%|██████████| 91/91 [01:18<00:00,  1.16it/s]
+Epoch 13, training loss 0.126: 100%|██████████| 182/182 [02:12<00:00,  1.37it/s]
+Epoch 13, validation pixAcc: 0.863, mIoU: 0.653: 100%|██████████| 91/91 [01:18<00:00,  1.17it/s]
+Epoch 14, training loss 0.131: 100%|██████████| 182/182 [02:13<00:00,  1.36it/s]
+Epoch 14, validation pixAcc: 0.860, mIoU: 0.646: 100%|██████████| 91/91 [01:18<00:00,  1.16it/s]
+Epoch 15, training loss 0.127: 100%|██████████| 183/183 [02:13<00:00,  1.37it/s]
+Epoch 15, validation pixAcc: 0.860, mIoU: 0.645: 100%|██████████| 91/91 [01:18<00:00,  1.16it/s]
+Epoch 16, training loss 0.136: 100%|██████████| 182/182 [02:13<00:00,  1.36it/s]
+Epoch 16, validation pixAcc: 0.861, mIoU: 0.651: 100%|██████████| 91/91 [01:18<00:00,  1.16it/s]
+Epoch 17, training loss 0.114: 100%|██████████| 182/182 [02:13<00:00,  1.36it/s]
+Epoch 17, validation pixAcc: 0.858, mIoU: 0.642: 100%|██████████| 91/91 [01:18<00:00,  1.16it/s]
+Epoch 18, training loss 0.125: 100%|██████████| 182/182 [02:12<00:00,  1.37it/s]
+Epoch 18, validation pixAcc: 0.863, mIoU: 0.657: 100%|██████████| 91/91 [01:18<00:00,  1.16it/s]
+Epoch 19, training loss 0.126: 100%|██████████| 182/182 [02:12<00:00,  1.37it/s]
+Epoch 19, validation pixAcc: 0.860, mIoU: 0.655: 100%|██████████| 91/91 [01:18<00:00,  1.16it/s]
+Epoch 20, training loss 0.114: 100%|██████████| 182/182 [02:13<00:00,  1.37it/s]
+Epoch 20, validation pixAcc: 0.858, mIoU: 0.644: 100%|██████████| 91/91 [01:18<00:00,  1.16it/s]
+Epoch 21, training loss 0.123: 100%|██████████| 182/182 [02:13<00:00,  1.37it/s]
+Epoch 21, validation pixAcc: 0.864, mIoU: 0.660: 100%|██████████| 91/91 [01:18<00:00,  1.16it/s]
+Epoch 22, training loss 0.115: 100%|██████████| 182/182 [02:12<00:00,  1.37it/s]
+Epoch 22, validation pixAcc: 0.859, mIoU: 0.649: 100%|██████████| 91/91 [01:17<00:00,  1.17it/s]
+Epoch 23, training loss 0.116: 100%|██████████| 182/182 [02:13<00:00,  1.37it/s]
+Epoch 23, validation pixAcc: 0.866, mIoU: 0.668: 100%|██████████| 91/91 [01:18<00:00,  1.16it/s]
+Epoch 24, training loss 0.115: 100%|██████████| 182/182 [02:12<00:00,  1.37it/s]
+Epoch 24, validation pixAcc: 0.870, mIoU: 0.679: 100%|██████████| 91/91 [01:18<00:00,  1.16it/s]
+Epoch 25, training loss 0.117: 100%|██████████| 182/182 [02:12<00:00,  1.37it/s]
+Epoch 25, validation pixAcc: 0.861, mIoU: 0.653: 100%|██████████| 91/91 [01:18<00:00,  1.16it/s]
+Epoch 26, training loss 0.122: 100%|██████████| 182/182 [02:12<00:00,  1.37it/s]
+Epoch 26, validation pixAcc: 0.863, mIoU: 0.659: 100%|██████████| 91/91 [01:18<00:00,  1.16it/s]
+Epoch 27, training loss 0.116: 100%|██████████| 182/182 [02:12<00:00,  1.37it/s]
+Epoch 27, validation pixAcc: 0.860, mIoU: 0.649: 100%|██████████| 91/91 [01:18<00:00,  1.16it/s]
+Epoch 28, training loss 0.117: 100%|██████████| 182/182 [02:12<00:00,  1.37it/s]
+Epoch 28, validation pixAcc: 0.859, mIoU: 0.648: 100%|██████████| 91/91 [01:18<00:00,  1.16it/s]
+Epoch 29, training loss 0.119: 100%|██████████| 182/182 [02:12<00:00,  1.37it/s]
+Epoch 29, validation pixAcc: 0.861, mIoU: 0.655: 100%|██████████| 91/91 [01:17<00:00,  1.17it/s]
+Epoch 30, training loss 0.120: 100%|██████████| 182/182 [02:12<00:00,  1.38it/s]
+Epoch 30, validation pixAcc: 0.864, mIoU: 0.663: 100%|██████████| 91/91 [01:18<00:00,  1.16it/s]
+Epoch 31, training loss 0.123: 100%|██████████| 183/183 [02:13<00:00,  1.37it/s]
+Epoch 31, validation pixAcc: 0.857, mIoU: 0.646: 100%|██████████| 91/91 [01:18<00:00,  1.16it/s]
+Epoch 32, training loss 0.115: 100%|██████████| 182/182 [02:12<00:00,  1.38it/s]
+Epoch 32, validation pixAcc: 0.865, mIoU: 0.666: 100%|██████████| 91/91 [01:18<00:00,  1.16it/s]
+Epoch 33, training loss 0.122: 100%|██████████| 182/182 [02:12<00:00,  1.37it/s]
+Epoch 33, validation pixAcc: 0.867, mIoU: 0.669: 100%|██████████| 91/91 [01:18<00:00,  1.16it/s]
+Epoch 34, training loss 0.123: 100%|██████████| 182/182 [02:13<00:00,  1.36it/s]
+Epoch 34, validation pixAcc: 0.865, mIoU: 0.667: 100%|██████████| 91/91 [01:18<00:00,  1.16it/s]
+Epoch 35, training loss 0.110: 100%|██████████| 182/182 [02:12<00:00,  1.38it/s]
+Epoch 35, validation pixAcc: 0.865, mIoU: 0.659: 100%|██████████| 91/91 [01:18<00:00,  1.16it/s]
+Epoch 36, training loss 0.113: 100%|██████████| 182/182 [02:12<00:00,  1.37it/s]
+Epoch 36, validation pixAcc: 0.861, mIoU: 0.655: 100%|██████████| 91/91 [01:18<00:00,  1.16it/s]
+Epoch 37, training loss 0.111: 100%|██████████| 182/182 [02:12<00:00,  1.38it/s]
+Epoch 37, validation pixAcc: 0.866, mIoU: 0.669: 100%|██████████| 91/91 [01:18<00:00,  1.16it/s]
+Epoch 38, training loss 0.125: 100%|██████████| 182/182 [02:12<00:00,  1.38it/s]
+Epoch 38, validation pixAcc: 0.861, mIoU: 0.653: 100%|██████████| 91/91 [01:18<00:00,  1.16it/s]
+Epoch 39, training loss 0.106: 100%|██████████| 182/182 [02:12<00:00,  1.37it/s]
+Epoch 39, validation pixAcc: 0.864, mIoU: 0.663: 100%|██████████| 91/91 [01:18<00:00,  1.16it/s]
+Epoch 40, training loss 0.114: 100%|██████████| 182/182 [02:12<00:00,  1.38it/s]
+Epoch 40, validation pixAcc: 0.864, mIoU: 0.665: 100%|██████████| 91/91 [01:18<00:00,  1.17it/s]
+Epoch 41, training loss 0.119: 100%|██████████| 182/182 [02:12<00:00,  1.38it/s]
+Epoch 41, validation pixAcc: 0.863, mIoU: 0.658: 100%|██████████| 91/91 [01:17<00:00,  1.17it/s]
+Epoch 42, training loss 0.112: 100%|██████████| 182/182 [02:12<00:00,  1.37it/s]
+Epoch 42, validation pixAcc: 0.865, mIoU: 0.665: 100%|██████████| 91/91 [01:18<00:00,  1.16it/s]
+Epoch 43, training loss 0.111: 100%|██████████| 182/182 [02:11<00:00,  1.38it/s]
+Epoch 43, validation pixAcc: 0.865, mIoU: 0.668: 100%|██████████| 91/91 [01:18<00:00,  1.16it/s]
+Epoch 44, training loss 0.111: 100%|██████████| 182/182 [02:12<00:00,  1.37it/s]
+Epoch 44, validation pixAcc: 0.855, mIoU: 0.638: 100%|██████████| 91/91 [01:18<00:00,  1.17it/s]
+Epoch 45, training loss 0.113: 100%|██████████| 182/182 [02:12<00:00,  1.38it/s]
+Epoch 45, validation pixAcc: 0.869, mIoU: 0.681: 100%|██████████| 91/91 [01:18<00:00,  1.16it/s]
+Epoch 46, training loss 0.119: 100%|██████████| 182/182 [02:12<00:00,  1.37it/s]
+Epoch 46, validation pixAcc: 0.865, mIoU: 0.665: 100%|██████████| 91/91 [01:18<00:00,  1.17it/s]
+Epoch 47, training loss 0.117: 100%|██████████| 183/183 [02:12<00:00,  1.38it/s]
+Epoch 47, validation pixAcc: 0.859, mIoU: 0.649: 100%|██████████| 91/91 [01:18<00:00,  1.16it/s]
+Epoch 48, training loss 0.120: 100%|██████████| 182/182 [02:12<00:00,  1.38it/s]
+Epoch 48, validation pixAcc: 0.865, mIoU: 0.668: 100%|██████████| 91/91 [01:18<00:00,  1.16it/s]
+Epoch 49, training loss 0.122: 100%|██████████| 182/182 [02:12<00:00,  1.38it/s]
+Epoch 49, validation pixAcc: 0.865, mIoU: 0.665: 100%|██████████| 91/91 [01:18<00:00,  1.16it/s]
+  0%|          | 0/91 [00:00<?, ?it/s]Evaluating model:  runs/pascal_aug/fcn/mycheckpoint/checkpoint.params
+Epoch 0, validation pixAcc: 0.865, mIoU: 0.665: 100%|██████████| 91/91 [01:18<00:00,  1.16it/s]
