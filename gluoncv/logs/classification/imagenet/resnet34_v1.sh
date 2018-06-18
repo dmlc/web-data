@@ -1,1 +1,7 @@
-python train_imagenet.py --batch-size 64 --num-gpus 4 -j 32 --mode hybrid --num-epochs 150 --lr 0.1 --momentum 0.9 --wd 0.0001 --lr-decay 0.1 --lr-decay-epoch 30,60,90 --model resnet34_v1
+python train_imagenet.py \
+  --rec-train /media/ramdisk/rec/train.rec --rec-train-idx /media/ramdisk/rec/train.idx \
+  --rec-val /media/ramdisk/rec/val.rec --rec-val-idx /media/ramdisk/rec/val.idx \
+  --model resnet34_v1 --mode hybrid \
+  --lr 0.4 --lr-mode cosine --num-epochs 120 --batch-size 256 --num-gpus 4 -j 30 \
+  --warmup-epochs 5 --use-rec \
+  --save-dir params_resnet34_v1
