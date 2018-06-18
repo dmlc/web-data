@@ -1,17 +1,3 @@
-Traceback (most recent call last):
-  File "train_imagenet.py", line 3, in <module>
-    import mxnet as mx
-  File "/home/ubuntu/incubator-mxnet/python/mxnet/__init__.py", line 24, in <module>
-    from .context import Context, current_context, cpu, gpu, cpu_pinned
-  File "/home/ubuntu/incubator-mxnet/python/mxnet/context.py", line 24, in <module>
-    from .base import classproperty, with_metaclass, _MXClassPropertyMetaClass
-  File "/home/ubuntu/incubator-mxnet/python/mxnet/base.py", line 174, in <module>
-    _LIB = _load_lib()
-  File "/home/ubuntu/incubator-mxnet/python/mxnet/base.py", line 166, in _load_lib
-    lib = ctypes.CDLL(lib_path[0], ctypes.RTLD_LOCAL)
-  File "/usr/lib/python2.7/ctypes/__init__.py", line 362, in __init__
-    self._handle = _dlopen(self._name, mode)
-KeyboardInterrupt
 INFO:root:Namespace(batch_norm=False, batch_size=128, data_dir='~/.mxnet/datasets/imagenet', dtype='float16', last_gamma=True, log_interval=50, logging_dir='logs', lr=0.4, lr_decay=0.1, lr_decay_epoch='40,60', lr_decay_period=0, lr_mode='cosine', mode='hybrid', model='resnet152_v1b', momentum=0.9, num_epochs=180, num_gpus=8, num_workers=60, rec_train='/media/ramdisk/rec/train.rec', rec_train_idx='/media/ramdisk/rec/train.idx', rec_val='/media/ramdisk/rec/val.rec', rec_val_idx='/media/ramdisk/rec/val.idx', save_dir='params_resnet152_v1b_180', save_frequency=10, use_pretrained=False, use_rec=True, use_se=False, warmup_epochs=5, warmup_lr=0.0, wd=0.0001)
 [02:48:40] src/io/iter_image_recordio_2.cc:170: ImageRecordIOParser2: /media/ramdisk/rec/train.rec, use 31 threads for decoding..
 [02:48:44] src/io/iter_image_recordio_2.cc:170: ImageRecordIOParser2: /media/ramdisk/rec/val.rec, use 31 threads for decoding..
