@@ -1,0 +1,1318 @@
+Namespace(batch_size=4, dataset='voc', epochs=20, gpus='0,1,2,3', log_interval=100, lr=0.001, lr_decay=0.1, lr_decay_epoch='14,20', lr_warmup=-1, max_size=1000, momentum=0.9, network='resnet50_v1b', num_workers=4, resume='', save_interval=1, save_prefix='faster_rcnn_resnet50_v1b_voc', seed=233, short=600, start_epoch=0, val_interval=1, verbose=False, wd=0.0005)
+Start training from [Epoch 0]
+[Epoch 0][Batch 99], Speed: 11.735 samples/sec, RPN_Conf=0.655,RPN_SmoothL1=0.050,RCNN_CrossEntropy=0.773,RCNN_SmoothL1=0.345,RPNAcc=0.877,RPNL1Loss=0.392,RCNNAcc=0.845,RCNNL1Loss=2.392
+[Epoch 0][Batch 199], Speed: 12.458 samples/sec, RPN_Conf=0.503,RPN_SmoothL1=0.051,RCNN_CrossEntropy=0.668,RCNN_SmoothL1=0.364,RPNAcc=0.907,RPNL1Loss=0.400,RCNNAcc=0.851,RCNNL1Loss=2.422
+[Epoch 0][Batch 299], Speed: 12.679 samples/sec, RPN_Conf=0.387,RPN_SmoothL1=0.053,RCNN_CrossEntropy=0.609,RCNN_SmoothL1=0.367,RPNAcc=0.919,RPNL1Loss=0.403,RCNNAcc=0.854,RCNNL1Loss=2.403
+[Epoch 0][Batch 399], Speed: 12.541 samples/sec, RPN_Conf=0.327,RPN_SmoothL1=0.052,RCNN_CrossEntropy=0.572,RCNN_SmoothL1=0.369,RPNAcc=0.926,RPNL1Loss=0.400,RCNNAcc=0.855,RCNNL1Loss=2.399
+[Epoch 0][Batch 499], Speed: 12.630 samples/sec, RPN_Conf=0.290,RPN_SmoothL1=0.053,RCNN_CrossEntropy=0.532,RCNN_SmoothL1=0.369,RPNAcc=0.929,RPNL1Loss=0.405,RCNNAcc=0.859,RCNNL1Loss=2.393
+[Epoch 0][Batch 599], Speed: 12.620 samples/sec, RPN_Conf=0.267,RPN_SmoothL1=0.053,RCNN_CrossEntropy=0.502,RCNN_SmoothL1=0.371,RPNAcc=0.931,RPNL1Loss=0.406,RCNNAcc=0.861,RCNNL1Loss=2.380
+[Epoch 0][Batch 699], Speed: 12.703 samples/sec, RPN_Conf=0.247,RPN_SmoothL1=0.052,RCNN_CrossEntropy=0.475,RCNN_SmoothL1=0.372,RPNAcc=0.933,RPNL1Loss=0.402,RCNNAcc=0.865,RCNNL1Loss=2.372
+[Epoch 0][Batch 799], Speed: 12.785 samples/sec, RPN_Conf=0.233,RPN_SmoothL1=0.051,RCNN_CrossEntropy=0.457,RCNN_SmoothL1=0.372,RPNAcc=0.935,RPNL1Loss=0.398,RCNNAcc=0.867,RCNNL1Loss=2.361
+[Epoch 0][Batch 899], Speed: 12.588 samples/sec, RPN_Conf=0.222,RPN_SmoothL1=0.051,RCNN_CrossEntropy=0.444,RCNN_SmoothL1=0.375,RPNAcc=0.936,RPNL1Loss=0.395,RCNNAcc=0.869,RCNNL1Loss=2.351
+[Epoch 0][Batch 999], Speed: 12.695 samples/sec, RPN_Conf=0.215,RPN_SmoothL1=0.051,RCNN_CrossEntropy=0.431,RCNN_SmoothL1=0.376,RPNAcc=0.936,RPNL1Loss=0.393,RCNNAcc=0.870,RCNNL1Loss=2.340
+[Epoch 0][Batch 1099], Speed: 12.603 samples/sec, RPN_Conf=0.207,RPN_SmoothL1=0.050,RCNN_CrossEntropy=0.421,RCNN_SmoothL1=0.376,RPNAcc=0.937,RPNL1Loss=0.390,RCNNAcc=0.871,RCNNL1Loss=2.332
+[Epoch 0][Batch 1199], Speed: 12.495 samples/sec, RPN_Conf=0.201,RPN_SmoothL1=0.050,RCNN_CrossEntropy=0.411,RCNN_SmoothL1=0.377,RPNAcc=0.938,RPNL1Loss=0.387,RCNNAcc=0.873,RCNNL1Loss=2.325
+[Epoch 0][Batch 1299], Speed: 12.637 samples/sec, RPN_Conf=0.196,RPN_SmoothL1=0.050,RCNN_CrossEntropy=0.401,RCNN_SmoothL1=0.376,RPNAcc=0.938,RPNL1Loss=0.387,RCNNAcc=0.875,RCNNL1Loss=2.313
+[Epoch 0][Batch 1399], Speed: 12.543 samples/sec, RPN_Conf=0.191,RPN_SmoothL1=0.050,RCNN_CrossEntropy=0.393,RCNN_SmoothL1=0.377,RPNAcc=0.938,RPNL1Loss=0.387,RCNNAcc=0.876,RCNNL1Loss=2.306
+[Epoch 0][Batch 1499], Speed: 12.595 samples/sec, RPN_Conf=0.187,RPN_SmoothL1=0.050,RCNN_CrossEntropy=0.387,RCNN_SmoothL1=0.377,RPNAcc=0.938,RPNL1Loss=0.386,RCNNAcc=0.877,RCNNL1Loss=2.295
+[Epoch 0][Batch 1599], Speed: 12.608 samples/sec, RPN_Conf=0.183,RPN_SmoothL1=0.050,RCNN_CrossEntropy=0.381,RCNN_SmoothL1=0.376,RPNAcc=0.939,RPNL1Loss=0.385,RCNNAcc=0.878,RCNNL1Loss=2.286
+[Epoch 0][Batch 1699], Speed: 12.607 samples/sec, RPN_Conf=0.179,RPN_SmoothL1=0.050,RCNN_CrossEntropy=0.376,RCNN_SmoothL1=0.376,RPNAcc=0.940,RPNL1Loss=0.384,RCNNAcc=0.879,RCNNL1Loss=2.276
+[Epoch 0][Batch 1799], Speed: 12.667 samples/sec, RPN_Conf=0.176,RPN_SmoothL1=0.050,RCNN_CrossEntropy=0.370,RCNN_SmoothL1=0.375,RPNAcc=0.940,RPNL1Loss=0.384,RCNNAcc=0.880,RCNNL1Loss=2.268
+[Epoch 0][Batch 1899], Speed: 12.650 samples/sec, RPN_Conf=0.173,RPN_SmoothL1=0.050,RCNN_CrossEntropy=0.366,RCNN_SmoothL1=0.375,RPNAcc=0.941,RPNL1Loss=0.383,RCNNAcc=0.881,RCNNL1Loss=2.258
+[Epoch 0][Batch 1999], Speed: 12.570 samples/sec, RPN_Conf=0.170,RPN_SmoothL1=0.050,RCNN_CrossEntropy=0.362,RCNN_SmoothL1=0.374,RPNAcc=0.942,RPNL1Loss=0.383,RCNNAcc=0.882,RCNNL1Loss=2.250
+[Epoch 0][Batch 2099], Speed: 12.612 samples/sec, RPN_Conf=0.168,RPN_SmoothL1=0.050,RCNN_CrossEntropy=0.359,RCNN_SmoothL1=0.374,RPNAcc=0.942,RPNL1Loss=0.382,RCNNAcc=0.883,RCNNL1Loss=2.240
+[Epoch 0][Batch 2199], Speed: 12.631 samples/sec, RPN_Conf=0.166,RPN_SmoothL1=0.049,RCNN_CrossEntropy=0.354,RCNN_SmoothL1=0.373,RPNAcc=0.942,RPNL1Loss=0.382,RCNNAcc=0.884,RCNNL1Loss=2.233
+[Epoch 0][Batch 2299], Speed: 12.630 samples/sec, RPN_Conf=0.163,RPN_SmoothL1=0.049,RCNN_CrossEntropy=0.351,RCNN_SmoothL1=0.372,RPNAcc=0.943,RPNL1Loss=0.381,RCNNAcc=0.885,RCNNL1Loss=2.223
+[Epoch 0][Batch 2399], Speed: 12.631 samples/sec, RPN_Conf=0.161,RPN_SmoothL1=0.049,RCNN_CrossEntropy=0.348,RCNN_SmoothL1=0.372,RPNAcc=0.944,RPNL1Loss=0.379,RCNNAcc=0.885,RCNNL1Loss=2.216
+[Epoch 0][Batch 2499], Speed: 12.644 samples/sec, RPN_Conf=0.159,RPN_SmoothL1=0.049,RCNN_CrossEntropy=0.345,RCNN_SmoothL1=0.371,RPNAcc=0.944,RPNL1Loss=0.377,RCNNAcc=0.886,RCNNL1Loss=2.209
+[Epoch 0][Batch 2599], Speed: 12.557 samples/sec, RPN_Conf=0.157,RPN_SmoothL1=0.048,RCNN_CrossEntropy=0.342,RCNN_SmoothL1=0.370,RPNAcc=0.945,RPNL1Loss=0.376,RCNNAcc=0.887,RCNNL1Loss=2.200
+[Epoch 0][Batch 2699], Speed: 12.655 samples/sec, RPN_Conf=0.156,RPN_SmoothL1=0.048,RCNN_CrossEntropy=0.339,RCNN_SmoothL1=0.370,RPNAcc=0.945,RPNL1Loss=0.375,RCNNAcc=0.887,RCNNL1Loss=2.193
+[Epoch 0][Batch 2799], Speed: 12.667 samples/sec, RPN_Conf=0.154,RPN_SmoothL1=0.048,RCNN_CrossEntropy=0.337,RCNN_SmoothL1=0.369,RPNAcc=0.945,RPNL1Loss=0.374,RCNNAcc=0.888,RCNNL1Loss=2.184
+[Epoch 0][Batch 2899], Speed: 12.631 samples/sec, RPN_Conf=0.153,RPN_SmoothL1=0.048,RCNN_CrossEntropy=0.335,RCNN_SmoothL1=0.368,RPNAcc=0.946,RPNL1Loss=0.374,RCNNAcc=0.888,RCNNL1Loss=2.175
+[Epoch 0][Batch 2999], Speed: 12.612 samples/sec, RPN_Conf=0.152,RPN_SmoothL1=0.048,RCNN_CrossEntropy=0.333,RCNN_SmoothL1=0.367,RPNAcc=0.946,RPNL1Loss=0.373,RCNNAcc=0.889,RCNNL1Loss=2.167
+[Epoch 0][Batch 3099], Speed: 12.675 samples/sec, RPN_Conf=0.150,RPN_SmoothL1=0.048,RCNN_CrossEntropy=0.332,RCNN_SmoothL1=0.367,RPNAcc=0.946,RPNL1Loss=0.371,RCNNAcc=0.889,RCNNL1Loss=2.159
+[Epoch 0][Batch 3199], Speed: 12.690 samples/sec, RPN_Conf=0.149,RPN_SmoothL1=0.048,RCNN_CrossEntropy=0.330,RCNN_SmoothL1=0.366,RPNAcc=0.947,RPNL1Loss=0.370,RCNNAcc=0.889,RCNNL1Loss=2.150
+[Epoch 0][Batch 3299], Speed: 12.735 samples/sec, RPN_Conf=0.148,RPN_SmoothL1=0.048,RCNN_CrossEntropy=0.328,RCNN_SmoothL1=0.365,RPNAcc=0.947,RPNL1Loss=0.370,RCNNAcc=0.890,RCNNL1Loss=2.141
+[Epoch 0][Batch 3399], Speed: 12.609 samples/sec, RPN_Conf=0.147,RPN_SmoothL1=0.048,RCNN_CrossEntropy=0.326,RCNN_SmoothL1=0.364,RPNAcc=0.947,RPNL1Loss=0.370,RCNNAcc=0.890,RCNNL1Loss=2.132
+[Epoch 0][Batch 3499], Speed: 12.644 samples/sec, RPN_Conf=0.146,RPN_SmoothL1=0.048,RCNN_CrossEntropy=0.324,RCNN_SmoothL1=0.364,RPNAcc=0.948,RPNL1Loss=0.369,RCNNAcc=0.891,RCNNL1Loss=2.125
+[Epoch 0][Batch 3599], Speed: 12.680 samples/sec, RPN_Conf=0.144,RPN_SmoothL1=0.047,RCNN_CrossEntropy=0.323,RCNN_SmoothL1=0.363,RPNAcc=0.948,RPNL1Loss=0.368,RCNNAcc=0.891,RCNNL1Loss=2.117
+[Epoch 0][Batch 3699], Speed: 12.686 samples/sec, RPN_Conf=0.143,RPN_SmoothL1=0.047,RCNN_CrossEntropy=0.321,RCNN_SmoothL1=0.362,RPNAcc=0.948,RPNL1Loss=0.367,RCNNAcc=0.891,RCNNL1Loss=2.110
+[Epoch 0][Batch 3799], Speed: 12.588 samples/sec, RPN_Conf=0.142,RPN_SmoothL1=0.047,RCNN_CrossEntropy=0.320,RCNN_SmoothL1=0.361,RPNAcc=0.949,RPNL1Loss=0.366,RCNNAcc=0.892,RCNNL1Loss=2.102
+[Epoch 0][Batch 3899], Speed: 12.611 samples/sec, RPN_Conf=0.141,RPN_SmoothL1=0.047,RCNN_CrossEntropy=0.319,RCNN_SmoothL1=0.361,RPNAcc=0.949,RPNL1Loss=0.366,RCNNAcc=0.892,RCNNL1Loss=2.095
+[Epoch 0][Batch 3999], Speed: 12.726 samples/sec, RPN_Conf=0.140,RPN_SmoothL1=0.047,RCNN_CrossEntropy=0.317,RCNN_SmoothL1=0.360,RPNAcc=0.949,RPNL1Loss=0.365,RCNNAcc=0.892,RCNNL1Loss=2.087
+[Epoch 0][Batch 4099], Speed: 12.686 samples/sec, RPN_Conf=0.139,RPN_SmoothL1=0.047,RCNN_CrossEntropy=0.316,RCNN_SmoothL1=0.359,RPNAcc=0.950,RPNL1Loss=0.364,RCNNAcc=0.893,RCNNL1Loss=2.080
+[Epoch 0] Training cost: 1312.133, RPN_Conf=0.139,RPN_SmoothL1=0.047,RCNN_CrossEntropy=0.316,RCNN_SmoothL1=0.359
+[Epoch 0] Validation: 
+aeroplane=0.3749334870563221
+bicycle=0.4724313457138028
+bird=0.40365161689793605
+boat=0.22773986523986522
+bottle=0.12869792395254936
+bus=0.548375944545766
+car=0.4189084773851255
+cat=0.5879069032815494
+chair=0.18300804393624284
+cow=0.386931892781071
+diningtable=0.46761276529075096
+dog=0.5826486503584335
+horse=0.6269900040277642
+motorbike=0.5333167700201163
+person=0.48289293084859775
+pottedplant=0.16538852902489265
+sheep=0.2456987133072
+sofa=0.44932518212577216
+train=0.46874304617776236
+tvmonitor=0.3027513703553765
+mAP=0.40289767311634483
+[Epoch 0] mAP 0.40289767311634483 higher than current best [0] saving to faster_rcnn_resnet50_v1b_voc_best.params
+[Epoch 0] Saving parameters to faster_rcnn_resnet50_v1b_voc_0000_0.4029.params
+[Epoch 1][Batch 99], Speed: 11.896 samples/sec, RPN_Conf=0.095,RPN_SmoothL1=0.039,RCNN_CrossEntropy=0.251,RCNN_SmoothL1=0.311,RPNAcc=0.950,RPNL1Loss=0.363,RCNNAcc=0.893,RCNNL1Loss=2.068
+[Epoch 1][Batch 199], Speed: 12.634 samples/sec, RPN_Conf=0.096,RPN_SmoothL1=0.040,RCNN_CrossEntropy=0.249,RCNN_SmoothL1=0.315,RPNAcc=0.950,RPNL1Loss=0.363,RCNNAcc=0.894,RCNNL1Loss=2.060
+[Epoch 1][Batch 299], Speed: 12.519 samples/sec, RPN_Conf=0.099,RPN_SmoothL1=0.042,RCNN_CrossEntropy=0.252,RCNN_SmoothL1=0.315,RPNAcc=0.950,RPNL1Loss=0.362,RCNNAcc=0.894,RCNNL1Loss=2.053
+[Epoch 1][Batch 399], Speed: 12.548 samples/sec, RPN_Conf=0.099,RPN_SmoothL1=0.043,RCNN_CrossEntropy=0.250,RCNN_SmoothL1=0.315,RPNAcc=0.951,RPNL1Loss=0.362,RCNNAcc=0.894,RCNNL1Loss=2.044
+[Epoch 1][Batch 499], Speed: 12.480 samples/sec, RPN_Conf=0.099,RPN_SmoothL1=0.044,RCNN_CrossEntropy=0.251,RCNN_SmoothL1=0.315,RPNAcc=0.951,RPNL1Loss=0.362,RCNNAcc=0.895,RCNNL1Loss=2.037
+[Epoch 1][Batch 599], Speed: 12.505 samples/sec, RPN_Conf=0.100,RPN_SmoothL1=0.043,RCNN_CrossEntropy=0.250,RCNN_SmoothL1=0.316,RPNAcc=0.951,RPNL1Loss=0.361,RCNNAcc=0.895,RCNNL1Loss=2.029
+[Epoch 1][Batch 699], Speed: 12.504 samples/sec, RPN_Conf=0.098,RPN_SmoothL1=0.043,RCNN_CrossEntropy=0.250,RCNN_SmoothL1=0.315,RPNAcc=0.951,RPNL1Loss=0.360,RCNNAcc=0.895,RCNNL1Loss=2.021
+[Epoch 1][Batch 799], Speed: 12.515 samples/sec, RPN_Conf=0.098,RPN_SmoothL1=0.042,RCNN_CrossEntropy=0.250,RCNN_SmoothL1=0.315,RPNAcc=0.951,RPNL1Loss=0.359,RCNNAcc=0.896,RCNNL1Loss=2.013
+[Epoch 1][Batch 899], Speed: 12.595 samples/sec, RPN_Conf=0.098,RPN_SmoothL1=0.043,RCNN_CrossEntropy=0.251,RCNN_SmoothL1=0.313,RPNAcc=0.952,RPNL1Loss=0.358,RCNNAcc=0.896,RCNNL1Loss=2.005
+[Epoch 1][Batch 999], Speed: 12.603 samples/sec, RPN_Conf=0.098,RPN_SmoothL1=0.042,RCNN_CrossEntropy=0.250,RCNN_SmoothL1=0.311,RPNAcc=0.952,RPNL1Loss=0.358,RCNNAcc=0.896,RCNNL1Loss=1.997
+[Epoch 1][Batch 1099], Speed: 12.508 samples/sec, RPN_Conf=0.098,RPN_SmoothL1=0.042,RCNN_CrossEntropy=0.250,RCNN_SmoothL1=0.310,RPNAcc=0.952,RPNL1Loss=0.357,RCNNAcc=0.897,RCNNL1Loss=1.989
+[Epoch 1][Batch 1199], Speed: 12.537 samples/sec, RPN_Conf=0.098,RPN_SmoothL1=0.042,RCNN_CrossEntropy=0.251,RCNN_SmoothL1=0.309,RPNAcc=0.952,RPNL1Loss=0.356,RCNNAcc=0.897,RCNNL1Loss=1.981
+[Epoch 1][Batch 1299], Speed: 12.548 samples/sec, RPN_Conf=0.098,RPN_SmoothL1=0.042,RCNN_CrossEntropy=0.251,RCNN_SmoothL1=0.309,RPNAcc=0.952,RPNL1Loss=0.356,RCNNAcc=0.897,RCNNL1Loss=1.974
+[Epoch 1][Batch 1399], Speed: 12.542 samples/sec, RPN_Conf=0.098,RPN_SmoothL1=0.042,RCNN_CrossEntropy=0.250,RCNN_SmoothL1=0.308,RPNAcc=0.953,RPNL1Loss=0.355,RCNNAcc=0.897,RCNNL1Loss=1.966
+[Epoch 1][Batch 1499], Speed: 12.545 samples/sec, RPN_Conf=0.097,RPN_SmoothL1=0.042,RCNN_CrossEntropy=0.249,RCNN_SmoothL1=0.306,RPNAcc=0.953,RPNL1Loss=0.354,RCNNAcc=0.898,RCNNL1Loss=1.959
+[Epoch 1][Batch 1599], Speed: 12.465 samples/sec, RPN_Conf=0.097,RPN_SmoothL1=0.042,RCNN_CrossEntropy=0.250,RCNN_SmoothL1=0.306,RPNAcc=0.953,RPNL1Loss=0.354,RCNNAcc=0.898,RCNNL1Loss=1.952
+[Epoch 1][Batch 1699], Speed: 12.535 samples/sec, RPN_Conf=0.097,RPN_SmoothL1=0.042,RCNN_CrossEntropy=0.250,RCNN_SmoothL1=0.306,RPNAcc=0.953,RPNL1Loss=0.354,RCNNAcc=0.898,RCNNL1Loss=1.945
+[Epoch 1][Batch 1799], Speed: 12.584 samples/sec, RPN_Conf=0.097,RPN_SmoothL1=0.042,RCNN_CrossEntropy=0.250,RCNN_SmoothL1=0.305,RPNAcc=0.953,RPNL1Loss=0.354,RCNNAcc=0.898,RCNNL1Loss=1.937
+[Epoch 1][Batch 1899], Speed: 12.613 samples/sec, RPN_Conf=0.096,RPN_SmoothL1=0.042,RCNN_CrossEntropy=0.250,RCNN_SmoothL1=0.304,RPNAcc=0.953,RPNL1Loss=0.353,RCNNAcc=0.899,RCNNL1Loss=1.930
+[Epoch 1][Batch 1999], Speed: 12.583 samples/sec, RPN_Conf=0.096,RPN_SmoothL1=0.042,RCNN_CrossEntropy=0.250,RCNN_SmoothL1=0.303,RPNAcc=0.954,RPNL1Loss=0.353,RCNNAcc=0.899,RCNNL1Loss=1.923
+[Epoch 1][Batch 2099], Speed: 12.568 samples/sec, RPN_Conf=0.096,RPN_SmoothL1=0.042,RCNN_CrossEntropy=0.249,RCNN_SmoothL1=0.302,RPNAcc=0.954,RPNL1Loss=0.353,RCNNAcc=0.899,RCNNL1Loss=1.915
+[Epoch 1][Batch 2199], Speed: 12.523 samples/sec, RPN_Conf=0.096,RPN_SmoothL1=0.042,RCNN_CrossEntropy=0.248,RCNN_SmoothL1=0.300,RPNAcc=0.954,RPNL1Loss=0.353,RCNNAcc=0.899,RCNNL1Loss=1.907
+[Epoch 1][Batch 2299], Speed: 12.574 samples/sec, RPN_Conf=0.096,RPN_SmoothL1=0.042,RCNN_CrossEntropy=0.248,RCNN_SmoothL1=0.299,RPNAcc=0.954,RPNL1Loss=0.353,RCNNAcc=0.900,RCNNL1Loss=1.900
+[Epoch 1][Batch 2399], Speed: 12.576 samples/sec, RPN_Conf=0.096,RPN_SmoothL1=0.042,RCNN_CrossEntropy=0.248,RCNN_SmoothL1=0.298,RPNAcc=0.954,RPNL1Loss=0.352,RCNNAcc=0.900,RCNNL1Loss=1.893
+[Epoch 1][Batch 2499], Speed: 12.535 samples/sec, RPN_Conf=0.096,RPN_SmoothL1=0.042,RCNN_CrossEntropy=0.248,RCNN_SmoothL1=0.298,RPNAcc=0.954,RPNL1Loss=0.352,RCNNAcc=0.900,RCNNL1Loss=1.886
+[Epoch 1][Batch 2599], Speed: 12.533 samples/sec, RPN_Conf=0.096,RPN_SmoothL1=0.042,RCNN_CrossEntropy=0.247,RCNN_SmoothL1=0.297,RPNAcc=0.954,RPNL1Loss=0.351,RCNNAcc=0.900,RCNNL1Loss=1.880
+[Epoch 1][Batch 2699], Speed: 12.614 samples/sec, RPN_Conf=0.096,RPN_SmoothL1=0.042,RCNN_CrossEntropy=0.247,RCNN_SmoothL1=0.297,RPNAcc=0.954,RPNL1Loss=0.351,RCNNAcc=0.901,RCNNL1Loss=1.874
+[Epoch 1][Batch 2799], Speed: 12.714 samples/sec, RPN_Conf=0.096,RPN_SmoothL1=0.042,RCNN_CrossEntropy=0.247,RCNN_SmoothL1=0.296,RPNAcc=0.955,RPNL1Loss=0.351,RCNNAcc=0.901,RCNNL1Loss=1.868
+[Epoch 1][Batch 2899], Speed: 12.448 samples/sec, RPN_Conf=0.095,RPN_SmoothL1=0.042,RCNN_CrossEntropy=0.247,RCNN_SmoothL1=0.296,RPNAcc=0.955,RPNL1Loss=0.350,RCNNAcc=0.901,RCNNL1Loss=1.862
+[Epoch 1][Batch 2999], Speed: 12.448 samples/sec, RPN_Conf=0.095,RPN_SmoothL1=0.042,RCNN_CrossEntropy=0.247,RCNN_SmoothL1=0.295,RPNAcc=0.955,RPNL1Loss=0.350,RCNNAcc=0.901,RCNNL1Loss=1.856
+[Epoch 1][Batch 3099], Speed: 12.602 samples/sec, RPN_Conf=0.095,RPN_SmoothL1=0.042,RCNN_CrossEntropy=0.247,RCNN_SmoothL1=0.294,RPNAcc=0.955,RPNL1Loss=0.350,RCNNAcc=0.901,RCNNL1Loss=1.849
+[Epoch 1][Batch 3199], Speed: 12.492 samples/sec, RPN_Conf=0.095,RPN_SmoothL1=0.042,RCNN_CrossEntropy=0.247,RCNN_SmoothL1=0.294,RPNAcc=0.955,RPNL1Loss=0.350,RCNNAcc=0.902,RCNNL1Loss=1.844
+[Epoch 1][Batch 3299], Speed: 12.545 samples/sec, RPN_Conf=0.095,RPN_SmoothL1=0.042,RCNN_CrossEntropy=0.247,RCNN_SmoothL1=0.293,RPNAcc=0.955,RPNL1Loss=0.349,RCNNAcc=0.902,RCNNL1Loss=1.838
+[Epoch 1][Batch 3399], Speed: 12.630 samples/sec, RPN_Conf=0.095,RPN_SmoothL1=0.042,RCNN_CrossEntropy=0.247,RCNN_SmoothL1=0.293,RPNAcc=0.955,RPNL1Loss=0.349,RCNNAcc=0.902,RCNNL1Loss=1.833
+[Epoch 1][Batch 3499], Speed: 12.516 samples/sec, RPN_Conf=0.095,RPN_SmoothL1=0.042,RCNN_CrossEntropy=0.246,RCNN_SmoothL1=0.292,RPNAcc=0.955,RPNL1Loss=0.349,RCNNAcc=0.902,RCNNL1Loss=1.827
+[Epoch 1][Batch 3599], Speed: 12.601 samples/sec, RPN_Conf=0.095,RPN_SmoothL1=0.042,RCNN_CrossEntropy=0.246,RCNN_SmoothL1=0.291,RPNAcc=0.956,RPNL1Loss=0.349,RCNNAcc=0.902,RCNNL1Loss=1.821
+[Epoch 1][Batch 3699], Speed: 12.593 samples/sec, RPN_Conf=0.094,RPN_SmoothL1=0.042,RCNN_CrossEntropy=0.246,RCNN_SmoothL1=0.290,RPNAcc=0.956,RPNL1Loss=0.349,RCNNAcc=0.902,RCNNL1Loss=1.815
+[Epoch 1][Batch 3799], Speed: 12.586 samples/sec, RPN_Conf=0.094,RPN_SmoothL1=0.042,RCNN_CrossEntropy=0.246,RCNN_SmoothL1=0.290,RPNAcc=0.956,RPNL1Loss=0.348,RCNNAcc=0.903,RCNNL1Loss=1.810
+[Epoch 1][Batch 3899], Speed: 12.540 samples/sec, RPN_Conf=0.094,RPN_SmoothL1=0.042,RCNN_CrossEntropy=0.246,RCNN_SmoothL1=0.290,RPNAcc=0.956,RPNL1Loss=0.348,RCNNAcc=0.903,RCNNL1Loss=1.805
+[Epoch 1][Batch 3999], Speed: 12.584 samples/sec, RPN_Conf=0.094,RPN_SmoothL1=0.042,RCNN_CrossEntropy=0.246,RCNN_SmoothL1=0.289,RPNAcc=0.956,RPNL1Loss=0.348,RCNNAcc=0.903,RCNNL1Loss=1.800
+[Epoch 1][Batch 4099], Speed: 12.536 samples/sec, RPN_Conf=0.094,RPN_SmoothL1=0.042,RCNN_CrossEntropy=0.246,RCNN_SmoothL1=0.289,RPNAcc=0.956,RPNL1Loss=0.347,RCNNAcc=0.903,RCNNL1Loss=1.795
+[Epoch 1] Training cost: 1319.984, RPN_Conf=0.094,RPN_SmoothL1=0.042,RCNN_CrossEntropy=0.245,RCNN_SmoothL1=0.288
+[Epoch 1] Validation: 
+aeroplane=0.5877019651708051
+bicycle=0.6961980415846502
+bird=0.619214865491774
+boat=0.31918627026992263
+bottle=0.2557385759062828
+bus=0.6746543212934821
+car=0.6478225185136345
+cat=0.7916607384705749
+chair=0.3754514844604594
+cow=0.670108846863142
+diningtable=0.5004132644494651
+dog=0.6805042775584843
+horse=0.7063369063887976
+motorbike=0.628650227629333
+person=0.6531221502155531
+pottedplant=0.24717845009777573
+sheep=0.6392147429921149
+sofa=0.5501709104957943
+train=0.6026107206513132
+tvmonitor=0.42785036385929714
+mAP=0.5636894821181327
+[Epoch 1] mAP 0.5636894821181327 higher than current best [0.40289767311634483] saving to faster_rcnn_resnet50_v1b_voc_best.params
+[Epoch 1] Saving parameters to faster_rcnn_resnet50_v1b_voc_0001_0.5637.params
+[Epoch 2][Batch 99], Speed: 12.011 samples/sec, RPN_Conf=0.087,RPN_SmoothL1=0.044,RCNN_CrossEntropy=0.222,RCNN_SmoothL1=0.252,RPNAcc=0.956,RPNL1Loss=0.347,RCNNAcc=0.903,RCNNL1Loss=1.788
+[Epoch 2][Batch 199], Speed: 12.520 samples/sec, RPN_Conf=0.090,RPN_SmoothL1=0.043,RCNN_CrossEntropy=0.226,RCNN_SmoothL1=0.258,RPNAcc=0.956,RPNL1Loss=0.347,RCNNAcc=0.904,RCNNL1Loss=1.782
+[Epoch 2][Batch 299], Speed: 12.542 samples/sec, RPN_Conf=0.088,RPN_SmoothL1=0.044,RCNN_CrossEntropy=0.227,RCNN_SmoothL1=0.256,RPNAcc=0.956,RPNL1Loss=0.347,RCNNAcc=0.904,RCNNL1Loss=1.776
+[Epoch 2][Batch 399], Speed: 12.558 samples/sec, RPN_Conf=0.088,RPN_SmoothL1=0.043,RCNN_CrossEntropy=0.225,RCNN_SmoothL1=0.258,RPNAcc=0.957,RPNL1Loss=0.347,RCNNAcc=0.904,RCNNL1Loss=1.771
+[Epoch 2][Batch 499], Speed: 12.569 samples/sec, RPN_Conf=0.088,RPN_SmoothL1=0.043,RCNN_CrossEntropy=0.223,RCNN_SmoothL1=0.258,RPNAcc=0.957,RPNL1Loss=0.346,RCNNAcc=0.904,RCNNL1Loss=1.766
+[Epoch 2][Batch 599], Speed: 12.500 samples/sec, RPN_Conf=0.087,RPN_SmoothL1=0.043,RCNN_CrossEntropy=0.219,RCNN_SmoothL1=0.256,RPNAcc=0.957,RPNL1Loss=0.346,RCNNAcc=0.904,RCNNL1Loss=1.761
+[Epoch 2][Batch 699], Speed: 12.597 samples/sec, RPN_Conf=0.087,RPN_SmoothL1=0.043,RCNN_CrossEntropy=0.221,RCNN_SmoothL1=0.257,RPNAcc=0.957,RPNL1Loss=0.346,RCNNAcc=0.905,RCNNL1Loss=1.756
+[Epoch 2][Batch 799], Speed: 12.579 samples/sec, RPN_Conf=0.087,RPN_SmoothL1=0.043,RCNN_CrossEntropy=0.221,RCNN_SmoothL1=0.256,RPNAcc=0.957,RPNL1Loss=0.346,RCNNAcc=0.905,RCNNL1Loss=1.751
+[Epoch 2][Batch 899], Speed: 12.518 samples/sec, RPN_Conf=0.087,RPN_SmoothL1=0.043,RCNN_CrossEntropy=0.223,RCNN_SmoothL1=0.257,RPNAcc=0.957,RPNL1Loss=0.345,RCNNAcc=0.905,RCNNL1Loss=1.746
+[Epoch 2][Batch 999], Speed: 12.590 samples/sec, RPN_Conf=0.088,RPN_SmoothL1=0.043,RCNN_CrossEntropy=0.224,RCNN_SmoothL1=0.257,RPNAcc=0.957,RPNL1Loss=0.345,RCNNAcc=0.905,RCNNL1Loss=1.741
+[Epoch 2][Batch 1099], Speed: 12.448 samples/sec, RPN_Conf=0.087,RPN_SmoothL1=0.042,RCNN_CrossEntropy=0.223,RCNN_SmoothL1=0.256,RPNAcc=0.957,RPNL1Loss=0.345,RCNNAcc=0.905,RCNNL1Loss=1.736
+[Epoch 2][Batch 1199], Speed: 12.439 samples/sec, RPN_Conf=0.087,RPN_SmoothL1=0.042,RCNN_CrossEntropy=0.223,RCNN_SmoothL1=0.256,RPNAcc=0.957,RPNL1Loss=0.345,RCNNAcc=0.905,RCNNL1Loss=1.731
+[Epoch 2][Batch 1299], Speed: 12.533 samples/sec, RPN_Conf=0.087,RPN_SmoothL1=0.042,RCNN_CrossEntropy=0.222,RCNN_SmoothL1=0.256,RPNAcc=0.957,RPNL1Loss=0.344,RCNNAcc=0.906,RCNNL1Loss=1.727
+[Epoch 2][Batch 1399], Speed: 12.622 samples/sec, RPN_Conf=0.087,RPN_SmoothL1=0.042,RCNN_CrossEntropy=0.223,RCNN_SmoothL1=0.256,RPNAcc=0.958,RPNL1Loss=0.344,RCNNAcc=0.906,RCNNL1Loss=1.723
+[Epoch 2][Batch 1499], Speed: 12.576 samples/sec, RPN_Conf=0.086,RPN_SmoothL1=0.042,RCNN_CrossEntropy=0.223,RCNN_SmoothL1=0.256,RPNAcc=0.958,RPNL1Loss=0.344,RCNNAcc=0.906,RCNNL1Loss=1.719
+[Epoch 2][Batch 1599], Speed: 12.484 samples/sec, RPN_Conf=0.086,RPN_SmoothL1=0.042,RCNN_CrossEntropy=0.222,RCNN_SmoothL1=0.255,RPNAcc=0.958,RPNL1Loss=0.344,RCNNAcc=0.906,RCNNL1Loss=1.714
+[Epoch 2][Batch 1699], Speed: 12.537 samples/sec, RPN_Conf=0.086,RPN_SmoothL1=0.041,RCNN_CrossEntropy=0.222,RCNN_SmoothL1=0.256,RPNAcc=0.958,RPNL1Loss=0.343,RCNNAcc=0.906,RCNNL1Loss=1.710
+[Epoch 2][Batch 1799], Speed: 12.594 samples/sec, RPN_Conf=0.086,RPN_SmoothL1=0.041,RCNN_CrossEntropy=0.222,RCNN_SmoothL1=0.255,RPNAcc=0.958,RPNL1Loss=0.343,RCNNAcc=0.906,RCNNL1Loss=1.705
+[Epoch 2][Batch 1899], Speed: 12.538 samples/sec, RPN_Conf=0.086,RPN_SmoothL1=0.041,RCNN_CrossEntropy=0.222,RCNN_SmoothL1=0.255,RPNAcc=0.958,RPNL1Loss=0.342,RCNNAcc=0.907,RCNNL1Loss=1.701
+[Epoch 2][Batch 1999], Speed: 12.383 samples/sec, RPN_Conf=0.085,RPN_SmoothL1=0.041,RCNN_CrossEntropy=0.221,RCNN_SmoothL1=0.255,RPNAcc=0.958,RPNL1Loss=0.342,RCNNAcc=0.907,RCNNL1Loss=1.697
+[Epoch 2][Batch 2099], Speed: 12.455 samples/sec, RPN_Conf=0.085,RPN_SmoothL1=0.041,RCNN_CrossEntropy=0.221,RCNN_SmoothL1=0.255,RPNAcc=0.958,RPNL1Loss=0.342,RCNNAcc=0.907,RCNNL1Loss=1.693
+[Epoch 2][Batch 2199], Speed: 12.556 samples/sec, RPN_Conf=0.085,RPN_SmoothL1=0.041,RCNN_CrossEntropy=0.221,RCNN_SmoothL1=0.255,RPNAcc=0.958,RPNL1Loss=0.342,RCNNAcc=0.907,RCNNL1Loss=1.689
+[Epoch 2][Batch 2299], Speed: 12.454 samples/sec, RPN_Conf=0.085,RPN_SmoothL1=0.041,RCNN_CrossEntropy=0.221,RCNN_SmoothL1=0.254,RPNAcc=0.958,RPNL1Loss=0.341,RCNNAcc=0.907,RCNNL1Loss=1.685
+[Epoch 2][Batch 2399], Speed: 12.578 samples/sec, RPN_Conf=0.085,RPN_SmoothL1=0.041,RCNN_CrossEntropy=0.221,RCNN_SmoothL1=0.254,RPNAcc=0.958,RPNL1Loss=0.341,RCNNAcc=0.907,RCNNL1Loss=1.681
+[Epoch 2][Batch 2499], Speed: 12.554 samples/sec, RPN_Conf=0.085,RPN_SmoothL1=0.041,RCNN_CrossEntropy=0.221,RCNN_SmoothL1=0.254,RPNAcc=0.959,RPNL1Loss=0.341,RCNNAcc=0.907,RCNNL1Loss=1.677
+[Epoch 2][Batch 2599], Speed: 12.574 samples/sec, RPN_Conf=0.084,RPN_SmoothL1=0.041,RCNN_CrossEntropy=0.221,RCNN_SmoothL1=0.253,RPNAcc=0.959,RPNL1Loss=0.340,RCNNAcc=0.908,RCNNL1Loss=1.673
+[Epoch 2][Batch 2699], Speed: 12.522 samples/sec, RPN_Conf=0.084,RPN_SmoothL1=0.041,RCNN_CrossEntropy=0.221,RCNN_SmoothL1=0.253,RPNAcc=0.959,RPNL1Loss=0.340,RCNNAcc=0.908,RCNNL1Loss=1.669
+[Epoch 2][Batch 2799], Speed: 12.456 samples/sec, RPN_Conf=0.084,RPN_SmoothL1=0.041,RCNN_CrossEntropy=0.220,RCNN_SmoothL1=0.253,RPNAcc=0.959,RPNL1Loss=0.340,RCNNAcc=0.908,RCNNL1Loss=1.665
+[Epoch 2][Batch 2899], Speed: 12.469 samples/sec, RPN_Conf=0.084,RPN_SmoothL1=0.041,RCNN_CrossEntropy=0.220,RCNN_SmoothL1=0.253,RPNAcc=0.959,RPNL1Loss=0.339,RCNNAcc=0.908,RCNNL1Loss=1.661
+[Epoch 2][Batch 2999], Speed: 12.541 samples/sec, RPN_Conf=0.084,RPN_SmoothL1=0.041,RCNN_CrossEntropy=0.220,RCNN_SmoothL1=0.253,RPNAcc=0.959,RPNL1Loss=0.339,RCNNAcc=0.908,RCNNL1Loss=1.657
+[Epoch 2][Batch 3099], Speed: 12.548 samples/sec, RPN_Conf=0.084,RPN_SmoothL1=0.041,RCNN_CrossEntropy=0.220,RCNN_SmoothL1=0.252,RPNAcc=0.959,RPNL1Loss=0.339,RCNNAcc=0.908,RCNNL1Loss=1.653
+[Epoch 2][Batch 3199], Speed: 12.496 samples/sec, RPN_Conf=0.084,RPN_SmoothL1=0.041,RCNN_CrossEntropy=0.220,RCNN_SmoothL1=0.252,RPNAcc=0.959,RPNL1Loss=0.339,RCNNAcc=0.908,RCNNL1Loss=1.650
+[Epoch 2][Batch 3299], Speed: 12.567 samples/sec, RPN_Conf=0.084,RPN_SmoothL1=0.041,RCNN_CrossEntropy=0.220,RCNN_SmoothL1=0.252,RPNAcc=0.959,RPNL1Loss=0.338,RCNNAcc=0.909,RCNNL1Loss=1.647
+[Epoch 2][Batch 3399], Speed: 12.440 samples/sec, RPN_Conf=0.084,RPN_SmoothL1=0.040,RCNN_CrossEntropy=0.220,RCNN_SmoothL1=0.252,RPNAcc=0.959,RPNL1Loss=0.338,RCNNAcc=0.909,RCNNL1Loss=1.644
+[Epoch 2][Batch 3499], Speed: 12.504 samples/sec, RPN_Conf=0.083,RPN_SmoothL1=0.040,RCNN_CrossEntropy=0.219,RCNN_SmoothL1=0.251,RPNAcc=0.959,RPNL1Loss=0.338,RCNNAcc=0.909,RCNNL1Loss=1.640
+[Epoch 2][Batch 3599], Speed: 12.510 samples/sec, RPN_Conf=0.083,RPN_SmoothL1=0.040,RCNN_CrossEntropy=0.219,RCNN_SmoothL1=0.251,RPNAcc=0.959,RPNL1Loss=0.338,RCNNAcc=0.909,RCNNL1Loss=1.636
+[Epoch 2][Batch 3699], Speed: 12.564 samples/sec, RPN_Conf=0.083,RPN_SmoothL1=0.040,RCNN_CrossEntropy=0.219,RCNN_SmoothL1=0.251,RPNAcc=0.960,RPNL1Loss=0.337,RCNNAcc=0.909,RCNNL1Loss=1.633
+[Epoch 2][Batch 3799], Speed: 12.512 samples/sec, RPN_Conf=0.083,RPN_SmoothL1=0.040,RCNN_CrossEntropy=0.219,RCNN_SmoothL1=0.251,RPNAcc=0.960,RPNL1Loss=0.337,RCNNAcc=0.909,RCNNL1Loss=1.630
+[Epoch 2][Batch 3899], Speed: 12.519 samples/sec, RPN_Conf=0.083,RPN_SmoothL1=0.040,RCNN_CrossEntropy=0.219,RCNN_SmoothL1=0.250,RPNAcc=0.960,RPNL1Loss=0.337,RCNNAcc=0.909,RCNNL1Loss=1.626
+[Epoch 2][Batch 3999], Speed: 12.575 samples/sec, RPN_Conf=0.083,RPN_SmoothL1=0.040,RCNN_CrossEntropy=0.219,RCNN_SmoothL1=0.250,RPNAcc=0.960,RPNL1Loss=0.337,RCNNAcc=0.909,RCNNL1Loss=1.623
+[Epoch 2][Batch 4099], Speed: 12.639 samples/sec, RPN_Conf=0.083,RPN_SmoothL1=0.040,RCNN_CrossEntropy=0.219,RCNN_SmoothL1=0.250,RPNAcc=0.960,RPNL1Loss=0.336,RCNNAcc=0.910,RCNNL1Loss=1.620
+[Epoch 2] Training cost: 1322.093, RPN_Conf=0.083,RPN_SmoothL1=0.040,RCNN_CrossEntropy=0.219,RCNN_SmoothL1=0.250
+[Epoch 2] Validation: 
+aeroplane=0.6876513522908287
+bicycle=0.722076039543984
+bird=0.7233143814038251
+boat=0.4892684097717091
+bottle=0.4265504324933242
+bus=0.7491394919767586
+car=0.7419929504882744
+cat=0.7647609036860549
+chair=0.42380709539759237
+cow=0.6900365720779894
+diningtable=0.5726927464916648
+dog=0.7964466392931737
+horse=0.7691884286070039
+motorbike=0.7379811190507286
+person=0.7089165785203265
+pottedplant=0.36082076542079894
+sheep=0.6680963670022276
+sofa=0.6403178911881335
+train=0.7129852775915025
+tvmonitor=0.6101619639862427
+mAP=0.6498102703141072
+[Epoch 2] mAP 0.6498102703141072 higher than current best [0.5636894821181327] saving to faster_rcnn_resnet50_v1b_voc_best.params
+[Epoch 2] Saving parameters to faster_rcnn_resnet50_v1b_voc_0002_0.6498.params
+[Epoch 3][Batch 99], Speed: 11.321 samples/sec, RPN_Conf=0.075,RPN_SmoothL1=0.036,RCNN_CrossEntropy=0.190,RCNN_SmoothL1=0.243,RPNAcc=0.960,RPNL1Loss=0.336,RCNNAcc=0.910,RCNNL1Loss=1.616
+[Epoch 3][Batch 199], Speed: 12.365 samples/sec, RPN_Conf=0.081,RPN_SmoothL1=0.038,RCNN_CrossEntropy=0.199,RCNN_SmoothL1=0.247,RPNAcc=0.960,RPNL1Loss=0.336,RCNNAcc=0.910,RCNNL1Loss=1.613
+[Epoch 3][Batch 299], Speed: 12.474 samples/sec, RPN_Conf=0.082,RPN_SmoothL1=0.039,RCNN_CrossEntropy=0.202,RCNN_SmoothL1=0.242,RPNAcc=0.960,RPNL1Loss=0.336,RCNNAcc=0.910,RCNNL1Loss=1.609
+[Epoch 3][Batch 399], Speed: 12.423 samples/sec, RPN_Conf=0.080,RPN_SmoothL1=0.039,RCNN_CrossEntropy=0.201,RCNN_SmoothL1=0.238,RPNAcc=0.960,RPNL1Loss=0.335,RCNNAcc=0.910,RCNNL1Loss=1.605
+[Epoch 3][Batch 499], Speed: 12.679 samples/sec, RPN_Conf=0.079,RPN_SmoothL1=0.039,RCNN_CrossEntropy=0.200,RCNN_SmoothL1=0.237,RPNAcc=0.960,RPNL1Loss=0.335,RCNNAcc=0.910,RCNNL1Loss=1.602
+[Epoch 3][Batch 599], Speed: 12.599 samples/sec, RPN_Conf=0.078,RPN_SmoothL1=0.039,RCNN_CrossEntropy=0.200,RCNN_SmoothL1=0.236,RPNAcc=0.960,RPNL1Loss=0.335,RCNNAcc=0.910,RCNNL1Loss=1.599
+[Epoch 3][Batch 699], Speed: 12.507 samples/sec, RPN_Conf=0.078,RPN_SmoothL1=0.038,RCNN_CrossEntropy=0.201,RCNN_SmoothL1=0.237,RPNAcc=0.960,RPNL1Loss=0.335,RCNNAcc=0.911,RCNNL1Loss=1.596
+[Epoch 3][Batch 799], Speed: 12.581 samples/sec, RPN_Conf=0.078,RPN_SmoothL1=0.038,RCNN_CrossEntropy=0.201,RCNN_SmoothL1=0.236,RPNAcc=0.960,RPNL1Loss=0.334,RCNNAcc=0.911,RCNNL1Loss=1.593
+[Epoch 3][Batch 899], Speed: 12.472 samples/sec, RPN_Conf=0.078,RPN_SmoothL1=0.039,RCNN_CrossEntropy=0.201,RCNN_SmoothL1=0.236,RPNAcc=0.960,RPNL1Loss=0.334,RCNNAcc=0.911,RCNNL1Loss=1.590
+[Epoch 3][Batch 999], Speed: 12.503 samples/sec, RPN_Conf=0.078,RPN_SmoothL1=0.039,RCNN_CrossEntropy=0.201,RCNN_SmoothL1=0.235,RPNAcc=0.961,RPNL1Loss=0.334,RCNNAcc=0.911,RCNNL1Loss=1.586
+[Epoch 3][Batch 1099], Speed: 12.513 samples/sec, RPN_Conf=0.078,RPN_SmoothL1=0.039,RCNN_CrossEntropy=0.202,RCNN_SmoothL1=0.234,RPNAcc=0.961,RPNL1Loss=0.334,RCNNAcc=0.911,RCNNL1Loss=1.583
+[Epoch 3][Batch 1199], Speed: 12.502 samples/sec, RPN_Conf=0.078,RPN_SmoothL1=0.039,RCNN_CrossEntropy=0.201,RCNN_SmoothL1=0.234,RPNAcc=0.961,RPNL1Loss=0.334,RCNNAcc=0.911,RCNNL1Loss=1.580
+[Epoch 3][Batch 1299], Speed: 12.485 samples/sec, RPN_Conf=0.078,RPN_SmoothL1=0.039,RCNN_CrossEntropy=0.201,RCNN_SmoothL1=0.233,RPNAcc=0.961,RPNL1Loss=0.333,RCNNAcc=0.911,RCNNL1Loss=1.577
+[Epoch 3][Batch 1399], Speed: 12.489 samples/sec, RPN_Conf=0.078,RPN_SmoothL1=0.039,RCNN_CrossEntropy=0.202,RCNN_SmoothL1=0.234,RPNAcc=0.961,RPNL1Loss=0.333,RCNNAcc=0.911,RCNNL1Loss=1.574
+[Epoch 3][Batch 1499], Speed: 12.495 samples/sec, RPN_Conf=0.078,RPN_SmoothL1=0.039,RCNN_CrossEntropy=0.202,RCNN_SmoothL1=0.232,RPNAcc=0.961,RPNL1Loss=0.333,RCNNAcc=0.912,RCNNL1Loss=1.571
+[Epoch 3][Batch 1599], Speed: 12.425 samples/sec, RPN_Conf=0.078,RPN_SmoothL1=0.039,RCNN_CrossEntropy=0.202,RCNN_SmoothL1=0.233,RPNAcc=0.961,RPNL1Loss=0.333,RCNNAcc=0.912,RCNNL1Loss=1.568
+[Epoch 3][Batch 1699], Speed: 12.533 samples/sec, RPN_Conf=0.078,RPN_SmoothL1=0.039,RCNN_CrossEntropy=0.202,RCNN_SmoothL1=0.233,RPNAcc=0.961,RPNL1Loss=0.333,RCNNAcc=0.912,RCNNL1Loss=1.565
+[Epoch 3][Batch 1799], Speed: 12.555 samples/sec, RPN_Conf=0.078,RPN_SmoothL1=0.039,RCNN_CrossEntropy=0.201,RCNN_SmoothL1=0.232,RPNAcc=0.961,RPNL1Loss=0.332,RCNNAcc=0.912,RCNNL1Loss=1.562
+[Epoch 3][Batch 1899], Speed: 12.488 samples/sec, RPN_Conf=0.078,RPN_SmoothL1=0.039,RCNN_CrossEntropy=0.201,RCNN_SmoothL1=0.232,RPNAcc=0.961,RPNL1Loss=0.332,RCNNAcc=0.912,RCNNL1Loss=1.559
+[Epoch 3][Batch 1999], Speed: 12.501 samples/sec, RPN_Conf=0.078,RPN_SmoothL1=0.039,RCNN_CrossEntropy=0.200,RCNN_SmoothL1=0.232,RPNAcc=0.961,RPNL1Loss=0.332,RCNNAcc=0.912,RCNNL1Loss=1.556
+[Epoch 3][Batch 2099], Speed: 12.459 samples/sec, RPN_Conf=0.078,RPN_SmoothL1=0.039,RCNN_CrossEntropy=0.201,RCNN_SmoothL1=0.232,RPNAcc=0.961,RPNL1Loss=0.332,RCNNAcc=0.912,RCNNL1Loss=1.553
+[Epoch 3][Batch 2199], Speed: 12.538 samples/sec, RPN_Conf=0.078,RPN_SmoothL1=0.039,RCNN_CrossEntropy=0.201,RCNN_SmoothL1=0.232,RPNAcc=0.961,RPNL1Loss=0.332,RCNNAcc=0.912,RCNNL1Loss=1.551
+[Epoch 3][Batch 2299], Speed: 12.471 samples/sec, RPN_Conf=0.078,RPN_SmoothL1=0.039,RCNN_CrossEntropy=0.201,RCNN_SmoothL1=0.232,RPNAcc=0.961,RPNL1Loss=0.331,RCNNAcc=0.912,RCNNL1Loss=1.548
+[Epoch 3][Batch 2399], Speed: 12.554 samples/sec, RPN_Conf=0.078,RPN_SmoothL1=0.039,RCNN_CrossEntropy=0.201,RCNN_SmoothL1=0.232,RPNAcc=0.961,RPNL1Loss=0.331,RCNNAcc=0.913,RCNNL1Loss=1.546
+[Epoch 3][Batch 2499], Speed: 12.594 samples/sec, RPN_Conf=0.078,RPN_SmoothL1=0.039,RCNN_CrossEntropy=0.201,RCNN_SmoothL1=0.232,RPNAcc=0.961,RPNL1Loss=0.331,RCNNAcc=0.913,RCNNL1Loss=1.543
+[Epoch 3][Batch 2599], Speed: 12.396 samples/sec, RPN_Conf=0.078,RPN_SmoothL1=0.039,RCNN_CrossEntropy=0.201,RCNN_SmoothL1=0.232,RPNAcc=0.961,RPNL1Loss=0.331,RCNNAcc=0.913,RCNNL1Loss=1.540
+[Epoch 3][Batch 2699], Speed: 12.534 samples/sec, RPN_Conf=0.078,RPN_SmoothL1=0.039,RCNN_CrossEntropy=0.201,RCNN_SmoothL1=0.232,RPNAcc=0.962,RPNL1Loss=0.331,RCNNAcc=0.913,RCNNL1Loss=1.537
+[Epoch 3][Batch 2799], Speed: 12.486 samples/sec, RPN_Conf=0.078,RPN_SmoothL1=0.039,RCNN_CrossEntropy=0.201,RCNN_SmoothL1=0.232,RPNAcc=0.962,RPNL1Loss=0.330,RCNNAcc=0.913,RCNNL1Loss=1.535
+[Epoch 3][Batch 2899], Speed: 12.588 samples/sec, RPN_Conf=0.077,RPN_SmoothL1=0.039,RCNN_CrossEntropy=0.201,RCNN_SmoothL1=0.232,RPNAcc=0.962,RPNL1Loss=0.330,RCNNAcc=0.913,RCNNL1Loss=1.532
+[Epoch 3][Batch 2999], Speed: 12.459 samples/sec, RPN_Conf=0.077,RPN_SmoothL1=0.039,RCNN_CrossEntropy=0.201,RCNN_SmoothL1=0.231,RPNAcc=0.962,RPNL1Loss=0.330,RCNNAcc=0.913,RCNNL1Loss=1.529
+[Epoch 3][Batch 3099], Speed: 12.531 samples/sec, RPN_Conf=0.077,RPN_SmoothL1=0.039,RCNN_CrossEntropy=0.201,RCNN_SmoothL1=0.231,RPNAcc=0.962,RPNL1Loss=0.330,RCNNAcc=0.913,RCNNL1Loss=1.527
+[Epoch 3][Batch 3199], Speed: 12.507 samples/sec, RPN_Conf=0.077,RPN_SmoothL1=0.039,RCNN_CrossEntropy=0.201,RCNN_SmoothL1=0.231,RPNAcc=0.962,RPNL1Loss=0.330,RCNNAcc=0.913,RCNNL1Loss=1.525
+[Epoch 3][Batch 3299], Speed: 12.588 samples/sec, RPN_Conf=0.077,RPN_SmoothL1=0.039,RCNN_CrossEntropy=0.201,RCNN_SmoothL1=0.231,RPNAcc=0.962,RPNL1Loss=0.330,RCNNAcc=0.913,RCNNL1Loss=1.522
+[Epoch 3][Batch 3399], Speed: 12.505 samples/sec, RPN_Conf=0.077,RPN_SmoothL1=0.039,RCNN_CrossEntropy=0.201,RCNN_SmoothL1=0.230,RPNAcc=0.962,RPNL1Loss=0.330,RCNNAcc=0.914,RCNNL1Loss=1.519
+[Epoch 3][Batch 3499], Speed: 12.656 samples/sec, RPN_Conf=0.077,RPN_SmoothL1=0.039,RCNN_CrossEntropy=0.201,RCNN_SmoothL1=0.230,RPNAcc=0.962,RPNL1Loss=0.329,RCNNAcc=0.914,RCNNL1Loss=1.517
+[Epoch 3][Batch 3599], Speed: 12.563 samples/sec, RPN_Conf=0.077,RPN_SmoothL1=0.039,RCNN_CrossEntropy=0.201,RCNN_SmoothL1=0.230,RPNAcc=0.962,RPNL1Loss=0.329,RCNNAcc=0.914,RCNNL1Loss=1.514
+[Epoch 3][Batch 3699], Speed: 12.486 samples/sec, RPN_Conf=0.077,RPN_SmoothL1=0.039,RCNN_CrossEntropy=0.201,RCNN_SmoothL1=0.230,RPNAcc=0.962,RPNL1Loss=0.329,RCNNAcc=0.914,RCNNL1Loss=1.512
+[Epoch 3][Batch 3799], Speed: 12.504 samples/sec, RPN_Conf=0.077,RPN_SmoothL1=0.039,RCNN_CrossEntropy=0.201,RCNN_SmoothL1=0.230,RPNAcc=0.962,RPNL1Loss=0.329,RCNNAcc=0.914,RCNNL1Loss=1.510
+[Epoch 3][Batch 3899], Speed: 12.537 samples/sec, RPN_Conf=0.077,RPN_SmoothL1=0.039,RCNN_CrossEntropy=0.201,RCNN_SmoothL1=0.230,RPNAcc=0.962,RPNL1Loss=0.329,RCNNAcc=0.914,RCNNL1Loss=1.508
+[Epoch 3][Batch 3999], Speed: 12.470 samples/sec, RPN_Conf=0.077,RPN_SmoothL1=0.039,RCNN_CrossEntropy=0.201,RCNN_SmoothL1=0.230,RPNAcc=0.962,RPNL1Loss=0.329,RCNNAcc=0.914,RCNNL1Loss=1.505
+[Epoch 3][Batch 4099], Speed: 12.501 samples/sec, RPN_Conf=0.076,RPN_SmoothL1=0.039,RCNN_CrossEntropy=0.202,RCNN_SmoothL1=0.230,RPNAcc=0.962,RPNL1Loss=0.328,RCNNAcc=0.914,RCNNL1Loss=1.503
+[Epoch 3] Training cost: 1325.841, RPN_Conf=0.076,RPN_SmoothL1=0.039,RCNN_CrossEntropy=0.201,RCNN_SmoothL1=0.229
+[Epoch 3] Validation: 
+aeroplane=0.7159663887239858
+bicycle=0.7727834604391705
+bird=0.6936055198078541
+boat=0.5379710882682034
+bottle=0.5128664900551
+bus=0.7236932558379998
+car=0.7743079487900704
+cat=0.7938245400858386
+chair=0.49487150913598754
+cow=0.7634054374644708
+diningtable=0.5959975803116669
+dog=0.7912815721025682
+horse=0.778505727684142
+motorbike=0.7342834760680662
+person=0.7326938646238527
+pottedplant=0.36460972925347385
+sheep=0.725827509307815
+sofa=0.5915965353881285
+train=0.7109409567062015
+tvmonitor=0.6157185971015758
+mAP=0.6712375593578085
+[Epoch 3] mAP 0.6712375593578085 higher than current best [0.6498102703141072] saving to faster_rcnn_resnet50_v1b_voc_best.params
+[Epoch 3] Saving parameters to faster_rcnn_resnet50_v1b_voc_0003_0.6712.params
+[Epoch 4][Batch 99], Speed: 12.035 samples/sec, RPN_Conf=0.078,RPN_SmoothL1=0.040,RCNN_CrossEntropy=0.191,RCNN_SmoothL1=0.225,RPNAcc=0.962,RPNL1Loss=0.328,RCNNAcc=0.914,RCNNL1Loss=1.500
+[Epoch 4][Batch 199], Speed: 12.564 samples/sec, RPN_Conf=0.077,RPN_SmoothL1=0.038,RCNN_CrossEntropy=0.188,RCNN_SmoothL1=0.219,RPNAcc=0.962,RPNL1Loss=0.328,RCNNAcc=0.914,RCNNL1Loss=1.497
+[Epoch 4][Batch 299], Speed: 12.493 samples/sec, RPN_Conf=0.073,RPN_SmoothL1=0.036,RCNN_CrossEntropy=0.187,RCNN_SmoothL1=0.215,RPNAcc=0.963,RPNL1Loss=0.328,RCNNAcc=0.915,RCNNL1Loss=1.495
+[Epoch 4][Batch 399], Speed: 12.554 samples/sec, RPN_Conf=0.072,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.186,RCNN_SmoothL1=0.215,RPNAcc=0.963,RPNL1Loss=0.327,RCNNAcc=0.915,RCNNL1Loss=1.492
+[Epoch 4][Batch 499], Speed: 12.498 samples/sec, RPN_Conf=0.072,RPN_SmoothL1=0.036,RCNN_CrossEntropy=0.187,RCNN_SmoothL1=0.217,RPNAcc=0.963,RPNL1Loss=0.327,RCNNAcc=0.915,RCNNL1Loss=1.490
+[Epoch 4][Batch 599], Speed: 12.429 samples/sec, RPN_Conf=0.073,RPN_SmoothL1=0.036,RCNN_CrossEntropy=0.188,RCNN_SmoothL1=0.217,RPNAcc=0.963,RPNL1Loss=0.327,RCNNAcc=0.915,RCNNL1Loss=1.487
+[Epoch 4][Batch 699], Speed: 12.560 samples/sec, RPN_Conf=0.072,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.186,RCNN_SmoothL1=0.215,RPNAcc=0.963,RPNL1Loss=0.327,RCNNAcc=0.915,RCNNL1Loss=1.485
+[Epoch 4][Batch 799], Speed: 12.566 samples/sec, RPN_Conf=0.072,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.187,RCNN_SmoothL1=0.216,RPNAcc=0.963,RPNL1Loss=0.327,RCNNAcc=0.915,RCNNL1Loss=1.482
+[Epoch 4][Batch 899], Speed: 12.506 samples/sec, RPN_Conf=0.072,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.186,RCNN_SmoothL1=0.216,RPNAcc=0.963,RPNL1Loss=0.327,RCNNAcc=0.915,RCNNL1Loss=1.480
+[Epoch 4][Batch 999], Speed: 12.546 samples/sec, RPN_Conf=0.072,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.187,RCNN_SmoothL1=0.216,RPNAcc=0.963,RPNL1Loss=0.327,RCNNAcc=0.915,RCNNL1Loss=1.478
+[Epoch 4][Batch 1099], Speed: 12.516 samples/sec, RPN_Conf=0.072,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.188,RCNN_SmoothL1=0.216,RPNAcc=0.963,RPNL1Loss=0.326,RCNNAcc=0.915,RCNNL1Loss=1.476
+[Epoch 4][Batch 1199], Speed: 12.579 samples/sec, RPN_Conf=0.072,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.188,RCNN_SmoothL1=0.216,RPNAcc=0.963,RPNL1Loss=0.326,RCNNAcc=0.915,RCNNL1Loss=1.473
+[Epoch 4][Batch 1299], Speed: 12.517 samples/sec, RPN_Conf=0.073,RPN_SmoothL1=0.038,RCNN_CrossEntropy=0.189,RCNN_SmoothL1=0.216,RPNAcc=0.963,RPNL1Loss=0.326,RCNNAcc=0.916,RCNNL1Loss=1.471
+[Epoch 4][Batch 1399], Speed: 12.471 samples/sec, RPN_Conf=0.073,RPN_SmoothL1=0.038,RCNN_CrossEntropy=0.189,RCNN_SmoothL1=0.217,RPNAcc=0.963,RPNL1Loss=0.326,RCNNAcc=0.916,RCNNL1Loss=1.469
+[Epoch 4][Batch 1499], Speed: 12.538 samples/sec, RPN_Conf=0.072,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.189,RCNN_SmoothL1=0.216,RPNAcc=0.963,RPNL1Loss=0.326,RCNNAcc=0.916,RCNNL1Loss=1.467
+[Epoch 4][Batch 1599], Speed: 12.541 samples/sec, RPN_Conf=0.072,RPN_SmoothL1=0.038,RCNN_CrossEntropy=0.189,RCNN_SmoothL1=0.216,RPNAcc=0.963,RPNL1Loss=0.325,RCNNAcc=0.916,RCNNL1Loss=1.465
+[Epoch 4][Batch 1699], Speed: 12.542 samples/sec, RPN_Conf=0.072,RPN_SmoothL1=0.038,RCNN_CrossEntropy=0.189,RCNN_SmoothL1=0.216,RPNAcc=0.963,RPNL1Loss=0.325,RCNNAcc=0.916,RCNNL1Loss=1.462
+[Epoch 4][Batch 1799], Speed: 12.500 samples/sec, RPN_Conf=0.072,RPN_SmoothL1=0.038,RCNN_CrossEntropy=0.190,RCNN_SmoothL1=0.216,RPNAcc=0.963,RPNL1Loss=0.325,RCNNAcc=0.916,RCNNL1Loss=1.460
+[Epoch 4][Batch 1899], Speed: 12.537 samples/sec, RPN_Conf=0.072,RPN_SmoothL1=0.038,RCNN_CrossEntropy=0.189,RCNN_SmoothL1=0.216,RPNAcc=0.963,RPNL1Loss=0.325,RCNNAcc=0.916,RCNNL1Loss=1.458
+[Epoch 4][Batch 1999], Speed: 12.470 samples/sec, RPN_Conf=0.072,RPN_SmoothL1=0.038,RCNN_CrossEntropy=0.190,RCNN_SmoothL1=0.216,RPNAcc=0.963,RPNL1Loss=0.325,RCNNAcc=0.916,RCNNL1Loss=1.456
+[Epoch 4][Batch 2099], Speed: 12.495 samples/sec, RPN_Conf=0.072,RPN_SmoothL1=0.038,RCNN_CrossEntropy=0.189,RCNN_SmoothL1=0.216,RPNAcc=0.963,RPNL1Loss=0.325,RCNNAcc=0.916,RCNNL1Loss=1.454
+[Epoch 4][Batch 2199], Speed: 12.503 samples/sec, RPN_Conf=0.072,RPN_SmoothL1=0.038,RCNN_CrossEntropy=0.189,RCNN_SmoothL1=0.216,RPNAcc=0.964,RPNL1Loss=0.324,RCNNAcc=0.916,RCNNL1Loss=1.452
+[Epoch 4][Batch 2299], Speed: 12.429 samples/sec, RPN_Conf=0.072,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.189,RCNN_SmoothL1=0.216,RPNAcc=0.964,RPNL1Loss=0.324,RCNNAcc=0.916,RCNNL1Loss=1.450
+[Epoch 4][Batch 2399], Speed: 12.536 samples/sec, RPN_Conf=0.072,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.189,RCNN_SmoothL1=0.216,RPNAcc=0.964,RPNL1Loss=0.324,RCNNAcc=0.916,RCNNL1Loss=1.448
+[Epoch 4][Batch 2499], Speed: 12.469 samples/sec, RPN_Conf=0.072,RPN_SmoothL1=0.038,RCNN_CrossEntropy=0.189,RCNN_SmoothL1=0.216,RPNAcc=0.964,RPNL1Loss=0.324,RCNNAcc=0.917,RCNNL1Loss=1.445
+[Epoch 4][Batch 2599], Speed: 12.520 samples/sec, RPN_Conf=0.072,RPN_SmoothL1=0.038,RCNN_CrossEntropy=0.189,RCNN_SmoothL1=0.216,RPNAcc=0.964,RPNL1Loss=0.324,RCNNAcc=0.917,RCNNL1Loss=1.443
+[Epoch 4][Batch 2699], Speed: 12.546 samples/sec, RPN_Conf=0.072,RPN_SmoothL1=0.038,RCNN_CrossEntropy=0.190,RCNN_SmoothL1=0.216,RPNAcc=0.964,RPNL1Loss=0.324,RCNNAcc=0.917,RCNNL1Loss=1.442
+[Epoch 4][Batch 2799], Speed: 12.543 samples/sec, RPN_Conf=0.072,RPN_SmoothL1=0.038,RCNN_CrossEntropy=0.190,RCNN_SmoothL1=0.216,RPNAcc=0.964,RPNL1Loss=0.324,RCNNAcc=0.917,RCNNL1Loss=1.440
+[Epoch 4][Batch 2899], Speed: 12.514 samples/sec, RPN_Conf=0.072,RPN_SmoothL1=0.038,RCNN_CrossEntropy=0.190,RCNN_SmoothL1=0.215,RPNAcc=0.964,RPNL1Loss=0.324,RCNNAcc=0.917,RCNNL1Loss=1.438
+[Epoch 4][Batch 2999], Speed: 12.467 samples/sec, RPN_Conf=0.072,RPN_SmoothL1=0.038,RCNN_CrossEntropy=0.190,RCNN_SmoothL1=0.215,RPNAcc=0.964,RPNL1Loss=0.323,RCNNAcc=0.917,RCNNL1Loss=1.435
+[Epoch 4][Batch 3099], Speed: 12.532 samples/sec, RPN_Conf=0.072,RPN_SmoothL1=0.038,RCNN_CrossEntropy=0.190,RCNN_SmoothL1=0.214,RPNAcc=0.964,RPNL1Loss=0.323,RCNNAcc=0.917,RCNNL1Loss=1.433
+[Epoch 4][Batch 3199], Speed: 12.527 samples/sec, RPN_Conf=0.072,RPN_SmoothL1=0.038,RCNN_CrossEntropy=0.190,RCNN_SmoothL1=0.215,RPNAcc=0.964,RPNL1Loss=0.323,RCNNAcc=0.917,RCNNL1Loss=1.431
+[Epoch 4][Batch 3299], Speed: 12.499 samples/sec, RPN_Conf=0.072,RPN_SmoothL1=0.038,RCNN_CrossEntropy=0.190,RCNN_SmoothL1=0.214,RPNAcc=0.964,RPNL1Loss=0.323,RCNNAcc=0.917,RCNNL1Loss=1.429
+[Epoch 4][Batch 3399], Speed: 12.484 samples/sec, RPN_Conf=0.072,RPN_SmoothL1=0.038,RCNN_CrossEntropy=0.190,RCNN_SmoothL1=0.214,RPNAcc=0.964,RPNL1Loss=0.323,RCNNAcc=0.917,RCNNL1Loss=1.427
+[Epoch 4][Batch 3499], Speed: 12.427 samples/sec, RPN_Conf=0.072,RPN_SmoothL1=0.038,RCNN_CrossEntropy=0.190,RCNN_SmoothL1=0.214,RPNAcc=0.964,RPNL1Loss=0.323,RCNNAcc=0.917,RCNNL1Loss=1.426
+[Epoch 4][Batch 3599], Speed: 12.503 samples/sec, RPN_Conf=0.072,RPN_SmoothL1=0.038,RCNN_CrossEntropy=0.190,RCNN_SmoothL1=0.214,RPNAcc=0.964,RPNL1Loss=0.323,RCNNAcc=0.917,RCNNL1Loss=1.424
+[Epoch 4][Batch 3699], Speed: 12.429 samples/sec, RPN_Conf=0.072,RPN_SmoothL1=0.038,RCNN_CrossEntropy=0.190,RCNN_SmoothL1=0.214,RPNAcc=0.964,RPNL1Loss=0.323,RCNNAcc=0.917,RCNNL1Loss=1.422
+[Epoch 4][Batch 3799], Speed: 12.540 samples/sec, RPN_Conf=0.072,RPN_SmoothL1=0.038,RCNN_CrossEntropy=0.190,RCNN_SmoothL1=0.214,RPNAcc=0.964,RPNL1Loss=0.322,RCNNAcc=0.917,RCNNL1Loss=1.420
+[Epoch 4][Batch 3899], Speed: 12.472 samples/sec, RPN_Conf=0.072,RPN_SmoothL1=0.038,RCNN_CrossEntropy=0.190,RCNN_SmoothL1=0.214,RPNAcc=0.964,RPNL1Loss=0.322,RCNNAcc=0.918,RCNNL1Loss=1.419
+[Epoch 4][Batch 3999], Speed: 12.562 samples/sec, RPN_Conf=0.072,RPN_SmoothL1=0.038,RCNN_CrossEntropy=0.190,RCNN_SmoothL1=0.214,RPNAcc=0.964,RPNL1Loss=0.322,RCNNAcc=0.918,RCNNL1Loss=1.417
+[Epoch 4][Batch 4099], Speed: 12.533 samples/sec, RPN_Conf=0.072,RPN_SmoothL1=0.038,RCNN_CrossEntropy=0.191,RCNN_SmoothL1=0.214,RPNAcc=0.964,RPNL1Loss=0.322,RCNNAcc=0.918,RCNNL1Loss=1.415
+[Epoch 4] Training cost: 1323.737, RPN_Conf=0.072,RPN_SmoothL1=0.038,RCNN_CrossEntropy=0.191,RCNN_SmoothL1=0.214
+[Epoch 4] Validation: 
+aeroplane=0.7099084019262064
+bicycle=0.7888003886886562
+bird=0.7188494701602031
+boat=0.5677247302865857
+bottle=0.5198538832990829
+bus=0.7721254433042649
+car=0.789921933647854
+cat=0.8199050859003604
+chair=0.5021952031116814
+cow=0.7832943414663099
+diningtable=0.5517449612638307
+dog=0.7903019335460336
+horse=0.8302318694883399
+motorbike=0.7516831416579115
+person=0.7471599008642417
+pottedplant=0.40233293805012155
+sheep=0.729889004639813
+sofa=0.643955756490758
+train=0.7257921173653458
+tvmonitor=0.6907143880702866
+mAP=0.6918192446613942
+[Epoch 4] mAP 0.6918192446613942 higher than current best [0.6712375593578085] saving to faster_rcnn_resnet50_v1b_voc_best.params
+[Epoch 4] Saving parameters to faster_rcnn_resnet50_v1b_voc_0004_0.6918.params
+[Epoch 5][Batch 99], Speed: 11.756 samples/sec, RPN_Conf=0.069,RPN_SmoothL1=0.036,RCNN_CrossEntropy=0.181,RCNN_SmoothL1=0.218,RPNAcc=0.964,RPNL1Loss=0.322,RCNNAcc=0.918,RCNNL1Loss=1.413
+[Epoch 5][Batch 199], Speed: 12.325 samples/sec, RPN_Conf=0.069,RPN_SmoothL1=0.038,RCNN_CrossEntropy=0.178,RCNN_SmoothL1=0.209,RPNAcc=0.964,RPNL1Loss=0.322,RCNNAcc=0.918,RCNNL1Loss=1.411
+[Epoch 5][Batch 299], Speed: 12.483 samples/sec, RPN_Conf=0.068,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.181,RCNN_SmoothL1=0.206,RPNAcc=0.964,RPNL1Loss=0.322,RCNNAcc=0.918,RCNNL1Loss=1.409
+[Epoch 5][Batch 399], Speed: 12.482 samples/sec, RPN_Conf=0.068,RPN_SmoothL1=0.038,RCNN_CrossEntropy=0.178,RCNN_SmoothL1=0.206,RPNAcc=0.964,RPNL1Loss=0.322,RCNNAcc=0.918,RCNNL1Loss=1.407
+[Epoch 5][Batch 499], Speed: 12.550 samples/sec, RPN_Conf=0.069,RPN_SmoothL1=0.038,RCNN_CrossEntropy=0.177,RCNN_SmoothL1=0.206,RPNAcc=0.964,RPNL1Loss=0.321,RCNNAcc=0.918,RCNNL1Loss=1.405
+[Epoch 5][Batch 599], Speed: 12.476 samples/sec, RPN_Conf=0.070,RPN_SmoothL1=0.038,RCNN_CrossEntropy=0.178,RCNN_SmoothL1=0.206,RPNAcc=0.964,RPNL1Loss=0.321,RCNNAcc=0.918,RCNNL1Loss=1.403
+[Epoch 5][Batch 699], Speed: 12.471 samples/sec, RPN_Conf=0.069,RPN_SmoothL1=0.038,RCNN_CrossEntropy=0.178,RCNN_SmoothL1=0.205,RPNAcc=0.965,RPNL1Loss=0.321,RCNNAcc=0.918,RCNNL1Loss=1.401
+[Epoch 5][Batch 799], Speed: 12.497 samples/sec, RPN_Conf=0.069,RPN_SmoothL1=0.038,RCNN_CrossEntropy=0.179,RCNN_SmoothL1=0.205,RPNAcc=0.965,RPNL1Loss=0.321,RCNNAcc=0.918,RCNNL1Loss=1.399
+[Epoch 5][Batch 899], Speed: 12.518 samples/sec, RPN_Conf=0.069,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.180,RCNN_SmoothL1=0.206,RPNAcc=0.965,RPNL1Loss=0.321,RCNNAcc=0.918,RCNNL1Loss=1.397
+[Epoch 5][Batch 999], Speed: 12.553 samples/sec, RPN_Conf=0.069,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.179,RCNN_SmoothL1=0.205,RPNAcc=0.965,RPNL1Loss=0.321,RCNNAcc=0.918,RCNNL1Loss=1.395
+[Epoch 5][Batch 1099], Speed: 12.478 samples/sec, RPN_Conf=0.069,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.180,RCNN_SmoothL1=0.206,RPNAcc=0.965,RPNL1Loss=0.321,RCNNAcc=0.919,RCNNL1Loss=1.394
+[Epoch 5][Batch 1199], Speed: 12.577 samples/sec, RPN_Conf=0.069,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.179,RCNN_SmoothL1=0.205,RPNAcc=0.965,RPNL1Loss=0.321,RCNNAcc=0.919,RCNNL1Loss=1.392
+[Epoch 5][Batch 1299], Speed: 12.396 samples/sec, RPN_Conf=0.070,RPN_SmoothL1=0.038,RCNN_CrossEntropy=0.180,RCNN_SmoothL1=0.206,RPNAcc=0.965,RPNL1Loss=0.321,RCNNAcc=0.919,RCNNL1Loss=1.390
+[Epoch 5][Batch 1399], Speed: 12.478 samples/sec, RPN_Conf=0.070,RPN_SmoothL1=0.038,RCNN_CrossEntropy=0.181,RCNN_SmoothL1=0.206,RPNAcc=0.965,RPNL1Loss=0.320,RCNNAcc=0.919,RCNNL1Loss=1.388
+[Epoch 5][Batch 1499], Speed: 12.539 samples/sec, RPN_Conf=0.070,RPN_SmoothL1=0.038,RCNN_CrossEntropy=0.181,RCNN_SmoothL1=0.206,RPNAcc=0.965,RPNL1Loss=0.320,RCNNAcc=0.919,RCNNL1Loss=1.387
+[Epoch 5][Batch 1599], Speed: 12.557 samples/sec, RPN_Conf=0.069,RPN_SmoothL1=0.038,RCNN_CrossEntropy=0.180,RCNN_SmoothL1=0.205,RPNAcc=0.965,RPNL1Loss=0.320,RCNNAcc=0.919,RCNNL1Loss=1.385
+[Epoch 5][Batch 1699], Speed: 12.393 samples/sec, RPN_Conf=0.069,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.180,RCNN_SmoothL1=0.205,RPNAcc=0.965,RPNL1Loss=0.320,RCNNAcc=0.919,RCNNL1Loss=1.383
+[Epoch 5][Batch 1799], Speed: 12.399 samples/sec, RPN_Conf=0.069,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.180,RCNN_SmoothL1=0.205,RPNAcc=0.965,RPNL1Loss=0.320,RCNNAcc=0.919,RCNNL1Loss=1.381
+[Epoch 5][Batch 1899], Speed: 12.469 samples/sec, RPN_Conf=0.069,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.180,RCNN_SmoothL1=0.205,RPNAcc=0.965,RPNL1Loss=0.320,RCNNAcc=0.919,RCNNL1Loss=1.380
+[Epoch 5][Batch 1999], Speed: 12.537 samples/sec, RPN_Conf=0.069,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.181,RCNN_SmoothL1=0.205,RPNAcc=0.965,RPNL1Loss=0.319,RCNNAcc=0.919,RCNNL1Loss=1.378
+[Epoch 5][Batch 2099], Speed: 12.466 samples/sec, RPN_Conf=0.069,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.181,RCNN_SmoothL1=0.205,RPNAcc=0.965,RPNL1Loss=0.319,RCNNAcc=0.919,RCNNL1Loss=1.377
+[Epoch 5][Batch 2199], Speed: 12.560 samples/sec, RPN_Conf=0.069,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.181,RCNN_SmoothL1=0.205,RPNAcc=0.965,RPNL1Loss=0.319,RCNNAcc=0.919,RCNNL1Loss=1.375
+[Epoch 5][Batch 2299], Speed: 12.549 samples/sec, RPN_Conf=0.069,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.180,RCNN_SmoothL1=0.204,RPNAcc=0.965,RPNL1Loss=0.319,RCNNAcc=0.919,RCNNL1Loss=1.373
+[Epoch 5][Batch 2399], Speed: 12.446 samples/sec, RPN_Conf=0.069,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.180,RCNN_SmoothL1=0.204,RPNAcc=0.965,RPNL1Loss=0.319,RCNNAcc=0.919,RCNNL1Loss=1.371
+[Epoch 5][Batch 2499], Speed: 12.394 samples/sec, RPN_Conf=0.069,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.181,RCNN_SmoothL1=0.204,RPNAcc=0.965,RPNL1Loss=0.319,RCNNAcc=0.920,RCNNL1Loss=1.370
+[Epoch 5][Batch 2599], Speed: 12.472 samples/sec, RPN_Conf=0.069,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.181,RCNN_SmoothL1=0.204,RPNAcc=0.965,RPNL1Loss=0.319,RCNNAcc=0.920,RCNNL1Loss=1.369
+[Epoch 5][Batch 2699], Speed: 12.542 samples/sec, RPN_Conf=0.069,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.181,RCNN_SmoothL1=0.204,RPNAcc=0.965,RPNL1Loss=0.318,RCNNAcc=0.920,RCNNL1Loss=1.367
+[Epoch 5][Batch 2799], Speed: 12.525 samples/sec, RPN_Conf=0.070,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.181,RCNN_SmoothL1=0.205,RPNAcc=0.965,RPNL1Loss=0.318,RCNNAcc=0.920,RCNNL1Loss=1.366
+[Epoch 5][Batch 2899], Speed: 12.499 samples/sec, RPN_Conf=0.070,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.181,RCNN_SmoothL1=0.205,RPNAcc=0.965,RPNL1Loss=0.318,RCNNAcc=0.920,RCNNL1Loss=1.364
+[Epoch 5][Batch 2999], Speed: 12.498 samples/sec, RPN_Conf=0.070,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.181,RCNN_SmoothL1=0.205,RPNAcc=0.965,RPNL1Loss=0.318,RCNNAcc=0.920,RCNNL1Loss=1.363
+[Epoch 5][Batch 3099], Speed: 12.516 samples/sec, RPN_Conf=0.070,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.181,RCNN_SmoothL1=0.205,RPNAcc=0.965,RPNL1Loss=0.318,RCNNAcc=0.920,RCNNL1Loss=1.361
+[Epoch 5][Batch 3199], Speed: 12.438 samples/sec, RPN_Conf=0.069,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.181,RCNN_SmoothL1=0.204,RPNAcc=0.965,RPNL1Loss=0.318,RCNNAcc=0.920,RCNNL1Loss=1.360
+[Epoch 5][Batch 3299], Speed: 12.609 samples/sec, RPN_Conf=0.070,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.181,RCNN_SmoothL1=0.205,RPNAcc=0.965,RPNL1Loss=0.318,RCNNAcc=0.920,RCNNL1Loss=1.358
+[Epoch 5][Batch 3399], Speed: 12.558 samples/sec, RPN_Conf=0.070,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.182,RCNN_SmoothL1=0.205,RPNAcc=0.966,RPNL1Loss=0.318,RCNNAcc=0.920,RCNNL1Loss=1.357
+[Epoch 5][Batch 3499], Speed: 12.490 samples/sec, RPN_Conf=0.070,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.182,RCNN_SmoothL1=0.205,RPNAcc=0.966,RPNL1Loss=0.318,RCNNAcc=0.920,RCNNL1Loss=1.356
+[Epoch 5][Batch 3599], Speed: 12.401 samples/sec, RPN_Conf=0.070,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.182,RCNN_SmoothL1=0.205,RPNAcc=0.966,RPNL1Loss=0.317,RCNNAcc=0.920,RCNNL1Loss=1.354
+[Epoch 5][Batch 3699], Speed: 12.460 samples/sec, RPN_Conf=0.069,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.181,RCNN_SmoothL1=0.205,RPNAcc=0.966,RPNL1Loss=0.317,RCNNAcc=0.920,RCNNL1Loss=1.353
+[Epoch 5][Batch 3799], Speed: 12.465 samples/sec, RPN_Conf=0.069,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.181,RCNN_SmoothL1=0.205,RPNAcc=0.966,RPNL1Loss=0.317,RCNNAcc=0.920,RCNNL1Loss=1.351
+[Epoch 5][Batch 3899], Speed: 12.563 samples/sec, RPN_Conf=0.069,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.182,RCNN_SmoothL1=0.205,RPNAcc=0.966,RPNL1Loss=0.317,RCNNAcc=0.920,RCNNL1Loss=1.350
+[Epoch 5][Batch 3999], Speed: 12.469 samples/sec, RPN_Conf=0.069,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.181,RCNN_SmoothL1=0.205,RPNAcc=0.966,RPNL1Loss=0.317,RCNNAcc=0.920,RCNNL1Loss=1.349
+[Epoch 5][Batch 4099], Speed: 12.485 samples/sec, RPN_Conf=0.069,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.181,RCNN_SmoothL1=0.204,RPNAcc=0.966,RPNL1Loss=0.317,RCNNAcc=0.920,RCNNL1Loss=1.347
+[Epoch 5] Training cost: 1327.072, RPN_Conf=0.069,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.181,RCNN_SmoothL1=0.204
+[Epoch 5] Validation: 
+aeroplane=0.7438698861282964
+bicycle=0.8015276935020919
+bird=0.7237981101286804
+boat=0.5868220415314704
+bottle=0.5237820213616913
+bus=0.8059997834016207
+car=0.8188187404337341
+cat=0.8290551663246799
+chair=0.48870692384905484
+cow=0.7696207885833789
+diningtable=0.6045294237518846
+dog=0.8135647765579342
+horse=0.8161703514806502
+motorbike=0.752767245574689
+person=0.7599427647215182
+pottedplant=0.40991863271375056
+sheep=0.6900143142675876
+sofa=0.6516197439821995
+train=0.7362403020436747
+tvmonitor=0.6459570414475563
+mAP=0.6986362875893071
+[Epoch 5] mAP 0.6986362875893071 higher than current best [0.6918192446613942] saving to faster_rcnn_resnet50_v1b_voc_best.params
+[Epoch 5] Saving parameters to faster_rcnn_resnet50_v1b_voc_0005_0.6986.params
+[Epoch 6][Batch 99], Speed: 11.689 samples/sec, RPN_Conf=0.060,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.160,RCNN_SmoothL1=0.186,RPNAcc=0.966,RPNL1Loss=0.317,RCNNAcc=0.921,RCNNL1Loss=1.345
+[Epoch 6][Batch 199], Speed: 12.493 samples/sec, RPN_Conf=0.062,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.162,RCNN_SmoothL1=0.186,RPNAcc=0.966,RPNL1Loss=0.316,RCNNAcc=0.921,RCNNL1Loss=1.343
+[Epoch 6][Batch 299], Speed: 12.647 samples/sec, RPN_Conf=0.062,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.160,RCNN_SmoothL1=0.186,RPNAcc=0.966,RPNL1Loss=0.316,RCNNAcc=0.921,RCNNL1Loss=1.342
+[Epoch 6][Batch 399], Speed: 12.486 samples/sec, RPN_Conf=0.064,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.159,RCNN_SmoothL1=0.186,RPNAcc=0.966,RPNL1Loss=0.316,RCNNAcc=0.921,RCNNL1Loss=1.340
+[Epoch 6][Batch 499], Speed: 12.405 samples/sec, RPN_Conf=0.064,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.161,RCNN_SmoothL1=0.190,RPNAcc=0.966,RPNL1Loss=0.316,RCNNAcc=0.921,RCNNL1Loss=1.339
+[Epoch 6][Batch 599], Speed: 12.551 samples/sec, RPN_Conf=0.065,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.164,RCNN_SmoothL1=0.192,RPNAcc=0.966,RPNL1Loss=0.316,RCNNAcc=0.921,RCNNL1Loss=1.337
+[Epoch 6][Batch 699], Speed: 12.542 samples/sec, RPN_Conf=0.065,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.163,RCNN_SmoothL1=0.190,RPNAcc=0.966,RPNL1Loss=0.316,RCNNAcc=0.921,RCNNL1Loss=1.335
+[Epoch 6][Batch 799], Speed: 12.520 samples/sec, RPN_Conf=0.064,RPN_SmoothL1=0.036,RCNN_CrossEntropy=0.165,RCNN_SmoothL1=0.190,RPNAcc=0.966,RPNL1Loss=0.316,RCNNAcc=0.921,RCNNL1Loss=1.334
+[Epoch 6][Batch 899], Speed: 12.617 samples/sec, RPN_Conf=0.064,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.167,RCNN_SmoothL1=0.191,RPNAcc=0.966,RPNL1Loss=0.316,RCNNAcc=0.921,RCNNL1Loss=1.332
+[Epoch 6][Batch 999], Speed: 12.436 samples/sec, RPN_Conf=0.065,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.168,RCNN_SmoothL1=0.192,RPNAcc=0.966,RPNL1Loss=0.316,RCNNAcc=0.921,RCNNL1Loss=1.331
+[Epoch 6][Batch 1099], Speed: 12.406 samples/sec, RPN_Conf=0.065,RPN_SmoothL1=0.036,RCNN_CrossEntropy=0.167,RCNN_SmoothL1=0.192,RPNAcc=0.966,RPNL1Loss=0.315,RCNNAcc=0.921,RCNNL1Loss=1.330
+[Epoch 6][Batch 1199], Speed: 12.462 samples/sec, RPN_Conf=0.065,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.168,RCNN_SmoothL1=0.193,RPNAcc=0.966,RPNL1Loss=0.315,RCNNAcc=0.921,RCNNL1Loss=1.328
+[Epoch 6][Batch 1299], Speed: 12.449 samples/sec, RPN_Conf=0.065,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.169,RCNN_SmoothL1=0.193,RPNAcc=0.966,RPNL1Loss=0.315,RCNNAcc=0.921,RCNNL1Loss=1.327
+[Epoch 6][Batch 1399], Speed: 12.608 samples/sec, RPN_Conf=0.065,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.169,RCNN_SmoothL1=0.193,RPNAcc=0.966,RPNL1Loss=0.315,RCNNAcc=0.921,RCNNL1Loss=1.325
+[Epoch 6][Batch 1499], Speed: 12.466 samples/sec, RPN_Conf=0.066,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.170,RCNN_SmoothL1=0.193,RPNAcc=0.966,RPNL1Loss=0.315,RCNNAcc=0.921,RCNNL1Loss=1.324
+[Epoch 6][Batch 1599], Speed: 12.579 samples/sec, RPN_Conf=0.066,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.171,RCNN_SmoothL1=0.193,RPNAcc=0.966,RPNL1Loss=0.315,RCNNAcc=0.922,RCNNL1Loss=1.322
+[Epoch 6][Batch 1699], Speed: 12.521 samples/sec, RPN_Conf=0.066,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.170,RCNN_SmoothL1=0.193,RPNAcc=0.966,RPNL1Loss=0.315,RCNNAcc=0.922,RCNNL1Loss=1.321
+[Epoch 6][Batch 1799], Speed: 12.499 samples/sec, RPN_Conf=0.066,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.170,RCNN_SmoothL1=0.193,RPNAcc=0.966,RPNL1Loss=0.315,RCNNAcc=0.922,RCNNL1Loss=1.320
+[Epoch 6][Batch 1899], Speed: 12.500 samples/sec, RPN_Conf=0.066,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.171,RCNN_SmoothL1=0.194,RPNAcc=0.966,RPNL1Loss=0.315,RCNNAcc=0.922,RCNNL1Loss=1.318
+[Epoch 6][Batch 1999], Speed: 12.419 samples/sec, RPN_Conf=0.066,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.171,RCNN_SmoothL1=0.195,RPNAcc=0.966,RPNL1Loss=0.314,RCNNAcc=0.922,RCNNL1Loss=1.317
+[Epoch 6][Batch 2099], Speed: 12.515 samples/sec, RPN_Conf=0.066,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.172,RCNN_SmoothL1=0.195,RPNAcc=0.966,RPNL1Loss=0.314,RCNNAcc=0.922,RCNNL1Loss=1.316
+[Epoch 6][Batch 2199], Speed: 12.468 samples/sec, RPN_Conf=0.066,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.172,RCNN_SmoothL1=0.195,RPNAcc=0.966,RPNL1Loss=0.314,RCNNAcc=0.922,RCNNL1Loss=1.315
+[Epoch 6][Batch 2299], Speed: 12.558 samples/sec, RPN_Conf=0.067,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.172,RCNN_SmoothL1=0.195,RPNAcc=0.966,RPNL1Loss=0.314,RCNNAcc=0.922,RCNNL1Loss=1.313
+[Epoch 6][Batch 2399], Speed: 12.528 samples/sec, RPN_Conf=0.067,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.173,RCNN_SmoothL1=0.196,RPNAcc=0.967,RPNL1Loss=0.314,RCNNAcc=0.922,RCNNL1Loss=1.312
+[Epoch 6][Batch 2499], Speed: 12.530 samples/sec, RPN_Conf=0.067,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.172,RCNN_SmoothL1=0.196,RPNAcc=0.967,RPNL1Loss=0.314,RCNNAcc=0.922,RCNNL1Loss=1.311
+[Epoch 6][Batch 2599], Speed: 12.548 samples/sec, RPN_Conf=0.066,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.173,RCNN_SmoothL1=0.196,RPNAcc=0.967,RPNL1Loss=0.314,RCNNAcc=0.922,RCNNL1Loss=1.310
+[Epoch 6][Batch 2699], Speed: 12.536 samples/sec, RPN_Conf=0.066,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.173,RCNN_SmoothL1=0.195,RPNAcc=0.967,RPNL1Loss=0.314,RCNNAcc=0.922,RCNNL1Loss=1.308
+[Epoch 6][Batch 2799], Speed: 12.558 samples/sec, RPN_Conf=0.066,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.173,RCNN_SmoothL1=0.195,RPNAcc=0.967,RPNL1Loss=0.314,RCNNAcc=0.922,RCNNL1Loss=1.307
+[Epoch 6][Batch 2899], Speed: 12.575 samples/sec, RPN_Conf=0.067,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.173,RCNN_SmoothL1=0.195,RPNAcc=0.967,RPNL1Loss=0.314,RCNNAcc=0.922,RCNNL1Loss=1.306
+[Epoch 6][Batch 2999], Speed: 12.501 samples/sec, RPN_Conf=0.067,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.174,RCNN_SmoothL1=0.195,RPNAcc=0.967,RPNL1Loss=0.313,RCNNAcc=0.922,RCNNL1Loss=1.305
+[Epoch 6][Batch 3099], Speed: 12.468 samples/sec, RPN_Conf=0.067,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.174,RCNN_SmoothL1=0.196,RPNAcc=0.967,RPNL1Loss=0.313,RCNNAcc=0.922,RCNNL1Loss=1.304
+[Epoch 6][Batch 3199], Speed: 12.511 samples/sec, RPN_Conf=0.067,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.174,RCNN_SmoothL1=0.196,RPNAcc=0.967,RPNL1Loss=0.313,RCNNAcc=0.922,RCNNL1Loss=1.302
+[Epoch 6][Batch 3299], Speed: 12.437 samples/sec, RPN_Conf=0.067,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.174,RCNN_SmoothL1=0.196,RPNAcc=0.967,RPNL1Loss=0.313,RCNNAcc=0.922,RCNNL1Loss=1.301
+[Epoch 6][Batch 3399], Speed: 12.422 samples/sec, RPN_Conf=0.066,RPN_SmoothL1=0.036,RCNN_CrossEntropy=0.173,RCNN_SmoothL1=0.195,RPNAcc=0.967,RPNL1Loss=0.313,RCNNAcc=0.922,RCNNL1Loss=1.300
+[Epoch 6][Batch 3499], Speed: 12.483 samples/sec, RPN_Conf=0.066,RPN_SmoothL1=0.036,RCNN_CrossEntropy=0.173,RCNN_SmoothL1=0.195,RPNAcc=0.967,RPNL1Loss=0.313,RCNNAcc=0.923,RCNNL1Loss=1.298
+[Epoch 6][Batch 3599], Speed: 12.509 samples/sec, RPN_Conf=0.066,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.173,RCNN_SmoothL1=0.195,RPNAcc=0.967,RPNL1Loss=0.313,RCNNAcc=0.923,RCNNL1Loss=1.297
+[Epoch 6][Batch 3699], Speed: 12.475 samples/sec, RPN_Conf=0.066,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.173,RCNN_SmoothL1=0.195,RPNAcc=0.967,RPNL1Loss=0.313,RCNNAcc=0.923,RCNNL1Loss=1.296
+[Epoch 6][Batch 3799], Speed: 12.554 samples/sec, RPN_Conf=0.066,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.173,RCNN_SmoothL1=0.195,RPNAcc=0.967,RPNL1Loss=0.313,RCNNAcc=0.923,RCNNL1Loss=1.295
+[Epoch 6][Batch 3899], Speed: 12.496 samples/sec, RPN_Conf=0.066,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.174,RCNN_SmoothL1=0.195,RPNAcc=0.967,RPNL1Loss=0.313,RCNNAcc=0.923,RCNNL1Loss=1.294
+[Epoch 6][Batch 3999], Speed: 12.455 samples/sec, RPN_Conf=0.066,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.174,RCNN_SmoothL1=0.195,RPNAcc=0.967,RPNL1Loss=0.312,RCNNAcc=0.923,RCNNL1Loss=1.293
+[Epoch 6][Batch 4099], Speed: 12.524 samples/sec, RPN_Conf=0.066,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.174,RCNN_SmoothL1=0.195,RPNAcc=0.967,RPNL1Loss=0.312,RCNNAcc=0.923,RCNNL1Loss=1.291
+[Epoch 6] Training cost: 1325.363, RPN_Conf=0.066,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.173,RCNN_SmoothL1=0.195
+[Epoch 6] Validation: 
+aeroplane=0.7437667681012993
+bicycle=0.7730859929607691
+bird=0.7538741037369731
+boat=0.5986242175036909
+bottle=0.5431913304661448
+bus=0.804491117815683
+car=0.7874532309166454
+cat=0.8749407828422594
+chair=0.5275483877731377
+cow=0.763863886656101
+diningtable=0.6182665037493387
+dog=0.824677836951974
+horse=0.810720945801282
+motorbike=0.7300726676334062
+person=0.7723334545555498
+pottedplant=0.43484217411181164
+sheep=0.7077906674653677
+sofa=0.7070994260725175
+train=0.7543602396959175
+tvmonitor=0.7060878747916052
+mAP=0.7118545804800737
+[Epoch 6] mAP 0.7118545804800737 higher than current best [0.6986362875893071] saving to faster_rcnn_resnet50_v1b_voc_best.params
+[Epoch 6] Saving parameters to faster_rcnn_resnet50_v1b_voc_0006_0.7119.params
+[Epoch 7][Batch 99], Speed: 11.928 samples/sec, RPN_Conf=0.064,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.161,RCNN_SmoothL1=0.189,RPNAcc=0.967,RPNL1Loss=0.312,RCNNAcc=0.923,RCNNL1Loss=1.290
+[Epoch 7][Batch 199], Speed: 12.497 samples/sec, RPN_Conf=0.065,RPN_SmoothL1=0.038,RCNN_CrossEntropy=0.163,RCNN_SmoothL1=0.190,RPNAcc=0.967,RPNL1Loss=0.312,RCNNAcc=0.923,RCNNL1Loss=1.288
+[Epoch 7][Batch 299], Speed: 12.542 samples/sec, RPN_Conf=0.067,RPN_SmoothL1=0.039,RCNN_CrossEntropy=0.164,RCNN_SmoothL1=0.189,RPNAcc=0.967,RPNL1Loss=0.312,RCNNAcc=0.923,RCNNL1Loss=1.287
+[Epoch 7][Batch 399], Speed: 12.569 samples/sec, RPN_Conf=0.065,RPN_SmoothL1=0.038,RCNN_CrossEntropy=0.162,RCNN_SmoothL1=0.186,RPNAcc=0.967,RPNL1Loss=0.312,RCNNAcc=0.923,RCNNL1Loss=1.286
+[Epoch 7][Batch 499], Speed: 12.573 samples/sec, RPN_Conf=0.064,RPN_SmoothL1=0.038,RCNN_CrossEntropy=0.161,RCNN_SmoothL1=0.186,RPNAcc=0.967,RPNL1Loss=0.312,RCNNAcc=0.923,RCNNL1Loss=1.284
+[Epoch 7][Batch 599], Speed: 12.425 samples/sec, RPN_Conf=0.064,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.161,RCNN_SmoothL1=0.184,RPNAcc=0.967,RPNL1Loss=0.312,RCNNAcc=0.923,RCNNL1Loss=1.283
+[Epoch 7][Batch 699], Speed: 12.513 samples/sec, RPN_Conf=0.064,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.162,RCNN_SmoothL1=0.186,RPNAcc=0.967,RPNL1Loss=0.312,RCNNAcc=0.923,RCNNL1Loss=1.282
+[Epoch 7][Batch 799], Speed: 12.515 samples/sec, RPN_Conf=0.064,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.162,RCNN_SmoothL1=0.187,RPNAcc=0.967,RPNL1Loss=0.312,RCNNAcc=0.923,RCNNL1Loss=1.280
+[Epoch 7][Batch 899], Speed: 12.397 samples/sec, RPN_Conf=0.064,RPN_SmoothL1=0.038,RCNN_CrossEntropy=0.163,RCNN_SmoothL1=0.187,RPNAcc=0.967,RPNL1Loss=0.312,RCNNAcc=0.923,RCNNL1Loss=1.279
+[Epoch 7][Batch 999], Speed: 12.452 samples/sec, RPN_Conf=0.065,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.163,RCNN_SmoothL1=0.187,RPNAcc=0.967,RPNL1Loss=0.311,RCNNAcc=0.923,RCNNL1Loss=1.278
+[Epoch 7][Batch 1099], Speed: 12.481 samples/sec, RPN_Conf=0.065,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.163,RCNN_SmoothL1=0.187,RPNAcc=0.967,RPNL1Loss=0.311,RCNNAcc=0.923,RCNNL1Loss=1.277
+[Epoch 7][Batch 1199], Speed: 12.503 samples/sec, RPN_Conf=0.065,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.164,RCNN_SmoothL1=0.187,RPNAcc=0.967,RPNL1Loss=0.311,RCNNAcc=0.924,RCNNL1Loss=1.276
+[Epoch 7][Batch 1299], Speed: 12.557 samples/sec, RPN_Conf=0.064,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.164,RCNN_SmoothL1=0.187,RPNAcc=0.967,RPNL1Loss=0.311,RCNNAcc=0.924,RCNNL1Loss=1.275
+[Epoch 7][Batch 1399], Speed: 12.503 samples/sec, RPN_Conf=0.065,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.165,RCNN_SmoothL1=0.188,RPNAcc=0.967,RPNL1Loss=0.311,RCNNAcc=0.924,RCNNL1Loss=1.274
+[Epoch 7][Batch 1499], Speed: 12.493 samples/sec, RPN_Conf=0.064,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.164,RCNN_SmoothL1=0.188,RPNAcc=0.967,RPNL1Loss=0.311,RCNNAcc=0.924,RCNNL1Loss=1.272
+[Epoch 7][Batch 1599], Speed: 12.414 samples/sec, RPN_Conf=0.065,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.164,RCNN_SmoothL1=0.188,RPNAcc=0.967,RPNL1Loss=0.311,RCNNAcc=0.924,RCNNL1Loss=1.271
+[Epoch 7][Batch 1699], Speed: 12.450 samples/sec, RPN_Conf=0.064,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.164,RCNN_SmoothL1=0.187,RPNAcc=0.967,RPNL1Loss=0.311,RCNNAcc=0.924,RCNNL1Loss=1.270
+[Epoch 7][Batch 1799], Speed: 12.423 samples/sec, RPN_Conf=0.064,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.164,RCNN_SmoothL1=0.187,RPNAcc=0.967,RPNL1Loss=0.311,RCNNAcc=0.924,RCNNL1Loss=1.269
+[Epoch 7][Batch 1899], Speed: 12.442 samples/sec, RPN_Conf=0.064,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.164,RCNN_SmoothL1=0.187,RPNAcc=0.968,RPNL1Loss=0.311,RCNNAcc=0.924,RCNNL1Loss=1.268
+[Epoch 7][Batch 1999], Speed: 12.451 samples/sec, RPN_Conf=0.064,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.164,RCNN_SmoothL1=0.187,RPNAcc=0.968,RPNL1Loss=0.310,RCNNAcc=0.924,RCNNL1Loss=1.266
+[Epoch 7][Batch 2099], Speed: 12.334 samples/sec, RPN_Conf=0.064,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.164,RCNN_SmoothL1=0.187,RPNAcc=0.968,RPNL1Loss=0.310,RCNNAcc=0.924,RCNNL1Loss=1.265
+[Epoch 7][Batch 2199], Speed: 12.483 samples/sec, RPN_Conf=0.064,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.164,RCNN_SmoothL1=0.188,RPNAcc=0.968,RPNL1Loss=0.310,RCNNAcc=0.924,RCNNL1Loss=1.265
+[Epoch 7][Batch 2299], Speed: 12.417 samples/sec, RPN_Conf=0.064,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.164,RCNN_SmoothL1=0.188,RPNAcc=0.968,RPNL1Loss=0.310,RCNNAcc=0.924,RCNNL1Loss=1.263
+[Epoch 7][Batch 2399], Speed: 12.395 samples/sec, RPN_Conf=0.064,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.164,RCNN_SmoothL1=0.188,RPNAcc=0.968,RPNL1Loss=0.310,RCNNAcc=0.924,RCNNL1Loss=1.262
+[Epoch 7][Batch 2499], Speed: 12.476 samples/sec, RPN_Conf=0.064,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.165,RCNN_SmoothL1=0.188,RPNAcc=0.968,RPNL1Loss=0.310,RCNNAcc=0.924,RCNNL1Loss=1.261
+[Epoch 7][Batch 2599], Speed: 12.450 samples/sec, RPN_Conf=0.064,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.165,RCNN_SmoothL1=0.188,RPNAcc=0.968,RPNL1Loss=0.310,RCNNAcc=0.924,RCNNL1Loss=1.260
+[Epoch 7][Batch 2699], Speed: 12.462 samples/sec, RPN_Conf=0.064,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.165,RCNN_SmoothL1=0.188,RPNAcc=0.968,RPNL1Loss=0.310,RCNNAcc=0.924,RCNNL1Loss=1.259
+[Epoch 7][Batch 2799], Speed: 12.461 samples/sec, RPN_Conf=0.064,RPN_SmoothL1=0.037,RCNN_CrossEntropy=0.165,RCNN_SmoothL1=0.188,RPNAcc=0.968,RPNL1Loss=0.310,RCNNAcc=0.924,RCNNL1Loss=1.258
+[Epoch 7][Batch 2899], Speed: 12.564 samples/sec, RPN_Conf=0.064,RPN_SmoothL1=0.036,RCNN_CrossEntropy=0.165,RCNN_SmoothL1=0.188,RPNAcc=0.968,RPNL1Loss=0.310,RCNNAcc=0.924,RCNNL1Loss=1.257
+[Epoch 7][Batch 2999], Speed: 12.395 samples/sec, RPN_Conf=0.064,RPN_SmoothL1=0.036,RCNN_CrossEntropy=0.166,RCNN_SmoothL1=0.188,RPNAcc=0.968,RPNL1Loss=0.310,RCNNAcc=0.924,RCNNL1Loss=1.256
+[Epoch 7][Batch 3099], Speed: 12.591 samples/sec, RPN_Conf=0.064,RPN_SmoothL1=0.036,RCNN_CrossEntropy=0.165,RCNN_SmoothL1=0.188,RPNAcc=0.968,RPNL1Loss=0.309,RCNNAcc=0.924,RCNNL1Loss=1.255
+[Epoch 7][Batch 3199], Speed: 12.484 samples/sec, RPN_Conf=0.064,RPN_SmoothL1=0.036,RCNN_CrossEntropy=0.166,RCNN_SmoothL1=0.187,RPNAcc=0.968,RPNL1Loss=0.309,RCNNAcc=0.925,RCNNL1Loss=1.254
+[Epoch 7][Batch 3299], Speed: 12.446 samples/sec, RPN_Conf=0.064,RPN_SmoothL1=0.036,RCNN_CrossEntropy=0.166,RCNN_SmoothL1=0.187,RPNAcc=0.968,RPNL1Loss=0.309,RCNNAcc=0.925,RCNNL1Loss=1.253
+[Epoch 7][Batch 3399], Speed: 12.455 samples/sec, RPN_Conf=0.064,RPN_SmoothL1=0.036,RCNN_CrossEntropy=0.166,RCNN_SmoothL1=0.187,RPNAcc=0.968,RPNL1Loss=0.309,RCNNAcc=0.925,RCNNL1Loss=1.252
+[Epoch 7][Batch 3499], Speed: 12.479 samples/sec, RPN_Conf=0.064,RPN_SmoothL1=0.036,RCNN_CrossEntropy=0.165,RCNN_SmoothL1=0.187,RPNAcc=0.968,RPNL1Loss=0.309,RCNNAcc=0.925,RCNNL1Loss=1.250
+[Epoch 7][Batch 3599], Speed: 12.416 samples/sec, RPN_Conf=0.064,RPN_SmoothL1=0.036,RCNN_CrossEntropy=0.166,RCNN_SmoothL1=0.187,RPNAcc=0.968,RPNL1Loss=0.309,RCNNAcc=0.925,RCNNL1Loss=1.249
+[Epoch 7][Batch 3699], Speed: 12.546 samples/sec, RPN_Conf=0.064,RPN_SmoothL1=0.036,RCNN_CrossEntropy=0.166,RCNN_SmoothL1=0.187,RPNAcc=0.968,RPNL1Loss=0.309,RCNNAcc=0.925,RCNNL1Loss=1.248
+[Epoch 7][Batch 3799], Speed: 12.511 samples/sec, RPN_Conf=0.064,RPN_SmoothL1=0.036,RCNN_CrossEntropy=0.166,RCNN_SmoothL1=0.187,RPNAcc=0.968,RPNL1Loss=0.309,RCNNAcc=0.925,RCNNL1Loss=1.247
+[Epoch 7][Batch 3899], Speed: 12.529 samples/sec, RPN_Conf=0.064,RPN_SmoothL1=0.036,RCNN_CrossEntropy=0.166,RCNN_SmoothL1=0.187,RPNAcc=0.968,RPNL1Loss=0.309,RCNNAcc=0.925,RCNNL1Loss=1.247
+[Epoch 7][Batch 3999], Speed: 12.476 samples/sec, RPN_Conf=0.064,RPN_SmoothL1=0.036,RCNN_CrossEntropy=0.166,RCNN_SmoothL1=0.187,RPNAcc=0.968,RPNL1Loss=0.309,RCNNAcc=0.925,RCNNL1Loss=1.246
+[Epoch 7][Batch 4099], Speed: 12.548 samples/sec, RPN_Conf=0.064,RPN_SmoothL1=0.036,RCNN_CrossEntropy=0.166,RCNN_SmoothL1=0.187,RPNAcc=0.968,RPNL1Loss=0.309,RCNNAcc=0.925,RCNNL1Loss=1.245
+[Epoch 7] Training cost: 1327.565, RPN_Conf=0.064,RPN_SmoothL1=0.036,RCNN_CrossEntropy=0.167,RCNN_SmoothL1=0.187
+[Epoch 7] Validation: 
+aeroplane=0.7627553068365587
+bicycle=0.8028787830877063
+bird=0.7492241846860526
+boat=0.6128931463986358
+bottle=0.5952872500468709
+bus=0.8178310826098258
+car=0.8597812775217828
+cat=0.8593734196360703
+chair=0.4895252806230654
+cow=0.8232624290486611
+diningtable=0.6345295391555703
+dog=0.8449753751025988
+horse=0.8239585768892436
+motorbike=0.7668275208403013
+person=0.7792114171197576
+pottedplant=0.4609009044756495
+sheep=0.7315514053744671
+sofa=0.612526277118578
+train=0.779451879765748
+tvmonitor=0.7235857032938242
+mAP=0.7265165379815485
+[Epoch 7] mAP 0.7265165379815485 higher than current best [0.7118545804800737] saving to faster_rcnn_resnet50_v1b_voc_best.params
+[Epoch 7] Saving parameters to faster_rcnn_resnet50_v1b_voc_0007_0.7265.params
+[Epoch 8][Batch 99], Speed: 11.261 samples/sec, RPN_Conf=0.060,RPN_SmoothL1=0.036,RCNN_CrossEntropy=0.145,RCNN_SmoothL1=0.174,RPNAcc=0.968,RPNL1Loss=0.308,RCNNAcc=0.925,RCNNL1Loss=1.243
+[Epoch 8][Batch 199], Speed: 12.480 samples/sec, RPN_Conf=0.058,RPN_SmoothL1=0.036,RCNN_CrossEntropy=0.148,RCNN_SmoothL1=0.177,RPNAcc=0.968,RPNL1Loss=0.308,RCNNAcc=0.925,RCNNL1Loss=1.242
+[Epoch 8][Batch 299], Speed: 12.484 samples/sec, RPN_Conf=0.058,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.149,RCNN_SmoothL1=0.177,RPNAcc=0.968,RPNL1Loss=0.308,RCNNAcc=0.925,RCNNL1Loss=1.241
+[Epoch 8][Batch 399], Speed: 12.474 samples/sec, RPN_Conf=0.059,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.153,RCNN_SmoothL1=0.178,RPNAcc=0.968,RPNL1Loss=0.308,RCNNAcc=0.925,RCNNL1Loss=1.240
+[Epoch 8][Batch 499], Speed: 12.442 samples/sec, RPN_Conf=0.059,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.153,RCNN_SmoothL1=0.178,RPNAcc=0.968,RPNL1Loss=0.308,RCNNAcc=0.925,RCNNL1Loss=1.239
+[Epoch 8][Batch 599], Speed: 12.412 samples/sec, RPN_Conf=0.060,RPN_SmoothL1=0.036,RCNN_CrossEntropy=0.154,RCNN_SmoothL1=0.178,RPNAcc=0.968,RPNL1Loss=0.308,RCNNAcc=0.925,RCNNL1Loss=1.238
+[Epoch 8][Batch 699], Speed: 12.492 samples/sec, RPN_Conf=0.060,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.155,RCNN_SmoothL1=0.179,RPNAcc=0.968,RPNL1Loss=0.308,RCNNAcc=0.925,RCNNL1Loss=1.237
+[Epoch 8][Batch 799], Speed: 12.579 samples/sec, RPN_Conf=0.060,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.155,RCNN_SmoothL1=0.179,RPNAcc=0.968,RPNL1Loss=0.308,RCNNAcc=0.925,RCNNL1Loss=1.236
+[Epoch 8][Batch 899], Speed: 12.484 samples/sec, RPN_Conf=0.061,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.156,RCNN_SmoothL1=0.180,RPNAcc=0.968,RPNL1Loss=0.308,RCNNAcc=0.925,RCNNL1Loss=1.235
+[Epoch 8][Batch 999], Speed: 12.561 samples/sec, RPN_Conf=0.061,RPN_SmoothL1=0.036,RCNN_CrossEntropy=0.156,RCNN_SmoothL1=0.181,RPNAcc=0.968,RPNL1Loss=0.308,RCNNAcc=0.925,RCNNL1Loss=1.234
+[Epoch 8][Batch 1099], Speed: 12.464 samples/sec, RPN_Conf=0.062,RPN_SmoothL1=0.036,RCNN_CrossEntropy=0.157,RCNN_SmoothL1=0.181,RPNAcc=0.968,RPNL1Loss=0.308,RCNNAcc=0.925,RCNNL1Loss=1.233
+[Epoch 8][Batch 1199], Speed: 12.521 samples/sec, RPN_Conf=0.062,RPN_SmoothL1=0.036,RCNN_CrossEntropy=0.157,RCNN_SmoothL1=0.180,RPNAcc=0.968,RPNL1Loss=0.307,RCNNAcc=0.926,RCNNL1Loss=1.232
+[Epoch 8][Batch 1299], Speed: 12.486 samples/sec, RPN_Conf=0.062,RPN_SmoothL1=0.036,RCNN_CrossEntropy=0.157,RCNN_SmoothL1=0.181,RPNAcc=0.968,RPNL1Loss=0.307,RCNNAcc=0.926,RCNNL1Loss=1.231
+[Epoch 8][Batch 1399], Speed: 12.542 samples/sec, RPN_Conf=0.062,RPN_SmoothL1=0.036,RCNN_CrossEntropy=0.157,RCNN_SmoothL1=0.181,RPNAcc=0.968,RPNL1Loss=0.307,RCNNAcc=0.926,RCNNL1Loss=1.230
+[Epoch 8][Batch 1499], Speed: 12.489 samples/sec, RPN_Conf=0.062,RPN_SmoothL1=0.036,RCNN_CrossEntropy=0.158,RCNN_SmoothL1=0.181,RPNAcc=0.968,RPNL1Loss=0.307,RCNNAcc=0.926,RCNNL1Loss=1.229
+[Epoch 8][Batch 1599], Speed: 12.561 samples/sec, RPN_Conf=0.061,RPN_SmoothL1=0.036,RCNN_CrossEntropy=0.158,RCNN_SmoothL1=0.181,RPNAcc=0.968,RPNL1Loss=0.307,RCNNAcc=0.926,RCNNL1Loss=1.228
+[Epoch 8][Batch 1699], Speed: 12.379 samples/sec, RPN_Conf=0.062,RPN_SmoothL1=0.036,RCNN_CrossEntropy=0.159,RCNN_SmoothL1=0.182,RPNAcc=0.968,RPNL1Loss=0.307,RCNNAcc=0.926,RCNNL1Loss=1.227
+[Epoch 8][Batch 1799], Speed: 12.414 samples/sec, RPN_Conf=0.062,RPN_SmoothL1=0.036,RCNN_CrossEntropy=0.160,RCNN_SmoothL1=0.182,RPNAcc=0.968,RPNL1Loss=0.307,RCNNAcc=0.926,RCNNL1Loss=1.226
+[Epoch 8][Batch 1899], Speed: 12.538 samples/sec, RPN_Conf=0.062,RPN_SmoothL1=0.036,RCNN_CrossEntropy=0.160,RCNN_SmoothL1=0.182,RPNAcc=0.969,RPNL1Loss=0.307,RCNNAcc=0.926,RCNNL1Loss=1.225
+[Epoch 8][Batch 1999], Speed: 12.412 samples/sec, RPN_Conf=0.062,RPN_SmoothL1=0.036,RCNN_CrossEntropy=0.160,RCNN_SmoothL1=0.182,RPNAcc=0.969,RPNL1Loss=0.307,RCNNAcc=0.926,RCNNL1Loss=1.224
+[Epoch 8][Batch 2099], Speed: 12.587 samples/sec, RPN_Conf=0.062,RPN_SmoothL1=0.036,RCNN_CrossEntropy=0.161,RCNN_SmoothL1=0.182,RPNAcc=0.969,RPNL1Loss=0.307,RCNNAcc=0.926,RCNNL1Loss=1.223
+[Epoch 8][Batch 2199], Speed: 12.459 samples/sec, RPN_Conf=0.062,RPN_SmoothL1=0.036,RCNN_CrossEntropy=0.161,RCNN_SmoothL1=0.182,RPNAcc=0.969,RPNL1Loss=0.307,RCNNAcc=0.926,RCNNL1Loss=1.222
+[Epoch 8][Batch 2299], Speed: 12.606 samples/sec, RPN_Conf=0.062,RPN_SmoothL1=0.036,RCNN_CrossEntropy=0.161,RCNN_SmoothL1=0.182,RPNAcc=0.969,RPNL1Loss=0.307,RCNNAcc=0.926,RCNNL1Loss=1.221
+[Epoch 8][Batch 2399], Speed: 12.484 samples/sec, RPN_Conf=0.062,RPN_SmoothL1=0.036,RCNN_CrossEntropy=0.161,RCNN_SmoothL1=0.182,RPNAcc=0.969,RPNL1Loss=0.306,RCNNAcc=0.926,RCNNL1Loss=1.220
+[Epoch 8][Batch 2499], Speed: 12.500 samples/sec, RPN_Conf=0.062,RPN_SmoothL1=0.036,RCNN_CrossEntropy=0.161,RCNN_SmoothL1=0.181,RPNAcc=0.969,RPNL1Loss=0.306,RCNNAcc=0.926,RCNNL1Loss=1.219
+[Epoch 8][Batch 2599], Speed: 12.502 samples/sec, RPN_Conf=0.062,RPN_SmoothL1=0.036,RCNN_CrossEntropy=0.161,RCNN_SmoothL1=0.181,RPNAcc=0.969,RPNL1Loss=0.306,RCNNAcc=0.926,RCNNL1Loss=1.218
+[Epoch 8][Batch 2699], Speed: 12.503 samples/sec, RPN_Conf=0.062,RPN_SmoothL1=0.036,RCNN_CrossEntropy=0.161,RCNN_SmoothL1=0.181,RPNAcc=0.969,RPNL1Loss=0.306,RCNNAcc=0.926,RCNNL1Loss=1.217
+[Epoch 8][Batch 2799], Speed: 12.625 samples/sec, RPN_Conf=0.062,RPN_SmoothL1=0.036,RCNN_CrossEntropy=0.161,RCNN_SmoothL1=0.181,RPNAcc=0.969,RPNL1Loss=0.306,RCNNAcc=0.926,RCNNL1Loss=1.216
+[Epoch 8][Batch 2899], Speed: 12.547 samples/sec, RPN_Conf=0.062,RPN_SmoothL1=0.036,RCNN_CrossEntropy=0.161,RCNN_SmoothL1=0.181,RPNAcc=0.969,RPNL1Loss=0.306,RCNNAcc=0.926,RCNNL1Loss=1.215
+[Epoch 8][Batch 2999], Speed: 12.510 samples/sec, RPN_Conf=0.062,RPN_SmoothL1=0.036,RCNN_CrossEntropy=0.161,RCNN_SmoothL1=0.181,RPNAcc=0.969,RPNL1Loss=0.306,RCNNAcc=0.926,RCNNL1Loss=1.214
+[Epoch 8][Batch 3099], Speed: 12.467 samples/sec, RPN_Conf=0.062,RPN_SmoothL1=0.036,RCNN_CrossEntropy=0.161,RCNN_SmoothL1=0.181,RPNAcc=0.969,RPNL1Loss=0.306,RCNNAcc=0.926,RCNNL1Loss=1.213
+[Epoch 8][Batch 3199], Speed: 12.547 samples/sec, RPN_Conf=0.062,RPN_SmoothL1=0.036,RCNN_CrossEntropy=0.161,RCNN_SmoothL1=0.181,RPNAcc=0.969,RPNL1Loss=0.306,RCNNAcc=0.926,RCNNL1Loss=1.212
+[Epoch 8][Batch 3299], Speed: 12.477 samples/sec, RPN_Conf=0.062,RPN_SmoothL1=0.036,RCNN_CrossEntropy=0.161,RCNN_SmoothL1=0.181,RPNAcc=0.969,RPNL1Loss=0.306,RCNNAcc=0.926,RCNNL1Loss=1.212
+[Epoch 8][Batch 3399], Speed: 12.509 samples/sec, RPN_Conf=0.062,RPN_SmoothL1=0.036,RCNN_CrossEntropy=0.161,RCNN_SmoothL1=0.181,RPNAcc=0.969,RPNL1Loss=0.306,RCNNAcc=0.926,RCNNL1Loss=1.211
+[Epoch 8][Batch 3499], Speed: 12.528 samples/sec, RPN_Conf=0.062,RPN_SmoothL1=0.036,RCNN_CrossEntropy=0.162,RCNN_SmoothL1=0.181,RPNAcc=0.969,RPNL1Loss=0.306,RCNNAcc=0.926,RCNNL1Loss=1.210
+[Epoch 8][Batch 3599], Speed: 12.475 samples/sec, RPN_Conf=0.062,RPN_SmoothL1=0.036,RCNN_CrossEntropy=0.162,RCNN_SmoothL1=0.182,RPNAcc=0.969,RPNL1Loss=0.305,RCNNAcc=0.926,RCNNL1Loss=1.209
+[Epoch 8][Batch 3699], Speed: 12.580 samples/sec, RPN_Conf=0.062,RPN_SmoothL1=0.036,RCNN_CrossEntropy=0.162,RCNN_SmoothL1=0.181,RPNAcc=0.969,RPNL1Loss=0.305,RCNNAcc=0.926,RCNNL1Loss=1.208
+[Epoch 8][Batch 3799], Speed: 12.484 samples/sec, RPN_Conf=0.062,RPN_SmoothL1=0.036,RCNN_CrossEntropy=0.162,RCNN_SmoothL1=0.181,RPNAcc=0.969,RPNL1Loss=0.305,RCNNAcc=0.927,RCNNL1Loss=1.207
+[Epoch 8][Batch 3899], Speed: 12.467 samples/sec, RPN_Conf=0.062,RPN_SmoothL1=0.036,RCNN_CrossEntropy=0.162,RCNN_SmoothL1=0.181,RPNAcc=0.969,RPNL1Loss=0.305,RCNNAcc=0.927,RCNNL1Loss=1.206
+[Epoch 8][Batch 3999], Speed: 12.499 samples/sec, RPN_Conf=0.062,RPN_SmoothL1=0.036,RCNN_CrossEntropy=0.162,RCNN_SmoothL1=0.181,RPNAcc=0.969,RPNL1Loss=0.305,RCNNAcc=0.927,RCNNL1Loss=1.205
+[Epoch 8][Batch 4099], Speed: 12.454 samples/sec, RPN_Conf=0.062,RPN_SmoothL1=0.036,RCNN_CrossEntropy=0.162,RCNN_SmoothL1=0.181,RPNAcc=0.969,RPNL1Loss=0.305,RCNNAcc=0.927,RCNNL1Loss=1.205
+[Epoch 8] Training cost: 1327.090, RPN_Conf=0.062,RPN_SmoothL1=0.036,RCNN_CrossEntropy=0.162,RCNN_SmoothL1=0.181
+[Epoch 8] Validation: 
+aeroplane=0.7644394297535082
+bicycle=0.7625604063772203
+bird=0.7510550379209355
+boat=0.6528829935209253
+bottle=0.6353797380157714
+bus=0.7991368149025578
+car=0.8314804496739272
+cat=0.8249444589089134
+chair=0.544114867220966
+cow=0.7655570329260012
+diningtable=0.6645064986387176
+dog=0.7548839431260006
+horse=0.8049083452858028
+motorbike=0.7906902763705947
+person=0.7704486770074759
+pottedplant=0.42779555649608725
+sheep=0.7247735552243748
+sofa=0.6778536828111797
+train=0.7903431712950165
+tvmonitor=0.7293802361494771
+mAP=0.7233567585812727
+[Epoch 8] Saving parameters to faster_rcnn_resnet50_v1b_voc_0008_0.7234.params
+[Epoch 9][Batch 99], Speed: 11.873 samples/sec, RPN_Conf=0.060,RPN_SmoothL1=0.032,RCNN_CrossEntropy=0.153,RCNN_SmoothL1=0.173,RPNAcc=0.969,RPNL1Loss=0.305,RCNNAcc=0.927,RCNNL1Loss=1.203
+[Epoch 9][Batch 199], Speed: 12.532 samples/sec, RPN_Conf=0.060,RPN_SmoothL1=0.032,RCNN_CrossEntropy=0.156,RCNN_SmoothL1=0.178,RPNAcc=0.969,RPNL1Loss=0.305,RCNNAcc=0.927,RCNNL1Loss=1.202
+[Epoch 9][Batch 299], Speed: 12.489 samples/sec, RPN_Conf=0.059,RPN_SmoothL1=0.033,RCNN_CrossEntropy=0.153,RCNN_SmoothL1=0.174,RPNAcc=0.969,RPNL1Loss=0.305,RCNNAcc=0.927,RCNNL1Loss=1.201
+[Epoch 9][Batch 399], Speed: 12.397 samples/sec, RPN_Conf=0.059,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.155,RCNN_SmoothL1=0.175,RPNAcc=0.969,RPNL1Loss=0.305,RCNNAcc=0.927,RCNNL1Loss=1.200
+[Epoch 9][Batch 499], Speed: 12.624 samples/sec, RPN_Conf=0.059,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.155,RCNN_SmoothL1=0.176,RPNAcc=0.969,RPNL1Loss=0.305,RCNNAcc=0.927,RCNNL1Loss=1.199
+[Epoch 9][Batch 599], Speed: 12.397 samples/sec, RPN_Conf=0.059,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.155,RCNN_SmoothL1=0.176,RPNAcc=0.969,RPNL1Loss=0.304,RCNNAcc=0.927,RCNNL1Loss=1.198
+[Epoch 9][Batch 699], Speed: 12.539 samples/sec, RPN_Conf=0.060,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.154,RCNN_SmoothL1=0.175,RPNAcc=0.969,RPNL1Loss=0.304,RCNNAcc=0.927,RCNNL1Loss=1.197
+[Epoch 9][Batch 799], Speed: 12.487 samples/sec, RPN_Conf=0.059,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.153,RCNN_SmoothL1=0.173,RPNAcc=0.969,RPNL1Loss=0.304,RCNNAcc=0.927,RCNNL1Loss=1.196
+[Epoch 9][Batch 899], Speed: 12.518 samples/sec, RPN_Conf=0.059,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.153,RCNN_SmoothL1=0.173,RPNAcc=0.969,RPNL1Loss=0.304,RCNNAcc=0.927,RCNNL1Loss=1.195
+[Epoch 9][Batch 999], Speed: 12.400 samples/sec, RPN_Conf=0.058,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.152,RCNN_SmoothL1=0.172,RPNAcc=0.969,RPNL1Loss=0.304,RCNNAcc=0.927,RCNNL1Loss=1.194
+[Epoch 9][Batch 1099], Speed: 12.420 samples/sec, RPN_Conf=0.059,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.152,RCNN_SmoothL1=0.173,RPNAcc=0.969,RPNL1Loss=0.304,RCNNAcc=0.927,RCNNL1Loss=1.194
+[Epoch 9][Batch 1199], Speed: 12.523 samples/sec, RPN_Conf=0.059,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.152,RCNN_SmoothL1=0.172,RPNAcc=0.969,RPNL1Loss=0.304,RCNNAcc=0.927,RCNNL1Loss=1.193
+[Epoch 9][Batch 1299], Speed: 12.513 samples/sec, RPN_Conf=0.059,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.152,RCNN_SmoothL1=0.172,RPNAcc=0.969,RPNL1Loss=0.304,RCNNAcc=0.927,RCNNL1Loss=1.192
+[Epoch 9][Batch 1399], Speed: 12.463 samples/sec, RPN_Conf=0.059,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.152,RCNN_SmoothL1=0.172,RPNAcc=0.969,RPNL1Loss=0.304,RCNNAcc=0.927,RCNNL1Loss=1.191
+[Epoch 9][Batch 1499], Speed: 12.331 samples/sec, RPN_Conf=0.059,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.152,RCNN_SmoothL1=0.172,RPNAcc=0.969,RPNL1Loss=0.304,RCNNAcc=0.927,RCNNL1Loss=1.190
+[Epoch 9][Batch 1599], Speed: 12.386 samples/sec, RPN_Conf=0.060,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.153,RCNN_SmoothL1=0.173,RPNAcc=0.969,RPNL1Loss=0.304,RCNNAcc=0.927,RCNNL1Loss=1.189
+[Epoch 9][Batch 1699], Speed: 12.493 samples/sec, RPN_Conf=0.060,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.153,RCNN_SmoothL1=0.173,RPNAcc=0.969,RPNL1Loss=0.304,RCNNAcc=0.927,RCNNL1Loss=1.188
+[Epoch 9][Batch 1799], Speed: 12.536 samples/sec, RPN_Conf=0.060,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.153,RCNN_SmoothL1=0.172,RPNAcc=0.969,RPNL1Loss=0.304,RCNNAcc=0.927,RCNNL1Loss=1.187
+[Epoch 9][Batch 1899], Speed: 12.361 samples/sec, RPN_Conf=0.060,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.154,RCNN_SmoothL1=0.173,RPNAcc=0.969,RPNL1Loss=0.303,RCNNAcc=0.927,RCNNL1Loss=1.186
+[Epoch 9][Batch 1999], Speed: 12.452 samples/sec, RPN_Conf=0.060,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.154,RCNN_SmoothL1=0.173,RPNAcc=0.969,RPNL1Loss=0.303,RCNNAcc=0.928,RCNNL1Loss=1.186
+[Epoch 9][Batch 2099], Speed: 12.523 samples/sec, RPN_Conf=0.060,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.154,RCNN_SmoothL1=0.173,RPNAcc=0.969,RPNL1Loss=0.303,RCNNAcc=0.928,RCNNL1Loss=1.185
+[Epoch 9][Batch 2199], Speed: 12.508 samples/sec, RPN_Conf=0.060,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.154,RCNN_SmoothL1=0.173,RPNAcc=0.969,RPNL1Loss=0.303,RCNNAcc=0.928,RCNNL1Loss=1.184
+[Epoch 9][Batch 2299], Speed: 12.417 samples/sec, RPN_Conf=0.060,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.154,RCNN_SmoothL1=0.173,RPNAcc=0.969,RPNL1Loss=0.303,RCNNAcc=0.928,RCNNL1Loss=1.183
+[Epoch 9][Batch 2399], Speed: 12.500 samples/sec, RPN_Conf=0.060,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.155,RCNN_SmoothL1=0.174,RPNAcc=0.969,RPNL1Loss=0.303,RCNNAcc=0.928,RCNNL1Loss=1.182
+[Epoch 9][Batch 2499], Speed: 12.522 samples/sec, RPN_Conf=0.060,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.155,RCNN_SmoothL1=0.174,RPNAcc=0.969,RPNL1Loss=0.303,RCNNAcc=0.928,RCNNL1Loss=1.182
+[Epoch 9][Batch 2599], Speed: 12.525 samples/sec, RPN_Conf=0.060,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.155,RCNN_SmoothL1=0.174,RPNAcc=0.969,RPNL1Loss=0.303,RCNNAcc=0.928,RCNNL1Loss=1.181
+[Epoch 9][Batch 2699], Speed: 12.377 samples/sec, RPN_Conf=0.060,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.155,RCNN_SmoothL1=0.174,RPNAcc=0.970,RPNL1Loss=0.303,RCNNAcc=0.928,RCNNL1Loss=1.180
+[Epoch 9][Batch 2799], Speed: 12.545 samples/sec, RPN_Conf=0.060,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.155,RCNN_SmoothL1=0.174,RPNAcc=0.970,RPNL1Loss=0.303,RCNNAcc=0.928,RCNNL1Loss=1.179
+[Epoch 9][Batch 2899], Speed: 12.268 samples/sec, RPN_Conf=0.060,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.156,RCNN_SmoothL1=0.174,RPNAcc=0.970,RPNL1Loss=0.303,RCNNAcc=0.928,RCNNL1Loss=1.178
+[Epoch 9][Batch 2999], Speed: 12.510 samples/sec, RPN_Conf=0.060,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.155,RCNN_SmoothL1=0.174,RPNAcc=0.970,RPNL1Loss=0.303,RCNNAcc=0.928,RCNNL1Loss=1.178
+[Epoch 9][Batch 3099], Speed: 12.506 samples/sec, RPN_Conf=0.060,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.155,RCNN_SmoothL1=0.174,RPNAcc=0.970,RPNL1Loss=0.303,RCNNAcc=0.928,RCNNL1Loss=1.177
+[Epoch 9][Batch 3199], Speed: 12.559 samples/sec, RPN_Conf=0.060,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.155,RCNN_SmoothL1=0.174,RPNAcc=0.970,RPNL1Loss=0.303,RCNNAcc=0.928,RCNNL1Loss=1.176
+[Epoch 9][Batch 3299], Speed: 12.491 samples/sec, RPN_Conf=0.060,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.155,RCNN_SmoothL1=0.174,RPNAcc=0.970,RPNL1Loss=0.302,RCNNAcc=0.928,RCNNL1Loss=1.175
+[Epoch 9][Batch 3399], Speed: 12.550 samples/sec, RPN_Conf=0.060,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.155,RCNN_SmoothL1=0.174,RPNAcc=0.970,RPNL1Loss=0.302,RCNNAcc=0.928,RCNNL1Loss=1.174
+[Epoch 9][Batch 3499], Speed: 12.493 samples/sec, RPN_Conf=0.060,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.155,RCNN_SmoothL1=0.174,RPNAcc=0.970,RPNL1Loss=0.302,RCNNAcc=0.928,RCNNL1Loss=1.174
+[Epoch 9][Batch 3599], Speed: 12.480 samples/sec, RPN_Conf=0.060,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.155,RCNN_SmoothL1=0.174,RPNAcc=0.970,RPNL1Loss=0.302,RCNNAcc=0.928,RCNNL1Loss=1.173
+[Epoch 9][Batch 3699], Speed: 12.470 samples/sec, RPN_Conf=0.060,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.155,RCNN_SmoothL1=0.174,RPNAcc=0.970,RPNL1Loss=0.302,RCNNAcc=0.928,RCNNL1Loss=1.172
+[Epoch 9][Batch 3799], Speed: 12.552 samples/sec, RPN_Conf=0.060,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.155,RCNN_SmoothL1=0.174,RPNAcc=0.970,RPNL1Loss=0.302,RCNNAcc=0.928,RCNNL1Loss=1.171
+[Epoch 9][Batch 3899], Speed: 12.435 samples/sec, RPN_Conf=0.060,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.155,RCNN_SmoothL1=0.174,RPNAcc=0.970,RPNL1Loss=0.302,RCNNAcc=0.928,RCNNL1Loss=1.170
+[Epoch 9][Batch 3999], Speed: 12.459 samples/sec, RPN_Conf=0.060,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.155,RCNN_SmoothL1=0.174,RPNAcc=0.970,RPNL1Loss=0.302,RCNNAcc=0.928,RCNNL1Loss=1.170
+[Epoch 9][Batch 4099], Speed: 12.524 samples/sec, RPN_Conf=0.060,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.156,RCNN_SmoothL1=0.174,RPNAcc=0.970,RPNL1Loss=0.302,RCNNAcc=0.928,RCNNL1Loss=1.169
+[Epoch 9] Training cost: 1328.103, RPN_Conf=0.060,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.156,RCNN_SmoothL1=0.174
+[Epoch 9] Validation: 
+aeroplane=0.7869132647586893
+bicycle=0.8333597834335363
+bird=0.739030718101502
+boat=0.6376161109382583
+bottle=0.5664374361525522
+bus=0.8423005291430309
+car=0.8560013673203553
+cat=0.8377291127947204
+chair=0.5311455156463487
+cow=0.7690691423404277
+diningtable=0.6443295276080249
+dog=0.8201127060263901
+horse=0.8292333623915367
+motorbike=0.7369037413443063
+person=0.7662392096331788
+pottedplant=0.4516819911992784
+sheep=0.7225444420260584
+sofa=0.6839512024151397
+train=0.7608906872558862
+tvmonitor=0.7319823170920103
+mAP=0.7273736083810615
+[Epoch 9] mAP 0.7273736083810615 higher than current best [0.7265165379815485] saving to faster_rcnn_resnet50_v1b_voc_best.params
+[Epoch 9] Saving parameters to faster_rcnn_resnet50_v1b_voc_0009_0.7274.params
+[Epoch 10][Batch 99], Speed: 11.652 samples/sec, RPN_Conf=0.060,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.140,RCNN_SmoothL1=0.163,RPNAcc=0.970,RPNL1Loss=0.302,RCNNAcc=0.928,RCNNL1Loss=1.168
+[Epoch 10][Batch 199], Speed: 12.371 samples/sec, RPN_Conf=0.060,RPN_SmoothL1=0.036,RCNN_CrossEntropy=0.140,RCNN_SmoothL1=0.165,RPNAcc=0.970,RPNL1Loss=0.302,RCNNAcc=0.928,RCNNL1Loss=1.167
+[Epoch 10][Batch 299], Speed: 12.474 samples/sec, RPN_Conf=0.060,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.143,RCNN_SmoothL1=0.164,RPNAcc=0.970,RPNL1Loss=0.302,RCNNAcc=0.928,RCNNL1Loss=1.166
+[Epoch 10][Batch 399], Speed: 12.436 samples/sec, RPN_Conf=0.061,RPN_SmoothL1=0.036,RCNN_CrossEntropy=0.147,RCNN_SmoothL1=0.167,RPNAcc=0.970,RPNL1Loss=0.302,RCNNAcc=0.928,RCNNL1Loss=1.165
+[Epoch 10][Batch 499], Speed: 12.428 samples/sec, RPN_Conf=0.060,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.149,RCNN_SmoothL1=0.169,RPNAcc=0.970,RPNL1Loss=0.302,RCNNAcc=0.928,RCNNL1Loss=1.164
+[Epoch 10][Batch 599], Speed: 12.472 samples/sec, RPN_Conf=0.060,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.150,RCNN_SmoothL1=0.169,RPNAcc=0.970,RPNL1Loss=0.302,RCNNAcc=0.929,RCNNL1Loss=1.164
+[Epoch 10][Batch 699], Speed: 12.483 samples/sec, RPN_Conf=0.060,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.150,RCNN_SmoothL1=0.170,RPNAcc=0.970,RPNL1Loss=0.302,RCNNAcc=0.929,RCNNL1Loss=1.163
+[Epoch 10][Batch 799], Speed: 12.501 samples/sec, RPN_Conf=0.060,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.149,RCNN_SmoothL1=0.169,RPNAcc=0.970,RPNL1Loss=0.301,RCNNAcc=0.929,RCNNL1Loss=1.162
+[Epoch 10][Batch 899], Speed: 12.404 samples/sec, RPN_Conf=0.060,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.149,RCNN_SmoothL1=0.169,RPNAcc=0.970,RPNL1Loss=0.301,RCNNAcc=0.929,RCNNL1Loss=1.161
+[Epoch 10][Batch 999], Speed: 12.507 samples/sec, RPN_Conf=0.059,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.148,RCNN_SmoothL1=0.169,RPNAcc=0.970,RPNL1Loss=0.301,RCNNAcc=0.929,RCNNL1Loss=1.160
+[Epoch 10][Batch 1099], Speed: 12.561 samples/sec, RPN_Conf=0.059,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.148,RCNN_SmoothL1=0.169,RPNAcc=0.970,RPNL1Loss=0.301,RCNNAcc=0.929,RCNNL1Loss=1.160
+[Epoch 10][Batch 1199], Speed: 12.581 samples/sec, RPN_Conf=0.059,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.147,RCNN_SmoothL1=0.167,RPNAcc=0.970,RPNL1Loss=0.301,RCNNAcc=0.929,RCNNL1Loss=1.159
+[Epoch 10][Batch 1299], Speed: 12.555 samples/sec, RPN_Conf=0.059,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.148,RCNN_SmoothL1=0.168,RPNAcc=0.970,RPNL1Loss=0.301,RCNNAcc=0.929,RCNNL1Loss=1.158
+[Epoch 10][Batch 1399], Speed: 12.520 samples/sec, RPN_Conf=0.058,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.148,RCNN_SmoothL1=0.168,RPNAcc=0.970,RPNL1Loss=0.301,RCNNAcc=0.929,RCNNL1Loss=1.157
+[Epoch 10][Batch 1499], Speed: 12.530 samples/sec, RPN_Conf=0.059,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.149,RCNN_SmoothL1=0.168,RPNAcc=0.970,RPNL1Loss=0.301,RCNNAcc=0.929,RCNNL1Loss=1.156
+[Epoch 10][Batch 1599], Speed: 12.463 samples/sec, RPN_Conf=0.058,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.149,RCNN_SmoothL1=0.168,RPNAcc=0.970,RPNL1Loss=0.301,RCNNAcc=0.929,RCNNL1Loss=1.155
+[Epoch 10][Batch 1699], Speed: 12.554 samples/sec, RPN_Conf=0.058,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.149,RCNN_SmoothL1=0.168,RPNAcc=0.970,RPNL1Loss=0.301,RCNNAcc=0.929,RCNNL1Loss=1.155
+[Epoch 10][Batch 1799], Speed: 12.504 samples/sec, RPN_Conf=0.058,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.149,RCNN_SmoothL1=0.168,RPNAcc=0.970,RPNL1Loss=0.301,RCNNAcc=0.929,RCNNL1Loss=1.154
+[Epoch 10][Batch 1899], Speed: 12.502 samples/sec, RPN_Conf=0.058,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.149,RCNN_SmoothL1=0.168,RPNAcc=0.970,RPNL1Loss=0.301,RCNNAcc=0.929,RCNNL1Loss=1.153
+[Epoch 10][Batch 1999], Speed: 12.548 samples/sec, RPN_Conf=0.058,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.150,RCNN_SmoothL1=0.169,RPNAcc=0.970,RPNL1Loss=0.300,RCNNAcc=0.929,RCNNL1Loss=1.153
+[Epoch 10][Batch 2099], Speed: 12.520 samples/sec, RPN_Conf=0.058,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.150,RCNN_SmoothL1=0.169,RPNAcc=0.970,RPNL1Loss=0.300,RCNNAcc=0.929,RCNNL1Loss=1.152
+[Epoch 10][Batch 2199], Speed: 12.440 samples/sec, RPN_Conf=0.058,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.151,RCNN_SmoothL1=0.169,RPNAcc=0.970,RPNL1Loss=0.300,RCNNAcc=0.929,RCNNL1Loss=1.151
+[Epoch 10][Batch 2299], Speed: 12.365 samples/sec, RPN_Conf=0.058,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.151,RCNN_SmoothL1=0.170,RPNAcc=0.970,RPNL1Loss=0.300,RCNNAcc=0.929,RCNNL1Loss=1.150
+[Epoch 10][Batch 2399], Speed: 12.428 samples/sec, RPN_Conf=0.058,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.151,RCNN_SmoothL1=0.170,RPNAcc=0.970,RPNL1Loss=0.300,RCNNAcc=0.929,RCNNL1Loss=1.150
+[Epoch 10][Batch 2499], Speed: 12.519 samples/sec, RPN_Conf=0.058,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.151,RCNN_SmoothL1=0.170,RPNAcc=0.970,RPNL1Loss=0.300,RCNNAcc=0.929,RCNNL1Loss=1.149
+[Epoch 10][Batch 2599], Speed: 12.418 samples/sec, RPN_Conf=0.058,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.151,RCNN_SmoothL1=0.170,RPNAcc=0.970,RPNL1Loss=0.300,RCNNAcc=0.929,RCNNL1Loss=1.148
+[Epoch 10][Batch 2699], Speed: 12.503 samples/sec, RPN_Conf=0.058,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.150,RCNN_SmoothL1=0.169,RPNAcc=0.970,RPNL1Loss=0.300,RCNNAcc=0.929,RCNNL1Loss=1.147
+[Epoch 10][Batch 2799], Speed: 12.517 samples/sec, RPN_Conf=0.058,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.150,RCNN_SmoothL1=0.169,RPNAcc=0.970,RPNL1Loss=0.300,RCNNAcc=0.929,RCNNL1Loss=1.147
+[Epoch 10][Batch 2899], Speed: 12.541 samples/sec, RPN_Conf=0.058,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.151,RCNN_SmoothL1=0.169,RPNAcc=0.970,RPNL1Loss=0.300,RCNNAcc=0.929,RCNNL1Loss=1.146
+[Epoch 10][Batch 2999], Speed: 12.520 samples/sec, RPN_Conf=0.058,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.151,RCNN_SmoothL1=0.169,RPNAcc=0.970,RPNL1Loss=0.300,RCNNAcc=0.929,RCNNL1Loss=1.145
+[Epoch 10][Batch 3099], Speed: 12.545 samples/sec, RPN_Conf=0.058,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.151,RCNN_SmoothL1=0.169,RPNAcc=0.970,RPNL1Loss=0.300,RCNNAcc=0.929,RCNNL1Loss=1.144
+[Epoch 10][Batch 3199], Speed: 12.539 samples/sec, RPN_Conf=0.058,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.151,RCNN_SmoothL1=0.169,RPNAcc=0.970,RPNL1Loss=0.300,RCNNAcc=0.929,RCNNL1Loss=1.144
+[Epoch 10][Batch 3299], Speed: 12.539 samples/sec, RPN_Conf=0.058,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.151,RCNN_SmoothL1=0.169,RPNAcc=0.970,RPNL1Loss=0.300,RCNNAcc=0.929,RCNNL1Loss=1.143
+[Epoch 10][Batch 3399], Speed: 12.433 samples/sec, RPN_Conf=0.058,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.151,RCNN_SmoothL1=0.169,RPNAcc=0.970,RPNL1Loss=0.300,RCNNAcc=0.929,RCNNL1Loss=1.142
+[Epoch 10][Batch 3499], Speed: 12.415 samples/sec, RPN_Conf=0.058,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.152,RCNN_SmoothL1=0.169,RPNAcc=0.970,RPNL1Loss=0.300,RCNNAcc=0.930,RCNNL1Loss=1.142
+[Epoch 10][Batch 3599], Speed: 12.528 samples/sec, RPN_Conf=0.058,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.152,RCNN_SmoothL1=0.169,RPNAcc=0.970,RPNL1Loss=0.300,RCNNAcc=0.930,RCNNL1Loss=1.141
+[Epoch 10][Batch 3699], Speed: 12.489 samples/sec, RPN_Conf=0.058,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.152,RCNN_SmoothL1=0.169,RPNAcc=0.970,RPNL1Loss=0.299,RCNNAcc=0.930,RCNNL1Loss=1.140
+[Epoch 10][Batch 3799], Speed: 12.542 samples/sec, RPN_Conf=0.058,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.152,RCNN_SmoothL1=0.169,RPNAcc=0.970,RPNL1Loss=0.299,RCNNAcc=0.930,RCNNL1Loss=1.140
+[Epoch 10][Batch 3899], Speed: 12.567 samples/sec, RPN_Conf=0.058,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.152,RCNN_SmoothL1=0.169,RPNAcc=0.970,RPNL1Loss=0.299,RCNNAcc=0.930,RCNNL1Loss=1.139
+[Epoch 10][Batch 3999], Speed: 12.427 samples/sec, RPN_Conf=0.058,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.152,RCNN_SmoothL1=0.169,RPNAcc=0.970,RPNL1Loss=0.299,RCNNAcc=0.930,RCNNL1Loss=1.138
+[Epoch 10][Batch 4099], Speed: 12.504 samples/sec, RPN_Conf=0.058,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.152,RCNN_SmoothL1=0.169,RPNAcc=0.970,RPNL1Loss=0.299,RCNNAcc=0.930,RCNNL1Loss=1.138
+[Epoch 10] Training cost: 1326.926, RPN_Conf=0.058,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.152,RCNN_SmoothL1=0.169
+[Epoch 10] Validation: 
+aeroplane=0.7721914455014349
+bicycle=0.8039220815377109
+bird=0.7508196022982597
+boat=0.6122099400877901
+bottle=0.6299611964390877
+bus=0.801292773327013
+car=0.8579020058436498
+cat=0.8747256996960675
+chair=0.5207033223766198
+cow=0.8128345832880807
+diningtable=0.6432668997311113
+dog=0.8399154155220037
+horse=0.8493195812722231
+motorbike=0.7962140706395784
+person=0.780907001907243
+pottedplant=0.47445943380022004
+sheep=0.7792982643761792
+sofa=0.6089473084285566
+train=0.7851899614091904
+tvmonitor=0.7190963060622859
+mAP=0.7356588446772153
+[Epoch 10] mAP 0.7356588446772153 higher than current best [0.7273736083810615] saving to faster_rcnn_resnet50_v1b_voc_best.params
+[Epoch 10] Saving parameters to faster_rcnn_resnet50_v1b_voc_0010_0.7357.params
+[Epoch 11][Batch 99], Speed: 11.481 samples/sec, RPN_Conf=0.057,RPN_SmoothL1=0.038,RCNN_CrossEntropy=0.140,RCNN_SmoothL1=0.166,RPNAcc=0.971,RPNL1Loss=0.299,RCNNAcc=0.930,RCNNL1Loss=1.137
+[Epoch 11][Batch 199], Speed: 12.325 samples/sec, RPN_Conf=0.054,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.142,RCNN_SmoothL1=0.159,RPNAcc=0.971,RPNL1Loss=0.299,RCNNAcc=0.930,RCNNL1Loss=1.136
+[Epoch 11][Batch 299], Speed: 12.558 samples/sec, RPN_Conf=0.055,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.141,RCNN_SmoothL1=0.160,RPNAcc=0.971,RPNL1Loss=0.299,RCNNAcc=0.930,RCNNL1Loss=1.135
+[Epoch 11][Batch 399], Speed: 12.549 samples/sec, RPN_Conf=0.056,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.141,RCNN_SmoothL1=0.162,RPNAcc=0.971,RPNL1Loss=0.299,RCNNAcc=0.930,RCNNL1Loss=1.134
+[Epoch 11][Batch 499], Speed: 12.463 samples/sec, RPN_Conf=0.055,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.140,RCNN_SmoothL1=0.162,RPNAcc=0.971,RPNL1Loss=0.299,RCNNAcc=0.930,RCNNL1Loss=1.134
+[Epoch 11][Batch 599], Speed: 12.490 samples/sec, RPN_Conf=0.056,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.141,RCNN_SmoothL1=0.162,RPNAcc=0.971,RPNL1Loss=0.299,RCNNAcc=0.930,RCNNL1Loss=1.133
+[Epoch 11][Batch 699], Speed: 12.453 samples/sec, RPN_Conf=0.055,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.140,RCNN_SmoothL1=0.161,RPNAcc=0.971,RPNL1Loss=0.299,RCNNAcc=0.930,RCNNL1Loss=1.132
+[Epoch 11][Batch 799], Speed: 12.500 samples/sec, RPN_Conf=0.056,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.142,RCNN_SmoothL1=0.164,RPNAcc=0.971,RPNL1Loss=0.299,RCNNAcc=0.930,RCNNL1Loss=1.131
+[Epoch 11][Batch 899], Speed: 12.490 samples/sec, RPN_Conf=0.057,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.144,RCNN_SmoothL1=0.164,RPNAcc=0.971,RPNL1Loss=0.299,RCNNAcc=0.930,RCNNL1Loss=1.131
+[Epoch 11][Batch 999], Speed: 12.546 samples/sec, RPN_Conf=0.056,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.144,RCNN_SmoothL1=0.164,RPNAcc=0.971,RPNL1Loss=0.299,RCNNAcc=0.930,RCNNL1Loss=1.130
+[Epoch 11][Batch 1099], Speed: 12.378 samples/sec, RPN_Conf=0.056,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.143,RCNN_SmoothL1=0.164,RPNAcc=0.971,RPNL1Loss=0.298,RCNNAcc=0.930,RCNNL1Loss=1.129
+[Epoch 11][Batch 1199], Speed: 12.463 samples/sec, RPN_Conf=0.056,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.143,RCNN_SmoothL1=0.164,RPNAcc=0.971,RPNL1Loss=0.298,RCNNAcc=0.930,RCNNL1Loss=1.128
+[Epoch 11][Batch 1299], Speed: 12.477 samples/sec, RPN_Conf=0.056,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.143,RCNN_SmoothL1=0.164,RPNAcc=0.971,RPNL1Loss=0.298,RCNNAcc=0.930,RCNNL1Loss=1.128
+[Epoch 11][Batch 1399], Speed: 12.518 samples/sec, RPN_Conf=0.056,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.144,RCNN_SmoothL1=0.164,RPNAcc=0.971,RPNL1Loss=0.298,RCNNAcc=0.930,RCNNL1Loss=1.127
+[Epoch 11][Batch 1499], Speed: 12.543 samples/sec, RPN_Conf=0.056,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.144,RCNN_SmoothL1=0.164,RPNAcc=0.971,RPNL1Loss=0.298,RCNNAcc=0.930,RCNNL1Loss=1.126
+[Epoch 11][Batch 1599], Speed: 12.447 samples/sec, RPN_Conf=0.056,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.145,RCNN_SmoothL1=0.164,RPNAcc=0.971,RPNL1Loss=0.298,RCNNAcc=0.930,RCNNL1Loss=1.126
+[Epoch 11][Batch 1699], Speed: 12.532 samples/sec, RPN_Conf=0.056,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.146,RCNN_SmoothL1=0.165,RPNAcc=0.971,RPNL1Loss=0.298,RCNNAcc=0.930,RCNNL1Loss=1.125
+[Epoch 11][Batch 1799], Speed: 12.440 samples/sec, RPN_Conf=0.056,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.146,RCNN_SmoothL1=0.165,RPNAcc=0.971,RPNL1Loss=0.298,RCNNAcc=0.930,RCNNL1Loss=1.124
+[Epoch 11][Batch 1899], Speed: 12.504 samples/sec, RPN_Conf=0.056,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.147,RCNN_SmoothL1=0.165,RPNAcc=0.971,RPNL1Loss=0.298,RCNNAcc=0.930,RCNNL1Loss=1.124
+[Epoch 11][Batch 1999], Speed: 12.435 samples/sec, RPN_Conf=0.056,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.147,RCNN_SmoothL1=0.164,RPNAcc=0.971,RPNL1Loss=0.298,RCNNAcc=0.930,RCNNL1Loss=1.123
+[Epoch 11][Batch 2099], Speed: 12.500 samples/sec, RPN_Conf=0.056,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.148,RCNN_SmoothL1=0.165,RPNAcc=0.971,RPNL1Loss=0.298,RCNNAcc=0.930,RCNNL1Loss=1.122
+[Epoch 11][Batch 2199], Speed: 12.383 samples/sec, RPN_Conf=0.056,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.148,RCNN_SmoothL1=0.165,RPNAcc=0.971,RPNL1Loss=0.298,RCNNAcc=0.930,RCNNL1Loss=1.122
+[Epoch 11][Batch 2299], Speed: 12.522 samples/sec, RPN_Conf=0.056,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.148,RCNN_SmoothL1=0.165,RPNAcc=0.971,RPNL1Loss=0.298,RCNNAcc=0.930,RCNNL1Loss=1.121
+[Epoch 11][Batch 2399], Speed: 12.510 samples/sec, RPN_Conf=0.056,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.148,RCNN_SmoothL1=0.165,RPNAcc=0.971,RPNL1Loss=0.298,RCNNAcc=0.931,RCNNL1Loss=1.120
+[Epoch 11][Batch 2499], Speed: 12.426 samples/sec, RPN_Conf=0.057,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.148,RCNN_SmoothL1=0.165,RPNAcc=0.971,RPNL1Loss=0.298,RCNNAcc=0.931,RCNNL1Loss=1.120
+[Epoch 11][Batch 2599], Speed: 12.489 samples/sec, RPN_Conf=0.057,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.148,RCNN_SmoothL1=0.165,RPNAcc=0.971,RPNL1Loss=0.298,RCNNAcc=0.931,RCNNL1Loss=1.119
+[Epoch 11][Batch 2699], Speed: 12.482 samples/sec, RPN_Conf=0.057,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.148,RCNN_SmoothL1=0.165,RPNAcc=0.971,RPNL1Loss=0.297,RCNNAcc=0.931,RCNNL1Loss=1.118
+[Epoch 11][Batch 2799], Speed: 12.479 samples/sec, RPN_Conf=0.057,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.148,RCNN_SmoothL1=0.165,RPNAcc=0.971,RPNL1Loss=0.297,RCNNAcc=0.931,RCNNL1Loss=1.118
+[Epoch 11][Batch 2899], Speed: 12.472 samples/sec, RPN_Conf=0.057,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.148,RCNN_SmoothL1=0.165,RPNAcc=0.971,RPNL1Loss=0.297,RCNNAcc=0.931,RCNNL1Loss=1.117
+[Epoch 11][Batch 2999], Speed: 12.463 samples/sec, RPN_Conf=0.057,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.147,RCNN_SmoothL1=0.165,RPNAcc=0.971,RPNL1Loss=0.297,RCNNAcc=0.931,RCNNL1Loss=1.116
+[Epoch 11][Batch 3099], Speed: 12.605 samples/sec, RPN_Conf=0.057,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.148,RCNN_SmoothL1=0.165,RPNAcc=0.971,RPNL1Loss=0.297,RCNNAcc=0.931,RCNNL1Loss=1.116
+[Epoch 11][Batch 3199], Speed: 12.446 samples/sec, RPN_Conf=0.057,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.148,RCNN_SmoothL1=0.165,RPNAcc=0.971,RPNL1Loss=0.297,RCNNAcc=0.931,RCNNL1Loss=1.115
+[Epoch 11][Batch 3299], Speed: 12.474 samples/sec, RPN_Conf=0.057,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.148,RCNN_SmoothL1=0.165,RPNAcc=0.971,RPNL1Loss=0.297,RCNNAcc=0.931,RCNNL1Loss=1.115
+[Epoch 11][Batch 3399], Speed: 12.453 samples/sec, RPN_Conf=0.057,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.148,RCNN_SmoothL1=0.165,RPNAcc=0.971,RPNL1Loss=0.297,RCNNAcc=0.931,RCNNL1Loss=1.114
+[Epoch 11][Batch 3499], Speed: 12.453 samples/sec, RPN_Conf=0.057,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.148,RCNN_SmoothL1=0.165,RPNAcc=0.971,RPNL1Loss=0.297,RCNNAcc=0.931,RCNNL1Loss=1.113
+[Epoch 11][Batch 3599], Speed: 12.473 samples/sec, RPN_Conf=0.057,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.148,RCNN_SmoothL1=0.165,RPNAcc=0.971,RPNL1Loss=0.297,RCNNAcc=0.931,RCNNL1Loss=1.113
+[Epoch 11][Batch 3699], Speed: 12.476 samples/sec, RPN_Conf=0.057,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.148,RCNN_SmoothL1=0.165,RPNAcc=0.971,RPNL1Loss=0.297,RCNNAcc=0.931,RCNNL1Loss=1.112
+[Epoch 11][Batch 3799], Speed: 12.343 samples/sec, RPN_Conf=0.057,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.148,RCNN_SmoothL1=0.165,RPNAcc=0.971,RPNL1Loss=0.297,RCNNAcc=0.931,RCNNL1Loss=1.112
+[Epoch 11][Batch 3899], Speed: 12.441 samples/sec, RPN_Conf=0.057,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.148,RCNN_SmoothL1=0.165,RPNAcc=0.971,RPNL1Loss=0.297,RCNNAcc=0.931,RCNNL1Loss=1.111
+[Epoch 11][Batch 3999], Speed: 12.520 samples/sec, RPN_Conf=0.057,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.148,RCNN_SmoothL1=0.165,RPNAcc=0.971,RPNL1Loss=0.297,RCNNAcc=0.931,RCNNL1Loss=1.110
+[Epoch 11][Batch 4099], Speed: 12.512 samples/sec, RPN_Conf=0.057,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.148,RCNN_SmoothL1=0.165,RPNAcc=0.971,RPNL1Loss=0.297,RCNNAcc=0.931,RCNNL1Loss=1.110
+[Epoch 11] Training cost: 1329.213, RPN_Conf=0.057,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.148,RCNN_SmoothL1=0.165
+[Epoch 11] Validation: 
+aeroplane=0.7415517247320843
+bicycle=0.8180014226130191
+bird=0.7659949091637863
+boat=0.6675190119523852
+bottle=0.6243763445501013
+bus=0.8507402527811323
+car=0.8661259225803858
+cat=0.8432891089668626
+chair=0.5286225546073451
+cow=0.7725478781788637
+diningtable=0.6156034265287497
+dog=0.828520900791586
+horse=0.8579673185226026
+motorbike=0.7499193828123196
+person=0.7736733229686503
+pottedplant=0.48063416565289335
+sheep=0.7875715279971703
+sofa=0.6703505330879391
+train=0.7908201882783437
+tvmonitor=0.7621455011584151
+mAP=0.7397987698962318
+[Epoch 11] mAP 0.7397987698962318 higher than current best [0.7356588446772153] saving to faster_rcnn_resnet50_v1b_voc_best.params
+[Epoch 11] Saving parameters to faster_rcnn_resnet50_v1b_voc_0011_0.7398.params
+[Epoch 12][Batch 99], Speed: 11.661 samples/sec, RPN_Conf=0.059,RPN_SmoothL1=0.038,RCNN_CrossEntropy=0.143,RCNN_SmoothL1=0.166,RPNAcc=0.971,RPNL1Loss=0.297,RCNNAcc=0.931,RCNNL1Loss=1.109
+[Epoch 12][Batch 199], Speed: 12.558 samples/sec, RPN_Conf=0.057,RPN_SmoothL1=0.035,RCNN_CrossEntropy=0.143,RCNN_SmoothL1=0.165,RPNAcc=0.971,RPNL1Loss=0.297,RCNNAcc=0.931,RCNNL1Loss=1.108
+[Epoch 12][Batch 299], Speed: 12.576 samples/sec, RPN_Conf=0.057,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.146,RCNN_SmoothL1=0.165,RPNAcc=0.971,RPNL1Loss=0.296,RCNNAcc=0.931,RCNNL1Loss=1.108
+[Epoch 12][Batch 399], Speed: 12.486 samples/sec, RPN_Conf=0.057,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.146,RCNN_SmoothL1=0.165,RPNAcc=0.971,RPNL1Loss=0.296,RCNNAcc=0.931,RCNNL1Loss=1.107
+[Epoch 12][Batch 499], Speed: 12.472 samples/sec, RPN_Conf=0.056,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.146,RCNN_SmoothL1=0.164,RPNAcc=0.971,RPNL1Loss=0.296,RCNNAcc=0.931,RCNNL1Loss=1.106
+[Epoch 12][Batch 599], Speed: 12.545 samples/sec, RPN_Conf=0.055,RPN_SmoothL1=0.033,RCNN_CrossEntropy=0.144,RCNN_SmoothL1=0.163,RPNAcc=0.971,RPNL1Loss=0.296,RCNNAcc=0.931,RCNNL1Loss=1.106
+[Epoch 12][Batch 699], Speed: 12.502 samples/sec, RPN_Conf=0.056,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.144,RCNN_SmoothL1=0.163,RPNAcc=0.971,RPNL1Loss=0.296,RCNNAcc=0.931,RCNNL1Loss=1.105
+[Epoch 12][Batch 799], Speed: 12.583 samples/sec, RPN_Conf=0.056,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.143,RCNN_SmoothL1=0.163,RPNAcc=0.971,RPNL1Loss=0.296,RCNNAcc=0.931,RCNNL1Loss=1.104
+[Epoch 12][Batch 899], Speed: 12.430 samples/sec, RPN_Conf=0.055,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.142,RCNN_SmoothL1=0.162,RPNAcc=0.971,RPNL1Loss=0.296,RCNNAcc=0.931,RCNNL1Loss=1.104
+[Epoch 12][Batch 999], Speed: 12.444 samples/sec, RPN_Conf=0.055,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.142,RCNN_SmoothL1=0.161,RPNAcc=0.971,RPNL1Loss=0.296,RCNNAcc=0.931,RCNNL1Loss=1.103
+[Epoch 12][Batch 1099], Speed: 12.425 samples/sec, RPN_Conf=0.055,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.142,RCNN_SmoothL1=0.160,RPNAcc=0.971,RPNL1Loss=0.296,RCNNAcc=0.931,RCNNL1Loss=1.102
+[Epoch 12][Batch 1199], Speed: 12.479 samples/sec, RPN_Conf=0.055,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.142,RCNN_SmoothL1=0.160,RPNAcc=0.971,RPNL1Loss=0.296,RCNNAcc=0.931,RCNNL1Loss=1.102
+[Epoch 12][Batch 1299], Speed: 12.495 samples/sec, RPN_Conf=0.055,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.142,RCNN_SmoothL1=0.161,RPNAcc=0.971,RPNL1Loss=0.296,RCNNAcc=0.931,RCNNL1Loss=1.101
+[Epoch 12][Batch 1399], Speed: 12.451 samples/sec, RPN_Conf=0.055,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.142,RCNN_SmoothL1=0.161,RPNAcc=0.971,RPNL1Loss=0.296,RCNNAcc=0.931,RCNNL1Loss=1.100
+[Epoch 12][Batch 1499], Speed: 12.492 samples/sec, RPN_Conf=0.055,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.143,RCNN_SmoothL1=0.161,RPNAcc=0.971,RPNL1Loss=0.296,RCNNAcc=0.932,RCNNL1Loss=1.100
+[Epoch 12][Batch 1599], Speed: 12.493 samples/sec, RPN_Conf=0.055,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.142,RCNN_SmoothL1=0.160,RPNAcc=0.971,RPNL1Loss=0.296,RCNNAcc=0.932,RCNNL1Loss=1.099
+[Epoch 12][Batch 1699], Speed: 12.505 samples/sec, RPN_Conf=0.055,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.142,RCNN_SmoothL1=0.160,RPNAcc=0.971,RPNL1Loss=0.296,RCNNAcc=0.932,RCNNL1Loss=1.098
+[Epoch 12][Batch 1799], Speed: 12.461 samples/sec, RPN_Conf=0.055,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.142,RCNN_SmoothL1=0.160,RPNAcc=0.971,RPNL1Loss=0.296,RCNNAcc=0.932,RCNNL1Loss=1.098
+[Epoch 12][Batch 1899], Speed: 12.502 samples/sec, RPN_Conf=0.055,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.142,RCNN_SmoothL1=0.160,RPNAcc=0.971,RPNL1Loss=0.296,RCNNAcc=0.932,RCNNL1Loss=1.097
+[Epoch 12][Batch 1999], Speed: 12.516 samples/sec, RPN_Conf=0.055,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.142,RCNN_SmoothL1=0.160,RPNAcc=0.971,RPNL1Loss=0.295,RCNNAcc=0.932,RCNNL1Loss=1.097
+[Epoch 12][Batch 2099], Speed: 12.528 samples/sec, RPN_Conf=0.055,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.143,RCNN_SmoothL1=0.161,RPNAcc=0.971,RPNL1Loss=0.295,RCNNAcc=0.932,RCNNL1Loss=1.096
+[Epoch 12][Batch 2199], Speed: 12.521 samples/sec, RPN_Conf=0.054,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.143,RCNN_SmoothL1=0.160,RPNAcc=0.971,RPNL1Loss=0.295,RCNNAcc=0.932,RCNNL1Loss=1.095
+[Epoch 12][Batch 2299], Speed: 12.505 samples/sec, RPN_Conf=0.055,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.143,RCNN_SmoothL1=0.161,RPNAcc=0.971,RPNL1Loss=0.295,RCNNAcc=0.932,RCNNL1Loss=1.095
+[Epoch 12][Batch 2399], Speed: 12.569 samples/sec, RPN_Conf=0.055,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.144,RCNN_SmoothL1=0.161,RPNAcc=0.972,RPNL1Loss=0.295,RCNNAcc=0.932,RCNNL1Loss=1.094
+[Epoch 12][Batch 2499], Speed: 12.448 samples/sec, RPN_Conf=0.055,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.144,RCNN_SmoothL1=0.162,RPNAcc=0.972,RPNL1Loss=0.295,RCNNAcc=0.932,RCNNL1Loss=1.094
+[Epoch 12][Batch 2599], Speed: 12.450 samples/sec, RPN_Conf=0.055,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.144,RCNN_SmoothL1=0.162,RPNAcc=0.972,RPNL1Loss=0.295,RCNNAcc=0.932,RCNNL1Loss=1.093
+[Epoch 12][Batch 2699], Speed: 12.351 samples/sec, RPN_Conf=0.055,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.145,RCNN_SmoothL1=0.162,RPNAcc=0.972,RPNL1Loss=0.295,RCNNAcc=0.932,RCNNL1Loss=1.093
+[Epoch 12][Batch 2799], Speed: 12.449 samples/sec, RPN_Conf=0.055,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.145,RCNN_SmoothL1=0.162,RPNAcc=0.972,RPNL1Loss=0.295,RCNNAcc=0.932,RCNNL1Loss=1.092
+[Epoch 12][Batch 2899], Speed: 12.503 samples/sec, RPN_Conf=0.055,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.145,RCNN_SmoothL1=0.162,RPNAcc=0.972,RPNL1Loss=0.295,RCNNAcc=0.932,RCNNL1Loss=1.092
+[Epoch 12][Batch 2999], Speed: 12.591 samples/sec, RPN_Conf=0.055,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.145,RCNN_SmoothL1=0.162,RPNAcc=0.972,RPNL1Loss=0.295,RCNNAcc=0.932,RCNNL1Loss=1.091
+[Epoch 12][Batch 3099], Speed: 12.539 samples/sec, RPN_Conf=0.055,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.145,RCNN_SmoothL1=0.162,RPNAcc=0.972,RPNL1Loss=0.295,RCNNAcc=0.932,RCNNL1Loss=1.091
+[Epoch 12][Batch 3199], Speed: 12.472 samples/sec, RPN_Conf=0.055,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.145,RCNN_SmoothL1=0.162,RPNAcc=0.972,RPNL1Loss=0.295,RCNNAcc=0.932,RCNNL1Loss=1.090
+[Epoch 12][Batch 3299], Speed: 12.489 samples/sec, RPN_Conf=0.055,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.145,RCNN_SmoothL1=0.162,RPNAcc=0.972,RPNL1Loss=0.295,RCNNAcc=0.932,RCNNL1Loss=1.089
+[Epoch 12][Batch 3399], Speed: 12.558 samples/sec, RPN_Conf=0.055,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.145,RCNN_SmoothL1=0.162,RPNAcc=0.972,RPNL1Loss=0.295,RCNNAcc=0.932,RCNNL1Loss=1.089
+[Epoch 12][Batch 3499], Speed: 12.493 samples/sec, RPN_Conf=0.055,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.145,RCNN_SmoothL1=0.162,RPNAcc=0.972,RPNL1Loss=0.295,RCNNAcc=0.932,RCNNL1Loss=1.088
+[Epoch 12][Batch 3599], Speed: 12.545 samples/sec, RPN_Conf=0.055,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.145,RCNN_SmoothL1=0.162,RPNAcc=0.972,RPNL1Loss=0.295,RCNNAcc=0.932,RCNNL1Loss=1.088
+[Epoch 12][Batch 3699], Speed: 12.342 samples/sec, RPN_Conf=0.055,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.145,RCNN_SmoothL1=0.162,RPNAcc=0.972,RPNL1Loss=0.294,RCNNAcc=0.932,RCNNL1Loss=1.087
+[Epoch 12][Batch 3799], Speed: 12.569 samples/sec, RPN_Conf=0.055,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.145,RCNN_SmoothL1=0.162,RPNAcc=0.972,RPNL1Loss=0.294,RCNNAcc=0.932,RCNNL1Loss=1.087
+[Epoch 12][Batch 3899], Speed: 12.437 samples/sec, RPN_Conf=0.055,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.145,RCNN_SmoothL1=0.162,RPNAcc=0.972,RPNL1Loss=0.294,RCNNAcc=0.932,RCNNL1Loss=1.086
+[Epoch 12][Batch 3999], Speed: 12.468 samples/sec, RPN_Conf=0.055,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.145,RCNN_SmoothL1=0.162,RPNAcc=0.972,RPNL1Loss=0.294,RCNNAcc=0.932,RCNNL1Loss=1.085
+[Epoch 12][Batch 4099], Speed: 12.494 samples/sec, RPN_Conf=0.056,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.145,RCNN_SmoothL1=0.162,RPNAcc=0.972,RPNL1Loss=0.294,RCNNAcc=0.932,RCNNL1Loss=1.085
+[Epoch 12] Training cost: 1326.727, RPN_Conf=0.056,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.145,RCNN_SmoothL1=0.162
+[Epoch 12] Validation: 
+aeroplane=0.7675538924110337
+bicycle=0.814796643153616
+bird=0.7851026204012888
+boat=0.6463867162821851
+bottle=0.6338403951010124
+bus=0.8533412302339638
+car=0.8700564735085531
+cat=0.8507627122223256
+chair=0.5468165105757751
+cow=0.8554719449201007
+diningtable=0.6913176625786189
+dog=0.8492091399931057
+horse=0.8413956383726595
+motorbike=0.7687844587280867
+person=0.8064988668044883
+pottedplant=0.5121070334865121
+sheep=0.7958662953652813
+sofa=0.7201224765265454
+train=0.7903267567354068
+tvmonitor=0.7436045340401982
+mAP=0.7571681000720379
+[Epoch 12] mAP 0.7571681000720379 higher than current best [0.7397987698962318] saving to faster_rcnn_resnet50_v1b_voc_best.params
+[Epoch 12] Saving parameters to faster_rcnn_resnet50_v1b_voc_0012_0.7572.params
+[Epoch 13][Batch 99], Speed: 11.577 samples/sec, RPN_Conf=0.052,RPN_SmoothL1=0.033,RCNN_CrossEntropy=0.137,RCNN_SmoothL1=0.151,RPNAcc=0.972,RPNL1Loss=0.294,RCNNAcc=0.932,RCNNL1Loss=1.084
+[Epoch 13][Batch 199], Speed: 12.506 samples/sec, RPN_Conf=0.053,RPN_SmoothL1=0.032,RCNN_CrossEntropy=0.138,RCNN_SmoothL1=0.151,RPNAcc=0.972,RPNL1Loss=0.294,RCNNAcc=0.932,RCNNL1Loss=1.083
+[Epoch 13][Batch 299], Speed: 12.543 samples/sec, RPN_Conf=0.052,RPN_SmoothL1=0.033,RCNN_CrossEntropy=0.135,RCNN_SmoothL1=0.152,RPNAcc=0.972,RPNL1Loss=0.294,RCNNAcc=0.932,RCNNL1Loss=1.083
+[Epoch 13][Batch 399], Speed: 12.521 samples/sec, RPN_Conf=0.052,RPN_SmoothL1=0.033,RCNN_CrossEntropy=0.134,RCNN_SmoothL1=0.153,RPNAcc=0.972,RPNL1Loss=0.294,RCNNAcc=0.932,RCNNL1Loss=1.082
+[Epoch 13][Batch 499], Speed: 12.478 samples/sec, RPN_Conf=0.052,RPN_SmoothL1=0.033,RCNN_CrossEntropy=0.133,RCNN_SmoothL1=0.152,RPNAcc=0.972,RPNL1Loss=0.294,RCNNAcc=0.932,RCNNL1Loss=1.081
+[Epoch 13][Batch 599], Speed: 12.525 samples/sec, RPN_Conf=0.053,RPN_SmoothL1=0.033,RCNN_CrossEntropy=0.135,RCNN_SmoothL1=0.153,RPNAcc=0.972,RPNL1Loss=0.294,RCNNAcc=0.932,RCNNL1Loss=1.081
+[Epoch 13][Batch 699], Speed: 12.513 samples/sec, RPN_Conf=0.053,RPN_SmoothL1=0.033,RCNN_CrossEntropy=0.136,RCNN_SmoothL1=0.153,RPNAcc=0.972,RPNL1Loss=0.294,RCNNAcc=0.932,RCNNL1Loss=1.080
+[Epoch 13][Batch 799], Speed: 12.535 samples/sec, RPN_Conf=0.053,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.137,RCNN_SmoothL1=0.155,RPNAcc=0.972,RPNL1Loss=0.294,RCNNAcc=0.932,RCNNL1Loss=1.080
+[Epoch 13][Batch 899], Speed: 12.444 samples/sec, RPN_Conf=0.054,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.136,RCNN_SmoothL1=0.155,RPNAcc=0.972,RPNL1Loss=0.294,RCNNAcc=0.933,RCNNL1Loss=1.079
+[Epoch 13][Batch 999], Speed: 12.392 samples/sec, RPN_Conf=0.054,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.137,RCNN_SmoothL1=0.155,RPNAcc=0.972,RPNL1Loss=0.294,RCNNAcc=0.933,RCNNL1Loss=1.078
+[Epoch 13][Batch 1099], Speed: 12.525 samples/sec, RPN_Conf=0.054,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.137,RCNN_SmoothL1=0.156,RPNAcc=0.972,RPNL1Loss=0.294,RCNNAcc=0.933,RCNNL1Loss=1.078
+[Epoch 13][Batch 1199], Speed: 12.468 samples/sec, RPN_Conf=0.054,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.136,RCNN_SmoothL1=0.155,RPNAcc=0.972,RPNL1Loss=0.294,RCNNAcc=0.933,RCNNL1Loss=1.077
+[Epoch 13][Batch 1299], Speed: 12.470 samples/sec, RPN_Conf=0.054,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.137,RCNN_SmoothL1=0.156,RPNAcc=0.972,RPNL1Loss=0.294,RCNNAcc=0.933,RCNNL1Loss=1.077
+[Epoch 13][Batch 1399], Speed: 12.556 samples/sec, RPN_Conf=0.054,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.137,RCNN_SmoothL1=0.156,RPNAcc=0.972,RPNL1Loss=0.294,RCNNAcc=0.933,RCNNL1Loss=1.076
+[Epoch 13][Batch 1499], Speed: 12.490 samples/sec, RPN_Conf=0.054,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.138,RCNN_SmoothL1=0.157,RPNAcc=0.972,RPNL1Loss=0.294,RCNNAcc=0.933,RCNNL1Loss=1.076
+[Epoch 13][Batch 1599], Speed: 12.419 samples/sec, RPN_Conf=0.055,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.139,RCNN_SmoothL1=0.157,RPNAcc=0.972,RPNL1Loss=0.294,RCNNAcc=0.933,RCNNL1Loss=1.075
+[Epoch 13][Batch 1699], Speed: 12.490 samples/sec, RPN_Conf=0.055,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.139,RCNN_SmoothL1=0.157,RPNAcc=0.972,RPNL1Loss=0.293,RCNNAcc=0.933,RCNNL1Loss=1.075
+[Epoch 13][Batch 1799], Speed: 12.481 samples/sec, RPN_Conf=0.055,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.140,RCNN_SmoothL1=0.157,RPNAcc=0.972,RPNL1Loss=0.293,RCNNAcc=0.933,RCNNL1Loss=1.074
+[Epoch 13][Batch 1899], Speed: 12.467 samples/sec, RPN_Conf=0.055,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.140,RCNN_SmoothL1=0.157,RPNAcc=0.972,RPNL1Loss=0.293,RCNNAcc=0.933,RCNNL1Loss=1.073
+[Epoch 13][Batch 1999], Speed: 12.398 samples/sec, RPN_Conf=0.055,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.140,RCNN_SmoothL1=0.157,RPNAcc=0.972,RPNL1Loss=0.293,RCNNAcc=0.933,RCNNL1Loss=1.073
+[Epoch 13][Batch 2099], Speed: 12.491 samples/sec, RPN_Conf=0.055,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.140,RCNN_SmoothL1=0.157,RPNAcc=0.972,RPNL1Loss=0.293,RCNNAcc=0.933,RCNNL1Loss=1.072
+[Epoch 13][Batch 2199], Speed: 12.468 samples/sec, RPN_Conf=0.055,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.140,RCNN_SmoothL1=0.157,RPNAcc=0.972,RPNL1Loss=0.293,RCNNAcc=0.933,RCNNL1Loss=1.072
+[Epoch 13][Batch 2299], Speed: 12.546 samples/sec, RPN_Conf=0.055,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.141,RCNN_SmoothL1=0.157,RPNAcc=0.972,RPNL1Loss=0.293,RCNNAcc=0.933,RCNNL1Loss=1.071
+[Epoch 13][Batch 2399], Speed: 12.509 samples/sec, RPN_Conf=0.055,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.141,RCNN_SmoothL1=0.157,RPNAcc=0.972,RPNL1Loss=0.293,RCNNAcc=0.933,RCNNL1Loss=1.071
+[Epoch 13][Batch 2499], Speed: 12.487 samples/sec, RPN_Conf=0.055,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.142,RCNN_SmoothL1=0.157,RPNAcc=0.972,RPNL1Loss=0.293,RCNNAcc=0.933,RCNNL1Loss=1.070
+[Epoch 13][Batch 2599], Speed: 12.512 samples/sec, RPN_Conf=0.055,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.141,RCNN_SmoothL1=0.157,RPNAcc=0.972,RPNL1Loss=0.293,RCNNAcc=0.933,RCNNL1Loss=1.070
+[Epoch 13][Batch 2699], Speed: 12.429 samples/sec, RPN_Conf=0.055,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.141,RCNN_SmoothL1=0.157,RPNAcc=0.972,RPNL1Loss=0.293,RCNNAcc=0.933,RCNNL1Loss=1.069
+[Epoch 13][Batch 2799], Speed: 12.472 samples/sec, RPN_Conf=0.055,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.142,RCNN_SmoothL1=0.158,RPNAcc=0.972,RPNL1Loss=0.293,RCNNAcc=0.933,RCNNL1Loss=1.069
+[Epoch 13][Batch 2899], Speed: 12.414 samples/sec, RPN_Conf=0.055,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.142,RCNN_SmoothL1=0.158,RPNAcc=0.972,RPNL1Loss=0.293,RCNNAcc=0.933,RCNNL1Loss=1.068
+[Epoch 13][Batch 2999], Speed: 12.554 samples/sec, RPN_Conf=0.055,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.142,RCNN_SmoothL1=0.158,RPNAcc=0.972,RPNL1Loss=0.293,RCNNAcc=0.933,RCNNL1Loss=1.068
+[Epoch 13][Batch 3099], Speed: 12.501 samples/sec, RPN_Conf=0.055,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.142,RCNN_SmoothL1=0.158,RPNAcc=0.972,RPNL1Loss=0.293,RCNNAcc=0.933,RCNNL1Loss=1.067
+[Epoch 13][Batch 3199], Speed: 12.589 samples/sec, RPN_Conf=0.055,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.142,RCNN_SmoothL1=0.158,RPNAcc=0.972,RPNL1Loss=0.293,RCNNAcc=0.933,RCNNL1Loss=1.067
+[Epoch 13][Batch 3299], Speed: 12.447 samples/sec, RPN_Conf=0.055,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.142,RCNN_SmoothL1=0.158,RPNAcc=0.972,RPNL1Loss=0.293,RCNNAcc=0.933,RCNNL1Loss=1.066
+[Epoch 13][Batch 3399], Speed: 12.548 samples/sec, RPN_Conf=0.055,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.142,RCNN_SmoothL1=0.158,RPNAcc=0.972,RPNL1Loss=0.293,RCNNAcc=0.933,RCNNL1Loss=1.065
+[Epoch 13][Batch 3499], Speed: 12.492 samples/sec, RPN_Conf=0.055,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.142,RCNN_SmoothL1=0.158,RPNAcc=0.972,RPNL1Loss=0.292,RCNNAcc=0.933,RCNNL1Loss=1.065
+[Epoch 13][Batch 3599], Speed: 12.492 samples/sec, RPN_Conf=0.055,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.142,RCNN_SmoothL1=0.158,RPNAcc=0.972,RPNL1Loss=0.292,RCNNAcc=0.933,RCNNL1Loss=1.064
+[Epoch 13][Batch 3699], Speed: 12.461 samples/sec, RPN_Conf=0.055,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.142,RCNN_SmoothL1=0.158,RPNAcc=0.972,RPNL1Loss=0.292,RCNNAcc=0.933,RCNNL1Loss=1.064
+[Epoch 13][Batch 3799], Speed: 12.504 samples/sec, RPN_Conf=0.055,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.142,RCNN_SmoothL1=0.158,RPNAcc=0.972,RPNL1Loss=0.292,RCNNAcc=0.933,RCNNL1Loss=1.063
+[Epoch 13][Batch 3899], Speed: 12.446 samples/sec, RPN_Conf=0.055,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.142,RCNN_SmoothL1=0.158,RPNAcc=0.972,RPNL1Loss=0.292,RCNNAcc=0.933,RCNNL1Loss=1.063
+[Epoch 13][Batch 3999], Speed: 12.470 samples/sec, RPN_Conf=0.055,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.142,RCNN_SmoothL1=0.158,RPNAcc=0.972,RPNL1Loss=0.292,RCNNAcc=0.933,RCNNL1Loss=1.062
+[Epoch 13][Batch 4099], Speed: 12.578 samples/sec, RPN_Conf=0.055,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.142,RCNN_SmoothL1=0.158,RPNAcc=0.972,RPNL1Loss=0.292,RCNNAcc=0.933,RCNNL1Loss=1.062
+[Epoch 13] Training cost: 1327.222, RPN_Conf=0.055,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.143,RCNN_SmoothL1=0.158
+[Epoch 13] Validation: 
+aeroplane=0.7807083991876995
+bicycle=0.774925510728544
+bird=0.7169194740268002
+boat=0.6014140487710965
+bottle=0.6068557778936559
+bus=0.8163293600123908
+car=0.852409664262775
+cat=0.8564542428273856
+chair=0.5461992991080358
+cow=0.8211215311531466
+diningtable=0.6356011784336791
+dog=0.7446368209773735
+horse=0.8244975993919671
+motorbike=0.75987826101542
+person=0.7656469078137564
+pottedplant=0.43219976262188414
+sheep=0.7645581977509173
+sofa=0.6676511070834725
+train=0.7810231612744559
+tvmonitor=0.7235561540216272
+mAP=0.7236293229178041
+[Epoch 13] Saving parameters to faster_rcnn_resnet50_v1b_voc_0013_0.7236.params
+[Epoch 14] Set learning rate to 0.0001
+[Epoch 14][Batch 99], Speed: 11.425 samples/sec, RPN_Conf=0.053,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.138,RCNN_SmoothL1=0.153,RPNAcc=0.972,RPNL1Loss=0.292,RCNNAcc=0.933,RCNNL1Loss=1.061
+[Epoch 14][Batch 199], Speed: 12.363 samples/sec, RPN_Conf=0.052,RPN_SmoothL1=0.032,RCNN_CrossEntropy=0.131,RCNN_SmoothL1=0.146,RPNAcc=0.972,RPNL1Loss=0.292,RCNNAcc=0.933,RCNNL1Loss=1.061
+[Epoch 14][Batch 299], Speed: 12.493 samples/sec, RPN_Conf=0.051,RPN_SmoothL1=0.032,RCNN_CrossEntropy=0.127,RCNN_SmoothL1=0.142,RPNAcc=0.972,RPNL1Loss=0.292,RCNNAcc=0.933,RCNNL1Loss=1.060
+[Epoch 14][Batch 399], Speed: 12.533 samples/sec, RPN_Conf=0.051,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.125,RCNN_SmoothL1=0.140,RPNAcc=0.972,RPNL1Loss=0.292,RCNNAcc=0.933,RCNNL1Loss=1.059
+[Epoch 14][Batch 499], Speed: 12.491 samples/sec, RPN_Conf=0.051,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.123,RCNN_SmoothL1=0.140,RPNAcc=0.972,RPNL1Loss=0.292,RCNNAcc=0.933,RCNNL1Loss=1.058
+[Epoch 14][Batch 599], Speed: 12.448 samples/sec, RPN_Conf=0.050,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.122,RCNN_SmoothL1=0.138,RPNAcc=0.972,RPNL1Loss=0.292,RCNNAcc=0.934,RCNNL1Loss=1.058
+[Epoch 14][Batch 699], Speed: 12.520 samples/sec, RPN_Conf=0.051,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.121,RCNN_SmoothL1=0.139,RPNAcc=0.972,RPNL1Loss=0.292,RCNNAcc=0.934,RCNNL1Loss=1.057
+[Epoch 14][Batch 799], Speed: 12.474 samples/sec, RPN_Conf=0.050,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.119,RCNN_SmoothL1=0.138,RPNAcc=0.972,RPNL1Loss=0.291,RCNNAcc=0.934,RCNNL1Loss=1.056
+[Epoch 14][Batch 899], Speed: 12.536 samples/sec, RPN_Conf=0.050,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.119,RCNN_SmoothL1=0.137,RPNAcc=0.972,RPNL1Loss=0.291,RCNNAcc=0.934,RCNNL1Loss=1.055
+[Epoch 14][Batch 999], Speed: 12.449 samples/sec, RPN_Conf=0.050,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.118,RCNN_SmoothL1=0.137,RPNAcc=0.972,RPNL1Loss=0.291,RCNNAcc=0.934,RCNNL1Loss=1.055
+[Epoch 14][Batch 1099], Speed: 12.504 samples/sec, RPN_Conf=0.050,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.118,RCNN_SmoothL1=0.137,RPNAcc=0.972,RPNL1Loss=0.291,RCNNAcc=0.934,RCNNL1Loss=1.054
+[Epoch 14][Batch 1199], Speed: 12.570 samples/sec, RPN_Conf=0.050,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.118,RCNN_SmoothL1=0.137,RPNAcc=0.972,RPNL1Loss=0.291,RCNNAcc=0.934,RCNNL1Loss=1.053
+[Epoch 14][Batch 1299], Speed: 12.441 samples/sec, RPN_Conf=0.050,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.118,RCNN_SmoothL1=0.137,RPNAcc=0.972,RPNL1Loss=0.291,RCNNAcc=0.934,RCNNL1Loss=1.053
+[Epoch 14][Batch 1399], Speed: 12.527 samples/sec, RPN_Conf=0.050,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.117,RCNN_SmoothL1=0.137,RPNAcc=0.972,RPNL1Loss=0.291,RCNNAcc=0.934,RCNNL1Loss=1.052
+[Epoch 14][Batch 1499], Speed: 12.510 samples/sec, RPN_Conf=0.050,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.117,RCNN_SmoothL1=0.136,RPNAcc=0.972,RPNL1Loss=0.291,RCNNAcc=0.934,RCNNL1Loss=1.051
+[Epoch 14][Batch 1599], Speed: 12.547 samples/sec, RPN_Conf=0.050,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.117,RCNN_SmoothL1=0.136,RPNAcc=0.972,RPNL1Loss=0.291,RCNNAcc=0.934,RCNNL1Loss=1.050
+[Epoch 14][Batch 1699], Speed: 12.510 samples/sec, RPN_Conf=0.050,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.117,RCNN_SmoothL1=0.136,RPNAcc=0.972,RPNL1Loss=0.291,RCNNAcc=0.934,RCNNL1Loss=1.050
+[Epoch 14][Batch 1799], Speed: 12.543 samples/sec, RPN_Conf=0.050,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.116,RCNN_SmoothL1=0.136,RPNAcc=0.973,RPNL1Loss=0.291,RCNNAcc=0.934,RCNNL1Loss=1.049
+[Epoch 14][Batch 1899], Speed: 12.480 samples/sec, RPN_Conf=0.050,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.116,RCNN_SmoothL1=0.135,RPNAcc=0.973,RPNL1Loss=0.291,RCNNAcc=0.934,RCNNL1Loss=1.048
+[Epoch 14][Batch 1999], Speed: 12.319 samples/sec, RPN_Conf=0.050,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.116,RCNN_SmoothL1=0.135,RPNAcc=0.973,RPNL1Loss=0.290,RCNNAcc=0.934,RCNNL1Loss=1.047
+[Epoch 14][Batch 2099], Speed: 12.509 samples/sec, RPN_Conf=0.050,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.116,RCNN_SmoothL1=0.135,RPNAcc=0.973,RPNL1Loss=0.290,RCNNAcc=0.934,RCNNL1Loss=1.047
+[Epoch 14][Batch 2199], Speed: 12.528 samples/sec, RPN_Conf=0.050,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.115,RCNN_SmoothL1=0.135,RPNAcc=0.973,RPNL1Loss=0.290,RCNNAcc=0.934,RCNNL1Loss=1.046
+[Epoch 14][Batch 2299], Speed: 12.563 samples/sec, RPN_Conf=0.050,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.115,RCNN_SmoothL1=0.135,RPNAcc=0.973,RPNL1Loss=0.290,RCNNAcc=0.934,RCNNL1Loss=1.045
+[Epoch 14][Batch 2399], Speed: 12.570 samples/sec, RPN_Conf=0.050,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.115,RCNN_SmoothL1=0.135,RPNAcc=0.973,RPNL1Loss=0.290,RCNNAcc=0.934,RCNNL1Loss=1.045
+[Epoch 14][Batch 2499], Speed: 12.438 samples/sec, RPN_Conf=0.049,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.115,RCNN_SmoothL1=0.135,RPNAcc=0.973,RPNL1Loss=0.290,RCNNAcc=0.934,RCNNL1Loss=1.044
+[Epoch 14][Batch 2599], Speed: 12.614 samples/sec, RPN_Conf=0.049,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.115,RCNN_SmoothL1=0.134,RPNAcc=0.973,RPNL1Loss=0.290,RCNNAcc=0.934,RCNNL1Loss=1.043
+[Epoch 14][Batch 2699], Speed: 12.511 samples/sec, RPN_Conf=0.049,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.115,RCNN_SmoothL1=0.134,RPNAcc=0.973,RPNL1Loss=0.290,RCNNAcc=0.934,RCNNL1Loss=1.042
+[Epoch 14][Batch 2799], Speed: 12.440 samples/sec, RPN_Conf=0.049,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.114,RCNN_SmoothL1=0.134,RPNAcc=0.973,RPNL1Loss=0.290,RCNNAcc=0.934,RCNNL1Loss=1.042
+[Epoch 14][Batch 2899], Speed: 12.519 samples/sec, RPN_Conf=0.049,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.114,RCNN_SmoothL1=0.134,RPNAcc=0.973,RPNL1Loss=0.290,RCNNAcc=0.934,RCNNL1Loss=1.041
+[Epoch 14][Batch 2999], Speed: 12.445 samples/sec, RPN_Conf=0.049,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.114,RCNN_SmoothL1=0.134,RPNAcc=0.973,RPNL1Loss=0.290,RCNNAcc=0.935,RCNNL1Loss=1.040
+[Epoch 14][Batch 3099], Speed: 12.532 samples/sec, RPN_Conf=0.049,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.114,RCNN_SmoothL1=0.134,RPNAcc=0.973,RPNL1Loss=0.290,RCNNAcc=0.935,RCNNL1Loss=1.040
+[Epoch 14][Batch 3199], Speed: 12.524 samples/sec, RPN_Conf=0.049,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.114,RCNN_SmoothL1=0.134,RPNAcc=0.973,RPNL1Loss=0.290,RCNNAcc=0.935,RCNNL1Loss=1.039
+[Epoch 14][Batch 3299], Speed: 12.457 samples/sec, RPN_Conf=0.049,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.114,RCNN_SmoothL1=0.134,RPNAcc=0.973,RPNL1Loss=0.289,RCNNAcc=0.935,RCNNL1Loss=1.038
+[Epoch 14][Batch 3399], Speed: 12.501 samples/sec, RPN_Conf=0.049,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.114,RCNN_SmoothL1=0.133,RPNAcc=0.973,RPNL1Loss=0.289,RCNNAcc=0.935,RCNNL1Loss=1.038
+[Epoch 14][Batch 3499], Speed: 12.432 samples/sec, RPN_Conf=0.049,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.114,RCNN_SmoothL1=0.133,RPNAcc=0.973,RPNL1Loss=0.289,RCNNAcc=0.935,RCNNL1Loss=1.037
+[Epoch 14][Batch 3599], Speed: 12.358 samples/sec, RPN_Conf=0.049,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.113,RCNN_SmoothL1=0.133,RPNAcc=0.973,RPNL1Loss=0.289,RCNNAcc=0.935,RCNNL1Loss=1.036
+[Epoch 14][Batch 3699], Speed: 12.502 samples/sec, RPN_Conf=0.049,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.113,RCNN_SmoothL1=0.133,RPNAcc=0.973,RPNL1Loss=0.289,RCNNAcc=0.935,RCNNL1Loss=1.036
+[Epoch 14][Batch 3799], Speed: 12.426 samples/sec, RPN_Conf=0.049,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.113,RCNN_SmoothL1=0.133,RPNAcc=0.973,RPNL1Loss=0.289,RCNNAcc=0.935,RCNNL1Loss=1.035
+[Epoch 14][Batch 3899], Speed: 12.480 samples/sec, RPN_Conf=0.049,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.113,RCNN_SmoothL1=0.133,RPNAcc=0.973,RPNL1Loss=0.289,RCNNAcc=0.935,RCNNL1Loss=1.034
+[Epoch 14][Batch 3999], Speed: 12.459 samples/sec, RPN_Conf=0.049,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.113,RCNN_SmoothL1=0.133,RPNAcc=0.973,RPNL1Loss=0.289,RCNNAcc=0.935,RCNNL1Loss=1.034
+[Epoch 14][Batch 4099], Speed: 12.578 samples/sec, RPN_Conf=0.049,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.113,RCNN_SmoothL1=0.133,RPNAcc=0.973,RPNL1Loss=0.289,RCNNAcc=0.935,RCNNL1Loss=1.033
+[Epoch 14] Training cost: 1328.050, RPN_Conf=0.048,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.112,RCNN_SmoothL1=0.133
+[Epoch 14] Validation: 
+aeroplane=0.7980747225571371
+bicycle=0.8570099045068806
+bird=0.7911309996800885
+boat=0.6904559758869618
+bottle=0.6401399840828847
+bus=0.8647383412591839
+car=0.8724058092198193
+cat=0.8865293430422306
+chair=0.5953199666898112
+cow=0.8614719211140478
+diningtable=0.6619673588932817
+dog=0.8683227091407684
+horse=0.8744494646806719
+motorbike=0.82123368313487
+person=0.8189753691652042
+pottedplant=0.5134208811088546
+sheep=0.8179266241820803
+sofa=0.7518990387528061
+train=0.8477189619242447
+tvmonitor=0.7586425799002299
+mAP=0.7795916819461027
+[Epoch 14] mAP 0.7795916819461027 higher than current best [0.7571681000720379] saving to faster_rcnn_resnet50_v1b_voc_best.params
+[Epoch 14] Saving parameters to faster_rcnn_resnet50_v1b_voc_0014_0.7796.params
+[Epoch 15][Batch 99], Speed: 11.737 samples/sec, RPN_Conf=0.051,RPN_SmoothL1=0.032,RCNN_CrossEntropy=0.102,RCNN_SmoothL1=0.128,RPNAcc=0.973,RPNL1Loss=0.289,RCNNAcc=0.935,RCNNL1Loss=1.032
+[Epoch 15][Batch 199], Speed: 12.520 samples/sec, RPN_Conf=0.051,RPN_SmoothL1=0.034,RCNN_CrossEntropy=0.103,RCNN_SmoothL1=0.127,RPNAcc=0.973,RPNL1Loss=0.289,RCNNAcc=0.935,RCNNL1Loss=1.031
+[Epoch 15][Batch 299], Speed: 12.479 samples/sec, RPN_Conf=0.048,RPN_SmoothL1=0.033,RCNN_CrossEntropy=0.105,RCNN_SmoothL1=0.127,RPNAcc=0.973,RPNL1Loss=0.289,RCNNAcc=0.935,RCNNL1Loss=1.030
+[Epoch 15][Batch 399], Speed: 12.568 samples/sec, RPN_Conf=0.047,RPN_SmoothL1=0.032,RCNN_CrossEntropy=0.105,RCNN_SmoothL1=0.128,RPNAcc=0.973,RPNL1Loss=0.289,RCNNAcc=0.935,RCNNL1Loss=1.030
+[Epoch 15][Batch 499], Speed: 12.495 samples/sec, RPN_Conf=0.047,RPN_SmoothL1=0.032,RCNN_CrossEntropy=0.106,RCNN_SmoothL1=0.128,RPNAcc=0.973,RPNL1Loss=0.288,RCNNAcc=0.935,RCNNL1Loss=1.029
+[Epoch 15][Batch 599], Speed: 12.528 samples/sec, RPN_Conf=0.047,RPN_SmoothL1=0.032,RCNN_CrossEntropy=0.106,RCNN_SmoothL1=0.129,RPNAcc=0.973,RPNL1Loss=0.288,RCNNAcc=0.935,RCNNL1Loss=1.028
+[Epoch 15][Batch 699], Speed: 12.401 samples/sec, RPN_Conf=0.048,RPN_SmoothL1=0.032,RCNN_CrossEntropy=0.106,RCNN_SmoothL1=0.129,RPNAcc=0.973,RPNL1Loss=0.288,RCNNAcc=0.935,RCNNL1Loss=1.028
+[Epoch 15][Batch 799], Speed: 12.576 samples/sec, RPN_Conf=0.048,RPN_SmoothL1=0.032,RCNN_CrossEntropy=0.106,RCNN_SmoothL1=0.129,RPNAcc=0.973,RPNL1Loss=0.288,RCNNAcc=0.935,RCNNL1Loss=1.027
+[Epoch 15][Batch 899], Speed: 12.424 samples/sec, RPN_Conf=0.047,RPN_SmoothL1=0.032,RCNN_CrossEntropy=0.105,RCNN_SmoothL1=0.128,RPNAcc=0.973,RPNL1Loss=0.288,RCNNAcc=0.935,RCNNL1Loss=1.026
+[Epoch 15][Batch 999], Speed: 12.478 samples/sec, RPN_Conf=0.047,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.105,RCNN_SmoothL1=0.128,RPNAcc=0.973,RPNL1Loss=0.288,RCNNAcc=0.935,RCNNL1Loss=1.026
+[Epoch 15][Batch 1099], Speed: 12.483 samples/sec, RPN_Conf=0.047,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.105,RCNN_SmoothL1=0.127,RPNAcc=0.973,RPNL1Loss=0.288,RCNNAcc=0.935,RCNNL1Loss=1.025
+[Epoch 15][Batch 1199], Speed: 12.626 samples/sec, RPN_Conf=0.047,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.105,RCNN_SmoothL1=0.128,RPNAcc=0.973,RPNL1Loss=0.288,RCNNAcc=0.935,RCNNL1Loss=1.024
+[Epoch 15][Batch 1299], Speed: 12.554 samples/sec, RPN_Conf=0.047,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.106,RCNN_SmoothL1=0.127,RPNAcc=0.973,RPNL1Loss=0.288,RCNNAcc=0.935,RCNNL1Loss=1.024
+[Epoch 15][Batch 1399], Speed: 12.483 samples/sec, RPN_Conf=0.047,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.106,RCNN_SmoothL1=0.127,RPNAcc=0.973,RPNL1Loss=0.288,RCNNAcc=0.936,RCNNL1Loss=1.023
+[Epoch 15][Batch 1499], Speed: 12.581 samples/sec, RPN_Conf=0.047,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.106,RCNN_SmoothL1=0.128,RPNAcc=0.973,RPNL1Loss=0.288,RCNNAcc=0.936,RCNNL1Loss=1.022
+[Epoch 15][Batch 1599], Speed: 12.502 samples/sec, RPN_Conf=0.047,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.106,RCNN_SmoothL1=0.128,RPNAcc=0.973,RPNL1Loss=0.288,RCNNAcc=0.936,RCNNL1Loss=1.022
+[Epoch 15][Batch 1699], Speed: 12.487 samples/sec, RPN_Conf=0.048,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.107,RCNN_SmoothL1=0.128,RPNAcc=0.973,RPNL1Loss=0.287,RCNNAcc=0.936,RCNNL1Loss=1.021
+[Epoch 15][Batch 1799], Speed: 12.528 samples/sec, RPN_Conf=0.047,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.107,RCNN_SmoothL1=0.128,RPNAcc=0.973,RPNL1Loss=0.287,RCNNAcc=0.936,RCNNL1Loss=1.020
+[Epoch 15][Batch 1899], Speed: 12.499 samples/sec, RPN_Conf=0.048,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.107,RCNN_SmoothL1=0.128,RPNAcc=0.973,RPNL1Loss=0.287,RCNNAcc=0.936,RCNNL1Loss=1.020
+[Epoch 15][Batch 1999], Speed: 12.476 samples/sec, RPN_Conf=0.047,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.107,RCNN_SmoothL1=0.128,RPNAcc=0.973,RPNL1Loss=0.287,RCNNAcc=0.936,RCNNL1Loss=1.019
+[Epoch 15][Batch 2099], Speed: 12.477 samples/sec, RPN_Conf=0.047,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.107,RCNN_SmoothL1=0.129,RPNAcc=0.973,RPNL1Loss=0.287,RCNNAcc=0.936,RCNNL1Loss=1.019
+[Epoch 15][Batch 2199], Speed: 12.425 samples/sec, RPN_Conf=0.047,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.107,RCNN_SmoothL1=0.128,RPNAcc=0.973,RPNL1Loss=0.287,RCNNAcc=0.936,RCNNL1Loss=1.018
+[Epoch 15][Batch 2299], Speed: 12.453 samples/sec, RPN_Conf=0.047,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.107,RCNN_SmoothL1=0.128,RPNAcc=0.973,RPNL1Loss=0.287,RCNNAcc=0.936,RCNNL1Loss=1.017
+[Epoch 15][Batch 2399], Speed: 12.462 samples/sec, RPN_Conf=0.047,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.107,RCNN_SmoothL1=0.128,RPNAcc=0.973,RPNL1Loss=0.287,RCNNAcc=0.936,RCNNL1Loss=1.017
+[Epoch 15][Batch 2499], Speed: 12.503 samples/sec, RPN_Conf=0.047,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.106,RCNN_SmoothL1=0.128,RPNAcc=0.973,RPNL1Loss=0.287,RCNNAcc=0.936,RCNNL1Loss=1.016
+[Epoch 15][Batch 2599], Speed: 12.479 samples/sec, RPN_Conf=0.047,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.107,RCNN_SmoothL1=0.128,RPNAcc=0.973,RPNL1Loss=0.287,RCNNAcc=0.936,RCNNL1Loss=1.015
+[Epoch 15][Batch 2699], Speed: 12.520 samples/sec, RPN_Conf=0.047,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.107,RCNN_SmoothL1=0.128,RPNAcc=0.973,RPNL1Loss=0.287,RCNNAcc=0.936,RCNNL1Loss=1.015
+[Epoch 15][Batch 2799], Speed: 12.509 samples/sec, RPN_Conf=0.047,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.106,RCNN_SmoothL1=0.128,RPNAcc=0.973,RPNL1Loss=0.287,RCNNAcc=0.936,RCNNL1Loss=1.014
+[Epoch 15][Batch 2899], Speed: 12.490 samples/sec, RPN_Conf=0.047,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.107,RCNN_SmoothL1=0.128,RPNAcc=0.973,RPNL1Loss=0.287,RCNNAcc=0.936,RCNNL1Loss=1.013
+[Epoch 15][Batch 2999], Speed: 12.496 samples/sec, RPN_Conf=0.047,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.107,RCNN_SmoothL1=0.128,RPNAcc=0.973,RPNL1Loss=0.287,RCNNAcc=0.936,RCNNL1Loss=1.013
+[Epoch 15][Batch 3099], Speed: 12.558 samples/sec, RPN_Conf=0.047,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.107,RCNN_SmoothL1=0.128,RPNAcc=0.973,RPNL1Loss=0.286,RCNNAcc=0.936,RCNNL1Loss=1.012
+[Epoch 15][Batch 3199], Speed: 12.496 samples/sec, RPN_Conf=0.047,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.107,RCNN_SmoothL1=0.128,RPNAcc=0.973,RPNL1Loss=0.286,RCNNAcc=0.936,RCNNL1Loss=1.011
+[Epoch 15][Batch 3299], Speed: 12.518 samples/sec, RPN_Conf=0.047,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.107,RCNN_SmoothL1=0.128,RPNAcc=0.973,RPNL1Loss=0.286,RCNNAcc=0.936,RCNNL1Loss=1.011
+[Epoch 15][Batch 3399], Speed: 12.447 samples/sec, RPN_Conf=0.047,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.107,RCNN_SmoothL1=0.128,RPNAcc=0.973,RPNL1Loss=0.286,RCNNAcc=0.936,RCNNL1Loss=1.010
+[Epoch 15][Batch 3499], Speed: 12.524 samples/sec, RPN_Conf=0.047,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.107,RCNN_SmoothL1=0.128,RPNAcc=0.973,RPNL1Loss=0.286,RCNNAcc=0.936,RCNNL1Loss=1.009
+[Epoch 15][Batch 3599], Speed: 12.494 samples/sec, RPN_Conf=0.047,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.107,RCNN_SmoothL1=0.128,RPNAcc=0.973,RPNL1Loss=0.286,RCNNAcc=0.936,RCNNL1Loss=1.009
+[Epoch 15][Batch 3699], Speed: 12.464 samples/sec, RPN_Conf=0.047,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.107,RCNN_SmoothL1=0.128,RPNAcc=0.973,RPNL1Loss=0.286,RCNNAcc=0.936,RCNNL1Loss=1.008
+[Epoch 15][Batch 3799], Speed: 12.497 samples/sec, RPN_Conf=0.047,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.107,RCNN_SmoothL1=0.128,RPNAcc=0.973,RPNL1Loss=0.286,RCNNAcc=0.936,RCNNL1Loss=1.008
+[Epoch 15][Batch 3899], Speed: 12.452 samples/sec, RPN_Conf=0.047,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.107,RCNN_SmoothL1=0.128,RPNAcc=0.973,RPNL1Loss=0.286,RCNNAcc=0.936,RCNNL1Loss=1.007
+[Epoch 15][Batch 3999], Speed: 12.466 samples/sec, RPN_Conf=0.047,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.107,RCNN_SmoothL1=0.128,RPNAcc=0.973,RPNL1Loss=0.286,RCNNAcc=0.936,RCNNL1Loss=1.006
+[Epoch 15][Batch 4099], Speed: 12.474 samples/sec, RPN_Conf=0.047,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.107,RCNN_SmoothL1=0.128,RPNAcc=0.973,RPNL1Loss=0.286,RCNNAcc=0.937,RCNNL1Loss=1.006
+[Epoch 15] Training cost: 1326.090, RPN_Conf=0.047,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.107,RCNN_SmoothL1=0.128
+[Epoch 15] Validation: 
+aeroplane=0.7915857561150528
+bicycle=0.849067990422524
+bird=0.8196516280332423
+boat=0.6792154708105573
+bottle=0.6401176782535875
+bus=0.8602894273691719
+car=0.8749882201453809
+cat=0.8848421993088867
+chair=0.591803504909392
+cow=0.8607176805105072
+diningtable=0.6763236120798771
+dog=0.8686598746423543
+horse=0.8780354478785364
+motorbike=0.8075190980148284
+person=0.8195800906437819
+pottedplant=0.5150717406228881
+sheep=0.8490075201225156
+sofa=0.7462387695259374
+train=0.8549436123270548
+tvmonitor=0.7609060047549925
+mAP=0.7814282663245535
+[Epoch 15] mAP 0.7814282663245535 higher than current best [0.7795916819461027] saving to faster_rcnn_resnet50_v1b_voc_best.params
+[Epoch 15] Saving parameters to faster_rcnn_resnet50_v1b_voc_0015_0.7814.params
+[Epoch 16][Batch 99], Speed: 11.886 samples/sec, RPN_Conf=0.048,RPN_SmoothL1=0.032,RCNN_CrossEntropy=0.105,RCNN_SmoothL1=0.133,RPNAcc=0.973,RPNL1Loss=0.286,RCNNAcc=0.937,RCNNL1Loss=1.005
+[Epoch 16][Batch 199], Speed: 12.464 samples/sec, RPN_Conf=0.047,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.105,RCNN_SmoothL1=0.128,RPNAcc=0.973,RPNL1Loss=0.286,RCNNAcc=0.937,RCNNL1Loss=1.004
+[Epoch 16][Batch 299], Speed: 12.487 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.104,RCNN_SmoothL1=0.126,RPNAcc=0.974,RPNL1Loss=0.286,RCNNAcc=0.937,RCNNL1Loss=1.004
+[Epoch 16][Batch 399], Speed: 12.511 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.105,RCNN_SmoothL1=0.127,RPNAcc=0.974,RPNL1Loss=0.285,RCNNAcc=0.937,RCNNL1Loss=1.003
+[Epoch 16][Batch 499], Speed: 12.468 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.104,RCNN_SmoothL1=0.126,RPNAcc=0.974,RPNL1Loss=0.285,RCNNAcc=0.937,RCNNL1Loss=1.002
+[Epoch 16][Batch 599], Speed: 12.545 samples/sec, RPN_Conf=0.047,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.105,RCNN_SmoothL1=0.127,RPNAcc=0.974,RPNL1Loss=0.285,RCNNAcc=0.937,RCNNL1Loss=1.002
+[Epoch 16][Batch 699], Speed: 12.589 samples/sec, RPN_Conf=0.047,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.104,RCNN_SmoothL1=0.126,RPNAcc=0.974,RPNL1Loss=0.285,RCNNAcc=0.937,RCNNL1Loss=1.001
+[Epoch 16][Batch 799], Speed: 12.409 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.102,RCNN_SmoothL1=0.125,RPNAcc=0.974,RPNL1Loss=0.285,RCNNAcc=0.937,RCNNL1Loss=1.000
+[Epoch 16][Batch 899], Speed: 12.599 samples/sec, RPN_Conf=0.047,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.101,RCNN_SmoothL1=0.125,RPNAcc=0.974,RPNL1Loss=0.285,RCNNAcc=0.937,RCNNL1Loss=1.000
+[Epoch 16][Batch 999], Speed: 12.499 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.102,RCNN_SmoothL1=0.125,RPNAcc=0.974,RPNL1Loss=0.285,RCNNAcc=0.937,RCNNL1Loss=0.999
+[Epoch 16][Batch 1099], Speed: 12.450 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.102,RCNN_SmoothL1=0.124,RPNAcc=0.974,RPNL1Loss=0.285,RCNNAcc=0.937,RCNNL1Loss=0.999
+[Epoch 16][Batch 1199], Speed: 12.456 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.102,RCNN_SmoothL1=0.124,RPNAcc=0.974,RPNL1Loss=0.285,RCNNAcc=0.937,RCNNL1Loss=0.998
+[Epoch 16][Batch 1299], Speed: 12.479 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.102,RCNN_SmoothL1=0.124,RPNAcc=0.974,RPNL1Loss=0.285,RCNNAcc=0.937,RCNNL1Loss=0.997
+[Epoch 16][Batch 1399], Speed: 12.497 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.102,RCNN_SmoothL1=0.124,RPNAcc=0.974,RPNL1Loss=0.285,RCNNAcc=0.937,RCNNL1Loss=0.997
+[Epoch 16][Batch 1499], Speed: 12.330 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.102,RCNN_SmoothL1=0.124,RPNAcc=0.974,RPNL1Loss=0.285,RCNNAcc=0.937,RCNNL1Loss=0.996
+[Epoch 16][Batch 1599], Speed: 12.417 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.102,RCNN_SmoothL1=0.124,RPNAcc=0.974,RPNL1Loss=0.285,RCNNAcc=0.937,RCNNL1Loss=0.995
+[Epoch 16][Batch 1699], Speed: 12.554 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.103,RCNN_SmoothL1=0.124,RPNAcc=0.974,RPNL1Loss=0.285,RCNNAcc=0.937,RCNNL1Loss=0.995
+[Epoch 16][Batch 1799], Speed: 12.512 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.103,RCNN_SmoothL1=0.124,RPNAcc=0.974,RPNL1Loss=0.284,RCNNAcc=0.937,RCNNL1Loss=0.994
+[Epoch 16][Batch 1899], Speed: 12.574 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.102,RCNN_SmoothL1=0.124,RPNAcc=0.974,RPNL1Loss=0.284,RCNNAcc=0.937,RCNNL1Loss=0.994
+[Epoch 16][Batch 1999], Speed: 12.486 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.103,RCNN_SmoothL1=0.124,RPNAcc=0.974,RPNL1Loss=0.284,RCNNAcc=0.937,RCNNL1Loss=0.993
+[Epoch 16][Batch 2099], Speed: 12.530 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.103,RCNN_SmoothL1=0.125,RPNAcc=0.974,RPNL1Loss=0.284,RCNNAcc=0.937,RCNNL1Loss=0.993
+[Epoch 16][Batch 2199], Speed: 12.479 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.103,RCNN_SmoothL1=0.125,RPNAcc=0.974,RPNL1Loss=0.284,RCNNAcc=0.937,RCNNL1Loss=0.992
+[Epoch 16][Batch 2299], Speed: 12.532 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.103,RCNN_SmoothL1=0.125,RPNAcc=0.974,RPNL1Loss=0.284,RCNNAcc=0.937,RCNNL1Loss=0.991
+[Epoch 16][Batch 2399], Speed: 12.463 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.103,RCNN_SmoothL1=0.125,RPNAcc=0.974,RPNL1Loss=0.284,RCNNAcc=0.937,RCNNL1Loss=0.991
+[Epoch 16][Batch 2499], Speed: 12.507 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.103,RCNN_SmoothL1=0.125,RPNAcc=0.974,RPNL1Loss=0.284,RCNNAcc=0.937,RCNNL1Loss=0.990
+[Epoch 16][Batch 2599], Speed: 12.519 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.103,RCNN_SmoothL1=0.125,RPNAcc=0.974,RPNL1Loss=0.284,RCNNAcc=0.937,RCNNL1Loss=0.990
+[Epoch 16][Batch 2699], Speed: 12.379 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.103,RCNN_SmoothL1=0.125,RPNAcc=0.974,RPNL1Loss=0.284,RCNNAcc=0.938,RCNNL1Loss=0.989
+[Epoch 16][Batch 2799], Speed: 12.477 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.103,RCNN_SmoothL1=0.125,RPNAcc=0.974,RPNL1Loss=0.284,RCNNAcc=0.938,RCNNL1Loss=0.989
+[Epoch 16][Batch 2899], Speed: 12.518 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.103,RCNN_SmoothL1=0.125,RPNAcc=0.974,RPNL1Loss=0.284,RCNNAcc=0.938,RCNNL1Loss=0.988
+[Epoch 16][Batch 2999], Speed: 12.397 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.104,RCNN_SmoothL1=0.126,RPNAcc=0.974,RPNL1Loss=0.284,RCNNAcc=0.938,RCNNL1Loss=0.988
+[Epoch 16][Batch 3099], Speed: 12.492 samples/sec, RPN_Conf=0.047,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.104,RCNN_SmoothL1=0.125,RPNAcc=0.974,RPNL1Loss=0.284,RCNNAcc=0.938,RCNNL1Loss=0.987
+[Epoch 16][Batch 3199], Speed: 12.454 samples/sec, RPN_Conf=0.047,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.104,RCNN_SmoothL1=0.126,RPNAcc=0.974,RPNL1Loss=0.284,RCNNAcc=0.938,RCNNL1Loss=0.986
+[Epoch 16][Batch 3299], Speed: 12.479 samples/sec, RPN_Conf=0.047,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.104,RCNN_SmoothL1=0.126,RPNAcc=0.974,RPNL1Loss=0.284,RCNNAcc=0.938,RCNNL1Loss=0.986
+[Epoch 16][Batch 3399], Speed: 12.531 samples/sec, RPN_Conf=0.047,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.104,RCNN_SmoothL1=0.126,RPNAcc=0.974,RPNL1Loss=0.283,RCNNAcc=0.938,RCNNL1Loss=0.985
+[Epoch 16][Batch 3499], Speed: 12.486 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.104,RCNN_SmoothL1=0.126,RPNAcc=0.974,RPNL1Loss=0.283,RCNNAcc=0.938,RCNNL1Loss=0.985
+[Epoch 16][Batch 3599], Speed: 12.498 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.104,RCNN_SmoothL1=0.126,RPNAcc=0.974,RPNL1Loss=0.283,RCNNAcc=0.938,RCNNL1Loss=0.984
+[Epoch 16][Batch 3699], Speed: 12.527 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.104,RCNN_SmoothL1=0.126,RPNAcc=0.974,RPNL1Loss=0.283,RCNNAcc=0.938,RCNNL1Loss=0.984
+[Epoch 16][Batch 3799], Speed: 12.458 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.104,RCNN_SmoothL1=0.126,RPNAcc=0.974,RPNL1Loss=0.283,RCNNAcc=0.938,RCNNL1Loss=0.983
+[Epoch 16][Batch 3899], Speed: 12.490 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.104,RCNN_SmoothL1=0.126,RPNAcc=0.974,RPNL1Loss=0.283,RCNNAcc=0.938,RCNNL1Loss=0.982
+[Epoch 16][Batch 3999], Speed: 12.456 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.104,RCNN_SmoothL1=0.126,RPNAcc=0.974,RPNL1Loss=0.283,RCNNAcc=0.938,RCNNL1Loss=0.982
+[Epoch 16][Batch 4099], Speed: 12.523 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.104,RCNN_SmoothL1=0.126,RPNAcc=0.974,RPNL1Loss=0.283,RCNNAcc=0.938,RCNNL1Loss=0.981
+[Epoch 16] Training cost: 1326.732, RPN_Conf=0.046,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.104,RCNN_SmoothL1=0.126
+[Epoch 16] Validation: 
+aeroplane=0.7893215783397117
+bicycle=0.8461944747884654
+bird=0.8168535285232045
+boat=0.7036363436295644
+bottle=0.6540699066641614
+bus=0.8687041837151301
+car=0.8787567225109792
+cat=0.8798002786349501
+chair=0.5870796159155535
+cow=0.8664222793967938
+diningtable=0.6867373838866941
+dog=0.8707292466769276
+horse=0.8754661281708608
+motorbike=0.8140761701182343
+person=0.8263278554732463
+pottedplant=0.5106092383116998
+sheep=0.8408790248681418
+sofa=0.7357745837857985
+train=0.8438590359848124
+tvmonitor=0.7663565019183334
+mAP=0.7830827040656632
+[Epoch 16] mAP 0.7830827040656632 higher than current best [0.7814282663245535] saving to faster_rcnn_resnet50_v1b_voc_best.params
+[Epoch 16] Saving parameters to faster_rcnn_resnet50_v1b_voc_0016_0.7831.params
+[Epoch 17][Batch 99], Speed: 11.507 samples/sec, RPN_Conf=0.047,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.096,RCNN_SmoothL1=0.122,RPNAcc=0.974,RPNL1Loss=0.283,RCNNAcc=0.938,RCNNL1Loss=0.981
+[Epoch 17][Batch 199], Speed: 12.464 samples/sec, RPN_Conf=0.047,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.096,RCNN_SmoothL1=0.119,RPNAcc=0.974,RPNL1Loss=0.283,RCNNAcc=0.938,RCNNL1Loss=0.980
+[Epoch 17][Batch 299], Speed: 12.520 samples/sec, RPN_Conf=0.047,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.099,RCNN_SmoothL1=0.120,RPNAcc=0.974,RPNL1Loss=0.283,RCNNAcc=0.938,RCNNL1Loss=0.979
+[Epoch 17][Batch 399], Speed: 12.389 samples/sec, RPN_Conf=0.047,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.101,RCNN_SmoothL1=0.123,RPNAcc=0.974,RPNL1Loss=0.283,RCNNAcc=0.938,RCNNL1Loss=0.979
+[Epoch 17][Batch 499], Speed: 12.455 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.102,RCNN_SmoothL1=0.123,RPNAcc=0.974,RPNL1Loss=0.283,RCNNAcc=0.938,RCNNL1Loss=0.978
+[Epoch 17][Batch 599], Speed: 12.551 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.032,RCNN_CrossEntropy=0.101,RCNN_SmoothL1=0.123,RPNAcc=0.974,RPNL1Loss=0.283,RCNNAcc=0.938,RCNNL1Loss=0.978
+[Epoch 17][Batch 699], Speed: 12.529 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.101,RCNN_SmoothL1=0.123,RPNAcc=0.974,RPNL1Loss=0.283,RCNNAcc=0.938,RCNNL1Loss=0.977
+[Epoch 17][Batch 799], Speed: 12.464 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.101,RCNN_SmoothL1=0.123,RPNAcc=0.974,RPNL1Loss=0.282,RCNNAcc=0.938,RCNNL1Loss=0.977
+[Epoch 17][Batch 899], Speed: 12.553 samples/sec, RPN_Conf=0.045,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.102,RCNN_SmoothL1=0.123,RPNAcc=0.974,RPNL1Loss=0.282,RCNNAcc=0.938,RCNNL1Loss=0.976
+[Epoch 17][Batch 999], Speed: 12.449 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.103,RCNN_SmoothL1=0.124,RPNAcc=0.974,RPNL1Loss=0.282,RCNNAcc=0.938,RCNNL1Loss=0.976
+[Epoch 17][Batch 1099], Speed: 12.495 samples/sec, RPN_Conf=0.045,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.102,RCNN_SmoothL1=0.124,RPNAcc=0.974,RPNL1Loss=0.282,RCNNAcc=0.938,RCNNL1Loss=0.975
+[Epoch 17][Batch 1199], Speed: 12.456 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.102,RCNN_SmoothL1=0.124,RPNAcc=0.974,RPNL1Loss=0.282,RCNNAcc=0.938,RCNNL1Loss=0.974
+[Epoch 17][Batch 1299], Speed: 12.589 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.103,RCNN_SmoothL1=0.124,RPNAcc=0.974,RPNL1Loss=0.282,RCNNAcc=0.938,RCNNL1Loss=0.974
+[Epoch 17][Batch 1399], Speed: 12.454 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.103,RCNN_SmoothL1=0.124,RPNAcc=0.974,RPNL1Loss=0.282,RCNNAcc=0.938,RCNNL1Loss=0.973
+[Epoch 17][Batch 1499], Speed: 12.585 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.103,RCNN_SmoothL1=0.124,RPNAcc=0.974,RPNL1Loss=0.282,RCNNAcc=0.938,RCNNL1Loss=0.973
+[Epoch 17][Batch 1599], Speed: 12.584 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.103,RCNN_SmoothL1=0.125,RPNAcc=0.974,RPNL1Loss=0.282,RCNNAcc=0.938,RCNNL1Loss=0.972
+[Epoch 17][Batch 1699], Speed: 12.565 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.103,RCNN_SmoothL1=0.125,RPNAcc=0.974,RPNL1Loss=0.282,RCNNAcc=0.939,RCNNL1Loss=0.972
+[Epoch 17][Batch 1799], Speed: 12.472 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.103,RCNN_SmoothL1=0.125,RPNAcc=0.974,RPNL1Loss=0.282,RCNNAcc=0.939,RCNNL1Loss=0.971
+[Epoch 17][Batch 1899], Speed: 12.455 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.104,RCNN_SmoothL1=0.125,RPNAcc=0.974,RPNL1Loss=0.282,RCNNAcc=0.939,RCNNL1Loss=0.971
+[Epoch 17][Batch 1999], Speed: 12.504 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.104,RCNN_SmoothL1=0.125,RPNAcc=0.974,RPNL1Loss=0.282,RCNNAcc=0.939,RCNNL1Loss=0.970
+[Epoch 17][Batch 2099], Speed: 12.430 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.104,RCNN_SmoothL1=0.125,RPNAcc=0.974,RPNL1Loss=0.282,RCNNAcc=0.939,RCNNL1Loss=0.970
+[Epoch 17][Batch 2199], Speed: 12.454 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.104,RCNN_SmoothL1=0.125,RPNAcc=0.974,RPNL1Loss=0.282,RCNNAcc=0.939,RCNNL1Loss=0.969
+[Epoch 17][Batch 2299], Speed: 12.433 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.104,RCNN_SmoothL1=0.125,RPNAcc=0.974,RPNL1Loss=0.282,RCNNAcc=0.939,RCNNL1Loss=0.969
+[Epoch 17][Batch 2399], Speed: 12.527 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.104,RCNN_SmoothL1=0.125,RPNAcc=0.974,RPNL1Loss=0.281,RCNNAcc=0.939,RCNNL1Loss=0.968
+[Epoch 17][Batch 2499], Speed: 12.519 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.104,RCNN_SmoothL1=0.125,RPNAcc=0.974,RPNL1Loss=0.281,RCNNAcc=0.939,RCNNL1Loss=0.968
+[Epoch 17][Batch 2599], Speed: 12.465 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.104,RCNN_SmoothL1=0.124,RPNAcc=0.974,RPNL1Loss=0.281,RCNNAcc=0.939,RCNNL1Loss=0.967
+[Epoch 17][Batch 2699], Speed: 12.397 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.104,RCNN_SmoothL1=0.125,RPNAcc=0.974,RPNL1Loss=0.281,RCNNAcc=0.939,RCNNL1Loss=0.966
+[Epoch 17][Batch 2799], Speed: 12.476 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.103,RCNN_SmoothL1=0.124,RPNAcc=0.974,RPNL1Loss=0.281,RCNNAcc=0.939,RCNNL1Loss=0.966
+[Epoch 17][Batch 2899], Speed: 12.411 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.103,RCNN_SmoothL1=0.125,RPNAcc=0.974,RPNL1Loss=0.281,RCNNAcc=0.939,RCNNL1Loss=0.965
+[Epoch 17][Batch 2999], Speed: 12.576 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.103,RCNN_SmoothL1=0.124,RPNAcc=0.974,RPNL1Loss=0.281,RCNNAcc=0.939,RCNNL1Loss=0.965
+[Epoch 17][Batch 3099], Speed: 12.396 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.103,RCNN_SmoothL1=0.124,RPNAcc=0.974,RPNL1Loss=0.281,RCNNAcc=0.939,RCNNL1Loss=0.964
+[Epoch 17][Batch 3199], Speed: 12.445 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.103,RCNN_SmoothL1=0.124,RPNAcc=0.974,RPNL1Loss=0.281,RCNNAcc=0.939,RCNNL1Loss=0.964
+[Epoch 17][Batch 3299], Speed: 12.487 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.103,RCNN_SmoothL1=0.124,RPNAcc=0.974,RPNL1Loss=0.281,RCNNAcc=0.939,RCNNL1Loss=0.963
+[Epoch 17][Batch 3399], Speed: 12.486 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.103,RCNN_SmoothL1=0.124,RPNAcc=0.974,RPNL1Loss=0.281,RCNNAcc=0.939,RCNNL1Loss=0.963
+[Epoch 17][Batch 3499], Speed: 12.479 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.103,RCNN_SmoothL1=0.124,RPNAcc=0.974,RPNL1Loss=0.281,RCNNAcc=0.939,RCNNL1Loss=0.962
+[Epoch 17][Batch 3599], Speed: 12.465 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.103,RCNN_SmoothL1=0.124,RPNAcc=0.974,RPNL1Loss=0.281,RCNNAcc=0.939,RCNNL1Loss=0.962
+[Epoch 17][Batch 3699], Speed: 12.508 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.103,RCNN_SmoothL1=0.124,RPNAcc=0.974,RPNL1Loss=0.281,RCNNAcc=0.939,RCNNL1Loss=0.961
+[Epoch 17][Batch 3799], Speed: 12.477 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.103,RCNN_SmoothL1=0.124,RPNAcc=0.974,RPNL1Loss=0.281,RCNNAcc=0.939,RCNNL1Loss=0.961
+[Epoch 17][Batch 3899], Speed: 12.480 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.103,RCNN_SmoothL1=0.124,RPNAcc=0.974,RPNL1Loss=0.281,RCNNAcc=0.939,RCNNL1Loss=0.960
+[Epoch 17][Batch 3999], Speed: 12.462 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.103,RCNN_SmoothL1=0.124,RPNAcc=0.974,RPNL1Loss=0.281,RCNNAcc=0.939,RCNNL1Loss=0.960
+[Epoch 17][Batch 4099], Speed: 12.615 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.103,RCNN_SmoothL1=0.125,RPNAcc=0.974,RPNL1Loss=0.280,RCNNAcc=0.939,RCNNL1Loss=0.959
+[Epoch 17] Training cost: 1327.781, RPN_Conf=0.046,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.103,RCNN_SmoothL1=0.125
+[Epoch 17] Validation: 
+aeroplane=0.7927376996594426
+bicycle=0.8386168858590414
+bird=0.8171633067417894
+boat=0.6811650006561556
+bottle=0.6486189880997801
+bus=0.8619791369460906
+car=0.8776516435146857
+cat=0.8900343239026964
+chair=0.5821275160800585
+cow=0.8479888986828963
+diningtable=0.6644826831561086
+dog=0.8697624397849718
+horse=0.8780108375359977
+motorbike=0.8261006731461993
+person=0.8289754076949198
+pottedplant=0.5124970399646694
+sheep=0.8169359798632949
+sofa=0.7339591953883284
+train=0.8474953567360116
+tvmonitor=0.788051383031689
+mAP=0.7802177198222414
+[Epoch 17] Saving parameters to faster_rcnn_resnet50_v1b_voc_0017_0.7802.params
+[Epoch 18][Batch 99], Speed: 11.683 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.101,RCNN_SmoothL1=0.121,RPNAcc=0.974,RPNL1Loss=0.280,RCNNAcc=0.939,RCNNL1Loss=0.959
+[Epoch 18][Batch 199], Speed: 12.422 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.103,RCNN_SmoothL1=0.124,RPNAcc=0.974,RPNL1Loss=0.280,RCNNAcc=0.939,RCNNL1Loss=0.958
+[Epoch 18][Batch 299], Speed: 12.436 samples/sec, RPN_Conf=0.047,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.104,RCNN_SmoothL1=0.124,RPNAcc=0.974,RPNL1Loss=0.280,RCNNAcc=0.939,RCNNL1Loss=0.958
+[Epoch 18][Batch 399], Speed: 12.490 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.104,RCNN_SmoothL1=0.122,RPNAcc=0.975,RPNL1Loss=0.280,RCNNAcc=0.939,RCNNL1Loss=0.957
+[Epoch 18][Batch 499], Speed: 12.400 samples/sec, RPN_Conf=0.045,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.103,RCNN_SmoothL1=0.122,RPNAcc=0.975,RPNL1Loss=0.280,RCNNAcc=0.939,RCNNL1Loss=0.957
+[Epoch 18][Batch 599], Speed: 12.468 samples/sec, RPN_Conf=0.045,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.102,RCNN_SmoothL1=0.121,RPNAcc=0.975,RPNL1Loss=0.280,RCNNAcc=0.939,RCNNL1Loss=0.956
+[Epoch 18][Batch 699], Speed: 12.457 samples/sec, RPN_Conf=0.045,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.103,RCNN_SmoothL1=0.121,RPNAcc=0.975,RPNL1Loss=0.280,RCNNAcc=0.939,RCNNL1Loss=0.956
+[Epoch 18][Batch 799], Speed: 12.518 samples/sec, RPN_Conf=0.045,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.102,RCNN_SmoothL1=0.120,RPNAcc=0.975,RPNL1Loss=0.280,RCNNAcc=0.939,RCNNL1Loss=0.955
+[Epoch 18][Batch 899], Speed: 12.534 samples/sec, RPN_Conf=0.045,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.101,RCNN_SmoothL1=0.119,RPNAcc=0.975,RPNL1Loss=0.280,RCNNAcc=0.940,RCNNL1Loss=0.955
+[Epoch 18][Batch 999], Speed: 12.333 samples/sec, RPN_Conf=0.045,RPN_SmoothL1=0.029,RCNN_CrossEntropy=0.101,RCNN_SmoothL1=0.119,RPNAcc=0.975,RPNL1Loss=0.280,RCNNAcc=0.940,RCNNL1Loss=0.954
+[Epoch 18][Batch 1099], Speed: 12.504 samples/sec, RPN_Conf=0.045,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.101,RCNN_SmoothL1=0.120,RPNAcc=0.975,RPNL1Loss=0.280,RCNNAcc=0.940,RCNNL1Loss=0.954
+[Epoch 18][Batch 1199], Speed: 12.431 samples/sec, RPN_Conf=0.045,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.102,RCNN_SmoothL1=0.121,RPNAcc=0.975,RPNL1Loss=0.280,RCNNAcc=0.940,RCNNL1Loss=0.953
+[Epoch 18][Batch 1299], Speed: 12.520 samples/sec, RPN_Conf=0.045,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.102,RCNN_SmoothL1=0.121,RPNAcc=0.975,RPNL1Loss=0.280,RCNNAcc=0.940,RCNNL1Loss=0.953
+[Epoch 18][Batch 1399], Speed: 12.458 samples/sec, RPN_Conf=0.045,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.102,RCNN_SmoothL1=0.121,RPNAcc=0.975,RPNL1Loss=0.280,RCNNAcc=0.940,RCNNL1Loss=0.952
+[Epoch 18][Batch 1499], Speed: 12.400 samples/sec, RPN_Conf=0.045,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.102,RCNN_SmoothL1=0.121,RPNAcc=0.975,RPNL1Loss=0.280,RCNNAcc=0.940,RCNNL1Loss=0.952
+[Epoch 18][Batch 1599], Speed: 12.411 samples/sec, RPN_Conf=0.045,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.102,RCNN_SmoothL1=0.122,RPNAcc=0.975,RPNL1Loss=0.280,RCNNAcc=0.940,RCNNL1Loss=0.951
+[Epoch 18][Batch 1699], Speed: 12.439 samples/sec, RPN_Conf=0.045,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.102,RCNN_SmoothL1=0.122,RPNAcc=0.975,RPNL1Loss=0.279,RCNNAcc=0.940,RCNNL1Loss=0.951
+[Epoch 18][Batch 1799], Speed: 12.416 samples/sec, RPN_Conf=0.045,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.102,RCNN_SmoothL1=0.122,RPNAcc=0.975,RPNL1Loss=0.279,RCNNAcc=0.940,RCNNL1Loss=0.950
+[Epoch 18][Batch 1899], Speed: 12.463 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.102,RCNN_SmoothL1=0.122,RPNAcc=0.975,RPNL1Loss=0.279,RCNNAcc=0.940,RCNNL1Loss=0.950
+[Epoch 18][Batch 1999], Speed: 12.458 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.102,RCNN_SmoothL1=0.122,RPNAcc=0.975,RPNL1Loss=0.279,RCNNAcc=0.940,RCNNL1Loss=0.949
+[Epoch 18][Batch 2099], Speed: 12.519 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.103,RCNN_SmoothL1=0.122,RPNAcc=0.975,RPNL1Loss=0.279,RCNNAcc=0.940,RCNNL1Loss=0.949
+[Epoch 18][Batch 2199], Speed: 12.512 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.103,RCNN_SmoothL1=0.123,RPNAcc=0.975,RPNL1Loss=0.279,RCNNAcc=0.940,RCNNL1Loss=0.948
+[Epoch 18][Batch 2299], Speed: 12.478 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.103,RCNN_SmoothL1=0.123,RPNAcc=0.975,RPNL1Loss=0.279,RCNNAcc=0.940,RCNNL1Loss=0.948
+[Epoch 18][Batch 2399], Speed: 12.530 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.103,RCNN_SmoothL1=0.123,RPNAcc=0.975,RPNL1Loss=0.279,RCNNAcc=0.940,RCNNL1Loss=0.947
+[Epoch 18][Batch 2499], Speed: 12.500 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.103,RCNN_SmoothL1=0.123,RPNAcc=0.975,RPNL1Loss=0.279,RCNNAcc=0.940,RCNNL1Loss=0.947
+[Epoch 18][Batch 2599], Speed: 12.409 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.102,RCNN_SmoothL1=0.123,RPNAcc=0.975,RPNL1Loss=0.279,RCNNAcc=0.940,RCNNL1Loss=0.946
+[Epoch 18][Batch 2699], Speed: 12.569 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.102,RCNN_SmoothL1=0.123,RPNAcc=0.975,RPNL1Loss=0.279,RCNNAcc=0.940,RCNNL1Loss=0.946
+[Epoch 18][Batch 2799], Speed: 12.505 samples/sec, RPN_Conf=0.045,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.102,RCNN_SmoothL1=0.123,RPNAcc=0.975,RPNL1Loss=0.279,RCNNAcc=0.940,RCNNL1Loss=0.945
+[Epoch 18][Batch 2899], Speed: 12.500 samples/sec, RPN_Conf=0.045,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.102,RCNN_SmoothL1=0.123,RPNAcc=0.975,RPNL1Loss=0.279,RCNNAcc=0.940,RCNNL1Loss=0.945
+[Epoch 18][Batch 2999], Speed: 12.567 samples/sec, RPN_Conf=0.045,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.102,RCNN_SmoothL1=0.123,RPNAcc=0.975,RPNL1Loss=0.279,RCNNAcc=0.940,RCNNL1Loss=0.944
+[Epoch 18][Batch 3099], Speed: 12.426 samples/sec, RPN_Conf=0.045,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.103,RCNN_SmoothL1=0.123,RPNAcc=0.975,RPNL1Loss=0.279,RCNNAcc=0.940,RCNNL1Loss=0.944
+[Epoch 18][Batch 3199], Speed: 12.407 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.103,RCNN_SmoothL1=0.123,RPNAcc=0.975,RPNL1Loss=0.279,RCNNAcc=0.940,RCNNL1Loss=0.944
+[Epoch 18][Batch 3299], Speed: 12.451 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.103,RCNN_SmoothL1=0.123,RPNAcc=0.975,RPNL1Loss=0.279,RCNNAcc=0.940,RCNNL1Loss=0.943
+[Epoch 18][Batch 3399], Speed: 12.406 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.103,RCNN_SmoothL1=0.123,RPNAcc=0.975,RPNL1Loss=0.279,RCNNAcc=0.940,RCNNL1Loss=0.943
+[Epoch 18][Batch 3499], Speed: 12.495 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.103,RCNN_SmoothL1=0.123,RPNAcc=0.975,RPNL1Loss=0.278,RCNNAcc=0.940,RCNNL1Loss=0.942
+[Epoch 18][Batch 3599], Speed: 12.527 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.103,RCNN_SmoothL1=0.123,RPNAcc=0.975,RPNL1Loss=0.278,RCNNAcc=0.940,RCNNL1Loss=0.942
+[Epoch 18][Batch 3699], Speed: 12.505 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.103,RCNN_SmoothL1=0.123,RPNAcc=0.975,RPNL1Loss=0.278,RCNNAcc=0.940,RCNNL1Loss=0.941
+[Epoch 18][Batch 3799], Speed: 12.548 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.103,RCNN_SmoothL1=0.123,RPNAcc=0.975,RPNL1Loss=0.278,RCNNAcc=0.940,RCNNL1Loss=0.941
+[Epoch 18][Batch 3899], Speed: 12.453 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.103,RCNN_SmoothL1=0.123,RPNAcc=0.975,RPNL1Loss=0.278,RCNNAcc=0.940,RCNNL1Loss=0.940
+[Epoch 18][Batch 3999], Speed: 12.449 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.103,RCNN_SmoothL1=0.123,RPNAcc=0.975,RPNL1Loss=0.278,RCNNAcc=0.940,RCNNL1Loss=0.940
+[Epoch 18][Batch 4099], Speed: 12.534 samples/sec, RPN_Conf=0.046,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.103,RCNN_SmoothL1=0.123,RPNAcc=0.975,RPNL1Loss=0.278,RCNNAcc=0.940,RCNNL1Loss=0.939
+[Epoch 18] Training cost: 1329.080, RPN_Conf=0.045,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.103,RCNN_SmoothL1=0.123
+[Epoch 18] Validation: 
+aeroplane=0.7897907219382987
+bicycle=0.8412022638856109
+bird=0.8262854516032733
+boat=0.6971299188119071
+bottle=0.6471055382880351
+bus=0.8695509232504411
+car=0.8775307491502236
+cat=0.8779555418921232
+chair=0.584114023715705
+cow=0.8586180486180488
+diningtable=0.6872345798391433
+dog=0.8642446953118271
+horse=0.8782482187604758
+motorbike=0.8028643073228623
+person=0.8276698623908345
+pottedplant=0.5111702767516624
+sheep=0.8369110147855124
+sofa=0.7250615094810215
+train=0.8453081217951801
+tvmonitor=0.7823551322060164
+mAP=0.78151754498991
+[Epoch 18] Saving parameters to faster_rcnn_resnet50_v1b_voc_0018_0.7815.params
+[Epoch 19][Batch 99], Speed: 11.609 samples/sec, RPN_Conf=0.044,RPN_SmoothL1=0.032,RCNN_CrossEntropy=0.099,RCNN_SmoothL1=0.126,RPNAcc=0.975,RPNL1Loss=0.278,RCNNAcc=0.940,RCNNL1Loss=0.939
+[Epoch 19][Batch 199], Speed: 12.517 samples/sec, RPN_Conf=0.045,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.102,RCNN_SmoothL1=0.124,RPNAcc=0.975,RPNL1Loss=0.278,RCNNAcc=0.940,RCNNL1Loss=0.938
+[Epoch 19][Batch 299], Speed: 12.454 samples/sec, RPN_Conf=0.045,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.102,RCNN_SmoothL1=0.123,RPNAcc=0.975,RPNL1Loss=0.278,RCNNAcc=0.941,RCNNL1Loss=0.938
+[Epoch 19][Batch 399], Speed: 12.624 samples/sec, RPN_Conf=0.045,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.102,RCNN_SmoothL1=0.123,RPNAcc=0.975,RPNL1Loss=0.278,RCNNAcc=0.941,RCNNL1Loss=0.937
+[Epoch 19][Batch 499], Speed: 12.465 samples/sec, RPN_Conf=0.045,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.102,RCNN_SmoothL1=0.124,RPNAcc=0.975,RPNL1Loss=0.278,RCNNAcc=0.941,RCNNL1Loss=0.937
+[Epoch 19][Batch 599], Speed: 12.510 samples/sec, RPN_Conf=0.044,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.100,RCNN_SmoothL1=0.123,RPNAcc=0.975,RPNL1Loss=0.278,RCNNAcc=0.941,RCNNL1Loss=0.937
+[Epoch 19][Batch 699], Speed: 12.522 samples/sec, RPN_Conf=0.044,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.100,RCNN_SmoothL1=0.123,RPNAcc=0.975,RPNL1Loss=0.278,RCNNAcc=0.941,RCNNL1Loss=0.936
+[Epoch 19][Batch 799], Speed: 12.318 samples/sec, RPN_Conf=0.044,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.100,RCNN_SmoothL1=0.123,RPNAcc=0.975,RPNL1Loss=0.278,RCNNAcc=0.941,RCNNL1Loss=0.936
+[Epoch 19][Batch 899], Speed: 12.446 samples/sec, RPN_Conf=0.044,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.100,RCNN_SmoothL1=0.123,RPNAcc=0.975,RPNL1Loss=0.278,RCNNAcc=0.941,RCNNL1Loss=0.935
+[Epoch 19][Batch 999], Speed: 12.510 samples/sec, RPN_Conf=0.044,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.100,RCNN_SmoothL1=0.123,RPNAcc=0.975,RPNL1Loss=0.278,RCNNAcc=0.941,RCNNL1Loss=0.935
+[Epoch 19][Batch 1099], Speed: 12.449 samples/sec, RPN_Conf=0.044,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.100,RCNN_SmoothL1=0.123,RPNAcc=0.975,RPNL1Loss=0.278,RCNNAcc=0.941,RCNNL1Loss=0.934
+[Epoch 19][Batch 1199], Speed: 12.433 samples/sec, RPN_Conf=0.044,RPN_SmoothL1=0.031,RCNN_CrossEntropy=0.100,RCNN_SmoothL1=0.123,RPNAcc=0.975,RPNL1Loss=0.278,RCNNAcc=0.941,RCNNL1Loss=0.934
+[Epoch 19][Batch 1299], Speed: 12.537 samples/sec, RPN_Conf=0.044,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.100,RCNN_SmoothL1=0.122,RPNAcc=0.975,RPNL1Loss=0.278,RCNNAcc=0.941,RCNNL1Loss=0.933
+[Epoch 19][Batch 1399], Speed: 12.527 samples/sec, RPN_Conf=0.044,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.100,RCNN_SmoothL1=0.122,RPNAcc=0.975,RPNL1Loss=0.277,RCNNAcc=0.941,RCNNL1Loss=0.933
+[Epoch 19][Batch 1499], Speed: 12.496 samples/sec, RPN_Conf=0.044,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.100,RCNN_SmoothL1=0.122,RPNAcc=0.975,RPNL1Loss=0.277,RCNNAcc=0.941,RCNNL1Loss=0.933
+[Epoch 19][Batch 1599], Speed: 12.551 samples/sec, RPN_Conf=0.044,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.100,RCNN_SmoothL1=0.122,RPNAcc=0.975,RPNL1Loss=0.277,RCNNAcc=0.941,RCNNL1Loss=0.932
+[Epoch 19][Batch 1699], Speed: 12.492 samples/sec, RPN_Conf=0.044,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.100,RCNN_SmoothL1=0.121,RPNAcc=0.975,RPNL1Loss=0.277,RCNNAcc=0.941,RCNNL1Loss=0.932
+[Epoch 19][Batch 1799], Speed: 12.512 samples/sec, RPN_Conf=0.044,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.100,RCNN_SmoothL1=0.121,RPNAcc=0.975,RPNL1Loss=0.277,RCNNAcc=0.941,RCNNL1Loss=0.931
+[Epoch 19][Batch 1899], Speed: 12.460 samples/sec, RPN_Conf=0.044,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.100,RCNN_SmoothL1=0.121,RPNAcc=0.975,RPNL1Loss=0.277,RCNNAcc=0.941,RCNNL1Loss=0.931
+[Epoch 19][Batch 1999], Speed: 12.505 samples/sec, RPN_Conf=0.044,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.100,RCNN_SmoothL1=0.121,RPNAcc=0.975,RPNL1Loss=0.277,RCNNAcc=0.941,RCNNL1Loss=0.930
+[Epoch 19][Batch 2099], Speed: 12.525 samples/sec, RPN_Conf=0.044,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.100,RCNN_SmoothL1=0.121,RPNAcc=0.975,RPNL1Loss=0.277,RCNNAcc=0.941,RCNNL1Loss=0.930
+[Epoch 19][Batch 2199], Speed: 12.554 samples/sec, RPN_Conf=0.044,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.100,RCNN_SmoothL1=0.121,RPNAcc=0.975,RPNL1Loss=0.277,RCNNAcc=0.941,RCNNL1Loss=0.929
+[Epoch 19][Batch 2299], Speed: 12.392 samples/sec, RPN_Conf=0.044,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.100,RCNN_SmoothL1=0.121,RPNAcc=0.975,RPNL1Loss=0.277,RCNNAcc=0.941,RCNNL1Loss=0.929
+[Epoch 19][Batch 2399], Speed: 12.424 samples/sec, RPN_Conf=0.045,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.100,RCNN_SmoothL1=0.121,RPNAcc=0.975,RPNL1Loss=0.277,RCNNAcc=0.941,RCNNL1Loss=0.928
+[Epoch 19][Batch 2499], Speed: 12.481 samples/sec, RPN_Conf=0.045,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.101,RCNN_SmoothL1=0.121,RPNAcc=0.975,RPNL1Loss=0.277,RCNNAcc=0.941,RCNNL1Loss=0.928
+[Epoch 19][Batch 2599], Speed: 12.542 samples/sec, RPN_Conf=0.045,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.101,RCNN_SmoothL1=0.121,RPNAcc=0.975,RPNL1Loss=0.277,RCNNAcc=0.941,RCNNL1Loss=0.928
+[Epoch 19][Batch 2699], Speed: 12.483 samples/sec, RPN_Conf=0.045,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.101,RCNN_SmoothL1=0.121,RPNAcc=0.975,RPNL1Loss=0.277,RCNNAcc=0.941,RCNNL1Loss=0.927
+[Epoch 19][Batch 2799], Speed: 12.491 samples/sec, RPN_Conf=0.045,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.101,RCNN_SmoothL1=0.121,RPNAcc=0.975,RPNL1Loss=0.277,RCNNAcc=0.941,RCNNL1Loss=0.927
+[Epoch 19][Batch 2899], Speed: 12.466 samples/sec, RPN_Conf=0.045,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.101,RCNN_SmoothL1=0.121,RPNAcc=0.975,RPNL1Loss=0.277,RCNNAcc=0.941,RCNNL1Loss=0.926
+[Epoch 19][Batch 2999], Speed: 12.544 samples/sec, RPN_Conf=0.045,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.101,RCNN_SmoothL1=0.122,RPNAcc=0.975,RPNL1Loss=0.277,RCNNAcc=0.941,RCNNL1Loss=0.926
+[Epoch 19][Batch 3099], Speed: 12.546 samples/sec, RPN_Conf=0.045,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.101,RCNN_SmoothL1=0.122,RPNAcc=0.975,RPNL1Loss=0.277,RCNNAcc=0.941,RCNNL1Loss=0.925
+[Epoch 19][Batch 3199], Speed: 12.605 samples/sec, RPN_Conf=0.045,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.101,RCNN_SmoothL1=0.122,RPNAcc=0.975,RPNL1Loss=0.277,RCNNAcc=0.941,RCNNL1Loss=0.925
+[Epoch 19][Batch 3299], Speed: 12.605 samples/sec, RPN_Conf=0.045,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.101,RCNN_SmoothL1=0.122,RPNAcc=0.975,RPNL1Loss=0.277,RCNNAcc=0.941,RCNNL1Loss=0.925
+[Epoch 19][Batch 3399], Speed: 12.479 samples/sec, RPN_Conf=0.045,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.101,RCNN_SmoothL1=0.122,RPNAcc=0.975,RPNL1Loss=0.276,RCNNAcc=0.941,RCNNL1Loss=0.924
+[Epoch 19][Batch 3499], Speed: 12.475 samples/sec, RPN_Conf=0.045,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.102,RCNN_SmoothL1=0.122,RPNAcc=0.975,RPNL1Loss=0.276,RCNNAcc=0.941,RCNNL1Loss=0.924
+[Epoch 19][Batch 3599], Speed: 12.481 samples/sec, RPN_Conf=0.045,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.102,RCNN_SmoothL1=0.122,RPNAcc=0.975,RPNL1Loss=0.276,RCNNAcc=0.941,RCNNL1Loss=0.923
+[Epoch 19][Batch 3699], Speed: 12.508 samples/sec, RPN_Conf=0.045,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.101,RCNN_SmoothL1=0.122,RPNAcc=0.975,RPNL1Loss=0.276,RCNNAcc=0.941,RCNNL1Loss=0.923
+[Epoch 19][Batch 3799], Speed: 12.512 samples/sec, RPN_Conf=0.045,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.101,RCNN_SmoothL1=0.122,RPNAcc=0.975,RPNL1Loss=0.276,RCNNAcc=0.941,RCNNL1Loss=0.923
+[Epoch 19][Batch 3899], Speed: 12.527 samples/sec, RPN_Conf=0.045,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.101,RCNN_SmoothL1=0.122,RPNAcc=0.975,RPNL1Loss=0.276,RCNNAcc=0.941,RCNNL1Loss=0.922
+[Epoch 19][Batch 3999], Speed: 12.569 samples/sec, RPN_Conf=0.045,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.101,RCNN_SmoothL1=0.122,RPNAcc=0.975,RPNL1Loss=0.276,RCNNAcc=0.941,RCNNL1Loss=0.922
+[Epoch 19][Batch 4099], Speed: 12.513 samples/sec, RPN_Conf=0.045,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.101,RCNN_SmoothL1=0.122,RPNAcc=0.975,RPNL1Loss=0.276,RCNNAcc=0.942,RCNNL1Loss=0.921
+[Epoch 19] Training cost: 1326.142, RPN_Conf=0.045,RPN_SmoothL1=0.030,RCNN_CrossEntropy=0.101,RCNN_SmoothL1=0.122
+[Epoch 19] Validation: 
+aeroplane=0.7941293299700947
+bicycle=0.8153225905640767
+bird=0.7941233466802613
+boat=0.6858206398403598
+bottle=0.648616522327365
+bus=0.8688866522005938
+car=0.8771035191077191
+cat=0.8815680344491871
+chair=0.6013810297962436
+cow=0.8580201410048119
+diningtable=0.6826430214131638
+dog=0.8690206685834372
+horse=0.8804141804038217
+motorbike=0.7978473958998167
+person=0.8252280212005596
+pottedplant=0.5059527976453118
+sheep=0.7940565079602513
+sofa=0.7417261943059131
+train=0.8441948747633157
+tvmonitor=0.7658803794353161
+mAP=0.7765967923775811
+[Epoch 19] Saving parameters to faster_rcnn_resnet50_v1b_voc_0019_0.7766.params
