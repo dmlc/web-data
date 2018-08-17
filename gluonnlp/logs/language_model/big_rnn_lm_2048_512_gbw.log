@@ -4,7 +4,7 @@ BigRNN(
   (0): LSTMPCell(None -> 8192 -> 512)
   (1): DropoutCell(rate=0.1, axes=())
   )
-  (decoder): SparseISDense(512 -> 793471, num_sampled = 8192, remove_accidental_hits = True)
+  (decoder): SparseISLogits(512 -> 793471, num_sampled = 8192, remove_accidental_hits = True)
   (embedding): Sequential(
     (0): SparseEmbedding(793471 -> 512, float32)
     (1): Dropout(p = 0.1, axes=())

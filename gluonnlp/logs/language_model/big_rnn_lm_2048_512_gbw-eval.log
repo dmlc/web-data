@@ -1,3 +1,5 @@
+/home/ubuntu/master/python/mxnet/gluon/block.py:520: UserWarning: All children of this Sequential layer 'bigrnn0_sequential0_' are HybridBlocks. Consider using HybridSequential for the best performance.
+  cld.hybridize(active, **kwargs)
 Namespace(batch_size=32, bptt=20, clip=1.0, dropout=0.1, emsize=512, epochs=42, eps=1, eval_only=True, from_epoch=None, gpus=None, k=8192, log_interval=1000, lr=0.2, nhid=2048, nlayers=1, nproj=512, save='/dev/shm/eos_128.params', seed=1, test_mode=False)
 BigRNN(
   (decoder): Dense(None -> 793471, linear)
