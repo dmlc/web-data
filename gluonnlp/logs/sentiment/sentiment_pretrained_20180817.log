@@ -1,0 +1,412 @@
+Namespace(batch_size=16, bucket_mult=100, bucket_num=10, bucket_ratio=0.0, bucket_type='fixed', clip=None, dropout=0.0, epochs=3, gpu=0, lm_model='standard_lstm_lm_200', log_interval=30, lr=0.005, no_pretrained=False, save_prefix='imdb_lstm_200', use_mean_pool=True, valid_ratio=0.1)
+Use gpu0
+[22:38:43] src/storage/storage.cc:129: Using GPUPooledRoundedStorageManager.
+Tokenize using spaCy...
+Done! Tokenizing Time=8.19s, #Sentences=22500
+Done! Tokenizing Time=1.50s, #Sentences=2500
+Done! Tokenizing Time=9.03s, #Sentences=25000
+Use FixedBucketSampler
+FixedBucketSampler:
+  sample_num=22500, batch_num=1412
+  key=[59, 108, 157, 206, 255, 304, 353, 402, 451, 500]
+  cnt=[541, 1794, 4583, 4609, 2737, 1848, 1322, 1052, 780, 3234]
+  batch_size=[16, 16, 16, 16, 16, 16, 16, 16, 16, 16]
+SentimentNet(
+  (embedding): HybridSequential(
+    (0): Embedding(33278 -> 200, float32)
+  )
+  (encoder): LSTM(200 -> 200, TNC, num_layers=2)
+  (agg_layer): AggregationLayer(
+
+  )
+  (output): HybridSequential(
+    (0): Dropout(p = 0.0, axes=())
+    (1): Dense(None -> 1, linear)
+  )
+)
+[Epoch 0 Batch 30/1412] avg loss 0.0428956, throughput 123.947K wps
+[Epoch 0 Batch 60/1412] avg loss 0.0416258, throughput 178.027K wps
+[Epoch 0 Batch 90/1412] avg loss 0.0394911, throughput 176.468K wps
+[Epoch 0 Batch 120/1412] avg loss 0.0381994, throughput 155.963K wps
+[Epoch 0 Batch 150/1412] avg loss 0.0364364, throughput 136.879K wps
+[Epoch 0 Batch 180/1412] avg loss 0.0341153, throughput 172.695K wps
+[Epoch 0 Batch 210/1412] avg loss 0.0325272, throughput 158.627K wps
+[Epoch 0 Batch 240/1412] avg loss 0.0320446, throughput 132.629K wps
+[Epoch 0 Batch 270/1412] avg loss 0.0301984, throughput 137.281K wps
+[Epoch 0 Batch 300/1412] avg loss 0.0336697, throughput 144.098K wps
+[Epoch 0 Batch 330/1412] avg loss 0.0271684, throughput 139.064K wps
+[Epoch 0 Batch 360/1412] avg loss 0.0288932, throughput 131.497K wps
+[Epoch 0 Batch 390/1412] avg loss 0.0271189, throughput 132.017K wps
+[Epoch 0 Batch 420/1412] avg loss 0.0243113, throughput 132.052K wps
+[Epoch 0 Batch 450/1412] avg loss 0.0261788, throughput 163.408K wps
+[Epoch 0 Batch 480/1412] avg loss 0.0248645, throughput 94.0948K wps
+[Epoch 0 Batch 510/1412] avg loss 0.0253977, throughput 150.352K wps
+[Epoch 0 Batch 540/1412] avg loss 0.0224104, throughput 164.427K wps
+[Epoch 0 Batch 570/1412] avg loss 0.0260106, throughput 133.96K wps
+[Epoch 0 Batch 600/1412] avg loss 0.0252388, throughput 125.665K wps
+[Epoch 0 Batch 630/1412] avg loss 0.021161, throughput 154.419K wps
+[Epoch 0 Batch 660/1412] avg loss 0.0219882, throughput 150.455K wps
+[Epoch 0 Batch 690/1412] avg loss 0.0219002, throughput 148.631K wps
+[Epoch 0 Batch 720/1412] avg loss 0.0193266, throughput 154.566K wps
+[Epoch 0 Batch 750/1412] avg loss 0.0217509, throughput 127.465K wps
+[Epoch 0 Batch 780/1412] avg loss 0.0217465, throughput 170.845K wps
+[Epoch 0 Batch 810/1412] avg loss 0.0257054, throughput 150.765K wps
+[Epoch 0 Batch 840/1412] avg loss 0.022516, throughput 132.393K wps
+[Epoch 0 Batch 870/1412] avg loss 0.0196761, throughput 146.927K wps
+[Epoch 0 Batch 900/1412] avg loss 0.0213874, throughput 141.947K wps
+[Epoch 0 Batch 930/1412] avg loss 0.0203676, throughput 126.706K wps
+[Epoch 0 Batch 960/1412] avg loss 0.0238618, throughput 135.568K wps
+[Epoch 0 Batch 990/1412] avg loss 0.0228185, throughput 156.136K wps
+[Epoch 0 Batch 1020/1412] avg loss 0.0230744, throughput 134.391K wps
+[Epoch 0 Batch 1050/1412] avg loss 0.0220012, throughput 141.704K wps
+[Epoch 0 Batch 1080/1412] avg loss 0.0225196, throughput 154.992K wps
+[Epoch 0 Batch 1110/1412] avg loss 0.0184877, throughput 163.504K wps
+[Epoch 0 Batch 1140/1412] avg loss 0.0241719, throughput 133.909K wps
+[Epoch 0 Batch 1170/1412] avg loss 0.0190411, throughput 136.272K wps
+[Epoch 0 Batch 1200/1412] avg loss 0.0214215, throughput 134.935K wps
+[Epoch 0 Batch 1230/1412] avg loss 0.018726, throughput 137.799K wps
+[Epoch 0 Batch 1260/1412] avg loss 0.019497, throughput 130.512K wps
+[Epoch 0 Batch 1290/1412] avg loss 0.0194764, throughput 135.686K wps
+[Epoch 0 Batch 1320/1412] avg loss 0.0201536, throughput 146.97K wps
+[Epoch 0 Batch 1350/1412] avg loss 0.0186043, throughput 148.271K wps
+[Epoch 0 Batch 1380/1412] avg loss 0.0213534, throughput 146.158K wps
+[Epoch 0 Batch 1410/1412] avg loss 0.0193069, throughput 127.783K wps
+Begin Testing...
+[Batch 30/157] elapsed 0.75 s
+[Batch 60/157] elapsed 0.52 s
+[Batch 90/157] elapsed 0.38 s
+[Batch 120/157] elapsed 0.31 s
+[Batch 150/157] elapsed 0.28 s
+Begin Testing...
+[Batch 30/1563] elapsed 0.77 s
+[Batch 60/1563] elapsed 0.66 s
+[Batch 90/1563] elapsed 0.75 s
+[Batch 120/1563] elapsed 0.76 s
+[Batch 150/1563] elapsed 0.68 s
+[Batch 180/1563] elapsed 0.71 s
+[Batch 210/1563] elapsed 0.72 s
+[Batch 240/1563] elapsed 0.70 s
+[Batch 270/1563] elapsed 0.64 s
+[Batch 300/1563] elapsed 0.60 s
+[Batch 330/1563] elapsed 0.49 s
+[Batch 360/1563] elapsed 0.50 s
+[Batch 390/1563] elapsed 0.49 s
+[Batch 420/1563] elapsed 0.47 s
+[Batch 450/1563] elapsed 0.47 s
+[Batch 480/1563] elapsed 0.45 s
+[Batch 510/1563] elapsed 0.45 s
+[Batch 540/1563] elapsed 0.43 s
+[Batch 570/1563] elapsed 0.44 s
+[Batch 600/1563] elapsed 0.36 s
+[Batch 630/1563] elapsed 0.43 s
+[Batch 660/1563] elapsed 0.42 s
+[Batch 690/1563] elapsed 0.39 s
+[Batch 720/1563] elapsed 0.36 s
+[Batch 750/1563] elapsed 0.33 s
+[Batch 780/1563] elapsed 0.35 s
+[Batch 810/1563] elapsed 0.36 s
+[Batch 840/1563] elapsed 0.37 s
+[Batch 870/1563] elapsed 0.36 s
+[Batch 900/1563] elapsed 0.35 s
+[Batch 930/1563] elapsed 0.36 s
+[Batch 960/1563] elapsed 0.35 s
+[Batch 990/1563] elapsed 0.32 s
+[Batch 1020/1563] elapsed 0.36 s
+[Batch 1050/1563] elapsed 0.33 s
+[Batch 1080/1563] elapsed 0.32 s
+[Batch 1110/1563] elapsed 0.33 s
+[Batch 1140/1563] elapsed 0.28 s
+[Batch 1170/1563] elapsed 0.31 s
+[Batch 1200/1563] elapsed 0.26 s
+[Batch 1230/1563] elapsed 0.23 s
+[Batch 1260/1563] elapsed 0.24 s
+[Batch 1290/1563] elapsed 0.24 s
+[Batch 1320/1563] elapsed 0.22 s
+[Batch 1350/1563] elapsed 0.23 s
+[Batch 1380/1563] elapsed 0.27 s
+[Batch 1410/1563] elapsed 0.24 s
+[Batch 1440/1563] elapsed 0.22 s
+[Batch 1470/1563] elapsed 0.15 s
+[Batch 1500/1563] elapsed 0.14 s
+[Batch 1530/1563] elapsed 0.21 s
+[Batch 1560/1563] elapsed 0.16 s
+[Epoch 0] train avg loss 0.0253155, valid acc 0.8608, valid avg loss 0.312336, test acc 0.8646, test avg loss 0.315266, throughput 141.93K wps
+Observed Improvement.
+[Epoch 1 Batch 30/1412] avg loss 0.00884002, throughput 153.348K wps
+[Epoch 1 Batch 60/1412] avg loss 0.0103921, throughput 164.44K wps
+[Epoch 1 Batch 90/1412] avg loss 0.00906383, throughput 149.924K wps
+[Epoch 1 Batch 120/1412] avg loss 0.00904019, throughput 141.5K wps
+[Epoch 1 Batch 150/1412] avg loss 0.00726474, throughput 145.358K wps
+[Epoch 1 Batch 180/1412] avg loss 0.0110895, throughput 149.223K wps
+[Epoch 1 Batch 210/1412] avg loss 0.0100672, throughput 161.961K wps
+[Epoch 1 Batch 240/1412] avg loss 0.0092435, throughput 157.597K wps
+[Epoch 1 Batch 270/1412] avg loss 0.0109326, throughput 145.924K wps
+[Epoch 1 Batch 300/1412] avg loss 0.0110071, throughput 162.317K wps
+[Epoch 1 Batch 330/1412] avg loss 0.00938652, throughput 174.79K wps
+[Epoch 1 Batch 360/1412] avg loss 0.0112774, throughput 157.84K wps
+[Epoch 1 Batch 390/1412] avg loss 0.00979935, throughput 120.536K wps
+[Epoch 1 Batch 420/1412] avg loss 0.0123489, throughput 146.856K wps
+[Epoch 1 Batch 450/1412] avg loss 0.011903, throughput 155.078K wps
+[Epoch 1 Batch 480/1412] avg loss 0.00895832, throughput 154.149K wps
+[Epoch 1 Batch 510/1412] avg loss 0.0102758, throughput 124.06K wps
+[Epoch 1 Batch 540/1412] avg loss 0.00796168, throughput 143.401K wps
+[Epoch 1 Batch 570/1412] avg loss 0.00913943, throughput 152.295K wps
+[Epoch 1 Batch 600/1412] avg loss 0.00855392, throughput 165.247K wps
+[Epoch 1 Batch 630/1412] avg loss 0.0102719, throughput 172.413K wps
+[Epoch 1 Batch 660/1412] avg loss 0.00957094, throughput 129.596K wps
+[Epoch 1 Batch 690/1412] avg loss 0.0107408, throughput 158.745K wps
+[Epoch 1 Batch 720/1412] avg loss 0.0134388, throughput 139.194K wps
+[Epoch 1 Batch 750/1412] avg loss 0.0107798, throughput 147.392K wps
+[Epoch 1 Batch 780/1412] avg loss 0.00972276, throughput 158.037K wps
+[Epoch 1 Batch 810/1412] avg loss 0.0119962, throughput 151.013K wps
+[Epoch 1 Batch 840/1412] avg loss 0.012211, throughput 136.806K wps
+[Epoch 1 Batch 870/1412] avg loss 0.0106785, throughput 165.765K wps
+[Epoch 1 Batch 900/1412] avg loss 0.00971988, throughput 143.933K wps
+[Epoch 1 Batch 930/1412] avg loss 0.0147058, throughput 160.803K wps
+[Epoch 1 Batch 960/1412] avg loss 0.0115713, throughput 139.632K wps
+[Epoch 1 Batch 990/1412] avg loss 0.0111275, throughput 162.716K wps
+[Epoch 1 Batch 1020/1412] avg loss 0.0133518, throughput 151.048K wps
+[Epoch 1 Batch 1050/1412] avg loss 0.0123195, throughput 163.721K wps
+[Epoch 1 Batch 1080/1412] avg loss 0.0113373, throughput 177.282K wps
+[Epoch 1 Batch 1110/1412] avg loss 0.00921365, throughput 151.983K wps
+[Epoch 1 Batch 1140/1412] avg loss 0.00997644, throughput 156.113K wps
+[Epoch 1 Batch 1170/1412] avg loss 0.0118162, throughput 128.352K wps
+[Epoch 1 Batch 1200/1412] avg loss 0.0123008, throughput 146.661K wps
+[Epoch 1 Batch 1230/1412] avg loss 0.0125654, throughput 167.659K wps
+[Epoch 1 Batch 1260/1412] avg loss 0.0129048, throughput 159.684K wps
+[Epoch 1 Batch 1290/1412] avg loss 0.014388, throughput 159.192K wps
+[Epoch 1 Batch 1320/1412] avg loss 0.0127078, throughput 135.198K wps
+[Epoch 1 Batch 1350/1412] avg loss 0.0113456, throughput 142.761K wps
+[Epoch 1 Batch 1380/1412] avg loss 0.0109737, throughput 176.981K wps
+[Epoch 1 Batch 1410/1412] avg loss 0.0124708, throughput 165.735K wps
+Begin Testing...
+[Batch 30/157] elapsed 0.75 s
+[Batch 60/157] elapsed 0.46 s
+[Batch 90/157] elapsed 0.33 s
+[Batch 120/157] elapsed 0.28 s
+[Batch 150/157] elapsed 0.27 s
+Begin Testing...
+[Batch 30/1563] elapsed 0.77 s
+[Batch 60/1563] elapsed 0.71 s
+[Batch 90/1563] elapsed 0.78 s
+[Batch 120/1563] elapsed 0.74 s
+[Batch 150/1563] elapsed 0.75 s
+[Batch 180/1563] elapsed 0.66 s
+[Batch 210/1563] elapsed 0.71 s
+[Batch 240/1563] elapsed 0.68 s
+[Batch 270/1563] elapsed 0.65 s
+[Batch 300/1563] elapsed 0.57 s
+[Batch 330/1563] elapsed 0.51 s
+[Batch 360/1563] elapsed 0.47 s
+[Batch 390/1563] elapsed 0.52 s
+[Batch 420/1563] elapsed 0.49 s
+[Batch 450/1563] elapsed 0.40 s
+[Batch 480/1563] elapsed 0.46 s
+[Batch 510/1563] elapsed 0.47 s
+[Batch 540/1563] elapsed 0.50 s
+[Batch 570/1563] elapsed 0.42 s
+[Batch 600/1563] elapsed 0.38 s
+[Batch 630/1563] elapsed 0.41 s
+[Batch 660/1563] elapsed 0.34 s
+[Batch 690/1563] elapsed 0.31 s
+[Batch 720/1563] elapsed 0.32 s
+[Batch 750/1563] elapsed 0.31 s
+[Batch 780/1563] elapsed 0.38 s
+[Batch 810/1563] elapsed 0.35 s
+[Batch 840/1563] elapsed 0.38 s
+[Batch 870/1563] elapsed 0.36 s
+[Batch 900/1563] elapsed 0.35 s
+[Batch 930/1563] elapsed 0.37 s
+[Batch 960/1563] elapsed 0.34 s
+[Batch 990/1563] elapsed 0.31 s
+[Batch 1020/1563] elapsed 0.29 s
+[Batch 1050/1563] elapsed 0.26 s
+[Batch 1080/1563] elapsed 0.28 s
+[Batch 1110/1563] elapsed 0.27 s
+[Batch 1140/1563] elapsed 0.25 s
+[Batch 1170/1563] elapsed 0.26 s
+[Batch 1200/1563] elapsed 0.26 s
+[Batch 1230/1563] elapsed 0.32 s
+[Batch 1260/1563] elapsed 0.31 s
+[Batch 1290/1563] elapsed 0.24 s
+[Batch 1320/1563] elapsed 0.28 s
+[Batch 1350/1563] elapsed 0.28 s
+[Batch 1380/1563] elapsed 0.23 s
+[Batch 1410/1563] elapsed 0.22 s
+[Batch 1440/1563] elapsed 0.25 s
+[Batch 1470/1563] elapsed 0.20 s
+[Batch 1500/1563] elapsed 0.17 s
+[Batch 1530/1563] elapsed 0.22 s
+[Batch 1560/1563] elapsed 0.21 s
+[Epoch 1] train avg loss 0.0108584, valid acc 0.8548, valid avg loss 0.334014, test acc 0.8572, test avg loss 0.34271, throughput 151.441K wps
+No Improvement.
+[Epoch 2 Batch 30/1412] avg loss 0.00249979, throughput 135.35K wps
+[Epoch 2 Batch 60/1412] avg loss 0.00297942, throughput 145.301K wps
+[Epoch 2 Batch 90/1412] avg loss 0.00178895, throughput 170.649K wps
+[Epoch 2 Batch 120/1412] avg loss 0.00243415, throughput 157.889K wps
+[Epoch 2 Batch 150/1412] avg loss 0.00398688, throughput 173.025K wps
+[Epoch 2 Batch 180/1412] avg loss 0.00233222, throughput 161.309K wps
+[Epoch 2 Batch 210/1412] avg loss 0.00249655, throughput 176.541K wps
+[Epoch 2 Batch 240/1412] avg loss 0.00288562, throughput 151.81K wps
+[Epoch 2 Batch 270/1412] avg loss 0.00205386, throughput 132.482K wps
+[Epoch 2 Batch 300/1412] avg loss 0.00317629, throughput 144.083K wps
+[Epoch 2 Batch 330/1412] avg loss 0.00240067, throughput 153.994K wps
+[Epoch 2 Batch 360/1412] avg loss 0.00188577, throughput 149.616K wps
+[Epoch 2 Batch 390/1412] avg loss 0.00196446, throughput 158.922K wps
+[Epoch 2 Batch 420/1412] avg loss 0.0046571, throughput 133.631K wps
+[Epoch 2 Batch 450/1412] avg loss 0.00294488, throughput 153.714K wps
+[Epoch 2 Batch 480/1412] avg loss 0.00440138, throughput 149.909K wps
+[Epoch 2 Batch 510/1412] avg loss 0.00274921, throughput 168.799K wps
+[Epoch 2 Batch 540/1412] avg loss 0.0022389, throughput 167.285K wps
+[Epoch 2 Batch 570/1412] avg loss 0.00421526, throughput 176.425K wps
+[Epoch 2 Batch 600/1412] avg loss 0.00326635, throughput 167.749K wps
+[Epoch 2 Batch 630/1412] avg loss 0.00246392, throughput 152.624K wps
+[Epoch 2 Batch 660/1412] avg loss 0.00456076, throughput 141.851K wps
+[Epoch 2 Batch 690/1412] avg loss 0.00431934, throughput 158.73K wps
+[Epoch 2 Batch 720/1412] avg loss 0.00236816, throughput 159.011K wps
+[Epoch 2 Batch 750/1412] avg loss 0.00425994, throughput 145.011K wps
+[Epoch 2 Batch 780/1412] avg loss 0.00450956, throughput 144.921K wps
+[Epoch 2 Batch 810/1412] avg loss 0.00496355, throughput 136.493K wps
+[Epoch 2 Batch 840/1412] avg loss 0.00463362, throughput 151.425K wps
+[Epoch 2 Batch 870/1412] avg loss 0.0043584, throughput 171.317K wps
+[Epoch 2 Batch 900/1412] avg loss 0.00472806, throughput 142.963K wps
+[Epoch 2 Batch 930/1412] avg loss 0.00485247, throughput 155.961K wps
+[Epoch 2 Batch 960/1412] avg loss 0.00466218, throughput 160.61K wps
+[Epoch 2 Batch 990/1412] avg loss 0.00359686, throughput 161.194K wps
+[Epoch 2 Batch 1020/1412] avg loss 0.00421184, throughput 137.188K wps
+[Epoch 2 Batch 1050/1412] avg loss 0.00409533, throughput 135.736K wps
+[Epoch 2 Batch 1080/1412] avg loss 0.00543656, throughput 187.856K wps
+[Epoch 2 Batch 1110/1412] avg loss 0.00460882, throughput 148.794K wps
+[Epoch 2 Batch 1140/1412] avg loss 0.00335952, throughput 150.269K wps
+[Epoch 2 Batch 1170/1412] avg loss 0.00378786, throughput 152.413K wps
+[Epoch 2 Batch 1200/1412] avg loss 0.00573496, throughput 163.055K wps
+[Epoch 2 Batch 1230/1412] avg loss 0.00426891, throughput 166.697K wps
+[Epoch 2 Batch 1260/1412] avg loss 0.00708616, throughput 165.748K wps
+[Epoch 2 Batch 1290/1412] avg loss 0.00600538, throughput 167.444K wps
+[Epoch 2 Batch 1320/1412] avg loss 0.00315941, throughput 146.232K wps
+[Epoch 2 Batch 1350/1412] avg loss 0.00233964, throughput 143.16K wps
+[Epoch 2 Batch 1380/1412] avg loss 0.00880287, throughput 141.812K wps
+[Epoch 2 Batch 1410/1412] avg loss 0.00502706, throughput 161.482K wps
+Begin Testing...
+[Batch 30/157] elapsed 0.61 s
+[Batch 60/157] elapsed 0.51 s
+[Batch 90/157] elapsed 0.39 s
+[Batch 120/157] elapsed 0.28 s
+[Batch 150/157] elapsed 0.28 s
+Begin Testing...
+[Batch 30/1563] elapsed 0.64 s
+[Batch 60/1563] elapsed 0.70 s
+[Batch 90/1563] elapsed 0.79 s
+[Batch 120/1563] elapsed 0.71 s
+[Batch 150/1563] elapsed 0.72 s
+[Batch 180/1563] elapsed 0.71 s
+[Batch 210/1563] elapsed 0.63 s
+[Batch 240/1563] elapsed 0.56 s
+[Batch 270/1563] elapsed 0.48 s
+[Batch 300/1563] elapsed 0.55 s
+[Batch 330/1563] elapsed 0.59 s
+[Batch 360/1563] elapsed 0.53 s
+[Batch 390/1563] elapsed 0.44 s
+[Batch 420/1563] elapsed 0.43 s
+[Batch 450/1563] elapsed 0.39 s
+[Batch 480/1563] elapsed 0.45 s
+[Batch 510/1563] elapsed 0.44 s
+[Batch 540/1563] elapsed 0.44 s
+[Batch 570/1563] elapsed 0.46 s
+[Batch 600/1563] elapsed 0.46 s
+[Batch 630/1563] elapsed 0.36 s
+[Batch 660/1563] elapsed 0.39 s
+[Batch 690/1563] elapsed 0.36 s
+[Batch 720/1563] elapsed 0.35 s
+[Batch 750/1563] elapsed 0.33 s
+[Batch 780/1563] elapsed 0.31 s
+[Batch 810/1563] elapsed 0.32 s
+[Batch 840/1563] elapsed 0.27 s
+[Batch 870/1563] elapsed 0.29 s
+[Batch 900/1563] elapsed 0.29 s
+[Batch 930/1563] elapsed 0.26 s
+[Batch 960/1563] elapsed 0.32 s
+[Batch 990/1563] elapsed 0.30 s
+[Batch 1020/1563] elapsed 0.28 s
+[Batch 1050/1563] elapsed 0.28 s
+[Batch 1080/1563] elapsed 0.26 s
+[Batch 1110/1563] elapsed 0.23 s
+[Batch 1140/1563] elapsed 0.22 s
+[Batch 1170/1563] elapsed 0.22 s
+[Batch 1200/1563] elapsed 0.23 s
+[Batch 1230/1563] elapsed 0.22 s
+[Batch 1260/1563] elapsed 0.24 s
+[Batch 1290/1563] elapsed 0.24 s
+[Batch 1320/1563] elapsed 0.23 s
+[Batch 1350/1563] elapsed 0.23 s
+[Batch 1380/1563] elapsed 0.22 s
+[Batch 1410/1563] elapsed 0.20 s
+[Batch 1440/1563] elapsed 0.18 s
+[Batch 1470/1563] elapsed 0.18 s
+[Batch 1500/1563] elapsed 0.17 s
+[Batch 1530/1563] elapsed 0.15 s
+[Batch 1560/1563] elapsed 0.13 s
+[Epoch 2] train avg loss 0.00381801, valid acc 0.8588, valid avg loss 0.439216, test acc 0.8489, test avg loss 0.458105, throughput 153.833K wps
+No Improvement.
+Begin Testing...
+[Batch 30/157] elapsed 0.69 s
+[Batch 60/157] elapsed 0.47 s
+[Batch 90/157] elapsed 0.30 s
+[Batch 120/157] elapsed 0.23 s
+[Batch 150/157] elapsed 0.21 s
+Begin Testing...
+[Batch 30/1563] elapsed 0.55 s
+[Batch 60/1563] elapsed 0.53 s
+[Batch 90/1563] elapsed 0.66 s
+[Batch 120/1563] elapsed 0.62 s
+[Batch 150/1563] elapsed 0.68 s
+[Batch 180/1563] elapsed 0.56 s
+[Batch 210/1563] elapsed 0.52 s
+[Batch 240/1563] elapsed 0.54 s
+[Batch 270/1563] elapsed 0.44 s
+[Batch 300/1563] elapsed 0.48 s
+[Batch 330/1563] elapsed 0.41 s
+[Batch 360/1563] elapsed 0.41 s
+[Batch 390/1563] elapsed 0.43 s
+[Batch 420/1563] elapsed 0.36 s
+[Batch 450/1563] elapsed 0.39 s
+[Batch 480/1563] elapsed 0.35 s
+[Batch 510/1563] elapsed 0.32 s
+[Batch 540/1563] elapsed 0.30 s
+[Batch 570/1563] elapsed 0.32 s
+[Batch 600/1563] elapsed 0.29 s
+[Batch 630/1563] elapsed 0.33 s
+[Batch 660/1563] elapsed 0.37 s
+[Batch 690/1563] elapsed 0.37 s
+[Batch 720/1563] elapsed 0.44 s
+[Batch 750/1563] elapsed 0.40 s
+[Batch 780/1563] elapsed 0.40 s
+[Batch 810/1563] elapsed 0.35 s
+[Batch 840/1563] elapsed 0.33 s
+[Batch 870/1563] elapsed 0.30 s
+[Batch 900/1563] elapsed 0.30 s
+[Batch 930/1563] elapsed 0.30 s
+[Batch 960/1563] elapsed 0.29 s
+[Batch 990/1563] elapsed 0.33 s
+[Batch 1020/1563] elapsed 0.31 s
+[Batch 1050/1563] elapsed 0.30 s
+[Batch 1080/1563] elapsed 0.28 s
+[Batch 1110/1563] elapsed 0.28 s
+[Batch 1140/1563] elapsed 0.25 s
+[Batch 1170/1563] elapsed 0.27 s
+[Batch 1200/1563] elapsed 0.26 s
+[Batch 1230/1563] elapsed 0.25 s
+[Batch 1260/1563] elapsed 0.26 s
+[Batch 1290/1563] elapsed 0.22 s
+[Batch 1320/1563] elapsed 0.23 s
+[Batch 1350/1563] elapsed 0.23 s
+[Batch 1380/1563] elapsed 0.21 s
+[Batch 1410/1563] elapsed 0.20 s
+[Batch 1440/1563] elapsed 0.19 s
+[Batch 1470/1563] elapsed 0.19 s
+[Batch 1500/1563] elapsed 0.17 s
+[Batch 1530/1563] elapsed 0.16 s
+[Batch 1560/1563] elapsed 0.15 s
+Best validation loss 0.312336, validation acc 0.8608
+Best test loss 0.315266, test acc 0.8646
+Total time cost 199.80s
