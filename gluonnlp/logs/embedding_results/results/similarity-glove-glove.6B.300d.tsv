@@ -1,4 +1,4 @@
-0	similarity	WordSim353	{"segment": "all"}	cosinesimilarity	0.6224260930839067	21
+0	similarity	WordSim353	{"segment": "all"}	cosinesimilarity	0.597938043159531	18
 0	similarity	WordSim353	{"segment": "similarity"}	cosinesimilarity	0.6653833714609897	7
 0	similarity	WordSim353	{"segment": "relatedness"}	cosinesimilarity	0.5607165662159328	14
 0	similarity	MEN	{"segment": "full"}	cosinesimilarity	0.7374646969805517	0
