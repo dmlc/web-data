@@ -1,0 +1,402 @@
+Namespace(batch_size=50, data_name='TREC', dropout=0.5, epochs=40, gpu=0, log_interval=30, lr=0.0001, model_mode='non-static', save_prefix='sa-model')
+Use gpu0
+458
+38
+Done! Tokenizing Time=0.67s, #Sentences=11452
+Done! Tokenizing Time=0.32s, #Sentences=500
+SentimentNet(
+  (embedding): Embedding(9193 -> 300, float32)
+  (encoder): ConvolutionalEncoder(
+    (_convs): HybridConcurrent(
+      (0): HybridSequential(
+        (0): Conv1D(300 -> 100, kernel_size=(3,), stride=(1,))
+        (1): Activation(relu)
+        (2): HybridLambda(<lambda>)
+      )
+      (1): HybridSequential(
+        (0): Conv1D(300 -> 100, kernel_size=(4,), stride=(1,))
+        (1): Activation(relu)
+        (2): HybridLambda(<lambda>)
+      )
+      (2): HybridSequential(
+        (0): Conv1D(300 -> 100, kernel_size=(5,), stride=(1,))
+        (1): Activation(relu)
+        (2): HybridLambda(<lambda>)
+      )
+    )
+  )
+  (output): HybridSequential(
+    (0): Dropout(p = 0.5, axes=())
+    (1): Dense(None -> 6, linear)
+  )
+)
+[Epoch 0 Batch 30/207] avg loss 0.0347599, throughput 3.77043K wps
+[Epoch 0 Batch 60/207] avg loss 0.0333745, throughput 6.26229K wps
+[Epoch 0 Batch 90/207] avg loss 0.0316067, throughput 6.24537K wps
+[Epoch 0 Batch 120/207] avg loss 0.0306603, throughput 6.24646K wps
+[Epoch 0 Batch 150/207] avg loss 0.0298132, throughput 6.24576K wps
+[Epoch 0 Batch 180/207] avg loss 0.0287378, throughput 6.24635K wps
+Begin Testing...
+[Epoch 0] train avg loss 0.0311201, test acc 0.6728, test avg loss 1.29295, throughput 5.45327K wps
+Observed Improvement.
+Begin Testing...
+[Epoch 1 Batch 30/207] avg loss 0.0258406, throughput 6.40591K wps
+[Epoch 1 Batch 60/207] avg loss 0.0243704, throughput 6.24041K wps
+[Epoch 1 Batch 90/207] avg loss 0.023083, throughput 6.22417K wps
+[Epoch 1 Batch 120/207] avg loss 0.0218088, throughput 6.20575K wps
+[Epoch 1 Batch 150/207] avg loss 0.0196048, throughput 6.2045K wps
+[Epoch 1 Batch 180/207] avg loss 0.0176172, throughput 6.24438K wps
+Begin Testing...
+[Epoch 1] train avg loss 0.021346, test acc 0.8874, test avg loss 0.757496, throughput 6.25745K wps
+Observed Improvement.
+Begin Testing...
+[Epoch 2 Batch 30/207] avg loss 0.0144882, throughput 6.40697K wps
+[Epoch 2 Batch 60/207] avg loss 0.0134975, throughput 6.24802K wps
+[Epoch 2 Batch 90/207] avg loss 0.0122375, throughput 6.24522K wps
+[Epoch 2 Batch 120/207] avg loss 0.0105715, throughput 6.25089K wps
+[Epoch 2 Batch 150/207] avg loss 0.00999279, throughput 6.25363K wps
+[Epoch 2 Batch 180/207] avg loss 0.00887893, throughput 6.24962K wps
+Begin Testing...
+[Epoch 2] train avg loss 0.0111936, test acc 0.9354, test avg loss 0.372185, throughput 6.27681K wps
+Observed Improvement.
+Begin Testing...
+[Epoch 3 Batch 30/207] avg loss 0.00754531, throughput 6.3931K wps
+[Epoch 3 Batch 60/207] avg loss 0.00695857, throughput 6.24529K wps
+[Epoch 3 Batch 90/207] avg loss 0.0059701, throughput 6.23464K wps
+[Epoch 3 Batch 120/207] avg loss 0.00547245, throughput 6.24536K wps
+[Epoch 3 Batch 150/207] avg loss 0.00535153, throughput 6.23059K wps
+[Epoch 3 Batch 180/207] avg loss 0.00504802, throughput 6.23101K wps
+Begin Testing...
+[Epoch 3] train avg loss 0.00589516, test acc 0.9555, test avg loss 0.213025, throughput 6.26326K wps
+Observed Improvement.
+Begin Testing...
+[Epoch 4 Batch 30/207] avg loss 0.00448422, throughput 6.38333K wps
+[Epoch 4 Batch 60/207] avg loss 0.0039692, throughput 6.2269K wps
+[Epoch 4 Batch 90/207] avg loss 0.00372996, throughput 6.22039K wps
+[Epoch 4 Batch 120/207] avg loss 0.00340364, throughput 6.22356K wps
+[Epoch 4 Batch 150/207] avg loss 0.00335608, throughput 6.23219K wps
+[Epoch 4 Batch 180/207] avg loss 0.00293048, throughput 6.22067K wps
+Begin Testing...
+[Epoch 4] train avg loss 0.00363275, test acc 0.9721, test avg loss 0.13793, throughput 6.25346K wps
+Observed Improvement.
+Begin Testing...
+[Epoch 5 Batch 30/207] avg loss 0.002717, throughput 6.39064K wps
+[Epoch 5 Batch 60/207] avg loss 0.00282773, throughput 6.23713K wps
+[Epoch 5 Batch 90/207] avg loss 0.00276129, throughput 6.24317K wps
+[Epoch 5 Batch 120/207] avg loss 0.00246343, throughput 6.2393K wps
+[Epoch 5 Batch 150/207] avg loss 0.00233002, throughput 6.22847K wps
+[Epoch 5 Batch 180/207] avg loss 0.00228176, throughput 6.22788K wps
+Begin Testing...
+[Epoch 5] train avg loss 0.00249275, test acc 0.9782, test avg loss 0.100485, throughput 6.26138K wps
+Observed Improvement.
+Begin Testing...
+[Epoch 6 Batch 30/207] avg loss 0.00209209, throughput 6.37771K wps
+[Epoch 6 Batch 60/207] avg loss 0.00176501, throughput 6.22547K wps
+[Epoch 6 Batch 90/207] avg loss 0.00222026, throughput 6.23212K wps
+[Epoch 6 Batch 120/207] avg loss 0.00202741, throughput 6.22422K wps
+[Epoch 6 Batch 150/207] avg loss 0.00175846, throughput 6.23394K wps
+[Epoch 6 Batch 180/207] avg loss 0.00177282, throughput 6.22737K wps
+Begin Testing...
+[Epoch 6] train avg loss 0.00194674, test acc 0.9782, test avg loss 0.0779056, throughput 6.25426K wps
+Observed Improvement.
+Begin Testing...
+[Epoch 7 Batch 30/207] avg loss 0.00154632, throughput 6.38737K wps
+[Epoch 7 Batch 60/207] avg loss 0.00152651, throughput 6.21575K wps
+[Epoch 7 Batch 90/207] avg loss 0.00159453, throughput 6.23037K wps
+[Epoch 7 Batch 120/207] avg loss 0.00170642, throughput 6.2161K wps
+[Epoch 7 Batch 150/207] avg loss 0.00130098, throughput 6.23355K wps
+[Epoch 7 Batch 180/207] avg loss 0.00133794, throughput 6.23302K wps
+Begin Testing...
+[Epoch 7] train avg loss 0.00147099, test acc 0.9904, test avg loss 0.0593223, throughput 6.25359K wps
+Observed Improvement.
+Begin Testing...
+[Epoch 8 Batch 30/207] avg loss 0.00126581, throughput 6.37713K wps
+[Epoch 8 Batch 60/207] avg loss 0.00118144, throughput 6.22262K wps
+[Epoch 8 Batch 90/207] avg loss 0.00106673, throughput 6.22489K wps
+[Epoch 8 Batch 120/207] avg loss 0.0012442, throughput 6.23622K wps
+[Epoch 8 Batch 150/207] avg loss 0.00132059, throughput 6.23868K wps
+[Epoch 8 Batch 180/207] avg loss 0.00102069, throughput 6.22486K wps
+Begin Testing...
+[Epoch 8] train avg loss 0.00117513, test acc 0.9939, test avg loss 0.0480844, throughput 6.25601K wps
+Observed Improvement.
+Begin Testing...
+[Epoch 9 Batch 30/207] avg loss 0.00111455, throughput 6.37904K wps
+[Epoch 9 Batch 60/207] avg loss 0.00110852, throughput 6.22495K wps
+[Epoch 9 Batch 90/207] avg loss 0.000967701, throughput 6.22719K wps
+[Epoch 9 Batch 120/207] avg loss 0.000939022, throughput 6.22841K wps
+[Epoch 9 Batch 150/207] avg loss 0.000915512, throughput 6.22143K wps
+[Epoch 9 Batch 180/207] avg loss 0.00081409, throughput 6.23201K wps
+Begin Testing...
+[Epoch 9] train avg loss 0.000970714, test acc 0.9974, test avg loss 0.038057, throughput 6.25255K wps
+Observed Improvement.
+Begin Testing...
+[Epoch 10 Batch 30/207] avg loss 0.00081103, throughput 6.38105K wps
+[Epoch 10 Batch 60/207] avg loss 0.000833993, throughput 6.21703K wps
+[Epoch 10 Batch 90/207] avg loss 0.000800962, throughput 6.23229K wps
+[Epoch 10 Batch 120/207] avg loss 0.00066104, throughput 6.2338K wps
+[Epoch 10 Batch 150/207] avg loss 0.000839242, throughput 6.22368K wps
+[Epoch 10 Batch 180/207] avg loss 0.000612944, throughput 6.2258K wps
+Begin Testing...
+[Epoch 10] train avg loss 0.00075417, test acc 0.9983, test avg loss 0.0309586, throughput 6.25248K wps
+Observed Improvement.
+Begin Testing...
+[Epoch 11 Batch 30/207] avg loss 0.000625417, throughput 6.38355K wps
+[Epoch 11 Batch 60/207] avg loss 0.000681745, throughput 6.22332K wps
+[Epoch 11 Batch 90/207] avg loss 0.000579874, throughput 6.22257K wps
+[Epoch 11 Batch 120/207] avg loss 0.000702793, throughput 6.21833K wps
+[Epoch 11 Batch 150/207] avg loss 0.000616928, throughput 6.23308K wps
+[Epoch 11 Batch 180/207] avg loss 0.000589923, throughput 6.21457K wps
+Begin Testing...
+[Epoch 11] train avg loss 0.000617468, test acc 0.9983, test avg loss 0.0260886, throughput 6.24849K wps
+Observed Improvement.
+Begin Testing...
+[Epoch 12 Batch 30/207] avg loss 0.000474527, throughput 6.37069K wps
+[Epoch 12 Batch 60/207] avg loss 0.000626986, throughput 6.20986K wps
+[Epoch 12 Batch 90/207] avg loss 0.000604908, throughput 6.22344K wps
+[Epoch 12 Batch 120/207] avg loss 0.000537806, throughput 6.22467K wps
+[Epoch 12 Batch 150/207] avg loss 0.000446318, throughput 6.22416K wps
+[Epoch 12 Batch 180/207] avg loss 0.0004566, throughput 6.21459K wps
+Begin Testing...
+[Epoch 12] train avg loss 0.00050519, test acc 1.0000, test avg loss 0.020847, throughput 6.24615K wps
+Observed Improvement.
+Begin Testing...
+[Epoch 13 Batch 30/207] avg loss 0.000420912, throughput 6.36808K wps
+[Epoch 13 Batch 60/207] avg loss 0.000462928, throughput 6.22689K wps
+[Epoch 13 Batch 90/207] avg loss 0.000394763, throughput 6.20861K wps
+[Epoch 13 Batch 120/207] avg loss 0.000399898, throughput 6.20023K wps
+[Epoch 13 Batch 150/207] avg loss 0.000394421, throughput 6.22235K wps
+[Epoch 13 Batch 180/207] avg loss 0.000318251, throughput 6.21916K wps
+Begin Testing...
+[Epoch 13] train avg loss 0.000403238, test acc 1.0000, test avg loss 0.0163303, throughput 6.24264K wps
+Observed Improvement.
+Begin Testing...
+[Epoch 14 Batch 30/207] avg loss 0.000328449, throughput 6.37449K wps
+[Epoch 14 Batch 60/207] avg loss 0.000406361, throughput 6.229K wps
+[Epoch 14 Batch 90/207] avg loss 0.000310345, throughput 6.22104K wps
+[Epoch 14 Batch 120/207] avg loss 0.000361981, throughput 6.22396K wps
+[Epoch 14 Batch 150/207] avg loss 0.000278879, throughput 6.21701K wps
+[Epoch 14 Batch 180/207] avg loss 0.000302215, throughput 6.22316K wps
+Begin Testing...
+[Epoch 14] train avg loss 0.000324048, test acc 1.0000, test avg loss 0.0130572, throughput 6.24843K wps
+Observed Improvement.
+Begin Testing...
+[Epoch 15 Batch 30/207] avg loss 0.000252726, throughput 6.37426K wps
+[Epoch 15 Batch 60/207] avg loss 0.000268221, throughput 6.21158K wps
+[Epoch 15 Batch 90/207] avg loss 0.000238903, throughput 6.21878K wps
+[Epoch 15 Batch 120/207] avg loss 0.00036696, throughput 6.22267K wps
+[Epoch 15 Batch 150/207] avg loss 0.000228554, throughput 6.21981K wps
+[Epoch 15 Batch 180/207] avg loss 0.000303559, throughput 6.21277K wps
+Begin Testing...
+[Epoch 15] train avg loss 0.000272945, test acc 0.9991, test avg loss 0.0110352, throughput 6.24509K wps
+[Epoch 16 Batch 30/207] avg loss 0.000247154, throughput 6.37382K wps
+[Epoch 16 Batch 60/207] avg loss 0.000200288, throughput 6.20778K wps
+[Epoch 16 Batch 90/207] avg loss 0.000230148, throughput 6.21347K wps
+[Epoch 16 Batch 120/207] avg loss 0.000249473, throughput 6.2113K wps
+[Epoch 16 Batch 150/207] avg loss 0.000292522, throughput 6.23499K wps
+[Epoch 16 Batch 180/207] avg loss 0.000238837, throughput 6.22926K wps
+Begin Testing...
+[Epoch 16] train avg loss 0.000233125, test acc 0.9991, test avg loss 0.00908125, throughput 6.24622K wps
+[Epoch 17 Batch 30/207] avg loss 0.000177893, throughput 6.34913K wps
+[Epoch 17 Batch 60/207] avg loss 0.000173246, throughput 6.21374K wps
+[Epoch 17 Batch 90/207] avg loss 0.000220554, throughput 6.2112K wps
+[Epoch 17 Batch 120/207] avg loss 0.000212008, throughput 6.21586K wps
+[Epoch 17 Batch 150/207] avg loss 0.000247007, throughput 6.21434K wps
+[Epoch 17 Batch 180/207] avg loss 0.000129748, throughput 6.21988K wps
+Begin Testing...
+[Epoch 17] train avg loss 0.00019202, test acc 1.0000, test avg loss 0.00795582, throughput 6.23877K wps
+Observed Improvement.
+Begin Testing...
+[Epoch 18 Batch 30/207] avg loss 0.000150997, throughput 6.37445K wps
+[Epoch 18 Batch 60/207] avg loss 0.000142167, throughput 6.22747K wps
+[Epoch 18 Batch 90/207] avg loss 0.000180128, throughput 6.21889K wps
+[Epoch 18 Batch 120/207] avg loss 0.000159313, throughput 6.2047K wps
+[Epoch 18 Batch 150/207] avg loss 0.000127379, throughput 6.21141K wps
+[Epoch 18 Batch 180/207] avg loss 0.00012457, throughput 6.22367K wps
+Begin Testing...
+[Epoch 18] train avg loss 0.000145186, test acc 1.0000, test avg loss 0.00680451, throughput 6.24316K wps
+Observed Improvement.
+Begin Testing...
+[Epoch 19 Batch 30/207] avg loss 0.000125972, throughput 6.37153K wps
+[Epoch 19 Batch 60/207] avg loss 0.000104956, throughput 6.21867K wps
+[Epoch 19 Batch 90/207] avg loss 9.75518e-05, throughput 6.22232K wps
+[Epoch 19 Batch 120/207] avg loss 9.99816e-05, throughput 6.22738K wps
+[Epoch 19 Batch 150/207] avg loss 0.000125269, throughput 6.221K wps
+[Epoch 19 Batch 180/207] avg loss 0.000114927, throughput 6.20697K wps
+Begin Testing...
+[Epoch 19] train avg loss 0.000117476, test acc 1.0000, test avg loss 0.00636414, throughput 6.24483K wps
+Observed Improvement.
+Begin Testing...
+[Epoch 20 Batch 30/207] avg loss 0.000122483, throughput 6.35811K wps
+[Epoch 20 Batch 60/207] avg loss 9.1122e-05, throughput 6.21961K wps
+[Epoch 20 Batch 90/207] avg loss 9.56276e-05, throughput 6.20985K wps
+[Epoch 20 Batch 120/207] avg loss 9.83396e-05, throughput 6.2196K wps
+[Epoch 20 Batch 150/207] avg loss 8.90408e-05, throughput 6.20278K wps
+[Epoch 20 Batch 180/207] avg loss 9.83159e-05, throughput 6.21278K wps
+Begin Testing...
+[Epoch 20] train avg loss 0.000100346, test acc 1.0000, test avg loss 0.00529079, throughput 6.23774K wps
+Observed Improvement.
+Begin Testing...
+[Epoch 21 Batch 30/207] avg loss 8.60912e-05, throughput 6.36825K wps
+[Epoch 21 Batch 60/207] avg loss 8.08475e-05, throughput 6.21042K wps
+[Epoch 21 Batch 90/207] avg loss 9.75491e-05, throughput 6.21637K wps
+[Epoch 21 Batch 120/207] avg loss 7.69218e-05, throughput 6.21292K wps
+[Epoch 21 Batch 150/207] avg loss 0.000130615, throughput 6.22329K wps
+[Epoch 21 Batch 180/207] avg loss 0.000100084, throughput 6.20778K wps
+Begin Testing...
+[Epoch 21] train avg loss 9.2815e-05, test acc 1.0000, test avg loss 0.0047357, throughput 6.24066K wps
+Observed Improvement.
+Begin Testing...
+[Epoch 22 Batch 30/207] avg loss 6.58513e-05, throughput 6.3594K wps
+[Epoch 22 Batch 60/207] avg loss 7.66076e-05, throughput 6.20751K wps
+[Epoch 22 Batch 90/207] avg loss 8.47171e-05, throughput 6.20915K wps
+[Epoch 22 Batch 120/207] avg loss 8.77853e-05, throughput 6.20735K wps
+[Epoch 22 Batch 150/207] avg loss 5.46136e-05, throughput 6.22483K wps
+[Epoch 22 Batch 180/207] avg loss 8.51414e-05, throughput 6.20188K wps
+Begin Testing...
+[Epoch 22] train avg loss 7.79437e-05, test acc 1.0000, test avg loss 0.00433278, throughput 6.23671K wps
+Observed Improvement.
+Begin Testing...
+[Epoch 23 Batch 30/207] avg loss 6.64082e-05, throughput 6.3667K wps
+[Epoch 23 Batch 60/207] avg loss 6.99701e-05, throughput 6.20216K wps
+[Epoch 23 Batch 90/207] avg loss 6.84536e-05, throughput 6.21128K wps
+[Epoch 23 Batch 120/207] avg loss 5.98137e-05, throughput 6.20714K wps
+[Epoch 23 Batch 150/207] avg loss 7.1381e-05, throughput 6.20254K wps
+[Epoch 23 Batch 180/207] avg loss 5.14051e-05, throughput 6.19831K wps
+Begin Testing...
+[Epoch 23] train avg loss 6.30807e-05, test acc 1.0000, test avg loss 0.00395986, throughput 6.23137K wps
+Observed Improvement.
+Begin Testing...
+[Epoch 24 Batch 30/207] avg loss 9.17516e-05, throughput 6.35527K wps
+[Epoch 24 Batch 60/207] avg loss 5.72692e-05, throughput 6.21128K wps
+[Epoch 24 Batch 90/207] avg loss 7.49417e-05, throughput 6.2037K wps
+[Epoch 24 Batch 120/207] avg loss 5.25429e-05, throughput 6.21669K wps
+[Epoch 24 Batch 150/207] avg loss 6.01995e-05, throughput 6.21775K wps
+[Epoch 24 Batch 180/207] avg loss 5.26114e-05, throughput 6.20906K wps
+Begin Testing...
+[Epoch 24] train avg loss 6.28719e-05, test acc 1.0000, test avg loss 0.00363678, throughput 6.23656K wps
+Observed Improvement.
+Begin Testing...
+[Epoch 25 Batch 30/207] avg loss 4.69703e-05, throughput 6.35883K wps
+[Epoch 25 Batch 60/207] avg loss 5.4231e-05, throughput 6.21814K wps
+[Epoch 25 Batch 90/207] avg loss 3.60048e-05, throughput 6.21115K wps
+[Epoch 25 Batch 120/207] avg loss 4.80566e-05, throughput 6.22164K wps
+[Epoch 25 Batch 150/207] avg loss 4.2763e-05, throughput 6.21212K wps
+[Epoch 25 Batch 180/207] avg loss 6.12591e-05, throughput 6.2153K wps
+Begin Testing...
+[Epoch 25] train avg loss 4.84044e-05, test acc 0.9991, test avg loss 0.00364054, throughput 6.23929K wps
+[Epoch 26 Batch 30/207] avg loss 3.2892e-05, throughput 6.35554K wps
+[Epoch 26 Batch 60/207] avg loss 3.73326e-05, throughput 6.20532K wps
+[Epoch 26 Batch 90/207] avg loss 4.59925e-05, throughput 6.20376K wps
+[Epoch 26 Batch 120/207] avg loss 4.18287e-05, throughput 6.20353K wps
+[Epoch 26 Batch 150/207] avg loss 3.68997e-05, throughput 6.21021K wps
+[Epoch 26 Batch 180/207] avg loss 3.69182e-05, throughput 6.21296K wps
+Begin Testing...
+[Epoch 26] train avg loss 4.05361e-05, test acc 1.0000, test avg loss 0.00348245, throughput 6.23274K wps
+Observed Improvement.
+Begin Testing...
+[Epoch 27 Batch 30/207] avg loss 3.58311e-05, throughput 6.34879K wps
+[Epoch 27 Batch 60/207] avg loss 4.94769e-05, throughput 6.19447K wps
+[Epoch 27 Batch 90/207] avg loss 4.09281e-05, throughput 6.20088K wps
+[Epoch 27 Batch 120/207] avg loss 4.5063e-05, throughput 6.16362K wps
+[Epoch 27 Batch 150/207] avg loss 4.15368e-05, throughput 6.17249K wps
+[Epoch 27 Batch 180/207] avg loss 6.01188e-05, throughput 6.20215K wps
+Begin Testing...
+[Epoch 27] train avg loss 4.45954e-05, test acc 0.9991, test avg loss 0.00318613, throughput 6.21559K wps
+[Epoch 28 Batch 30/207] avg loss 3.29046e-05, throughput 6.37239K wps
+[Epoch 28 Batch 60/207] avg loss 3.34214e-05, throughput 6.21611K wps
+[Epoch 28 Batch 90/207] avg loss 3.18763e-05, throughput 6.20431K wps
+[Epoch 28 Batch 120/207] avg loss 2.67372e-05, throughput 6.21867K wps
+[Epoch 28 Batch 150/207] avg loss 2.31348e-05, throughput 6.20922K wps
+[Epoch 28 Batch 180/207] avg loss 4.42659e-05, throughput 6.20763K wps
+Begin Testing...
+[Epoch 28] train avg loss 3.33474e-05, test acc 0.9991, test avg loss 0.00324433, throughput 6.23817K wps
+[Epoch 29 Batch 30/207] avg loss 2.92463e-05, throughput 6.3506K wps
+[Epoch 29 Batch 60/207] avg loss 2.19949e-05, throughput 6.2064K wps
+[Epoch 29 Batch 90/207] avg loss 2.12135e-05, throughput 6.2044K wps
+[Epoch 29 Batch 120/207] avg loss 4.15036e-05, throughput 6.2045K wps
+[Epoch 29 Batch 150/207] avg loss 2.62497e-05, throughput 6.19712K wps
+[Epoch 29 Batch 180/207] avg loss 2.44477e-05, throughput 6.20061K wps
+Begin Testing...
+[Epoch 29] train avg loss 2.81005e-05, test acc 0.9983, test avg loss 0.00309337, throughput 6.22879K wps
+[Epoch 30 Batch 30/207] avg loss 2.26154e-05, throughput 6.35583K wps
+[Epoch 30 Batch 60/207] avg loss 2.49909e-05, throughput 6.18814K wps
+[Epoch 30 Batch 90/207] avg loss 2.80528e-05, throughput 6.19431K wps
+[Epoch 30 Batch 120/207] avg loss 3.8789e-05, throughput 6.20572K wps
+[Epoch 30 Batch 150/207] avg loss 2.24698e-05, throughput 6.21282K wps
+[Epoch 30 Batch 180/207] avg loss 1.84302e-05, throughput 6.21285K wps
+Begin Testing...
+[Epoch 30] train avg loss 2.51997e-05, test acc 0.9991, test avg loss 0.00285681, throughput 6.22892K wps
+[Epoch 31 Batch 30/207] avg loss 3.05544e-05, throughput 6.35995K wps
+[Epoch 31 Batch 60/207] avg loss 2.02919e-05, throughput 6.21375K wps
+[Epoch 31 Batch 90/207] avg loss 1.98354e-05, throughput 6.21526K wps
+[Epoch 31 Batch 120/207] avg loss 1.62509e-05, throughput 6.21729K wps
+[Epoch 31 Batch 150/207] avg loss 2.6614e-05, throughput 6.19209K wps
+[Epoch 31 Batch 180/207] avg loss 1.74091e-05, throughput 6.18635K wps
+Begin Testing...
+[Epoch 31] train avg loss 2.0837e-05, test acc 0.9991, test avg loss 0.00310704, throughput 6.23K wps
+[Epoch 32 Batch 30/207] avg loss 1.7086e-05, throughput 6.35455K wps
+[Epoch 32 Batch 60/207] avg loss 1.57534e-05, throughput 6.2072K wps
+[Epoch 32 Batch 90/207] avg loss 1.84887e-05, throughput 6.20463K wps
+[Epoch 32 Batch 120/207] avg loss 1.95897e-05, throughput 6.21506K wps
+[Epoch 32 Batch 150/207] avg loss 1.874e-05, throughput 6.21532K wps
+[Epoch 32 Batch 180/207] avg loss 1.64288e-05, throughput 6.20222K wps
+Begin Testing...
+[Epoch 32] train avg loss 1.8969e-05, test acc 0.9991, test avg loss 0.00308394, throughput 6.23606K wps
+[Epoch 33 Batch 30/207] avg loss 1.40018e-05, throughput 6.35296K wps
+[Epoch 33 Batch 60/207] avg loss 3.13471e-05, throughput 6.21177K wps
+[Epoch 33 Batch 90/207] avg loss 1.48585e-05, throughput 6.2062K wps
+[Epoch 33 Batch 120/207] avg loss 2.40544e-05, throughput 6.20527K wps
+[Epoch 33 Batch 150/207] avg loss 1.58106e-05, throughput 6.19932K wps
+[Epoch 33 Batch 180/207] avg loss 2.48572e-05, throughput 6.19705K wps
+Begin Testing...
+[Epoch 33] train avg loss 2.03411e-05, test acc 0.9991, test avg loss 0.00285837, throughput 6.23101K wps
+[Epoch 34 Batch 30/207] avg loss 1.26667e-05, throughput 6.36175K wps
+[Epoch 34 Batch 60/207] avg loss 1.20372e-05, throughput 6.19695K wps
+[Epoch 34 Batch 90/207] avg loss 1.95492e-05, throughput 6.20332K wps
+[Epoch 34 Batch 120/207] avg loss 2.05093e-05, throughput 6.19273K wps
+[Epoch 34 Batch 150/207] avg loss 2.03028e-05, throughput 6.20028K wps
+[Epoch 34 Batch 180/207] avg loss 1.2576e-05, throughput 6.2076K wps
+Begin Testing...
+[Epoch 34] train avg loss 1.65067e-05, test acc 0.9991, test avg loss 0.00261398, throughput 6.22925K wps
+[Epoch 35 Batch 30/207] avg loss 1.22427e-05, throughput 6.37692K wps
+[Epoch 35 Batch 60/207] avg loss 2.54753e-05, throughput 6.21415K wps
+[Epoch 35 Batch 90/207] avg loss 1.04654e-05, throughput 6.21364K wps
+[Epoch 35 Batch 120/207] avg loss 1.01737e-05, throughput 6.21637K wps
+[Epoch 35 Batch 150/207] avg loss 1.04259e-05, throughput 6.21953K wps
+[Epoch 35 Batch 180/207] avg loss 1.03633e-05, throughput 6.21916K wps
+Begin Testing...
+[Epoch 35] train avg loss 1.28002e-05, test acc 0.9991, test avg loss 0.00289284, throughput 6.24249K wps
+[Epoch 36 Batch 30/207] avg loss 1.11003e-05, throughput 6.35313K wps
+[Epoch 36 Batch 60/207] avg loss 1.16946e-05, throughput 6.20551K wps
+[Epoch 36 Batch 90/207] avg loss 7.41955e-06, throughput 6.2K wps
+[Epoch 36 Batch 120/207] avg loss 7.80296e-06, throughput 6.20734K wps
+[Epoch 36 Batch 150/207] avg loss 2.01962e-05, throughput 6.21217K wps
+[Epoch 36 Batch 180/207] avg loss 1.13131e-05, throughput 6.21139K wps
+Begin Testing...
+[Epoch 36] train avg loss 1.14944e-05, test acc 0.9983, test avg loss 0.00269328, throughput 6.23352K wps
+[Epoch 37 Batch 30/207] avg loss 1.1232e-05, throughput 6.34293K wps
+[Epoch 37 Batch 60/207] avg loss 1.08927e-05, throughput 6.20135K wps
+[Epoch 37 Batch 90/207] avg loss 8.08535e-06, throughput 6.20119K wps
+[Epoch 37 Batch 120/207] avg loss 9.12751e-06, throughput 6.2124K wps
+[Epoch 37 Batch 150/207] avg loss 1.5089e-05, throughput 6.20316K wps
+[Epoch 37 Batch 180/207] avg loss 8.43119e-06, throughput 6.21739K wps
+Begin Testing...
+[Epoch 37] train avg loss 1.03937e-05, test acc 0.9983, test avg loss 0.00266048, throughput 6.23174K wps
+[Epoch 38 Batch 30/207] avg loss 5.83989e-06, throughput 6.35159K wps
+[Epoch 38 Batch 60/207] avg loss 5.48992e-06, throughput 6.21487K wps
+[Epoch 38 Batch 90/207] avg loss 6.02733e-06, throughput 6.20299K wps
+[Epoch 38 Batch 120/207] avg loss 1.28569e-05, throughput 6.20053K wps
+[Epoch 38 Batch 150/207] avg loss 1.08731e-05, throughput 6.20395K wps
+[Epoch 38 Batch 180/207] avg loss 1.03089e-05, throughput 6.21429K wps
+Begin Testing...
+[Epoch 38] train avg loss 8.39275e-06, test acc 0.9983, test avg loss 0.00280162, throughput 6.23322K wps
+[Epoch 39 Batch 30/207] avg loss 8.59273e-06, throughput 6.36384K wps
+[Epoch 39 Batch 60/207] avg loss 2.40253e-05, throughput 6.19415K wps
+[Epoch 39 Batch 90/207] avg loss 8.4882e-06, throughput 6.19222K wps
+[Epoch 39 Batch 120/207] avg loss 1.12187e-05, throughput 6.20929K wps
+[Epoch 39 Batch 150/207] avg loss 4.44624e-06, throughput 6.21131K wps
+[Epoch 39 Batch 180/207] avg loss 5.49764e-06, throughput 6.20833K wps
+Begin Testing...
+[Epoch 39] train avg loss 1.01856e-05, test acc 0.9983, test avg loss 0.00285293, throughput 6.23156K wps
+Test loss 0.0366771, test acc 0.9800
+Total time cost 278.81s
