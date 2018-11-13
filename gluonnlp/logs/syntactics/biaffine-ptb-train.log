@@ -1,0 +1,1038 @@
+#words in training set: 15947
+Vocab info: #words 400526, #tags 48 #rels 46
+Epoch 1 out of 500
+Dev: UAS 68.49% LAS 64.17% 305 sents/s
+Epoch 2 out of 500
+Dev: UAS 85.14% LAS 82.07% 344 sents/s
+Epoch 3 out of 500
+Dev: UAS 88.28% LAS 86.11% 310 sents/s
+Epoch 4 out of 500
+Dev: UAS 90.06% LAS 88.09% 312 sents/s
+Epoch 5 out of 500
+Dev: UAS 90.96% LAS 89.15% 312 sents/s
+Epoch 6 out of 500
+Dev: UAS 91.51% LAS 89.80% 310 sents/s
+Epoch 7 out of 500
+Dev: UAS 91.96% LAS 90.33% 301 sents/s
+Epoch 8 out of 500
+Dev: UAS 92.32% LAS 90.60% 349 sents/s
+Epoch 9 out of 500
+Dev: UAS 92.49% LAS 90.94% 301 sents/s
+Epoch 10 out of 500
+Dev: UAS 92.66% LAS 91.16% 291 sents/s
+Epoch 11 out of 500
+Dev: UAS 92.98% LAS 91.46% 347 sents/s
+Epoch 12 out of 500
+Dev: UAS 93.12% LAS 91.63% 303 sents/s
+Epoch 13 out of 500
+Dev: UAS 93.29% LAS 91.72% 308 sents/s
+Epoch 14 out of 500
+Dev: UAS 93.48% LAS 91.96% 317 sents/s
+Epoch 15 out of 500
+Dev: UAS 93.50% LAS 91.99% 373 sents/s
+Epoch 16 out of 500
+Dev: UAS 93.61% LAS 92.12% 300 sents/s
+Epoch 17 out of 500
+Dev: UAS 93.62% LAS 92.20% 329 sents/s
+Epoch 18 out of 500
+Dev: UAS 93.80% LAS 92.38% 357 sents/s
+Epoch 19 out of 500
+Dev: UAS 93.79% LAS 92.37% 319 sents/s
+Epoch 20 out of 500
+Dev: UAS 93.86% LAS 92.45% 318 sents/s
+Epoch 21 out of 500
+Dev: UAS 93.93% LAS 92.56% 347 sents/s
+Epoch 22 out of 500
+Dev: UAS 94.05% LAS 92.68% 341 sents/s
+Epoch 23 out of 500
+Dev: UAS 94.04% LAS 92.61% 314 sents/s
+Epoch 24 out of 500
+Dev: UAS 93.97% LAS 92.60% 362 sents/s
+Epoch 25 out of 500
+Dev: UAS 94.13% LAS 92.78% 319 sents/s
+Epoch 26 out of 500
+Dev: UAS 94.21% LAS 92.91% 296 sents/s
+Epoch 27 out of 500
+Dev: UAS 94.32% LAS 93.00% 300 sents/s
+Epoch 28 out of 500
+Dev: UAS 94.35% LAS 92.99% 309 sents/s
+Epoch 29 out of 500
+Dev: UAS 94.41% LAS 93.04% 349 sents/s
+Epoch 30 out of 500
+Dev: UAS 94.46% LAS 93.11% 295 sents/s
+Epoch 31 out of 500
+Dev: UAS 94.39% LAS 93.04% 308 sents/s
+Epoch 32 out of 500
+Dev: UAS 94.56% LAS 93.26% 315 sents/s
+Epoch 33 out of 500
+Dev: UAS 94.63% LAS 93.31% 364 sents/s
+Epoch 34 out of 500
+Dev: UAS 94.58% LAS 93.24% 368 sents/s
+Epoch 35 out of 500
+Dev: UAS 94.52% LAS 93.12% 331 sents/s
+Epoch 36 out of 500
+Dev: UAS 94.64% LAS 93.31% 323 sents/s
+Epoch 37 out of 500
+Dev: UAS 94.71% LAS 93.42% 356 sents/s
+Epoch 38 out of 500
+Dev: UAS 94.81% LAS 93.51% 318 sents/s
+Epoch 39 out of 500
+Dev: UAS 94.75% LAS 93.49% 293 sents/s
+Epoch 40 out of 500
+Dev: UAS 94.77% LAS 93.44% 348 sents/s
+Epoch 41 out of 500
+Dev: UAS 94.78% LAS 93.49% 294 sents/s
+Epoch 42 out of 500
+Dev: UAS 94.73% LAS 93.45% 374 sents/s
+Epoch 43 out of 500
+Dev: UAS 94.79% LAS 93.51% 330 sents/s
+Epoch 44 out of 500
+Dev: UAS 94.81% LAS 93.51% 274 sents/s
+Epoch 45 out of 500
+Dev: UAS 94.89% LAS 93.62% 315 sents/s
+Epoch 46 out of 500
+Dev: UAS 94.80% LAS 93.54% 320 sents/s
+Epoch 47 out of 500
+Dev: UAS 94.90% LAS 93.63% 303 sents/s
+Epoch 48 out of 500
+Dev: UAS 94.96% LAS 93.69% 329 sents/s
+Epoch 49 out of 500
+Dev: UAS 94.94% LAS 93.68% 312 sents/s
+Epoch 50 out of 500
+Dev: UAS 94.94% LAS 93.60% 300 sents/s
+Epoch 51 out of 500
+Dev: UAS 94.96% LAS 93.68% 331 sents/s
+Epoch 52 out of 500
+- new best score!
+Dev: UAS 94.96% LAS 93.67% 339 sents/s
+Epoch 53 out of 500
+Dev: UAS 94.99% LAS 93.68% 356 sents/s
+Epoch 54 out of 500
+- new best score!
+Dev: UAS 95.08% LAS 93.80% 311 sents/s
+Epoch 55 out of 500
+- new best score!
+Dev: UAS 95.15% LAS 93.88% 376 sents/s
+Epoch 56 out of 500
+- new best score!
+Dev: UAS 95.03% LAS 93.77% 309 sents/s
+Epoch 57 out of 500
+Dev: UAS 95.05% LAS 93.82% 266 sents/s
+Epoch 58 out of 500
+Dev: UAS 95.11% LAS 93.87% 289 sents/s
+Epoch 59 out of 500
+Dev: UAS 95.13% LAS 93.85% 349 sents/s
+Epoch 60 out of 500
+Dev: UAS 95.12% LAS 93.89% 309 sents/s
+Epoch 61 out of 500
+Dev: UAS 95.12% LAS 93.88% 297 sents/s
+Epoch 62 out of 500
+Dev: UAS 95.15% LAS 93.87% 314 sents/s
+Epoch 63 out of 500
+Dev: UAS 95.17% LAS 93.92% 302 sents/s
+Epoch 64 out of 500
+- new best score!
+Dev: UAS 95.15% LAS 93.94% 327 sents/s
+Epoch 65 out of 500
+Dev: UAS 95.23% LAS 93.96% 351 sents/s
+Epoch 66 out of 500
+- new best score!
+Dev: UAS 95.17% LAS 93.91% 294 sents/s
+Epoch 67 out of 500
+Dev: UAS 95.16% LAS 93.88% 347 sents/s
+Epoch 68 out of 500
+Dev: UAS 95.14% LAS 93.86% 354 sents/s
+Epoch 69 out of 500
+Dev: UAS 95.24% LAS 93.94% 367 sents/s
+Epoch 70 out of 500
+- new best score!
+Dev: UAS 95.23% LAS 93.98% 298 sents/s
+Epoch 71 out of 500
+Dev: UAS 95.22% LAS 94.02% 322 sents/s
+Epoch 72 out of 500
+Dev: UAS 95.24% LAS 94.03% 285 sents/s
+Epoch 73 out of 500
+Dev: UAS 95.24% LAS 94.03% 276 sents/s
+Epoch 74 out of 500
+Dev: UAS 95.23% LAS 94.00% 322 sents/s
+Epoch 75 out of 500
+Dev: UAS 95.16% LAS 93.93% 350 sents/s
+Epoch 76 out of 500
+Dev: UAS 95.34% LAS 94.14% 286 sents/s
+Epoch 77 out of 500
+- new best score!
+Dev: UAS 95.23% LAS 93.99% 346 sents/s
+Epoch 78 out of 500
+Dev: UAS 95.20% LAS 93.95% 274 sents/s
+Epoch 79 out of 500
+Dev: UAS 95.28% LAS 94.03% 297 sents/s
+Epoch 80 out of 500
+Dev: UAS 95.28% LAS 94.06% 363 sents/s
+Epoch 81 out of 500
+Dev: UAS 95.24% LAS 93.97% 349 sents/s
+Epoch 82 out of 500
+Dev: UAS 95.21% LAS 94.00% 309 sents/s
+Epoch 83 out of 500
+Dev: UAS 95.25% LAS 94.03% 368 sents/s
+Epoch 84 out of 500
+Dev: UAS 95.27% LAS 94.04% 347 sents/s
+Epoch 85 out of 500
+Dev: UAS 95.25% LAS 94.01% 312 sents/s
+Epoch 86 out of 500
+Dev: UAS 95.23% LAS 94.00% 367 sents/s
+Epoch 87 out of 500
+Dev: UAS 95.35% LAS 94.11% 299 sents/s
+Epoch 88 out of 500
+- new best score!
+Dev: UAS 95.35% LAS 94.13% 369 sents/s
+Epoch 89 out of 500
+Dev: UAS 95.31% LAS 94.10% 293 sents/s
+Epoch 90 out of 500
+Dev: UAS 95.30% LAS 94.02% 289 sents/s
+Epoch 91 out of 500
+Dev: UAS 95.34% LAS 94.10% 302 sents/s
+Epoch 92 out of 500
+Dev: UAS 95.40% LAS 94.14% 333 sents/s
+Epoch 93 out of 500
+- new best score!
+Dev: UAS 95.35% LAS 94.10% 287 sents/s
+Epoch 94 out of 500
+Dev: UAS 95.43% LAS 94.21% 349 sents/s
+Epoch 95 out of 500
+- new best score!
+Dev: UAS 95.28% LAS 94.10% 318 sents/s
+Epoch 96 out of 500
+Dev: UAS 95.42% LAS 94.22% 330 sents/s
+Epoch 97 out of 500
+Dev: UAS 95.43% LAS 94.24% 302 sents/s
+Epoch 98 out of 500
+Dev: UAS 95.39% LAS 94.19% 321 sents/s
+Epoch 99 out of 500
+Dev: UAS 95.42% LAS 94.16% 302 sents/s
+Epoch 100 out of 500
+Dev: UAS 95.40% LAS 94.17% 307 sents/s
+Epoch 101 out of 500
+Dev: UAS 95.43% LAS 94.22% 322 sents/s
+Epoch 102 out of 500
+Dev: UAS 95.42% LAS 94.19% 301 sents/s
+Epoch 103 out of 500
+Dev: UAS 95.40% LAS 94.17% 327 sents/s
+Epoch 104 out of 500
+Dev: UAS 95.46% LAS 94.25% 378 sents/s
+Epoch 105 out of 500
+- new best score!
+Dev: UAS 95.43% LAS 94.27% 309 sents/s
+Epoch 106 out of 500
+Dev: UAS 95.45% LAS 94.26% 318 sents/s
+Epoch 107 out of 500
+Dev: UAS 95.50% LAS 94.30% 308 sents/s
+Epoch 108 out of 500
+- new best score!
+Dev: UAS 95.47% LAS 94.29% 312 sents/s
+Epoch 109 out of 500
+Dev: UAS 95.39% LAS 94.19% 292 sents/s
+Epoch 110 out of 500
+Dev: UAS 95.37% LAS 94.15% 372 sents/s
+Epoch 111 out of 500
+Dev: UAS 95.56% LAS 94.37% 302 sents/s
+Epoch 112 out of 500
+- new best score!
+Dev: UAS 95.48% LAS 94.30% 319 sents/s
+Epoch 113 out of 500
+Dev: UAS 95.53% LAS 94.36% 311 sents/s
+Epoch 114 out of 500
+Dev: UAS 95.50% LAS 94.32% 319 sents/s
+Epoch 115 out of 500
+Dev: UAS 95.45% LAS 94.26% 305 sents/s
+Epoch 116 out of 500
+Dev: UAS 95.58% LAS 94.38% 355 sents/s
+Epoch 117 out of 500
+- new best score!
+Dev: UAS 95.56% LAS 94.37% 307 sents/s
+Epoch 118 out of 500
+Dev: UAS 95.46% LAS 94.24% 369 sents/s
+Epoch 119 out of 500
+Dev: UAS 95.51% LAS 94.31% 326 sents/s
+Epoch 120 out of 500
+Dev: UAS 95.49% LAS 94.30% 311 sents/s
+Epoch 121 out of 500
+Dev: UAS 95.54% LAS 94.35% 302 sents/s
+Epoch 122 out of 500
+Dev: UAS 95.56% LAS 94.39% 369 sents/s
+Epoch 123 out of 500
+Dev: UAS 95.49% LAS 94.29% 294 sents/s
+Epoch 124 out of 500
+Dev: UAS 95.55% LAS 94.33% 297 sents/s
+Epoch 125 out of 500
+Dev: UAS 95.61% LAS 94.41% 358 sents/s
+Epoch 126 out of 500
+- new best score!
+Dev: UAS 95.53% LAS 94.28% 323 sents/s
+Epoch 127 out of 500
+Dev: UAS 95.57% LAS 94.38% 333 sents/s
+Epoch 128 out of 500
+Dev: UAS 95.51% LAS 94.26% 318 sents/s
+Epoch 129 out of 500
+Dev: UAS 95.46% LAS 94.27% 352 sents/s
+Epoch 130 out of 500
+Dev: UAS 95.58% LAS 94.38% 365 sents/s
+Epoch 131 out of 500
+Dev: UAS 95.61% LAS 94.43% 319 sents/s
+Epoch 132 out of 500
+Dev: UAS 95.60% LAS 94.39% 379 sents/s
+Epoch 133 out of 500
+Dev: UAS 95.61% LAS 94.42% 297 sents/s
+Epoch 134 out of 500
+Dev: UAS 95.60% LAS 94.41% 321 sents/s
+Epoch 135 out of 500
+Dev: UAS 95.57% LAS 94.37% 367 sents/s
+Epoch 136 out of 500
+Dev: UAS 95.64% LAS 94.46% 306 sents/s
+Epoch 137 out of 500
+- new best score!
+Dev: UAS 95.58% LAS 94.36% 349 sents/s
+Epoch 138 out of 500
+Dev: UAS 95.57% LAS 94.36% 335 sents/s
+Epoch 139 out of 500
+Dev: UAS 95.63% LAS 94.43% 308 sents/s
+Epoch 140 out of 500
+Dev: UAS 95.61% LAS 94.45% 304 sents/s
+Epoch 141 out of 500
+Dev: UAS 95.55% LAS 94.36% 323 sents/s
+Epoch 142 out of 500
+Dev: UAS 95.53% LAS 94.35% 285 sents/s
+Epoch 143 out of 500
+Dev: UAS 95.58% LAS 94.41% 317 sents/s
+Epoch 144 out of 500
+Dev: UAS 95.63% LAS 94.43% 339 sents/s
+Epoch 145 out of 500
+Dev: UAS 95.65% LAS 94.47% 360 sents/s
+Epoch 146 out of 500
+- new best score!
+Dev: UAS 95.57% LAS 94.38% 329 sents/s
+Epoch 147 out of 500
+Dev: UAS 95.60% LAS 94.42% 325 sents/s
+Epoch 148 out of 500
+Dev: UAS 95.66% LAS 94.47% 322 sents/s
+Epoch 149 out of 500
+- new best score!
+Dev: UAS 95.68% LAS 94.50% 314 sents/s
+Epoch 150 out of 500
+- new best score!
+Dev: UAS 95.67% LAS 94.44% 312 sents/s
+Epoch 151 out of 500
+Dev: UAS 95.69% LAS 94.50% 313 sents/s
+Epoch 152 out of 500
+- new best score!
+Dev: UAS 95.67% LAS 94.46% 286 sents/s
+Epoch 153 out of 500
+Dev: UAS 95.58% LAS 94.40% 352 sents/s
+Epoch 154 out of 500
+Dev: UAS 95.56% LAS 94.34% 376 sents/s
+Epoch 155 out of 500
+Dev: UAS 95.63% LAS 94.47% 314 sents/s
+Epoch 156 out of 500
+Dev: UAS 95.68% LAS 94.50% 314 sents/s
+Epoch 157 out of 500
+Dev: UAS 95.70% LAS 94.50% 332 sents/s
+Epoch 158 out of 500
+- new best score!
+Dev: UAS 95.65% LAS 94.43% 301 sents/s
+Epoch 159 out of 500
+Dev: UAS 95.68% LAS 94.45% 358 sents/s
+Epoch 160 out of 500
+Dev: UAS 95.63% LAS 94.42% 365 sents/s
+Epoch 161 out of 500
+Dev: UAS 95.69% LAS 94.48% 308 sents/s
+Epoch 162 out of 500
+Dev: UAS 95.69% LAS 94.48% 387 sents/s
+Epoch 163 out of 500
+Dev: UAS 95.69% LAS 94.45% 320 sents/s
+Epoch 164 out of 500
+Dev: UAS 95.70% LAS 94.44% 364 sents/s
+Epoch 165 out of 500
+Dev: UAS 95.65% LAS 94.43% 354 sents/s
+Epoch 166 out of 500
+Dev: UAS 95.68% LAS 94.47% 283 sents/s
+Epoch 167 out of 500
+Dev: UAS 95.69% LAS 94.48% 272 sents/s
+Epoch 168 out of 500
+Dev: UAS 95.65% LAS 94.47% 320 sents/s
+Epoch 169 out of 500
+Dev: UAS 95.64% LAS 94.42% 283 sents/s
+Epoch 170 out of 500
+Dev: UAS 95.73% LAS 94.54% 352 sents/s
+Epoch 171 out of 500
+- new best score!
+Dev: UAS 95.73% LAS 94.52% 365 sents/s
+Epoch 172 out of 500
+Dev: UAS 95.69% LAS 94.48% 325 sents/s
+Epoch 173 out of 500
+Dev: UAS 95.60% LAS 94.45% 306 sents/s
+Epoch 174 out of 500
+Dev: UAS 95.64% LAS 94.49% 307 sents/s
+Epoch 175 out of 500
+Dev: UAS 95.77% LAS 94.58% 370 sents/s
+Epoch 176 out of 500
+- new best score!
+Dev: UAS 95.63% LAS 94.45% 364 sents/s
+Epoch 177 out of 500
+Dev: UAS 95.69% LAS 94.51% 370 sents/s
+Epoch 178 out of 500
+Dev: UAS 95.69% LAS 94.50% 354 sents/s
+Epoch 179 out of 500
+Dev: UAS 95.67% LAS 94.47% 330 sents/s
+Epoch 180 out of 500
+Dev: UAS 95.68% LAS 94.49% 321 sents/s
+Epoch 181 out of 500
+Dev: UAS 95.66% LAS 94.49% 322 sents/s
+Epoch 182 out of 500
+Dev: UAS 95.72% LAS 94.53% 305 sents/s
+Epoch 183 out of 500
+Dev: UAS 95.73% LAS 94.56% 316 sents/s
+Epoch 184 out of 500
+Dev: UAS 95.71% LAS 94.52% 279 sents/s
+Epoch 185 out of 500
+Dev: UAS 95.74% LAS 94.56% 338 sents/s
+Epoch 186 out of 500
+Dev: UAS 95.70% LAS 94.51% 287 sents/s
+Epoch 187 out of 500
+Dev: UAS 95.70% LAS 94.52% 295 sents/s
+Epoch 188 out of 500
+Dev: UAS 95.72% LAS 94.56% 319 sents/s
+Epoch 189 out of 500
+Dev: UAS 95.68% LAS 94.51% 319 sents/s
+Epoch 190 out of 500
+Dev: UAS 95.69% LAS 94.51% 317 sents/s
+Epoch 191 out of 500
+Dev: UAS 95.70% LAS 94.51% 364 sents/s
+Epoch 192 out of 500
+Dev: UAS 95.72% LAS 94.54% 357 sents/s
+Epoch 193 out of 500
+Dev: UAS 95.73% LAS 94.52% 330 sents/s
+Epoch 194 out of 500
+Dev: UAS 95.67% LAS 94.47% 320 sents/s
+Epoch 195 out of 500
+Dev: UAS 95.71% LAS 94.51% 321 sents/s
+Epoch 196 out of 500
+Dev: UAS 95.70% LAS 94.50% 303 sents/s
+Epoch 197 out of 500
+Dev: UAS 95.73% LAS 94.52% 370 sents/s
+Epoch 198 out of 500
+Dev: UAS 95.71% LAS 94.50% 320 sents/s
+Epoch 199 out of 500
+Dev: UAS 95.71% LAS 94.54% 353 sents/s
+Epoch 200 out of 500
+Dev: UAS 95.74% LAS 94.53% 312 sents/s
+Epoch 201 out of 500
+Dev: UAS 95.75% LAS 94.56% 308 sents/s
+Epoch 202 out of 500
+Dev: UAS 95.76% LAS 94.59% 307 sents/s
+Epoch 203 out of 500
+Dev: UAS 95.77% LAS 94.57% 375 sents/s
+Epoch 204 out of 500
+Dev: UAS 95.70% LAS 94.54% 293 sents/s
+Epoch 205 out of 500
+Dev: UAS 95.74% LAS 94.58% 310 sents/s
+Epoch 206 out of 500
+Dev: UAS 95.78% LAS 94.60% 319 sents/s
+Epoch 207 out of 500
+- new best score!
+Dev: UAS 95.73% LAS 94.56% 329 sents/s
+Epoch 208 out of 500
+Dev: UAS 95.77% LAS 94.59% 310 sents/s
+Epoch 209 out of 500
+Dev: UAS 95.74% LAS 94.58% 326 sents/s
+Epoch 210 out of 500
+Dev: UAS 95.77% LAS 94.58% 375 sents/s
+Epoch 211 out of 500
+Dev: UAS 95.81% LAS 94.61% 328 sents/s
+Epoch 212 out of 500
+- new best score!
+Dev: UAS 95.73% LAS 94.56% 321 sents/s
+Epoch 213 out of 500
+Dev: UAS 95.76% LAS 94.58% 381 sents/s
+Epoch 214 out of 500
+Dev: UAS 95.68% LAS 94.49% 306 sents/s
+Epoch 215 out of 500
+Dev: UAS 95.76% LAS 94.63% 310 sents/s
+Epoch 216 out of 500
+Dev: UAS 95.77% LAS 94.60% 360 sents/s
+Epoch 217 out of 500
+Dev: UAS 95.81% LAS 94.60% 300 sents/s
+Epoch 218 out of 500
+Dev: UAS 95.74% LAS 94.54% 366 sents/s
+Epoch 219 out of 500
+Dev: UAS 95.71% LAS 94.51% 357 sents/s
+Epoch 220 out of 500
+Dev: UAS 95.79% LAS 94.59% 273 sents/s
+Epoch 221 out of 500
+Dev: UAS 95.76% LAS 94.58% 372 sents/s
+Epoch 222 out of 500
+Dev: UAS 95.74% LAS 94.56% 348 sents/s
+Epoch 223 out of 500
+Dev: UAS 95.76% LAS 94.55% 308 sents/s
+Epoch 224 out of 500
+Dev: UAS 95.83% LAS 94.63% 314 sents/s
+Epoch 225 out of 500
+- new best score!
+Dev: UAS 95.81% LAS 94.61% 377 sents/s
+Epoch 226 out of 500
+Dev: UAS 95.78% LAS 94.57% 339 sents/s
+Epoch 227 out of 500
+Dev: UAS 95.77% LAS 94.56% 313 sents/s
+Epoch 228 out of 500
+Dev: UAS 95.76% LAS 94.58% 342 sents/s
+Epoch 229 out of 500
+Dev: UAS 95.71% LAS 94.57% 320 sents/s
+Epoch 230 out of 500
+Dev: UAS 95.69% LAS 94.53% 296 sents/s
+Epoch 231 out of 500
+Dev: UAS 95.70% LAS 94.54% 372 sents/s
+Epoch 232 out of 500
+Dev: UAS 95.71% LAS 94.57% 315 sents/s
+Epoch 233 out of 500
+Dev: UAS 95.70% LAS 94.51% 363 sents/s
+Epoch 234 out of 500
+Dev: UAS 95.71% LAS 94.52% 338 sents/s
+Epoch 235 out of 500
+Dev: UAS 95.69% LAS 94.51% 298 sents/s
+Epoch 236 out of 500
+Dev: UAS 95.68% LAS 94.47% 355 sents/s
+Epoch 237 out of 500
+Dev: UAS 95.73% LAS 94.53% 330 sents/s
+Epoch 238 out of 500
+Dev: UAS 95.75% LAS 94.56% 309 sents/s
+Epoch 239 out of 500
+Dev: UAS 95.77% LAS 94.61% 304 sents/s
+Epoch 240 out of 500
+Dev: UAS 95.75% LAS 94.55% 360 sents/s
+Epoch 241 out of 500
+Dev: UAS 95.76% LAS 94.59% 298 sents/s
+Epoch 242 out of 500
+Dev: UAS 95.82% LAS 94.65% 318 sents/s
+Epoch 243 out of 500
+Dev: UAS 95.79% LAS 94.61% 338 sents/s
+Epoch 244 out of 500
+Dev: UAS 95.76% LAS 94.58% 379 sents/s
+Epoch 245 out of 500
+Dev: UAS 95.79% LAS 94.61% 364 sents/s
+Epoch 246 out of 500
+Dev: UAS 95.76% LAS 94.58% 315 sents/s
+Epoch 247 out of 500
+Dev: UAS 95.72% LAS 94.55% 287 sents/s
+Epoch 248 out of 500
+Dev: UAS 95.75% LAS 94.57% 361 sents/s
+Epoch 249 out of 500
+Dev: UAS 95.78% LAS 94.61% 322 sents/s
+Epoch 250 out of 500
+Dev: UAS 95.75% LAS 94.56% 349 sents/s
+Epoch 251 out of 500
+Dev: UAS 95.77% LAS 94.57% 357 sents/s
+Epoch 252 out of 500
+Dev: UAS 95.78% LAS 94.59% 366 sents/s
+Epoch 253 out of 500
+Dev: UAS 95.80% LAS 94.61% 312 sents/s
+Epoch 254 out of 500
+Dev: UAS 95.76% LAS 94.53% 316 sents/s
+Epoch 255 out of 500
+Dev: UAS 95.77% LAS 94.61% 303 sents/s
+Epoch 256 out of 500
+Dev: UAS 95.75% LAS 94.57% 308 sents/s
+Epoch 257 out of 500
+Dev: UAS 95.73% LAS 94.59% 362 sents/s
+Epoch 258 out of 500
+Dev: UAS 95.71% LAS 94.56% 329 sents/s
+Epoch 259 out of 500
+Dev: UAS 95.76% LAS 94.59% 327 sents/s
+Epoch 260 out of 500
+Dev: UAS 95.75% LAS 94.59% 318 sents/s
+Epoch 261 out of 500
+Dev: UAS 95.82% LAS 94.67% 319 sents/s
+Epoch 262 out of 500
+Dev: UAS 95.77% LAS 94.61% 289 sents/s
+Epoch 263 out of 500
+Dev: UAS 95.77% LAS 94.61% 320 sents/s
+Epoch 264 out of 500
+Dev: UAS 95.75% LAS 94.60% 304 sents/s
+Epoch 265 out of 500
+Dev: UAS 95.79% LAS 94.67% 303 sents/s
+Epoch 266 out of 500
+Dev: UAS 95.86% LAS 94.69% 300 sents/s
+Epoch 267 out of 500
+- new best score!
+Dev: UAS 95.82% LAS 94.67% 285 sents/s
+Epoch 268 out of 500
+Dev: UAS 95.80% LAS 94.62% 294 sents/s
+Epoch 269 out of 500
+Dev: UAS 95.78% LAS 94.62% 284 sents/s
+Epoch 270 out of 500
+Dev: UAS 95.80% LAS 94.64% 280 sents/s
+Epoch 271 out of 500
+Dev: UAS 95.76% LAS 94.61% 361 sents/s
+Epoch 272 out of 500
+Dev: UAS 95.79% LAS 94.60% 339 sents/s
+Epoch 273 out of 500
+Dev: UAS 95.83% LAS 94.65% 311 sents/s
+Epoch 274 out of 500
+Dev: UAS 95.81% LAS 94.63% 320 sents/s
+Epoch 275 out of 500
+Dev: UAS 95.84% LAS 94.64% 319 sents/s
+Epoch 276 out of 500
+Dev: UAS 95.83% LAS 94.63% 335 sents/s
+Epoch 277 out of 500
+Dev: UAS 95.87% LAS 94.70% 347 sents/s
+Epoch 278 out of 500
+- new best score!
+Dev: UAS 95.84% LAS 94.66% 294 sents/s
+Epoch 279 out of 500
+Dev: UAS 95.84% LAS 94.67% 318 sents/s
+Epoch 280 out of 500
+Dev: UAS 95.82% LAS 94.67% 308 sents/s
+Epoch 281 out of 500
+Dev: UAS 95.83% LAS 94.66% 359 sents/s
+Epoch 282 out of 500
+Dev: UAS 95.81% LAS 94.64% 291 sents/s
+Epoch 283 out of 500
+Dev: UAS 95.82% LAS 94.63% 290 sents/s
+Epoch 284 out of 500
+Dev: UAS 95.81% LAS 94.66% 304 sents/s
+Epoch 285 out of 500
+Dev: UAS 95.85% LAS 94.67% 295 sents/s
+Epoch 286 out of 500
+Dev: UAS 95.91% LAS 94.74% 317 sents/s
+Epoch 287 out of 500
+- new best score!
+Dev: UAS 95.87% LAS 94.71% 340 sents/s
+Epoch 288 out of 500
+Dev: UAS 95.90% LAS 94.73% 303 sents/s
+Epoch 289 out of 500
+Dev: UAS 95.88% LAS 94.69% 307 sents/s
+Epoch 290 out of 500
+Dev: UAS 95.87% LAS 94.69% 293 sents/s
+Epoch 291 out of 500
+Dev: UAS 95.88% LAS 94.70% 303 sents/s
+Epoch 292 out of 500
+Dev: UAS 95.88% LAS 94.70% 371 sents/s
+Epoch 293 out of 500
+Dev: UAS 95.90% LAS 94.72% 319 sents/s
+Epoch 294 out of 500
+Dev: UAS 95.91% LAS 94.74% 306 sents/s
+Epoch 295 out of 500
+Dev: UAS 95.90% LAS 94.74% 363 sents/s
+Epoch 296 out of 500
+Dev: UAS 95.86% LAS 94.70% 303 sents/s
+Epoch 297 out of 500
+Dev: UAS 95.86% LAS 94.68% 326 sents/s
+Epoch 298 out of 500
+Dev: UAS 95.87% LAS 94.68% 316 sents/s
+Epoch 299 out of 500
+Dev: UAS 95.85% LAS 94.67% 353 sents/s
+Epoch 300 out of 500
+Dev: UAS 95.89% LAS 94.72% 272 sents/s
+Epoch 301 out of 500
+Dev: UAS 95.85% LAS 94.67% 302 sents/s
+Epoch 302 out of 500
+Dev: UAS 95.88% LAS 94.71% 350 sents/s
+Epoch 303 out of 500
+Dev: UAS 95.85% LAS 94.68% 311 sents/s
+Epoch 304 out of 500
+Dev: UAS 95.86% LAS 94.68% 298 sents/s
+Epoch 305 out of 500
+Dev: UAS 95.87% LAS 94.69% 368 sents/s
+Epoch 306 out of 500
+Dev: UAS 95.88% LAS 94.72% 353 sents/s
+Epoch 307 out of 500
+Dev: UAS 95.88% LAS 94.70% 310 sents/s
+Epoch 308 out of 500
+Dev: UAS 95.89% LAS 94.70% 363 sents/s
+Epoch 309 out of 500
+Dev: UAS 95.88% LAS 94.68% 318 sents/s
+Epoch 310 out of 500
+Dev: UAS 95.89% LAS 94.69% 319 sents/s
+Epoch 311 out of 500
+Dev: UAS 95.89% LAS 94.69% 341 sents/s
+Epoch 312 out of 500
+Dev: UAS 95.91% LAS 94.74% 325 sents/s
+Epoch 313 out of 500
+Dev: UAS 95.89% LAS 94.72% 376 sents/s
+Epoch 314 out of 500
+Dev: UAS 95.92% LAS 94.76% 330 sents/s
+Epoch 315 out of 500
+- new best score!
+Dev: UAS 95.91% LAS 94.75% 333 sents/s
+Epoch 316 out of 500
+Dev: UAS 95.89% LAS 94.73% 295 sents/s
+Epoch 317 out of 500
+Dev: UAS 95.89% LAS 94.73% 326 sents/s
+Epoch 318 out of 500
+Dev: UAS 95.89% LAS 94.73% 302 sents/s
+Epoch 319 out of 500
+Dev: UAS 95.90% LAS 94.75% 292 sents/s
+Epoch 320 out of 500
+Dev: UAS 95.88% LAS 94.72% 295 sents/s
+Epoch 321 out of 500
+Dev: UAS 95.94% LAS 94.77% 309 sents/s
+Epoch 322 out of 500
+- new best score!
+Dev: UAS 95.93% LAS 94.76% 305 sents/s
+Epoch 323 out of 500
+Dev: UAS 95.90% LAS 94.76% 323 sents/s
+Epoch 324 out of 500
+Dev: UAS 95.91% LAS 94.74% 322 sents/s
+Epoch 325 out of 500
+Dev: UAS 95.93% LAS 94.75% 368 sents/s
+Epoch 326 out of 500
+Dev: UAS 95.89% LAS 94.73% 291 sents/s
+Epoch 327 out of 500
+Dev: UAS 95.92% LAS 94.72% 313 sents/s
+Epoch 328 out of 500
+Dev: UAS 95.87% LAS 94.67% 310 sents/s
+Epoch 329 out of 500
+Dev: UAS 95.90% LAS 94.69% 291 sents/s
+Epoch 330 out of 500
+Dev: UAS 95.90% LAS 94.72% 294 sents/s
+Epoch 331 out of 500
+Dev: UAS 95.88% LAS 94.67% 334 sents/s
+Epoch 332 out of 500
+Dev: UAS 95.93% LAS 94.75% 314 sents/s
+Epoch 333 out of 500
+Dev: UAS 95.88% LAS 94.69% 302 sents/s
+Epoch 334 out of 500
+Dev: UAS 95.91% LAS 94.71% 307 sents/s
+Epoch 335 out of 500
+Dev: UAS 95.90% LAS 94.72% 293 sents/s
+Epoch 336 out of 500
+Dev: UAS 95.92% LAS 94.74% 318 sents/s
+Epoch 337 out of 500
+Dev: UAS 95.95% LAS 94.77% 323 sents/s
+Epoch 338 out of 500
+- new best score!
+Dev: UAS 95.95% LAS 94.77% 316 sents/s
+Epoch 339 out of 500
+Dev: UAS 95.96% LAS 94.77% 306 sents/s
+Epoch 340 out of 500
+- new best score!
+Dev: UAS 95.97% LAS 94.79% 307 sents/s
+Epoch 341 out of 500
+- new best score!
+Dev: UAS 95.92% LAS 94.74% 312 sents/s
+Epoch 342 out of 500
+Dev: UAS 95.88% LAS 94.70% 382 sents/s
+Epoch 343 out of 500
+Dev: UAS 95.90% LAS 94.71% 293 sents/s
+Epoch 344 out of 500
+Dev: UAS 95.89% LAS 94.71% 320 sents/s
+Epoch 345 out of 500
+Dev: UAS 95.91% LAS 94.74% 356 sents/s
+Epoch 346 out of 500
+Dev: UAS 95.90% LAS 94.72% 300 sents/s
+Epoch 347 out of 500
+Dev: UAS 95.90% LAS 94.72% 315 sents/s
+Epoch 348 out of 500
+Dev: UAS 95.93% LAS 94.74% 307 sents/s
+Epoch 349 out of 500
+Dev: UAS 95.93% LAS 94.75% 355 sents/s
+Epoch 350 out of 500
+Dev: UAS 95.92% LAS 94.73% 303 sents/s
+Epoch 351 out of 500
+Dev: UAS 95.92% LAS 94.74% 296 sents/s
+Epoch 352 out of 500
+Dev: UAS 95.89% LAS 94.72% 313 sents/s
+Epoch 353 out of 500
+Dev: UAS 95.87% LAS 94.70% 296 sents/s
+Epoch 354 out of 500
+Dev: UAS 95.90% LAS 94.72% 315 sents/s
+Epoch 355 out of 500
+Dev: UAS 95.90% LAS 94.73% 308 sents/s
+Epoch 356 out of 500
+Dev: UAS 95.91% LAS 94.74% 374 sents/s
+Epoch 357 out of 500
+Dev: UAS 95.90% LAS 94.74% 310 sents/s
+Epoch 358 out of 500
+Dev: UAS 95.90% LAS 94.72% 365 sents/s
+Epoch 359 out of 500
+Dev: UAS 95.87% LAS 94.69% 321 sents/s
+Epoch 360 out of 500
+Dev: UAS 95.84% LAS 94.67% 315 sents/s
+Epoch 361 out of 500
+Dev: UAS 95.85% LAS 94.68% 301 sents/s
+Epoch 362 out of 500
+Dev: UAS 95.86% LAS 94.69% 318 sents/s
+Epoch 363 out of 500
+Dev: UAS 95.90% LAS 94.72% 300 sents/s
+Epoch 364 out of 500
+Dev: UAS 95.90% LAS 94.74% 360 sents/s
+Epoch 365 out of 500
+Dev: UAS 95.89% LAS 94.73% 298 sents/s
+Epoch 366 out of 500
+Dev: UAS 95.91% LAS 94.72% 276 sents/s
+Epoch 367 out of 500
+Dev: UAS 95.88% LAS 94.70% 331 sents/s
+Epoch 368 out of 500
+Dev: UAS 95.92% LAS 94.75% 364 sents/s
+Epoch 369 out of 500
+Dev: UAS 95.87% LAS 94.69% 316 sents/s
+Epoch 370 out of 500
+Dev: UAS 95.89% LAS 94.72% 311 sents/s
+Epoch 371 out of 500
+Dev: UAS 95.89% LAS 94.70% 312 sents/s
+Epoch 372 out of 500
+Dev: UAS 95.85% LAS 94.67% 310 sents/s
+Epoch 373 out of 500
+Dev: UAS 95.86% LAS 94.69% 338 sents/s
+Epoch 374 out of 500
+Dev: UAS 95.90% LAS 94.72% 309 sents/s
+Epoch 375 out of 500
+Dev: UAS 95.90% LAS 94.72% 280 sents/s
+Epoch 376 out of 500
+Dev: UAS 95.90% LAS 94.74% 283 sents/s
+Epoch 377 out of 500
+Dev: UAS 95.88% LAS 94.68% 293 sents/s
+Epoch 378 out of 500
+Dev: UAS 95.88% LAS 94.70% 299 sents/s
+Epoch 379 out of 500
+Dev: UAS 95.86% LAS 94.69% 359 sents/s
+Epoch 380 out of 500
+Dev: UAS 95.86% LAS 94.68% 293 sents/s
+Epoch 381 out of 500
+Dev: UAS 95.87% LAS 94.70% 340 sents/s
+Epoch 382 out of 500
+Dev: UAS 95.90% LAS 94.73% 358 sents/s
+Epoch 383 out of 500
+Dev: UAS 95.92% LAS 94.74% 351 sents/s
+Epoch 384 out of 500
+Dev: UAS 95.87% LAS 94.70% 312 sents/s
+Epoch 385 out of 500
+Dev: UAS 95.91% LAS 94.74% 285 sents/s
+Epoch 386 out of 500
+Dev: UAS 95.90% LAS 94.74% 336 sents/s
+Epoch 387 out of 500
+Dev: UAS 95.91% LAS 94.74% 376 sents/s
+Epoch 388 out of 500
+Dev: UAS 95.91% LAS 94.72% 308 sents/s
+Epoch 389 out of 500
+Dev: UAS 95.92% LAS 94.73% 308 sents/s
+Epoch 390 out of 500
+Dev: UAS 95.88% LAS 94.67% 359 sents/s
+Epoch 391 out of 500
+Dev: UAS 95.93% LAS 94.72% 288 sents/s
+Epoch 392 out of 500
+Dev: UAS 95.91% LAS 94.72% 358 sents/s
+Epoch 393 out of 500
+Dev: UAS 95.93% LAS 94.72% 340 sents/s
+Epoch 394 out of 500
+Dev: UAS 95.94% LAS 94.75% 313 sents/s
+Epoch 395 out of 500
+Dev: UAS 95.93% LAS 94.74% 364 sents/s
+Epoch 396 out of 500
+Dev: UAS 95.95% LAS 94.75% 303 sents/s
+Epoch 397 out of 500
+Dev: UAS 95.92% LAS 94.73% 314 sents/s
+Epoch 398 out of 500
+Dev: UAS 95.91% LAS 94.72% 315 sents/s
+Epoch 399 out of 500
+Dev: UAS 95.91% LAS 94.72% 321 sents/s
+Epoch 400 out of 500
+Dev: UAS 95.93% LAS 94.74% 336 sents/s
+Epoch 401 out of 500
+Dev: UAS 95.93% LAS 94.72% 292 sents/s
+Epoch 402 out of 500
+Dev: UAS 95.92% LAS 94.75% 302 sents/s
+Epoch 403 out of 500
+Dev: UAS 95.93% LAS 94.74% 334 sents/s
+Epoch 404 out of 500
+Dev: UAS 95.92% LAS 94.75% 362 sents/s
+Epoch 405 out of 500
+Dev: UAS 95.94% LAS 94.74% 297 sents/s
+Epoch 406 out of 500
+Dev: UAS 95.93% LAS 94.75% 338 sents/s
+Epoch 407 out of 500
+Dev: UAS 95.92% LAS 94.75% 280 sents/s
+Epoch 408 out of 500
+Dev: UAS 95.95% LAS 94.78% 344 sents/s
+Epoch 409 out of 500
+Dev: UAS 95.92% LAS 94.74% 351 sents/s
+Epoch 410 out of 500
+Dev: UAS 95.92% LAS 94.75% 281 sents/s
+Epoch 411 out of 500
+Dev: UAS 95.91% LAS 94.75% 353 sents/s
+Epoch 412 out of 500
+Dev: UAS 95.91% LAS 94.76% 292 sents/s
+Epoch 413 out of 500
+Dev: UAS 95.90% LAS 94.74% 307 sents/s
+Epoch 414 out of 500
+Dev: UAS 95.88% LAS 94.73% 335 sents/s
+Epoch 415 out of 500
+Dev: UAS 95.90% LAS 94.74% 360 sents/s
+Epoch 416 out of 500
+Dev: UAS 95.91% LAS 94.74% 352 sents/s
+Epoch 417 out of 500
+Dev: UAS 95.91% LAS 94.73% 344 sents/s
+Epoch 418 out of 500
+Dev: UAS 95.89% LAS 94.72% 312 sents/s
+Epoch 419 out of 500
+Dev: UAS 95.88% LAS 94.70% 366 sents/s
+Epoch 420 out of 500
+Dev: UAS 95.91% LAS 94.73% 358 sents/s
+Epoch 421 out of 500
+Dev: UAS 95.91% LAS 94.75% 313 sents/s
+Epoch 422 out of 500
+Dev: UAS 95.93% LAS 94.76% 329 sents/s
+Epoch 423 out of 500
+Dev: UAS 95.91% LAS 94.73% 308 sents/s
+Epoch 424 out of 500
+Dev: UAS 95.93% LAS 94.75% 309 sents/s
+Epoch 425 out of 500
+Dev: UAS 95.92% LAS 94.74% 292 sents/s
+Epoch 426 out of 500
+Dev: UAS 95.91% LAS 94.71% 290 sents/s
+Epoch 427 out of 500
+Dev: UAS 95.94% LAS 94.78% 346 sents/s
+Epoch 428 out of 500
+Dev: UAS 95.97% LAS 94.79% 331 sents/s
+Epoch 429 out of 500
+Dev: UAS 95.95% LAS 94.79% 305 sents/s
+Epoch 430 out of 500
+Dev: UAS 95.96% LAS 94.79% 325 sents/s
+Epoch 431 out of 500
+Dev: UAS 95.96% LAS 94.78% 329 sents/s
+Epoch 432 out of 500
+Dev: UAS 95.96% LAS 94.78% 317 sents/s
+Epoch 433 out of 500
+Dev: UAS 95.97% LAS 94.80% 370 sents/s
+Epoch 434 out of 500
+Dev: UAS 95.93% LAS 94.76% 314 sents/s
+Epoch 435 out of 500
+Dev: UAS 95.93% LAS 94.75% 303 sents/s
+Epoch 436 out of 500
+Dev: UAS 95.92% LAS 94.76% 344 sents/s
+Epoch 437 out of 500
+Dev: UAS 95.91% LAS 94.74% 304 sents/s
+Epoch 438 out of 500
+Dev: UAS 95.92% LAS 94.75% 322 sents/s
+Epoch 439 out of 500
+Dev: UAS 95.93% LAS 94.76% 320 sents/s
+Epoch 440 out of 500
+Dev: UAS 95.91% LAS 94.74% 304 sents/s
+Epoch 441 out of 500
+Dev: UAS 95.91% LAS 94.71% 368 sents/s
+Epoch 442 out of 500
+Dev: UAS 95.92% LAS 94.73% 358 sents/s
+Epoch 443 out of 500
+Dev: UAS 95.91% LAS 94.74% 291 sents/s
+Epoch 444 out of 500
+Dev: UAS 95.89% LAS 94.72% 302 sents/s
+Epoch 445 out of 500
+Dev: UAS 95.93% LAS 94.76% 347 sents/s
+Epoch 446 out of 500
+Dev: UAS 95.90% LAS 94.73% 321 sents/s
+Epoch 447 out of 500
+Dev: UAS 95.91% LAS 94.72% 355 sents/s
+Epoch 448 out of 500
+Dev: UAS 95.89% LAS 94.71% 309 sents/s
+Epoch 449 out of 500
+Dev: UAS 95.93% LAS 94.75% 349 sents/s
+Epoch 450 out of 500
+Dev: UAS 95.94% LAS 94.78% 364 sents/s
+Epoch 451 out of 500
+Dev: UAS 95.91% LAS 94.73% 307 sents/s
+Epoch 452 out of 500
+Dev: UAS 95.91% LAS 94.73% 318 sents/s
+Epoch 453 out of 500
+Dev: UAS 95.92% LAS 94.74% 371 sents/s
+Epoch 454 out of 500
+Dev: UAS 95.89% LAS 94.71% 310 sents/s
+Epoch 455 out of 500
+Dev: UAS 95.91% LAS 94.72% 371 sents/s
+Epoch 456 out of 500
+Dev: UAS 95.93% LAS 94.76% 335 sents/s
+Epoch 457 out of 500
+Dev: UAS 95.90% LAS 94.73% 344 sents/s
+Epoch 458 out of 500
+Dev: UAS 95.93% LAS 94.75% 278 sents/s
+Epoch 459 out of 500
+Dev: UAS 95.93% LAS 94.75% 370 sents/s
+Epoch 460 out of 500
+Dev: UAS 95.91% LAS 94.71% 259 sents/s
+Epoch 461 out of 500
+Dev: UAS 95.93% LAS 94.75% 302 sents/s
+Epoch 462 out of 500
+Dev: UAS 95.95% LAS 94.76% 316 sents/s
+Epoch 463 out of 500
+Dev: UAS 95.94% LAS 94.77% 299 sents/s
+Epoch 464 out of 500
+Dev: UAS 95.93% LAS 94.75% 345 sents/s
+Epoch 465 out of 500
+Dev: UAS 95.97% LAS 94.78% 315 sents/s
+Epoch 466 out of 500
+Dev: UAS 95.98% LAS 94.78% 319 sents/s
+Epoch 467 out of 500
+- new best score!
+Dev: UAS 95.96% LAS 94.76% 329 sents/s
+Epoch 468 out of 500
+Dev: UAS 95.97% LAS 94.78% 322 sents/s
+Epoch 469 out of 500
+Dev: UAS 95.95% LAS 94.77% 279 sents/s
+Epoch 470 out of 500
+Dev: UAS 95.95% LAS 94.76% 311 sents/s
+Epoch 471 out of 500
+Dev: UAS 95.98% LAS 94.79% 347 sents/s
+Epoch 472 out of 500
+Dev: UAS 95.96% LAS 94.78% 346 sents/s
+Epoch 473 out of 500
+Dev: UAS 95.95% LAS 94.78% 337 sents/s
+Epoch 474 out of 500
+Dev: UAS 95.94% LAS 94.76% 370 sents/s
+Epoch 475 out of 500
+Dev: UAS 95.93% LAS 94.76% 287 sents/s
+Epoch 476 out of 500
+Dev: UAS 95.93% LAS 94.74% 347 sents/s
+Epoch 477 out of 500
+Dev: UAS 95.92% LAS 94.72% 346 sents/s
+Epoch 478 out of 500
+Dev: UAS 95.93% LAS 94.74% 285 sents/s
+Epoch 479 out of 500
+Dev: UAS 95.91% LAS 94.71% 300 sents/s
+Epoch 480 out of 500
+Dev: UAS 95.93% LAS 94.73% 365 sents/s
+Epoch 481 out of 500
+Dev: UAS 95.92% LAS 94.74% 301 sents/s
+Epoch 482 out of 500
+Dev: UAS 95.94% LAS 94.76% 325 sents/s
+Epoch 483 out of 500
+Dev: UAS 95.92% LAS 94.74% 364 sents/s
+Epoch 484 out of 500
+Dev: UAS 95.91% LAS 94.73% 310 sents/s
+Epoch 485 out of 500
+Dev: UAS 95.93% LAS 94.75% 321 sents/s
+Epoch 486 out of 500
+Dev: UAS 95.95% LAS 94.77% 321 sents/s
+Epoch 487 out of 500
+Dev: UAS 95.93% LAS 94.74% 296 sents/s
+Epoch 488 out of 500
+Dev: UAS 95.95% LAS 94.76% 288 sents/s
+Epoch 489 out of 500
+Dev: UAS 95.91% LAS 94.74% 291 sents/s
+Epoch 490 out of 500
+Dev: UAS 95.95% LAS 94.77% 317 sents/s
+Epoch 491 out of 500
+Dev: UAS 95.93% LAS 94.75% 286 sents/s
+Epoch 492 out of 500
+Dev: UAS 95.92% LAS 94.74% 313 sents/s
+Epoch 493 out of 500
+Dev: UAS 95.94% LAS 94.76% 306 sents/s
+Epoch 494 out of 500
+Dev: UAS 95.94% LAS 94.77% 278 sents/s
+Epoch 495 out of 500
+Dev: UAS 95.95% LAS 94.76% 304 sents/s
+Epoch 496 out of 500
+Dev: UAS 95.93% LAS 94.74% 305 sents/s
+Epoch 497 out of 500
+Dev: UAS 95.96% LAS 94.78% 362 sents/s
+Epoch 498 out of 500
+Dev: UAS 95.95% LAS 94.76% 294 sents/s
+Epoch 499 out of 500
+Dev: UAS 95.95% LAS 94.76% 317 sents/s
+Epoch 500 out of 500
+Dev: UAS 95.94% LAS 94.76% 383 sents/s
