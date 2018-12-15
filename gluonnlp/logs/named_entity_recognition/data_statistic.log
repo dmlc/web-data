@@ -1,0 +1,5 @@
+INFO - Data statistic...
+INFO - English data   | LOC    | MISC    | ORG     | PER    |
+INFO - Training set   |   8297 |   4593  |   10023 |  11128 |
+INFO - Development set|   2094 |   1268  |   2092  |   3149 |
+INFO - Test set       |   1925 |   918   |   2496  |   2773 |
