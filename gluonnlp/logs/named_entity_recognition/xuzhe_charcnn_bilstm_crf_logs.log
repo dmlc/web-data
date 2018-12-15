@@ -1,0 +1,1413 @@
+ INFO - train_sentences length: 14985, valid_sentences length: 3465, test_sentences length: 3684
+ INFO - Loading pre-trained token embedding vectors from /home/kenjewu/.mxnet/embedding/glove/glove.6B.100d.npz
+ INFO - Attach the glove.6B.100d to word_vocab.
+ INFO - tag to idx: {'<unk>': 0, 'O': 1, '<bos>': 2, '<eos>': 3, 'B-LOC': 4, 'B-PER': 5, 'B-ORG': 6, 'I-PER': 7, 'I-ORG': 8, 'B-MISC': 9, 'I-MISC': 10, 'I-LOC': 11}
+ INFO - word_vocab length: 21894
+ INFO - char_vocab length: 54
+ INFO - tag_vocab length: 12
+ INFO - FixedBucketSampler:
+  sample_num=14985, batch_num=603
+  key=[18, 23, 28, 33, 38, 43, 48, 53, 58, 63, 68, 78, 113]
+  cnt=[10665, 1049, 1075, 978, 614, 377, 151, 52, 15, 6, 1, 1, 1]
+  batch_size=[30, 23, 19, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16]
+ INFO - use sgd to optimize params
+ INFO - Epoch 1, n_batch 300, loss 7.499314308166504
+ INFO - Epoch 1, n_batch 600, loss 0.9264450073242188
+ INFO - epoch 1, learning_rate 0.01000
+ INFO - 	 valid_loss 2.0176, valid_p 82.790, valid_r 74.000, valid_f1 78.150
+ INFO - 	 test_loss 1.7967, test_p 79.300, test_r 72.150, test_f1 75.550
+ INFO - 	 currently best f1 socre: 75.550 on epoch: 1 
+
+ INFO - Epoch 2, n_batch 300, loss 3.4909651279449463
+ INFO - Epoch 2, n_batch 600, loss 5.873317718505859
+ INFO - epoch 2, learning_rate 0.00952
+ INFO - 	 valid_loss 1.5306, valid_p 85.820, valid_r 80.580, valid_f1 83.120
+ INFO - 	 test_loss 1.4257, test_p 82.680, test_r 78.170, test_f1 80.360
+ INFO - 	 currently best f1 socre: 80.360 on epoch: 2 
+
+ INFO - Epoch 3, n_batch 300, loss 4.762206077575684
+ INFO - Epoch 3, n_batch 600, loss 3.252960205078125
+ INFO - epoch 3, learning_rate 0.00909
+ INFO - 	 valid_loss 1.4750, valid_p 88.600, valid_r 81.120, valid_f1 84.700
+ INFO - 	 test_loss 1.3514, test_p 85.030, test_r 78.560, test_f1 81.670
+ INFO - 	 currently best f1 socre: 81.670 on epoch: 3 
+
+ INFO - Epoch 4, n_batch 300, loss 0.6261080503463745
+ INFO - Epoch 4, n_batch 600, loss 1.4008578062057495
+ INFO - epoch 4, learning_rate 0.00870
+ INFO - 	 valid_loss 1.2407, valid_p 88.390, valid_r 84.030, valid_f1 86.150
+ INFO - 	 test_loss 1.2061, test_p 84.860, test_r 80.980, test_f1 82.880
+ INFO - 	 currently best f1 socre: 82.880 on epoch: 4 
+
+ INFO - Epoch 5, n_batch 300, loss 1.3850743770599365
+ INFO - Epoch 5, n_batch 600, loss 3.2399654388427734
+ INFO - epoch 5, learning_rate 0.00833
+ INFO - 	 valid_loss 1.1318, valid_p 88.500, valid_r 85.360, valid_f1 86.900
+ INFO - 	 test_loss 1.1322, test_p 85.240, test_r 82.720, test_f1 83.960
+ INFO - 	 currently best f1 socre: 83.960 on epoch: 5 
+
+ INFO - Epoch 6, n_batch 300, loss 0.7055165767669678
+ INFO - Epoch 6, n_batch 600, loss 1.1645970344543457
+ INFO - epoch 6, learning_rate 0.00800
+ INFO - 	 valid_loss 1.0612, valid_p 89.840, valid_r 85.900, valid_f1 87.830
+ INFO - 	 test_loss 1.0707, test_p 86.680, test_r 82.810, test_f1 84.700
+ INFO - 	 currently best f1 socre: 84.700 on epoch: 6 
+
+ INFO - Epoch 7, n_batch 300, loss 1.498583436012268
+ INFO - Epoch 7, n_batch 600, loss 0.5814829468727112
+ INFO - epoch 7, learning_rate 0.00769
+ INFO - 	 valid_loss 1.1332, valid_p 90.450, valid_r 84.840, valid_f1 87.560
+ INFO - 	 test_loss 1.1233, test_p 87.910, test_r 82.030, test_f1 84.870
+ INFO - 	 currently best f1 socre: 84.870 on epoch: 7 
+
+ INFO - Epoch 8, n_batch 300, loss 4.110561370849609
+ INFO - Epoch 8, n_batch 600, loss 0.16078948974609375
+ INFO - epoch 8, learning_rate 0.00741
+ INFO - 	 valid_loss 0.9968, valid_p 90.040, valid_r 86.760, valid_f1 88.370
+ INFO - 	 test_loss 1.0667, test_p 86.440, test_r 83.500, test_f1 84.940
+ INFO - 	 currently best f1 socre: 84.940 on epoch: 8 
+
+ INFO - Epoch 9, n_batch 300, loss 0.5101394653320312
+ INFO - Epoch 9, n_batch 600, loss 2.0968494415283203
+ INFO - epoch 9, learning_rate 0.00714
+ INFO - 	 valid_loss 0.9887, valid_p 91.350, valid_r 87.310, valid_f1 89.290
+ INFO - 	 test_loss 1.0362, test_p 87.630, test_r 83.920, test_f1 85.740
+ INFO - 	 currently best f1 socre: 85.740 on epoch: 9 
+
+ INFO - Epoch 10, n_batch 300, loss 2.4678611755371094
+ INFO - Epoch 10, n_batch 600, loss 1.6757547855377197
+ INFO - epoch 10, learning_rate 0.00690
+ INFO - 	 valid_loss 0.9261, valid_p 90.990, valid_r 88.190, valid_f1 89.560
+ INFO - 	 test_loss 1.0123, test_p 86.540, test_r 84.560, test_f1 85.540
+ INFO - 	 currently best f1 socre: 85.740 on epoch: 9 
+
+ INFO - Epoch 11, n_batch 300, loss 1.4409763813018799
+ INFO - Epoch 11, n_batch 600, loss 1.3276418447494507
+ INFO - epoch 11, learning_rate 0.00667
+ INFO - 	 valid_loss 0.9619, valid_p 91.100, valid_r 87.530, valid_f1 89.280
+ INFO - 	 test_loss 1.0399, test_p 87.390, test_r 83.960, test_f1 85.640
+ INFO - 	 currently best f1 socre: 85.740 on epoch: 9 
+
+ INFO - Epoch 12, n_batch 300, loss 2.3238697052001953
+ INFO - Epoch 12, n_batch 600, loss 0.7031092047691345
+ INFO - epoch 12, learning_rate 0.00645
+ INFO - 	 valid_loss 0.9064, valid_p 90.690, valid_r 88.350, valid_f1 89.510
+ INFO - 	 test_loss 1.0158, test_p 86.580, test_r 85.000, test_f1 85.790
+ INFO - 	 currently best f1 socre: 85.790 on epoch: 12 
+
+ INFO - Epoch 13, n_batch 300, loss 2.9933431148529053
+ INFO - Epoch 13, n_batch 600, loss 0.7131851315498352
+ INFO - epoch 13, learning_rate 0.00625
+ INFO - 	 valid_loss 0.8951, valid_p 90.240, valid_r 88.570, valid_f1 89.400
+ INFO - 	 test_loss 1.0291, test_p 86.350, test_r 85.040, test_f1 85.690
+ INFO - 	 currently best f1 socre: 85.790 on epoch: 12 
+
+ INFO - Epoch 14, n_batch 300, loss 2.4554615020751953
+ INFO - Epoch 14, n_batch 600, loss 2.8532047271728516
+ INFO - epoch 14, learning_rate 0.00606
+ INFO - 	 valid_loss 0.8883, valid_p 91.170, valid_r 88.050, valid_f1 89.580
+ INFO - 	 test_loss 0.9918, test_p 87.470, test_r 84.760, test_f1 86.090
+ INFO - 	 currently best f1 socre: 86.090 on epoch: 14 
+
+ INFO - Epoch 15, n_batch 300, loss 0.3679295778274536
+ INFO - Epoch 15, n_batch 600, loss 2.7591018676757812
+ INFO - epoch 15, learning_rate 0.00588
+ INFO - 	 valid_loss 0.9015, valid_p 91.730, valid_r 88.490, valid_f1 90.080
+ INFO - 	 test_loss 0.9841, test_p 87.860, test_r 84.930, test_f1 86.370
+ INFO - 	 currently best f1 socre: 86.370 on epoch: 15 
+
+ INFO - Epoch 16, n_batch 300, loss 0.3174682557582855
+ INFO - Epoch 16, n_batch 600, loss 0.6892115473747253
+ INFO - epoch 16, learning_rate 0.00571
+ INFO - 	 valid_loss 0.8664, valid_p 91.770, valid_r 88.610, valid_f1 90.160
+ INFO - 	 test_loss 0.9780, test_p 88.490, test_r 85.590, test_f1 87.010
+ INFO - 	 currently best f1 socre: 87.010 on epoch: 16 
+
+ INFO - Epoch 17, n_batch 300, loss 0.5150405764579773
+ INFO - Epoch 17, n_batch 600, loss 0.6814671754837036
+ INFO - epoch 17, learning_rate 0.00556
+ INFO - 	 valid_loss 0.8459, valid_p 91.620, valid_r 88.690, valid_f1 90.130
+ INFO - 	 test_loss 0.9770, test_p 87.890, test_r 85.340, test_f1 86.600
+ INFO - 	 currently best f1 socre: 87.010 on epoch: 16 
+
+ INFO - Epoch 18, n_batch 300, loss 0.5379725098609924
+ INFO - Epoch 18, n_batch 600, loss 0.6862579584121704
+ INFO - epoch 18, learning_rate 0.00541
+ INFO - 	 valid_loss 0.8622, valid_p 91.460, valid_r 88.890, valid_f1 90.160
+ INFO - 	 test_loss 0.9871, test_p 87.600, test_r 85.690, test_f1 86.640
+ INFO - 	 currently best f1 socre: 87.010 on epoch: 16 
+
+ INFO - Epoch 19, n_batch 300, loss 3.1760342121124268
+ INFO - Epoch 19, n_batch 600, loss 1.6356658935546875
+ INFO - epoch 19, learning_rate 0.00526
+ INFO - 	 valid_loss 0.8307, valid_p 92.040, valid_r 89.750, valid_f1 90.880
+ INFO - 	 test_loss 0.9520, test_p 88.020, test_r 86.400, test_f1 87.210
+ INFO - 	 currently best f1 socre: 87.210 on epoch: 19 
+
+ INFO - Epoch 20, n_batch 300, loss 1.0666615962982178
+ INFO - Epoch 20, n_batch 600, loss 0.26141661405563354
+ INFO - epoch 20, learning_rate 0.00513
+ INFO - 	 valid_loss 0.8218, valid_p 91.580, valid_r 88.960, valid_f1 90.250
+ INFO - 	 test_loss 0.9582, test_p 88.360, test_r 86.030, test_f1 87.180
+ INFO - 	 currently best f1 socre: 87.210 on epoch: 19 
+
+ INFO - Epoch 21, n_batch 300, loss 1.672032356262207
+ INFO - Epoch 21, n_batch 600, loss 3.1083011627197266
+ INFO - epoch 21, learning_rate 0.00500
+ INFO - 	 valid_loss 0.8276, valid_p 91.850, valid_r 89.360, valid_f1 90.590
+ INFO - 	 test_loss 0.9663, test_p 88.290, test_r 85.870, test_f1 87.070
+ INFO - 	 currently best f1 socre: 87.210 on epoch: 19 
+
+ INFO - Epoch 22, n_batch 300, loss 0.3313298523426056
+ INFO - Epoch 22, n_batch 600, loss 1.3829684257507324
+ INFO - epoch 22, learning_rate 0.00488
+ INFO - 	 valid_loss 0.8087, valid_p 92.220, valid_r 89.600, valid_f1 90.890
+ INFO - 	 test_loss 0.9539, test_p 88.360, test_r 86.380, test_f1 87.360
+ INFO - 	 currently best f1 socre: 87.360 on epoch: 22 
+
+ INFO - Epoch 23, n_batch 300, loss 0.16380716860294342
+ INFO - Epoch 23, n_batch 600, loss 0.7044113278388977
+ INFO - epoch 23, learning_rate 0.00476
+ INFO - 	 valid_loss 0.8114, valid_p 91.940, valid_r 89.460, valid_f1 90.690
+ INFO - 	 test_loss 0.9460, test_p 88.390, test_r 86.370, test_f1 87.360
+ INFO - 	 currently best f1 socre: 87.360 on epoch: 22 
+
+ INFO - Epoch 24, n_batch 300, loss 0.8710300326347351
+ INFO - Epoch 24, n_batch 600, loss 0.3619135618209839
+ INFO - epoch 24, learning_rate 0.00465
+ INFO - 	 valid_loss 0.8294, valid_p 91.910, valid_r 89.520, valid_f1 90.700
+ INFO - 	 test_loss 0.9672, test_p 88.160, test_r 86.580, test_f1 87.360
+ INFO - 	 currently best f1 socre: 87.360 on epoch: 22 
+
+ INFO - Epoch 25, n_batch 300, loss 0.6838460564613342
+ INFO - Epoch 25, n_batch 600, loss 0.41374003887176514
+ INFO - epoch 25, learning_rate 0.00455
+ INFO - 	 valid_loss 0.8363, valid_p 91.870, valid_r 89.430, valid_f1 90.640
+ INFO - 	 test_loss 0.9856, test_p 87.890, test_r 85.940, test_f1 86.900
+ INFO - 	 currently best f1 socre: 87.360 on epoch: 22 
+
+ INFO - Epoch 26, n_batch 300, loss 0.650908887386322
+ INFO - Epoch 26, n_batch 600, loss 0.5235992670059204
+ INFO - epoch 26, learning_rate 0.00444
+ INFO - 	 valid_loss 0.7899, valid_p 92.080, valid_r 89.650, valid_f1 90.850
+ INFO - 	 test_loss 0.9502, test_p 88.190, test_r 86.460, test_f1 87.310
+ INFO - 	 currently best f1 socre: 87.360 on epoch: 22 
+
+ INFO - Epoch 27, n_batch 300, loss 0.39817506074905396
+ INFO - Epoch 27, n_batch 600, loss 1.5035384893417358
+ INFO - epoch 27, learning_rate 0.00435
+ INFO - 	 valid_loss 0.7862, valid_p 91.970, valid_r 89.800, valid_f1 90.870
+ INFO - 	 test_loss 0.9599, test_p 88.040, test_r 86.580, test_f1 87.310
+ INFO - 	 currently best f1 socre: 87.360 on epoch: 22 
+
+ INFO - Epoch 28, n_batch 300, loss 0.41680908203125
+ INFO - Epoch 28, n_batch 600, loss 0.5298711061477661
+ INFO - epoch 28, learning_rate 0.00426
+ INFO - 	 valid_loss 0.7953, valid_p 92.280, valid_r 89.940, valid_f1 91.090
+ INFO - 	 test_loss 0.9690, test_p 88.220, test_r 86.610, test_f1 87.410
+ INFO - 	 currently best f1 socre: 87.410 on epoch: 28 
+
+ INFO - Epoch 29, n_batch 300, loss 0.7330362796783447
+ INFO - Epoch 29, n_batch 600, loss 0.49979183077812195
+ INFO - epoch 29, learning_rate 0.00417
+ INFO - 	 valid_loss 0.7847, valid_p 92.250, valid_r 90.090, valid_f1 91.150
+ INFO - 	 test_loss 0.9590, test_p 88.160, test_r 86.460, test_f1 87.300
+ INFO - 	 currently best f1 socre: 87.410 on epoch: 28 
+
+ INFO - Epoch 30, n_batch 300, loss 0.22638346254825592
+ INFO - Epoch 30, n_batch 600, loss 0.3914377987384796
+ INFO - epoch 30, learning_rate 0.00408
+ INFO - 	 valid_loss 0.7843, valid_p 92.090, valid_r 90.270, valid_f1 91.170
+ INFO - 	 test_loss 0.9606, test_p 88.230, test_r 86.650, test_f1 87.430
+ INFO - 	 currently best f1 socre: 87.430 on epoch: 30 
+
+ INFO - Epoch 31, n_batch 300, loss 2.6353836059570312
+ INFO - Epoch 31, n_batch 600, loss 0.28775787353515625
+ INFO - epoch 31, learning_rate 0.00400
+ INFO - 	 valid_loss 0.7803, valid_p 92.280, valid_r 90.150, valid_f1 91.210
+ INFO - 	 test_loss 0.9359, test_p 88.580, test_r 86.950, test_f1 87.760
+ INFO - 	 currently best f1 socre: 87.760 on epoch: 31 
+
+ INFO - Epoch 32, n_batch 300, loss 1.8248100280761719
+ INFO - Epoch 32, n_batch 600, loss 0.15701445937156677
+ INFO - epoch 32, learning_rate 0.00392
+ INFO - 	 valid_loss 0.7543, valid_p 92.520, valid_r 90.410, valid_f1 91.450
+ INFO - 	 test_loss 0.9459, test_p 88.260, test_r 86.810, test_f1 87.530
+ INFO - 	 currently best f1 socre: 87.760 on epoch: 31 
+
+ INFO - Epoch 33, n_batch 300, loss 3.4514427185058594
+ INFO - Epoch 33, n_batch 600, loss 0.21004028618335724
+ INFO - epoch 33, learning_rate 0.00385
+ INFO - 	 valid_loss 0.7869, valid_p 92.980, valid_r 90.000, valid_f1 91.470
+ INFO - 	 test_loss 0.9448, test_p 89.180, test_r 86.580, test_f1 87.860
+ INFO - 	 currently best f1 socre: 87.860 on epoch: 33 
+
+ INFO - Epoch 34, n_batch 300, loss 1.8189449310302734
+ INFO - Epoch 34, n_batch 600, loss 0.5179850459098816
+ INFO - epoch 34, learning_rate 0.00377
+ INFO - 	 valid_loss 0.8051, valid_p 92.830, valid_r 89.550, valid_f1 91.160
+ INFO - 	 test_loss 0.9723, test_p 89.170, test_r 86.280, test_f1 87.700
+ INFO - 	 currently best f1 socre: 87.860 on epoch: 33 
+
+ INFO - Epoch 35, n_batch 300, loss 1.7493703365325928
+ INFO - Epoch 35, n_batch 600, loss 0.3612421751022339
+ INFO - epoch 35, learning_rate 0.00370
+ INFO - 	 valid_loss 0.7646, valid_p 92.770, valid_r 90.210, valid_f1 91.470
+ INFO - 	 test_loss 0.9502, test_p 88.510, test_r 86.740, test_f1 87.620
+ INFO - 	 currently best f1 socre: 87.860 on epoch: 33 
+
+ INFO - Epoch 36, n_batch 300, loss 0.33018696308135986
+ INFO - Epoch 36, n_batch 600, loss 0.43950143456459045
+ INFO - epoch 36, learning_rate 0.00364
+ INFO - 	 valid_loss 0.7636, valid_p 92.830, valid_r 90.170, valid_f1 91.480
+ INFO - 	 test_loss 0.9520, test_p 89.100, test_r 87.000, test_f1 88.040
+ INFO - 	 currently best f1 socre: 88.040 on epoch: 36 
+
+ INFO - Epoch 37, n_batch 300, loss 0.4081721007823944
+ INFO - Epoch 37, n_batch 600, loss 0.4072377383708954
+ INFO - epoch 37, learning_rate 0.00357
+ INFO - 	 valid_loss 0.7601, valid_p 92.170, valid_r 90.560, valid_f1 91.360
+ INFO - 	 test_loss 0.9495, test_p 88.610, test_r 87.480, test_f1 88.040
+ INFO - 	 currently best f1 socre: 88.040 on epoch: 36 
+
+ INFO - Epoch 38, n_batch 300, loss 0.39876148104667664
+ INFO - Epoch 38, n_batch 600, loss 1.7280707359313965
+ INFO - epoch 38, learning_rate 0.00351
+ INFO - 	 valid_loss 0.8031, valid_p 92.710, valid_r 89.900, valid_f1 91.290
+ INFO - 	 test_loss 0.9821, test_p 89.160, test_r 86.530, test_f1 87.820
+ INFO - 	 currently best f1 socre: 88.040 on epoch: 36 
+
+ INFO - Epoch 39, n_batch 300, loss 0.17049357295036316
+ INFO - Epoch 39, n_batch 600, loss 0.1338801085948944
+ INFO - epoch 39, learning_rate 0.00345
+ INFO - 	 valid_loss 0.7556, valid_p 92.340, valid_r 90.660, valid_f1 91.490
+ INFO - 	 test_loss 0.9481, test_p 88.470, test_r 87.380, test_f1 87.920
+ INFO - 	 currently best f1 socre: 88.040 on epoch: 36 
+
+ INFO - Epoch 40, n_batch 300, loss 0.558502197265625
+ INFO - Epoch 40, n_batch 600, loss 0.03500824049115181
+ INFO - epoch 40, learning_rate 0.00339
+ INFO - 	 valid_loss 0.7445, valid_p 92.530, valid_r 90.420, valid_f1 91.460
+ INFO - 	 test_loss 0.9458, test_p 88.700, test_r 86.900, test_f1 87.790
+ INFO - 	 currently best f1 socre: 88.040 on epoch: 36 
+
+ INFO - Epoch 41, n_batch 300, loss 0.44725391268730164
+ INFO - Epoch 41, n_batch 600, loss 1.808908462524414
+ INFO - epoch 41, learning_rate 0.00333
+ INFO - 	 valid_loss 0.7464, valid_p 92.810, valid_r 90.410, valid_f1 91.590
+ INFO - 	 test_loss 0.9510, test_p 88.890, test_r 86.810, test_f1 87.840
+ INFO - 	 currently best f1 socre: 88.040 on epoch: 36 
+
+ INFO - Epoch 42, n_batch 300, loss 0.20362243056297302
+ INFO - Epoch 42, n_batch 600, loss 0.19397124648094177
+ INFO - epoch 42, learning_rate 0.00328
+ INFO - 	 valid_loss 0.7598, valid_p 92.450, valid_r 90.690, valid_f1 91.560
+ INFO - 	 test_loss 0.9526, test_p 88.360, test_r 87.230, test_f1 87.790
+ INFO - 	 currently best f1 socre: 88.040 on epoch: 36 
+
+ INFO - Epoch 43, n_batch 300, loss 0.7241649627685547
+ INFO - Epoch 43, n_batch 600, loss 0.5585896968841553
+ INFO - epoch 43, learning_rate 0.00323
+ INFO - 	 valid_loss 0.7979, valid_p 92.830, valid_r 90.440, valid_f1 91.620
+ INFO - 	 test_loss 0.9677, test_p 89.030, test_r 86.790, test_f1 87.900
+ INFO - 	 currently best f1 socre: 88.040 on epoch: 36 
+
+ INFO - Epoch 44, n_batch 300, loss 0.13237711787223816
+ INFO - Epoch 44, n_batch 600, loss 0.4823766052722931
+ INFO - epoch 44, learning_rate 0.00317
+ INFO - 	 valid_loss 0.7794, valid_p 92.800, valid_r 90.490, valid_f1 91.630
+ INFO - 	 test_loss 0.9535, test_p 89.070, test_r 86.900, test_f1 87.970
+ INFO - 	 currently best f1 socre: 88.040 on epoch: 36 
+
+ INFO - Epoch 45, n_batch 300, loss 0.2654861509799957
+ INFO - Epoch 45, n_batch 600, loss 0.42187821865081787
+ INFO - epoch 45, learning_rate 0.00312
+ INFO - 	 valid_loss 0.7727, valid_p 92.770, valid_r 90.420, valid_f1 91.580
+ INFO - 	 test_loss 0.9531, test_p 89.080, test_r 87.060, test_f1 88.060
+ INFO - 	 currently best f1 socre: 88.060 on epoch: 45 
+
+ INFO - Epoch 46, n_batch 300, loss 0.25334981083869934
+ INFO - Epoch 46, n_batch 600, loss 1.9374701976776123
+ INFO - epoch 46, learning_rate 0.00308
+ INFO - 	 valid_loss 0.7590, valid_p 92.710, valid_r 90.590, valid_f1 91.640
+ INFO - 	 test_loss 0.9523, test_p 89.030, test_r 87.180, test_f1 88.090
+ INFO - 	 currently best f1 socre: 88.090 on epoch: 46 
+
+ INFO - Epoch 47, n_batch 300, loss 0.1415812224149704
+ INFO - Epoch 47, n_batch 600, loss 1.583333969116211
+ INFO - epoch 47, learning_rate 0.00303
+ INFO - 	 valid_loss 0.7646, valid_p 92.930, valid_r 90.460, valid_f1 91.680
+ INFO - 	 test_loss 0.9472, test_p 89.400, test_r 87.180, test_f1 88.280
+ INFO - 	 currently best f1 socre: 88.280 on epoch: 47 
+
+ INFO - Epoch 48, n_batch 300, loss 0.1536712646484375
+ INFO - Epoch 48, n_batch 600, loss 0.1857955902814865
+ INFO - epoch 48, learning_rate 0.00299
+ INFO - 	 valid_loss 0.7478, valid_p 92.340, valid_r 90.830, valid_f1 91.580
+ INFO - 	 test_loss 0.9520, test_p 88.510, test_r 87.460, test_f1 87.990
+ INFO - 	 currently best f1 socre: 88.280 on epoch: 47 
+
+ INFO - Epoch 49, n_batch 300, loss 0.5337178707122803
+ INFO - Epoch 49, n_batch 600, loss 1.3422539234161377
+ INFO - epoch 49, learning_rate 0.00294
+ INFO - 	 valid_loss 0.7842, valid_p 92.630, valid_r 90.560, valid_f1 91.580
+ INFO - 	 test_loss 0.9863, test_p 88.880, test_r 86.920, test_f1 87.890
+ INFO - 	 currently best f1 socre: 88.280 on epoch: 47 
+
+ INFO - Epoch 50, n_batch 300, loss 0.16532084345817566
+ INFO - Epoch 50, n_batch 600, loss 0.13729196786880493
+ INFO - epoch 50, learning_rate 0.00290
+ INFO - 	 valid_loss 0.8098, valid_p 92.850, valid_r 90.240, valid_f1 91.530
+ INFO - 	 test_loss 0.9832, test_p 89.250, test_r 86.880, test_f1 88.050
+ INFO - 	 currently best f1 socre: 88.280 on epoch: 47 
+
+ INFO - Epoch 51, n_batch 300, loss 1.5610675811767578
+ INFO - Epoch 51, n_batch 600, loss 1.1589946746826172
+ INFO - epoch 51, learning_rate 0.00286
+ INFO - 	 valid_loss 0.7594, valid_p 92.670, valid_r 90.630, valid_f1 91.640
+ INFO - 	 test_loss 0.9651, test_p 88.930, test_r 87.310, test_f1 88.110
+ INFO - 	 currently best f1 socre: 88.280 on epoch: 47 
+
+ INFO - Epoch 52, n_batch 300, loss 0.9465489983558655
+ INFO - Epoch 52, n_batch 600, loss 0.25233104825019836
+ INFO - epoch 52, learning_rate 0.00282
+ INFO - 	 valid_loss 0.7450, valid_p 93.260, valid_r 90.790, valid_f1 92.010
+ INFO - 	 test_loss 0.9720, test_p 88.860, test_r 86.720, test_f1 87.780
+ INFO - 	 currently best f1 socre: 88.280 on epoch: 47 
+
+ INFO - Epoch 53, n_batch 300, loss 0.4435167908668518
+ INFO - Epoch 53, n_batch 600, loss 0.20308227837085724
+ INFO - epoch 53, learning_rate 0.00278
+ INFO - 	 valid_loss 0.7755, valid_p 92.530, valid_r 90.530, valid_f1 91.520
+ INFO - 	 test_loss 0.9733, test_p 88.900, test_r 87.090, test_f1 87.990
+ INFO - 	 currently best f1 socre: 88.280 on epoch: 47 
+
+ INFO - Epoch 54, n_batch 300, loss 0.1776423156261444
+ INFO - Epoch 54, n_batch 600, loss 0.6630167365074158
+ INFO - epoch 54, learning_rate 0.00274
+ INFO - 	 valid_loss 0.7342, valid_p 92.530, valid_r 90.860, valid_f1 91.690
+ INFO - 	 test_loss 0.9522, test_p 88.570, test_r 87.430, test_f1 88.000
+ INFO - 	 currently best f1 socre: 88.280 on epoch: 47 
+
+ INFO - Epoch 55, n_batch 300, loss 0.7843617796897888
+ INFO - Epoch 55, n_batch 600, loss 0.19916941225528717
+ INFO - epoch 55, learning_rate 0.00270
+ INFO - 	 valid_loss 0.7663, valid_p 92.810, valid_r 90.560, valid_f1 91.670
+ INFO - 	 test_loss 0.9617, test_p 89.360, test_r 87.320, test_f1 88.330
+ INFO - 	 currently best f1 socre: 88.330 on epoch: 55 
+
+ INFO - Epoch 56, n_batch 300, loss 0.5760487914085388
+ INFO - Epoch 56, n_batch 600, loss 0.9606971740722656
+ INFO - epoch 56, learning_rate 0.00267
+ INFO - 	 valid_loss 0.7362, valid_p 93.020, valid_r 91.060, valid_f1 92.030
+ INFO - 	 test_loss 0.9553, test_p 88.730, test_r 87.390, test_f1 88.060
+ INFO - 	 currently best f1 socre: 88.330 on epoch: 55 
+
+ INFO - Epoch 57, n_batch 300, loss 1.6298789978027344
+ INFO - Epoch 57, n_batch 600, loss 2.527833938598633
+ INFO - epoch 57, learning_rate 0.00263
+ INFO - 	 valid_loss 0.7603, valid_p 92.400, valid_r 90.690, valid_f1 91.540
+ INFO - 	 test_loss 0.9707, test_p 88.730, test_r 87.160, test_f1 87.940
+ INFO - 	 currently best f1 socre: 88.330 on epoch: 55 
+
+ INFO - Epoch 58, n_batch 300, loss 1.0014457702636719
+ INFO - Epoch 58, n_batch 600, loss 0.6332492828369141
+ INFO - epoch 58, learning_rate 0.00260
+ INFO - 	 valid_loss 0.8081, valid_p 92.750, valid_r 90.580, valid_f1 91.650
+ INFO - 	 test_loss 1.0182, test_p 88.720, test_r 86.860, test_f1 87.780
+ INFO - 	 currently best f1 socre: 88.330 on epoch: 55 
+
+ INFO - Epoch 59, n_batch 300, loss 0.2056732177734375
+ INFO - Epoch 59, n_batch 600, loss 0.29376932978630066
+ INFO - epoch 59, learning_rate 0.00256
+ INFO - 	 valid_loss 0.7630, valid_p 92.820, valid_r 90.760, valid_f1 91.780
+ INFO - 	 test_loss 0.9671, test_p 89.300, test_r 87.360, test_f1 88.320
+ INFO - 	 currently best f1 socre: 88.330 on epoch: 55 
+
+ INFO - Epoch 60, n_batch 300, loss 1.2353999614715576
+ INFO - Epoch 60, n_batch 600, loss 0.23174336552619934
+ INFO - epoch 60, learning_rate 0.00253
+ INFO - 	 valid_loss 0.7516, valid_p 92.940, valid_r 91.010, valid_f1 91.960
+ INFO - 	 test_loss 0.9690, test_p 88.930, test_r 87.380, test_f1 88.150
+ INFO - 	 currently best f1 socre: 88.330 on epoch: 55 
+
+ INFO - Epoch 61, n_batch 300, loss 0.8069484829902649
+ INFO - Epoch 61, n_batch 600, loss 0.21225637197494507
+ INFO - epoch 61, learning_rate 0.00250
+ INFO - 	 valid_loss 0.7579, valid_p 92.940, valid_r 90.860, valid_f1 91.890
+ INFO - 	 test_loss 0.9659, test_p 89.350, test_r 87.310, test_f1 88.310
+ INFO - 	 currently best f1 socre: 88.330 on epoch: 55 
+
+ INFO - Epoch 62, n_batch 300, loss 0.47554880380630493
+ INFO - Epoch 62, n_batch 600, loss 2.098722457885742
+ INFO - epoch 62, learning_rate 0.00247
+ INFO - 	 valid_loss 0.7503, valid_p 92.740, valid_r 90.980, valid_f1 91.850
+ INFO - 	 test_loss 0.9764, test_p 89.180, test_r 87.380, test_f1 88.270
+ INFO - 	 currently best f1 socre: 88.330 on epoch: 55 
+
+ INFO - Epoch 63, n_batch 300, loss 0.968535840511322
+ INFO - Epoch 63, n_batch 600, loss 0.1809234619140625
+ INFO - epoch 63, learning_rate 0.00244
+ INFO - 	 valid_loss 0.7345, valid_p 92.900, valid_r 91.110, valid_f1 92.000
+ INFO - 	 test_loss 0.9693, test_p 89.020, test_r 87.410, test_f1 88.210
+ INFO - 	 currently best f1 socre: 88.330 on epoch: 55 
+
+ INFO - Epoch 64, n_batch 300, loss 0.17595520615577698
+ INFO - Epoch 64, n_batch 600, loss 0.14283651113510132
+ INFO - epoch 64, learning_rate 0.00241
+ INFO - 	 valid_loss 0.7511, valid_p 92.580, valid_r 90.930, valid_f1 91.750
+ INFO - 	 test_loss 0.9601, test_p 89.040, test_r 87.890, test_f1 88.460
+ INFO - 	 currently best f1 socre: 88.460 on epoch: 64 
+
+ INFO - Epoch 65, n_batch 300, loss 0.14767812192440033
+ INFO - Epoch 65, n_batch 600, loss 0.39937183260917664
+ INFO - epoch 65, learning_rate 0.00238
+ INFO - 	 valid_loss 0.7467, valid_p 93.070, valid_r 90.910, valid_f1 91.980
+ INFO - 	 test_loss 0.9694, test_p 89.170, test_r 87.570, test_f1 88.360
+ INFO - 	 currently best f1 socre: 88.460 on epoch: 64 
+
+ INFO - Epoch 66, n_batch 300, loss 0.2803146243095398
+ INFO - Epoch 66, n_batch 600, loss 0.40006715059280396
+ INFO - epoch 66, learning_rate 0.00235
+ INFO - 	 valid_loss 0.7581, valid_p 93.050, valid_r 90.780, valid_f1 91.900
+ INFO - 	 test_loss 0.9685, test_p 89.180, test_r 87.310, test_f1 88.230
+ INFO - 	 currently best f1 socre: 88.460 on epoch: 64 
+
+ INFO - Epoch 67, n_batch 300, loss 0.09481557458639145
+ INFO - Epoch 67, n_batch 600, loss 0.09222158044576645
+ INFO - epoch 67, learning_rate 0.00233
+ INFO - 	 valid_loss 0.7394, valid_p 92.710, valid_r 90.980, valid_f1 91.840
+ INFO - 	 test_loss 0.9476, test_p 89.140, test_r 87.750, test_f1 88.440
+ INFO - 	 currently best f1 socre: 88.460 on epoch: 64 
+
+ INFO - Epoch 68, n_batch 300, loss 1.6014404296875
+ INFO - Epoch 68, n_batch 600, loss 0.08095499873161316
+ INFO - epoch 68, learning_rate 0.00230
+ INFO - 	 valid_loss 0.7376, valid_p 92.690, valid_r 90.950, valid_f1 91.810
+ INFO - 	 test_loss 0.9575, test_p 88.800, test_r 87.620, test_f1 88.210
+ INFO - 	 currently best f1 socre: 88.460 on epoch: 64 
+
+ INFO - Epoch 69, n_batch 300, loss 0.13717855513095856
+ INFO - Epoch 69, n_batch 600, loss 0.05058237537741661
+ INFO - epoch 69, learning_rate 0.00227
+ INFO - 	 valid_loss 0.7645, valid_p 92.810, valid_r 90.780, valid_f1 91.780
+ INFO - 	 test_loss 0.9709, test_p 88.980, test_r 87.360, test_f1 88.160
+ INFO - 	 currently best f1 socre: 88.460 on epoch: 64 
+
+ INFO - Epoch 70, n_batch 300, loss 0.14139708876609802
+ INFO - Epoch 70, n_batch 600, loss 0.34661561250686646
+ INFO - epoch 70, learning_rate 0.00225
+ INFO - 	 valid_loss 0.7696, valid_p 93.120, valid_r 90.930, valid_f1 92.010
+ INFO - 	 test_loss 0.9890, test_p 89.160, test_r 87.200, test_f1 88.170
+ INFO - 	 currently best f1 socre: 88.460 on epoch: 64 
+
+ INFO - Epoch 71, n_batch 300, loss 0.4141749143600464
+ INFO - Epoch 71, n_batch 600, loss 0.9035968780517578
+ INFO - epoch 71, learning_rate 0.00222
+ INFO - 	 valid_loss 0.7482, valid_p 93.150, valid_r 91.130, valid_f1 92.130
+ INFO - 	 test_loss 0.9636, test_p 89.350, test_r 87.540, test_f1 88.440
+ INFO - 	 currently best f1 socre: 88.460 on epoch: 64 
+
+ INFO - Epoch 72, n_batch 300, loss 1.2871254682540894
+ INFO - Epoch 72, n_batch 600, loss 1.8010902404785156
+ INFO - epoch 72, learning_rate 0.00220
+ INFO - 	 valid_loss 0.7537, valid_p 92.740, valid_r 91.160, valid_f1 91.950
+ INFO - 	 test_loss 0.9953, test_p 88.620, test_r 87.450, test_f1 88.030
+ INFO - 	 currently best f1 socre: 88.460 on epoch: 64 
+
+ INFO - Epoch 73, n_batch 300, loss 0.5131790041923523
+ INFO - Epoch 73, n_batch 600, loss 0.777099609375
+ INFO - epoch 73, learning_rate 0.00217
+ INFO - 	 valid_loss 0.7648, valid_p 92.750, valid_r 91.080, valid_f1 91.910
+ INFO - 	 test_loss 0.9828, test_p 88.840, test_r 87.520, test_f1 88.170
+ INFO - 	 currently best f1 socre: 88.460 on epoch: 64 
+
+ INFO - Epoch 74, n_batch 300, loss 0.1624699980020523
+ INFO - Epoch 74, n_batch 600, loss 0.7187137603759766
+ INFO - epoch 74, learning_rate 0.00215
+ INFO - 	 valid_loss 0.7594, valid_p 92.890, valid_r 91.180, valid_f1 92.030
+ INFO - 	 test_loss 0.9665, test_p 89.240, test_r 87.920, test_f1 88.580
+ INFO - 	 currently best f1 socre: 88.580 on epoch: 74 
+
+ INFO - Epoch 75, n_batch 300, loss 0.04191996157169342
+ INFO - Epoch 75, n_batch 600, loss 0.39514362812042236
+ INFO - epoch 75, learning_rate 0.00213
+ INFO - 	 valid_loss 0.7350, valid_p 92.780, valid_r 91.450, valid_f1 92.110
+ INFO - 	 test_loss 0.9741, test_p 88.530, test_r 87.450, test_f1 87.980
+ INFO - 	 currently best f1 socre: 88.580 on epoch: 74 
+
+ INFO - Epoch 76, n_batch 300, loss 1.073100209236145
+ INFO - Epoch 76, n_batch 600, loss 0.23125305771827698
+ INFO - epoch 76, learning_rate 0.00211
+ INFO - 	 valid_loss 0.7297, valid_p 92.980, valid_r 91.200, valid_f1 92.080
+ INFO - 	 test_loss 0.9759, test_p 89.000, test_r 87.680, test_f1 88.330
+ INFO - 	 currently best f1 socre: 88.580 on epoch: 74 
+
+ INFO - Epoch 77, n_batch 300, loss 0.18235574662685394
+ INFO - Epoch 77, n_batch 600, loss 0.18396402895450592
+ INFO - epoch 77, learning_rate 0.00208
+ INFO - 	 valid_loss 0.7428, valid_p 92.880, valid_r 91.150, valid_f1 92.010
+ INFO - 	 test_loss 0.9750, test_p 89.030, test_r 87.800, test_f1 88.410
+ INFO - 	 currently best f1 socre: 88.580 on epoch: 74 
+
+ INFO - Epoch 78, n_batch 300, loss 0.9524246454238892
+ INFO - Epoch 78, n_batch 600, loss 0.44465839862823486
+ INFO - epoch 78, learning_rate 0.00206
+ INFO - 	 valid_loss 0.7573, valid_p 92.660, valid_r 91.180, valid_f1 91.920
+ INFO - 	 test_loss 0.9762, test_p 88.900, test_r 87.920, test_f1 88.410
+ INFO - 	 currently best f1 socre: 88.580 on epoch: 74 
+
+ INFO - Epoch 79, n_batch 300, loss 0.42424723505973816
+ INFO - Epoch 79, n_batch 600, loss 0.4640887677669525
+ INFO - epoch 79, learning_rate 0.00204
+ INFO - 	 valid_loss 0.7496, valid_p 93.080, valid_r 91.160, valid_f1 92.110
+ INFO - 	 test_loss 0.9733, test_p 89.270, test_r 87.680, test_f1 88.470
+ INFO - 	 currently best f1 socre: 88.580 on epoch: 74 
+
+ INFO - Epoch 80, n_batch 300, loss 0.05928700789809227
+ INFO - Epoch 80, n_batch 600, loss 0.3054458498954773
+ INFO - epoch 80, learning_rate 0.00202
+ INFO - 	 valid_loss 0.7441, valid_p 92.470, valid_r 90.910, valid_f1 91.680
+ INFO - 	 test_loss 0.9722, test_p 88.920, test_r 87.710, test_f1 88.310
+ INFO - 	 currently best f1 socre: 88.580 on epoch: 74 
+
+ INFO - Epoch 81, n_batch 300, loss 1.070993185043335
+ INFO - Epoch 81, n_batch 600, loss 0.8825206756591797
+ INFO - epoch 81, learning_rate 0.00200
+ INFO - 	 valid_loss 0.7484, valid_p 93.040, valid_r 91.150, valid_f1 92.090
+ INFO - 	 test_loss 0.9625, test_p 89.120, test_r 87.850, test_f1 88.480
+ INFO - 	 currently best f1 socre: 88.580 on epoch: 74 
+
+ INFO - Epoch 82, n_batch 300, loss 0.10463714599609375
+ INFO - Epoch 82, n_batch 600, loss 0.14363352954387665
+ INFO - epoch 82, learning_rate 0.00198
+ INFO - 	 valid_loss 0.7648, valid_p 92.780, valid_r 91.280, valid_f1 92.030
+ INFO - 	 test_loss 0.9914, test_p 88.770, test_r 87.730, test_f1 88.250
+ INFO - 	 currently best f1 socre: 88.580 on epoch: 74 
+
+ INFO - Epoch 83, n_batch 300, loss 0.06831563264131546
+ INFO - Epoch 83, n_batch 600, loss 0.2853190004825592
+ INFO - epoch 83, learning_rate 0.00196
+ INFO - 	 valid_loss 0.7442, valid_p 92.840, valid_r 91.230, valid_f1 92.030
+ INFO - 	 test_loss 0.9841, test_p 89.100, test_r 87.690, test_f1 88.390
+ INFO - 	 currently best f1 socre: 88.580 on epoch: 74 
+
+ INFO - Epoch 84, n_batch 300, loss 0.1439722627401352
+ INFO - Epoch 84, n_batch 600, loss 0.2488611787557602
+ INFO - epoch 84, learning_rate 0.00194
+ INFO - 	 valid_loss 0.7688, valid_p 92.840, valid_r 91.160, valid_f1 91.990
+ INFO - 	 test_loss 0.9963, test_p 89.220, test_r 87.750, test_f1 88.480
+ INFO - 	 currently best f1 socre: 88.580 on epoch: 74 
+
+ INFO - Epoch 85, n_batch 300, loss 1.2526711225509644
+ INFO - Epoch 85, n_batch 600, loss 1.3704986572265625
+ INFO - epoch 85, learning_rate 0.00192
+ INFO - 	 valid_loss 0.7669, valid_p 92.650, valid_r 91.180, valid_f1 91.910
+ INFO - 	 test_loss 1.0046, test_p 88.770, test_r 87.430, test_f1 88.090
+ INFO - 	 currently best f1 socre: 88.580 on epoch: 74 
+
+ INFO - Epoch 86, n_batch 300, loss 0.5369298458099365
+ INFO - Epoch 86, n_batch 600, loss 0.11439717561006546
+ INFO - epoch 86, learning_rate 0.00190
+ INFO - 	 valid_loss 0.7655, valid_p 92.920, valid_r 91.180, valid_f1 92.040
+ INFO - 	 test_loss 0.9933, test_p 89.220, test_r 87.590, test_f1 88.390
+ INFO - 	 currently best f1 socre: 88.580 on epoch: 74 
+
+ INFO - Epoch 87, n_batch 300, loss 0.06789042055606842
+ INFO - Epoch 87, n_batch 600, loss 0.28644728660583496
+ INFO - epoch 87, learning_rate 0.00189
+ INFO - 	 valid_loss 0.7335, valid_p 92.960, valid_r 91.570, valid_f1 92.260
+ INFO - 	 test_loss 0.9745, test_p 88.840, test_r 87.920, test_f1 88.380
+ INFO - 	 currently best f1 socre: 88.580 on epoch: 74 
+
+ INFO - Epoch 88, n_batch 300, loss 0.2531392276287079
+ INFO - Epoch 88, n_batch 600, loss 0.18355916440486908
+ INFO - epoch 88, learning_rate 0.00187
+ INFO - 	 valid_loss 0.7381, valid_p 92.770, valid_r 91.380, valid_f1 92.070
+ INFO - 	 test_loss 0.9778, test_p 88.860, test_r 87.710, test_f1 88.280
+ INFO - 	 currently best f1 socre: 88.580 on epoch: 74 
+
+ INFO - Epoch 89, n_batch 300, loss 0.0988260880112648
+ INFO - Epoch 89, n_batch 600, loss 0.3710886538028717
+ INFO - epoch 89, learning_rate 0.00185
+ INFO - 	 valid_loss 0.7523, valid_p 92.720, valid_r 91.270, valid_f1 91.990
+ INFO - 	 test_loss 0.9925, test_p 88.920, test_r 87.800, test_f1 88.360
+ INFO - 	 currently best f1 socre: 88.580 on epoch: 74 
+
+ INFO - Epoch 90, n_batch 300, loss 0.403939813375473
+ INFO - Epoch 90, n_batch 600, loss 0.316253662109375
+ INFO - epoch 90, learning_rate 0.00183
+ INFO - 	 valid_loss 0.7528, valid_p 92.830, valid_r 91.470, valid_f1 92.140
+ INFO - 	 test_loss 0.9909, test_p 88.790, test_r 87.660, test_f1 88.220
+ INFO - 	 currently best f1 socre: 88.580 on epoch: 74 
+
+ INFO - Epoch 91, n_batch 300, loss 0.9539012908935547
+ INFO - Epoch 91, n_batch 600, loss 0.6193504333496094
+ INFO - epoch 91, learning_rate 0.00182
+ INFO - 	 valid_loss 0.7452, valid_p 92.900, valid_r 91.200, valid_f1 92.040
+ INFO - 	 test_loss 0.9969, test_p 88.910, test_r 87.570, test_f1 88.230
+ INFO - 	 currently best f1 socre: 88.580 on epoch: 74 
+
+ INFO - Epoch 92, n_batch 300, loss 0.39165547490119934
+ INFO - Epoch 92, n_batch 600, loss 0.10128478705883026
+ INFO - epoch 92, learning_rate 0.00180
+ INFO - 	 valid_loss 0.7785, valid_p 92.980, valid_r 91.110, valid_f1 92.040
+ INFO - 	 test_loss 0.9975, test_p 89.330, test_r 87.640, test_f1 88.480
+ INFO - 	 currently best f1 socre: 88.580 on epoch: 74 
+
+ INFO - Epoch 93, n_batch 300, loss 0.6458358764648438
+ INFO - Epoch 93, n_batch 600, loss 1.12646484375
+ INFO - epoch 93, learning_rate 0.00179
+ INFO - 	 valid_loss 0.7628, valid_p 93.090, valid_r 91.130, valid_f1 92.100
+ INFO - 	 test_loss 0.9904, test_p 89.430, test_r 87.660, test_f1 88.540
+ INFO - 	 currently best f1 socre: 88.580 on epoch: 74 
+
+ INFO - Epoch 94, n_batch 300, loss 0.40838977694511414
+ INFO - Epoch 94, n_batch 600, loss 0.06418050080537796
+ INFO - epoch 94, learning_rate 0.00177
+ INFO - 	 valid_loss 0.7484, valid_p 93.140, valid_r 91.400, valid_f1 92.260
+ INFO - 	 test_loss 0.9876, test_p 89.200, test_r 87.850, test_f1 88.520
+ INFO - 	 currently best f1 socre: 88.580 on epoch: 74 
+
+ INFO - Epoch 95, n_batch 300, loss 0.09109700471162796
+ INFO - Epoch 95, n_batch 600, loss 0.5360701680183411
+ INFO - epoch 95, learning_rate 0.00175
+ INFO - 	 valid_loss 0.7434, valid_p 93.160, valid_r 91.200, valid_f1 92.170
+ INFO - 	 test_loss 0.9819, test_p 89.400, test_r 87.620, test_f1 88.500
+ INFO - 	 currently best f1 socre: 88.580 on epoch: 74 
+
+ INFO - Epoch 96, n_batch 300, loss 0.1386662870645523
+ INFO - Epoch 96, n_batch 600, loss 0.22780252993106842
+ INFO - epoch 96, learning_rate 0.00174
+ INFO - 	 valid_loss 0.7376, valid_p 92.980, valid_r 91.430, valid_f1 92.200
+ INFO - 	 test_loss 0.9776, test_p 89.060, test_r 87.940, test_f1 88.500
+ INFO - 	 currently best f1 socre: 88.580 on epoch: 74 
+
+ INFO - Epoch 97, n_batch 300, loss 0.34506428241729736
+ INFO - Epoch 97, n_batch 600, loss 0.13748423755168915
+ INFO - epoch 97, learning_rate 0.00172
+ INFO - 	 valid_loss 0.7526, valid_p 93.350, valid_r 91.200, valid_f1 92.260
+ INFO - 	 test_loss 0.9902, test_p 89.610, test_r 87.640, test_f1 88.610
+ INFO - 	 currently best f1 socre: 88.610 on epoch: 97 
+
+ INFO - Epoch 98, n_batch 300, loss 0.5420708656311035
+ INFO - Epoch 98, n_batch 600, loss 0.8663648366928101
+ INFO - epoch 98, learning_rate 0.00171
+ INFO - 	 valid_loss 0.8150, valid_p 93.220, valid_r 91.110, valid_f1 92.150
+ INFO - 	 test_loss 1.0511, test_p 89.070, test_r 87.270, test_f1 88.160
+ INFO - 	 currently best f1 socre: 88.610 on epoch: 97 
+
+ INFO - Epoch 99, n_batch 300, loss 0.9374675750732422
+ INFO - Epoch 99, n_batch 600, loss 0.24733072519302368
+ INFO - epoch 99, learning_rate 0.00169
+ INFO - 	 valid_loss 0.7587, valid_p 93.330, valid_r 91.150, valid_f1 92.230
+ INFO - 	 test_loss 1.0205, test_p 89.350, test_r 87.230, test_f1 88.280
+ INFO - 	 currently best f1 socre: 88.610 on epoch: 97 
+
+ INFO - Epoch 100, n_batch 300, loss 0.4825401306152344
+ INFO - Epoch 100, n_batch 600, loss 1.7174152135849
+ INFO - epoch 100, learning_rate 0.00168
+ INFO - 	 valid_loss 0.7571, valid_p 92.990, valid_r 91.370, valid_f1 92.170
+ INFO - 	 test_loss 1.0022, test_p 89.290, test_r 88.000, test_f1 88.640
+ INFO - 	 currently best f1 socre: 88.640 on epoch: 100 
+
+ INFO - Epoch 101, n_batch 300, loss 0.09978179633617401
+ INFO - Epoch 101, n_batch 600, loss 0.6126251220703125
+ INFO - epoch 101, learning_rate 0.00167
+ INFO - 	 valid_loss 0.7610, valid_p 93.090, valid_r 91.330, valid_f1 92.200
+ INFO - 	 test_loss 1.0058, test_p 89.320, test_r 87.920, test_f1 88.620
+ INFO - 	 currently best f1 socre: 88.640 on epoch: 100 
+
+ INFO - Epoch 102, n_batch 300, loss 0.04430084303021431
+ INFO - Epoch 102, n_batch 600, loss 0.07639973610639572
+ INFO - epoch 102, learning_rate 0.00165
+ INFO - 	 valid_loss 0.7454, valid_p 92.940, valid_r 91.330, valid_f1 92.130
+ INFO - 	 test_loss 0.9948, test_p 88.900, test_r 87.780, test_f1 88.340
+ INFO - 	 currently best f1 socre: 88.640 on epoch: 100 
+
+ INFO - Epoch 103, n_batch 300, loss 0.6942808628082275
+ INFO - Epoch 103, n_batch 600, loss 0.8756833076477051
+ INFO - epoch 103, learning_rate 0.00164
+ INFO - 	 valid_loss 0.7716, valid_p 93.090, valid_r 91.200, valid_f1 92.140
+ INFO - 	 test_loss 1.0234, test_p 89.330, test_r 87.770, test_f1 88.540
+ INFO - 	 currently best f1 socre: 88.640 on epoch: 100 
+
+ INFO - Epoch 104, n_batch 300, loss 0.2263341248035431
+ INFO - Epoch 104, n_batch 600, loss 0.12738901376724243
+ INFO - epoch 104, learning_rate 0.00163
+ INFO - 	 valid_loss 0.8094, valid_p 93.210, valid_r 91.050, valid_f1 92.120
+ INFO - 	 test_loss 1.0302, test_p 89.640, test_r 87.520, test_f1 88.570
+ INFO - 	 currently best f1 socre: 88.640 on epoch: 100 
+
+ INFO - Epoch 105, n_batch 300, loss 0.3986470401287079
+ INFO - Epoch 105, n_batch 600, loss 0.6965267658233643
+ INFO - epoch 105, learning_rate 0.00161
+ INFO - 	 valid_loss 0.7958, valid_p 92.930, valid_r 91.100, valid_f1 92.000
+ INFO - 	 test_loss 1.0186, test_p 89.450, test_r 87.620, test_f1 88.530
+ INFO - 	 currently best f1 socre: 88.640 on epoch: 100 
+
+ INFO - Epoch 106, n_batch 300, loss 0.0788421630859375
+ INFO - Epoch 106, n_batch 600, loss 0.17246145009994507
+ INFO - epoch 106, learning_rate 0.00160
+ INFO - 	 valid_loss 0.7808, valid_p 92.780, valid_r 91.080, valid_f1 91.920
+ INFO - 	 test_loss 1.0178, test_p 89.420, test_r 87.840, test_f1 88.620
+ INFO - 	 currently best f1 socre: 88.640 on epoch: 100 
+
+ INFO - Epoch 107, n_batch 300, loss 0.11090240627527237
+ INFO - Epoch 107, n_batch 600, loss 0.2900339663028717
+ INFO - epoch 107, learning_rate 0.00159
+ INFO - 	 valid_loss 0.7962, valid_p 92.940, valid_r 91.110, valid_f1 92.020
+ INFO - 	 test_loss 1.0179, test_p 89.680, test_r 87.820, test_f1 88.740
+ INFO - 	 currently best f1 socre: 88.740 on epoch: 107 
+
+ INFO - Epoch 108, n_batch 300, loss 0.47119495272636414
+ INFO - Epoch 108, n_batch 600, loss 0.10881449282169342
+ INFO - epoch 108, learning_rate 0.00157
+ INFO - 	 valid_loss 0.7685, valid_p 92.780, valid_r 91.270, valid_f1 92.020
+ INFO - 	 test_loss 1.0000, test_p 89.390, test_r 88.000, test_f1 88.690
+ INFO - 	 currently best f1 socre: 88.740 on epoch: 107 
+
+ INFO - Epoch 109, n_batch 300, loss 0.05794474110007286
+ INFO - Epoch 109, n_batch 600, loss 1.067535400390625
+ INFO - epoch 109, learning_rate 0.00156
+ INFO - 	 valid_loss 0.7580, valid_p 93.330, valid_r 91.110, valid_f1 92.210
+ INFO - 	 test_loss 0.9889, test_p 89.970, test_r 87.960, test_f1 88.950
+ INFO - 	 currently best f1 socre: 88.950 on epoch: 109 
+
+ INFO - Epoch 110, n_batch 300, loss 1.1686965227127075
+ INFO - Epoch 110, n_batch 600, loss 1.2383136749267578
+ INFO - epoch 110, learning_rate 0.00155
+ INFO - 	 valid_loss 0.7659, valid_p 92.900, valid_r 91.320, valid_f1 92.100
+ INFO - 	 test_loss 0.9949, test_p 89.340, test_r 88.030, test_f1 88.680
+ INFO - 	 currently best f1 socre: 88.950 on epoch: 109 
+
+ INFO - Epoch 111, n_batch 300, loss 0.9290114641189575
+ INFO - Epoch 111, n_batch 600, loss 0.10157673805952072
+ INFO - epoch 111, learning_rate 0.00154
+ INFO - 	 valid_loss 0.7868, valid_p 92.780, valid_r 91.100, valid_f1 91.930
+ INFO - 	 test_loss 1.0106, test_p 89.370, test_r 87.820, test_f1 88.590
+ INFO - 	 currently best f1 socre: 88.950 on epoch: 109 
+
+ INFO - Epoch 112, n_batch 300, loss 1.3528671264648438
+ INFO - Epoch 112, n_batch 600, loss 0.245269775390625
+ INFO - epoch 112, learning_rate 0.00153
+ INFO - 	 valid_loss 0.7923, valid_p 92.980, valid_r 90.960, valid_f1 91.960
+ INFO - 	 test_loss 1.0306, test_p 89.220, test_r 87.450, test_f1 88.320
+ INFO - 	 currently best f1 socre: 88.950 on epoch: 109 
+
+ INFO - Epoch 113, n_batch 300, loss 0.06272430717945099
+ INFO - Epoch 113, n_batch 600, loss 0.14712728559970856
+ INFO - epoch 113, learning_rate 0.00152
+ INFO - 	 valid_loss 0.7575, valid_p 92.810, valid_r 91.300, valid_f1 92.050
+ INFO - 	 test_loss 1.0060, test_p 89.110, test_r 87.820, test_f1 88.460
+ INFO - 	 currently best f1 socre: 88.950 on epoch: 109 
+
+ INFO - Epoch 114, n_batch 300, loss 0.5070511102676392
+ INFO - Epoch 114, n_batch 600, loss 1.0831298828125
+ INFO - epoch 114, learning_rate 0.00150
+ INFO - 	 valid_loss 0.7783, valid_p 93.160, valid_r 91.250, valid_f1 92.200
+ INFO - 	 test_loss 1.0111, test_p 89.420, test_r 87.710, test_f1 88.560
+ INFO - 	 currently best f1 socre: 88.950 on epoch: 109 
+
+ INFO - Epoch 115, n_batch 300, loss 0.4277472198009491
+ INFO - Epoch 115, n_batch 600, loss 0.3872995972633362
+ INFO - epoch 115, learning_rate 0.00149
+ INFO - 	 valid_loss 0.7514, valid_p 93.120, valid_r 91.380, valid_f1 92.240
+ INFO - 	 test_loss 0.9905, test_p 89.430, test_r 87.960, test_f1 88.690
+ INFO - 	 currently best f1 socre: 88.950 on epoch: 109 
+
+ INFO - Epoch 116, n_batch 300, loss 1.185388207435608
+ INFO - Epoch 116, n_batch 600, loss 0.3679860532283783
+ INFO - epoch 116, learning_rate 0.00148
+ INFO - 	 valid_loss 0.7475, valid_p 93.040, valid_r 91.520, valid_f1 92.270
+ INFO - 	 test_loss 0.9954, test_p 89.090, test_r 88.080, test_f1 88.590
+ INFO - 	 currently best f1 socre: 88.950 on epoch: 109 
+
+ INFO - Epoch 117, n_batch 300, loss 0.36348825693130493
+ INFO - Epoch 117, n_batch 600, loss 1.1131420135498047
+ INFO - epoch 117, learning_rate 0.00147
+ INFO - 	 valid_loss 0.7727, valid_p 93.050, valid_r 91.230, valid_f1 92.130
+ INFO - 	 test_loss 1.0188, test_p 89.410, test_r 87.730, test_f1 88.560
+ INFO - 	 currently best f1 socre: 88.950 on epoch: 109 
+
+ INFO - Epoch 118, n_batch 300, loss 0.47172343730926514
+ INFO - Epoch 118, n_batch 600, loss 0.22480621933937073
+ INFO - epoch 118, learning_rate 0.00146
+ INFO - 	 valid_loss 0.7720, valid_p 92.870, valid_r 91.230, valid_f1 92.050
+ INFO - 	 test_loss 1.0087, test_p 89.360, test_r 88.000, test_f1 88.670
+ INFO - 	 currently best f1 socre: 88.950 on epoch: 109 
+
+ INFO - Epoch 119, n_batch 300, loss 0.1444452852010727
+ INFO - Epoch 119, n_batch 600, loss 0.1692713350057602
+ INFO - epoch 119, learning_rate 0.00145
+ INFO - 	 valid_loss 0.7662, valid_p 92.750, valid_r 91.300, valid_f1 92.020
+ INFO - 	 test_loss 1.0109, test_p 89.460, test_r 88.030, test_f1 88.740
+ INFO - 	 currently best f1 socre: 88.950 on epoch: 109 
+
+ INFO - Epoch 120, n_batch 300, loss 0.0971323624253273
+ INFO - Epoch 120, n_batch 600, loss 0.12380218505859375
+ INFO - epoch 120, learning_rate 0.00144
+ INFO - 	 valid_loss 0.7673, valid_p 92.940, valid_r 91.250, valid_f1 92.090
+ INFO - 	 test_loss 1.0192, test_p 89.450, test_r 87.800, test_f1 88.620
+ INFO - 	 currently best f1 socre: 88.950 on epoch: 109 
+
+ INFO - Epoch 121, n_batch 300, loss 0.6164302825927734
+ INFO - Epoch 121, n_batch 600, loss 0.24867044389247894
+ INFO - epoch 121, learning_rate 0.00143
+ INFO - 	 valid_loss 0.7835, valid_p 92.770, valid_r 91.160, valid_f1 91.960
+ INFO - 	 test_loss 1.0235, test_p 89.440, test_r 87.840, test_f1 88.630
+ INFO - 	 currently best f1 socre: 88.950 on epoch: 109 
+
+ INFO - Epoch 122, n_batch 300, loss 0.7659473419189453
+ INFO - Epoch 122, n_batch 600, loss 0.19960734248161316
+ INFO - epoch 122, learning_rate 0.00142
+ INFO - 	 valid_loss 0.7707, valid_p 92.600, valid_r 91.230, valid_f1 91.910
+ INFO - 	 test_loss 1.0164, test_p 89.240, test_r 88.070, test_f1 88.650
+ INFO - 	 currently best f1 socre: 88.950 on epoch: 109 
+
+ INFO - Epoch 123, n_batch 300, loss 0.35066884756088257
+ INFO - Epoch 123, n_batch 600, loss 0.2778666317462921
+ INFO - epoch 123, learning_rate 0.00141
+ INFO - 	 valid_loss 0.7695, valid_p 92.780, valid_r 91.220, valid_f1 91.990
+ INFO - 	 test_loss 1.0157, test_p 89.390, test_r 87.980, test_f1 88.680
+ INFO - 	 currently best f1 socre: 88.950 on epoch: 109 
+
+ INFO - Epoch 124, n_batch 300, loss 0.6343846917152405
+ INFO - Epoch 124, n_batch 600, loss 0.5621070861816406
+ INFO - epoch 124, learning_rate 0.00140
+ INFO - 	 valid_loss 0.7710, valid_p 93.080, valid_r 91.200, valid_f1 92.130
+ INFO - 	 test_loss 1.0212, test_p 89.540, test_r 87.890, test_f1 88.710
+ INFO - 	 currently best f1 socre: 88.950 on epoch: 109 
+
+ INFO - Epoch 125, n_batch 300, loss 0.37600353360176086
+ INFO - Epoch 125, n_batch 600, loss 0.1269933134317398
+ INFO - epoch 125, learning_rate 0.00139
+ INFO - 	 valid_loss 0.7778, valid_p 93.050, valid_r 91.230, valid_f1 92.130
+ INFO - 	 test_loss 1.0188, test_p 89.430, test_r 87.680, test_f1 88.550
+ INFO - 	 currently best f1 socre: 88.950 on epoch: 109 
+
+ INFO - Epoch 126, n_batch 300, loss 0.5333589315414429
+ INFO - Epoch 126, n_batch 600, loss 0.6761715412139893
+ INFO - epoch 126, learning_rate 0.00138
+ INFO - 	 valid_loss 0.7589, valid_p 93.060, valid_r 91.330, valid_f1 92.190
+ INFO - 	 test_loss 1.0031, test_p 89.500, test_r 87.960, test_f1 88.720
+ INFO - 	 currently best f1 socre: 88.950 on epoch: 109 
+
+ INFO - Epoch 127, n_batch 300, loss 0.13046468794345856
+ INFO - Epoch 127, n_batch 600, loss 0.5892318487167358
+ INFO - epoch 127, learning_rate 0.00137
+ INFO - 	 valid_loss 0.7708, valid_p 92.800, valid_r 91.280, valid_f1 92.030
+ INFO - 	 test_loss 1.0198, test_p 89.180, test_r 87.850, test_f1 88.510
+ INFO - 	 currently best f1 socre: 88.950 on epoch: 109 
+
+ INFO - Epoch 128, n_batch 300, loss 0.5379186272621155
+ INFO - Epoch 128, n_batch 600, loss 0.30164796113967896
+ INFO - epoch 128, learning_rate 0.00136
+ INFO - 	 valid_loss 0.7720, valid_p 93.140, valid_r 91.350, valid_f1 92.230
+ INFO - 	 test_loss 1.0233, test_p 89.290, test_r 87.780, test_f1 88.530
+ INFO - 	 currently best f1 socre: 88.950 on epoch: 109 
+
+ INFO - Epoch 129, n_batch 300, loss 1.2532482147216797
+ INFO - Epoch 129, n_batch 600, loss 0.4845291078090668
+ INFO - epoch 129, learning_rate 0.00135
+ INFO - 	 valid_loss 0.7733, valid_p 93.290, valid_r 91.480, valid_f1 92.380
+ INFO - 	 test_loss 1.0313, test_p 89.260, test_r 87.680, test_f1 88.460
+ INFO - 	 currently best f1 socre: 88.950 on epoch: 109 
+
+ INFO - Epoch 130, n_batch 300, loss 0.11376292258501053
+ INFO - Epoch 130, n_batch 600, loss 0.206074520945549
+ INFO - epoch 130, learning_rate 0.00134
+ INFO - 	 valid_loss 0.7739, valid_p 93.100, valid_r 91.230, valid_f1 92.150
+ INFO - 	 test_loss 1.0188, test_p 89.490, test_r 87.850, test_f1 88.660
+ INFO - 	 currently best f1 socre: 88.950 on epoch: 109 
+
+ INFO - Epoch 131, n_batch 300, loss 0.07538239657878876
+ INFO - Epoch 131, n_batch 600, loss 1.1217519044876099
+ INFO - epoch 131, learning_rate 0.00133
+ INFO - 	 valid_loss 0.7712, valid_p 92.870, valid_r 91.370, valid_f1 92.110
+ INFO - 	 test_loss 1.0133, test_p 89.290, test_r 88.010, test_f1 88.650
+ INFO - 	 currently best f1 socre: 88.950 on epoch: 109 
+
+ INFO - Epoch 132, n_batch 300, loss 1.0778599977493286
+ INFO - Epoch 132, n_batch 600, loss 0.20759175717830658
+ INFO - epoch 132, learning_rate 0.00132
+ INFO - 	 valid_loss 0.7712, valid_p 93.110, valid_r 91.220, valid_f1 92.150
+ INFO - 	 test_loss 1.0135, test_p 89.640, test_r 87.920, test_f1 88.770
+ INFO - 	 currently best f1 socre: 88.950 on epoch: 109 
+
+ INFO - Epoch 133, n_batch 300, loss 0.3033920228481293
+ INFO - Epoch 133, n_batch 600, loss 0.6811587810516357
+ INFO - epoch 133, learning_rate 0.00132
+ INFO - 	 valid_loss 0.7853, valid_p 93.340, valid_r 91.320, valid_f1 92.320
+ INFO - 	 test_loss 1.0204, test_p 89.810, test_r 88.050, test_f1 88.920
+ INFO - 	 currently best f1 socre: 88.950 on epoch: 109 
+
+ INFO - Epoch 134, n_batch 300, loss 0.6712074279785156
+ INFO - Epoch 134, n_batch 600, loss 0.06844126433134079
+ INFO - epoch 134, learning_rate 0.00131
+ INFO - 	 valid_loss 0.7577, valid_p 93.070, valid_r 91.500, valid_f1 92.280
+ INFO - 	 test_loss 1.0028, test_p 89.510, test_r 88.240, test_f1 88.870
+ INFO - 	 currently best f1 socre: 88.950 on epoch: 109 
+
+ INFO - Epoch 135, n_batch 300, loss 0.9160798788070679
+ INFO - Epoch 135, n_batch 600, loss 0.7161636352539062
+ INFO - epoch 135, learning_rate 0.00130
+ INFO - 	 valid_loss 0.7770, valid_p 93.090, valid_r 91.380, valid_f1 92.230
+ INFO - 	 test_loss 1.0198, test_p 89.410, test_r 87.780, test_f1 88.590
+ INFO - 	 currently best f1 socre: 88.950 on epoch: 109 
+
+ INFO - Epoch 136, n_batch 300, loss 0.37775981426239014
+ INFO - Epoch 136, n_batch 600, loss 1.0905990600585938
+ INFO - epoch 136, learning_rate 0.00129
+ INFO - 	 valid_loss 0.7705, valid_p 93.080, valid_r 91.470, valid_f1 92.270
+ INFO - 	 test_loss 1.0169, test_p 89.650, test_r 88.050, test_f1 88.840
+ INFO - 	 currently best f1 socre: 88.950 on epoch: 109 
+
+ INFO - Epoch 137, n_batch 300, loss 0.920868456363678
+ INFO - Epoch 137, n_batch 600, loss 0.08482106775045395
+ INFO - epoch 137, learning_rate 0.00128
+ INFO - 	 valid_loss 0.7763, valid_p 93.130, valid_r 91.500, valid_f1 92.310
+ INFO - 	 test_loss 1.0177, test_p 89.580, test_r 88.100, test_f1 88.830
+ INFO - 	 currently best f1 socre: 88.950 on epoch: 109 
+
+ INFO - Epoch 138, n_batch 300, loss 1.2110023498535156
+ INFO - Epoch 138, n_batch 600, loss 0.1837977021932602
+ INFO - epoch 138, learning_rate 0.00127
+ INFO - 	 valid_loss 0.7662, valid_p 92.920, valid_r 91.480, valid_f1 92.200
+ INFO - 	 test_loss 1.0132, test_p 89.370, test_r 87.940, test_f1 88.650
+ INFO - 	 currently best f1 socre: 88.950 on epoch: 109 
+
+ INFO - Epoch 139, n_batch 300, loss 1.0426826477050781
+ INFO - Epoch 139, n_batch 600, loss 0.8113884925842285
+ INFO - epoch 139, learning_rate 0.00127
+ INFO - 	 valid_loss 0.7768, valid_p 93.220, valid_r 91.590, valid_f1 92.390
+ INFO - 	 test_loss 1.0166, test_p 89.340, test_r 88.160, test_f1 88.740
+ INFO - 	 currently best f1 socre: 88.950 on epoch: 109 
+
+ INFO - Epoch 140, n_batch 300, loss 0.4549274444580078
+ INFO - Epoch 140, n_batch 600, loss 0.31194865703582764
+ INFO - epoch 140, learning_rate 0.00126
+ INFO - 	 valid_loss 0.7558, valid_p 92.990, valid_r 91.570, valid_f1 92.280
+ INFO - 	 test_loss 1.0069, test_p 89.320, test_r 88.300, test_f1 88.810
+ INFO - 	 currently best f1 socre: 88.950 on epoch: 109 
+
+ INFO - Epoch 141, n_batch 300, loss 0.10563405603170395
+ INFO - Epoch 141, n_batch 600, loss 0.17975616455078125
+ INFO - epoch 141, learning_rate 0.00125
+ INFO - 	 valid_loss 0.7856, valid_p 93.070, valid_r 91.280, valid_f1 92.170
+ INFO - 	 test_loss 1.0244, test_p 89.720, test_r 87.910, test_f1 88.800
+ INFO - 	 currently best f1 socre: 88.950 on epoch: 109 
+
+ INFO - Epoch 142, n_batch 300, loss 1.2786998748779297
+ INFO - Epoch 142, n_batch 600, loss 0.15783539414405823
+ INFO - epoch 142, learning_rate 0.00124
+ INFO - 	 valid_loss 0.7879, valid_p 93.010, valid_r 91.180, valid_f1 92.090
+ INFO - 	 test_loss 1.0495, test_p 89.550, test_r 87.820, test_f1 88.670
+ INFO - 	 currently best f1 socre: 88.950 on epoch: 109 
+
+ INFO - Epoch 143, n_batch 300, loss 0.2572484314441681
+ INFO - Epoch 143, n_batch 600, loss 0.20894266664981842
+ INFO - epoch 143, learning_rate 0.00123
+ INFO - 	 valid_loss 0.7808, valid_p 93.010, valid_r 91.370, valid_f1 92.180
+ INFO - 	 test_loss 1.0305, test_p 89.640, test_r 88.070, test_f1 88.850
+ INFO - 	 currently best f1 socre: 88.950 on epoch: 109 
+
+ INFO - Epoch 144, n_batch 300, loss 0.3449757993221283
+ INFO - Epoch 144, n_batch 600, loss 0.5978596806526184
+ INFO - epoch 144, learning_rate 0.00123
+ INFO - 	 valid_loss 0.7962, valid_p 93.330, valid_r 91.570, valid_f1 92.440
+ INFO - 	 test_loss 1.0464, test_p 89.630, test_r 88.000, test_f1 88.810
+ INFO - 	 currently best f1 socre: 88.950 on epoch: 109 
+
+ INFO - Epoch 145, n_batch 300, loss 1.1248321533203125
+ INFO - Epoch 145, n_batch 600, loss 0.04217529296875
+ INFO - epoch 145, learning_rate 0.00122
+ INFO - 	 valid_loss 0.7906, valid_p 93.300, valid_r 91.420, valid_f1 92.350
+ INFO - 	 test_loss 1.0323, test_p 89.590, test_r 87.940, test_f1 88.760
+ INFO - 	 currently best f1 socre: 88.950 on epoch: 109 
+
+ INFO - Epoch 146, n_batch 300, loss 0.7245129942893982
+ INFO - Epoch 146, n_batch 600, loss 1.7737274169921875
+ INFO - epoch 146, learning_rate 0.00121
+ INFO - 	 valid_loss 0.7594, valid_p 93.090, valid_r 91.570, valid_f1 92.320
+ INFO - 	 test_loss 1.0217, test_p 89.500, test_r 88.100, test_f1 88.790
+ INFO - 	 currently best f1 socre: 88.950 on epoch: 109 
+
+ INFO - Epoch 147, n_batch 300, loss 0.2084915190935135
+ INFO - Epoch 147, n_batch 600, loss 1.0753364562988281
+ INFO - epoch 147, learning_rate 0.00120
+ INFO - 	 valid_loss 0.7780, valid_p 93.150, valid_r 91.370, valid_f1 92.250
+ INFO - 	 test_loss 1.0322, test_p 89.470, test_r 87.820, test_f1 88.630
+ INFO - 	 currently best f1 socre: 88.950 on epoch: 109 
+
+ INFO - Epoch 148, n_batch 300, loss 0.01813557930290699
+ INFO - Epoch 148, n_batch 600, loss 1.347696304321289
+ INFO - epoch 148, learning_rate 0.00120
+ INFO - 	 valid_loss 0.7847, valid_p 93.120, valid_r 91.500, valid_f1 92.300
+ INFO - 	 test_loss 1.0353, test_p 89.260, test_r 87.890, test_f1 88.570
+ INFO - 	 currently best f1 socre: 88.950 on epoch: 109 
+
+ INFO - Epoch 149, n_batch 300, loss 0.26413649320602417
+ INFO - Epoch 149, n_batch 600, loss 0.3490028381347656
+ INFO - epoch 149, learning_rate 0.00119
+ INFO - 	 valid_loss 0.7880, valid_p 93.190, valid_r 91.480, valid_f1 92.330
+ INFO - 	 test_loss 1.0293, test_p 89.550, test_r 87.960, test_f1 88.750
+ INFO - 	 currently best f1 socre: 88.950 on epoch: 109 
+
+ INFO - Epoch 150, n_batch 300, loss 0.30105236172676086
+ INFO - Epoch 150, n_batch 600, loss 0.7633169293403625
+ INFO - epoch 150, learning_rate 0.00118
+ INFO - 	 valid_loss 0.7747, valid_p 92.920, valid_r 91.470, valid_f1 92.190
+ INFO - 	 test_loss 1.0291, test_p 89.550, test_r 88.190, test_f1 88.870
+ INFO - 	 currently best f1 socre: 88.950 on epoch: 109 
+
+ INFO - Epoch 151, n_batch 300, loss 0.12314758449792862
+ INFO - Epoch 151, n_batch 600, loss 0.4983963072299957
+ INFO - epoch 151, learning_rate 0.00118
+ INFO - 	 valid_loss 0.7780, valid_p 93.080, valid_r 91.450, valid_f1 92.260
+ INFO - 	 test_loss 1.0338, test_p 89.420, test_r 87.820, test_f1 88.610
+ INFO - 	 currently best f1 socre: 88.950 on epoch: 109 
+
+ INFO - Epoch 152, n_batch 300, loss 0.08040262758731842
+ INFO - Epoch 152, n_batch 600, loss 0.27185362577438354
+ INFO - epoch 152, learning_rate 0.00117
+ INFO - 	 valid_loss 0.7740, valid_p 92.940, valid_r 91.450, valid_f1 92.190
+ INFO - 	 test_loss 1.0309, test_p 89.370, test_r 87.940, test_f1 88.650
+ INFO - 	 currently best f1 socre: 88.950 on epoch: 109 
+
+ INFO - Epoch 153, n_batch 300, loss 0.7706565856933594
+ INFO - Epoch 153, n_batch 600, loss 0.4404730498790741
+ INFO - epoch 153, learning_rate 0.00116
+ INFO - 	 valid_loss 0.7911, valid_p 93.220, valid_r 91.470, valid_f1 92.340
+ INFO - 	 test_loss 1.0274, test_p 89.700, test_r 87.890, test_f1 88.790
+ INFO - 	 currently best f1 socre: 88.950 on epoch: 109 
+
+ INFO - Epoch 154, n_batch 300, loss 0.21956786513328552
+ INFO - Epoch 154, n_batch 600, loss 0.12364400178194046
+ INFO - epoch 154, learning_rate 0.00116
+ INFO - 	 valid_loss 0.7650, valid_p 93.140, valid_r 91.640, valid_f1 92.380
+ INFO - 	 test_loss 1.0167, test_p 89.610, test_r 88.140, test_f1 88.870
+ INFO - 	 currently best f1 socre: 88.950 on epoch: 109 
+
+ INFO - Epoch 155, n_batch 300, loss 0.78581303358078
+ INFO - Epoch 155, n_batch 600, loss 0.5201480388641357
+ INFO - epoch 155, learning_rate 0.00115
+ INFO - 	 valid_loss 0.7767, valid_p 92.960, valid_r 91.600, valid_f1 92.280
+ INFO - 	 test_loss 1.0372, test_p 89.240, test_r 87.980, test_f1 88.610
+ INFO - 	 currently best f1 socre: 88.950 on epoch: 109 
+
+ INFO - Epoch 156, n_batch 300, loss 0.19387105107307434
+ INFO - Epoch 156, n_batch 600, loss 0.968328058719635
+ INFO - epoch 156, learning_rate 0.00114
+ INFO - 	 valid_loss 0.7781, valid_p 92.990, valid_r 91.570, valid_f1 92.280
+ INFO - 	 test_loss 1.0406, test_p 89.280, test_r 88.140, test_f1 88.700
+ INFO - 	 currently best f1 socre: 88.950 on epoch: 109 
+
+ INFO - Epoch 157, n_batch 300, loss 0.3584209978580475
+ INFO - Epoch 157, n_batch 600, loss 0.42459461092948914
+ INFO - epoch 157, learning_rate 0.00114
+ INFO - 	 valid_loss 0.7759, valid_p 93.350, valid_r 91.620, valid_f1 92.470
+ INFO - 	 test_loss 1.0256, test_p 89.540, test_r 87.920, test_f1 88.730
+ INFO - 	 currently best f1 socre: 88.950 on epoch: 109 
+
+ INFO - Epoch 158, n_batch 300, loss 1.0292816162109375
+ INFO - Epoch 158, n_batch 600, loss 0.17101338505744934
+ INFO - epoch 158, learning_rate 0.00113
+ INFO - 	 valid_loss 0.7875, valid_p 93.370, valid_r 91.450, valid_f1 92.400
+ INFO - 	 test_loss 1.0443, test_p 89.650, test_r 87.910, test_f1 88.770
+ INFO - 	 currently best f1 socre: 88.950 on epoch: 109 
+
+ INFO - Epoch 159, n_batch 300, loss 1.1348838806152344
+ INFO - Epoch 159, n_batch 600, loss 0.02489827387034893
+ INFO - epoch 159, learning_rate 0.00112
+ INFO - 	 valid_loss 0.7900, valid_p 93.020, valid_r 91.450, valid_f1 92.230
+ INFO - 	 test_loss 1.0433, test_p 89.380, test_r 87.910, test_f1 88.640
+ INFO - 	 currently best f1 socre: 88.950 on epoch: 109 
+
+ INFO - Epoch 160, n_batch 300, loss 0.48183441162109375
+ INFO - Epoch 160, n_batch 600, loss 0.46182385087013245
+ INFO - epoch 160, learning_rate 0.00112
+ INFO - 	 valid_loss 0.7810, valid_p 93.170, valid_r 91.600, valid_f1 92.380
+ INFO - 	 test_loss 1.0291, test_p 89.460, test_r 88.050, test_f1 88.750
+ INFO - 	 currently best f1 socre: 88.950 on epoch: 109 
+
+ INFO - Epoch 161, n_batch 300, loss 1.0119514465332031
+ INFO - Epoch 161, n_batch 600, loss 0.25049182772636414
+ INFO - epoch 161, learning_rate 0.00111
+ INFO - 	 valid_loss 0.7845, valid_p 93.090, valid_r 91.640, valid_f1 92.360
+ INFO - 	 test_loss 1.0374, test_p 89.310, test_r 88.000, test_f1 88.650
+ INFO - 	 currently best f1 socre: 88.950 on epoch: 109 
+
+ INFO - Epoch 162, n_batch 300, loss 0.06265055388212204
+ INFO - Epoch 162, n_batch 600, loss 0.03051808662712574
+ INFO - epoch 162, learning_rate 0.00110
+ INFO - 	 valid_loss 0.7704, valid_p 93.030, valid_r 91.590, valid_f1 92.300
+ INFO - 	 test_loss 1.0314, test_p 89.070, test_r 88.000, test_f1 88.530
+ INFO - 	 currently best f1 socre: 88.950 on epoch: 109 
+
+ INFO - Epoch 163, n_batch 300, loss 0.2845815122127533
+ INFO - Epoch 163, n_batch 600, loss 0.10166117548942566
+ INFO - epoch 163, learning_rate 0.00110
+ INFO - 	 valid_loss 0.7843, valid_p 93.090, valid_r 91.600, valid_f1 92.340
+ INFO - 	 test_loss 1.0337, test_p 89.500, test_r 88.140, test_f1 88.810
+ INFO - 	 currently best f1 socre: 88.950 on epoch: 109 
+
+ INFO - Epoch 164, n_batch 300, loss 0.46049168705940247
+ INFO - Epoch 164, n_batch 600, loss 0.5380916595458984
+ INFO - epoch 164, learning_rate 0.00109
+ INFO - 	 valid_loss 0.7678, valid_p 93.180, valid_r 91.480, valid_f1 92.320
+ INFO - 	 test_loss 1.0251, test_p 89.520, test_r 88.170, test_f1 88.840
+ INFO - 	 currently best f1 socre: 88.950 on epoch: 109 
+
+ INFO - Epoch 165, n_batch 300, loss 0.10744120180606842
+ INFO - Epoch 165, n_batch 600, loss 0.20737305283546448
+ INFO - epoch 165, learning_rate 0.00109
+ INFO - 	 valid_loss 0.8046, valid_p 93.170, valid_r 91.370, valid_f1 92.260
+ INFO - 	 test_loss 1.0507, test_p 89.510, test_r 87.820, test_f1 88.660
+ INFO - 	 currently best f1 socre: 88.950 on epoch: 109 
+
+ INFO - Epoch 166, n_batch 300, loss 0.13991038501262665
+ INFO - Epoch 166, n_batch 600, loss 0.09437306970357895
+ INFO - epoch 166, learning_rate 0.00108
+ INFO - 	 valid_loss 0.7721, valid_p 93.040, valid_r 91.590, valid_f1 92.310
+ INFO - 	 test_loss 1.0432, test_p 89.310, test_r 88.140, test_f1 88.720
+ INFO - 	 currently best f1 socre: 88.950 on epoch: 109 
+
+ INFO - Epoch 167, n_batch 300, loss 0.23282258212566376
+ INFO - Epoch 167, n_batch 600, loss 0.257437139749527
+ INFO - epoch 167, learning_rate 0.00108
+ INFO - 	 valid_loss 0.7787, valid_p 93.180, valid_r 91.550, valid_f1 92.360
+ INFO - 	 test_loss 1.0388, test_p 89.590, test_r 88.100, test_f1 88.840
+ INFO - 	 currently best f1 socre: 88.950 on epoch: 109 
+
+ INFO - Epoch 168, n_batch 300, loss 0.9053553342819214
+ INFO - Epoch 168, n_batch 600, loss 0.19645842909812927
+ INFO - epoch 168, learning_rate 0.00107
+ INFO - 	 valid_loss 0.7794, valid_p 93.130, valid_r 91.500, valid_f1 92.310
+ INFO - 	 test_loss 1.0326, test_p 89.660, test_r 88.160, test_f1 88.900
+ INFO - 	 currently best f1 socre: 88.950 on epoch: 109 
+
+ INFO - Epoch 169, n_batch 300, loss 0.49402618408203125
+ INFO - Epoch 169, n_batch 600, loss 0.5964641571044922
+ INFO - epoch 169, learning_rate 0.00106
+ INFO - 	 valid_loss 0.7889, valid_p 93.350, valid_r 91.450, valid_f1 92.390
+ INFO - 	 test_loss 1.0446, test_p 89.750, test_r 87.940, test_f1 88.840
+ INFO - 	 currently best f1 socre: 88.950 on epoch: 109 
+
+ INFO - Epoch 170, n_batch 300, loss 0.8097648620605469
+ INFO - Epoch 170, n_batch 600, loss 0.4498138427734375
+ INFO - epoch 170, learning_rate 0.00106
+ INFO - 	 valid_loss 0.7984, valid_p 93.370, valid_r 91.470, valid_f1 92.410
+ INFO - 	 test_loss 1.0491, test_p 89.710, test_r 87.980, test_f1 88.840
+ INFO - 	 currently best f1 socre: 88.950 on epoch: 109 
+
+ INFO - Epoch 171, n_batch 300, loss 0.08603973686695099
+ INFO - Epoch 171, n_batch 600, loss 0.28082528710365295
+ INFO - epoch 171, learning_rate 0.00105
+ INFO - 	 valid_loss 0.7802, valid_p 93.040, valid_r 91.740, valid_f1 92.380
+ INFO - 	 test_loss 1.0405, test_p 89.280, test_r 88.170, test_f1 88.720
+ INFO - 	 currently best f1 socre: 88.950 on epoch: 109 
+
+ INFO - Epoch 172, n_batch 300, loss 0.09022064507007599
+ INFO - Epoch 172, n_batch 600, loss 0.04980723187327385
+ INFO - epoch 172, learning_rate 0.00105
+ INFO - 	 valid_loss 0.7887, valid_p 93.340, valid_r 91.690, valid_f1 92.500
+ INFO - 	 test_loss 1.0440, test_p 89.460, test_r 88.030, test_f1 88.740
+ INFO - 	 currently best f1 socre: 88.950 on epoch: 109 
+
+ INFO - Epoch 173, n_batch 300, loss 0.8692225217819214
+ INFO - Epoch 173, n_batch 600, loss 0.7281742095947266
+ INFO - epoch 173, learning_rate 0.00104
+ INFO - 	 valid_loss 0.7695, valid_p 92.980, valid_r 91.670, valid_f1 92.320
+ INFO - 	 test_loss 1.0340, test_p 89.160, test_r 87.980, test_f1 88.570
+ INFO - 	 currently best f1 socre: 88.950 on epoch: 109 
+
+ INFO - Epoch 174, n_batch 300, loss 0.1352178007364273
+ INFO - Epoch 174, n_batch 600, loss 0.4665486514568329
+ INFO - epoch 174, learning_rate 0.00104
+ INFO - 	 valid_loss 0.7741, valid_p 92.900, valid_r 91.600, valid_f1 92.250
+ INFO - 	 test_loss 1.0428, test_p 89.310, test_r 88.190, test_f1 88.750
+ INFO - 	 currently best f1 socre: 88.950 on epoch: 109 
+
+ INFO - Epoch 175, n_batch 300, loss 0.5752544403076172
+ INFO - Epoch 175, n_batch 600, loss 0.05078684538602829
+ INFO - epoch 175, learning_rate 0.00103
+ INFO - 	 valid_loss 0.7889, valid_p 93.100, valid_r 91.530, valid_f1 92.310
+ INFO - 	 test_loss 1.0518, test_p 89.300, test_r 88.080, test_f1 88.690
+ INFO - 	 currently best f1 socre: 88.950 on epoch: 109 
+
+ INFO - Epoch 176, n_batch 300, loss 0.22949066758155823
+ INFO - Epoch 176, n_batch 600, loss 0.3601216673851013
+ INFO - epoch 176, learning_rate 0.00103
+ INFO - 	 valid_loss 0.8068, valid_p 93.270, valid_r 91.370, valid_f1 92.310
+ INFO - 	 test_loss 1.0624, test_p 89.610, test_r 87.660, test_f1 88.620
+ INFO - 	 currently best f1 socre: 88.950 on epoch: 109 
+
+ INFO - Epoch 177, n_batch 300, loss 0.06131846085190773
+ INFO - Epoch 177, n_batch 600, loss 0.1862787902355194
+ INFO - epoch 177, learning_rate 0.00102
+ INFO - 	 valid_loss 0.7777, valid_p 93.140, valid_r 91.620, valid_f1 92.370
+ INFO - 	 test_loss 1.0435, test_p 89.570, test_r 88.190, test_f1 88.880
+ INFO - 	 currently best f1 socre: 88.950 on epoch: 109 
+
+ INFO - Epoch 178, n_batch 300, loss 0.3035545349121094
+ INFO - Epoch 178, n_batch 600, loss 0.5349507927894592
+ INFO - epoch 178, learning_rate 0.00102
+ INFO - 	 valid_loss 0.8069, valid_p 93.100, valid_r 91.550, valid_f1 92.320
+ INFO - 	 test_loss 1.0595, test_p 89.520, test_r 88.030, test_f1 88.770
+ INFO - 	 currently best f1 socre: 88.950 on epoch: 109 
+
+ INFO - Epoch 179, n_batch 300, loss 0.4683232605457306
+ INFO - Epoch 179, n_batch 600, loss 0.24081777036190033
+ INFO - epoch 179, learning_rate 0.00101
+ INFO - 	 valid_loss 0.7815, valid_p 92.950, valid_r 91.700, valid_f1 92.320
+ INFO - 	 test_loss 1.0394, test_p 89.240, test_r 88.210, test_f1 88.720
+ INFO - 	 currently best f1 socre: 88.950 on epoch: 109 
+
+ INFO - Epoch 180, n_batch 300, loss 0.11959178000688553
+ INFO - Epoch 180, n_batch 600, loss 0.324798583984375
+ INFO - epoch 180, learning_rate 0.00101
+ INFO - 	 valid_loss 0.8142, valid_p 93.060, valid_r 91.350, valid_f1 92.200
+ INFO - 	 test_loss 1.0625, test_p 89.690, test_r 87.980, test_f1 88.830
+ INFO - 	 currently best f1 socre: 88.950 on epoch: 109 
+
+ INFO - Epoch 181, n_batch 300, loss 0.05881500244140625
+ INFO - Epoch 181, n_batch 600, loss 0.5872402191162109
+ INFO - epoch 181, learning_rate 0.00100
+ INFO - 	 valid_loss 0.7729, valid_p 93.140, valid_r 91.570, valid_f1 92.350
+ INFO - 	 test_loss 1.0425, test_p 89.540, test_r 88.080, test_f1 88.810
+ INFO - 	 currently best f1 socre: 88.950 on epoch: 109 
+
+ INFO - Epoch 182, n_batch 300, loss 0.24139200150966644
+ INFO - Epoch 182, n_batch 600, loss 0.22995199263095856
+ INFO - epoch 182, learning_rate 0.00100
+ INFO - 	 valid_loss 0.7926, valid_p 93.160, valid_r 91.430, valid_f1 92.290
+ INFO - 	 test_loss 1.0412, test_p 89.820, test_r 88.240, test_f1 89.020
+ INFO - 	 currently best f1 socre: 89.020 on epoch: 182 
+
+ INFO - Epoch 183, n_batch 300, loss 0.36974793672561646
+ INFO - Epoch 183, n_batch 600, loss 0.9267692565917969
+ INFO - epoch 183, learning_rate 0.00099
+ INFO - 	 valid_loss 0.8008, valid_p 93.350, valid_r 91.370, valid_f1 92.350
+ INFO - 	 test_loss 1.0552, test_p 89.860, test_r 88.050, test_f1 88.950
+ INFO - 	 currently best f1 socre: 89.020 on epoch: 182 
+
+ INFO - Epoch 184, n_batch 300, loss 0.5606946349143982
+ INFO - Epoch 184, n_batch 600, loss 0.20043547451496124
+ INFO - epoch 184, learning_rate 0.00099
+ INFO - 	 valid_loss 0.7774, valid_p 93.110, valid_r 91.620, valid_f1 92.360
+ INFO - 	 test_loss 1.0370, test_p 89.610, test_r 88.120, test_f1 88.860
+ INFO - 	 currently best f1 socre: 89.020 on epoch: 182 
+
+ INFO - Epoch 185, n_batch 300, loss 0.18909302353858948
+ INFO - Epoch 185, n_batch 600, loss 0.11897481232881546
+ INFO - epoch 185, learning_rate 0.00098
+ INFO - 	 valid_loss 0.7759, valid_p 93.220, valid_r 91.640, valid_f1 92.420
+ INFO - 	 test_loss 1.0364, test_p 89.760, test_r 88.300, test_f1 89.020
+ INFO - 	 currently best f1 socre: 89.020 on epoch: 182 
+
+ INFO - Epoch 186, n_batch 300, loss 0.897509753704071
+ INFO - Epoch 186, n_batch 600, loss 0.1520182341337204
+ INFO - epoch 186, learning_rate 0.00098
+ INFO - 	 valid_loss 0.7903, valid_p 93.260, valid_r 91.570, valid_f1 92.410
+ INFO - 	 test_loss 1.0428, test_p 90.210, test_r 88.920, test_f1 89.560
+ INFO - 	 currently best f1 socre: 89.560 on epoch: 186 
+
+ INFO - Epoch 187, n_batch 300, loss 1.2761783599853516
+ INFO - Epoch 187, n_batch 600, loss 0.2709554135799408
+ INFO - epoch 187, learning_rate 0.00097
+ INFO - 	 valid_loss 0.7754, valid_p 93.150, valid_r 91.790, valid_f1 92.460
+ INFO - 	 test_loss 1.0381, test_p 89.580, test_r 88.460, test_f1 89.020
+ INFO - 	 currently best f1 socre: 89.560 on epoch: 186 
+
+ INFO - Epoch 188, n_batch 300, loss 0.20527750253677368
+ INFO - Epoch 188, n_batch 600, loss 0.71710205078125
+ INFO - epoch 188, learning_rate 0.00097
+ INFO - 	 valid_loss 0.7899, valid_p 93.190, valid_r 91.600, valid_f1 92.390
+ INFO - 	 test_loss 1.0519, test_p 89.770, test_r 88.100, test_f1 88.930
+ INFO - 	 currently best f1 socre: 89.560 on epoch: 186 
+
+ INFO - Epoch 189, n_batch 300, loss 0.07855631411075592
+ INFO - Epoch 189, n_batch 600, loss 0.5481014251708984
+ INFO - epoch 189, learning_rate 0.00096
+ INFO - 	 valid_loss 0.7686, valid_p 93.100, valid_r 91.790, valid_f1 92.440
+ INFO - 	 test_loss 1.0401, test_p 89.320, test_r 88.390, test_f1 88.850
+ INFO - 	 currently best f1 socre: 89.560 on epoch: 186 
+
+ INFO - Epoch 190, n_batch 300, loss 0.17804056406021118
+ INFO - Epoch 190, n_batch 600, loss 0.8339909911155701
+ INFO - epoch 190, learning_rate 0.00096
+ INFO - 	 valid_loss 0.8015, valid_p 93.250, valid_r 91.600, valid_f1 92.420
+ INFO - 	 test_loss 1.0534, test_p 89.920, test_r 88.100, test_f1 89.000
+ INFO - 	 currently best f1 socre: 89.560 on epoch: 186 
+
+ INFO - Epoch 191, n_batch 300, loss 0.27073267102241516
+ INFO - Epoch 191, n_batch 600, loss 0.5399088263511658
+ INFO - epoch 191, learning_rate 0.00095
+ INFO - 	 valid_loss 0.7960, valid_p 93.020, valid_r 91.570, valid_f1 92.290
+ INFO - 	 test_loss 1.0545, test_p 89.480, test_r 88.240, test_f1 88.860
+ INFO - 	 currently best f1 socre: 89.560 on epoch: 186 
+
+ INFO - Epoch 192, n_batch 300, loss 0.31278127431869507
+ INFO - Epoch 192, n_batch 600, loss 0.076507568359375
+ INFO - epoch 192, learning_rate 0.00095
+ INFO - 	 valid_loss 0.8029, valid_p 93.340, valid_r 91.550, valid_f1 92.440
+ INFO - 	 test_loss 1.0560, test_p 89.860, test_r 88.140, test_f1 88.990
+ INFO - 	 currently best f1 socre: 89.560 on epoch: 186 
+
+ INFO - Epoch 193, n_batch 300, loss 0.3157627284526825
+ INFO - Epoch 193, n_batch 600, loss 0.631144642829895
+ INFO - epoch 193, learning_rate 0.00094
+ INFO - 	 valid_loss 0.7848, valid_p 93.190, valid_r 91.650, valid_f1 92.410
+ INFO - 	 test_loss 1.0356, test_p 89.660, test_r 88.240, test_f1 88.940
+ INFO - 	 currently best f1 socre: 89.560 on epoch: 186 
+
+ INFO - Epoch 194, n_batch 300, loss 0.10961049050092697
+ INFO - Epoch 194, n_batch 600, loss 0.18294474482536316
+ INFO - epoch 194, learning_rate 0.00094
+ INFO - 	 valid_loss 0.7827, valid_p 93.110, valid_r 91.600, valid_f1 92.350
+ INFO - 	 test_loss 1.0464, test_p 89.690, test_r 88.100, test_f1 88.890
+ INFO - 	 currently best f1 socre: 89.560 on epoch: 186 
+
+ INFO - Epoch 195, n_batch 300, loss 0.08857269585132599
+ INFO - Epoch 195, n_batch 600, loss 0.06606902927160263
+ INFO - epoch 195, learning_rate 0.00093
+ INFO - 	 valid_loss 0.7889, valid_p 93.300, valid_r 91.640, valid_f1 92.460
+ INFO - 	 test_loss 1.0350, test_p 89.510, test_r 88.190, test_f1 88.840
+ INFO - 	 currently best f1 socre: 89.560 on epoch: 186 
+
+ INFO - Epoch 196, n_batch 300, loss 0.05903828889131546
+ INFO - Epoch 196, n_batch 600, loss 0.23605550825595856
+ INFO - epoch 196, learning_rate 0.00093
+ INFO - 	 valid_loss 0.8002, valid_p 93.160, valid_r 91.700, valid_f1 92.430
+ INFO - 	 test_loss 1.0520, test_p 89.430, test_r 88.210, test_f1 88.810
+ INFO - 	 currently best f1 socre: 89.560 on epoch: 186 
+
+ INFO - Epoch 197, n_batch 300, loss 0.1393839567899704
+ INFO - Epoch 197, n_batch 600, loss 0.7009058594703674
+ INFO - epoch 197, learning_rate 0.00093
+ INFO - 	 valid_loss 0.8018, valid_p 93.190, valid_r 91.640, valid_f1 92.410
+ INFO - 	 test_loss 1.0571, test_p 89.520, test_r 88.010, test_f1 88.760
+ INFO - 	 currently best f1 socre: 89.560 on epoch: 186 
+
+ INFO - Epoch 198, n_batch 300, loss 0.4322189390659332
+ INFO - Epoch 198, n_batch 600, loss 0.35169169306755066
+ INFO - epoch 198, learning_rate 0.00092
+ INFO - 	 valid_loss 0.7884, valid_p 93.050, valid_r 91.640, valid_f1 92.340
+ INFO - 	 test_loss 1.0503, test_p 89.440, test_r 88.140, test_f1 88.780
+ INFO - 	 currently best f1 socre: 89.560 on epoch: 186 
+
+ INFO - Epoch 199, n_batch 300, loss 0.4406224191188812
+ INFO - Epoch 199, n_batch 600, loss 0.15829162299633026
+ INFO - epoch 199, learning_rate 0.00092
+ INFO - 	 valid_loss 0.7831, valid_p 93.220, valid_r 91.600, valid_f1 92.400
+ INFO - 	 test_loss 1.0437, test_p 89.680, test_r 88.190, test_f1 88.930
+ INFO - 	 currently best f1 socre: 89.560 on epoch: 186 
+
+ INFO - Epoch 200, n_batch 300, loss 0.29766446352005005
+ INFO - Epoch 200, n_batch 600, loss 0.6000462770462036
+ INFO - epoch 200, learning_rate 0.00091
+ INFO - 	 valid_loss 0.7935, valid_p 93.170, valid_r 91.770, valid_f1 92.460
+ INFO - 	 test_loss 1.0450, test_p 89.570, test_r 88.390, test_f1 88.980
+ INFO - 	 currently best f1 socre: 89.560 on epoch: 186 
+
