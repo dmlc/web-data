@@ -1,5 +1,4 @@
-set -e
-python3 ~/gluon-cv/scripts/classification/imagenet/train_imagenet.py \
+python3 train_imagenet.py \
   --rec-train /media/ramdisk/rec/train.rec --rec-train-idx /media/ramdisk/rec/train.idx \
   --rec-val /media/ramdisk/rec/val.rec --rec-val-idx /media/ramdisk/rec/val.idx \
   --model se_resnext50_32x4d --mode hybrid \
