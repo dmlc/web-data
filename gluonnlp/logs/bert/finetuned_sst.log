@@ -1,0 +1,47 @@
+INFO:root:Namespace(accumulate=1, batch_size=16, bert_dataset='book_corpus_wiki_en_uncased', bert_model='bert_12_768_12', dev_batch_size=8, epochs=4, gpu=True, log_interval=500, lr=2e-05, max_len=128, model_parameters=None, optimizer='bertadam', output_dir='./output_dir', pretrained_bert_parameters=None, seed=2, task_name='SST', warmup_ratio=0.1)
+INFO:root:Using gradient accumulation. Effective batch size = 16
+INFO:root:processing dataset...
+INFO:root:[Epoch 1 Batch 500/4214] loss=0.4398, lr=0.0000059, metrics=accuracy:0.7865
+INFO:root:[Epoch 1 Batch 1000/4214] loss=0.2869, lr=0.0000119, metrics=accuracy:0.8379
+INFO:root:[Epoch 1 Batch 1500/4214] loss=0.2588, lr=0.0000178, metrics=accuracy:0.8599
+INFO:root:[Epoch 1 Batch 2000/4214] loss=0.2579, lr=0.0000196, metrics=accuracy:0.8717
+INFO:root:[Epoch 1 Batch 2500/4214] loss=0.2243, lr=0.0000189, metrics=accuracy:0.8815
+INFO:root:[Epoch 1 Batch 3000/4214] loss=0.2082, lr=0.0000183, metrics=accuracy:0.8899
+INFO:root:[Epoch 1 Batch 3500/4214] loss=0.1986, lr=0.0000176, metrics=accuracy:0.8960
+INFO:root:[Epoch 1 Batch 4000/4214] loss=0.1981, lr=0.0000169, metrics=accuracy:0.9008
+INFO:root:validation metrics:accuracy:0.9220
+INFO:root:params saved in : ./output_dir/model_bert_SST_0.params
+INFO:root:Time cost=415.7s
+INFO:root:[Epoch 2 Batch 500/4214] loss=0.1395, lr=0.0000160, metrics=accuracy:0.9593
+INFO:root:[Epoch 2 Batch 1000/4214] loss=0.1504, lr=0.0000153, metrics=accuracy:0.9585
+INFO:root:[Epoch 2 Batch 1500/4214] loss=0.1416, lr=0.0000147, metrics=accuracy:0.9594
+INFO:root:[Epoch 2 Batch 2000/4214] loss=0.1472, lr=0.0000140, metrics=accuracy:0.9589
+INFO:root:[Epoch 2 Batch 2500/4214] loss=0.1597, lr=0.0000134, metrics=accuracy:0.9575
+INFO:root:[Epoch 2 Batch 3000/4214] loss=0.1392, lr=0.0000127, metrics=accuracy:0.9577
+INFO:root:[Epoch 2 Batch 3500/4214] loss=0.1475, lr=0.0000120, metrics=accuracy:0.9577
+INFO:root:[Epoch 2 Batch 4000/4214] loss=0.1394, lr=0.0000114, metrics=accuracy:0.9580
+INFO:root:validation metrics:accuracy:0.9232
+INFO:root:params saved in : ./output_dir/model_bert_SST_1.params
+INFO:root:Time cost=415.1s
+INFO:root:[Epoch 3 Batch 500/4214] loss=0.0878, lr=0.0000104, metrics=accuracy:0.9775
+INFO:root:[Epoch 3 Batch 1000/4214] loss=0.0986, lr=0.0000098, metrics=accuracy:0.9755
+INFO:root:[Epoch 3 Batch 1500/4214] loss=0.1035, lr=0.0000091, metrics=accuracy:0.9744
+INFO:root:[Epoch 3 Batch 2000/4214] loss=0.0975, lr=0.0000085, metrics=accuracy:0.9744
+INFO:root:[Epoch 3 Batch 2500/4214] loss=0.1048, lr=0.0000078, metrics=accuracy:0.9741
+INFO:root:[Epoch 3 Batch 3000/4214] loss=0.0960, lr=0.0000071, metrics=accuracy:0.9740
+INFO:root:[Epoch 3 Batch 3500/4214] loss=0.1080, lr=0.0000065, metrics=accuracy:0.9737
+INFO:root:[Epoch 3 Batch 4000/4214] loss=0.0993, lr=0.0000058, metrics=accuracy:0.9737
+INFO:root:validation metrics:accuracy:0.9232
+INFO:root:params saved in : ./output_dir/model_bert_SST_2.params
+INFO:root:Time cost=417.3s
+INFO:root:[Epoch 4 Batch 500/4214] loss=0.0695, lr=0.0000049, metrics=accuracy:0.9826
+INFO:root:[Epoch 4 Batch 1000/4214] loss=0.0640, lr=0.0000042, metrics=accuracy:0.9830
+INFO:root:[Epoch 4 Batch 1500/4214] loss=0.0720, lr=0.0000036, metrics=accuracy:0.9827
+INFO:root:[Epoch 4 Batch 2000/4214] loss=0.0682, lr=0.0000029, metrics=accuracy:0.9826
+INFO:root:[Epoch 4 Batch 2500/4214] loss=0.0646, lr=0.0000022, metrics=accuracy:0.9829
+INFO:root:[Epoch 4 Batch 3000/4214] loss=0.0708, lr=0.0000016, metrics=accuracy:0.9829
+INFO:root:[Epoch 4 Batch 3500/4214] loss=0.0701, lr=0.0000009, metrics=accuracy:0.9827
+INFO:root:[Epoch 4 Batch 4000/4214] loss=0.0600, lr=0.0000003, metrics=accuracy:0.9829
+INFO:root:validation metrics:accuracy:0.9300
+INFO:root:params saved in : ./output_dir/model_bert_SST_3.params
+INFO:root:Time cost=413.6s
