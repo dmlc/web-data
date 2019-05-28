@@ -1,0 +1,417 @@
+INFO:root:Namespace(accumulate=None, batch_size=32, bert_dataset='book_corpus_wiki_en_uncased', bert_model='bert_12_768_12', dev_batch_size=8, epochs=3, epsilon=1e-06, gpu=0, log_interval=100, lr=2e-05, max_len=512, model_parameters=None, only_inference=False, optimizer='bertadam', output_dir='./output_dir', pad=False, pretrained_bert_parameters=None, seed=0, task_name='QNLI', warmup_ratio=0.1)
+INFO:root:Model file not found. Downloading to /home/ec2-user/.mxnet/models/bert_12_768_12_book_corpus_wiki_en_uncased-75cc780f.params.
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): apache-mxnet.s3-accelerate.dualstack.amazonaws.com:443
+DEBUG:urllib3.connectionpool:https://apache-mxnet.s3-accelerate.dualstack.amazonaws.com:443 "GET /gluon/models/bert_12_768_12_book_corpus_wiki_en_uncased-75cc780f.zip HTTP/1.1" 200 493511968
+INFO:root:BERTClassifier(
+  (bert): BERTModel(
+    (encoder): BERTEncoder(
+      (layer_norm): BERTLayerNorm(scale=True, center=True, eps=1e-12, axis=-1, in_channels=768)
+      (transformer_cells): HybridSequential(
+        (0): BERTEncoderCell(
+          (layer_norm): BERTLayerNorm(scale=True, center=True, eps=1e-12, axis=-1, in_channels=768)
+          (ffn): BERTPositionwiseFFN(
+            (layer_norm): BERTLayerNorm(scale=True, center=True, eps=1e-12, axis=-1, in_channels=768)
+            (activation): GELU()
+            (ffn_2): Dense(3072 -> 768, linear)
+            (ffn_1): Dense(768 -> 3072, linear)
+            (dropout_layer): Dropout(p = 0.1, axes=())
+          )
+          (attention_cell): MultiHeadAttentionCell(
+            (_base_cell): DotProductAttentionCell(
+              (_dropout_layer): Dropout(p = 0.1, axes=())
+            )
+            (proj_key): Dense(768 -> 768, linear)
+            (proj_value): Dense(768 -> 768, linear)
+            (proj_query): Dense(768 -> 768, linear)
+          )
+          (proj): Dense(768 -> 768, linear)
+          (dropout_layer): Dropout(p = 0.1, axes=())
+        )
+        (1): BERTEncoderCell(
+          (layer_norm): BERTLayerNorm(scale=True, center=True, eps=1e-12, axis=-1, in_channels=768)
+          (ffn): BERTPositionwiseFFN(
+            (layer_norm): BERTLayerNorm(scale=True, center=True, eps=1e-12, axis=-1, in_channels=768)
+            (activation): GELU()
+            (ffn_2): Dense(3072 -> 768, linear)
+            (ffn_1): Dense(768 -> 3072, linear)
+            (dropout_layer): Dropout(p = 0.1, axes=())
+          )
+          (attention_cell): MultiHeadAttentionCell(
+            (_base_cell): DotProductAttentionCell(
+              (_dropout_layer): Dropout(p = 0.1, axes=())
+            )
+            (proj_key): Dense(768 -> 768, linear)
+            (proj_value): Dense(768 -> 768, linear)
+            (proj_query): Dense(768 -> 768, linear)
+          )
+          (proj): Dense(768 -> 768, linear)
+          (dropout_layer): Dropout(p = 0.1, axes=())
+        )
+        (2): BERTEncoderCell(
+          (layer_norm): BERTLayerNorm(scale=True, center=True, eps=1e-12, axis=-1, in_channels=768)
+          (ffn): BERTPositionwiseFFN(
+            (layer_norm): BERTLayerNorm(scale=True, center=True, eps=1e-12, axis=-1, in_channels=768)
+            (activation): GELU()
+            (ffn_2): Dense(3072 -> 768, linear)
+            (ffn_1): Dense(768 -> 3072, linear)
+            (dropout_layer): Dropout(p = 0.1, axes=())
+          )
+          (attention_cell): MultiHeadAttentionCell(
+            (_base_cell): DotProductAttentionCell(
+              (_dropout_layer): Dropout(p = 0.1, axes=())
+            )
+            (proj_key): Dense(768 -> 768, linear)
+            (proj_value): Dense(768 -> 768, linear)
+            (proj_query): Dense(768 -> 768, linear)
+          )
+          (proj): Dense(768 -> 768, linear)
+          (dropout_layer): Dropout(p = 0.1, axes=())
+        )
+        (3): BERTEncoderCell(
+          (layer_norm): BERTLayerNorm(scale=True, center=True, eps=1e-12, axis=-1, in_channels=768)
+          (ffn): BERTPositionwiseFFN(
+            (layer_norm): BERTLayerNorm(scale=True, center=True, eps=1e-12, axis=-1, in_channels=768)
+            (activation): GELU()
+            (ffn_2): Dense(3072 -> 768, linear)
+            (ffn_1): Dense(768 -> 3072, linear)
+            (dropout_layer): Dropout(p = 0.1, axes=())
+          )
+          (attention_cell): MultiHeadAttentionCell(
+            (_base_cell): DotProductAttentionCell(
+              (_dropout_layer): Dropout(p = 0.1, axes=())
+            )
+            (proj_key): Dense(768 -> 768, linear)
+            (proj_value): Dense(768 -> 768, linear)
+            (proj_query): Dense(768 -> 768, linear)
+          )
+          (proj): Dense(768 -> 768, linear)
+          (dropout_layer): Dropout(p = 0.1, axes=())
+        )
+        (4): BERTEncoderCell(
+          (layer_norm): BERTLayerNorm(scale=True, center=True, eps=1e-12, axis=-1, in_channels=768)
+          (ffn): BERTPositionwiseFFN(
+            (layer_norm): BERTLayerNorm(scale=True, center=True, eps=1e-12, axis=-1, in_channels=768)
+            (activation): GELU()
+            (ffn_2): Dense(3072 -> 768, linear)
+            (ffn_1): Dense(768 -> 3072, linear)
+            (dropout_layer): Dropout(p = 0.1, axes=())
+          )
+          (attention_cell): MultiHeadAttentionCell(
+            (_base_cell): DotProductAttentionCell(
+              (_dropout_layer): Dropout(p = 0.1, axes=())
+            )
+            (proj_key): Dense(768 -> 768, linear)
+            (proj_value): Dense(768 -> 768, linear)
+            (proj_query): Dense(768 -> 768, linear)
+          )
+          (proj): Dense(768 -> 768, linear)
+          (dropout_layer): Dropout(p = 0.1, axes=())
+        )
+        (5): BERTEncoderCell(
+          (layer_norm): BERTLayerNorm(scale=True, center=True, eps=1e-12, axis=-1, in_channels=768)
+          (ffn): BERTPositionwiseFFN(
+            (layer_norm): BERTLayerNorm(scale=True, center=True, eps=1e-12, axis=-1, in_channels=768)
+            (activation): GELU()
+            (ffn_2): Dense(3072 -> 768, linear)
+            (ffn_1): Dense(768 -> 3072, linear)
+            (dropout_layer): Dropout(p = 0.1, axes=())
+          )
+          (attention_cell): MultiHeadAttentionCell(
+            (_base_cell): DotProductAttentionCell(
+              (_dropout_layer): Dropout(p = 0.1, axes=())
+            )
+            (proj_key): Dense(768 -> 768, linear)
+            (proj_value): Dense(768 -> 768, linear)
+            (proj_query): Dense(768 -> 768, linear)
+          )
+          (proj): Dense(768 -> 768, linear)
+          (dropout_layer): Dropout(p = 0.1, axes=())
+        )
+        (6): BERTEncoderCell(
+          (layer_norm): BERTLayerNorm(scale=True, center=True, eps=1e-12, axis=-1, in_channels=768)
+          (ffn): BERTPositionwiseFFN(
+            (layer_norm): BERTLayerNorm(scale=True, center=True, eps=1e-12, axis=-1, in_channels=768)
+            (activation): GELU()
+            (ffn_2): Dense(3072 -> 768, linear)
+            (ffn_1): Dense(768 -> 3072, linear)
+            (dropout_layer): Dropout(p = 0.1, axes=())
+          )
+          (attention_cell): MultiHeadAttentionCell(
+            (_base_cell): DotProductAttentionCell(
+              (_dropout_layer): Dropout(p = 0.1, axes=())
+            )
+            (proj_key): Dense(768 -> 768, linear)
+            (proj_value): Dense(768 -> 768, linear)
+            (proj_query): Dense(768 -> 768, linear)
+          )
+          (proj): Dense(768 -> 768, linear)
+          (dropout_layer): Dropout(p = 0.1, axes=())
+        )
+        (7): BERTEncoderCell(
+          (layer_norm): BERTLayerNorm(scale=True, center=True, eps=1e-12, axis=-1, in_channels=768)
+          (ffn): BERTPositionwiseFFN(
+            (layer_norm): BERTLayerNorm(scale=True, center=True, eps=1e-12, axis=-1, in_channels=768)
+            (activation): GELU()
+            (ffn_2): Dense(3072 -> 768, linear)
+            (ffn_1): Dense(768 -> 3072, linear)
+            (dropout_layer): Dropout(p = 0.1, axes=())
+          )
+          (attention_cell): MultiHeadAttentionCell(
+            (_base_cell): DotProductAttentionCell(
+              (_dropout_layer): Dropout(p = 0.1, axes=())
+            )
+            (proj_key): Dense(768 -> 768, linear)
+            (proj_value): Dense(768 -> 768, linear)
+            (proj_query): Dense(768 -> 768, linear)
+          )
+          (proj): Dense(768 -> 768, linear)
+          (dropout_layer): Dropout(p = 0.1, axes=())
+        )
+        (8): BERTEncoderCell(
+          (layer_norm): BERTLayerNorm(scale=True, center=True, eps=1e-12, axis=-1, in_channels=768)
+          (ffn): BERTPositionwiseFFN(
+            (layer_norm): BERTLayerNorm(scale=True, center=True, eps=1e-12, axis=-1, in_channels=768)
+            (activation): GELU()
+            (ffn_2): Dense(3072 -> 768, linear)
+            (ffn_1): Dense(768 -> 3072, linear)
+            (dropout_layer): Dropout(p = 0.1, axes=())
+          )
+          (attention_cell): MultiHeadAttentionCell(
+            (_base_cell): DotProductAttentionCell(
+              (_dropout_layer): Dropout(p = 0.1, axes=())
+            )
+            (proj_key): Dense(768 -> 768, linear)
+            (proj_value): Dense(768 -> 768, linear)
+            (proj_query): Dense(768 -> 768, linear)
+          )
+          (proj): Dense(768 -> 768, linear)
+          (dropout_layer): Dropout(p = 0.1, axes=())
+        )
+        (9): BERTEncoderCell(
+          (layer_norm): BERTLayerNorm(scale=True, center=True, eps=1e-12, axis=-1, in_channels=768)
+          (ffn): BERTPositionwiseFFN(
+            (layer_norm): BERTLayerNorm(scale=True, center=True, eps=1e-12, axis=-1, in_channels=768)
+            (activation): GELU()
+            (ffn_2): Dense(3072 -> 768, linear)
+            (ffn_1): Dense(768 -> 3072, linear)
+            (dropout_layer): Dropout(p = 0.1, axes=())
+          )
+          (attention_cell): MultiHeadAttentionCell(
+            (_base_cell): DotProductAttentionCell(
+              (_dropout_layer): Dropout(p = 0.1, axes=())
+            )
+            (proj_key): Dense(768 -> 768, linear)
+            (proj_value): Dense(768 -> 768, linear)
+            (proj_query): Dense(768 -> 768, linear)
+          )
+          (proj): Dense(768 -> 768, linear)
+          (dropout_layer): Dropout(p = 0.1, axes=())
+        )
+        (10): BERTEncoderCell(
+          (layer_norm): BERTLayerNorm(scale=True, center=True, eps=1e-12, axis=-1, in_channels=768)
+          (ffn): BERTPositionwiseFFN(
+            (layer_norm): BERTLayerNorm(scale=True, center=True, eps=1e-12, axis=-1, in_channels=768)
+            (activation): GELU()
+            (ffn_2): Dense(3072 -> 768, linear)
+            (ffn_1): Dense(768 -> 3072, linear)
+            (dropout_layer): Dropout(p = 0.1, axes=())
+          )
+          (attention_cell): MultiHeadAttentionCell(
+            (_base_cell): DotProductAttentionCell(
+              (_dropout_layer): Dropout(p = 0.1, axes=())
+            )
+            (proj_key): Dense(768 -> 768, linear)
+            (proj_value): Dense(768 -> 768, linear)
+            (proj_query): Dense(768 -> 768, linear)
+          )
+          (proj): Dense(768 -> 768, linear)
+          (dropout_layer): Dropout(p = 0.1, axes=())
+        )
+        (11): BERTEncoderCell(
+          (layer_norm): BERTLayerNorm(scale=True, center=True, eps=1e-12, axis=-1, in_channels=768)
+          (ffn): BERTPositionwiseFFN(
+            (layer_norm): BERTLayerNorm(scale=True, center=True, eps=1e-12, axis=-1, in_channels=768)
+            (activation): GELU()
+            (ffn_2): Dense(3072 -> 768, linear)
+            (ffn_1): Dense(768 -> 3072, linear)
+            (dropout_layer): Dropout(p = 0.1, axes=())
+          )
+          (attention_cell): MultiHeadAttentionCell(
+            (_base_cell): DotProductAttentionCell(
+              (_dropout_layer): Dropout(p = 0.1, axes=())
+            )
+            (proj_key): Dense(768 -> 768, linear)
+            (proj_value): Dense(768 -> 768, linear)
+            (proj_query): Dense(768 -> 768, linear)
+          )
+          (proj): Dense(768 -> 768, linear)
+          (dropout_layer): Dropout(p = 0.1, axes=())
+        )
+      )
+      (dropout_layer): Dropout(p = 0.1, axes=())
+    )
+    (word_embed): HybridSequential(
+      (0): Embedding(30522 -> 768, float32)
+      (1): Dropout(p = 0.1, axes=())
+    )
+    (token_type_embed): HybridSequential(
+      (0): Embedding(2 -> 768, float32)
+      (1): Dropout(p = 0.1, axes=())
+    )
+    (pooler): Dense(768 -> 768, Activation(tanh))
+  )
+  (classifier): HybridSequential(
+    (0): Dropout(p = 0.1, axes=())
+    (1): Dense(None -> 2, linear)
+  )
+)
+INFO:root:processing dataset...
+Downloading /home/ec2-user/.mxnet/models/bert_12_768_12_book_corpus_wiki_en_uncased-75cc780f.zip from https://apache-mxnet.s3-accelerate.dualstack.amazonaws.com/gluon/models/bert_12_768_12_book_corpus_wiki_en_uncased-75cc780f.zip...
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): apache-mxnet.s3-accelerate.dualstack.amazonaws.com:443
+DEBUG:urllib3.connectionpool:https://apache-mxnet.s3-accelerate.dualstack.amazonaws.com:443 "GET /gluon/dataset/GLUE/QNLI/train-d90a84eb.zip HTTP/1.1" 200 27078833
+WARNING:py.warnings:/home/ec2-user/gluon-nlp/src/gluonnlp/data/sampler.py:354: UserWarning: Some buckets are empty and will be removed. Unused bucket keys=[362, 412]
+  str(unused_bucket_keys))
+
+Downloading /fsx/datasets/QNLI/train-d90a84eb.zip from https://apache-mxnet.s3-accelerate.dualstack.amazonaws.com/gluon/dataset/GLUE/QNLI/train-d90a84eb.zip...
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): apache-mxnet.s3-accelerate.dualstack.amazonaws.com:443
+DEBUG:urllib3.connectionpool:https://apache-mxnet.s3-accelerate.dualstack.amazonaws.com:443 "GET /gluon/dataset/GLUE/QNLI/test-f3da1a2e.zip HTTP/1.1" 200 1505730
+Downloading /fsx/datasets/QNLI/test-f3da1a2e.zip from https://apache-mxnet.s3-accelerate.dualstack.amazonaws.com/gluon/dataset/GLUE/QNLI/test-f3da1a2e.zip...
+INFO:root:Now we are doing BERT classification training on gpu(0)!
+INFO:root:[Epoch 1 Batch 100/3394] loss=0.7656, lr=0.0000019, metrics:accuracy:0.4953
+INFO:root:[Epoch 1 Batch 200/3394] loss=0.6335, lr=0.0000039, metrics:accuracy:0.5726
+INFO:root:[Epoch 1 Batch 300/3394] loss=0.5213, lr=0.0000059, metrics:accuracy:0.6339
+INFO:root:[Epoch 1 Batch 400/3394] loss=0.5027, lr=0.0000079, metrics:accuracy:0.6662
+INFO:root:[Epoch 1 Batch 500/3394] loss=0.4965, lr=0.0000098, metrics:accuracy:0.6882
+INFO:root:[Epoch 1 Batch 600/3394] loss=0.4539, lr=0.0000118, metrics:accuracy:0.7068
+INFO:root:[Epoch 1 Batch 700/3394] loss=0.4338, lr=0.0000138, metrics:accuracy:0.7203
+INFO:root:[Epoch 1 Batch 800/3394] loss=0.4095, lr=0.0000157, metrics:accuracy:0.7327
+INFO:root:[Epoch 1 Batch 900/3394] loss=0.3923, lr=0.0000177, metrics:accuracy:0.7441
+INFO:root:[Epoch 1 Batch 1000/3394] loss=0.3721, lr=0.0000197, metrics:accuracy:0.7547
+INFO:root:[Epoch 1 Batch 1100/3394] loss=0.3941, lr=0.0000200, metrics:accuracy:0.7620
+INFO:root:[Epoch 1 Batch 1200/3394] loss=0.3837, lr=0.0000200, metrics:accuracy:0.7685
+INFO:root:[Epoch 1 Batch 1300/3394] loss=0.3866, lr=0.0000200, metrics:accuracy:0.7738
+INFO:root:[Epoch 1 Batch 1400/3394] loss=0.3709, lr=0.0000200, metrics:accuracy:0.7790
+INFO:root:[Epoch 1 Batch 1500/3394] loss=0.3580, lr=0.0000200, metrics:accuracy:0.7837
+INFO:root:[Epoch 1 Batch 1600/3394] loss=0.3661, lr=0.0000200, metrics:accuracy:0.7877
+INFO:root:[Epoch 1 Batch 1700/3394] loss=0.3583, lr=0.0000200, metrics:accuracy:0.7913
+INFO:root:[Epoch 1 Batch 1800/3394] loss=0.3562, lr=0.0000200, metrics:accuracy:0.7947
+INFO:root:[Epoch 1 Batch 1900/3394] loss=0.3567, lr=0.0000200, metrics:accuracy:0.7978
+INFO:root:[Epoch 1 Batch 2000/3394] loss=0.3691, lr=0.0000200, metrics:accuracy:0.8001
+INFO:root:[Epoch 1 Batch 2100/3394] loss=0.3646, lr=0.0000200, metrics:accuracy:0.8021
+INFO:root:[Epoch 1 Batch 2200/3394] loss=0.3356, lr=0.0000200, metrics:accuracy:0.8048
+INFO:root:[Epoch 1 Batch 2300/3394] loss=0.3373, lr=0.0000200, metrics:accuracy:0.8072
+INFO:root:[Epoch 1 Batch 2400/3394] loss=0.3385, lr=0.0000200, metrics:accuracy:0.8094
+INFO:root:[Epoch 1 Batch 2500/3394] loss=0.3427, lr=0.0000200, metrics:accuracy:0.8112
+INFO:root:[Epoch 1 Batch 2600/3394] loss=0.3563, lr=0.0000200, metrics:accuracy:0.8128
+INFO:root:[Epoch 1 Batch 2700/3394] loss=0.3311, lr=0.0000200, metrics:accuracy:0.8148
+INFO:root:[Epoch 1 Batch 2800/3394] loss=0.3315, lr=0.0000200, metrics:accuracy:0.8165
+INFO:root:[Epoch 1 Batch 2900/3394] loss=0.3270, lr=0.0000200, metrics:accuracy:0.8183
+INFO:root:[Epoch 1 Batch 3000/3394] loss=0.3263, lr=0.0000200, metrics:accuracy:0.8200
+INFO:root:[Epoch 1 Batch 3100/3394] loss=0.3260, lr=0.0000200, metrics:accuracy:0.8215
+INFO:root:[Epoch 1 Batch 3200/3394] loss=0.3220, lr=0.0000200, metrics:accuracy:0.8228
+INFO:root:[Epoch 1 Batch 3300/3394] loss=0.3320, lr=0.0000200, metrics:accuracy:0.8242
+INFO:root:Now we are doing evaluation on dev with gpu(0).
+INFO:root:[Batch 100/717] loss=0.3314, metrics:accuracy:0.8538
+INFO:root:[Batch 200/717] loss=0.3334, metrics:accuracy:0.8506
+INFO:root:[Batch 300/717] loss=0.2824, metrics:accuracy:0.8604
+INFO:root:[Batch 400/717] loss=0.2629, metrics:accuracy:0.8684
+INFO:root:[Batch 500/717] loss=0.3204, metrics:accuracy:0.8668
+INFO:root:[Batch 600/717] loss=0.3087, metrics:accuracy:0.8673
+INFO:root:[Batch 700/717] loss=0.3274, metrics:accuracy:0.8652
+INFO:root:validation metrics:accuracy:0.8643
+INFO:root:Time cost=31.48s, throughput=182.23 samples/s
+INFO:root:params saved in: ./output_dir/model_bert_QNLI_0.params
+INFO:root:Time cost=671.48s
+INFO:root:[Epoch 2 Batch 100/3394] loss=0.2553, lr=0.0000200, metrics:accuracy:0.9022
+INFO:root:[Epoch 2 Batch 200/3394] loss=0.2610, lr=0.0000200, metrics:accuracy:0.8983
+INFO:root:[Epoch 2 Batch 300/3394] loss=0.2411, lr=0.0000200, metrics:accuracy:0.9019
+INFO:root:[Epoch 2 Batch 400/3394] loss=0.2446, lr=0.0000200, metrics:accuracy:0.9030
+INFO:root:[Epoch 2 Batch 500/3394] loss=0.2574, lr=0.0000200, metrics:accuracy:0.9027
+INFO:root:[Epoch 2 Batch 600/3394] loss=0.2514, lr=0.0000200, metrics:accuracy:0.9038
+INFO:root:[Epoch 2 Batch 700/3394] loss=0.2549, lr=0.0000200, metrics:accuracy:0.9037
+INFO:root:[Epoch 2 Batch 800/3394] loss=0.2573, lr=0.0000200, metrics:accuracy:0.9027
+INFO:root:[Epoch 2 Batch 900/3394] loss=0.2655, lr=0.0000200, metrics:accuracy:0.9021
+INFO:root:[Epoch 2 Batch 1000/3394] loss=0.2727, lr=0.0000200, metrics:accuracy:0.9017
+INFO:root:[Epoch 2 Batch 1100/3394] loss=0.2531, lr=0.0000200, metrics:accuracy:0.9022
+INFO:root:[Epoch 2 Batch 1200/3394] loss=0.2494, lr=0.0000200, metrics:accuracy:0.9026
+INFO:root:[Epoch 2 Batch 1300/3394] loss=0.2504, lr=0.0000200, metrics:accuracy:0.9027
+INFO:root:[Epoch 2 Batch 1400/3394] loss=0.2643, lr=0.0000200, metrics:accuracy:0.9020
+INFO:root:[Epoch 2 Batch 1500/3394] loss=0.2426, lr=0.0000200, metrics:accuracy:0.9026
+INFO:root:[Epoch 2 Batch 1600/3394] loss=0.2684, lr=0.0000200, metrics:accuracy:0.9020
+INFO:root:[Epoch 2 Batch 1700/3394] loss=0.2385, lr=0.0000200, metrics:accuracy:0.9026
+INFO:root:[Epoch 2 Batch 1800/3394] loss=0.2598, lr=0.0000200, metrics:accuracy:0.9026
+INFO:root:[Epoch 2 Batch 1900/3394] loss=0.2473, lr=0.0000200, metrics:accuracy:0.9027
+INFO:root:[Epoch 2 Batch 2000/3394] loss=0.2571, lr=0.0000200, metrics:accuracy:0.9028
+INFO:root:[Epoch 2 Batch 2100/3394] loss=0.2566, lr=0.0000200, metrics:accuracy:0.9030
+INFO:root:[Epoch 2 Batch 2200/3394] loss=0.2619, lr=0.0000200, metrics:accuracy:0.9028
+INFO:root:[Epoch 2 Batch 2300/3394] loss=0.2357, lr=0.0000200, metrics:accuracy:0.9031
+INFO:root:[Epoch 2 Batch 2400/3394] loss=0.2753, lr=0.0000200, metrics:accuracy:0.9024
+INFO:root:[Epoch 2 Batch 2500/3394] loss=0.2658, lr=0.0000200, metrics:accuracy:0.9020
+INFO:root:[Epoch 2 Batch 2600/3394] loss=0.2638, lr=0.0000200, metrics:accuracy:0.9018
+INFO:root:[Epoch 2 Batch 2700/3394] loss=0.2528, lr=0.0000200, metrics:accuracy:0.9017
+INFO:root:[Epoch 2 Batch 2800/3394] loss=0.2552, lr=0.0000200, metrics:accuracy:0.9017
+INFO:root:[Epoch 2 Batch 2900/3394] loss=0.2552, lr=0.0000200, metrics:accuracy:0.9019
+INFO:root:[Epoch 2 Batch 3000/3394] loss=0.2493, lr=0.0000200, metrics:accuracy:0.9019
+INFO:root:[Epoch 2 Batch 3100/3394] loss=0.2499, lr=0.0000200, metrics:accuracy:0.9019
+INFO:root:[Epoch 2 Batch 3200/3394] loss=0.2614, lr=0.0000200, metrics:accuracy:0.9018
+INFO:root:[Epoch 2 Batch 3300/3394] loss=0.2498, lr=0.0000200, metrics:accuracy:0.9019
+INFO:root:Now we are doing evaluation on dev with gpu(0).
+INFO:root:[Batch 100/717] loss=0.3273, metrics:accuracy:0.8700
+INFO:root:[Batch 200/717] loss=0.3172, metrics:accuracy:0.8700
+INFO:root:[Batch 300/717] loss=0.2529, metrics:accuracy:0.8796
+INFO:root:[Batch 400/717] loss=0.2571, metrics:accuracy:0.8838
+INFO:root:[Batch 500/717] loss=0.3009, metrics:accuracy:0.8825
+INFO:root:[Batch 600/717] loss=0.2982, metrics:accuracy:0.8831
+INFO:root:[Batch 700/717] loss=0.2775, metrics:accuracy:0.8848
+INFO:root:validation metrics:accuracy:0.8840
+INFO:root:Time cost=28.68s, throughput=200.03 samples/s
+INFO:root:params saved in: ./output_dir/model_bert_QNLI_1.params
+INFO:root:Time cost=685.53s
+INFO:root:[Epoch 3 Batch 100/3394] loss=0.1705, lr=0.0000200, metrics:accuracy:0.9400
+INFO:root:[Epoch 3 Batch 200/3394] loss=0.1862, lr=0.0000200, metrics:accuracy:0.9361
+INFO:root:[Epoch 3 Batch 300/3394] loss=0.1680, lr=0.0000200, metrics:accuracy:0.9377
+INFO:root:[Epoch 3 Batch 400/3394] loss=0.1792, lr=0.0000200, metrics:accuracy:0.9373
+INFO:root:[Epoch 3 Batch 500/3394] loss=0.1659, lr=0.0000200, metrics:accuracy:0.9382
+INFO:root:[Epoch 3 Batch 600/3394] loss=0.1487, lr=0.0000200, metrics:accuracy:0.9400
+INFO:root:[Epoch 3 Batch 700/3394] loss=0.1778, lr=0.0000200, metrics:accuracy:0.9395
+INFO:root:[Epoch 3 Batch 800/3394] loss=0.1914, lr=0.0000200, metrics:accuracy:0.9383
+INFO:root:[Epoch 3 Batch 900/3394] loss=0.1890, lr=0.0000200, metrics:accuracy:0.9371
+INFO:root:[Epoch 3 Batch 1000/3394] loss=0.1674, lr=0.0000200, metrics:accuracy:0.9374
+INFO:root:[Epoch 3 Batch 1100/3394] loss=0.1797, lr=0.0000200, metrics:accuracy:0.9372
+INFO:root:[Epoch 3 Batch 1200/3394] loss=0.1729, lr=0.0000200, metrics:accuracy:0.9377
+INFO:root:[Epoch 3 Batch 1300/3394] loss=0.1818, lr=0.0000200, metrics:accuracy:0.9374
+INFO:root:[Epoch 3 Batch 1400/3394] loss=0.1830, lr=0.0000200, metrics:accuracy:0.9373
+INFO:root:[Epoch 3 Batch 1500/3394] loss=0.1815, lr=0.0000200, metrics:accuracy:0.9371
+INFO:root:[Epoch 3 Batch 1600/3394] loss=0.1722, lr=0.0000200, metrics:accuracy:0.9371
+INFO:root:[Epoch 3 Batch 1700/3394] loss=0.1807, lr=0.0000200, metrics:accuracy:0.9369
+INFO:root:[Epoch 3 Batch 1800/3394] loss=0.1874, lr=0.0000200, metrics:accuracy:0.9367
+INFO:root:[Epoch 3 Batch 1900/3394] loss=0.1976, lr=0.0000200, metrics:accuracy:0.9362
+INFO:root:[Epoch 3 Batch 2000/3394] loss=0.1704, lr=0.0000200, metrics:accuracy:0.9363
+INFO:root:[Epoch 3 Batch 2100/3394] loss=0.1930, lr=0.0000200, metrics:accuracy:0.9360
+INFO:root:[Epoch 3 Batch 2200/3394] loss=0.1929, lr=0.0000200, metrics:accuracy:0.9357
+INFO:root:[Epoch 3 Batch 2300/3394] loss=0.1700, lr=0.0000200, metrics:accuracy:0.9358
+INFO:root:[Epoch 3 Batch 2400/3394] loss=0.1935, lr=0.0000200, metrics:accuracy:0.9356
+INFO:root:[Epoch 3 Batch 2500/3394] loss=0.1916, lr=0.0000200, metrics:accuracy:0.9354
+INFO:root:[Epoch 3 Batch 2600/3394] loss=0.1988, lr=0.0000200, metrics:accuracy:0.9350
+INFO:root:[Epoch 3 Batch 2700/3394] loss=0.1969, lr=0.0000200, metrics:accuracy:0.9347
+INFO:root:[Epoch 3 Batch 2800/3394] loss=0.1940, lr=0.0000200, metrics:accuracy:0.9343
+INFO:root:[Epoch 3 Batch 2900/3394] loss=0.1841, lr=0.0000200, metrics:accuracy:0.9343
+INFO:root:[Epoch 3 Batch 3000/3394] loss=0.1943, lr=0.0000200, metrics:accuracy:0.9341
+INFO:root:[Epoch 3 Batch 3100/3394] loss=0.1787, lr=0.0000200, metrics:accuracy:0.9341
+INFO:root:[Epoch 3 Batch 3200/3394] loss=0.1929, lr=0.0000200, metrics:accuracy:0.9342
+INFO:root:[Epoch 3 Batch 3300/3394] loss=0.1723, lr=0.0000200, metrics:accuracy:0.9345
+INFO:root:Now we are doing evaluation on dev with gpu(0).
+INFO:root:[Batch 100/717] loss=0.4168, metrics:accuracy:0.8600
+INFO:root:[Batch 200/717] loss=0.3858, metrics:accuracy:0.8656
+INFO:root:[Batch 300/717] loss=0.3143, metrics:accuracy:0.8750
+INFO:root:[Batch 400/717] loss=0.3069, metrics:accuracy:0.8806
+INFO:root:[Batch 500/717] loss=0.3783, metrics:accuracy:0.8778
+INFO:root:[Batch 600/717] loss=0.3499, metrics:accuracy:0.8771
+INFO:root:[Batch 700/717] loss=0.2912, metrics:accuracy:0.8796
+INFO:root:validation metrics:accuracy:0.8788
+INFO:root:Time cost=25.12s, throughput=228.32 samples/s
+INFO:root:params saved in: ./output_dir/model_bert_QNLI_2.params
+INFO:root:Time cost=681.28s
+INFO:root:Best model at epoch 1. Validation metrics:accuracy:0.8840
+INFO:root:Now we are doing testing on test with gpu(0).
+INFO:root:Time cost=43.66s, throughput=131.56 samples/s
