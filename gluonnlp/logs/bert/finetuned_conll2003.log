@@ -1,0 +1,499 @@
+2019-06-02 06:40:42 INFO: Loading BERT model...
+2019-06-02 06:40:48 INFO: Loading sentences in /home/ec2-user/CoNLL2003/en/train.txt...
+2019-06-02 06:40:54 INFO: load /home/ec2-user/CoNLL2003/en/train.txt, its max seq len: 171
+2019-06-02 06:40:54 INFO: Loading sentences in /home/ec2-user/CoNLL2003/en/validation.txt...
+2019-06-02 06:40:56 INFO: load /home/ec2-user/CoNLL2003/en/validation.txt, its max seq len: 149
+2019-06-02 06:40:56 INFO: Loading sentences in /home/ec2-user/CoNLL2003/en/test.txt...
+2019-06-02 06:40:57 INFO: load /home/ec2-user/CoNLL2003/en/test.txt, its max seq len: 146
+2019-06-02 06:40:57 INFO: Indexing tags...
+2019-06-02 06:40:57 INFO: example test sentences:
+2019-06-02 06:40:57 INFO: [TaggedToken(text='S', tag='O'), TaggedToken(text='##OC', tag='X'), TaggedToken(text='##CE', tag='X'), TaggedToken(text='##R', tag='X'), TaggedToken(text='-', tag='O'), TaggedToken(text='J', tag='S-LOC'), TaggedToken(text='##AP', tag='X'), TaggedToken(text='##AN', tag='X'), TaggedToken(text='GE', tag='O'), TaggedToken(text='##T', tag='X'), TaggedToken(text='L', tag='O'), TaggedToken(text='##UC', tag='X'), TaggedToken(text='##K', tag='X'), TaggedToken(text='##Y', tag='X'), TaggedToken(text='W', tag='O'), TaggedToken(text='##IN', tag='X'), TaggedToken(text=',', tag='O'), TaggedToken(text='CH', tag='S-PER'), TaggedToken(text='##IN', tag='X'), TaggedToken(text='##A', tag='X'), TaggedToken(text='IN', tag='O'), TaggedToken(text='S', tag='O'), TaggedToken(text='##UR', tag='X'), TaggedToken(text='##PR', tag='X'), TaggedToken(text='##IS', tag='X'), TaggedToken(text='##E', tag='X'), TaggedToken(text='DE', tag='O'), TaggedToken(text='##F', tag='X'), TaggedToken(text='##EA', tag='X'), TaggedToken(text='##T', tag='X'), TaggedToken(text='.', tag='O')]
+2019-06-02 06:40:57 INFO: [TaggedToken(text='Na', tag='B-PER'), TaggedToken(text='##di', tag='X'), TaggedToken(text='##m', tag='X'), TaggedToken(text='La', tag='E-PER'), TaggedToken(text='##d', tag='X'), TaggedToken(text='##ki', tag='X')]
+2019-06-02 06:40:57 INFO: [TaggedToken(text='AL', tag='S-LOC'), TaggedToken(text='-', tag='X'), TaggedToken(text='AI', tag='X'), TaggedToken(text='##N', tag='X'), TaggedToken(text=',', tag='O'), TaggedToken(text='United', tag='B-LOC'), TaggedToken(text='Arab', tag='I-LOC'), TaggedToken(text='Emirates', tag='E-LOC'), TaggedToken(text='1996', tag='O'), TaggedToken(text='-', tag='X'), TaggedToken(text='12', tag='X'), TaggedToken(text='-', tag='X'), TaggedToken(text='06', tag='X')]
+2019-06-02 06:40:57 INFO: [TaggedToken(text='Japan', tag='S-LOC'), TaggedToken(text='began', tag='O'), TaggedToken(text='the', tag='O'), TaggedToken(text='defence', tag='O'), TaggedToken(text='of', tag='O'), TaggedToken(text='their', tag='O'), TaggedToken(text='Asian', tag='B-MISC'), TaggedToken(text='Cup', tag='E-MISC'), TaggedToken(text='title', tag='O'), TaggedToken(text='with', tag='O'), TaggedToken(text='a', tag='O'), TaggedToken(text='lucky', tag='O'), TaggedToken(text='2', tag='O'), TaggedToken(text='-', tag='X'), TaggedToken(text='1', tag='X'), TaggedToken(text='win', tag='O'), TaggedToken(text='against', tag='O'), TaggedToken(text='Syria', tag='S-LOC'), TaggedToken(text='in', tag='O'), TaggedToken(text='a', tag='O'), TaggedToken(text='Group', tag='O'), TaggedToken(text='C', tag='O'), TaggedToken(text='championship', tag='O'), TaggedToken(text='match', tag='O'), TaggedToken(text='on', tag='O'), TaggedToken(text='Friday', tag='O'), TaggedToken(text='.', tag='O')]
+2019-06-02 06:40:57 INFO: [TaggedToken(text='But', tag='O'), TaggedToken(text='China', tag='S-LOC'), TaggedToken(text='saw', tag='O'), TaggedToken(text='their', tag='O'), TaggedToken(text='luck', tag='O'), TaggedToken(text='desert', tag='O'), TaggedToken(text='them', tag='O'), TaggedToken(text='in', tag='O'), TaggedToken(text='the', tag='O'), TaggedToken(text='second', tag='O'), TaggedToken(text='match', tag='O'), TaggedToken(text='of', tag='O'), TaggedToken(text='the', tag='O'), TaggedToken(text='group', tag='O'), TaggedToken(text=',', tag='O'), TaggedToken(text='crashing', tag='O'), TaggedToken(text='to', tag='O'), TaggedToken(text='a', tag='O'), TaggedToken(text='surprise', tag='O'), TaggedToken(text='2', tag='O'), TaggedToken(text='-', tag='X'), TaggedToken(text='0', tag='X'), TaggedToken(text='defeat', tag='O'), TaggedToken(text='to', tag='O'), TaggedToken(text='newcomer', tag='O'), TaggedToken(text='##s', tag='X'), TaggedToken(text='Uzbekistan', tag='S-LOC'), TaggedToken(text='.', tag='O')]
+2019-06-02 06:40:57 INFO: [TaggedToken(text='China', tag='S-LOC'), TaggedToken(text='controlled', tag='O'), TaggedToken(text='most', tag='O'), TaggedToken(text='of', tag='O'), TaggedToken(text='the', tag='O'), TaggedToken(text='match', tag='O'), TaggedToken(text='and', tag='O'), TaggedToken(text='saw', tag='O'), TaggedToken(text='several', tag='O'), TaggedToken(text='chances', tag='O'), TaggedToken(text='missed', tag='O'), TaggedToken(text='until', tag='O'), TaggedToken(text='the', tag='O'), TaggedToken(text='78', tag='O'), TaggedToken(text='##th', tag='X'), TaggedToken(text='minute', tag='O'), TaggedToken(text='when', tag='O'), TaggedToken(text='U', tag='S-MISC'), TaggedToken(text='##z', tag='X'), TaggedToken(text='##bek', tag='X'), TaggedToken(text='striker', tag='O'), TaggedToken(text='Igor', tag='B-PER'), TaggedToken(text='S', tag='E-PER'), TaggedToken(text='##h', tag='X'), TaggedToken(text='##k', tag='X'), TaggedToken(text='##vy', tag='X'), TaggedToken(text='##rin', tag='X'), TaggedToken(text='took', tag='O'), TaggedToken(text='advantage', tag='O'), TaggedToken(text='of', tag='O'), TaggedToken(text='a', tag='O'), TaggedToken(text='mi', tag='O'), TaggedToken(text='##s', tag='X'), TaggedToken(text='##dir', tag='X'), TaggedToken(text='##ec', tag='X'), TaggedToken(text='##ted', tag='X'), TaggedToken(text='defensive', tag='O'), TaggedToken(text='header', tag='O'), TaggedToken(text='to', tag='O'), TaggedToken(text='lo', tag='O'), TaggedToken(text='##b', tag='X'), TaggedToken(text='the', tag='O'), TaggedToken(text='ball', tag='O'), TaggedToken(text='over', tag='O'), TaggedToken(text='the', tag='O'), TaggedToken(text='advancing', tag='O'), TaggedToken(text='Chinese', tag='S-MISC'), TaggedToken(text='keeper', tag='O'), TaggedToken(text='and', tag='O'), TaggedToken(text='into', tag='O'), TaggedToken(text='an', tag='O'), TaggedToken(text='empty', tag='O'), TaggedToken(text='net', tag='O'), TaggedToken(text='.', tag='O')]
+2019-06-02 06:40:57 INFO: [TaggedToken(text='Ole', tag='B-PER'), TaggedToken(text='##g', tag='X'), TaggedToken(text='S', tag='E-PER'), TaggedToken(text='##hat', tag='X'), TaggedToken(text='##ski', tag='X'), TaggedToken(text='##ku', tag='X'), TaggedToken(text='made', tag='O'), TaggedToken(text='sure', tag='O'), TaggedToken(text='of', tag='O'), TaggedToken(text='the', tag='O'), TaggedToken(text='win', tag='O'), TaggedToken(text='in', tag='O'), TaggedToken(text='injury', tag='O'), TaggedToken(text='time', tag='O'), TaggedToken(text=',', tag='O'), TaggedToken(text='hitting', tag='O'), TaggedToken(text='an', tag='O'), TaggedToken(text='un', tag='O'), TaggedToken(text='##stop', tag='X'), TaggedToken(text='##pable', tag='X'), TaggedToken(text='left', tag='O'), TaggedToken(text='foot', tag='O'), TaggedToken(text='shot', tag='O'), TaggedToken(text='from', tag='O'), TaggedToken(text='just', tag='O'), TaggedToken(text='outside', tag='O'), TaggedToken(text='the', tag='O'), TaggedToken(text='area', tag='O'), TaggedToken(text='.', tag='O')]
+2019-06-02 06:40:57 INFO: [TaggedToken(text='The', tag='O'), TaggedToken(text='former', tag='O'), TaggedToken(text='Soviet', tag='S-MISC'), TaggedToken(text='republic', tag='O'), TaggedToken(text='was', tag='O'), TaggedToken(text='playing', tag='O'), TaggedToken(text='in', tag='O'), TaggedToken(text='an', tag='O'), TaggedToken(text='Asian', tag='B-MISC'), TaggedToken(text='Cup', tag='E-MISC'), TaggedToken(text='finals', tag='O'), TaggedToken(text='tie', tag='O'), TaggedToken(text='for', tag='O'), TaggedToken(text='the', tag='O'), TaggedToken(text='first', tag='O'), TaggedToken(text='time', tag='O'), TaggedToken(text='.', tag='O')]
+2019-06-02 06:40:57 INFO: [TaggedToken(text='Despite', tag='O'), TaggedToken(text='winning', tag='O'), TaggedToken(text='the', tag='O'), TaggedToken(text='Asian', tag='B-MISC'), TaggedToken(text='Games', tag='E-MISC'), TaggedToken(text='title', tag='O'), TaggedToken(text='two', tag='O'), TaggedToken(text='years', tag='O'), TaggedToken(text='ago', tag='O'), TaggedToken(text=',', tag='O'), TaggedToken(text='Uzbekistan', tag='S-LOC'), TaggedToken(text='are', tag='O'), TaggedToken(text='in', tag='O'), TaggedToken(text='the', tag='O'), TaggedToken(text='finals', tag='O'), TaggedToken(text='as', tag='O'), TaggedToken(text='outsider', tag='O'), TaggedToken(text='##s', tag='X'), TaggedToken(text='.', tag='O')]
+2019-06-02 06:40:57 INFO: [TaggedToken(text='Two', tag='O'), TaggedToken(text='goals', tag='O'), TaggedToken(text='from', tag='O'), TaggedToken(text='defensive', tag='O'), TaggedToken(text='errors', tag='O'), TaggedToken(text='in', tag='O'), TaggedToken(text='the', tag='O'), TaggedToken(text='last', tag='O'), TaggedToken(text='six', tag='O'), TaggedToken(text='minutes', tag='O'), TaggedToken(text='allowed', tag='O'), TaggedToken(text='Japan', tag='S-LOC'), TaggedToken(text='to', tag='O'), TaggedToken(text='come', tag='O'), TaggedToken(text='from', tag='O'), TaggedToken(text='behind', tag='O'), TaggedToken(text='and', tag='O'), TaggedToken(text='collect', tag='O'), TaggedToken(text='all', tag='O'), TaggedToken(text='three', tag='O'), TaggedToken(text='points', tag='O'), TaggedToken(text='from', tag='O'), TaggedToken(text='their', tag='O'), TaggedToken(text='opening', tag='O'), TaggedToken(text='meeting', tag='O'), TaggedToken(text='against', tag='O'), TaggedToken(text='Syria', tag='S-LOC'), TaggedToken(text='.', tag='O')]
+2019-06-02 06:40:59 INFO: tag_vocab: Vocab(size=18, unk="None", reserved="['X']")
+2019-06-02 06:40:59 INFO: Collect params...
+2019-06-02 06:40:59 INFO: dumping metadata...
+2019-06-02 06:40:59 INFO: current starting step num: 0
+2019-06-02 06:53:06 INFO: Loading BERT model...
+2019-06-02 06:53:12 INFO: Loading sentences in /home/ec2-user/CoNLL2003/en/train.txt...
+2019-06-02 06:53:18 INFO: load /home/ec2-user/CoNLL2003/en/train.txt, its max seq len: 171
+2019-06-02 06:53:18 INFO: Loading sentences in /home/ec2-user/CoNLL2003/en/validation.txt...
+2019-06-02 06:53:20 INFO: load /home/ec2-user/CoNLL2003/en/validation.txt, its max seq len: 149
+2019-06-02 06:53:20 INFO: Loading sentences in /home/ec2-user/CoNLL2003/en/test.txt...
+2019-06-02 06:53:21 INFO: load /home/ec2-user/CoNLL2003/en/test.txt, its max seq len: 146
+2019-06-02 06:53:21 INFO: Indexing tags...
+2019-06-02 06:53:21 INFO: example test sentences:
+2019-06-02 06:53:21 INFO: [TaggedToken(text='S', tag='O'), TaggedToken(text='##OC', tag='X'), TaggedToken(text='##CE', tag='X'), TaggedToken(text='##R', tag='X'), TaggedToken(text='-', tag='O'), TaggedToken(text='J', tag='S-LOC'), TaggedToken(text='##AP', tag='X'), TaggedToken(text='##AN', tag='X'), TaggedToken(text='GE', tag='O'), TaggedToken(text='##T', tag='X'), TaggedToken(text='L', tag='O'), TaggedToken(text='##UC', tag='X'), TaggedToken(text='##K', tag='X'), TaggedToken(text='##Y', tag='X'), TaggedToken(text='W', tag='O'), TaggedToken(text='##IN', tag='X'), TaggedToken(text=',', tag='O'), TaggedToken(text='CH', tag='S-PER'), TaggedToken(text='##IN', tag='X'), TaggedToken(text='##A', tag='X'), TaggedToken(text='IN', tag='O'), TaggedToken(text='S', tag='O'), TaggedToken(text='##UR', tag='X'), TaggedToken(text='##PR', tag='X'), TaggedToken(text='##IS', tag='X'), TaggedToken(text='##E', tag='X'), TaggedToken(text='DE', tag='O'), TaggedToken(text='##F', tag='X'), TaggedToken(text='##EA', tag='X'), TaggedToken(text='##T', tag='X'), TaggedToken(text='.', tag='O')]
+2019-06-02 06:53:21 INFO: [TaggedToken(text='Na', tag='B-PER'), TaggedToken(text='##di', tag='X'), TaggedToken(text='##m', tag='X'), TaggedToken(text='La', tag='E-PER'), TaggedToken(text='##d', tag='X'), TaggedToken(text='##ki', tag='X')]
+2019-06-02 06:53:21 INFO: [TaggedToken(text='AL', tag='S-LOC'), TaggedToken(text='-', tag='X'), TaggedToken(text='AI', tag='X'), TaggedToken(text='##N', tag='X'), TaggedToken(text=',', tag='O'), TaggedToken(text='United', tag='B-LOC'), TaggedToken(text='Arab', tag='I-LOC'), TaggedToken(text='Emirates', tag='E-LOC'), TaggedToken(text='1996', tag='O'), TaggedToken(text='-', tag='X'), TaggedToken(text='12', tag='X'), TaggedToken(text='-', tag='X'), TaggedToken(text='06', tag='X')]
+2019-06-02 06:53:21 INFO: [TaggedToken(text='Japan', tag='S-LOC'), TaggedToken(text='began', tag='O'), TaggedToken(text='the', tag='O'), TaggedToken(text='defence', tag='O'), TaggedToken(text='of', tag='O'), TaggedToken(text='their', tag='O'), TaggedToken(text='Asian', tag='B-MISC'), TaggedToken(text='Cup', tag='E-MISC'), TaggedToken(text='title', tag='O'), TaggedToken(text='with', tag='O'), TaggedToken(text='a', tag='O'), TaggedToken(text='lucky', tag='O'), TaggedToken(text='2', tag='O'), TaggedToken(text='-', tag='X'), TaggedToken(text='1', tag='X'), TaggedToken(text='win', tag='O'), TaggedToken(text='against', tag='O'), TaggedToken(text='Syria', tag='S-LOC'), TaggedToken(text='in', tag='O'), TaggedToken(text='a', tag='O'), TaggedToken(text='Group', tag='O'), TaggedToken(text='C', tag='O'), TaggedToken(text='championship', tag='O'), TaggedToken(text='match', tag='O'), TaggedToken(text='on', tag='O'), TaggedToken(text='Friday', tag='O'), TaggedToken(text='.', tag='O')]
+2019-06-02 06:53:21 INFO: [TaggedToken(text='But', tag='O'), TaggedToken(text='China', tag='S-LOC'), TaggedToken(text='saw', tag='O'), TaggedToken(text='their', tag='O'), TaggedToken(text='luck', tag='O'), TaggedToken(text='desert', tag='O'), TaggedToken(text='them', tag='O'), TaggedToken(text='in', tag='O'), TaggedToken(text='the', tag='O'), TaggedToken(text='second', tag='O'), TaggedToken(text='match', tag='O'), TaggedToken(text='of', tag='O'), TaggedToken(text='the', tag='O'), TaggedToken(text='group', tag='O'), TaggedToken(text=',', tag='O'), TaggedToken(text='crashing', tag='O'), TaggedToken(text='to', tag='O'), TaggedToken(text='a', tag='O'), TaggedToken(text='surprise', tag='O'), TaggedToken(text='2', tag='O'), TaggedToken(text='-', tag='X'), TaggedToken(text='0', tag='X'), TaggedToken(text='defeat', tag='O'), TaggedToken(text='to', tag='O'), TaggedToken(text='newcomer', tag='O'), TaggedToken(text='##s', tag='X'), TaggedToken(text='Uzbekistan', tag='S-LOC'), TaggedToken(text='.', tag='O')]
+2019-06-02 06:53:21 INFO: [TaggedToken(text='China', tag='S-LOC'), TaggedToken(text='controlled', tag='O'), TaggedToken(text='most', tag='O'), TaggedToken(text='of', tag='O'), TaggedToken(text='the', tag='O'), TaggedToken(text='match', tag='O'), TaggedToken(text='and', tag='O'), TaggedToken(text='saw', tag='O'), TaggedToken(text='several', tag='O'), TaggedToken(text='chances', tag='O'), TaggedToken(text='missed', tag='O'), TaggedToken(text='until', tag='O'), TaggedToken(text='the', tag='O'), TaggedToken(text='78', tag='O'), TaggedToken(text='##th', tag='X'), TaggedToken(text='minute', tag='O'), TaggedToken(text='when', tag='O'), TaggedToken(text='U', tag='S-MISC'), TaggedToken(text='##z', tag='X'), TaggedToken(text='##bek', tag='X'), TaggedToken(text='striker', tag='O'), TaggedToken(text='Igor', tag='B-PER'), TaggedToken(text='S', tag='E-PER'), TaggedToken(text='##h', tag='X'), TaggedToken(text='##k', tag='X'), TaggedToken(text='##vy', tag='X'), TaggedToken(text='##rin', tag='X'), TaggedToken(text='took', tag='O'), TaggedToken(text='advantage', tag='O'), TaggedToken(text='of', tag='O'), TaggedToken(text='a', tag='O'), TaggedToken(text='mi', tag='O'), TaggedToken(text='##s', tag='X'), TaggedToken(text='##dir', tag='X'), TaggedToken(text='##ec', tag='X'), TaggedToken(text='##ted', tag='X'), TaggedToken(text='defensive', tag='O'), TaggedToken(text='header', tag='O'), TaggedToken(text='to', tag='O'), TaggedToken(text='lo', tag='O'), TaggedToken(text='##b', tag='X'), TaggedToken(text='the', tag='O'), TaggedToken(text='ball', tag='O'), TaggedToken(text='over', tag='O'), TaggedToken(text='the', tag='O'), TaggedToken(text='advancing', tag='O'), TaggedToken(text='Chinese', tag='S-MISC'), TaggedToken(text='keeper', tag='O'), TaggedToken(text='and', tag='O'), TaggedToken(text='into', tag='O'), TaggedToken(text='an', tag='O'), TaggedToken(text='empty', tag='O'), TaggedToken(text='net', tag='O'), TaggedToken(text='.', tag='O')]
+2019-06-02 06:53:21 INFO: [TaggedToken(text='Ole', tag='B-PER'), TaggedToken(text='##g', tag='X'), TaggedToken(text='S', tag='E-PER'), TaggedToken(text='##hat', tag='X'), TaggedToken(text='##ski', tag='X'), TaggedToken(text='##ku', tag='X'), TaggedToken(text='made', tag='O'), TaggedToken(text='sure', tag='O'), TaggedToken(text='of', tag='O'), TaggedToken(text='the', tag='O'), TaggedToken(text='win', tag='O'), TaggedToken(text='in', tag='O'), TaggedToken(text='injury', tag='O'), TaggedToken(text='time', tag='O'), TaggedToken(text=',', tag='O'), TaggedToken(text='hitting', tag='O'), TaggedToken(text='an', tag='O'), TaggedToken(text='un', tag='O'), TaggedToken(text='##stop', tag='X'), TaggedToken(text='##pable', tag='X'), TaggedToken(text='left', tag='O'), TaggedToken(text='foot', tag='O'), TaggedToken(text='shot', tag='O'), TaggedToken(text='from', tag='O'), TaggedToken(text='just', tag='O'), TaggedToken(text='outside', tag='O'), TaggedToken(text='the', tag='O'), TaggedToken(text='area', tag='O'), TaggedToken(text='.', tag='O')]
+2019-06-02 06:53:21 INFO: [TaggedToken(text='The', tag='O'), TaggedToken(text='former', tag='O'), TaggedToken(text='Soviet', tag='S-MISC'), TaggedToken(text='republic', tag='O'), TaggedToken(text='was', tag='O'), TaggedToken(text='playing', tag='O'), TaggedToken(text='in', tag='O'), TaggedToken(text='an', tag='O'), TaggedToken(text='Asian', tag='B-MISC'), TaggedToken(text='Cup', tag='E-MISC'), TaggedToken(text='finals', tag='O'), TaggedToken(text='tie', tag='O'), TaggedToken(text='for', tag='O'), TaggedToken(text='the', tag='O'), TaggedToken(text='first', tag='O'), TaggedToken(text='time', tag='O'), TaggedToken(text='.', tag='O')]
+2019-06-02 06:53:21 INFO: [TaggedToken(text='Despite', tag='O'), TaggedToken(text='winning', tag='O'), TaggedToken(text='the', tag='O'), TaggedToken(text='Asian', tag='B-MISC'), TaggedToken(text='Games', tag='E-MISC'), TaggedToken(text='title', tag='O'), TaggedToken(text='two', tag='O'), TaggedToken(text='years', tag='O'), TaggedToken(text='ago', tag='O'), TaggedToken(text=',', tag='O'), TaggedToken(text='Uzbekistan', tag='S-LOC'), TaggedToken(text='are', tag='O'), TaggedToken(text='in', tag='O'), TaggedToken(text='the', tag='O'), TaggedToken(text='finals', tag='O'), TaggedToken(text='as', tag='O'), TaggedToken(text='outsider', tag='O'), TaggedToken(text='##s', tag='X'), TaggedToken(text='.', tag='O')]
+2019-06-02 06:53:21 INFO: [TaggedToken(text='Two', tag='O'), TaggedToken(text='goals', tag='O'), TaggedToken(text='from', tag='O'), TaggedToken(text='defensive', tag='O'), TaggedToken(text='errors', tag='O'), TaggedToken(text='in', tag='O'), TaggedToken(text='the', tag='O'), TaggedToken(text='last', tag='O'), TaggedToken(text='six', tag='O'), TaggedToken(text='minutes', tag='O'), TaggedToken(text='allowed', tag='O'), TaggedToken(text='Japan', tag='S-LOC'), TaggedToken(text='to', tag='O'), TaggedToken(text='come', tag='O'), TaggedToken(text='from', tag='O'), TaggedToken(text='behind', tag='O'), TaggedToken(text='and', tag='O'), TaggedToken(text='collect', tag='O'), TaggedToken(text='all', tag='O'), TaggedToken(text='three', tag='O'), TaggedToken(text='points', tag='O'), TaggedToken(text='from', tag='O'), TaggedToken(text='their', tag='O'), TaggedToken(text='opening', tag='O'), TaggedToken(text='meeting', tag='O'), TaggedToken(text='against', tag='O'), TaggedToken(text='Syria', tag='S-LOC'), TaggedToken(text='.', tag='O')]
+2019-06-02 06:53:23 INFO: tag_vocab: Vocab(size=18, unk="None", reserved="['X']")
+2019-06-02 06:53:23 INFO: Collect params...
+2019-06-02 06:53:23 INFO: dumping metadata...
+2019-06-02 06:53:23 INFO: current starting step num: 0
+2019-06-02 07:08:24 INFO: train f1: 0.504655
+2019-06-02 07:09:12 INFO: dev f1: 0.534327, previous best dev f1: 0.000000
+2019-06-02 07:09:12 INFO: update the best dev f1 to be: 0.534327
+2019-06-02 07:10:03 INFO: test f1: 0.517036
+2019-06-02 07:10:03 INFO: saving current checkpoint to: ./large_bert_000.params
+2019-06-02 07:10:05 INFO: current best epoch: 0
+2019-06-02 07:25:03 INFO: train f1: 0.838848
+2019-06-02 07:25:51 INFO: dev f1: 0.841039, previous best dev f1: 0.534327
+2019-06-02 07:25:51 INFO: update the best dev f1 to be: 0.841039
+2019-06-02 07:26:42 INFO: test f1: 0.820618
+2019-06-02 07:26:42 INFO: saving current checkpoint to: ./large_bert_001.params
+2019-06-02 07:26:44 INFO: current best epoch: 1
+2019-06-02 07:26:44 INFO: current starting step num: 3512
+2019-06-02 07:41:41 INFO: train f1: 0.933566
+2019-06-02 07:42:30 INFO: dev f1: 0.909875, previous best dev f1: 0.841039
+2019-06-02 07:42:30 INFO: update the best dev f1 to be: 0.909875
+2019-06-02 07:43:21 INFO: test f1: 0.885080
+2019-06-02 07:43:21 INFO: saving current checkpoint to: ./large_bert_002.params
+2019-06-02 07:43:23 INFO: current best epoch: 2
+2019-06-02 07:43:23 INFO: current starting step num: 5268
+2019-06-02 07:58:22 INFO: train f1: 0.967657
+2019-06-02 07:59:10 INFO: dev f1: 0.934223, previous best dev f1: 0.909875
+2019-06-02 07:59:10 INFO: update the best dev f1 to be: 0.934223
+2019-06-02 08:00:01 INFO: test f1: 0.905935
+2019-06-02 08:00:01 INFO: saving current checkpoint to: ./large_bert_003.params
+2019-06-02 08:00:03 INFO: current best epoch: 3
+2019-06-02 08:00:03 INFO: current starting step num: 7024
+2019-06-02 08:15:02 INFO: train f1: 0.979407
+2019-06-02 08:15:51 INFO: dev f1: 0.943421, previous best dev f1: 0.934223
+2019-06-02 08:15:51 INFO: update the best dev f1 to be: 0.943421
+2019-06-02 08:16:42 INFO: test f1: 0.903458
+2019-06-02 08:16:42 INFO: saving current checkpoint to: ./large_bert_004.params
+2019-06-02 08:16:43 INFO: current best epoch: 4
+2019-06-02 08:16:43 INFO: current starting step num: 8780
+2019-06-02 08:31:40 INFO: train f1: 0.986846
+2019-06-02 08:32:28 INFO: dev f1: 0.948928, previous best dev f1: 0.943421
+2019-06-02 08:32:28 INFO: update the best dev f1 to be: 0.948928
+2019-06-02 08:33:20 INFO: test f1: 0.909840
+2019-06-02 08:33:20 INFO: saving current checkpoint to: ./large_bert_005.params
+2019-06-02 08:33:21 INFO: current best epoch: 5
+2019-06-02 08:33:21 INFO: current starting step num: 10536
+2019-06-02 08:48:18 INFO: train f1: 0.989322
+2019-06-02 08:49:06 INFO: dev f1: 0.950239, previous best dev f1: 0.948928
+2019-06-02 08:49:06 INFO: update the best dev f1 to be: 0.950239
+2019-06-02 08:49:57 INFO: test f1: 0.913873
+2019-06-02 08:49:57 INFO: saving current checkpoint to: ./large_bert_006.params
+2019-06-02 08:49:59 INFO: current best epoch: 6
+2019-06-02 08:49:59 INFO: current starting step num: 12292
+2019-06-02 09:04:56 INFO: train f1: 0.992544
+2019-06-02 09:05:44 INFO: dev f1: 0.951393, previous best dev f1: 0.950239
+2019-06-02 09:05:44 INFO: update the best dev f1 to be: 0.951393
+2019-06-02 09:06:36 INFO: test f1: 0.905542
+2019-06-02 09:06:36 INFO: saving current checkpoint to: ./large_bert_007.params
+2019-06-02 09:06:37 INFO: current best epoch: 7
+2019-06-02 09:06:37 INFO: current starting step num: 14048
+2019-06-02 09:21:37 INFO: train f1: 0.995111
+2019-06-02 09:22:26 INFO: dev f1: 0.954622, previous best dev f1: 0.951393
+2019-06-02 09:22:26 INFO: update the best dev f1 to be: 0.954622
+2019-06-02 09:23:17 INFO: test f1: 0.907339
+2019-06-02 09:23:17 INFO: saving current checkpoint to: ./large_bert_008.params
+2019-06-02 09:23:19 INFO: current best epoch: 8
+2019-06-02 09:23:19 INFO: current starting step num: 15804
+2019-06-02 09:38:18 INFO: train f1: 0.996235
+2019-06-02 09:39:06 INFO: dev f1: 0.954055, previous best dev f1: 0.954622
+2019-06-02 09:39:06 INFO: current best epoch: 8
+2019-06-02 09:39:06 INFO: current starting step num: 17560
+2019-06-02 09:54:03 INFO: train f1: 0.996745
+2019-06-02 09:54:51 INFO: dev f1: 0.953541, previous best dev f1: 0.954622
+2019-06-02 09:54:51 INFO: current best epoch: 8
+2019-06-02 09:54:51 INFO: current starting step num: 19316
+2019-06-02 10:09:48 INFO: train f1: 0.996151
+2019-06-02 10:10:36 INFO: dev f1: 0.949799, previous best dev f1: 0.954622
+2019-06-02 10:10:36 INFO: current best epoch: 8
+2019-06-02 10:10:36 INFO: current starting step num: 21072
+2019-06-02 10:25:33 INFO: train f1: 0.998383
+2019-06-02 10:26:21 INFO: dev f1: 0.953067, previous best dev f1: 0.954622
+2019-06-02 10:26:21 INFO: current best epoch: 8
+2019-06-02 10:26:21 INFO: current starting step num: 22828
+2019-06-02 10:41:19 INFO: train f1: 0.997596
+2019-06-02 10:42:07 INFO: dev f1: 0.952325, previous best dev f1: 0.954622
+2019-06-02 10:42:07 INFO: current best epoch: 8
+2019-06-02 10:42:07 INFO: current starting step num: 24584
+2019-06-02 10:57:04 INFO: train f1: 0.997724
+2019-06-02 10:57:52 INFO: dev f1: 0.952086, previous best dev f1: 0.954622
+2019-06-02 10:57:52 INFO: current best epoch: 8
+2019-06-02 10:57:52 INFO: current starting step num: 26340
+2019-06-02 11:12:56 INFO: train f1: 0.998617
+2019-06-02 11:13:44 INFO: dev f1: 0.954359, previous best dev f1: 0.954622
+2019-06-02 11:13:44 INFO: current best epoch: 8
+2019-06-02 11:13:44 INFO: current starting step num: 28096
+2019-06-02 11:28:47 INFO: train f1: 0.997959
+2019-06-02 11:29:36 INFO: dev f1: 0.951289, previous best dev f1: 0.954622
+2019-06-02 11:29:36 INFO: current best epoch: 8
+2019-06-02 11:29:36 INFO: current starting step num: 29852
+2019-06-02 11:44:52 INFO: train f1: 0.998957
+2019-06-02 11:45:45 INFO: dev f1: 0.951254, previous best dev f1: 0.954622
+2019-06-02 11:45:45 INFO: current best epoch: 8
+2019-06-02 11:45:45 INFO: current starting step num: 31608
+2019-06-03 12:01:00 INFO: train f1: 0.998894
+2019-06-03 12:01:49 INFO: dev f1: 0.955136, previous best dev f1: 0.954622
+2019-06-03 12:01:49 INFO: update the best dev f1 to be: 0.955136
+2019-06-03 12:02:41 INFO: test f1: 0.917209
+2019-06-03 12:02:41 INFO: saving current checkpoint to: ./large_bert_018.params
+2019-06-03 12:02:43 INFO: current best epoch: 18
+2019-06-03 12:02:43 INFO: current starting step num: 33364
+2019-06-03 12:17:42 INFO: train f1: 0.997276
+2019-06-03 12:18:30 INFO: dev f1: 0.951347, previous best dev f1: 0.955136
+2019-06-03 12:18:30 INFO: current best epoch: 18
+2019-06-03 12:18:30 INFO: current starting step num: 35120
+2019-06-03 12:33:29 INFO: train f1: 0.999085
+2019-06-03 12:34:18 INFO: dev f1: 0.956266, previous best dev f1: 0.955136
+2019-06-03 12:34:18 INFO: update the best dev f1 to be: 0.956266
+2019-06-03 12:35:09 INFO: test f1: 0.912734
+2019-06-03 12:35:09 INFO: saving current checkpoint to: ./large_bert_020.params
+2019-06-03 12:35:11 INFO: current best epoch: 20
+2019-06-03 12:35:11 INFO: current starting step num: 36876
+2019-06-03 12:50:10 INFO: train f1: 0.998809
+2019-06-03 12:50:58 INFO: dev f1: 0.954534, previous best dev f1: 0.956266
+2019-06-03 12:50:58 INFO: current best epoch: 20
+2019-06-03 12:50:58 INFO: current starting step num: 38632
+2019-06-03 01:06:00 INFO: train f1: 0.998085
+2019-06-03 01:06:48 INFO: dev f1: 0.955806, previous best dev f1: 0.956266
+2019-06-03 01:06:48 INFO: current best epoch: 20
+2019-06-03 01:06:48 INFO: current starting step num: 40388
+2019-06-03 01:21:47 INFO: train f1: 0.999298
+2019-06-03 01:22:35 INFO: dev f1: 0.954427, previous best dev f1: 0.956266
+2019-06-03 01:22:35 INFO: current best epoch: 20
+2019-06-03 01:22:35 INFO: current starting step num: 42144
+2019-06-03 01:37:37 INFO: train f1: 0.999149
+2019-06-03 01:38:25 INFO: dev f1: 0.953058, previous best dev f1: 0.956266
+2019-06-03 01:38:25 INFO: current best epoch: 20
+2019-06-03 01:38:25 INFO: current starting step num: 43900
+2019-06-03 01:53:24 INFO: train f1: 0.999468
+2019-06-03 01:54:13 INFO: dev f1: 0.955281, previous best dev f1: 0.956266
+2019-06-03 01:54:13 INFO: current best epoch: 20
+2019-06-03 01:54:13 INFO: current starting step num: 45656
+2019-06-03 02:09:15 INFO: train f1: 0.998979
+2019-06-03 02:10:03 INFO: dev f1: 0.956383, previous best dev f1: 0.956266
+2019-06-03 02:10:03 INFO: update the best dev f1 to be: 0.956383
+2019-06-03 02:10:54 INFO: test f1: 0.915410
+2019-06-03 02:10:54 INFO: saving current checkpoint to: ./large_bert_026.params
+2019-06-03 02:10:56 INFO: current best epoch: 26
+2019-06-03 02:10:56 INFO: current starting step num: 47412
+2019-06-03 02:25:56 INFO: train f1: 0.999255
+2019-06-03 02:26:44 INFO: dev f1: 0.955660, previous best dev f1: 0.956383
+2019-06-03 02:26:44 INFO: current best epoch: 26
+2019-06-03 02:26:44 INFO: current starting step num: 49168
+2019-06-03 02:41:49 INFO: train f1: 0.999617
+2019-06-03 02:42:38 INFO: dev f1: 0.956740, previous best dev f1: 0.956383
+2019-06-03 02:42:38 INFO: update the best dev f1 to be: 0.956740
+2019-06-03 02:43:29 INFO: test f1: 0.918928
+2019-06-03 02:43:29 INFO: saving current checkpoint to: ./large_bert_028.params
+2019-06-03 02:43:31 INFO: current best epoch: 28
+2019-06-03 02:43:31 INFO: current starting step num: 50924
+2019-06-03 02:58:33 INFO: train f1: 0.999723
+2019-06-03 02:59:22 INFO: dev f1: 0.957340, previous best dev f1: 0.956740
+2019-06-03 02:59:22 INFO: update the best dev f1 to be: 0.957340
+2019-06-03 03:00:13 INFO: test f1: 0.919305
+2019-06-03 03:00:13 INFO: saving current checkpoint to: ./large_bert_029.params
+2019-06-03 03:00:14 INFO: current best epoch: 29
+2019-06-03 03:00:14 INFO: current starting step num: 52680
+2019-06-03 03:15:17 INFO: train f1: 0.999617
+2019-06-03 03:16:05 INFO: dev f1: 0.958830, previous best dev f1: 0.957340
+2019-06-03 03:16:05 INFO: update the best dev f1 to be: 0.958830
+2019-06-03 03:16:57 INFO: test f1: 0.920282
+2019-06-03 03:16:57 INFO: saving current checkpoint to: ./large_bert_030.params
+2019-06-03 03:16:58 INFO: current best epoch: 30
+2019-06-03 03:16:58 INFO: current starting step num: 54436
+2019-06-03 03:32:01 INFO: train f1: 0.999234
+2019-06-03 03:32:49 INFO: dev f1: 0.953100, previous best dev f1: 0.958830
+2019-06-03 03:32:49 INFO: current best epoch: 30
+2019-06-03 03:32:49 INFO: current starting step num: 56192
+2019-06-03 03:47:55 INFO: train f1: 0.999723
+2019-06-03 03:48:44 INFO: dev f1: 0.953364, previous best dev f1: 0.958830
+2019-06-03 03:48:44 INFO: current best epoch: 30
+2019-06-03 03:48:44 INFO: current starting step num: 57948
+2019-06-03 04:03:44 INFO: train f1: 0.999575
+2019-06-03 04:04:32 INFO: dev f1: 0.951863, previous best dev f1: 0.958830
+2019-06-03 04:04:32 INFO: current best epoch: 30
+2019-06-03 04:04:32 INFO: current starting step num: 59704
+2019-06-03 04:19:33 INFO: train f1: 0.999723
+2019-06-03 04:20:22 INFO: dev f1: 0.953900, previous best dev f1: 0.958830
+2019-06-03 04:20:22 INFO: current best epoch: 30
+2019-06-03 04:20:22 INFO: current starting step num: 61460
+2019-06-03 04:35:24 INFO: train f1: 0.999170
+2019-06-03 04:36:12 INFO: dev f1: 0.950130, previous best dev f1: 0.958830
+2019-06-03 04:36:12 INFO: current best epoch: 30
+2019-06-03 04:36:12 INFO: current starting step num: 63216
+2019-06-03 04:51:14 INFO: train f1: 0.999851
+2019-06-03 04:52:02 INFO: dev f1: 0.953156, previous best dev f1: 0.958830
+2019-06-03 04:52:02 INFO: current best epoch: 30
+2019-06-03 04:52:02 INFO: current starting step num: 64972
+2019-06-03 05:07:02 INFO: train f1: 0.999362
+2019-06-03 05:07:50 INFO: dev f1: 0.954176, previous best dev f1: 0.958830
+2019-06-03 05:07:50 INFO: current best epoch: 30
+2019-06-03 05:07:50 INFO: current starting step num: 66728
+2019-06-03 05:23:00 INFO: train f1: 0.999596
+2019-06-03 05:23:49 INFO: dev f1: 0.954148, previous best dev f1: 0.958830
+2019-06-03 05:23:49 INFO: current best epoch: 30
+2019-06-03 05:23:49 INFO: current starting step num: 68484
+2019-06-03 05:38:48 INFO: train f1: 0.999681
+2019-06-03 05:39:36 INFO: dev f1: 0.955389, previous best dev f1: 0.958830
+2019-06-03 05:39:36 INFO: current best epoch: 30
+2019-06-03 05:39:36 INFO: current starting step num: 70240
+2019-06-03 05:54:38 INFO: train f1: 0.999787
+2019-06-03 05:55:26 INFO: dev f1: 0.956039, previous best dev f1: 0.958830
+2019-06-03 05:55:26 INFO: current best epoch: 30
+2019-06-03 05:55:26 INFO: current starting step num: 71996
+2019-06-03 06:10:26 INFO: train f1: 0.999808
+2019-06-03 06:11:14 INFO: dev f1: 0.956003, previous best dev f1: 0.958830
+2019-06-03 06:11:14 INFO: current best epoch: 30
+2019-06-03 06:11:14 INFO: current starting step num: 73752
+2019-06-03 06:26:14 INFO: train f1: 0.999787
+2019-06-03 06:27:03 INFO: dev f1: 0.956799, previous best dev f1: 0.958830
+2019-06-03 06:27:03 INFO: current best epoch: 30
+2019-06-03 06:27:03 INFO: current starting step num: 75508
+2019-06-03 06:42:05 INFO: train f1: 0.999787
+2019-06-03 06:42:54 INFO: dev f1: 0.955404, previous best dev f1: 0.958830
+2019-06-03 06:42:54 INFO: current best epoch: 30
+2019-06-03 06:42:54 INFO: current starting step num: 77264
+2019-06-03 06:57:50 INFO: train f1: 0.999872
+2019-06-03 06:58:39 INFO: dev f1: 0.954523, previous best dev f1: 0.958830
+2019-06-03 06:58:39 INFO: current best epoch: 30
+2019-06-03 06:58:39 INFO: current starting step num: 79020
+2019-06-03 07:13:36 INFO: train f1: 0.999830
+2019-06-03 07:14:25 INFO: dev f1: 0.957012, previous best dev f1: 0.958830
+2019-06-03 07:14:25 INFO: current best epoch: 30
+2019-06-03 07:14:25 INFO: current starting step num: 80776
+2019-06-03 07:29:25 INFO: train f1: 0.999830
+2019-06-03 07:30:14 INFO: dev f1: 0.956777, previous best dev f1: 0.958830
+2019-06-03 07:30:14 INFO: current best epoch: 30
+2019-06-03 07:30:14 INFO: current starting step num: 82532
+2019-06-03 07:45:12 INFO: train f1: 0.999681
+2019-06-03 07:46:00 INFO: dev f1: 0.956996, previous best dev f1: 0.958830
+2019-06-03 07:46:00 INFO: current best epoch: 30
+2019-06-03 07:46:00 INFO: current starting step num: 84288
+2019-06-03 08:01:05 INFO: train f1: 0.999787
+2019-06-03 08:01:53 INFO: dev f1: 0.955522, previous best dev f1: 0.958830
+2019-06-03 08:01:53 INFO: current best epoch: 30
+2019-06-03 08:01:53 INFO: current starting step num: 86044
+2019-06-03 08:16:50 INFO: train f1: 0.999702
+2019-06-03 08:17:39 INFO: dev f1: 0.955638, previous best dev f1: 0.958830
+2019-06-03 08:17:39 INFO: current best epoch: 30
+2019-06-03 08:17:39 INFO: current starting step num: 87800
+2019-06-03 08:32:38 INFO: train f1: 0.999851
+2019-06-03 08:33:26 INFO: dev f1: 0.955344, previous best dev f1: 0.958830
+2019-06-03 08:33:26 INFO: current best epoch: 30
+2019-06-03 08:33:26 INFO: current starting step num: 89556
+2019-06-03 08:48:25 INFO: train f1: 0.999851
+2019-06-03 08:49:13 INFO: dev f1: 0.954675, previous best dev f1: 0.958830
+2019-06-03 08:49:13 INFO: current best epoch: 30
+2019-06-03 08:49:13 INFO: current starting step num: 91312
+2019-06-03 09:04:15 INFO: train f1: 0.999851
+2019-06-03 09:05:03 INFO: dev f1: 0.954523, previous best dev f1: 0.958830
+2019-06-03 09:05:03 INFO: current best epoch: 30
+2019-06-03 09:05:03 INFO: current starting step num: 93068
+2019-06-03 09:20:02 INFO: train f1: 0.999766
+2019-06-03 09:20:51 INFO: dev f1: 0.956048, previous best dev f1: 0.958830
+2019-06-03 09:20:51 INFO: current best epoch: 30
+2019-06-03 09:20:51 INFO: current starting step num: 94824
+2019-06-03 09:35:53 INFO: train f1: 0.999851
+2019-06-03 09:36:42 INFO: dev f1: 0.952924, previous best dev f1: 0.958830
+2019-06-03 09:36:42 INFO: current best epoch: 30
+2019-06-03 09:36:42 INFO: current starting step num: 96580
+2019-06-03 09:51:40 INFO: train f1: 0.999787
+2019-06-03 09:52:29 INFO: dev f1: 0.955289, previous best dev f1: 0.958830
+2019-06-03 09:52:29 INFO: current best epoch: 30
+2019-06-03 09:52:29 INFO: current starting step num: 98336
+2019-06-03 10:07:27 INFO: train f1: 0.999915
+2019-06-03 10:08:16 INFO: dev f1: 0.956296, previous best dev f1: 0.958830
+2019-06-03 10:08:16 INFO: current best epoch: 30
+2019-06-03 10:08:16 INFO: current starting step num: 100092
+2019-06-03 10:23:13 INFO: train f1: 0.999808
+2019-06-03 10:24:02 INFO: dev f1: 0.958249, previous best dev f1: 0.958830
+2019-06-03 10:24:02 INFO: current best epoch: 30
+2019-06-03 10:24:02 INFO: current starting step num: 101848
+2019-06-03 10:39:00 INFO: train f1: 0.999787
+2019-06-03 10:39:49 INFO: dev f1: 0.957324, previous best dev f1: 0.958830
+2019-06-03 10:39:49 INFO: current best epoch: 30
+2019-06-03 10:39:49 INFO: current starting step num: 103604
+2019-06-03 10:54:50 INFO: train f1: 0.999915
+2019-06-03 10:55:39 INFO: dev f1: 0.957921, previous best dev f1: 0.958830
+2019-06-03 10:55:39 INFO: current best epoch: 30
+2019-06-03 10:55:39 INFO: current starting step num: 105360
+2019-06-03 11:10:36 INFO: train f1: 0.999915
+2019-06-03 11:11:25 INFO: dev f1: 0.957921, previous best dev f1: 0.958830
+2019-06-03 11:11:25 INFO: current best epoch: 30
+2019-06-03 11:11:25 INFO: current starting step num: 107116
+2019-06-03 11:26:26 INFO: train f1: 0.999915
+2019-06-03 11:27:14 INFO: dev f1: 0.957463, previous best dev f1: 0.958830
+2019-06-03 11:27:14 INFO: current best epoch: 30
+2019-06-03 11:27:14 INFO: current starting step num: 108872
+2019-06-03 11:42:17 INFO: train f1: 0.999915
+2019-06-03 11:43:06 INFO: dev f1: 0.957468, previous best dev f1: 0.958830
+2019-06-03 11:43:06 INFO: current best epoch: 30
+2019-06-03 11:43:06 INFO: current starting step num: 110628
+2019-06-03 11:58:05 INFO: train f1: 0.999915
+2019-06-03 11:58:53 INFO: dev f1: 0.958582, previous best dev f1: 0.958830
+2019-06-03 11:58:53 INFO: current best epoch: 30
+2019-06-03 11:58:53 INFO: current starting step num: 112384
+2019-06-03 12:13:52 INFO: train f1: 0.999915
+2019-06-03 12:14:40 INFO: dev f1: 0.959490, previous best dev f1: 0.958830
+2019-06-03 12:14:40 INFO: update the best dev f1 to be: 0.959490
+2019-06-03 12:15:32 INFO: test f1: 0.920134
+2019-06-03 12:15:32 INFO: saving current checkpoint to: ./large_bert_064.params
+2019-06-03 12:15:34 INFO: current best epoch: 64
+2019-06-03 12:15:34 INFO: current starting step num: 114140
+2019-06-03 12:30:35 INFO: train f1: 0.999915
+2019-06-03 12:31:23 INFO: dev f1: 0.959120, previous best dev f1: 0.959490
+2019-06-03 12:31:23 INFO: current best epoch: 64
+2019-06-03 12:31:23 INFO: current starting step num: 115896
+2019-06-03 12:46:25 INFO: train f1: 0.999915
+2019-06-03 12:47:13 INFO: dev f1: 0.958603, previous best dev f1: 0.959490
+2019-06-03 12:47:13 INFO: current best epoch: 64
+2019-06-03 12:47:13 INFO: current starting step num: 117652
+2019-06-03 01:02:12 INFO: train f1: 0.999915
+2019-06-03 01:03:00 INFO: dev f1: 0.957843, previous best dev f1: 0.959490
+2019-06-03 01:03:00 INFO: current best epoch: 64
+2019-06-03 01:03:00 INFO: current starting step num: 119408
+2019-06-03 01:18:04 INFO: train f1: 0.999915
+2019-06-03 01:18:52 INFO: dev f1: 0.958812, previous best dev f1: 0.959490
+2019-06-03 01:18:52 INFO: current best epoch: 64
+2019-06-03 01:18:52 INFO: current starting step num: 121164
+2019-06-03 01:33:55 INFO: train f1: 0.999915
+2019-06-03 01:34:44 INFO: dev f1: 0.959021, previous best dev f1: 0.959490
+2019-06-03 01:34:44 INFO: current best epoch: 64
+2019-06-03 01:34:44 INFO: current starting step num: 122920
+2019-06-03 01:49:43 INFO: train f1: 0.999915
+2019-06-03 01:50:31 INFO: dev f1: 0.959456, previous best dev f1: 0.959490
+2019-06-03 01:50:31 INFO: current best epoch: 64
+2019-06-03 01:50:31 INFO: current starting step num: 124676
+2019-06-03 02:05:30 INFO: train f1: 0.999915
+2019-06-03 02:06:19 INFO: dev f1: 0.959490, previous best dev f1: 0.959490
+2019-06-03 02:06:19 INFO: current best epoch: 64
+2019-06-03 02:06:19 INFO: current starting step num: 126432
+2019-06-03 02:21:20 INFO: train f1: 0.999915
+2019-06-03 02:22:08 INFO: dev f1: 0.958557, previous best dev f1: 0.959490
+2019-06-03 02:22:08 INFO: current best epoch: 64
+2019-06-03 02:22:08 INFO: current starting step num: 128188
+2019-06-03 02:37:09 INFO: train f1: 0.999915
+2019-06-03 02:37:58 INFO: dev f1: 0.958759, previous best dev f1: 0.959490
+2019-06-03 02:37:58 INFO: current best epoch: 64
+2019-06-03 02:37:58 INFO: current starting step num: 129944
+2019-06-03 02:53:00 INFO: train f1: 0.999915
+2019-06-03 02:53:49 INFO: dev f1: 0.958585, previous best dev f1: 0.959490
+2019-06-03 02:53:49 INFO: current best epoch: 64
+2019-06-03 02:53:49 INFO: current starting step num: 131700
+2019-06-03 03:08:47 INFO: train f1: 0.999915
+2019-06-03 03:09:35 INFO: dev f1: 0.959490, previous best dev f1: 0.959490
+2019-06-03 03:09:35 INFO: current best epoch: 64
+2019-06-03 03:09:35 INFO: current starting step num: 133456
+2019-06-03 03:24:32 INFO: train f1: 0.999915
+2019-06-03 03:25:21 INFO: dev f1: 0.960154, previous best dev f1: 0.959490
+2019-06-03 03:25:21 INFO: update the best dev f1 to be: 0.960154
+2019-06-03 03:26:12 INFO: test f1: 0.918986
+2019-06-03 03:26:12 INFO: saving current checkpoint to: ./large_bert_076.params
+2019-06-03 03:26:14 INFO: current best epoch: 76
+2019-06-03 03:26:14 INFO: current starting step num: 135212
+2019-06-03 03:41:14 INFO: train f1: 0.999915
+2019-06-03 03:42:03 INFO: dev f1: 0.959678, previous best dev f1: 0.960154
+2019-06-03 03:42:03 INFO: current best epoch: 76
+2019-06-03 03:42:03 INFO: current starting step num: 136968
+2019-06-03 03:57:01 INFO: train f1: 0.999915
+2019-06-03 03:57:50 INFO: dev f1: 0.959081, previous best dev f1: 0.960154
+2019-06-03 03:57:50 INFO: current best epoch: 76
+2019-06-03 03:57:50 INFO: current starting step num: 138724
+2019-06-03 04:12:54 INFO: train f1: 0.999915
+2019-06-03 04:13:43 INFO: dev f1: 0.958323, previous best dev f1: 0.960154
+2019-06-03 04:13:43 INFO: current best epoch: 76
+2019-06-03 04:13:43 INFO: current starting step num: 140480
+2019-06-03 04:28:47 INFO: train f1: 0.999915
+2019-06-03 04:29:35 INFO: dev f1: 0.958785, previous best dev f1: 0.960154
+2019-06-03 04:29:35 INFO: current best epoch: 76
+2019-06-03 04:29:35 INFO: current starting step num: 142236
+2019-06-03 04:44:33 INFO: train f1: 0.999915
+2019-06-03 04:45:22 INFO: dev f1: 0.960954, previous best dev f1: 0.960154
+2019-06-03 04:45:22 INFO: update the best dev f1 to be: 0.960954
+2019-06-03 04:46:13 INFO: test f1: 0.918223
+2019-06-03 04:46:13 INFO: saving current checkpoint to: ./large_bert_081.params
+2019-06-03 04:46:15 INFO: current best epoch: 81
+2019-06-03 04:46:15 INFO: current starting step num: 143992
+2019-06-03 05:01:15 INFO: train f1: 0.999915
+2019-06-03 05:02:03 INFO: dev f1: 0.958952, previous best dev f1: 0.960954
+2019-06-03 05:02:03 INFO: current best epoch: 81
+2019-06-03 05:02:03 INFO: current starting step num: 145748
+2019-06-03 05:17:00 INFO: train f1: 0.999915
+2019-06-03 05:17:49 INFO: dev f1: 0.959617, previous best dev f1: 0.960954
+2019-06-03 05:17:49 INFO: current best epoch: 81
+2019-06-03 05:17:49 INFO: current starting step num: 147504
+2019-06-03 05:32:53 INFO: train f1: 0.999915
+2019-06-03 05:33:42 INFO: dev f1: 0.960094, previous best dev f1: 0.960954
+2019-06-03 05:33:42 INFO: current best epoch: 81
+2019-06-03 05:33:42 INFO: current starting step num: 149260
+2019-06-03 05:48:40 INFO: train f1: 0.999915
+2019-06-03 05:49:28 INFO: dev f1: 0.959778, previous best dev f1: 0.960954
+2019-06-03 05:49:28 INFO: current best epoch: 81
+2019-06-03 05:49:28 INFO: current starting step num: 151016
+2019-06-03 06:04:34 INFO: train f1: 0.999915
+2019-06-03 06:05:22 INFO: dev f1: 0.960832, previous best dev f1: 0.960954
+2019-06-03 06:05:22 INFO: current best epoch: 81
+2019-06-03 06:05:22 INFO: current starting step num: 152772
+2019-06-03 06:20:31 INFO: train f1: 0.999915
+2019-06-03 06:21:19 INFO: dev f1: 0.958966, previous best dev f1: 0.960954
+2019-06-03 06:21:19 INFO: current best epoch: 81
+2019-06-03 06:21:19 INFO: current starting step num: 154528
+2019-06-03 06:36:23 INFO: train f1: 0.999915
+2019-06-03 06:37:12 INFO: dev f1: 0.958127, previous best dev f1: 0.960954
+2019-06-03 06:37:12 INFO: current best epoch: 81
+2019-06-03 06:37:12 INFO: current starting step num: 156284
+2019-06-03 06:52:10 INFO: train f1: 0.999915
+2019-06-03 06:52:59 INFO: dev f1: 0.957879, previous best dev f1: 0.960954
+2019-06-03 06:52:59 INFO: current best epoch: 81
+2019-06-03 06:52:59 INFO: current starting step num: 158040
+2019-06-03 07:08:11 INFO: train f1: 0.999915
+2019-06-03 07:08:59 INFO: dev f1: 0.958120, previous best dev f1: 0.960954
+2019-06-03 07:08:59 INFO: current best epoch: 81
+2019-06-03 07:08:59 INFO: current starting step num: 159796
+2019-06-03 07:24:01 INFO: train f1: 0.999915
+2019-06-03 07:24:49 INFO: dev f1: 0.958946, previous best dev f1: 0.960954
+2019-06-03 07:24:49 INFO: current best epoch: 81
+2019-06-03 07:24:49 INFO: current starting step num: 161552
+2019-06-03 07:39:50 INFO: train f1: 0.999915
+2019-06-03 07:40:38 INFO: dev f1: 0.959127, previous best dev f1: 0.960954
+2019-06-03 07:40:38 INFO: current best epoch: 81
+2019-06-03 07:40:38 INFO: current starting step num: 163308
+2019-06-03 07:55:39 INFO: train f1: 0.999915
+2019-06-03 07:56:28 INFO: dev f1: 0.958959, previous best dev f1: 0.960954
+2019-06-03 07:56:28 INFO: current best epoch: 81
+2019-06-03 07:56:28 INFO: current starting step num: 165064
+2019-06-03 08:11:32 INFO: train f1: 0.999915
+2019-06-03 08:12:21 INFO: dev f1: 0.958718, previous best dev f1: 0.960954
+2019-06-03 08:12:21 INFO: current best epoch: 81
+2019-06-03 08:12:21 INFO: current starting step num: 166820
+2019-06-03 08:27:24 INFO: train f1: 0.999915
+2019-06-03 08:28:13 INFO: dev f1: 0.959792, previous best dev f1: 0.960954
+2019-06-03 08:28:13 INFO: current best epoch: 81
+2019-06-03 08:28:13 INFO: current starting step num: 168576
+2019-06-03 08:43:13 INFO: train f1: 0.999915
+2019-06-03 08:44:01 INFO: dev f1: 0.959792, previous best dev f1: 0.960954
+2019-06-03 08:44:01 INFO: current best epoch: 81
+2019-06-03 08:44:01 INFO: current starting step num: 170332
+2019-06-03 08:59:01 INFO: train f1: 0.999915
+2019-06-03 08:59:49 INFO: dev f1: 0.959543, previous best dev f1: 0.960954
+2019-06-03 08:59:49 INFO: current best epoch: 81
+2019-06-03 08:59:49 INFO: current starting step num: 172088
+2019-06-03 09:14:47 INFO: train f1: 0.999915
+2019-06-03 09:15:35 INFO: dev f1: 0.959543, previous best dev f1: 0.960954
+2019-06-03 09:15:35 INFO: current best epoch: 81
+2019-06-03 09:15:35 INFO: current starting step num: 173844
+2019-06-03 09:30:34 INFO: train f1: 0.999915
+2019-06-03 09:31:23 INFO: dev f1: 0.959543, previous best dev f1: 0.960954
+2019-06-03 09:31:23 INFO: current best epoch: 81
+2019-06-03 09:31:23 INFO: best epoch: 81, best dev f1: 0.960954, test f1 at tha epoch: 0.918223

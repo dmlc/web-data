@@ -1,0 +1,161 @@
+INFO:gluonnlp:19:49:14 Namespace(accumulate=6, batch_size=4, bert_dataset='book_corpus_wiki_en_uncased', bert_model='bert_24_1024_16', doc_stride=128, epochs=2, export=True, gpu='1', input_size=768, log_interval=50, lr=3e-05, max_answer_length=30, max_query_length=64, max_seq_length=384, model_parameters=None, n_best_size=20, null_score_diff_threshold=0.0, only_predict=False, optimizer='adam', output_dir='output_dir1', pretrained_bert_parameters=None, seq_length=384, test_batch_size=24, uncased=True, version_2=False, warmup_ratio=0.1)
+INFO:gluonnlp:19:49:14 Using gradient accumulation. Effective batch size = 24
+INFO:gluonnlp:19:50:01 Loader Train data...
+INFO:gluonnlp:19:50:02 Number of records in Train data:87599
+INFO:gluonnlp:19:51:05 The number of examples after preprocessing:88641
+INFO:gluonnlp:19:51:05 Start Training
+INFO:gluonnlp:19:53:00 Epoch: 0, Batch: 299/22161, Loss=0.9874, lr=0.0000020 Time cost=114.0 Thoughput=10.52 samples/s
+INFO:gluonnlp:19:54:53 Epoch: 0, Batch: 599/22161, Loss=0.8843, lr=0.0000041 Time cost=112.9 Thoughput=10.62 samples/s
+INFO:gluonnlp:19:56:46 Epoch: 0, Batch: 899/22161, Loss=0.7427, lr=0.0000061 Time cost=112.9 Thoughput=10.63 samples/s
+INFO:gluonnlp:19:58:39 Epoch: 0, Batch: 1199/22161, Loss=0.5937, lr=0.0000081 Time cost=112.9 Thoughput=10.63 samples/s
+INFO:gluonnlp:20:00:31 Epoch: 0, Batch: 1499/22161, Loss=0.4295, lr=0.0000102 Time cost=112.9 Thoughput=10.63 samples/s
+INFO:gluonnlp:20:02:24 Epoch: 0, Batch: 1799/22161, Loss=0.3436, lr=0.0000122 Time cost=112.9 Thoughput=10.63 samples/s
+INFO:gluonnlp:20:04:17 Epoch: 0, Batch: 2099/22161, Loss=0.2957, lr=0.0000142 Time cost=112.9 Thoughput=10.63 samples/s
+INFO:gluonnlp:20:06:10 Epoch: 0, Batch: 2399/22161, Loss=0.2644, lr=0.0000163 Time cost=113.0 Thoughput=10.62 samples/s
+INFO:gluonnlp:20:08:03 Epoch: 0, Batch: 2699/22161, Loss=0.2759, lr=0.0000183 Time cost=112.9 Thoughput=10.63 samples/s
+INFO:gluonnlp:20:09:56 Epoch: 0, Batch: 2999/22161, Loss=0.2602, lr=0.0000203 Time cost=113.0 Thoughput=10.62 samples/s
+INFO:gluonnlp:20:11:49 Epoch: 0, Batch: 3299/22161, Loss=0.2480, lr=0.0000224 Time cost=113.0 Thoughput=10.62 samples/s
+INFO:gluonnlp:20:13:42 Epoch: 0, Batch: 3599/22161, Loss=0.2428, lr=0.0000244 Time cost=113.0 Thoughput=10.62 samples/s
+INFO:gluonnlp:20:15:35 Epoch: 0, Batch: 3899/22161, Loss=0.2361, lr=0.0000264 Time cost=113.0 Thoughput=10.62 samples/s
+INFO:gluonnlp:20:17:28 Epoch: 0, Batch: 4199/22161, Loss=0.2376, lr=0.0000285 Time cost=112.9 Thoughput=10.63 samples/s
+INFO:gluonnlp:20:19:21 Epoch: 0, Batch: 4499/22161, Loss=0.2266, lr=0.0000299 Time cost=112.9 Thoughput=10.63 samples/s
+INFO:gluonnlp:20:21:14 Epoch: 0, Batch: 4799/22161, Loss=0.2265, lr=0.0000297 Time cost=112.9 Thoughput=10.63 samples/s
+INFO:gluonnlp:20:23:07 Epoch: 0, Batch: 5099/22161, Loss=0.2141, lr=0.0000295 Time cost=112.9 Thoughput=10.63 samples/s
+INFO:gluonnlp:20:25:00 Epoch: 0, Batch: 5399/22161, Loss=0.1939, lr=0.0000293 Time cost=112.9 Thoughput=10.62 samples/s
+INFO:gluonnlp:20:26:53 Epoch: 0, Batch: 5699/22161, Loss=0.2035, lr=0.0000290 Time cost=112.9 Thoughput=10.63 samples/s
+INFO:gluonnlp:20:28:46 Epoch: 0, Batch: 5999/22161, Loss=0.2008, lr=0.0000288 Time cost=112.9 Thoughput=10.63 samples/s
+INFO:gluonnlp:20:30:39 Epoch: 0, Batch: 6299/22161, Loss=0.2078, lr=0.0000286 Time cost=112.9 Thoughput=10.63 samples/s
+INFO:gluonnlp:20:32:31 Epoch: 0, Batch: 6599/22161, Loss=0.2085, lr=0.0000284 Time cost=112.9 Thoughput=10.63 samples/s
+INFO:gluonnlp:20:34:24 Epoch: 0, Batch: 6899/22161, Loss=0.1964, lr=0.0000281 Time cost=112.9 Thoughput=10.63 samples/s
+INFO:gluonnlp:20:36:17 Epoch: 0, Batch: 7199/22161, Loss=0.1986, lr=0.0000279 Time cost=112.9 Thoughput=10.63 samples/s
+INFO:gluonnlp:20:38:10 Epoch: 0, Batch: 7499/22161, Loss=0.1860, lr=0.0000277 Time cost=112.9 Thoughput=10.62 samples/s
+INFO:gluonnlp:20:40:03 Epoch: 0, Batch: 7799/22161, Loss=0.1939, lr=0.0000275 Time cost=112.9 Thoughput=10.62 samples/s
+INFO:gluonnlp:20:41:56 Epoch: 0, Batch: 8099/22161, Loss=0.1792, lr=0.0000272 Time cost=112.9 Thoughput=10.63 samples/s
+INFO:gluonnlp:20:43:49 Epoch: 0, Batch: 8399/22161, Loss=0.1841, lr=0.0000270 Time cost=112.9 Thoughput=10.63 samples/s
+INFO:gluonnlp:20:45:42 Epoch: 0, Batch: 8699/22161, Loss=0.1819, lr=0.0000268 Time cost=112.9 Thoughput=10.63 samples/s
+INFO:gluonnlp:20:47:35 Epoch: 0, Batch: 8999/22161, Loss=0.1910, lr=0.0000266 Time cost=112.9 Thoughput=10.63 samples/s
+INFO:gluonnlp:20:49:28 Epoch: 0, Batch: 9299/22161, Loss=0.1836, lr=0.0000263 Time cost=112.9 Thoughput=10.63 samples/s
+INFO:gluonnlp:20:51:21 Epoch: 0, Batch: 9599/22161, Loss=0.1770, lr=0.0000261 Time cost=112.9 Thoughput=10.62 samples/s
+INFO:gluonnlp:20:53:14 Epoch: 0, Batch: 9899/22161, Loss=0.1808, lr=0.0000259 Time cost=113.0 Thoughput=10.62 samples/s
+INFO:gluonnlp:20:55:07 Epoch: 0, Batch: 10199/22161, Loss=0.1739, lr=0.0000257 Time cost=112.9 Thoughput=10.63 samples/s
+INFO:gluonnlp:20:57:00 Epoch: 0, Batch: 10499/22161, Loss=0.1854, lr=0.0000254 Time cost=113.0 Thoughput=10.62 samples/s
+INFO:gluonnlp:20:58:53 Epoch: 0, Batch: 10799/22161, Loss=0.1724, lr=0.0000252 Time cost=113.0 Thoughput=10.62 samples/s
+INFO:gluonnlp:21:00:46 Epoch: 0, Batch: 11099/22161, Loss=0.1843, lr=0.0000250 Time cost=112.9 Thoughput=10.63 samples/s
+INFO:gluonnlp:21:02:38 Epoch: 0, Batch: 11399/22161, Loss=0.1736, lr=0.0000248 Time cost=112.9 Thoughput=10.63 samples/s
+INFO:gluonnlp:21:04:31 Epoch: 0, Batch: 11699/22161, Loss=0.1825, lr=0.0000245 Time cost=112.9 Thoughput=10.63 samples/s
+INFO:gluonnlp:21:06:24 Epoch: 0, Batch: 11999/22161, Loss=0.1832, lr=0.0000243 Time cost=112.9 Thoughput=10.63 samples/s
+INFO:gluonnlp:21:08:17 Epoch: 0, Batch: 12299/22161, Loss=0.1631, lr=0.0000241 Time cost=112.9 Thoughput=10.62 samples/s
+INFO:gluonnlp:21:10:10 Epoch: 0, Batch: 12599/22161, Loss=0.1680, lr=0.0000239 Time cost=112.9 Thoughput=10.63 samples/s
+INFO:gluonnlp:21:12:03 Epoch: 0, Batch: 12899/22161, Loss=0.1789, lr=0.0000236 Time cost=112.9 Thoughput=10.62 samples/s
+INFO:gluonnlp:21:13:56 Epoch: 0, Batch: 13199/22161, Loss=0.1762, lr=0.0000234 Time cost=113.0 Thoughput=10.62 samples/s
+INFO:gluonnlp:21:15:49 Epoch: 0, Batch: 13499/22161, Loss=0.1589, lr=0.0000232 Time cost=113.3 Thoughput=10.59 samples/s
+INFO:gluonnlp:21:17:43 Epoch: 0, Batch: 13799/22161, Loss=0.1726, lr=0.0000230 Time cost=113.4 Thoughput=10.58 samples/s
+INFO:gluonnlp:21:19:36 Epoch: 0, Batch: 14099/22161, Loss=0.1587, lr=0.0000227 Time cost=113.1 Thoughput=10.61 samples/s
+INFO:gluonnlp:21:21:29 Epoch: 0, Batch: 14399/22161, Loss=0.1659, lr=0.0000225 Time cost=112.9 Thoughput=10.62 samples/s
+INFO:gluonnlp:21:23:22 Epoch: 0, Batch: 14699/22161, Loss=0.1713, lr=0.0000223 Time cost=112.9 Thoughput=10.63 samples/s
+INFO:gluonnlp:21:25:15 Epoch: 0, Batch: 14999/22161, Loss=0.1670, lr=0.0000220 Time cost=112.9 Thoughput=10.63 samples/s
+INFO:gluonnlp:21:27:08 Epoch: 0, Batch: 15299/22161, Loss=0.1609, lr=0.0000218 Time cost=113.1 Thoughput=10.61 samples/s
+INFO:gluonnlp:21:29:01 Epoch: 0, Batch: 15599/22161, Loss=0.1650, lr=0.0000216 Time cost=112.9 Thoughput=10.63 samples/s
+INFO:gluonnlp:21:30:54 Epoch: 0, Batch: 15899/22161, Loss=0.1616, lr=0.0000214 Time cost=112.9 Thoughput=10.63 samples/s
+INFO:gluonnlp:21:32:47 Epoch: 0, Batch: 16199/22161, Loss=0.1539, lr=0.0000211 Time cost=113.1 Thoughput=10.61 samples/s
+INFO:gluonnlp:21:34:40 Epoch: 0, Batch: 16499/22161, Loss=0.1581, lr=0.0000209 Time cost=112.9 Thoughput=10.63 samples/s
+INFO:gluonnlp:21:36:32 Epoch: 0, Batch: 16799/22161, Loss=0.1674, lr=0.0000207 Time cost=112.8 Thoughput=10.63 samples/s
+INFO:gluonnlp:21:38:25 Epoch: 0, Batch: 17099/22161, Loss=0.1561, lr=0.0000205 Time cost=112.9 Thoughput=10.63 samples/s
+INFO:gluonnlp:21:40:18 Epoch: 0, Batch: 17399/22161, Loss=0.1453, lr=0.0000202 Time cost=113.1 Thoughput=10.61 samples/s
+INFO:gluonnlp:21:42:12 Epoch: 0, Batch: 17699/22161, Loss=0.1624, lr=0.0000200 Time cost=113.1 Thoughput=10.61 samples/s
+INFO:gluonnlp:21:44:05 Epoch: 0, Batch: 17999/22161, Loss=0.1498, lr=0.0000198 Time cost=113.1 Thoughput=10.61 samples/s
+INFO:gluonnlp:21:45:58 Epoch: 0, Batch: 18299/22161, Loss=0.1523, lr=0.0000196 Time cost=113.1 Thoughput=10.61 samples/s
+INFO:gluonnlp:21:47:51 Epoch: 0, Batch: 18599/22161, Loss=0.1556, lr=0.0000193 Time cost=113.1 Thoughput=10.61 samples/s
+INFO:gluonnlp:21:49:44 Epoch: 0, Batch: 18899/22161, Loss=0.1494, lr=0.0000191 Time cost=113.1 Thoughput=10.61 samples/s
+INFO:gluonnlp:21:51:37 Epoch: 0, Batch: 19199/22161, Loss=0.1537, lr=0.0000189 Time cost=113.1 Thoughput=10.61 samples/s
+INFO:gluonnlp:21:53:30 Epoch: 0, Batch: 19499/22161, Loss=0.1521, lr=0.0000187 Time cost=113.1 Thoughput=10.61 samples/s
+INFO:gluonnlp:21:55:23 Epoch: 0, Batch: 19799/22161, Loss=0.1596, lr=0.0000184 Time cost=113.1 Thoughput=10.61 samples/s
+INFO:gluonnlp:21:57:17 Epoch: 0, Batch: 20099/22161, Loss=0.1639, lr=0.0000182 Time cost=113.1 Thoughput=10.61 samples/s
+INFO:gluonnlp:21:59:10 Epoch: 0, Batch: 20399/22161, Loss=0.1701, lr=0.0000180 Time cost=113.1 Thoughput=10.61 samples/s
+INFO:gluonnlp:22:01:03 Epoch: 0, Batch: 20699/22161, Loss=0.1538, lr=0.0000178 Time cost=113.2 Thoughput=10.60 samples/s
+INFO:gluonnlp:22:02:56 Epoch: 0, Batch: 20999/22161, Loss=0.1568, lr=0.0000175 Time cost=113.2 Thoughput=10.60 samples/s
+INFO:gluonnlp:22:04:49 Epoch: 0, Batch: 21299/22161, Loss=0.1509, lr=0.0000173 Time cost=113.2 Thoughput=10.60 samples/s
+INFO:gluonnlp:22:06:42 Epoch: 0, Batch: 21599/22161, Loss=0.1354, lr=0.0000171 Time cost=113.2 Thoughput=10.60 samples/s
+INFO:gluonnlp:22:08:36 Epoch: 0, Batch: 21899/22161, Loss=0.1516, lr=0.0000169 Time cost=113.2 Thoughput=10.60 samples/s
+INFO:gluonnlp:22:10:14 Epoch: 0, Time cost=8347.97 s, Thoughput=2.65 samples/s
+INFO:gluonnlp:22:12:07 Epoch: 1, Batch: 299/22161, Loss=0.1116, lr=0.0000164 Time cost=113.3 Thoughput=19.79 samples/s
+INFO:gluonnlp:22:14:00 Epoch: 1, Batch: 599/22161, Loss=0.1082, lr=0.0000162 Time cost=113.2 Thoughput=10.60 samples/s
+INFO:gluonnlp:22:15:53 Epoch: 1, Batch: 899/22161, Loss=0.1025, lr=0.0000160 Time cost=113.2 Thoughput=10.60 samples/s
+INFO:gluonnlp:22:17:47 Epoch: 1, Batch: 1199/22161, Loss=0.1109, lr=0.0000158 Time cost=113.2 Thoughput=10.60 samples/s
+INFO:gluonnlp:22:19:40 Epoch: 1, Batch: 1499/22161, Loss=0.1039, lr=0.0000155 Time cost=113.2 Thoughput=10.60 samples/s
+INFO:gluonnlp:22:21:33 Epoch: 1, Batch: 1799/22161, Loss=0.1132, lr=0.0000153 Time cost=113.2 Thoughput=10.60 samples/s
+INFO:gluonnlp:22:23:26 Epoch: 1, Batch: 2099/22161, Loss=0.1089, lr=0.0000151 Time cost=113.2 Thoughput=10.60 samples/s
+INFO:gluonnlp:22:25:19 Epoch: 1, Batch: 2399/22161, Loss=0.1102, lr=0.0000149 Time cost=113.2 Thoughput=10.60 samples/s
+INFO:gluonnlp:22:27:12 Epoch: 1, Batch: 2699/22161, Loss=0.1079, lr=0.0000146 Time cost=113.2 Thoughput=10.60 samples/s
+INFO:gluonnlp:22:29:06 Epoch: 1, Batch: 2999/22161, Loss=0.1120, lr=0.0000144 Time cost=113.1 Thoughput=10.61 samples/s
+INFO:gluonnlp:22:30:59 Epoch: 1, Batch: 3299/22161, Loss=0.1031, lr=0.0000142 Time cost=113.2 Thoughput=10.60 samples/s
+INFO:gluonnlp:22:32:52 Epoch: 1, Batch: 3599/22161, Loss=0.1082, lr=0.0000140 Time cost=113.2 Thoughput=10.60 samples/s
+INFO:gluonnlp:22:34:45 Epoch: 1, Batch: 3899/22161, Loss=0.1016, lr=0.0000137 Time cost=113.2 Thoughput=10.60 samples/s
+INFO:gluonnlp:22:36:38 Epoch: 1, Batch: 4199/22161, Loss=0.1076, lr=0.0000135 Time cost=113.2 Thoughput=10.60 samples/s
+INFO:gluonnlp:22:38:32 Epoch: 1, Batch: 4499/22161, Loss=0.1220, lr=0.0000133 Time cost=113.6 Thoughput=10.56 samples/s
+INFO:gluonnlp:22:40:25 Epoch: 1, Batch: 4799/22161, Loss=0.1101, lr=0.0000131 Time cost=113.2 Thoughput=10.60 samples/s
+INFO:gluonnlp:22:42:18 Epoch: 1, Batch: 5099/22161, Loss=0.1027, lr=0.0000128 Time cost=113.2 Thoughput=10.60 samples/s
+INFO:gluonnlp:22:44:12 Epoch: 1, Batch: 5399/22161, Loss=0.1131, lr=0.0000126 Time cost=113.2 Thoughput=10.60 samples/s
+INFO:gluonnlp:22:46:05 Epoch: 1, Batch: 5699/22161, Loss=0.1125, lr=0.0000124 Time cost=113.2 Thoughput=10.60 samples/s
+INFO:gluonnlp:22:47:58 Epoch: 1, Batch: 5999/22161, Loss=0.1055, lr=0.0000121 Time cost=113.2 Thoughput=10.60 samples/s
+INFO:gluonnlp:22:49:51 Epoch: 1, Batch: 6299/22161, Loss=0.1084, lr=0.0000119 Time cost=113.3 Thoughput=10.60 samples/s
+INFO:gluonnlp:22:51:44 Epoch: 1, Batch: 6599/22161, Loss=0.1073, lr=0.0000117 Time cost=113.2 Thoughput=10.60 samples/s
+INFO:gluonnlp:22:53:38 Epoch: 1, Batch: 6899/22161, Loss=0.1000, lr=0.0000115 Time cost=113.2 Thoughput=10.60 samples/s
+INFO:gluonnlp:22:55:31 Epoch: 1, Batch: 7199/22161, Loss=0.1054, lr=0.0000112 Time cost=113.2 Thoughput=10.60 samples/s
+INFO:gluonnlp:22:57:24 Epoch: 1, Batch: 7499/22161, Loss=0.1166, lr=0.0000110 Time cost=113.2 Thoughput=10.60 samples/s
+INFO:gluonnlp:22:59:17 Epoch: 1, Batch: 7799/22161, Loss=0.1113, lr=0.0000108 Time cost=113.2 Thoughput=10.60 samples/s
+INFO:gluonnlp:23:01:10 Epoch: 1, Batch: 8099/22161, Loss=0.1163, lr=0.0000106 Time cost=113.2 Thoughput=10.60 samples/s
+INFO:gluonnlp:23:03:04 Epoch: 1, Batch: 8399/22161, Loss=0.1051, lr=0.0000103 Time cost=113.2 Thoughput=10.60 samples/s
+INFO:gluonnlp:23:04:57 Epoch: 1, Batch: 8699/22161, Loss=0.1069, lr=0.0000101 Time cost=113.2 Thoughput=10.60 samples/s
+INFO:gluonnlp:23:06:50 Epoch: 1, Batch: 8999/22161, Loss=0.1107, lr=0.0000099 Time cost=113.2 Thoughput=10.60 samples/s
+INFO:gluonnlp:23:08:43 Epoch: 1, Batch: 9299/22161, Loss=0.1122, lr=0.0000097 Time cost=113.3 Thoughput=10.59 samples/s
+INFO:gluonnlp:23:10:36 Epoch: 1, Batch: 9599/22161, Loss=0.1037, lr=0.0000094 Time cost=113.2 Thoughput=10.60 samples/s
+INFO:gluonnlp:23:12:30 Epoch: 1, Batch: 9899/22161, Loss=0.1035, lr=0.0000092 Time cost=113.2 Thoughput=10.60 samples/s
+INFO:gluonnlp:23:14:23 Epoch: 1, Batch: 10199/22161, Loss=0.1172, lr=0.0000090 Time cost=113.1 Thoughput=10.61 samples/s
+INFO:gluonnlp:23:16:16 Epoch: 1, Batch: 10499/22161, Loss=0.1110, lr=0.0000088 Time cost=113.2 Thoughput=10.60 samples/s
+INFO:gluonnlp:23:18:09 Epoch: 1, Batch: 10799/22161, Loss=0.1155, lr=0.0000085 Time cost=113.3 Thoughput=10.59 samples/s
+INFO:gluonnlp:23:20:02 Epoch: 1, Batch: 11099/22161, Loss=0.1098, lr=0.0000083 Time cost=113.2 Thoughput=10.60 samples/s
+INFO:gluonnlp:23:21:56 Epoch: 1, Batch: 11399/22161, Loss=0.1089, lr=0.0000081 Time cost=113.2 Thoughput=10.60 samples/s
+INFO:gluonnlp:23:23:49 Epoch: 1, Batch: 11699/22161, Loss=0.1056, lr=0.0000079 Time cost=113.2 Thoughput=10.60 samples/s
+INFO:gluonnlp:23:25:42 Epoch: 1, Batch: 11999/22161, Loss=0.1036, lr=0.0000076 Time cost=113.2 Thoughput=10.60 samples/s
+INFO:gluonnlp:23:27:35 Epoch: 1, Batch: 12299/22161, Loss=0.1014, lr=0.0000074 Time cost=113.2 Thoughput=10.60 samples/s
+INFO:gluonnlp:23:29:28 Epoch: 1, Batch: 12599/22161, Loss=0.1077, lr=0.0000072 Time cost=113.2 Thoughput=10.60 samples/s
+INFO:gluonnlp:23:31:22 Epoch: 1, Batch: 12899/22161, Loss=0.1048, lr=0.0000070 Time cost=113.2 Thoughput=10.60 samples/s
+INFO:gluonnlp:23:33:15 Epoch: 1, Batch: 13199/22161, Loss=0.1111, lr=0.0000067 Time cost=113.2 Thoughput=10.60 samples/s
+INFO:gluonnlp:23:35:08 Epoch: 1, Batch: 13499/22161, Loss=0.1069, lr=0.0000065 Time cost=113.2 Thoughput=10.60 samples/s
+INFO:gluonnlp:23:37:01 Epoch: 1, Batch: 13799/22161, Loss=0.1028, lr=0.0000063 Time cost=113.2 Thoughput=10.60 samples/s
+INFO:gluonnlp:23:38:54 Epoch: 1, Batch: 14099/22161, Loss=0.1078, lr=0.0000061 Time cost=113.2 Thoughput=10.60 samples/s
+INFO:gluonnlp:23:40:48 Epoch: 1, Batch: 14399/22161, Loss=0.1075, lr=0.0000058 Time cost=113.2 Thoughput=10.60 samples/s
+INFO:gluonnlp:23:42:41 Epoch: 1, Batch: 14699/22161, Loss=0.1034, lr=0.0000056 Time cost=113.2 Thoughput=10.60 samples/s
+INFO:gluonnlp:23:44:34 Epoch: 1, Batch: 14999/22161, Loss=0.1060, lr=0.0000054 Time cost=113.2 Thoughput=10.60 samples/s
+INFO:gluonnlp:23:46:27 Epoch: 1, Batch: 15299/22161, Loss=0.1116, lr=0.0000052 Time cost=113.3 Thoughput=10.59 samples/s
+INFO:gluonnlp:23:48:20 Epoch: 1, Batch: 15599/22161, Loss=0.0925, lr=0.0000049 Time cost=113.2 Thoughput=10.60 samples/s
+INFO:gluonnlp:23:50:14 Epoch: 1, Batch: 15899/22161, Loss=0.1069, lr=0.0000047 Time cost=113.2 Thoughput=10.60 samples/s
+INFO:gluonnlp:23:52:07 Epoch: 1, Batch: 16199/22161, Loss=0.0947, lr=0.0000045 Time cost=113.2 Thoughput=10.60 samples/s
+INFO:gluonnlp:23:54:00 Epoch: 1, Batch: 16499/22161, Loss=0.1127, lr=0.0000043 Time cost=113.2 Thoughput=10.60 samples/s
+INFO:gluonnlp:23:55:53 Epoch: 1, Batch: 16799/22161, Loss=0.1003, lr=0.0000040 Time cost=113.2 Thoughput=10.60 samples/s
+INFO:gluonnlp:23:57:46 Epoch: 1, Batch: 17099/22161, Loss=0.1038, lr=0.0000038 Time cost=113.2 Thoughput=10.60 samples/s
+INFO:gluonnlp:23:59:40 Epoch: 1, Batch: 17399/22161, Loss=0.1026, lr=0.0000036 Time cost=113.7 Thoughput=10.56 samples/s
+INFO:gluonnlp:00:01:33 Epoch: 1, Batch: 17699/22161, Loss=0.0968, lr=0.0000033 Time cost=113.2 Thoughput=10.60 samples/s
+INFO:gluonnlp:00:03:26 Epoch: 1, Batch: 17999/22161, Loss=0.0984, lr=0.0000031 Time cost=113.2 Thoughput=10.60 samples/s
+INFO:gluonnlp:00:05:20 Epoch: 1, Batch: 18299/22161, Loss=0.1075, lr=0.0000029 Time cost=113.2 Thoughput=10.60 samples/s
+INFO:gluonnlp:00:07:13 Epoch: 1, Batch: 18599/22161, Loss=0.1047, lr=0.0000027 Time cost=113.2 Thoughput=10.60 samples/s
+INFO:gluonnlp:00:09:06 Epoch: 1, Batch: 18899/22161, Loss=0.1052, lr=0.0000024 Time cost=113.2 Thoughput=10.60 samples/s
+INFO:gluonnlp:00:10:59 Epoch: 1, Batch: 19199/22161, Loss=0.1032, lr=0.0000022 Time cost=113.2 Thoughput=10.60 samples/s
+INFO:gluonnlp:00:12:52 Epoch: 1, Batch: 19499/22161, Loss=0.1052, lr=0.0000020 Time cost=113.2 Thoughput=10.60 samples/s
+INFO:gluonnlp:00:14:46 Epoch: 1, Batch: 19799/22161, Loss=0.1017, lr=0.0000018 Time cost=113.2 Thoughput=10.60 samples/s
+INFO:gluonnlp:00:16:39 Epoch: 1, Batch: 20099/22161, Loss=0.1077, lr=0.0000015 Time cost=113.3 Thoughput=10.59 samples/s
+INFO:gluonnlp:00:18:32 Epoch: 1, Batch: 20399/22161, Loss=0.0999, lr=0.0000013 Time cost=113.2 Thoughput=10.60 samples/s
+INFO:gluonnlp:00:20:25 Epoch: 1, Batch: 20699/22161, Loss=0.1057, lr=0.0000011 Time cost=113.1 Thoughput=10.61 samples/s
+INFO:gluonnlp:00:22:18 Epoch: 1, Batch: 20999/22161, Loss=0.1021, lr=0.0000009 Time cost=113.2 Thoughput=10.60 samples/s
+INFO:gluonnlp:00:24:12 Epoch: 1, Batch: 21299/22161, Loss=0.1068, lr=0.0000006 Time cost=113.2 Thoughput=10.60 samples/s
+INFO:gluonnlp:00:26:05 Epoch: 1, Batch: 21599/22161, Loss=0.1052, lr=0.0000004 Time cost=113.2 Thoughput=10.60 samples/s
+INFO:gluonnlp:00:27:58 Epoch: 1, Batch: 21899/22161, Loss=0.1023, lr=0.0000002 Time cost=113.2 Thoughput=10.60 samples/s
+INFO:gluonnlp:00:29:36 Epoch: 1, Time cost=16710.39 s, Thoughput=1.33 samples/s
+INFO:gluonnlp:00:29:38 Loader dev data...
+INFO:gluonnlp:00:29:38 Number of records in Train data:10570
+INFO:gluonnlp:00:29:46 The number of examples after preprocessing:10833
+INFO:gluonnlp:00:29:47 Start predict
+INFO:gluonnlp:00:35:20 Inference time cost=333.15 s, Thoughput=1.36 samples/s
+INFO:gluonnlp:00:35:20 Get prediction results...
+INFO:gluonnlp:00:37:10 {'exact_match': 84.03027436140019, 'f1': 90.84429843203452}
