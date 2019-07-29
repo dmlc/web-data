@@ -1,0 +1,1279 @@
+Namespace(batch_norm=False, batch_size=25, clip_grad=40, crop_ratio=0.875, data_dir='/home/ubuntu/yizhu/data/UCF101/rawframes', dtype='float32', eval=False, hard_weight=0.5, input_size=299, label_smoothing=False, last_gamma=False, log_interval=10, logging_file='tsn_2d_rgb_inceptionv3_seg_3_f1s1_b32_g8_gradclip_partialbn.txt', lr=0.001, lr_decay=0.1, lr_decay_epoch='30,60,80', lr_decay_period=0, lr_mode='step', mixup=False, mixup_alpha=0.2, mixup_off_epoch=0, mode='hybrid', model='inceptionv3_ucf101', momentum=0.9, new_height=340, new_width=450, no_wd=False, num_classes=101, num_epochs=80, num_gpus=8, num_segments=3, num_workers=32, partial_bn=True, resume_epoch=0, resume_params='', resume_states='', save_dir='/home/ubuntu/yizhu/logs/mxnet/pullrequest/tsn_2d_rgb_inceptionv3_seg_3_f1s1_b32_g8_gradclip_partialbn', save_frequency=5, teacher=None, temperature=20, train_list='/home/ubuntu/yizhu/data/UCF101/ucfTrainTestlist/ucf101_train_split_1_rawframes.txt', use_gn=False, use_pretrained=True, use_se=False, use_tsn=True, val_list='/home/ubuntu/yizhu/data/UCF101/ucfTrainTestlist/ucf101_val_split_1_rawframes.txt', warmup_epochs=0, warmup_lr=0.0, wd=0.0005)
+Total batch size is set to 200 on 8 GPUs
+ActionRecInceptionV3TSN(
+  (basenet): ActionRecInceptionV3(
+    (features): HybridSequential(
+      (0): HybridSequential(
+        (0): Conv2D(3 -> 32, kernel_size=(3, 3), stride=(2, 2), bias=False)
+        (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=32)
+        (2): Activation(relu)
+      )
+      (1): HybridSequential(
+        (0): Conv2D(32 -> 32, kernel_size=(3, 3), stride=(1, 1), bias=False)
+        (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=32)
+        (2): Activation(relu)
+      )
+      (2): HybridSequential(
+        (0): Conv2D(32 -> 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=64)
+        (2): Activation(relu)
+      )
+      (3): MaxPool2D(size=(3, 3), stride=(2, 2), padding=(0, 0), ceil_mode=False, global_pool=False, pool_type=max, layout=NCHW)
+      (4): HybridSequential(
+        (0): Conv2D(64 -> 80, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=80)
+        (2): Activation(relu)
+      )
+      (5): HybridSequential(
+        (0): Conv2D(80 -> 192, kernel_size=(3, 3), stride=(1, 1), bias=False)
+        (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=192)
+        (2): Activation(relu)
+      )
+      (6): MaxPool2D(size=(3, 3), stride=(2, 2), padding=(0, 0), ceil_mode=False, global_pool=False, pool_type=max, layout=NCHW)
+      (7): HybridConcurrent(
+        (0): HybridSequential(
+          (0): HybridSequential(
+            (0): Conv2D(192 -> 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=64)
+            (2): Activation(relu)
+          )
+        )
+        (1): HybridSequential(
+          (0): HybridSequential(
+            (0): Conv2D(192 -> 48, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=48)
+            (2): Activation(relu)
+          )
+          (1): HybridSequential(
+            (0): Conv2D(48 -> 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2), bias=False)
+            (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=64)
+            (2): Activation(relu)
+          )
+        )
+        (2): HybridSequential(
+          (0): HybridSequential(
+            (0): Conv2D(192 -> 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=64)
+            (2): Activation(relu)
+          )
+          (1): HybridSequential(
+            (0): Conv2D(64 -> 96, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+            (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=96)
+            (2): Activation(relu)
+          )
+          (2): HybridSequential(
+            (0): Conv2D(96 -> 96, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+            (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=96)
+            (2): Activation(relu)
+          )
+        )
+        (3): HybridSequential(
+          (0): AvgPool2D(size=(3, 3), stride=(1, 1), padding=(1, 1), ceil_mode=False, global_pool=False, pool_type=avg, layout=NCHW)
+          (1): HybridSequential(
+            (0): Conv2D(192 -> 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=32)
+            (2): Activation(relu)
+          )
+        )
+      )
+      (8): HybridConcurrent(
+        (0): HybridSequential(
+          (0): HybridSequential(
+            (0): Conv2D(256 -> 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=64)
+            (2): Activation(relu)
+          )
+        )
+        (1): HybridSequential(
+          (0): HybridSequential(
+            (0): Conv2D(256 -> 48, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=48)
+            (2): Activation(relu)
+          )
+          (1): HybridSequential(
+            (0): Conv2D(48 -> 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2), bias=False)
+            (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=64)
+            (2): Activation(relu)
+          )
+        )
+        (2): HybridSequential(
+          (0): HybridSequential(
+            (0): Conv2D(256 -> 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=64)
+            (2): Activation(relu)
+          )
+          (1): HybridSequential(
+            (0): Conv2D(64 -> 96, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+            (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=96)
+            (2): Activation(relu)
+          )
+          (2): HybridSequential(
+            (0): Conv2D(96 -> 96, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+            (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=96)
+            (2): Activation(relu)
+          )
+        )
+        (3): HybridSequential(
+          (0): AvgPool2D(size=(3, 3), stride=(1, 1), padding=(1, 1), ceil_mode=False, global_pool=False, pool_type=avg, layout=NCHW)
+          (1): HybridSequential(
+            (0): Conv2D(256 -> 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=64)
+            (2): Activation(relu)
+          )
+        )
+      )
+      (9): HybridConcurrent(
+        (0): HybridSequential(
+          (0): HybridSequential(
+            (0): Conv2D(288 -> 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=64)
+            (2): Activation(relu)
+          )
+        )
+        (1): HybridSequential(
+          (0): HybridSequential(
+            (0): Conv2D(288 -> 48, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=48)
+            (2): Activation(relu)
+          )
+          (1): HybridSequential(
+            (0): Conv2D(48 -> 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2), bias=False)
+            (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=64)
+            (2): Activation(relu)
+          )
+        )
+        (2): HybridSequential(
+          (0): HybridSequential(
+            (0): Conv2D(288 -> 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=64)
+            (2): Activation(relu)
+          )
+          (1): HybridSequential(
+            (0): Conv2D(64 -> 96, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+            (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=96)
+            (2): Activation(relu)
+          )
+          (2): HybridSequential(
+            (0): Conv2D(96 -> 96, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+            (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=96)
+            (2): Activation(relu)
+          )
+        )
+        (3): HybridSequential(
+          (0): AvgPool2D(size=(3, 3), stride=(1, 1), padding=(1, 1), ceil_mode=False, global_pool=False, pool_type=avg, layout=NCHW)
+          (1): HybridSequential(
+            (0): Conv2D(288 -> 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=64)
+            (2): Activation(relu)
+          )
+        )
+      )
+      (10): HybridConcurrent(
+        (0): HybridSequential(
+          (0): HybridSequential(
+            (0): Conv2D(288 -> 384, kernel_size=(3, 3), stride=(2, 2), bias=False)
+            (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=384)
+            (2): Activation(relu)
+          )
+        )
+        (1): HybridSequential(
+          (0): HybridSequential(
+            (0): Conv2D(288 -> 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=64)
+            (2): Activation(relu)
+          )
+          (1): HybridSequential(
+            (0): Conv2D(64 -> 96, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+            (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=96)
+            (2): Activation(relu)
+          )
+          (2): HybridSequential(
+            (0): Conv2D(96 -> 96, kernel_size=(3, 3), stride=(2, 2), bias=False)
+            (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=96)
+            (2): Activation(relu)
+          )
+        )
+        (2): HybridSequential(
+          (0): MaxPool2D(size=(3, 3), stride=(2, 2), padding=(0, 0), ceil_mode=False, global_pool=False, pool_type=max, layout=NCHW)
+        )
+      )
+      (11): HybridConcurrent(
+        (0): HybridSequential(
+          (0): HybridSequential(
+            (0): Conv2D(768 -> 192, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=192)
+            (2): Activation(relu)
+          )
+        )
+        (1): HybridSequential(
+          (0): HybridSequential(
+            (0): Conv2D(768 -> 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=128)
+            (2): Activation(relu)
+          )
+          (1): HybridSequential(
+            (0): Conv2D(128 -> 128, kernel_size=(1, 7), stride=(1, 1), padding=(0, 3), bias=False)
+            (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=128)
+            (2): Activation(relu)
+          )
+          (2): HybridSequential(
+            (0): Conv2D(128 -> 192, kernel_size=(7, 1), stride=(1, 1), padding=(3, 0), bias=False)
+            (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=192)
+            (2): Activation(relu)
+          )
+        )
+        (2): HybridSequential(
+          (0): HybridSequential(
+            (0): Conv2D(768 -> 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=128)
+            (2): Activation(relu)
+          )
+          (1): HybridSequential(
+            (0): Conv2D(128 -> 128, kernel_size=(7, 1), stride=(1, 1), padding=(3, 0), bias=False)
+            (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=128)
+            (2): Activation(relu)
+          )
+          (2): HybridSequential(
+            (0): Conv2D(128 -> 128, kernel_size=(1, 7), stride=(1, 1), padding=(0, 3), bias=False)
+            (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=128)
+            (2): Activation(relu)
+          )
+          (3): HybridSequential(
+            (0): Conv2D(128 -> 128, kernel_size=(7, 1), stride=(1, 1), padding=(3, 0), bias=False)
+            (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=128)
+            (2): Activation(relu)
+          )
+          (4): HybridSequential(
+            (0): Conv2D(128 -> 192, kernel_size=(1, 7), stride=(1, 1), padding=(0, 3), bias=False)
+            (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=192)
+            (2): Activation(relu)
+          )
+        )
+        (3): HybridSequential(
+          (0): AvgPool2D(size=(3, 3), stride=(1, 1), padding=(1, 1), ceil_mode=False, global_pool=False, pool_type=avg, layout=NCHW)
+          (1): HybridSequential(
+            (0): Conv2D(768 -> 192, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=192)
+            (2): Activation(relu)
+          )
+        )
+      )
+      (12): HybridConcurrent(
+        (0): HybridSequential(
+          (0): HybridSequential(
+            (0): Conv2D(768 -> 192, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=192)
+            (2): Activation(relu)
+          )
+        )
+        (1): HybridSequential(
+          (0): HybridSequential(
+            (0): Conv2D(768 -> 160, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=160)
+            (2): Activation(relu)
+          )
+          (1): HybridSequential(
+            (0): Conv2D(160 -> 160, kernel_size=(1, 7), stride=(1, 1), padding=(0, 3), bias=False)
+            (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=160)
+            (2): Activation(relu)
+          )
+          (2): HybridSequential(
+            (0): Conv2D(160 -> 192, kernel_size=(7, 1), stride=(1, 1), padding=(3, 0), bias=False)
+            (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=192)
+            (2): Activation(relu)
+          )
+        )
+        (2): HybridSequential(
+          (0): HybridSequential(
+            (0): Conv2D(768 -> 160, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=160)
+            (2): Activation(relu)
+          )
+          (1): HybridSequential(
+            (0): Conv2D(160 -> 160, kernel_size=(7, 1), stride=(1, 1), padding=(3, 0), bias=False)
+            (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=160)
+            (2): Activation(relu)
+          )
+          (2): HybridSequential(
+            (0): Conv2D(160 -> 160, kernel_size=(1, 7), stride=(1, 1), padding=(0, 3), bias=False)
+            (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=160)
+            (2): Activation(relu)
+          )
+          (3): HybridSequential(
+            (0): Conv2D(160 -> 160, kernel_size=(7, 1), stride=(1, 1), padding=(3, 0), bias=False)
+            (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=160)
+            (2): Activation(relu)
+          )
+          (4): HybridSequential(
+            (0): Conv2D(160 -> 192, kernel_size=(1, 7), stride=(1, 1), padding=(0, 3), bias=False)
+            (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=192)
+            (2): Activation(relu)
+          )
+        )
+        (3): HybridSequential(
+          (0): AvgPool2D(size=(3, 3), stride=(1, 1), padding=(1, 1), ceil_mode=False, global_pool=False, pool_type=avg, layout=NCHW)
+          (1): HybridSequential(
+            (0): Conv2D(768 -> 192, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=192)
+            (2): Activation(relu)
+          )
+        )
+      )
+      (13): HybridConcurrent(
+        (0): HybridSequential(
+          (0): HybridSequential(
+            (0): Conv2D(768 -> 192, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=192)
+            (2): Activation(relu)
+          )
+        )
+        (1): HybridSequential(
+          (0): HybridSequential(
+            (0): Conv2D(768 -> 160, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=160)
+            (2): Activation(relu)
+          )
+          (1): HybridSequential(
+            (0): Conv2D(160 -> 160, kernel_size=(1, 7), stride=(1, 1), padding=(0, 3), bias=False)
+            (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=160)
+            (2): Activation(relu)
+          )
+          (2): HybridSequential(
+            (0): Conv2D(160 -> 192, kernel_size=(7, 1), stride=(1, 1), padding=(3, 0), bias=False)
+            (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=192)
+            (2): Activation(relu)
+          )
+        )
+        (2): HybridSequential(
+          (0): HybridSequential(
+            (0): Conv2D(768 -> 160, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=160)
+            (2): Activation(relu)
+          )
+          (1): HybridSequential(
+            (0): Conv2D(160 -> 160, kernel_size=(7, 1), stride=(1, 1), padding=(3, 0), bias=False)
+            (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=160)
+            (2): Activation(relu)
+          )
+          (2): HybridSequential(
+            (0): Conv2D(160 -> 160, kernel_size=(1, 7), stride=(1, 1), padding=(0, 3), bias=False)
+            (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=160)
+            (2): Activation(relu)
+          )
+          (3): HybridSequential(
+            (0): Conv2D(160 -> 160, kernel_size=(7, 1), stride=(1, 1), padding=(3, 0), bias=False)
+            (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=160)
+            (2): Activation(relu)
+          )
+          (4): HybridSequential(
+            (0): Conv2D(160 -> 192, kernel_size=(1, 7), stride=(1, 1), padding=(0, 3), bias=False)
+            (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=192)
+            (2): Activation(relu)
+          )
+        )
+        (3): HybridSequential(
+          (0): AvgPool2D(size=(3, 3), stride=(1, 1), padding=(1, 1), ceil_mode=False, global_pool=False, pool_type=avg, layout=NCHW)
+          (1): HybridSequential(
+            (0): Conv2D(768 -> 192, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=192)
+            (2): Activation(relu)
+          )
+        )
+      )
+      (14): HybridConcurrent(
+        (0): HybridSequential(
+          (0): HybridSequential(
+            (0): Conv2D(768 -> 192, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=192)
+            (2): Activation(relu)
+          )
+        )
+        (1): HybridSequential(
+          (0): HybridSequential(
+            (0): Conv2D(768 -> 192, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=192)
+            (2): Activation(relu)
+          )
+          (1): HybridSequential(
+            (0): Conv2D(192 -> 192, kernel_size=(1, 7), stride=(1, 1), padding=(0, 3), bias=False)
+            (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=192)
+            (2): Activation(relu)
+          )
+          (2): HybridSequential(
+            (0): Conv2D(192 -> 192, kernel_size=(7, 1), stride=(1, 1), padding=(3, 0), bias=False)
+            (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=192)
+            (2): Activation(relu)
+          )
+        )
+        (2): HybridSequential(
+          (0): HybridSequential(
+            (0): Conv2D(768 -> 192, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=192)
+            (2): Activation(relu)
+          )
+          (1): HybridSequential(
+            (0): Conv2D(192 -> 192, kernel_size=(7, 1), stride=(1, 1), padding=(3, 0), bias=False)
+            (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=192)
+            (2): Activation(relu)
+          )
+          (2): HybridSequential(
+            (0): Conv2D(192 -> 192, kernel_size=(1, 7), stride=(1, 1), padding=(0, 3), bias=False)
+            (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=192)
+            (2): Activation(relu)
+          )
+          (3): HybridSequential(
+            (0): Conv2D(192 -> 192, kernel_size=(7, 1), stride=(1, 1), padding=(3, 0), bias=False)
+            (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=192)
+            (2): Activation(relu)
+          )
+          (4): HybridSequential(
+            (0): Conv2D(192 -> 192, kernel_size=(1, 7), stride=(1, 1), padding=(0, 3), bias=False)
+            (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=192)
+            (2): Activation(relu)
+          )
+        )
+        (3): HybridSequential(
+          (0): AvgPool2D(size=(3, 3), stride=(1, 1), padding=(1, 1), ceil_mode=False, global_pool=False, pool_type=avg, layout=NCHW)
+          (1): HybridSequential(
+            (0): Conv2D(768 -> 192, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=192)
+            (2): Activation(relu)
+          )
+        )
+      )
+      (15): HybridConcurrent(
+        (0): HybridSequential(
+          (0): HybridSequential(
+            (0): Conv2D(768 -> 192, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=192)
+            (2): Activation(relu)
+          )
+          (1): HybridSequential(
+            (0): Conv2D(192 -> 320, kernel_size=(3, 3), stride=(2, 2), bias=False)
+            (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=320)
+            (2): Activation(relu)
+          )
+        )
+        (1): HybridSequential(
+          (0): HybridSequential(
+            (0): Conv2D(768 -> 192, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=192)
+            (2): Activation(relu)
+          )
+          (1): HybridSequential(
+            (0): Conv2D(192 -> 192, kernel_size=(1, 7), stride=(1, 1), padding=(0, 3), bias=False)
+            (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=192)
+            (2): Activation(relu)
+          )
+          (2): HybridSequential(
+            (0): Conv2D(192 -> 192, kernel_size=(7, 1), stride=(1, 1), padding=(3, 0), bias=False)
+            (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=192)
+            (2): Activation(relu)
+          )
+          (3): HybridSequential(
+            (0): Conv2D(192 -> 192, kernel_size=(3, 3), stride=(2, 2), bias=False)
+            (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=192)
+            (2): Activation(relu)
+          )
+        )
+        (2): HybridSequential(
+          (0): MaxPool2D(size=(3, 3), stride=(2, 2), padding=(0, 0), ceil_mode=False, global_pool=False, pool_type=max, layout=NCHW)
+        )
+      )
+      (16): HybridConcurrent(
+        (0): HybridSequential(
+          (0): HybridSequential(
+            (0): Conv2D(1280 -> 320, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=320)
+            (2): Activation(relu)
+          )
+        )
+        (1): HybridSequential(
+          (0): HybridSequential(
+            (0): HybridSequential(
+              (0): Conv2D(1280 -> 384, kernel_size=(1, 1), stride=(1, 1), bias=False)
+              (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=384)
+              (2): Activation(relu)
+            )
+          )
+          (1): HybridConcurrent(
+            (0): HybridSequential(
+              (0): HybridSequential(
+                (0): Conv2D(384 -> 384, kernel_size=(1, 3), stride=(1, 1), padding=(0, 1), bias=False)
+                (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=384)
+                (2): Activation(relu)
+              )
+            )
+            (1): HybridSequential(
+              (0): HybridSequential(
+                (0): Conv2D(384 -> 384, kernel_size=(3, 1), stride=(1, 1), padding=(1, 0), bias=False)
+                (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=384)
+                (2): Activation(relu)
+              )
+            )
+          )
+        )
+        (2): HybridSequential(
+          (0): HybridSequential(
+            (0): HybridSequential(
+              (0): Conv2D(1280 -> 448, kernel_size=(1, 1), stride=(1, 1), bias=False)
+              (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=448)
+              (2): Activation(relu)
+            )
+            (1): HybridSequential(
+              (0): Conv2D(448 -> 384, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+              (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=384)
+              (2): Activation(relu)
+            )
+          )
+          (1): HybridConcurrent(
+            (0): HybridSequential(
+              (0): HybridSequential(
+                (0): Conv2D(384 -> 384, kernel_size=(1, 3), stride=(1, 1), padding=(0, 1), bias=False)
+                (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=384)
+                (2): Activation(relu)
+              )
+            )
+            (1): HybridSequential(
+              (0): HybridSequential(
+                (0): Conv2D(384 -> 384, kernel_size=(3, 1), stride=(1, 1), padding=(1, 0), bias=False)
+                (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=384)
+                (2): Activation(relu)
+              )
+            )
+          )
+        )
+        (3): HybridSequential(
+          (0): AvgPool2D(size=(3, 3), stride=(1, 1), padding=(1, 1), ceil_mode=False, global_pool=False, pool_type=avg, layout=NCHW)
+          (1): HybridSequential(
+            (0): Conv2D(1280 -> 192, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=192)
+            (2): Activation(relu)
+          )
+        )
+      )
+      (17): HybridConcurrent(
+        (0): HybridSequential(
+          (0): HybridSequential(
+            (0): Conv2D(2048 -> 320, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=320)
+            (2): Activation(relu)
+          )
+        )
+        (1): HybridSequential(
+          (0): HybridSequential(
+            (0): HybridSequential(
+              (0): Conv2D(2048 -> 384, kernel_size=(1, 1), stride=(1, 1), bias=False)
+              (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=384)
+              (2): Activation(relu)
+            )
+          )
+          (1): HybridConcurrent(
+            (0): HybridSequential(
+              (0): HybridSequential(
+                (0): Conv2D(384 -> 384, kernel_size=(1, 3), stride=(1, 1), padding=(0, 1), bias=False)
+                (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=384)
+                (2): Activation(relu)
+              )
+            )
+            (1): HybridSequential(
+              (0): HybridSequential(
+                (0): Conv2D(384 -> 384, kernel_size=(3, 1), stride=(1, 1), padding=(1, 0), bias=False)
+                (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=384)
+                (2): Activation(relu)
+              )
+            )
+          )
+        )
+        (2): HybridSequential(
+          (0): HybridSequential(
+            (0): HybridSequential(
+              (0): Conv2D(2048 -> 448, kernel_size=(1, 1), stride=(1, 1), bias=False)
+              (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=448)
+              (2): Activation(relu)
+            )
+            (1): HybridSequential(
+              (0): Conv2D(448 -> 384, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+              (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=384)
+              (2): Activation(relu)
+            )
+          )
+          (1): HybridConcurrent(
+            (0): HybridSequential(
+              (0): HybridSequential(
+                (0): Conv2D(384 -> 384, kernel_size=(1, 3), stride=(1, 1), padding=(0, 1), bias=False)
+                (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=384)
+                (2): Activation(relu)
+              )
+            )
+            (1): HybridSequential(
+              (0): HybridSequential(
+                (0): Conv2D(384 -> 384, kernel_size=(3, 1), stride=(1, 1), padding=(1, 0), bias=False)
+                (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=384)
+                (2): Activation(relu)
+              )
+            )
+          )
+        )
+        (3): HybridSequential(
+          (0): AvgPool2D(size=(3, 3), stride=(1, 1), padding=(1, 1), ceil_mode=False, global_pool=False, pool_type=avg, layout=NCHW)
+          (1): HybridSequential(
+            (0): Conv2D(2048 -> 192, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (1): BatchNorm(axis=1, eps=0.001, momentum=0.9, fix_gamma=False, use_global_stats=True, in_channels=192)
+            (2): Activation(relu)
+          )
+        )
+      )
+      (18): AvgPool2D(size=(8, 8), stride=(8, 8), padding=(0, 0), ceil_mode=False, global_pool=False, pool_type=avg, layout=NCHW)
+      (19): Dropout(p = 0.8, axes=())
+    )
+    (output): Dense(2048 -> 101, linear)
+  )
+  (tsn_consensus): Consensus(
+  
+  )
+)
+Load 9537 training samples and 3783 validation samples.
+Epoch[0] Batch [9]	Speed: 58.724602 samples/sec	accuracy=2.450000	lr=0.001000
+Epoch[0] Batch [19]	Speed: 498.418018 samples/sec	accuracy=6.250000	lr=0.001000
+Epoch[0] Batch [29]	Speed: 508.805895 samples/sec	accuracy=9.433333	lr=0.001000
+Epoch[0] Batch [39]	Speed: 512.314193 samples/sec	accuracy=13.212500	lr=0.001000
+[Epoch 0] training: accuracy=16.892104
+[Epoch 0] speed: 165 samples/sec	time cost: 79.920905
+[Epoch 0] validation: acc-top1=47.343378 acc-top5=73.169442
+successfully opened events file: /home/ubuntu/yizhu/logs/mxnet/pullrequest/tsn_2d_rgb_inceptionv3_seg_3_f1s1_b32_g8_gradclip_partialbn/events.out.tfevents.1563642360.ip-172-31-90-145
+wrote 1 event to disk
+wrote 1 event to disk
+Epoch[1] Batch [9]	Speed: 101.287214 samples/sec	accuracy=50.300000	lr=0.001000
+Epoch[1] Batch [19]	Speed: 422.071024 samples/sec	accuracy=53.050000	lr=0.001000
+Epoch[1] Batch [29]	Speed: 524.101911 samples/sec	accuracy=55.283333	lr=0.001000
+Epoch[1] Batch [39]	Speed: 500.700112 samples/sec	accuracy=58.337500	lr=0.001000
+[Epoch 1] training: accuracy=59.914019
+[Epoch 1] speed: 264 samples/sec	time cost: 49.250354
+[Epoch 1] validation: acc-top1=71.239757 acc-top5=94.052339
+wrote 2 events to disk
+Epoch[2] Batch [9]	Speed: 104.256856 samples/sec	accuracy=73.300000	lr=0.001000
+Epoch[2] Batch [19]	Speed: 412.962600 samples/sec	accuracy=74.900000	lr=0.001000
+Epoch[2] Batch [29]	Speed: 466.795043 samples/sec	accuracy=75.883333	lr=0.001000
+Epoch[2] Batch [39]	Speed: 505.449670 samples/sec	accuracy=76.625000	lr=0.001000
+[Epoch 2] training: accuracy=77.225543
+[Epoch 2] speed: 264 samples/sec	time cost: 48.505738
+[Epoch 2] validation: acc-top1=77.398890 acc-top5=96.246365
+wrote 2 events to disk
+Epoch[3] Batch [9]	Speed: 103.714082 samples/sec	accuracy=83.300000	lr=0.001000
+Epoch[3] Batch [19]	Speed: 473.629666 samples/sec	accuracy=82.900000	lr=0.001000
+Epoch[3] Batch [29]	Speed: 508.954165 samples/sec	accuracy=82.833333	lr=0.001000
+Epoch[3] Batch [39]	Speed: 506.379295 samples/sec	accuracy=83.150000	lr=0.001000
+[Epoch 3] training: accuracy=83.349062
+[Epoch 3] speed: 271 samples/sec	time cost: 47.611703
+[Epoch 3] validation: acc-top1=79.513614 acc-top5=96.510706
+wrote 2 events to disk
+Epoch[4] Batch [9]	Speed: 105.675807 samples/sec	accuracy=86.300000	lr=0.001000
+Epoch[4] Batch [19]	Speed: 486.916490 samples/sec	accuracy=85.875000	lr=0.001000
+Epoch[4] Batch [29]	Speed: 469.904170 samples/sec	accuracy=86.133333	lr=0.001000
+Epoch[4] Batch [39]	Speed: 506.456857 samples/sec	accuracy=86.225000	lr=0.001000
+[Epoch 4] training: accuracy=86.452763
+[Epoch 4] speed: 272 samples/sec	time cost: 47.624217
+[Epoch 4] validation: acc-top1=79.302141 acc-top5=95.876289
+wrote 2 events to disk
+Epoch[5] Batch [9]	Speed: 104.756872 samples/sec	accuracy=88.550000	lr=0.001000
+Epoch[5] Batch [19]	Speed: 493.212209 samples/sec	accuracy=88.700000	lr=0.001000
+Epoch[5] Batch [29]	Speed: 479.018232 samples/sec	accuracy=88.516667	lr=0.001000
+Epoch[5] Batch [39]	Speed: 524.110130 samples/sec	accuracy=88.725000	lr=0.001000
+[Epoch 5] training: accuracy=88.623257
+[Epoch 5] speed: 273 samples/sec	time cost: 47.973334
+[Epoch 5] validation: acc-top1=81.681205 acc-top5=96.378536
+wrote 2 events to disk
+Epoch[6] Batch [9]	Speed: 106.044301 samples/sec	accuracy=89.750000	lr=0.001000
+Epoch[6] Batch [19]	Speed: 494.658512 samples/sec	accuracy=90.725000	lr=0.001000
+Epoch[6] Batch [29]	Speed: 476.807779 samples/sec	accuracy=90.850000	lr=0.001000
+Epoch[6] Batch [39]	Speed: 518.353052 samples/sec	accuracy=90.450000	lr=0.001000
+[Epoch 6] training: accuracy=90.353361
+[Epoch 6] speed: 275 samples/sec	time cost: 47.334680
+[Epoch 6] validation: acc-top1=82.077716 acc-top5=96.457838
+wrote 2 events to disk
+Epoch[7] Batch [9]	Speed: 103.645900 samples/sec	accuracy=92.700000	lr=0.001000
+Epoch[7] Batch [19]	Speed: 503.397326 samples/sec	accuracy=92.150000	lr=0.001000
+Epoch[7] Batch [29]	Speed: 474.683728 samples/sec	accuracy=92.250000	lr=0.001000
+Epoch[7] Batch [39]	Speed: 512.353776 samples/sec	accuracy=92.025000	lr=0.001000
+[Epoch 7] training: accuracy=91.926182
+[Epoch 7] speed: 272 samples/sec	time cost: 48.669443
+[Epoch 7] validation: acc-top1=80.491673 acc-top5=96.272799
+wrote 2 events to disk
+Epoch[8] Batch [9]	Speed: 106.467845 samples/sec	accuracy=92.850000	lr=0.001000
+Epoch[8] Batch [19]	Speed: 497.929776 samples/sec	accuracy=92.375000	lr=0.001000
+Epoch[8] Batch [29]	Speed: 451.884155 samples/sec	accuracy=92.650000	lr=0.001000
+Epoch[8] Batch [39]	Speed: 513.659486 samples/sec	accuracy=92.887500	lr=0.001000
+[Epoch 8] training: accuracy=92.848904
+[Epoch 8] speed: 273 samples/sec	time cost: 47.818637
+[Epoch 8] validation: acc-top1=81.681205 acc-top5=96.590008
+wrote 2 events to disk
+Epoch[9] Batch [9]	Speed: 105.793121 samples/sec	accuracy=93.700000	lr=0.001000
+Epoch[9] Batch [19]	Speed: 493.980447 samples/sec	accuracy=93.300000	lr=0.001000
+Epoch[9] Batch [29]	Speed: 471.060490 samples/sec	accuracy=93.400000	lr=0.001000
+Epoch[9] Batch [39]	Speed: 518.134953 samples/sec	accuracy=93.512500	lr=0.001000
+[Epoch 9] training: accuracy=93.708713
+[Epoch 9] speed: 274 samples/sec	time cost: 48.221208
+[Epoch 9] validation: acc-top1=84.218874 acc-top5=97.065821
+wrote 2 events to disk
+Epoch[10] Batch [9]	Speed: 104.130789 samples/sec	accuracy=93.850000	lr=0.001000
+Epoch[10] Batch [19]	Speed: 495.243106 samples/sec	accuracy=94.000000	lr=0.001000
+Epoch[10] Batch [29]	Speed: 477.619690 samples/sec	accuracy=93.766667	lr=0.001000
+Epoch[10] Batch [39]	Speed: 513.889101 samples/sec	accuracy=93.900000	lr=0.001000
+[Epoch 10] training: accuracy=94.033763
+[Epoch 10] speed: 271 samples/sec	time cost: 47.904744
+[Epoch 10] validation: acc-top1=82.289188 acc-top5=96.748612
+wrote 2 events to disk
+Epoch[11] Batch [9]	Speed: 107.582648 samples/sec	accuracy=95.500000	lr=0.001000
+Epoch[11] Batch [19]	Speed: 506.607310 samples/sec	accuracy=94.675000	lr=0.001000
+Epoch[11] Batch [29]	Speed: 471.680315 samples/sec	accuracy=94.383333	lr=0.001000
+Epoch[11] Batch [39]	Speed: 506.858284 samples/sec	accuracy=94.250000	lr=0.001000
+[Epoch 11] training: accuracy=94.327357
+[Epoch 11] speed: 276 samples/sec	time cost: 48.673499
+[Epoch 11] validation: acc-top1=81.707639 acc-top5=96.193497
+wrote 2 events to disk
+Epoch[12] Batch [9]	Speed: 105.271709 samples/sec	accuracy=94.950000	lr=0.001000
+Epoch[12] Batch [19]	Speed: 506.261117 samples/sec	accuracy=95.050000	lr=0.001000
+Epoch[12] Batch [29]	Speed: 492.643333 samples/sec	accuracy=95.533333	lr=0.001000
+Epoch[12] Batch [39]	Speed: 502.064552 samples/sec	accuracy=95.387500	lr=0.001000
+[Epoch 12] training: accuracy=95.501730
+[Epoch 12] speed: 275 samples/sec	time cost: 47.888281
+[Epoch 12] validation: acc-top1=83.875231 acc-top5=96.748612
+wrote 2 events to disk
+Epoch[13] Batch [9]	Speed: 105.593702 samples/sec	accuracy=95.750000	lr=0.001000
+Epoch[13] Batch [19]	Speed: 502.629988 samples/sec	accuracy=95.925000	lr=0.001000
+Epoch[13] Batch [29]	Speed: 461.232045 samples/sec	accuracy=95.683333	lr=0.001000
+Epoch[13] Batch [39]	Speed: 506.541783 samples/sec	accuracy=95.450000	lr=0.001000
+[Epoch 13] training: accuracy=95.428332
+[Epoch 13] speed: 273 samples/sec	time cost: 48.801707
+[Epoch 13] validation: acc-top1=83.082210 acc-top5=97.012953
+wrote 2 events to disk
+Epoch[14] Batch [9]	Speed: 106.787523 samples/sec	accuracy=95.400000	lr=0.001000
+Epoch[14] Batch [19]	Speed: 492.137546 samples/sec	accuracy=95.625000	lr=0.001000
+Epoch[14] Batch [29]	Speed: 471.431697 samples/sec	accuracy=95.750000	lr=0.001000
+Epoch[14] Batch [39]	Speed: 512.985330 samples/sec	accuracy=95.750000	lr=0.001000
+[Epoch 14] training: accuracy=95.753382
+[Epoch 14] speed: 275 samples/sec	time cost: 48.005014
+[Epoch 14] validation: acc-top1=83.795929 acc-top5=96.590008
+wrote 2 events to disk
+Epoch[15] Batch [9]	Speed: 106.889218 samples/sec	accuracy=95.500000	lr=0.001000
+Epoch[15] Batch [19]	Speed: 507.390501 samples/sec	accuracy=95.500000	lr=0.001000
+Epoch[15] Batch [29]	Speed: 469.612144 samples/sec	accuracy=95.866667	lr=0.001000
+Epoch[15] Batch [39]	Speed: 507.819047 samples/sec	accuracy=95.875000	lr=0.001000
+[Epoch 15] training: accuracy=95.910664
+[Epoch 15] speed: 276 samples/sec	time cost: 47.703069
+[Epoch 15] validation: acc-top1=82.659265 acc-top5=96.695744
+wrote 2 events to disk
+Epoch[16] Batch [9]	Speed: 107.237151 samples/sec	accuracy=96.200000	lr=0.001000
+Epoch[16] Batch [19]	Speed: 495.257755 samples/sec	accuracy=96.825000	lr=0.001000
+Epoch[16] Batch [29]	Speed: 487.030106 samples/sec	accuracy=96.850000	lr=0.001000
+Epoch[16] Batch [39]	Speed: 522.908828 samples/sec	accuracy=96.812500	lr=0.001000
+[Epoch 16] training: accuracy=96.686589
+[Epoch 16] speed: 277 samples/sec	time cost: 47.689761
+[Epoch 16] validation: acc-top1=82.950040 acc-top5=96.325667
+wrote 2 events to disk
+Epoch[17] Batch [9]	Speed: 106.517763 samples/sec	accuracy=97.250000	lr=0.001000
+Epoch[17] Batch [19]	Speed: 503.059759 samples/sec	accuracy=96.700000	lr=0.001000
+Epoch[17] Batch [29]	Speed: 491.293295 samples/sec	accuracy=96.700000	lr=0.001000
+Epoch[17] Batch [39]	Speed: 517.618166 samples/sec	accuracy=96.525000	lr=0.001000
+[Epoch 17] training: accuracy=96.529307
+[Epoch 17] speed: 277 samples/sec	time cost: 47.750896
+[Epoch 17] validation: acc-top1=83.584457 acc-top5=96.246365
+wrote 2 events to disk
+Epoch[18] Batch [9]	Speed: 106.356965 samples/sec	accuracy=96.950000	lr=0.001000
+Epoch[18] Batch [19]	Speed: 495.906262 samples/sec	accuracy=97.025000	lr=0.001000
+Epoch[18] Batch [29]	Speed: 466.669433 samples/sec	accuracy=97.150000	lr=0.001000
+Epoch[18] Batch [39]	Speed: 520.581395 samples/sec	accuracy=97.137500	lr=0.001000
+[Epoch 18] training: accuracy=97.168921
+[Epoch 18] speed: 275 samples/sec	time cost: 47.598872
+[Epoch 18] validation: acc-top1=82.685699 acc-top5=96.061327
+wrote 2 events to disk
+Epoch[19] Batch [9]	Speed: 106.976586 samples/sec	accuracy=96.750000	lr=0.001000
+Epoch[19] Batch [19]	Speed: 488.569963 samples/sec	accuracy=96.625000	lr=0.001000
+Epoch[19] Batch [29]	Speed: 478.774007 samples/sec	accuracy=96.816667	lr=0.001000
+Epoch[19] Batch [39]	Speed: 508.513221 samples/sec	accuracy=96.887500	lr=0.001000
+[Epoch 19] training: accuracy=97.043095
+[Epoch 19] speed: 275 samples/sec	time cost: 48.156207
+[Epoch 19] validation: acc-top1=84.879725 acc-top5=96.880782
+wrote 2 events to disk
+Epoch[20] Batch [9]	Speed: 106.945511 samples/sec	accuracy=97.400000	lr=0.001000
+Epoch[20] Batch [19]	Speed: 490.833523 samples/sec	accuracy=97.075000	lr=0.001000
+Epoch[20] Batch [29]	Speed: 485.335714 samples/sec	accuracy=97.166667	lr=0.001000
+Epoch[20] Batch [39]	Speed: 505.420586 samples/sec	accuracy=97.100000	lr=0.001000
+[Epoch 20] training: accuracy=97.095523
+[Epoch 20] speed: 276 samples/sec	time cost: 47.927469
+[Epoch 20] validation: acc-top1=83.002908 acc-top5=96.457838
+wrote 2 events to disk
+Epoch[21] Batch [9]	Speed: 106.602476 samples/sec	accuracy=97.300000	lr=0.001000
+Epoch[21] Batch [19]	Speed: 513.971720 samples/sec	accuracy=97.450000	lr=0.001000
+Epoch[21] Batch [29]	Speed: 460.411766 samples/sec	accuracy=97.333333	lr=0.001000
+Epoch[21] Batch [39]	Speed: 507.906523 samples/sec	accuracy=97.175000	lr=0.001000
+[Epoch 21] training: accuracy=97.273776
+[Epoch 21] speed: 275 samples/sec	time cost: 47.916583
+[Epoch 21] validation: acc-top1=82.976474 acc-top5=96.219931
+wrote 2 events to disk
+Epoch[22] Batch [9]	Speed: 105.979332 samples/sec	accuracy=97.250000	lr=0.001000
+Epoch[22] Batch [19]	Speed: 488.567800 samples/sec	accuracy=97.225000	lr=0.001000
+Epoch[22] Batch [29]	Speed: 471.317324 samples/sec	accuracy=96.900000	lr=0.001000
+Epoch[22] Batch [39]	Speed: 519.157877 samples/sec	accuracy=96.837500	lr=0.001000
+[Epoch 22] training: accuracy=96.885813
+[Epoch 22] speed: 274 samples/sec	time cost: 47.967779
+[Epoch 22] validation: acc-top1=83.478721 acc-top5=96.537140
+wrote 2 events to disk
+Epoch[23] Batch [9]	Speed: 107.019665 samples/sec	accuracy=97.000000	lr=0.001000
+Epoch[23] Batch [19]	Speed: 499.945587 samples/sec	accuracy=97.475000	lr=0.001000
+Epoch[23] Batch [29]	Speed: 471.773373 samples/sec	accuracy=97.533333	lr=0.001000
+Epoch[23] Batch [39]	Speed: 521.330557 samples/sec	accuracy=97.487500	lr=0.001000
+[Epoch 23] training: accuracy=97.577855
+[Epoch 23] speed: 276 samples/sec	time cost: 48.239635
+[Epoch 23] validation: acc-top1=83.822363 acc-top5=96.616442
+wrote 2 events to disk
+Epoch[24] Batch [9]	Speed: 107.196973 samples/sec	accuracy=96.800000	lr=0.001000
+Epoch[24] Batch [19]	Speed: 495.622789 samples/sec	accuracy=97.250000	lr=0.001000
+Epoch[24] Batch [29]	Speed: 475.626180 samples/sec	accuracy=97.450000	lr=0.001000
+Epoch[24] Batch [39]	Speed: 503.671831 samples/sec	accuracy=97.475000	lr=0.001000
+[Epoch 24] training: accuracy=97.556884
+[Epoch 24] speed: 276 samples/sec	time cost: 47.757412
+[Epoch 24] validation: acc-top1=83.610891 acc-top5=96.246365
+wrote 2 events to disk
+Epoch[25] Batch [9]	Speed: 106.816375 samples/sec	accuracy=97.550000	lr=0.001000
+Epoch[25] Batch [19]	Speed: 496.164468 samples/sec	accuracy=97.450000	lr=0.001000
+Epoch[25] Batch [29]	Speed: 474.985674 samples/sec	accuracy=97.733333	lr=0.001000
+Epoch[25] Batch [39]	Speed: 516.432545 samples/sec	accuracy=97.625000	lr=0.001000
+[Epoch 25] training: accuracy=97.703680
+[Epoch 25] speed: 275 samples/sec	time cost: 47.907628
+[Epoch 25] validation: acc-top1=84.271742 acc-top5=96.167063
+wrote 2 events to disk
+Epoch[26] Batch [9]	Speed: 105.984815 samples/sec	accuracy=97.500000	lr=0.001000
+Epoch[26] Batch [19]	Speed: 501.860062 samples/sec	accuracy=97.775000	lr=0.001000
+Epoch[26] Batch [29]	Speed: 478.747940 samples/sec	accuracy=97.766667	lr=0.001000
+Epoch[26] Batch [39]	Speed: 507.635862 samples/sec	accuracy=97.762500	lr=0.001000
+[Epoch 26] training: accuracy=97.829506
+[Epoch 26] speed: 275 samples/sec	time cost: 48.001442
+[Epoch 26] validation: acc-top1=83.822363 acc-top5=96.114195
+wrote 2 events to disk
+Epoch[27] Batch [9]	Speed: 106.201296 samples/sec	accuracy=97.800000	lr=0.001000
+Epoch[27] Batch [19]	Speed: 486.553637 samples/sec	accuracy=97.900000	lr=0.001000
+Epoch[27] Batch [29]	Speed: 496.859051 samples/sec	accuracy=98.033333	lr=0.001000
+Epoch[27] Batch [39]	Speed: 511.408559 samples/sec	accuracy=98.150000	lr=0.001000
+[Epoch 27] training: accuracy=98.081158
+[Epoch 27] speed: 276 samples/sec	time cost: 47.904840
+[Epoch 27] validation: acc-top1=82.130584 acc-top5=95.479778
+wrote 2 events to disk
+Epoch[28] Batch [9]	Speed: 105.293140 samples/sec	accuracy=97.650000	lr=0.001000
+Epoch[28] Batch [19]	Speed: 481.167015 samples/sec	accuracy=97.450000	lr=0.001000
+Epoch[28] Batch [29]	Speed: 499.539680 samples/sec	accuracy=97.683333	lr=0.001000
+Epoch[28] Batch [39]	Speed: 521.023689 samples/sec	accuracy=97.725000	lr=0.001000
+[Epoch 28] training: accuracy=97.651253
+[Epoch 28] speed: 274 samples/sec	time cost: 48.233579
+[Epoch 28] validation: acc-top1=83.108644 acc-top5=96.061327
+wrote 2 events to disk
+Epoch[29] Batch [9]	Speed: 107.291184 samples/sec	accuracy=97.550000	lr=0.001000
+Epoch[29] Batch [19]	Speed: 510.431072 samples/sec	accuracy=97.500000	lr=0.001000
+Epoch[29] Batch [29]	Speed: 483.959085 samples/sec	accuracy=97.616667	lr=0.001000
+Epoch[29] Batch [39]	Speed: 526.131631 samples/sec	accuracy=97.725000	lr=0.001000
+[Epoch 29] training: accuracy=97.871448
+[Epoch 29] speed: 279 samples/sec	time cost: 47.120480
+[Epoch 29] validation: acc-top1=84.773989 acc-top5=96.748612
+wrote 2 events to disk
+Epoch[30] Batch [9]	Speed: 108.322672 samples/sec	accuracy=97.600000	lr=0.000100
+Epoch[30] Batch [19]	Speed: 471.801339 samples/sec	accuracy=97.500000	lr=0.000100
+Epoch[30] Batch [29]	Speed: 497.764317 samples/sec	accuracy=97.666667	lr=0.000100
+Epoch[30] Batch [39]	Speed: 521.904592 samples/sec	accuracy=97.887500	lr=0.000100
+[Epoch 30] training: accuracy=97.997274
+[Epoch 30] speed: 278 samples/sec	time cost: 47.415619
+[Epoch 30] validation: acc-top1=86.174993 acc-top5=97.039387
+wrote 2 events to disk
+Epoch[31] Batch [9]	Speed: 106.421723 samples/sec	accuracy=99.250000	lr=0.000100
+Epoch[31] Batch [19]	Speed: 496.955303 samples/sec	accuracy=99.150000	lr=0.000100
+Epoch[31] Batch [29]	Speed: 480.090178 samples/sec	accuracy=99.183333	lr=0.000100
+Epoch[31] Batch [39]	Speed: 515.759846 samples/sec	accuracy=99.162500	lr=0.000100
+[Epoch 31] training: accuracy=99.234560
+[Epoch 31] speed: 275 samples/sec	time cost: 47.500310
+[Epoch 31] validation: acc-top1=86.677240 acc-top5=97.145123
+wrote 2 events to disk
+Epoch[32] Batch [9]	Speed: 104.850575 samples/sec	accuracy=98.900000	lr=0.000100
+Epoch[32] Batch [19]	Speed: 514.041325 samples/sec	accuracy=98.950000	lr=0.000100
+Epoch[32] Batch [29]	Speed: 469.294514 samples/sec	accuracy=98.766667	lr=0.000100
+Epoch[32] Batch [39]	Speed: 512.658189 samples/sec	accuracy=98.925000	lr=0.000100
+[Epoch 32] training: accuracy=99.014365
+[Epoch 32] speed: 273 samples/sec	time cost: 48.154209
+[Epoch 32] validation: acc-top1=86.492202 acc-top5=97.224425
+wrote 2 events to disk
+Epoch[33] Batch [9]	Speed: 106.164858 samples/sec	accuracy=98.950000	lr=0.000100
+Epoch[33] Batch [19]	Speed: 499.565116 samples/sec	accuracy=99.075000	lr=0.000100
+Epoch[33] Batch [29]	Speed: 464.584378 samples/sec	accuracy=99.000000	lr=0.000100
+Epoch[33] Batch [39]	Speed: 521.726746 samples/sec	accuracy=98.987500	lr=0.000100
+[Epoch 33] training: accuracy=99.056307
+[Epoch 33] speed: 275 samples/sec	time cost: 48.119167
+[Epoch 33] validation: acc-top1=86.492202 acc-top5=97.118689
+wrote 2 events to disk
+Epoch[34] Batch [9]	Speed: 106.786695 samples/sec	accuracy=99.250000	lr=0.000100
+Epoch[34] Batch [19]	Speed: 504.095782 samples/sec	accuracy=99.325000	lr=0.000100
+Epoch[34] Batch [29]	Speed: 469.528610 samples/sec	accuracy=99.316667	lr=0.000100
+Epoch[34] Batch [39]	Speed: 514.238463 samples/sec	accuracy=99.200000	lr=0.000100
+[Epoch 34] training: accuracy=99.234560
+[Epoch 34] speed: 276 samples/sec	time cost: 47.570487
+[Epoch 34] validation: acc-top1=86.333598 acc-top5=97.012953
+wrote 2 events to disk
+Epoch[35] Batch [9]	Speed: 107.404884 samples/sec	accuracy=99.450000	lr=0.000100
+Epoch[35] Batch [19]	Speed: 501.152244 samples/sec	accuracy=99.150000	lr=0.000100
+Epoch[35] Batch [29]	Speed: 477.623933 samples/sec	accuracy=99.116667	lr=0.000100
+Epoch[35] Batch [39]	Speed: 510.544120 samples/sec	accuracy=99.137500	lr=0.000100
+[Epoch 35] training: accuracy=99.077278
+[Epoch 35] speed: 277 samples/sec	time cost: 47.954502
+[Epoch 35] validation: acc-top1=86.545070 acc-top5=97.118689
+wrote 2 events to disk
+Epoch[36] Batch [9]	Speed: 106.054220 samples/sec	accuracy=99.050000	lr=0.000100
+Epoch[36] Batch [19]	Speed: 505.137754 samples/sec	accuracy=99.150000	lr=0.000100
+Epoch[36] Batch [29]	Speed: 468.039509 samples/sec	accuracy=99.216667	lr=0.000100
+Epoch[36] Batch [39]	Speed: 510.138232 samples/sec	accuracy=99.275000	lr=0.000100
+[Epoch 36] training: accuracy=99.213589
+[Epoch 36] speed: 274 samples/sec	time cost: 47.987231
+[Epoch 36] validation: acc-top1=86.439334 acc-top5=97.171557
+wrote 2 events to disk
+Epoch[37] Batch [9]	Speed: 107.171997 samples/sec	accuracy=99.600000	lr=0.000100
+Epoch[37] Batch [19]	Speed: 497.919964 samples/sec	accuracy=99.375000	lr=0.000100
+Epoch[37] Batch [29]	Speed: 461.271052 samples/sec	accuracy=99.216667	lr=0.000100
+Epoch[37] Batch [39]	Speed: 505.954700 samples/sec	accuracy=99.262500	lr=0.000100
+[Epoch 37] training: accuracy=99.307958
+[Epoch 37] speed: 274 samples/sec	time cost: 47.880440
+[Epoch 37] validation: acc-top1=86.518636 acc-top5=97.224425
+wrote 2 events to disk
+Epoch[38] Batch [9]	Speed: 105.544599 samples/sec	accuracy=99.550000	lr=0.000100
+Epoch[38] Batch [19]	Speed: 504.074002 samples/sec	accuracy=99.500000	lr=0.000100
+Epoch[38] Batch [29]	Speed: 475.411588 samples/sec	accuracy=99.450000	lr=0.000100
+Epoch[38] Batch [39]	Speed: 505.665021 samples/sec	accuracy=99.425000	lr=0.000100
+[Epoch 38] training: accuracy=99.391842
+[Epoch 38] speed: 274 samples/sec	time cost: 47.911741
+[Epoch 38] validation: acc-top1=86.412900 acc-top5=97.118689
+wrote 2 events to disk
+Epoch[39] Batch [9]	Speed: 105.328684 samples/sec	accuracy=99.300000	lr=0.000100
+Epoch[39] Batch [19]	Speed: 490.173173 samples/sec	accuracy=99.325000	lr=0.000100
+Epoch[39] Batch [29]	Speed: 471.446508 samples/sec	accuracy=99.200000	lr=0.000100
+Epoch[39] Batch [39]	Speed: 508.065870 samples/sec	accuracy=99.262500	lr=0.000100
+[Epoch 39] training: accuracy=99.297473
+[Epoch 39] speed: 272 samples/sec	time cost: 48.286419
+[Epoch 39] validation: acc-top1=86.730108 acc-top5=97.039387
+wrote 2 events to disk
+Epoch[40] Batch [9]	Speed: 106.800849 samples/sec	accuracy=99.350000	lr=0.000100
+Epoch[40] Batch [19]	Speed: 496.204529 samples/sec	accuracy=99.250000	lr=0.000100
+Epoch[40] Batch [29]	Speed: 472.057812 samples/sec	accuracy=99.333333	lr=0.000100
+Epoch[40] Batch [39]	Speed: 513.709029 samples/sec	accuracy=99.375000	lr=0.000100
+[Epoch 40] training: accuracy=99.339415
+[Epoch 40] speed: 275 samples/sec	time cost: 47.951864
+[Epoch 40] validation: acc-top1=86.545070 acc-top5=97.356595
+wrote 2 events to disk
+Epoch[41] Batch [9]	Speed: 105.629696 samples/sec	accuracy=99.150000	lr=0.000100
+Epoch[41] Batch [19]	Speed: 495.267726 samples/sec	accuracy=99.225000	lr=0.000100
+Epoch[41] Batch [29]	Speed: 480.538100 samples/sec	accuracy=99.250000	lr=0.000100
+Epoch[41] Batch [39]	Speed: 501.573942 samples/sec	accuracy=99.287500	lr=0.000100
+[Epoch 41] training: accuracy=99.234560
+[Epoch 41] speed: 273 samples/sec	time cost: 48.168860
+[Epoch 41] validation: acc-top1=86.280730 acc-top5=97.118689
+wrote 2 events to disk
+Epoch[42] Batch [9]	Speed: 107.699499 samples/sec	accuracy=99.200000	lr=0.000100
+Epoch[42] Batch [19]	Speed: 493.662331 samples/sec	accuracy=99.375000	lr=0.000100
+Epoch[42] Batch [29]	Speed: 466.773718 samples/sec	accuracy=99.366667	lr=0.000100
+Epoch[42] Batch [39]	Speed: 512.034596 samples/sec	accuracy=99.400000	lr=0.000100
+[Epoch 42] training: accuracy=99.475726
+[Epoch 42] speed: 276 samples/sec	time cost: 48.234892
+[Epoch 42] validation: acc-top1=86.174993 acc-top5=97.092255
+wrote 2 events to disk
+Epoch[43] Batch [9]	Speed: 108.167511 samples/sec	accuracy=99.100000	lr=0.000100
+Epoch[43] Batch [19]	Speed: 495.715398 samples/sec	accuracy=99.375000	lr=0.000100
+Epoch[43] Batch [29]	Speed: 467.534746 samples/sec	accuracy=99.183333	lr=0.000100
+Epoch[43] Batch [39]	Speed: 510.878089 samples/sec	accuracy=99.187500	lr=0.000100
+[Epoch 43] training: accuracy=99.192618
+[Epoch 43] speed: 277 samples/sec	time cost: 47.657944
+[Epoch 43] validation: acc-top1=86.333598 acc-top5=97.224425
+wrote 2 events to disk
+Epoch[44] Batch [9]	Speed: 104.943629 samples/sec	accuracy=99.450000	lr=0.000100
+Epoch[44] Batch [19]	Speed: 501.609063 samples/sec	accuracy=99.425000	lr=0.000100
+Epoch[44] Batch [29]	Speed: 480.949905 samples/sec	accuracy=99.483333	lr=0.000100
+Epoch[44] Batch [39]	Speed: 509.725524 samples/sec	accuracy=99.412500	lr=0.000100
+[Epoch 44] training: accuracy=99.360386
+[Epoch 44] speed: 274 samples/sec	time cost: 48.016316
+[Epoch 44] validation: acc-top1=86.307164 acc-top5=96.986519
+wrote 2 events to disk
+Epoch[45] Batch [9]	Speed: 106.614846 samples/sec	accuracy=99.550000	lr=0.000100
+Epoch[45] Batch [19]	Speed: 496.366221 samples/sec	accuracy=99.450000	lr=0.000100
+Epoch[45] Batch [29]	Speed: 485.228417 samples/sec	accuracy=99.450000	lr=0.000100
+Epoch[45] Batch [39]	Speed: 509.963198 samples/sec	accuracy=99.462500	lr=0.000100
+[Epoch 45] training: accuracy=99.423299
+[Epoch 45] speed: 276 samples/sec	time cost: 47.802820
+[Epoch 45] validation: acc-top1=86.439334 acc-top5=97.145123
+wrote 2 events to disk
+Epoch[46] Batch [9]	Speed: 106.504760 samples/sec	accuracy=99.100000	lr=0.000100
+Epoch[46] Batch [19]	Speed: 500.300379 samples/sec	accuracy=99.175000	lr=0.000100
+Epoch[46] Batch [29]	Speed: 486.207922 samples/sec	accuracy=99.250000	lr=0.000100
+Epoch[46] Batch [39]	Speed: 524.156731 samples/sec	accuracy=99.362500	lr=0.000100
+[Epoch 46] training: accuracy=99.423299
+[Epoch 46] speed: 277 samples/sec	time cost: 47.557848
+[Epoch 46] validation: acc-top1=86.386466 acc-top5=97.039387
+wrote 2 events to disk
+Epoch[47] Batch [9]	Speed: 106.341430 samples/sec	accuracy=99.400000	lr=0.000100
+Epoch[47] Batch [19]	Speed: 506.780844 samples/sec	accuracy=99.525000	lr=0.000100
+Epoch[47] Batch [29]	Speed: 466.861367 samples/sec	accuracy=99.466667	lr=0.000100
+Epoch[47] Batch [39]	Speed: 527.010636 samples/sec	accuracy=99.350000	lr=0.000100
+[Epoch 47] training: accuracy=99.391842
+[Epoch 47] speed: 277 samples/sec	time cost: 47.331329
+[Epoch 47] validation: acc-top1=86.307164 acc-top5=97.118689
+wrote 2 events to disk
+Epoch[48] Batch [9]	Speed: 106.706884 samples/sec	accuracy=99.400000	lr=0.000100
+Epoch[48] Batch [19]	Speed: 504.829079 samples/sec	accuracy=99.375000	lr=0.000100
+Epoch[48] Batch [29]	Speed: 474.261396 samples/sec	accuracy=99.366667	lr=0.000100
+Epoch[48] Batch [39]	Speed: 515.862705 samples/sec	accuracy=99.287500	lr=0.000100
+[Epoch 48] training: accuracy=99.328929
+[Epoch 48] speed: 276 samples/sec	time cost: 47.623396
+[Epoch 48] validation: acc-top1=86.360032 acc-top5=97.171557
+wrote 2 events to disk
+Epoch[49] Batch [9]	Speed: 107.556318 samples/sec	accuracy=99.400000	lr=0.000100
+Epoch[49] Batch [19]	Speed: 494.909171 samples/sec	accuracy=99.475000	lr=0.000100
+Epoch[49] Batch [29]	Speed: 476.818620 samples/sec	accuracy=99.433333	lr=0.000100
+Epoch[49] Batch [39]	Speed: 513.003714 samples/sec	accuracy=99.462500	lr=0.000100
+[Epoch 49] training: accuracy=99.475726
+[Epoch 49] speed: 277 samples/sec	time cost: 47.675635
+[Epoch 49] validation: acc-top1=86.227861 acc-top5=97.092255
+wrote 2 events to disk
+Epoch[50] Batch [9]	Speed: 108.131851 samples/sec	accuracy=99.150000	lr=0.000100
+Epoch[50] Batch [19]	Speed: 508.243761 samples/sec	accuracy=99.175000	lr=0.000100
+Epoch[50] Batch [29]	Speed: 461.809504 samples/sec	accuracy=99.166667	lr=0.000100
+Epoch[50] Batch [39]	Speed: 518.246413 samples/sec	accuracy=99.275000	lr=0.000100
+[Epoch 50] training: accuracy=99.255531
+[Epoch 50] speed: 277 samples/sec	time cost: 47.676230
+[Epoch 50] validation: acc-top1=86.333598 acc-top5=97.171557
+wrote 2 events to disk
+Epoch[51] Batch [9]	Speed: 107.116893 samples/sec	accuracy=99.500000	lr=0.000100
+Epoch[51] Batch [19]	Speed: 495.033004 samples/sec	accuracy=99.275000	lr=0.000100
+Epoch[51] Batch [29]	Speed: 457.236397 samples/sec	accuracy=99.316667	lr=0.000100
+Epoch[51] Batch [39]	Speed: 497.582056 samples/sec	accuracy=99.337500	lr=0.000100
+[Epoch 51] training: accuracy=99.349900
+[Epoch 51] speed: 273 samples/sec	time cost: 47.806572
+[Epoch 51] validation: acc-top1=86.333598 acc-top5=97.092255
+wrote 2 events to disk
+Epoch[52] Batch [9]	Speed: 106.508912 samples/sec	accuracy=99.650000	lr=0.000100
+Epoch[52] Batch [19]	Speed: 487.059345 samples/sec	accuracy=99.550000	lr=0.000100
+Epoch[52] Batch [29]	Speed: 475.309307 samples/sec	accuracy=99.383333	lr=0.000100
+Epoch[52] Batch [39]	Speed: 502.260517 samples/sec	accuracy=99.337500	lr=0.000100
+[Epoch 52] training: accuracy=99.307958
+[Epoch 52] speed: 273 samples/sec	time cost: 48.364765
+[Epoch 52] validation: acc-top1=86.756542 acc-top5=97.356595
+wrote 2 events to disk
+Epoch[53] Batch [9]	Speed: 106.134378 samples/sec	accuracy=99.450000	lr=0.000100
+Epoch[53] Batch [19]	Speed: 507.601827 samples/sec	accuracy=99.550000	lr=0.000100
+Epoch[53] Batch [29]	Speed: 483.519146 samples/sec	accuracy=99.550000	lr=0.000100
+Epoch[53] Batch [39]	Speed: 518.143306 samples/sec	accuracy=99.450000	lr=0.000100
+[Epoch 53] training: accuracy=99.391842
+[Epoch 53] speed: 277 samples/sec	time cost: 47.562989
+[Epoch 53] validation: acc-top1=86.386466 acc-top5=97.197991
+wrote 2 events to disk
+Epoch[54] Batch [9]	Speed: 106.160223 samples/sec	accuracy=99.550000	lr=0.000100
+Epoch[54] Batch [19]	Speed: 510.926225 samples/sec	accuracy=99.400000	lr=0.000100
+Epoch[54] Batch [29]	Speed: 471.527280 samples/sec	accuracy=99.350000	lr=0.000100
+Epoch[54] Batch [39]	Speed: 512.440253 samples/sec	accuracy=99.400000	lr=0.000100
+[Epoch 54] training: accuracy=99.391842
+[Epoch 54] speed: 276 samples/sec	time cost: 48.015091
+[Epoch 54] validation: acc-top1=86.307164 acc-top5=97.224425
+wrote 2 events to disk
+Epoch[55] Batch [9]	Speed: 107.872640 samples/sec	accuracy=99.300000	lr=0.000100
+Epoch[55] Batch [19]	Speed: 511.552454 samples/sec	accuracy=99.325000	lr=0.000100
+Epoch[55] Batch [29]	Speed: 463.684930 samples/sec	accuracy=99.350000	lr=0.000100
+Epoch[55] Batch [39]	Speed: 514.359700 samples/sec	accuracy=99.312500	lr=0.000100
+[Epoch 55] training: accuracy=99.360386
+[Epoch 55] speed: 277 samples/sec	time cost: 47.479422
+[Epoch 55] validation: acc-top1=86.465768 acc-top5=97.092255
+wrote 2 events to disk
+Epoch[56] Batch [9]	Speed: 105.609071 samples/sec	accuracy=99.350000	lr=0.000100
+Epoch[56] Batch [19]	Speed: 491.004321 samples/sec	accuracy=99.500000	lr=0.000100
+Epoch[56] Batch [29]	Speed: 467.539671 samples/sec	accuracy=99.400000	lr=0.000100
+Epoch[56] Batch [39]	Speed: 523.592113 samples/sec	accuracy=99.425000	lr=0.000100
+[Epoch 56] training: accuracy=99.381357
+[Epoch 56] speed: 273 samples/sec	time cost: 47.804439
+[Epoch 56] validation: acc-top1=86.571504 acc-top5=97.224425
+wrote 2 events to disk
+Epoch[57] Batch [9]	Speed: 107.288820 samples/sec	accuracy=99.500000	lr=0.000100
+Epoch[57] Batch [19]	Speed: 493.921869 samples/sec	accuracy=99.475000	lr=0.000100
+Epoch[57] Batch [29]	Speed: 462.486506 samples/sec	accuracy=99.483333	lr=0.000100
+Epoch[57] Batch [39]	Speed: 515.702583 samples/sec	accuracy=99.500000	lr=0.000100
+[Epoch 57] training: accuracy=99.486212
+[Epoch 57] speed: 276 samples/sec	time cost: 47.686448
+[Epoch 57] validation: acc-top1=86.465768 acc-top5=97.039387
+wrote 2 events to disk
+Epoch[58] Batch [9]	Speed: 105.751806 samples/sec	accuracy=99.800000	lr=0.000100
+Epoch[58] Batch [19]	Speed: 498.896714 samples/sec	accuracy=99.575000	lr=0.000100
+Epoch[58] Batch [29]	Speed: 469.482571 samples/sec	accuracy=99.500000	lr=0.000100
+Epoch[58] Batch [39]	Speed: 516.464626 samples/sec	accuracy=99.487500	lr=0.000100
+[Epoch 58] training: accuracy=99.486212
+[Epoch 58] speed: 275 samples/sec	time cost: 47.984501
+[Epoch 58] validation: acc-top1=86.835845 acc-top5=97.383029
+wrote 2 events to disk
+Epoch[59] Batch [9]	Speed: 108.462935 samples/sec	accuracy=99.500000	lr=0.000100
+Epoch[59] Batch [19]	Speed: 506.785314 samples/sec	accuracy=99.525000	lr=0.000100
+Epoch[59] Batch [29]	Speed: 460.107415 samples/sec	accuracy=99.516667	lr=0.000100
+Epoch[59] Batch [39]	Speed: 512.858500 samples/sec	accuracy=99.425000	lr=0.000100
+[Epoch 59] training: accuracy=99.391842
+[Epoch 59] speed: 277 samples/sec	time cost: 47.794574
+[Epoch 59] validation: acc-top1=86.624372 acc-top5=97.171557
+wrote 2 events to disk
+Epoch[60] Batch [9]	Speed: 108.753343 samples/sec	accuracy=99.350000	lr=0.000010
+Epoch[60] Batch [19]	Speed: 491.681698 samples/sec	accuracy=99.425000	lr=0.000010
+Epoch[60] Batch [29]	Speed: 469.940182 samples/sec	accuracy=99.416667	lr=0.000010
+Epoch[60] Batch [39]	Speed: 516.281983 samples/sec	accuracy=99.437500	lr=0.000010
+[Epoch 60] training: accuracy=99.444270
+[Epoch 60] speed: 278 samples/sec	time cost: 47.546992
+[Epoch 60] validation: acc-top1=86.756542 acc-top5=97.224425
+wrote 2 events to disk
+Epoch[61] Batch [9]	Speed: 106.143010 samples/sec	accuracy=99.350000	lr=0.000010
+Epoch[61] Batch [19]	Speed: 500.451734 samples/sec	accuracy=99.150000	lr=0.000010
+Epoch[61] Batch [29]	Speed: 474.149478 samples/sec	accuracy=99.266667	lr=0.000010
+Epoch[61] Batch [39]	Speed: 502.486794 samples/sec	accuracy=99.337500	lr=0.000010
+[Epoch 61] training: accuracy=99.381357
+[Epoch 61] speed: 274 samples/sec	time cost: 48.157958
+[Epoch 61] validation: acc-top1=86.465768 acc-top5=97.277293
+wrote 2 events to disk
+Epoch[62] Batch [9]	Speed: 106.935718 samples/sec	accuracy=99.600000	lr=0.000010
+Epoch[62] Batch [19]	Speed: 482.453104 samples/sec	accuracy=99.400000	lr=0.000010
+Epoch[62] Batch [29]	Speed: 468.157470 samples/sec	accuracy=99.450000	lr=0.000010
+Epoch[62] Batch [39]	Speed: 519.526990 samples/sec	accuracy=99.525000	lr=0.000010
+[Epoch 62] training: accuracy=99.465241
+[Epoch 62] speed: 275 samples/sec	time cost: 48.124952
+[Epoch 62] validation: acc-top1=86.597938 acc-top5=97.224425
+wrote 2 events to disk
+Epoch[63] Batch [9]	Speed: 106.424966 samples/sec	accuracy=99.400000	lr=0.000010
+Epoch[63] Batch [19]	Speed: 494.435382 samples/sec	accuracy=99.400000	lr=0.000010
+Epoch[63] Batch [29]	Speed: 481.318971 samples/sec	accuracy=99.433333	lr=0.000010
+Epoch[63] Batch [39]	Speed: 517.418047 samples/sec	accuracy=99.425000	lr=0.000010
+[Epoch 63] training: accuracy=99.402328
+[Epoch 63] speed: 276 samples/sec	time cost: 47.704401
+[Epoch 63] validation: acc-top1=86.518636 acc-top5=97.171557
+wrote 2 events to disk
+Epoch[64] Batch [9]	Speed: 106.873842 samples/sec	accuracy=99.500000	lr=0.000010
+Epoch[64] Batch [19]	Speed: 495.899812 samples/sec	accuracy=99.475000	lr=0.000010
+Epoch[64] Batch [29]	Speed: 482.390598 samples/sec	accuracy=99.383333	lr=0.000010
+Epoch[64] Batch [39]	Speed: 516.865903 samples/sec	accuracy=99.375000	lr=0.000010
+[Epoch 64] training: accuracy=99.360386
+[Epoch 64] speed: 276 samples/sec	time cost: 47.731481
+[Epoch 64] validation: acc-top1=86.597938 acc-top5=97.224425
+wrote 2 events to disk
+Epoch[65] Batch [9]	Speed: 107.376269 samples/sec	accuracy=99.500000	lr=0.000010
+Epoch[65] Batch [19]	Speed: 498.954846 samples/sec	accuracy=99.500000	lr=0.000010
+Epoch[65] Batch [29]	Speed: 475.264685 samples/sec	accuracy=99.550000	lr=0.000010
+Epoch[65] Batch [39]	Speed: 521.303894 samples/sec	accuracy=99.475000	lr=0.000010
+[Epoch 65] training: accuracy=99.507183
+[Epoch 65] speed: 277 samples/sec	time cost: 47.840259
+[Epoch 65] validation: acc-top1=86.597938 acc-top5=97.224425
+wrote 2 events to disk
+Epoch[66] Batch [9]	Speed: 108.998148 samples/sec	accuracy=99.500000	lr=0.000010
+Epoch[66] Batch [19]	Speed: 490.413285 samples/sec	accuracy=99.500000	lr=0.000010
+Epoch[66] Batch [29]	Speed: 465.139289 samples/sec	accuracy=99.516667	lr=0.000010
+Epoch[66] Batch [39]	Speed: 517.839826 samples/sec	accuracy=99.475000	lr=0.000010
+[Epoch 66] training: accuracy=99.475726
+[Epoch 66] speed: 278 samples/sec	time cost: 47.487515
+[Epoch 66] validation: acc-top1=86.624372 acc-top5=97.171557
+wrote 2 events to disk
+Epoch[67] Batch [9]	Speed: 108.700794 samples/sec	accuracy=99.450000	lr=0.000010
+Epoch[67] Batch [19]	Speed: 492.368027 samples/sec	accuracy=99.575000	lr=0.000010
+Epoch[67] Batch [29]	Speed: 471.121603 samples/sec	accuracy=99.550000	lr=0.000010
+Epoch[67] Batch [39]	Speed: 510.348935 samples/sec	accuracy=99.500000	lr=0.000010
+[Epoch 67] training: accuracy=99.475726
+[Epoch 67] speed: 277 samples/sec	time cost: 47.737890
+[Epoch 67] validation: acc-top1=86.703674 acc-top5=97.171557
+wrote 2 events to disk
+Epoch[68] Batch [9]	Speed: 104.965621 samples/sec	accuracy=99.150000	lr=0.000010
+Epoch[68] Batch [19]	Speed: 496.222904 samples/sec	accuracy=99.475000	lr=0.000010
+Epoch[68] Batch [29]	Speed: 475.324201 samples/sec	accuracy=99.500000	lr=0.000010
+Epoch[68] Batch [39]	Speed: 505.390380 samples/sec	accuracy=99.500000	lr=0.000010
+[Epoch 68] training: accuracy=99.496697
+[Epoch 68] speed: 273 samples/sec	time cost: 48.347750
+[Epoch 68] validation: acc-top1=86.597938 acc-top5=97.171557
+wrote 2 events to disk
+Epoch[69] Batch [9]	Speed: 107.918557 samples/sec	accuracy=99.350000	lr=0.000010
+Epoch[69] Batch [19]	Speed: 501.760521 samples/sec	accuracy=99.475000	lr=0.000010
+Epoch[69] Batch [29]	Speed: 459.763372 samples/sec	accuracy=99.566667	lr=0.000010
+Epoch[69] Batch [39]	Speed: 515.494216 samples/sec	accuracy=99.575000	lr=0.000010
+[Epoch 69] training: accuracy=99.538639
+[Epoch 69] speed: 277 samples/sec	time cost: 47.388787
+[Epoch 69] validation: acc-top1=86.254296 acc-top5=97.197991
+wrote 2 events to disk
+Epoch[70] Batch [9]	Speed: 107.865003 samples/sec	accuracy=99.650000	lr=0.000010
+Epoch[70] Batch [19]	Speed: 485.370535 samples/sec	accuracy=99.550000	lr=0.000010
+Epoch[70] Batch [29]	Speed: 468.513385 samples/sec	accuracy=99.583333	lr=0.000010
+Epoch[70] Batch [39]	Speed: 519.706656 samples/sec	accuracy=99.525000	lr=0.000010
+[Epoch 70] training: accuracy=99.528154
+[Epoch 70] speed: 277 samples/sec	time cost: 47.725707
+[Epoch 70] validation: acc-top1=86.386466 acc-top5=97.197991
+wrote 2 events to disk
+Epoch[71] Batch [9]	Speed: 107.684861 samples/sec	accuracy=99.350000	lr=0.000010
+Epoch[71] Batch [19]	Speed: 499.491286 samples/sec	accuracy=99.325000	lr=0.000010
+Epoch[71] Batch [29]	Speed: 469.304465 samples/sec	accuracy=99.466667	lr=0.000010
+Epoch[71] Batch [39]	Speed: 512.148824 samples/sec	accuracy=99.437500	lr=0.000010
+[Epoch 71] training: accuracy=99.454755
+[Epoch 71] speed: 276 samples/sec	time cost: 47.709383
+[Epoch 71] validation: acc-top1=86.677240 acc-top5=97.145123
+wrote 2 events to disk
+Epoch[72] Batch [9]	Speed: 106.242211 samples/sec	accuracy=99.600000	lr=0.000010
+Epoch[72] Batch [19]	Speed: 497.743200 samples/sec	accuracy=99.475000	lr=0.000010
+Epoch[72] Batch [29]	Speed: 469.061465 samples/sec	accuracy=99.450000	lr=0.000010
+Epoch[72] Batch [39]	Speed: 507.470215 samples/sec	accuracy=99.375000	lr=0.000010
+[Epoch 72] training: accuracy=99.412813
+[Epoch 72] speed: 274 samples/sec	time cost: 47.931928
+[Epoch 72] validation: acc-top1=86.730108 acc-top5=97.250859
+wrote 2 events to disk
+Epoch[73] Batch [9]	Speed: 106.235066 samples/sec	accuracy=99.300000	lr=0.000010
+Epoch[73] Batch [19]	Speed: 492.808560 samples/sec	accuracy=99.450000	lr=0.000010
+Epoch[73] Batch [29]	Speed: 473.981607 samples/sec	accuracy=99.483333	lr=0.000010
+Epoch[73] Batch [39]	Speed: 518.076746 samples/sec	accuracy=99.500000	lr=0.000010
+[Epoch 73] training: accuracy=99.538639
+[Epoch 73] speed: 275 samples/sec	time cost: 47.629036
+[Epoch 73] validation: acc-top1=86.782976 acc-top5=97.197991
+wrote 2 events to disk
+Epoch[74] Batch [9]	Speed: 105.661961 samples/sec	accuracy=99.350000	lr=0.000010
+Epoch[74] Batch [19]	Speed: 504.664165 samples/sec	accuracy=99.525000	lr=0.000010
+Epoch[74] Batch [29]	Speed: 457.383387 samples/sec	accuracy=99.616667	lr=0.000010
+Epoch[74] Batch [39]	Speed: 510.678202 samples/sec	accuracy=99.562500	lr=0.000010
+[Epoch 74] training: accuracy=99.580581
+[Epoch 74] speed: 273 samples/sec	time cost: 48.155327
+[Epoch 74] validation: acc-top1=86.703674 acc-top5=97.250859
+wrote 2 events to disk
+Epoch[75] Batch [9]	Speed: 107.831096 samples/sec	accuracy=99.500000	lr=0.000010
+Epoch[75] Batch [19]	Speed: 489.189309 samples/sec	accuracy=99.500000	lr=0.000010
+Epoch[75] Batch [29]	Speed: 472.680639 samples/sec	accuracy=99.550000	lr=0.000010
+Epoch[75] Batch [39]	Speed: 502.022367 samples/sec	accuracy=99.500000	lr=0.000010
+[Epoch 75] training: accuracy=99.528154
+[Epoch 75] speed: 276 samples/sec	time cost: 47.723827
+[Epoch 75] validation: acc-top1=86.677240 acc-top5=97.330161
+wrote 2 events to disk
+Epoch[76] Batch [9]	Speed: 106.921077 samples/sec	accuracy=99.300000	lr=0.000010
+Epoch[76] Batch [19]	Speed: 507.106411 samples/sec	accuracy=99.375000	lr=0.000010
+Epoch[76] Batch [29]	Speed: 463.713331 samples/sec	accuracy=99.466667	lr=0.000010
+Epoch[76] Batch [39]	Speed: 518.188980 samples/sec	accuracy=99.450000	lr=0.000010
+[Epoch 76] training: accuracy=99.486212
+[Epoch 76] speed: 276 samples/sec	time cost: 47.803189
+[Epoch 76] validation: acc-top1=86.677240 acc-top5=97.330161
+wrote 2 events to disk
+Epoch[77] Batch [9]	Speed: 107.138091 samples/sec	accuracy=99.250000	lr=0.000010
+Epoch[77] Batch [19]	Speed: 496.725156 samples/sec	accuracy=99.475000	lr=0.000010
+Epoch[77] Batch [29]	Speed: 463.166034 samples/sec	accuracy=99.583333	lr=0.000010
+Epoch[77] Batch [39]	Speed: 511.384179 samples/sec	accuracy=99.587500	lr=0.000010
+[Epoch 77] training: accuracy=99.549124
+[Epoch 77] speed: 275 samples/sec	time cost: 47.938729
+[Epoch 77] validation: acc-top1=86.703674 acc-top5=97.277293
+wrote 2 events to disk
+Epoch[78] Batch [9]	Speed: 106.764012 samples/sec	accuracy=99.400000	lr=0.000010
+Epoch[78] Batch [19]	Speed: 500.027777 samples/sec	accuracy=99.425000	lr=0.000010
+Epoch[78] Batch [29]	Speed: 462.270128 samples/sec	accuracy=99.450000	lr=0.000010
+Epoch[78] Batch [39]	Speed: 521.031067 samples/sec	accuracy=99.500000	lr=0.000010
+[Epoch 78] training: accuracy=99.517668
+[Epoch 78] speed: 275 samples/sec	time cost: 47.803245
+[Epoch 78] validation: acc-top1=86.835845 acc-top5=97.277293
+wrote 2 events to disk
+Epoch[79] Batch [9]	Speed: 106.567540 samples/sec	accuracy=99.300000	lr=0.000010
+Epoch[79] Batch [19]	Speed: 504.459980 samples/sec	accuracy=99.500000	lr=0.000010
+Epoch[79] Batch [29]	Speed: 477.985650 samples/sec	accuracy=99.550000	lr=0.000010
+Epoch[79] Batch [39]	Speed: 515.016702 samples/sec	accuracy=99.487500	lr=0.000010
+[Epoch 79] training: accuracy=99.454755
+[Epoch 79] speed: 275 samples/sec	time cost: 47.905308
+[Epoch 79] validation: acc-top1=86.650806 acc-top5=97.277293
+wrote 2 events to disk
+wrote 1 event to disk
