@@ -1,0 +1,125 @@
+dataset.py:read_dataset: reading data from data/snli_1.0/train.txt
+dataset.py:read_dataset: read 549367 examples
+dataset.py:read_dataset: reading data from data/snli_1.0/dev.txt
+dataset.py:read_dataset: read 9842 examples
+main.py:train_model: {'gpu_id': 0, 'train_file': 'data/snli_1.0/train.txt', 'test_file': 'data/snli_1.0/dev.txt', 'max_num_examples': -1, 'batch_size': 32, 'print_interval': 5000, 'model': 'esim', 'mode': 'train', 'lr': 0.0001, 'epochs': 30, 'embedding': 'glove', 'fix_embedding': False, 'embedding_source': 'glove.840B.300d', 'embedding_size': 300, 'hidden_size': 300, 'output_dir': 'output/snli/esim', 'model_dir': './output', 'seed': 0, 'dropout': 0.5, 'optimizer': 'adam', 'weight_decay': 1e-05, 'intra_attention': False}
+main.py:train_model: [Epoch 0 Batch 5000/17173] loss=0.8788, acc=0.5817
+main.py:train_model: [Epoch 0 Batch 10000/17173] loss=0.6767, acc=0.7151
+main.py:train_model: [Epoch 0 Batch 15000/17173] loss=0.5552, acc=0.7770
+main.py:train_model: [Epoch 0] valid loss=0.4780, valid acc=0.8154, best valid acc=0.8154
+main.py:train_model: [Epoch 1 Batch 5000/17173] loss=0.4771, acc=0.8136
+main.py:train_model: [Epoch 1 Batch 10000/17173] loss=0.4619, acc=0.8194
+main.py:train_model: [Epoch 1 Batch 15000/17173] loss=0.4429, acc=0.8274
+main.py:train_model: [Epoch 1] valid loss=0.4056, valid acc=0.8456, best valid acc=0.8456
+main.py:train_model: [Epoch 2 Batch 5000/17173] loss=0.4073, acc=0.8440
+main.py:train_model: [Epoch 2 Batch 10000/17173] loss=0.4057, acc=0.8440
+main.py:train_model: [Epoch 2 Batch 15000/17173] loss=0.4002, acc=0.8469
+main.py:train_model: [Epoch 2] valid loss=0.3826, valid acc=0.8555, best valid acc=0.8555
+main.py:train_model: [Epoch 3 Batch 5000/17173] loss=0.3655, acc=0.8609
+main.py:train_model: [Epoch 3 Batch 10000/17173] loss=0.3688, acc=0.8605
+main.py:train_model: [Epoch 3 Batch 15000/17173] loss=0.3718, acc=0.8586
+main.py:train_model: [Epoch 3] valid loss=0.3760, valid acc=0.8570, best valid acc=0.8570
+main.py:train_model: [Epoch 4 Batch 5000/17173] loss=0.3343, acc=0.8750
+main.py:train_model: [Epoch 4 Batch 10000/17173] loss=0.3456, acc=0.8691
+main.py:train_model: [Epoch 4 Batch 15000/17173] loss=0.3491, acc=0.8686
+main.py:train_model: [Epoch 4] valid loss=0.3692, valid acc=0.8617, best valid acc=0.8617
+main.py:train_model: [Epoch 5 Batch 5000/17173] loss=0.3074, acc=0.8869
+main.py:train_model: [Epoch 5 Batch 10000/17173] loss=0.3205, acc=0.8806
+main.py:train_model: [Epoch 5 Batch 15000/17173] loss=0.3292, acc=0.8772
+main.py:train_model: [Epoch 5] valid loss=0.3648, valid acc=0.8646, best valid acc=0.8646
+main.py:train_model: [Epoch 6 Batch 5000/17173] loss=0.2861, acc=0.8950
+main.py:train_model: [Epoch 6 Batch 10000/17173] loss=0.2995, acc=0.8895
+main.py:train_model: [Epoch 6 Batch 15000/17173] loss=0.3083, acc=0.8860
+main.py:train_model: [Epoch 6] valid loss=0.3710, valid acc=0.8625, best valid acc=0.8646
+main.py:train_model: [Epoch 7 Batch 5000/17173] loss=0.2626, acc=0.9054
+main.py:train_model: [Epoch 7 Batch 10000/17173] loss=0.2801, acc=0.8971
+main.py:train_model: [Epoch 7 Batch 15000/17173] loss=0.2903, acc=0.8932
+main.py:train_model: [Epoch 7] valid loss=0.3739, valid acc=0.8619, best valid acc=0.8646
+main.py:train_model: [Epoch 8 Batch 5000/17173] loss=0.2403, acc=0.9143
+main.py:train_model: [Epoch 8 Batch 10000/17173] loss=0.2566, acc=0.9065
+main.py:train_model: [Epoch 8 Batch 15000/17173] loss=0.2692, acc=0.9018
+main.py:train_model: [Epoch 8] valid loss=0.3901, valid acc=0.8592, best valid acc=0.8646
+main.py:train_model: [Epoch 9 Batch 5000/17173] loss=0.2188, acc=0.9227
+main.py:train_model: [Epoch 9 Batch 10000/17173] loss=0.2351, acc=0.9149
+main.py:train_model: [Epoch 9 Batch 15000/17173] loss=0.2499, acc=0.9090
+main.py:train_model: [Epoch 9] valid loss=0.4049, valid acc=0.8574, best valid acc=0.8646
+main.py:train_model: [Epoch 10 Batch 5000/17173] loss=0.1935, acc=0.9320
+main.py:train_model: [Epoch 10 Batch 10000/17173] loss=0.2139, acc=0.9241
+main.py:train_model: [Epoch 10 Batch 15000/17173] loss=0.2299, acc=0.9163
+main.py:train_model: [Epoch 10] valid loss=0.4424, valid acc=0.8535, best valid acc=0.8646
+main.py:train_model: [Epoch 11 Batch 5000/17173] loss=0.1740, acc=0.9390
+main.py:train_model: [Epoch 11 Batch 10000/17173] loss=0.1929, acc=0.9312
+main.py:train_model: [Epoch 11 Batch 15000/17173] loss=0.2083, acc=0.9248
+main.py:train_model: [Epoch 11] valid loss=0.4484, valid acc=0.8552, best valid acc=0.8646
+main.py:train_model: [Epoch 12 Batch 5000/17173] loss=0.1539, acc=0.9463
+main.py:train_model: [Epoch 12 Batch 10000/17173] loss=0.1749, acc=0.9376
+main.py:train_model: [Epoch 12 Batch 15000/17173] loss=0.1904, acc=0.9311
+main.py:train_model: [Epoch 12] valid loss=0.4983, valid acc=0.8534, best valid acc=0.8646
+main.py:train_model: [Epoch 13 Batch 5000/17173] loss=0.1345, acc=0.9532
+main.py:train_model: [Epoch 13 Batch 10000/17173] loss=0.1537, acc=0.9454
+main.py:train_model: [Epoch 13 Batch 15000/17173] loss=0.1700, acc=0.9387
+main.py:train_model: [Epoch 13] valid loss=0.5270, valid acc=0.8515, best valid acc=0.8646
+main.py:train_model: [Epoch 14 Batch 5000/17173] loss=0.1177, acc=0.9591
+main.py:train_model: [Epoch 14 Batch 10000/17173] loss=0.1384, acc=0.9505
+main.py:train_model: [Epoch 14 Batch 15000/17173] loss=0.1492, acc=0.9460
+main.py:train_model: [Epoch 14] valid loss=0.5701, valid acc=0.8452, best valid acc=0.8646
+main.py:train_model: [Epoch 15 Batch 5000/17173] loss=0.1021, acc=0.9644
+main.py:train_model: [Epoch 15 Batch 10000/17173] loss=0.1231, acc=0.9559
+main.py:train_model: [Epoch 15 Batch 15000/17173] loss=0.1369, acc=0.9503
+main.py:train_model: [Epoch 15] valid loss=0.6224, valid acc=0.8335, best valid acc=0.8646
+main.py:train_model: [Epoch 16 Batch 5000/17173] loss=0.0889, acc=0.9683
+main.py:train_model: [Epoch 16 Batch 10000/17173] loss=0.1094, acc=0.9607
+main.py:train_model: [Epoch 16 Batch 15000/17173] loss=0.1235, acc=0.9545
+main.py:train_model: [Epoch 16] valid loss=0.6621, valid acc=0.8423, best valid acc=0.8646
+main.py:train_model: [Epoch 17 Batch 5000/17173] loss=0.0798, acc=0.9713
+main.py:train_model: [Epoch 17 Batch 10000/17173] loss=0.0964, acc=0.9649
+main.py:train_model: [Epoch 17 Batch 15000/17173] loss=0.1110, acc=0.9593
+main.py:train_model: [Epoch 17] valid loss=0.7042, valid acc=0.8386, best valid acc=0.8646
+main.py:train_model: [Epoch 18 Batch 5000/17173] loss=0.0710, acc=0.9751
+main.py:train_model: [Epoch 18 Batch 10000/17173] loss=0.0890, acc=0.9674
+main.py:train_model: [Epoch 18 Batch 15000/17173] loss=0.1004, acc=0.9627
+main.py:train_model: [Epoch 18] valid loss=0.7414, valid acc=0.8438, best valid acc=0.8646
+main.py:train_model: [Epoch 19 Batch 5000/17173] loss=0.0627, acc=0.9775
+main.py:train_model: [Epoch 19 Batch 10000/17173] loss=0.0810, acc=0.9707
+main.py:train_model: [Epoch 19 Batch 15000/17173] loss=0.0923, acc=0.9658
+main.py:train_model: [Epoch 19] valid loss=0.8030, valid acc=0.8380, best valid acc=0.8646
+main.py:train_model: [Epoch 20 Batch 5000/17173] loss=0.0580, acc=0.9791
+main.py:train_model: [Epoch 20 Batch 10000/17173] loss=0.0740, acc=0.9726
+main.py:train_model: [Epoch 20 Batch 15000/17173] loss=0.0883, acc=0.9675
+main.py:train_model: [Epoch 20] valid loss=0.8030, valid acc=0.8341, best valid acc=0.8646
+main.py:train_model: [Epoch 21 Batch 5000/17173] loss=0.0532, acc=0.9805
+main.py:train_model: [Epoch 21 Batch 10000/17173] loss=0.0699, acc=0.9749
+main.py:train_model: [Epoch 21 Batch 15000/17173] loss=0.0800, acc=0.9700
+main.py:train_model: [Epoch 21] valid loss=0.8936, valid acc=0.8336, best valid acc=0.8646
+main.py:train_model: [Epoch 22 Batch 5000/17173] loss=0.0493, acc=0.9822
+main.py:train_model: [Epoch 22 Batch 10000/17173] loss=0.0661, acc=0.9755
+main.py:train_model: [Epoch 22 Batch 15000/17173] loss=0.0749, acc=0.9721
+main.py:train_model: [Epoch 22] valid loss=0.8698, valid acc=0.8354, best valid acc=0.8646
+main.py:train_model: [Epoch 23 Batch 5000/17173] loss=0.0475, acc=0.9828
+main.py:train_model: [Epoch 23 Batch 10000/17173] loss=0.0624, acc=0.9773
+main.py:train_model: [Epoch 23 Batch 15000/17173] loss=0.0705, acc=0.9734
+main.py:train_model: [Epoch 23] valid loss=0.9370, valid acc=0.8417, best valid acc=0.8646
+main.py:train_model: [Epoch 24 Batch 5000/17173] loss=0.0437, acc=0.9843
+main.py:train_model: [Epoch 24 Batch 10000/17173] loss=0.0575, acc=0.9788
+main.py:train_model: [Epoch 24 Batch 15000/17173] loss=0.0685, acc=0.9750
+main.py:train_model: [Epoch 24] valid loss=0.8680, valid acc=0.8328, best valid acc=0.8646
+main.py:train_model: [Epoch 25 Batch 5000/17173] loss=0.0416, acc=0.9850
+main.py:train_model: [Epoch 25 Batch 10000/17173] loss=0.0564, acc=0.9794
+main.py:train_model: [Epoch 25 Batch 15000/17173] loss=0.0632, acc=0.9767
+main.py:train_model: [Epoch 25] valid loss=0.9398, valid acc=0.8336, best valid acc=0.8646
+main.py:train_model: [Epoch 26 Batch 5000/17173] loss=0.0411, acc=0.9856
+main.py:train_model: [Epoch 26 Batch 10000/17173] loss=0.0538, acc=0.9805
+main.py:train_model: [Epoch 26 Batch 15000/17173] loss=0.0648, acc=0.9761
+main.py:train_model: [Epoch 26] valid loss=0.8923, valid acc=0.8349, best valid acc=0.8646
+main.py:train_model: [Epoch 27 Batch 5000/17173] loss=0.0383, acc=0.9864
+main.py:train_model: [Epoch 27 Batch 10000/17173] loss=0.0523, acc=0.9810
+main.py:train_model: [Epoch 27 Batch 15000/17173] loss=0.0605, acc=0.9776
+main.py:train_model: [Epoch 27] valid loss=0.9530, valid acc=0.8329, best valid acc=0.8646
+main.py:train_model: [Epoch 28 Batch 5000/17173] loss=0.0366, acc=0.9870
+main.py:train_model: [Epoch 28 Batch 10000/17173] loss=0.0502, acc=0.9816
+main.py:train_model: [Epoch 28 Batch 15000/17173] loss=0.0599, acc=0.9780
+main.py:train_model: [Epoch 28] valid loss=0.9663, valid acc=0.8305, best valid acc=0.8646
+main.py:train_model: [Epoch 29 Batch 5000/17173] loss=0.0359, acc=0.9867
+main.py:train_model: [Epoch 29 Batch 10000/17173] loss=0.0475, acc=0.9826
+main.py:train_model: [Epoch 29 Batch 15000/17173] loss=0.0551, acc=0.9795
+main.py:train_model: [Epoch 29] valid loss=0.9784, valid acc=0.8357, best valid acc=0.8646
