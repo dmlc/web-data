@@ -1,26 +1,31 @@
 #!/usr/bin/env bash
 
 python ./scripts/action-recognition/train_recognizer.py \
-	--dataset ucf101 \
-	--model inceptionv3_ucf101 \
-	--num-classes 101 \
+	--dataset kinetics400 \
+	--model inceptionv3_kinetics400 \
 	--mode hybrid \
 	--dtype float32 \
+	--prefetch-ratio 1.0 \
+	--num-classes 400 \
 	--batch-size 25 \
+	--num-segments 3 \
+	--use-tsn \
 	--num-gpus 8 \
 	--num-data-workers 32 \
 	--new-height 340 \
 	--new-width 450 \
+	--new-length 1 \
+	--new-step 1 \
 	--input-size 299 \
 	--lr-mode step \
-	--lr 0.001 \
+	--lr 0.01 \
 	--momentum 0.9 \
-	--wd 0.0005 \
+	--wd 0.0001 \
 	--lr-decay 0.1 \
-	--lr-decay-epoch 30,60,80 \
-	--num-epochs 80 \
+	--lr-decay-epoch 40,80,100 \
+	--num-epochs 100 \
+	--scale-ratios 1.0,0.8 \
+	--save-frequency 5 \
 	--clip-grad 40 \
 	--partial-bn \
-	--save-frequency 5 \
-	--log-interval 10 \
-
+	--log-interval 50 \

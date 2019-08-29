@@ -1,13 +1,12 @@
 #!/usr/bin/env bash
 
 python ./scripts/action-recognition/train_recognizer.py \
-	--data-dir /home/ubuntu/yizhu/data/UCF101/rawframes \
-	--train-list /home/ubuntu/yizhu/data/UCF101/ucfTrainTestlist/ucf101_train_split_1_rawframes.txt \
-	--val-list /home/ubuntu/yizhu/data/UCF101/ucfTrainTestlist/ucf101_val_split_1_rawframes.txt \
+	--dataset ucf101 \
 	--model inceptionv3_ucf101 \
 	--num-classes 101 \
 	--mode hybrid \
-	--batch-size 15 \
+	--dtype float32 \
+	--batch-size 25 \
 	--num-segments 3 \
 	--use-tsn \
 	--num-gpus 8 \
@@ -26,6 +25,3 @@ python ./scripts/action-recognition/train_recognizer.py \
 	--partial-bn \
 	--save-frequency 5 \
 	--log-interval 10 \
-	--logging-file tsn_2d_rgb_inceptionv3_seg_3_f1s1_b15_g8_gradclip_partialbn.txt \
-	--save-dir /home/ubuntu/yizhu/logs/mxnet/tsn_2d_rgb_inceptionv3_seg_3_f1s1_b15_g8_gradclip_partialbn \
-
