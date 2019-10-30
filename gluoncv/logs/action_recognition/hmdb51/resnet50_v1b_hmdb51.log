@@ -1,0 +1,320 @@
+Namespace(accumulate=1, batch_norm=False, batch_size=32, clip_grad=40, crop_ratio=0.875, data_dir='/home/ubuntu/.mxnet/datasets/hmdb51/rawframes', dataset='hmdb51', dtype='float32', eval=False, hard_weight=0.5, input_5d=False, input_size=224, kvstore=None, label_smoothing=False, last_gamma=False, log_interval=50, logging_file='2d_rgb_res50_hmdb51_b32_g8_run4.txt', lr=0.01, lr_decay=0.1, lr_decay_epoch='15,25,35', lr_decay_period=0, lr_mode='step', mixup=False, mixup_alpha=0.2, mixup_off_epoch=0, mode='hybrid', model='resnet50_v1b_hmdb51', momentum=0.9, new_height=256, new_length=1, new_step=1, new_width=340, no_wd=False, num_classes=51, num_crop=1, num_epochs=35, num_gpus=8, num_segments=1, num_workers=32, partial_bn=False, prefetch_ratio=1.0, resume_epoch=0, resume_params='', resume_states='', save_dir='/home/ubuntu/yizhu/logs/mxnet/hmdb51/2d_rgb_res50_hmdb51_b32_g8_run4', save_frequency=5, scale_ratios='1.0,0.8', teacher=None, temperature=20, train_list='/home/ubuntu/.mxnet/datasets/hmdb51/testTrainMulti_7030_splits/hmdb51_train_split_1_rawframes.txt', use_amp=False, use_decord=False, use_gn=False, use_pretrained=False, use_se=False, use_tsn=False, val_data_dir='~/.mxnet/datasets/ucf101/rawframes', val_list='/home/ubuntu/.mxnet/datasets/hmdb51/testTrainMulti_7030_splits/hmdb51_val_split_1_rawframes.txt', video_loader=False, warmup_epochs=0, warmup_lr=0.0, wd=0.0001)
+Total batch size is set to 256 on 8 GPUs
+Namespace(accumulate=1, batch_norm=False, batch_size=32, clip_grad=40, crop_ratio=0.875, data_dir='/home/ubuntu/.mxnet/datasets/hmdb51/rawframes', dataset='hmdb51', dtype='float32', eval=False, hard_weight=0.5, input_5d=False, input_size=224, kvstore=None, label_smoothing=False, last_gamma=False, log_interval=50, logging_file='2d_rgb_res50_hmdb51_b32_g8_run4.txt', lr=0.01, lr_decay=0.1, lr_decay_epoch='15,25,35', lr_decay_period=0, lr_mode='step', mixup=False, mixup_alpha=0.2, mixup_off_epoch=0, mode='hybrid', model='resnet50_v1b_hmdb51', momentum=0.9, new_height=256, new_length=1, new_step=1, new_width=340, no_wd=False, num_classes=51, num_crop=1, num_epochs=35, num_gpus=8, num_segments=1, num_workers=32, partial_bn=False, prefetch_ratio=1.0, resume_epoch=0, resume_params='', resume_states='', save_dir='/home/ubuntu/yizhu/logs/mxnet/hmdb51/2d_rgb_res50_hmdb51_b32_g8_run4', save_frequency=5, scale_ratios='1.0,0.8', teacher=None, temperature=20, train_list='/home/ubuntu/.mxnet/datasets/hmdb51/testTrainMulti_7030_splits/hmdb51_train_split_1_rawframes.txt', use_amp=False, use_decord=False, use_gn=False, use_pretrained=False, use_se=False, use_tsn=False, val_data_dir='~/.mxnet/datasets/ucf101/rawframes', val_list='/home/ubuntu/.mxnet/datasets/hmdb51/testTrainMulti_7030_splits/hmdb51_val_split_1_rawframes.txt', video_loader=False, warmup_epochs=0, warmup_lr=0.0, wd=0.0001)
+Total batch size is set to 256 on 8 GPUs
+ActionRecResNetV1b(
+  (conv1): Conv2D(3 -> 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias=False)
+  (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=64)
+  (relu): Activation(relu)
+  (maxpool): MaxPool2D(size=(3, 3), stride=(2, 2), padding=(1, 1), ceil_mode=False, global_pool=False, pool_type=max, layout=NCHW)
+  (layer1): HybridSequential(
+    (0): BottleneckV1b(
+      (conv1): Conv2D(64 -> 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=64)
+      (relu1): Activation(relu)
+      (conv2): Conv2D(64 -> 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=64)
+      (relu2): Activation(relu)
+      (conv3): Conv2D(64 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (relu3): Activation(relu)
+      (downsample): HybridSequential(
+        (0): Conv2D(64 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      )
+    )
+    (1): BottleneckV1b(
+      (conv1): Conv2D(256 -> 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=64)
+      (relu1): Activation(relu)
+      (conv2): Conv2D(64 -> 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=64)
+      (relu2): Activation(relu)
+      (conv3): Conv2D(64 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (relu3): Activation(relu)
+    )
+    (2): BottleneckV1b(
+      (conv1): Conv2D(256 -> 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=64)
+      (relu1): Activation(relu)
+      (conv2): Conv2D(64 -> 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=64)
+      (relu2): Activation(relu)
+      (conv3): Conv2D(64 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (relu3): Activation(relu)
+    )
+  )
+  (layer2): HybridSequential(
+    (0): BottleneckV1b(
+      (conv1): Conv2D(256 -> 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=128)
+      (relu1): Activation(relu)
+      (conv2): Conv2D(128 -> 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=128)
+      (relu2): Activation(relu)
+      (conv3): Conv2D(128 -> 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=512)
+      (relu3): Activation(relu)
+      (downsample): HybridSequential(
+        (0): Conv2D(256 -> 512, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=512)
+      )
+    )
+    (1): BottleneckV1b(
+      (conv1): Conv2D(512 -> 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=128)
+      (relu1): Activation(relu)
+      (conv2): Conv2D(128 -> 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=128)
+      (relu2): Activation(relu)
+      (conv3): Conv2D(128 -> 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=512)
+      (relu3): Activation(relu)
+    )
+    (2): BottleneckV1b(
+      (conv1): Conv2D(512 -> 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=128)
+      (relu1): Activation(relu)
+      (conv2): Conv2D(128 -> 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=128)
+      (relu2): Activation(relu)
+      (conv3): Conv2D(128 -> 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=512)
+      (relu3): Activation(relu)
+    )
+    (3): BottleneckV1b(
+      (conv1): Conv2D(512 -> 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=128)
+      (relu1): Activation(relu)
+      (conv2): Conv2D(128 -> 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=128)
+      (relu2): Activation(relu)
+      (conv3): Conv2D(128 -> 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=512)
+      (relu3): Activation(relu)
+    )
+  )
+  (layer3): HybridSequential(
+    (0): BottleneckV1b(
+      (conv1): Conv2D(512 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (relu1): Activation(relu)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (relu2): Activation(relu)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      (relu3): Activation(relu)
+      (downsample): HybridSequential(
+        (0): Conv2D(512 -> 1024, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      )
+    )
+    (1): BottleneckV1b(
+      (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (relu1): Activation(relu)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (relu2): Activation(relu)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      (relu3): Activation(relu)
+    )
+    (2): BottleneckV1b(
+      (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (relu1): Activation(relu)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (relu2): Activation(relu)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      (relu3): Activation(relu)
+    )
+    (3): BottleneckV1b(
+      (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (relu1): Activation(relu)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (relu2): Activation(relu)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      (relu3): Activation(relu)
+    )
+    (4): BottleneckV1b(
+      (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (relu1): Activation(relu)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (relu2): Activation(relu)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      (relu3): Activation(relu)
+    )
+    (5): BottleneckV1b(
+      (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (relu1): Activation(relu)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (relu2): Activation(relu)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      (relu3): Activation(relu)
+    )
+  )
+  (layer4): HybridSequential(
+    (0): BottleneckV1b(
+      (conv1): Conv2D(1024 -> 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=512)
+      (relu1): Activation(relu)
+      (conv2): Conv2D(512 -> 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=512)
+      (relu2): Activation(relu)
+      (conv3): Conv2D(512 -> 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=2048)
+      (relu3): Activation(relu)
+      (downsample): HybridSequential(
+        (0): Conv2D(1024 -> 2048, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=2048)
+      )
+    )
+    (1): BottleneckV1b(
+      (conv1): Conv2D(2048 -> 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=512)
+      (relu1): Activation(relu)
+      (conv2): Conv2D(512 -> 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=512)
+      (relu2): Activation(relu)
+      (conv3): Conv2D(512 -> 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=2048)
+      (relu3): Activation(relu)
+    )
+    (2): BottleneckV1b(
+      (conv1): Conv2D(2048 -> 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=512)
+      (relu1): Activation(relu)
+      (conv2): Conv2D(512 -> 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=512)
+      (relu2): Activation(relu)
+      (conv3): Conv2D(512 -> 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=2048)
+      (relu3): Activation(relu)
+    )
+  )
+  (avgpool): GlobalAvgPool2D(size=(1, 1), stride=(1, 1), padding=(0, 0), ceil_mode=True, global_pool=True, pool_type=avg, layout=NCHW)
+  (flat): Flatten
+  (drop): Dropout(p = 0.9, axes=())
+  (output): Dense(2048 -> 51, linear)
+)
+Load 3570 training samples and 1530 validation samples.
+[Epoch 000] training: accuracy=7.001202	 loss=3.839976
+[Epoch 000] speed: 194 samples/sec	time cost: 17.868695
+[Epoch 000] validation: acc-top1=25.000000 acc-top5=56.406250 loss=3.530225
+[Epoch 001] training: accuracy=19.503348	 loss=3.373216
+[Epoch 001] speed: 693 samples/sec	time cost: 6.998386
+[Epoch 001] validation: acc-top1=31.406250 acc-top5=65.312500 loss=2.880720
+[Epoch 002] training: accuracy=26.311384	 loss=2.874053
+[Epoch 002] speed: 784 samples/sec	time cost: 6.417169
+[Epoch 002] validation: acc-top1=33.125000 acc-top5=65.781250 loss=2.535274
+[Epoch 003] training: accuracy=31.305804	 loss=2.561737
+[Epoch 003] speed: 805 samples/sec	time cost: 6.311936
+[Epoch 003] validation: acc-top1=41.406250 acc-top5=74.296875 loss=2.195543
+[Epoch 004] training: accuracy=38.030134	 loss=2.271957
+[Epoch 004] speed: 751 samples/sec	time cost: 6.611414
+[Epoch 004] validation: acc-top1=44.531250 acc-top5=74.531250 loss=2.094474
+[Epoch 005] training: accuracy=40.931920	 loss=2.150014
+[Epoch 005] speed: 809 samples/sec	time cost: 6.074236
+[Epoch 005] validation: acc-top1=43.750000 acc-top5=75.468750 loss=2.063953
+[Epoch 006] training: accuracy=45.870536	 loss=1.958890
+[Epoch 006] speed: 769 samples/sec	time cost: 6.559774
+[Epoch 006] validation: acc-top1=43.906250 acc-top5=76.093750 loss=2.040950
+[Epoch 007] training: accuracy=49.358259	 loss=1.841575
+[Epoch 007] speed: 788 samples/sec	time cost: 6.069233
+[Epoch 007] validation: acc-top1=44.765625 acc-top5=76.015625 loss=2.064428
+[Epoch 008] training: accuracy=51.478795	 loss=1.762046
+[Epoch 008] speed: 755 samples/sec	time cost: 6.266012
+[Epoch 008] validation: acc-top1=47.187500 acc-top5=79.843750 loss=1.926056
+[Epoch 009] training: accuracy=53.710938	 loss=1.666291
+[Epoch 009] speed: 774 samples/sec	time cost: 6.195814
+[Epoch 009] validation: acc-top1=44.687500 acc-top5=73.437500 loss=2.090427
+[Epoch 010] training: accuracy=55.524554	 loss=1.577047
+[Epoch 010] speed: 809 samples/sec	time cost: 5.902935
+[Epoch 010] validation: acc-top1=44.062500 acc-top5=76.328125 loss=2.045730
+[Epoch 011] training: accuracy=57.393973	 loss=1.505907
+[Epoch 011] speed: 734 samples/sec	time cost: 6.319115
+[Epoch 011] validation: acc-top1=47.265625 acc-top5=79.296875 loss=1.986958
+[Epoch 012] training: accuracy=59.905134	 loss=1.426733
+[Epoch 012] speed: 775 samples/sec	time cost: 6.247389
+[Epoch 012] validation: acc-top1=46.093750 acc-top5=77.500000 loss=2.096516
+[Epoch 013] training: accuracy=60.853795	 loss=1.434049
+[Epoch 013] speed: 805 samples/sec	time cost: 5.916348
+[Epoch 013] validation: acc-top1=45.390625 acc-top5=77.187500 loss=2.068100
+[Epoch 014] training: accuracy=62.751116	 loss=1.347648
+[Epoch 014] speed: 780 samples/sec	time cost: 6.203855
+[Epoch 014] validation: acc-top1=50.859375 acc-top5=80.156250 loss=1.943269
+[Epoch 015] training: accuracy=62.555804	 loss=1.325998
+[Epoch 015] speed: 754 samples/sec	time cost: 6.440057
+[Epoch 015] validation: acc-top1=50.390625 acc-top5=81.640625 loss=1.861804
+[Epoch 016] training: accuracy=63.309152	 loss=1.315481
+[Epoch 016] speed: 764 samples/sec	time cost: 6.127521
+[Epoch 016] validation: acc-top1=51.875000 acc-top5=82.578125 loss=1.810559
+[Epoch 017] training: accuracy=65.597098	 loss=1.236828
+[Epoch 017] speed: 716 samples/sec	time cost: 6.448985
+[Epoch 017] validation: acc-top1=52.578125 acc-top5=82.578125 loss=1.778648
+[Epoch 018] training: accuracy=66.556490	 loss=1.200223
+[Epoch 018] speed: 782 samples/sec	time cost: 5.821703
+[Epoch 018] validation: acc-top1=52.578125 acc-top5=82.656250 loss=1.773896
+[Epoch 019] training: accuracy=65.625000	 loss=1.214805
+[Epoch 019] speed: 827 samples/sec	time cost: 5.757833
+[Epoch 019] validation: acc-top1=53.984375 acc-top5=83.671875 loss=1.736432
+[Epoch 020] training: accuracy=67.661830	 loss=1.164781
+[Epoch 020] speed: 796 samples/sec	time cost: 6.025936
+[Epoch 020] validation: acc-top1=53.281250 acc-top5=82.968750 loss=1.760242
+[Epoch 021] training: accuracy=67.717634	 loss=1.164559
+[Epoch 021] speed: 796 samples/sec	time cost: 5.963277
+[Epoch 021] validation: acc-top1=54.062500 acc-top5=83.515625 loss=1.763448
+[Epoch 022] training: accuracy=67.354911	 loss=1.162684
+[Epoch 022] speed: 852 samples/sec	time cost: 5.740416
+[Epoch 022] validation: acc-top1=54.296875 acc-top5=83.437500 loss=1.735641
+[Epoch 023] training: accuracy=67.773438	 loss=1.153493
+[Epoch 023] speed: 866 samples/sec	time cost: 5.615139
+[Epoch 023] validation: acc-top1=54.218750 acc-top5=83.828125 loss=1.732415
+[Epoch 024] training: accuracy=67.689732	 loss=1.115762
+[Epoch 024] speed: 790 samples/sec	time cost: 5.952672
+[Epoch 024] validation: acc-top1=54.453125 acc-top5=83.515625 loss=1.747882
+[Epoch 025] training: accuracy=68.024554	 loss=1.125093
+[Epoch 025] speed: 768 samples/sec	time cost: 6.133078
+[Epoch 025] validation: acc-top1=54.687500 acc-top5=83.750000 loss=1.738733
+[Epoch 026] training: accuracy=68.191964	 loss=1.113540
+[Epoch 026] speed: 825 samples/sec	time cost: 5.740494
+[Epoch 026] validation: acc-top1=53.437500 acc-top5=84.062500 loss=1.756633
+[Epoch 027] training: accuracy=68.415179	 loss=1.115610
+[Epoch 027] speed: 810 samples/sec	time cost: 5.814226
+[Epoch 027] validation: acc-top1=53.125000 acc-top5=83.906250 loss=1.760906
+[Epoch 028] training: accuracy=68.331473	 loss=1.115032
+[Epoch 028] speed: 809 samples/sec	time cost: 6.047347
+[Epoch 028] validation: acc-top1=53.828125 acc-top5=84.140625 loss=1.737168
+[Epoch 029] training: accuracy=69.587054	 loss=1.101715
+[Epoch 029] speed: 742 samples/sec	time cost: 6.253378
+[Epoch 029] validation: acc-top1=53.515625 acc-top5=83.984375 loss=1.751569
+[Epoch 030] training: accuracy=69.168527	 loss=1.096639
+[Epoch 030] speed: 846 samples/sec	time cost: 5.748580
+[Epoch 030] validation: acc-top1=53.750000 acc-top5=84.140625 loss=1.736966
+[Epoch 031] training: accuracy=68.498884	 loss=1.091753
+[Epoch 031] speed: 762 samples/sec	time cost: 6.274887
+[Epoch 031] validation: acc-top1=53.593750 acc-top5=84.687500 loss=1.727592
+[Epoch 032] training: accuracy=69.029018	 loss=1.126818
+[Epoch 032] speed: 739 samples/sec	time cost: 6.212343
+[Epoch 032] validation: acc-top1=53.906250 acc-top5=84.140625 loss=1.747739
+[Epoch 033] training: accuracy=68.498884	 loss=1.119847
+[Epoch 033] speed: 798 samples/sec	time cost: 5.947594
+[Epoch 033] validation: acc-top1=54.453125 acc-top5=83.906250 loss=1.744780
+[Epoch 034] training: accuracy=68.526786	 loss=1.109343
+[Epoch 034] speed: 601 samples/sec	time cost: 7.351861
+[Epoch 034] validation: acc-top1=53.750000 acc-top5=84.062500 loss=1.750502
