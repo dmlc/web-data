@@ -1,0 +1,52 @@
+2019-11-17 14:57:35,552 - root - INFO - Namespace(accumulate=None, attention_dropout=0.1, batch_size=128, cpu=None, dataset='126gb', dev_batch_size=32, dropout=0.1, dtype='float32', early_stop=None, epochs=3, epsilon=1e-06, gpu=8, log_interval=10, lr=2e-05, max_len=128, model_name='xlnet_cased_l12_h768_a12', model_parameters=None, only_inference=False, output_dir='./output_dir', pad=True, seed=2, task_name='SST', warmup_ratio=0)
+2019-11-17 14:58:14,846 - root - INFO - Namespace(accumulate=None, attention_dropout=0.1, batch_size=128, cpu=None, dataset='126gb', dev_batch_size=32, dropout=0.1, dtype='float32', early_stop=None, epochs=3, epsilon=1e-06, gpu=8, log_interval=50, lr=2e-05, max_len=128, model_name='xlnet_cased_l12_h768_a12', model_parameters=None, only_inference=False, output_dir='./output_dir', pad=True, seed=2, task_name='SST', warmup_ratio=0)
+2019-11-17 14:58:56,903 - root - INFO - processing dataset...
+2019-11-17 14:59:21,893 - root - INFO - Now we are doing XLNet classification training on [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)]!
+2019-11-17 15:00:26,114 - root - INFO - [Epoch 1 Batch 50/532] loss=0.5572, lr=0.0000194, metrics:accuracy:0.6959
+2019-11-17 15:01:14,336 - root - INFO - [Epoch 1 Batch 100/532] loss=0.3377, lr=0.0000187, metrics:accuracy:0.7804
+2019-11-17 15:02:02,292 - root - INFO - [Epoch 1 Batch 150/532] loss=0.2845, lr=0.0000181, metrics:accuracy:0.8163
+2019-11-17 15:02:50,413 - root - INFO - [Epoch 1 Batch 200/532] loss=0.2588, lr=0.0000175, metrics:accuracy:0.8360
+2019-11-17 15:03:38,815 - root - INFO - [Epoch 1 Batch 250/532] loss=0.2397, lr=0.0000168, metrics:accuracy:0.8498
+2019-11-17 15:04:27,506 - root - INFO - [Epoch 1 Batch 300/532] loss=0.2330, lr=0.0000162, metrics:accuracy:0.8592
+2019-11-17 15:05:16,277 - root - INFO - [Epoch 1 Batch 350/532] loss=0.2198, lr=0.0000156, metrics:accuracy:0.8667
+2019-11-17 15:06:04,294 - root - INFO - [Epoch 1 Batch 400/532] loss=0.2161, lr=0.0000149, metrics:accuracy:0.8731
+2019-11-17 15:06:52,092 - root - INFO - [Epoch 1 Batch 450/532] loss=0.1907, lr=0.0000143, metrics:accuracy:0.8786
+2019-11-17 15:07:40,500 - root - INFO - [Epoch 1 Batch 500/532] loss=0.1913, lr=0.0000137, metrics:accuracy:0.8834
+2019-11-17 15:08:11,730 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2019-11-17 15:08:16,738 - root - INFO - validation metrics:accuracy:0.9323
+2019-11-17 15:08:16,739 - root - INFO - Time cost=5.01s, throughput=178.89 samples/s
+2019-11-17 15:08:18,320 - root - INFO - params saved in: ./output_dir/model_xlnet_SST_0.params
+2019-11-17 15:08:18,323 - root - INFO - Time cost=536.41s
+2019-11-17 15:09:07,226 - root - INFO - [Epoch 2 Batch 50/532] loss=0.1703, lr=0.0000126, metrics:accuracy:0.9380
+2019-11-17 15:09:55,908 - root - INFO - [Epoch 2 Batch 100/532] loss=0.1686, lr=0.0000120, metrics:accuracy:0.9367
+2019-11-17 15:10:44,709 - root - INFO - [Epoch 2 Batch 150/532] loss=0.1546, lr=0.0000114, metrics:accuracy:0.9384
+2019-11-17 15:11:33,234 - root - INFO - [Epoch 2 Batch 200/532] loss=0.1551, lr=0.0000107, metrics:accuracy:0.9392
+2019-11-17 15:12:21,258 - root - INFO - [Epoch 2 Batch 250/532] loss=0.1558, lr=0.0000101, metrics:accuracy:0.9393
+2019-11-17 15:13:09,579 - root - INFO - [Epoch 2 Batch 300/532] loss=0.1609, lr=0.0000095, metrics:accuracy:0.9392
+2019-11-17 15:13:57,972 - root - INFO - [Epoch 2 Batch 350/532] loss=0.1602, lr=0.0000088, metrics:accuracy:0.9395
+2019-11-17 15:14:46,586 - root - INFO - [Epoch 2 Batch 400/532] loss=0.1520, lr=0.0000082, metrics:accuracy:0.9401
+2019-11-17 15:15:35,241 - root - INFO - [Epoch 2 Batch 450/532] loss=0.1371, lr=0.0000076, metrics:accuracy:0.9409
+2019-11-17 15:16:24,300 - root - INFO - [Epoch 2 Batch 500/532] loss=0.1500, lr=0.0000069, metrics:accuracy:0.9413
+2019-11-17 15:16:55,313 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2019-11-17 15:16:59,916 - root - INFO - validation metrics:accuracy:0.9346
+2019-11-17 15:16:59,916 - root - INFO - Time cost=4.60s, throughput=194.65 samples/s
+2019-11-17 15:17:01,911 - root - INFO - params saved in: ./output_dir/model_xlnet_SST_1.params
+2019-11-17 15:17:01,913 - root - INFO - Time cost=523.59s
+2019-11-17 15:17:50,820 - root - INFO - [Epoch 3 Batch 50/532] loss=0.1295, lr=0.0000059, metrics:accuracy:0.9497
+2019-11-17 15:18:39,904 - root - INFO - [Epoch 3 Batch 100/532] loss=0.1331, lr=0.0000053, metrics:accuracy:0.9523
+2019-11-17 15:19:28,557 - root - INFO - [Epoch 3 Batch 150/532] loss=0.1255, lr=0.0000046, metrics:accuracy:0.9534
+2019-11-17 15:20:17,461 - root - INFO - [Epoch 3 Batch 200/532] loss=0.1197, lr=0.0000040, metrics:accuracy:0.9538
+2019-11-17 15:21:06,287 - root - INFO - [Epoch 3 Batch 250/532] loss=0.1170, lr=0.0000034, metrics:accuracy:0.9551
+2019-11-17 15:21:54,117 - root - INFO - [Epoch 3 Batch 300/532] loss=0.1134, lr=0.0000027, metrics:accuracy:0.9553
+2019-11-17 15:22:42,389 - root - INFO - [Epoch 3 Batch 350/532] loss=0.1238, lr=0.0000021, metrics:accuracy:0.9555
+2019-11-17 15:23:30,681 - root - INFO - [Epoch 3 Batch 400/532] loss=0.1152, lr=0.0000015, metrics:accuracy:0.9557
+2019-11-17 15:24:19,012 - root - INFO - [Epoch 3 Batch 450/532] loss=0.1238, lr=0.0000008, metrics:accuracy:0.9557
+2019-11-17 15:25:07,475 - root - INFO - [Epoch 3 Batch 500/532] loss=0.1315, lr=0.0000002, metrics:accuracy:0.9555
+2019-11-17 15:25:38,641 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2019-11-17 15:25:43,324 - root - INFO - validation metrics:accuracy:0.9404
+2019-11-17 15:25:43,324 - root - INFO - Time cost=4.68s, throughput=191.34 samples/s
+2019-11-17 15:25:45,158 - root - INFO - params saved in: ./output_dir/model_xlnet_SST_2.params
+2019-11-17 15:25:45,160 - root - INFO - Time cost=523.25s
+2019-11-17 15:25:45,729 - root - INFO - Best model at epoch 3. Validation metrics:accuracy:0.9404
+2019-11-17 15:25:45,730 - root - INFO - Now we are doing testing on test with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2019-11-17 15:25:54,677 - root - INFO - Time cost=8.95s, throughput=203.86 samples/s
