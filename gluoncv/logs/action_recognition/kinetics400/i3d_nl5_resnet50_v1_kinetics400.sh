@@ -9,10 +9,9 @@ CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 python ./scripts/action-recognition/train_r
     --dtype float32 \
     --mode hybrid \
     --prefetch-ratio 1.0 \
-    --input-5d \
     --model i3d_nl5_resnet50_v1_kinetics400 \
     --num-classes 400 \
-    --batch-size 16 \
+    --batch-size 8 \
     --num-gpus 8 \
     --num-data-workers 32 \
     --input-size 224 \
@@ -21,15 +20,16 @@ CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 python ./scripts/action-recognition/train_r
     --new-length 32 \
     --new-step 2 \
     --lr-mode step \
+    --lr 0.01 \
     --lr-decay 0.1 \
     --lr-decay-epoch 40,80,100 \
-    --lr 0.01 \
     --momentum 0.9 \
     --wd 0.0001 \
+    --no-wd \
     --num-epochs 100 \
     --scale-ratios 1.0,0.8 \
-    --save-frequency 5 \
+    --save-frequency 20 \
     --clip-grad 40 \
-    --log-interval 20 \
+    --log-interval 50 \
     --logging-file i3d_nl5_resnet50_v1_kinetics400.log \
-    --save-dir ./logs/ \
+    --save-dir ./logs/

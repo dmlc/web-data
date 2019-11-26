@@ -8,13 +8,12 @@ CUDA_VISIBLE_DEVICES=7,6,5,4,3,2,1,0 python ./scripts/action-recognition/train_r
     --val-list /home/ubuntu/third_disk/data/kinetics400/kinetics400_val_list_rawframes_full.txt \
     --mode hybrid \
     --dtype float32 \
-    --prefetch-ratio 1.0 \
-    --input-5d \
+    --prefetch-ratio 2.0 \
     --model i3d_nl10_resnet101_v1_kinetics400 \
     --num-classes 400 \
     --batch-size 8 \
     --num-gpus 8 \
-    --num-data-workers 32 \
+    --num-data-workers 64 \
     --input-size 224 \
     --new-height 256 \
     --new-width 340 \
@@ -28,8 +27,7 @@ CUDA_VISIBLE_DEVICES=7,6,5,4,3,2,1,0 python ./scripts/action-recognition/train_r
     --lr-decay-epoch 40,80,100 \
     --num-epochs 100 \
     --scale-ratios 1.0,0.8 \
-    --save-frequency 5 \
-    --clip-grad 40 \
-    --log-interval 20 \
+    --save-frequency 20 \
+    --log-interval 50 \
     --logging-file i3d_nl10_resnet101_v1_kinetics400.log \
-    --save-dir ./logs/ \
+    --save-dir ./logs/
