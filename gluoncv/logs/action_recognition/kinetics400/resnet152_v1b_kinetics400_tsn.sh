@@ -2,10 +2,12 @@
 
 CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 python ./scripts/action-recognition/train_recognizer.py \
 	--dataset kinetics400 \
-    --data-dir /home/ubuntu/third_disk/data/kinetics400/rawframes_train \
-    --val-data-dir /home/ubuntu/third_disk/data/kinetics400/rawframes_val \
-    --train-list /home/ubuntu/third_disk/data/kinetics400/kinetics400_train_list_rawframes_full.txt \
-    --val-list /home/ubuntu/third_disk/data/kinetics400/kinetics400_val_list_rawframes_full.txt \
+    --data-dir /home/ubuntu/data/kinetics400/train_256 \
+    --val-data-dir /home/ubuntu/data/kinetics400/val_256 \
+    --train-list /home/ubuntu/data/kinetics400/k400_train_240618.txt \
+    --val-list /home/ubuntu/data/kinetics400/k400_val_19761_cleanv3.txt \
+    --video-loader \
+    --use-decord \
 	--model resnet152_v1b_kinetics400 \
 	--mode hybrid \
 	--dtype float32 \
@@ -26,8 +28,6 @@ CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 python ./scripts/action-recognition/train_r
 	--wd 0.0001 \
 	--num-epochs 100 \
 	--scale-ratios 1.0,0.8 \
-	--save-frequency 5 \
-	--clip-grad 40 \
+	--save-frequency 20 \
 	--log-interval 50 \
-	--logging-file resnet152_v1b_kinetics400_tsn.log \
-	--save-dir ./logs/
+	--logging-file resnet152_v1b_kinetics400.log
