@@ -1,0 +1,1134 @@
+2019-11-16 14:35:36,706 - root - INFO - Namespace(accumulate=None, attention_dropout=0.1, batch_size=128, cpu=None, dataset='126gb', dev_batch_size=32, dropout=0.1, dtype='float32', early_stop=None, epochs=3, epsilon=1e-06, gpu=8, log_interval=10, lr=3e-05, max_len=128, model_name='xlnet_cased_l24_h1024_a16', model_parameters=None, only_inference=False, output_dir='./output_dir', pad=True, seed=49, task_name='MNLI', warmup_ratio=0)
+2019-11-16 14:36:12,801 - root - INFO - Namespace(accumulate=None, attention_dropout=0.1, batch_size=128, cpu=None, dataset='126gb', dev_batch_size=32, dropout=0.1, dtype='float32', early_stop=None, epochs=3, epsilon=1e-06, gpu=8, log_interval=10, lr=3e-05, max_len=128, model_name='xlnet_cased_l12_h768_a12', model_parameters=None, only_inference=False, output_dir='./output_dir', pad=True, seed=49, task_name='MNLI', warmup_ratio=0)
+2019-11-16 14:36:55,392 - root - INFO - processing dataset...
+2019-11-16 14:37:38,775 - root - INFO - Now we are doing XLNet classification training on [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)]!
+2019-11-16 14:38:03,871 - root - INFO - [Epoch 1 Batch 10/3072] loss=1.1025, lr=0.0000300, metrics:accuracy:0.3633
+2019-11-16 14:38:13,261 - root - INFO - [Epoch 1 Batch 20/3072] loss=1.0940, lr=0.0000299, metrics:accuracy:0.3715
+2019-11-16 14:38:22,622 - root - INFO - [Epoch 1 Batch 30/3072] loss=1.0897, lr=0.0000299, metrics:accuracy:0.3721
+2019-11-16 14:38:32,088 - root - INFO - [Epoch 1 Batch 40/3072] loss=1.0520, lr=0.0000299, metrics:accuracy:0.3941
+2019-11-16 14:38:41,572 - root - INFO - [Epoch 1 Batch 50/3072] loss=1.0140, lr=0.0000298, metrics:accuracy:0.4122
+2019-11-16 14:38:51,645 - root - INFO - [Epoch 1 Batch 60/3072] loss=0.9645, lr=0.0000298, metrics:accuracy:0.4318
+2019-11-16 14:39:01,401 - root - INFO - [Epoch 1 Batch 70/3072] loss=0.8907, lr=0.0000298, metrics:accuracy:0.4542
+2019-11-16 14:39:11,047 - root - INFO - [Epoch 1 Batch 80/3072] loss=0.9080, lr=0.0000297, metrics:accuracy:0.4708
+2019-11-16 14:39:20,685 - root - INFO - [Epoch 1 Batch 90/3072] loss=0.8649, lr=0.0000297, metrics:accuracy:0.4867
+2019-11-16 14:39:30,502 - root - INFO - [Epoch 1 Batch 100/3072] loss=0.7524, lr=0.0000297, metrics:accuracy:0.5067
+2019-11-16 14:39:40,142 - root - INFO - [Epoch 1 Batch 110/3072] loss=0.7747, lr=0.0000296, metrics:accuracy:0.5215
+2019-11-16 14:39:49,535 - root - INFO - [Epoch 1 Batch 120/3072] loss=0.7067, lr=0.0000296, metrics:accuracy:0.5369
+2019-11-16 14:39:58,966 - root - INFO - [Epoch 1 Batch 130/3072] loss=0.7030, lr=0.0000296, metrics:accuracy:0.5507
+2019-11-16 14:40:08,631 - root - INFO - [Epoch 1 Batch 140/3072] loss=0.6937, lr=0.0000295, metrics:accuracy:0.5628
+2019-11-16 14:40:18,178 - root - INFO - [Epoch 1 Batch 150/3072] loss=0.6533, lr=0.0000295, metrics:accuracy:0.5741
+2019-11-16 14:40:27,953 - root - INFO - [Epoch 1 Batch 160/3072] loss=0.6284, lr=0.0000295, metrics:accuracy:0.5846
+2019-11-16 14:40:37,612 - root - INFO - [Epoch 1 Batch 170/3072] loss=0.6640, lr=0.0000294, metrics:accuracy:0.5928
+2019-11-16 14:40:47,273 - root - INFO - [Epoch 1 Batch 180/3072] loss=0.6745, lr=0.0000294, metrics:accuracy:0.6006
+2019-11-16 14:40:56,749 - root - INFO - [Epoch 1 Batch 190/3072] loss=0.6524, lr=0.0000294, metrics:accuracy:0.6068
+2019-11-16 14:41:06,440 - root - INFO - [Epoch 1 Batch 200/3072] loss=0.6362, lr=0.0000294, metrics:accuracy:0.6132
+2019-11-16 14:41:15,972 - root - INFO - [Epoch 1 Batch 210/3072] loss=0.6059, lr=0.0000293, metrics:accuracy:0.6199
+2019-11-16 14:41:25,422 - root - INFO - [Epoch 1 Batch 220/3072] loss=0.6501, lr=0.0000293, metrics:accuracy:0.6249
+2019-11-16 14:41:34,908 - root - INFO - [Epoch 1 Batch 230/3072] loss=0.6063, lr=0.0000293, metrics:accuracy:0.6303
+2019-11-16 14:41:44,329 - root - INFO - [Epoch 1 Batch 240/3072] loss=0.6455, lr=0.0000292, metrics:accuracy:0.6344
+2019-11-16 14:41:53,738 - root - INFO - [Epoch 1 Batch 250/3072] loss=0.6344, lr=0.0000292, metrics:accuracy:0.6385
+2019-11-16 14:42:03,217 - root - INFO - [Epoch 1 Batch 260/3072] loss=0.6157, lr=0.0000292, metrics:accuracy:0.6430
+2019-11-16 14:42:12,634 - root - INFO - [Epoch 1 Batch 270/3072] loss=0.6015, lr=0.0000291, metrics:accuracy:0.6474
+2019-11-16 14:42:22,181 - root - INFO - [Epoch 1 Batch 280/3072] loss=0.5878, lr=0.0000291, metrics:accuracy:0.6513
+2019-11-16 14:42:31,562 - root - INFO - [Epoch 1 Batch 290/3072] loss=0.5891, lr=0.0000291, metrics:accuracy:0.6550
+2019-11-16 14:42:41,155 - root - INFO - [Epoch 1 Batch 300/3072] loss=0.5874, lr=0.0000290, metrics:accuracy:0.6584
+2019-11-16 14:42:50,813 - root - INFO - [Epoch 1 Batch 310/3072] loss=0.5956, lr=0.0000290, metrics:accuracy:0.6617
+2019-11-16 14:43:00,678 - root - INFO - [Epoch 1 Batch 320/3072] loss=0.5886, lr=0.0000290, metrics:accuracy:0.6648
+2019-11-16 14:43:10,426 - root - INFO - [Epoch 1 Batch 330/3072] loss=0.5856, lr=0.0000289, metrics:accuracy:0.6679
+2019-11-16 14:43:19,886 - root - INFO - [Epoch 1 Batch 340/3072] loss=0.5891, lr=0.0000289, metrics:accuracy:0.6707
+2019-11-16 14:43:29,492 - root - INFO - [Epoch 1 Batch 350/3072] loss=0.5951, lr=0.0000289, metrics:accuracy:0.6733
+2019-11-16 14:43:39,036 - root - INFO - [Epoch 1 Batch 360/3072] loss=0.6032, lr=0.0000288, metrics:accuracy:0.6757
+2019-11-16 14:43:48,633 - root - INFO - [Epoch 1 Batch 370/3072] loss=0.5526, lr=0.0000288, metrics:accuracy:0.6786
+2019-11-16 14:43:58,151 - root - INFO - [Epoch 1 Batch 380/3072] loss=0.5379, lr=0.0000288, metrics:accuracy:0.6816
+2019-11-16 14:44:07,690 - root - INFO - [Epoch 1 Batch 390/3072] loss=0.5579, lr=0.0000287, metrics:accuracy:0.6841
+2019-11-16 14:44:17,138 - root - INFO - [Epoch 1 Batch 400/3072] loss=0.5853, lr=0.0000287, metrics:accuracy:0.6860
+2019-11-16 14:44:26,613 - root - INFO - [Epoch 1 Batch 410/3072] loss=0.5755, lr=0.0000287, metrics:accuracy:0.6880
+2019-11-16 14:44:36,175 - root - INFO - [Epoch 1 Batch 420/3072] loss=0.5309, lr=0.0000286, metrics:accuracy:0.6904
+2019-11-16 14:44:45,862 - root - INFO - [Epoch 1 Batch 430/3072] loss=0.5402, lr=0.0000286, metrics:accuracy:0.6928
+2019-11-16 14:44:55,485 - root - INFO - [Epoch 1 Batch 440/3072] loss=0.5522, lr=0.0000286, metrics:accuracy:0.6948
+2019-11-16 14:45:05,242 - root - INFO - [Epoch 1 Batch 450/3072] loss=0.5564, lr=0.0000285, metrics:accuracy:0.6965
+2019-11-16 14:45:15,032 - root - INFO - [Epoch 1 Batch 460/3072] loss=0.5811, lr=0.0000285, metrics:accuracy:0.6980
+2019-11-16 14:45:24,567 - root - INFO - [Epoch 1 Batch 470/3072] loss=0.5211, lr=0.0000285, metrics:accuracy:0.7000
+2019-11-16 14:45:34,112 - root - INFO - [Epoch 1 Batch 480/3072] loss=0.5351, lr=0.0000284, metrics:accuracy:0.7019
+2019-11-16 14:45:43,639 - root - INFO - [Epoch 1 Batch 490/3072] loss=0.5135, lr=0.0000284, metrics:accuracy:0.7039
+2019-11-16 14:45:53,247 - root - INFO - [Epoch 1 Batch 500/3072] loss=0.5272, lr=0.0000284, metrics:accuracy:0.7057
+2019-11-16 14:46:03,080 - root - INFO - [Epoch 1 Batch 510/3072] loss=0.5577, lr=0.0000283, metrics:accuracy:0.7073
+2019-11-16 14:46:12,779 - root - INFO - [Epoch 1 Batch 520/3072] loss=0.5142, lr=0.0000283, metrics:accuracy:0.7090
+2019-11-16 14:46:22,412 - root - INFO - [Epoch 1 Batch 530/3072] loss=0.5258, lr=0.0000283, metrics:accuracy:0.7107
+2019-11-16 14:46:32,012 - root - INFO - [Epoch 1 Batch 540/3072] loss=0.5140, lr=0.0000282, metrics:accuracy:0.7125
+2019-11-16 14:46:41,547 - root - INFO - [Epoch 1 Batch 550/3072] loss=0.5296, lr=0.0000282, metrics:accuracy:0.7139
+2019-11-16 14:46:51,072 - root - INFO - [Epoch 1 Batch 560/3072] loss=0.5460, lr=0.0000282, metrics:accuracy:0.7153
+2019-11-16 14:47:00,914 - root - INFO - [Epoch 1 Batch 570/3072] loss=0.5275, lr=0.0000281, metrics:accuracy:0.7165
+2019-11-16 14:47:10,639 - root - INFO - [Epoch 1 Batch 580/3072] loss=0.5322, lr=0.0000281, metrics:accuracy:0.7178
+2019-11-16 14:47:20,405 - root - INFO - [Epoch 1 Batch 590/3072] loss=0.5552, lr=0.0000281, metrics:accuracy:0.7190
+2019-11-16 14:47:30,077 - root - INFO - [Epoch 1 Batch 600/3072] loss=0.5570, lr=0.0000280, metrics:accuracy:0.7200
+2019-11-16 14:47:39,482 - root - INFO - [Epoch 1 Batch 610/3072] loss=0.4860, lr=0.0000280, metrics:accuracy:0.7215
+2019-11-16 14:47:48,846 - root - INFO - [Epoch 1 Batch 620/3072] loss=0.5033, lr=0.0000280, metrics:accuracy:0.7228
+2019-11-16 14:47:58,243 - root - INFO - [Epoch 1 Batch 630/3072] loss=0.5264, lr=0.0000279, metrics:accuracy:0.7238
+2019-11-16 14:48:07,686 - root - INFO - [Epoch 1 Batch 640/3072] loss=0.5161, lr=0.0000279, metrics:accuracy:0.7250
+2019-11-16 14:48:17,117 - root - INFO - [Epoch 1 Batch 650/3072] loss=0.5012, lr=0.0000279, metrics:accuracy:0.7263
+2019-11-16 14:48:26,643 - root - INFO - [Epoch 1 Batch 660/3072] loss=0.5279, lr=0.0000279, metrics:accuracy:0.7271
+2019-11-16 14:48:36,297 - root - INFO - [Epoch 1 Batch 670/3072] loss=0.5170, lr=0.0000278, metrics:accuracy:0.7281
+2019-11-16 14:48:46,051 - root - INFO - [Epoch 1 Batch 680/3072] loss=0.4948, lr=0.0000278, metrics:accuracy:0.7293
+2019-11-16 14:48:55,662 - root - INFO - [Epoch 1 Batch 690/3072] loss=0.5333, lr=0.0000278, metrics:accuracy:0.7301
+2019-11-16 14:49:05,338 - root - INFO - [Epoch 1 Batch 700/3072] loss=0.4788, lr=0.0000277, metrics:accuracy:0.7314
+2019-11-16 14:49:15,093 - root - INFO - [Epoch 1 Batch 710/3072] loss=0.4713, lr=0.0000277, metrics:accuracy:0.7326
+2019-11-16 14:49:24,755 - root - INFO - [Epoch 1 Batch 720/3072] loss=0.5230, lr=0.0000277, metrics:accuracy:0.7334
+2019-11-16 14:49:34,284 - root - INFO - [Epoch 1 Batch 730/3072] loss=0.4684, lr=0.0000276, metrics:accuracy:0.7345
+2019-11-16 14:49:43,737 - root - INFO - [Epoch 1 Batch 740/3072] loss=0.5223, lr=0.0000276, metrics:accuracy:0.7352
+2019-11-16 14:49:53,290 - root - INFO - [Epoch 1 Batch 750/3072] loss=0.5014, lr=0.0000276, metrics:accuracy:0.7361
+2019-11-16 14:50:02,982 - root - INFO - [Epoch 1 Batch 760/3072] loss=0.5576, lr=0.0000275, metrics:accuracy:0.7365
+2019-11-16 14:50:12,516 - root - INFO - [Epoch 1 Batch 770/3072] loss=0.5415, lr=0.0000275, metrics:accuracy:0.7372
+2019-11-16 14:50:22,101 - root - INFO - [Epoch 1 Batch 780/3072] loss=0.4945, lr=0.0000275, metrics:accuracy:0.7378
+2019-11-16 14:50:31,689 - root - INFO - [Epoch 1 Batch 790/3072] loss=0.5373, lr=0.0000274, metrics:accuracy:0.7383
+2019-11-16 14:50:41,199 - root - INFO - [Epoch 1 Batch 800/3072] loss=0.5088, lr=0.0000274, metrics:accuracy:0.7390
+2019-11-16 14:50:50,703 - root - INFO - [Epoch 1 Batch 810/3072] loss=0.4678, lr=0.0000274, metrics:accuracy:0.7400
+2019-11-16 14:51:00,411 - root - INFO - [Epoch 1 Batch 820/3072] loss=0.4540, lr=0.0000273, metrics:accuracy:0.7409
+2019-11-16 14:51:10,051 - root - INFO - [Epoch 1 Batch 830/3072] loss=0.4867, lr=0.0000273, metrics:accuracy:0.7418
+2019-11-16 14:51:19,804 - root - INFO - [Epoch 1 Batch 840/3072] loss=0.4945, lr=0.0000273, metrics:accuracy:0.7424
+2019-11-16 14:51:29,383 - root - INFO - [Epoch 1 Batch 850/3072] loss=0.4888, lr=0.0000272, metrics:accuracy:0.7432
+2019-11-16 14:51:39,118 - root - INFO - [Epoch 1 Batch 860/3072] loss=0.5237, lr=0.0000272, metrics:accuracy:0.7437
+2019-11-16 14:51:49,384 - root - INFO - [Epoch 1 Batch 870/3072] loss=0.5330, lr=0.0000272, metrics:accuracy:0.7443
+2019-11-16 14:51:58,922 - root - INFO - [Epoch 1 Batch 880/3072] loss=0.5069, lr=0.0000271, metrics:accuracy:0.7449
+2019-11-16 14:52:08,617 - root - INFO - [Epoch 1 Batch 890/3072] loss=0.5222, lr=0.0000271, metrics:accuracy:0.7456
+2019-11-16 14:52:18,130 - root - INFO - [Epoch 1 Batch 900/3072] loss=0.4605, lr=0.0000271, metrics:accuracy:0.7464
+2019-11-16 14:52:27,570 - root - INFO - [Epoch 1 Batch 910/3072] loss=0.5185, lr=0.0000270, metrics:accuracy:0.7470
+2019-11-16 14:52:36,946 - root - INFO - [Epoch 1 Batch 920/3072] loss=0.5230, lr=0.0000270, metrics:accuracy:0.7475
+2019-11-16 14:52:46,548 - root - INFO - [Epoch 1 Batch 930/3072] loss=0.4655, lr=0.0000270, metrics:accuracy:0.7483
+2019-11-16 14:52:56,426 - root - INFO - [Epoch 1 Batch 940/3072] loss=0.4944, lr=0.0000269, metrics:accuracy:0.7489
+2019-11-16 14:53:06,480 - root - INFO - [Epoch 1 Batch 950/3072] loss=0.5017, lr=0.0000269, metrics:accuracy:0.7494
+2019-11-16 14:53:16,162 - root - INFO - [Epoch 1 Batch 960/3072] loss=0.4769, lr=0.0000269, metrics:accuracy:0.7503
+2019-11-16 14:53:25,659 - root - INFO - [Epoch 1 Batch 970/3072] loss=0.4779, lr=0.0000268, metrics:accuracy:0.7509
+2019-11-16 14:53:35,225 - root - INFO - [Epoch 1 Batch 980/3072] loss=0.5536, lr=0.0000268, metrics:accuracy:0.7510
+2019-11-16 14:53:44,767 - root - INFO - [Epoch 1 Batch 990/3072] loss=0.4960, lr=0.0000268, metrics:accuracy:0.7516
+2019-11-16 14:53:54,338 - root - INFO - [Epoch 1 Batch 1000/3072] loss=0.4670, lr=0.0000267, metrics:accuracy:0.7522
+2019-11-16 14:54:03,927 - root - INFO - [Epoch 1 Batch 1010/3072] loss=0.4516, lr=0.0000267, metrics:accuracy:0.7530
+2019-11-16 14:54:13,453 - root - INFO - [Epoch 1 Batch 1020/3072] loss=0.4729, lr=0.0000267, metrics:accuracy:0.7536
+2019-11-16 14:54:22,943 - root - INFO - [Epoch 1 Batch 1030/3072] loss=0.4883, lr=0.0000266, metrics:accuracy:0.7541
+2019-11-16 14:54:32,523 - root - INFO - [Epoch 1 Batch 1040/3072] loss=0.4912, lr=0.0000266, metrics:accuracy:0.7546
+2019-11-16 14:54:42,059 - root - INFO - [Epoch 1 Batch 1050/3072] loss=0.4592, lr=0.0000266, metrics:accuracy:0.7553
+2019-11-16 14:54:51,681 - root - INFO - [Epoch 1 Batch 1060/3072] loss=0.4526, lr=0.0000265, metrics:accuracy:0.7559
+2019-11-16 14:55:01,256 - root - INFO - [Epoch 1 Batch 1070/3072] loss=0.5221, lr=0.0000265, metrics:accuracy:0.7564
+2019-11-16 14:55:10,728 - root - INFO - [Epoch 1 Batch 1080/3072] loss=0.4837, lr=0.0000265, metrics:accuracy:0.7570
+2019-11-16 14:55:20,252 - root - INFO - [Epoch 1 Batch 1090/3072] loss=0.4667, lr=0.0000265, metrics:accuracy:0.7575
+2019-11-16 14:55:29,825 - root - INFO - [Epoch 1 Batch 1100/3072] loss=0.4910, lr=0.0000264, metrics:accuracy:0.7580
+2019-11-16 14:55:39,363 - root - INFO - [Epoch 1 Batch 1110/3072] loss=0.4652, lr=0.0000264, metrics:accuracy:0.7585
+2019-11-16 14:55:49,017 - root - INFO - [Epoch 1 Batch 1120/3072] loss=0.5160, lr=0.0000264, metrics:accuracy:0.7588
+2019-11-16 14:55:58,487 - root - INFO - [Epoch 1 Batch 1130/3072] loss=0.4529, lr=0.0000263, metrics:accuracy:0.7593
+2019-11-16 14:56:08,290 - root - INFO - [Epoch 1 Batch 1140/3072] loss=0.4861, lr=0.0000263, metrics:accuracy:0.7598
+2019-11-16 14:56:18,108 - root - INFO - [Epoch 1 Batch 1150/3072] loss=0.4735, lr=0.0000263, metrics:accuracy:0.7603
+2019-11-16 14:56:27,771 - root - INFO - [Epoch 1 Batch 1160/3072] loss=0.4904, lr=0.0000262, metrics:accuracy:0.7607
+2019-11-16 14:56:37,258 - root - INFO - [Epoch 1 Batch 1170/3072] loss=0.5181, lr=0.0000262, metrics:accuracy:0.7610
+2019-11-16 14:56:46,874 - root - INFO - [Epoch 1 Batch 1180/3072] loss=0.4771, lr=0.0000262, metrics:accuracy:0.7614
+2019-11-16 14:56:56,269 - root - INFO - [Epoch 1 Batch 1190/3072] loss=0.4461, lr=0.0000261, metrics:accuracy:0.7619
+2019-11-16 14:57:05,856 - root - INFO - [Epoch 1 Batch 1200/3072] loss=0.4911, lr=0.0000261, metrics:accuracy:0.7623
+2019-11-16 14:57:15,578 - root - INFO - [Epoch 1 Batch 1210/3072] loss=0.4525, lr=0.0000261, metrics:accuracy:0.7628
+2019-11-16 14:57:25,111 - root - INFO - [Epoch 1 Batch 1220/3072] loss=0.4542, lr=0.0000260, metrics:accuracy:0.7633
+2019-11-16 14:57:34,545 - root - INFO - [Epoch 1 Batch 1230/3072] loss=0.4932, lr=0.0000260, metrics:accuracy:0.7636
+2019-11-16 14:57:44,015 - root - INFO - [Epoch 1 Batch 1240/3072] loss=0.4643, lr=0.0000260, metrics:accuracy:0.7641
+2019-11-16 14:57:53,612 - root - INFO - [Epoch 1 Batch 1250/3072] loss=0.4828, lr=0.0000259, metrics:accuracy:0.7645
+2019-11-16 14:58:03,102 - root - INFO - [Epoch 1 Batch 1260/3072] loss=0.4839, lr=0.0000259, metrics:accuracy:0.7648
+2019-11-16 14:58:12,576 - root - INFO - [Epoch 1 Batch 1270/3072] loss=0.4716, lr=0.0000259, metrics:accuracy:0.7653
+2019-11-16 14:58:22,220 - root - INFO - [Epoch 1 Batch 1280/3072] loss=0.4251, lr=0.0000258, metrics:accuracy:0.7659
+2019-11-16 14:58:31,885 - root - INFO - [Epoch 1 Batch 1290/3072] loss=0.4904, lr=0.0000258, metrics:accuracy:0.7662
+2019-11-16 14:58:41,471 - root - INFO - [Epoch 1 Batch 1300/3072] loss=0.4578, lr=0.0000258, metrics:accuracy:0.7667
+2019-11-16 14:58:50,985 - root - INFO - [Epoch 1 Batch 1310/3072] loss=0.4750, lr=0.0000257, metrics:accuracy:0.7671
+2019-11-16 14:59:00,587 - root - INFO - [Epoch 1 Batch 1320/3072] loss=0.4654, lr=0.0000257, metrics:accuracy:0.7675
+2019-11-16 14:59:10,158 - root - INFO - [Epoch 1 Batch 1330/3072] loss=0.4697, lr=0.0000257, metrics:accuracy:0.7678
+2019-11-16 14:59:19,665 - root - INFO - [Epoch 1 Batch 1340/3072] loss=0.5075, lr=0.0000256, metrics:accuracy:0.7681
+2019-11-16 14:59:29,095 - root - INFO - [Epoch 1 Batch 1350/3072] loss=0.4879, lr=0.0000256, metrics:accuracy:0.7683
+2019-11-16 14:59:38,821 - root - INFO - [Epoch 1 Batch 1360/3072] loss=0.4670, lr=0.0000256, metrics:accuracy:0.7686
+2019-11-16 14:59:48,549 - root - INFO - [Epoch 1 Batch 1370/3072] loss=0.4855, lr=0.0000255, metrics:accuracy:0.7689
+2019-11-16 14:59:58,270 - root - INFO - [Epoch 1 Batch 1380/3072] loss=0.4389, lr=0.0000255, metrics:accuracy:0.7694
+2019-11-16 15:00:07,871 - root - INFO - [Epoch 1 Batch 1390/3072] loss=0.5083, lr=0.0000255, metrics:accuracy:0.7696
+2019-11-16 15:00:17,649 - root - INFO - [Epoch 1 Batch 1400/3072] loss=0.4487, lr=0.0000254, metrics:accuracy:0.7701
+2019-11-16 15:00:27,351 - root - INFO - [Epoch 1 Batch 1410/3072] loss=0.4301, lr=0.0000254, metrics:accuracy:0.7705
+2019-11-16 15:00:36,736 - root - INFO - [Epoch 1 Batch 1420/3072] loss=0.4849, lr=0.0000254, metrics:accuracy:0.7708
+2019-11-16 15:00:46,117 - root - INFO - [Epoch 1 Batch 1430/3072] loss=0.4975, lr=0.0000253, metrics:accuracy:0.7710
+2019-11-16 15:00:55,611 - root - INFO - [Epoch 1 Batch 1440/3072] loss=0.4752, lr=0.0000253, metrics:accuracy:0.7714
+2019-11-16 15:01:05,119 - root - INFO - [Epoch 1 Batch 1450/3072] loss=0.4599, lr=0.0000253, metrics:accuracy:0.7718
+2019-11-16 15:01:14,741 - root - INFO - [Epoch 1 Batch 1460/3072] loss=0.4729, lr=0.0000252, metrics:accuracy:0.7721
+2019-11-16 15:01:24,565 - root - INFO - [Epoch 1 Batch 1470/3072] loss=0.4440, lr=0.0000252, metrics:accuracy:0.7724
+2019-11-16 15:01:34,044 - root - INFO - [Epoch 1 Batch 1480/3072] loss=0.4690, lr=0.0000252, metrics:accuracy:0.7728
+2019-11-16 15:01:43,547 - root - INFO - [Epoch 1 Batch 1490/3072] loss=0.4351, lr=0.0000251, metrics:accuracy:0.7732
+2019-11-16 15:01:53,010 - root - INFO - [Epoch 1 Batch 1500/3072] loss=0.4525, lr=0.0000251, metrics:accuracy:0.7735
+2019-11-16 15:02:02,419 - root - INFO - [Epoch 1 Batch 1510/3072] loss=0.4551, lr=0.0000251, metrics:accuracy:0.7739
+2019-11-16 15:02:11,924 - root - INFO - [Epoch 1 Batch 1520/3072] loss=0.4766, lr=0.0000250, metrics:accuracy:0.7741
+2019-11-16 15:02:21,293 - root - INFO - [Epoch 1 Batch 1530/3072] loss=0.4576, lr=0.0000250, metrics:accuracy:0.7745
+2019-11-16 15:02:30,876 - root - INFO - [Epoch 1 Batch 1540/3072] loss=0.4658, lr=0.0000250, metrics:accuracy:0.7747
+2019-11-16 15:02:40,292 - root - INFO - [Epoch 1 Batch 1550/3072] loss=0.4777, lr=0.0000250, metrics:accuracy:0.7749
+2019-11-16 15:02:49,691 - root - INFO - [Epoch 1 Batch 1560/3072] loss=0.4521, lr=0.0000249, metrics:accuracy:0.7752
+2019-11-16 15:02:59,112 - root - INFO - [Epoch 1 Batch 1570/3072] loss=0.4517, lr=0.0000249, metrics:accuracy:0.7756
+2019-11-16 15:03:08,614 - root - INFO - [Epoch 1 Batch 1580/3072] loss=0.4838, lr=0.0000249, metrics:accuracy:0.7758
+2019-11-16 15:03:18,051 - root - INFO - [Epoch 1 Batch 1590/3072] loss=0.4556, lr=0.0000248, metrics:accuracy:0.7761
+2019-11-16 15:03:27,525 - root - INFO - [Epoch 1 Batch 1600/3072] loss=0.4363, lr=0.0000248, metrics:accuracy:0.7764
+2019-11-16 15:03:37,259 - root - INFO - [Epoch 1 Batch 1610/3072] loss=0.4671, lr=0.0000248, metrics:accuracy:0.7767
+2019-11-16 15:03:46,895 - root - INFO - [Epoch 1 Batch 1620/3072] loss=0.4404, lr=0.0000247, metrics:accuracy:0.7771
+2019-11-16 15:03:56,647 - root - INFO - [Epoch 1 Batch 1630/3072] loss=0.4303, lr=0.0000247, metrics:accuracy:0.7774
+2019-11-16 15:04:06,204 - root - INFO - [Epoch 1 Batch 1640/3072] loss=0.4994, lr=0.0000247, metrics:accuracy:0.7776
+2019-11-16 15:04:15,744 - root - INFO - [Epoch 1 Batch 1650/3072] loss=0.4570, lr=0.0000246, metrics:accuracy:0.7779
+2019-11-16 15:04:25,423 - root - INFO - [Epoch 1 Batch 1660/3072] loss=0.4334, lr=0.0000246, metrics:accuracy:0.7782
+2019-11-16 15:04:34,819 - root - INFO - [Epoch 1 Batch 1670/3072] loss=0.5210, lr=0.0000246, metrics:accuracy:0.7784
+2019-11-16 15:04:44,379 - root - INFO - [Epoch 1 Batch 1680/3072] loss=0.4889, lr=0.0000245, metrics:accuracy:0.7786
+2019-11-16 15:04:53,785 - root - INFO - [Epoch 1 Batch 1690/3072] loss=0.4469, lr=0.0000245, metrics:accuracy:0.7789
+2019-11-16 15:05:03,211 - root - INFO - [Epoch 1 Batch 1700/3072] loss=0.4469, lr=0.0000245, metrics:accuracy:0.7792
+2019-11-16 15:05:12,692 - root - INFO - [Epoch 1 Batch 1710/3072] loss=0.4650, lr=0.0000244, metrics:accuracy:0.7794
+2019-11-16 15:05:22,348 - root - INFO - [Epoch 1 Batch 1720/3072] loss=0.4704, lr=0.0000244, metrics:accuracy:0.7797
+2019-11-16 15:05:31,963 - root - INFO - [Epoch 1 Batch 1730/3072] loss=0.4776, lr=0.0000244, metrics:accuracy:0.7798
+2019-11-16 15:05:41,384 - root - INFO - [Epoch 1 Batch 1740/3072] loss=0.4475, lr=0.0000243, metrics:accuracy:0.7801
+2019-11-16 15:05:50,864 - root - INFO - [Epoch 1 Batch 1750/3072] loss=0.4316, lr=0.0000243, metrics:accuracy:0.7804
+2019-11-16 15:06:00,476 - root - INFO - [Epoch 1 Batch 1760/3072] loss=0.4121, lr=0.0000243, metrics:accuracy:0.7807
+2019-11-16 15:06:10,145 - root - INFO - [Epoch 1 Batch 1770/3072] loss=0.4654, lr=0.0000242, metrics:accuracy:0.7809
+2019-11-16 15:06:19,688 - root - INFO - [Epoch 1 Batch 1780/3072] loss=0.4366, lr=0.0000242, metrics:accuracy:0.7812
+2019-11-16 15:06:29,131 - root - INFO - [Epoch 1 Batch 1790/3072] loss=0.4641, lr=0.0000242, metrics:accuracy:0.7813
+2019-11-16 15:06:38,628 - root - INFO - [Epoch 1 Batch 1800/3072] loss=0.4553, lr=0.0000241, metrics:accuracy:0.7815
+2019-11-16 15:06:48,155 - root - INFO - [Epoch 1 Batch 1810/3072] loss=0.4647, lr=0.0000241, metrics:accuracy:0.7817
+2019-11-16 15:06:57,834 - root - INFO - [Epoch 1 Batch 1820/3072] loss=0.4364, lr=0.0000241, metrics:accuracy:0.7820
+2019-11-16 15:07:07,540 - root - INFO - [Epoch 1 Batch 1830/3072] loss=0.4315, lr=0.0000240, metrics:accuracy:0.7822
+2019-11-16 15:07:17,151 - root - INFO - [Epoch 1 Batch 1840/3072] loss=0.4223, lr=0.0000240, metrics:accuracy:0.7825
+2019-11-16 15:07:26,624 - root - INFO - [Epoch 1 Batch 1850/3072] loss=0.4051, lr=0.0000240, metrics:accuracy:0.7828
+2019-11-16 15:07:36,241 - root - INFO - [Epoch 1 Batch 1860/3072] loss=0.4995, lr=0.0000239, metrics:accuracy:0.7829
+2019-11-16 15:07:46,092 - root - INFO - [Epoch 1 Batch 1870/3072] loss=0.4309, lr=0.0000239, metrics:accuracy:0.7831
+2019-11-16 15:07:55,758 - root - INFO - [Epoch 1 Batch 1880/3072] loss=0.4570, lr=0.0000239, metrics:accuracy:0.7833
+2019-11-16 15:08:05,362 - root - INFO - [Epoch 1 Batch 1890/3072] loss=0.4091, lr=0.0000238, metrics:accuracy:0.7836
+2019-11-16 15:08:14,803 - root - INFO - [Epoch 1 Batch 1900/3072] loss=0.4512, lr=0.0000238, metrics:accuracy:0.7838
+2019-11-16 15:08:24,450 - root - INFO - [Epoch 1 Batch 1910/3072] loss=0.4373, lr=0.0000238, metrics:accuracy:0.7840
+2019-11-16 15:08:33,900 - root - INFO - [Epoch 1 Batch 1920/3072] loss=0.4350, lr=0.0000237, metrics:accuracy:0.7843
+2019-11-16 15:08:43,413 - root - INFO - [Epoch 1 Batch 1930/3072] loss=0.4500, lr=0.0000237, metrics:accuracy:0.7845
+2019-11-16 15:08:52,991 - root - INFO - [Epoch 1 Batch 1940/3072] loss=0.4418, lr=0.0000237, metrics:accuracy:0.7847
+2019-11-16 15:09:02,605 - root - INFO - [Epoch 1 Batch 1950/3072] loss=0.4335, lr=0.0000236, metrics:accuracy:0.7850
+2019-11-16 15:09:12,169 - root - INFO - [Epoch 1 Batch 1960/3072] loss=0.4930, lr=0.0000236, metrics:accuracy:0.7851
+2019-11-16 15:09:22,025 - root - INFO - [Epoch 1 Batch 1970/3072] loss=0.4640, lr=0.0000236, metrics:accuracy:0.7853
+2019-11-16 15:09:31,621 - root - INFO - [Epoch 1 Batch 1980/3072] loss=0.4438, lr=0.0000235, metrics:accuracy:0.7856
+2019-11-16 15:09:41,337 - root - INFO - [Epoch 1 Batch 1990/3072] loss=0.4097, lr=0.0000235, metrics:accuracy:0.7858
+2019-11-16 15:09:50,899 - root - INFO - [Epoch 1 Batch 2000/3072] loss=0.4310, lr=0.0000235, metrics:accuracy:0.7861
+2019-11-16 15:10:00,525 - root - INFO - [Epoch 1 Batch 2010/3072] loss=0.4248, lr=0.0000235, metrics:accuracy:0.7863
+2019-11-16 15:10:10,250 - root - INFO - [Epoch 1 Batch 2020/3072] loss=0.4370, lr=0.0000234, metrics:accuracy:0.7866
+2019-11-16 15:10:19,815 - root - INFO - [Epoch 1 Batch 2030/3072] loss=0.4374, lr=0.0000234, metrics:accuracy:0.7868
+2019-11-16 15:10:29,546 - root - INFO - [Epoch 1 Batch 2040/3072] loss=0.4407, lr=0.0000234, metrics:accuracy:0.7870
+2019-11-16 15:10:39,047 - root - INFO - [Epoch 1 Batch 2050/3072] loss=0.4459, lr=0.0000233, metrics:accuracy:0.7871
+2019-11-16 15:10:48,539 - root - INFO - [Epoch 1 Batch 2060/3072] loss=0.4260, lr=0.0000233, metrics:accuracy:0.7873
+2019-11-16 15:10:58,213 - root - INFO - [Epoch 1 Batch 2070/3072] loss=0.4316, lr=0.0000233, metrics:accuracy:0.7876
+2019-11-16 15:11:07,752 - root - INFO - [Epoch 1 Batch 2080/3072] loss=0.3908, lr=0.0000232, metrics:accuracy:0.7879
+2019-11-16 15:11:17,230 - root - INFO - [Epoch 1 Batch 2090/3072] loss=0.4650, lr=0.0000232, metrics:accuracy:0.7881
+2019-11-16 15:11:26,813 - root - INFO - [Epoch 1 Batch 2100/3072] loss=0.4064, lr=0.0000232, metrics:accuracy:0.7883
+2019-11-16 15:11:36,364 - root - INFO - [Epoch 1 Batch 2110/3072] loss=0.4847, lr=0.0000231, metrics:accuracy:0.7885
+2019-11-16 15:11:46,013 - root - INFO - [Epoch 1 Batch 2120/3072] loss=0.4331, lr=0.0000231, metrics:accuracy:0.7887
+2019-11-16 15:11:55,414 - root - INFO - [Epoch 1 Batch 2130/3072] loss=0.4584, lr=0.0000231, metrics:accuracy:0.7888
+2019-11-16 15:12:04,931 - root - INFO - [Epoch 1 Batch 2140/3072] loss=0.4128, lr=0.0000230, metrics:accuracy:0.7891
+2019-11-16 15:12:14,508 - root - INFO - [Epoch 1 Batch 2150/3072] loss=0.4409, lr=0.0000230, metrics:accuracy:0.7893
+2019-11-16 15:12:24,133 - root - INFO - [Epoch 1 Batch 2160/3072] loss=0.4098, lr=0.0000230, metrics:accuracy:0.7895
+2019-11-16 15:12:33,730 - root - INFO - [Epoch 1 Batch 2170/3072] loss=0.4211, lr=0.0000229, metrics:accuracy:0.7897
+2019-11-16 15:12:43,213 - root - INFO - [Epoch 1 Batch 2180/3072] loss=0.4570, lr=0.0000229, metrics:accuracy:0.7898
+2019-11-16 15:12:52,857 - root - INFO - [Epoch 1 Batch 2190/3072] loss=0.4224, lr=0.0000229, metrics:accuracy:0.7900
+2019-11-16 15:13:02,443 - root - INFO - [Epoch 1 Batch 2200/3072] loss=0.4432, lr=0.0000228, metrics:accuracy:0.7902
+2019-11-16 15:13:11,951 - root - INFO - [Epoch 1 Batch 2210/3072] loss=0.4266, lr=0.0000228, metrics:accuracy:0.7904
+2019-11-16 15:13:21,520 - root - INFO - [Epoch 1 Batch 2220/3072] loss=0.4296, lr=0.0000228, metrics:accuracy:0.7906
+2019-11-16 15:13:31,191 - root - INFO - [Epoch 1 Batch 2230/3072] loss=0.4383, lr=0.0000227, metrics:accuracy:0.7908
+2019-11-16 15:13:40,707 - root - INFO - [Epoch 1 Batch 2240/3072] loss=0.4100, lr=0.0000227, metrics:accuracy:0.7910
+2019-11-16 15:13:50,097 - root - INFO - [Epoch 1 Batch 2250/3072] loss=0.4368, lr=0.0000227, metrics:accuracy:0.7911
+2019-11-16 15:14:00,187 - root - INFO - [Epoch 1 Batch 2260/3072] loss=0.4480, lr=0.0000226, metrics:accuracy:0.7913
+2019-11-16 15:14:10,051 - root - INFO - [Epoch 1 Batch 2270/3072] loss=0.4281, lr=0.0000226, metrics:accuracy:0.7915
+2019-11-16 15:14:19,735 - root - INFO - [Epoch 1 Batch 2280/3072] loss=0.4551, lr=0.0000226, metrics:accuracy:0.7916
+2019-11-16 15:14:29,393 - root - INFO - [Epoch 1 Batch 2290/3072] loss=0.4407, lr=0.0000225, metrics:accuracy:0.7918
+2019-11-16 15:14:39,140 - root - INFO - [Epoch 1 Batch 2300/3072] loss=0.4322, lr=0.0000225, metrics:accuracy:0.7920
+2019-11-16 15:14:48,636 - root - INFO - [Epoch 1 Batch 2310/3072] loss=0.3965, lr=0.0000225, metrics:accuracy:0.7922
+2019-11-16 15:14:58,272 - root - INFO - [Epoch 1 Batch 2320/3072] loss=0.4562, lr=0.0000224, metrics:accuracy:0.7923
+2019-11-16 15:15:07,957 - root - INFO - [Epoch 1 Batch 2330/3072] loss=0.4058, lr=0.0000224, metrics:accuracy:0.7925
+2019-11-16 15:15:17,433 - root - INFO - [Epoch 1 Batch 2340/3072] loss=0.4500, lr=0.0000224, metrics:accuracy:0.7927
+2019-11-16 15:15:26,875 - root - INFO - [Epoch 1 Batch 2350/3072] loss=0.4020, lr=0.0000223, metrics:accuracy:0.7929
+2019-11-16 15:15:36,310 - root - INFO - [Epoch 1 Batch 2360/3072] loss=0.4415, lr=0.0000223, metrics:accuracy:0.7931
+2019-11-16 15:15:45,710 - root - INFO - [Epoch 1 Batch 2370/3072] loss=0.4392, lr=0.0000223, metrics:accuracy:0.7932
+2019-11-16 15:15:55,339 - root - INFO - [Epoch 1 Batch 2380/3072] loss=0.4348, lr=0.0000222, metrics:accuracy:0.7933
+2019-11-16 15:16:05,134 - root - INFO - [Epoch 1 Batch 2390/3072] loss=0.4063, lr=0.0000222, metrics:accuracy:0.7935
+2019-11-16 15:16:14,803 - root - INFO - [Epoch 1 Batch 2400/3072] loss=0.4866, lr=0.0000222, metrics:accuracy:0.7936
+2019-11-16 15:16:24,485 - root - INFO - [Epoch 1 Batch 2410/3072] loss=0.4409, lr=0.0000221, metrics:accuracy:0.7938
+2019-11-16 15:16:34,082 - root - INFO - [Epoch 1 Batch 2420/3072] loss=0.4274, lr=0.0000221, metrics:accuracy:0.7939
+2019-11-16 15:16:43,523 - root - INFO - [Epoch 1 Batch 2430/3072] loss=0.4401, lr=0.0000221, metrics:accuracy:0.7941
+2019-11-16 15:16:53,082 - root - INFO - [Epoch 1 Batch 2440/3072] loss=0.4568, lr=0.0000220, metrics:accuracy:0.7942
+2019-11-16 15:17:02,624 - root - INFO - [Epoch 1 Batch 2450/3072] loss=0.4488, lr=0.0000220, metrics:accuracy:0.7943
+2019-11-16 15:17:12,106 - root - INFO - [Epoch 1 Batch 2460/3072] loss=0.4321, lr=0.0000220, metrics:accuracy:0.7945
+2019-11-16 15:17:21,671 - root - INFO - [Epoch 1 Batch 2470/3072] loss=0.4023, lr=0.0000220, metrics:accuracy:0.7947
+2019-11-16 15:17:31,387 - root - INFO - [Epoch 1 Batch 2480/3072] loss=0.4489, lr=0.0000219, metrics:accuracy:0.7948
+2019-11-16 15:17:40,925 - root - INFO - [Epoch 1 Batch 2490/3072] loss=0.4307, lr=0.0000219, metrics:accuracy:0.7949
+2019-11-16 15:17:50,461 - root - INFO - [Epoch 1 Batch 2500/3072] loss=0.4253, lr=0.0000219, metrics:accuracy:0.7950
+2019-11-16 15:18:00,004 - root - INFO - [Epoch 1 Batch 2510/3072] loss=0.4111, lr=0.0000218, metrics:accuracy:0.7952
+2019-11-16 15:18:09,574 - root - INFO - [Epoch 1 Batch 2520/3072] loss=0.4107, lr=0.0000218, metrics:accuracy:0.7954
+2019-11-16 15:18:18,992 - root - INFO - [Epoch 1 Batch 2530/3072] loss=0.4188, lr=0.0000218, metrics:accuracy:0.7955
+2019-11-16 15:18:28,674 - root - INFO - [Epoch 1 Batch 2540/3072] loss=0.4438, lr=0.0000217, metrics:accuracy:0.7957
+2019-11-16 15:18:38,312 - root - INFO - [Epoch 1 Batch 2550/3072] loss=0.4003, lr=0.0000217, metrics:accuracy:0.7959
+2019-11-16 15:18:47,761 - root - INFO - [Epoch 1 Batch 2560/3072] loss=0.4403, lr=0.0000217, metrics:accuracy:0.7960
+2019-11-16 15:18:57,312 - root - INFO - [Epoch 1 Batch 2570/3072] loss=0.4161, lr=0.0000216, metrics:accuracy:0.7961
+2019-11-16 15:19:06,890 - root - INFO - [Epoch 1 Batch 2580/3072] loss=0.4442, lr=0.0000216, metrics:accuracy:0.7962
+2019-11-16 15:19:16,692 - root - INFO - [Epoch 1 Batch 2590/3072] loss=0.4153, lr=0.0000216, metrics:accuracy:0.7964
+2019-11-16 15:19:26,143 - root - INFO - [Epoch 1 Batch 2600/3072] loss=0.4040, lr=0.0000215, metrics:accuracy:0.7966
+2019-11-16 15:19:35,606 - root - INFO - [Epoch 1 Batch 2610/3072] loss=0.3915, lr=0.0000215, metrics:accuracy:0.7968
+2019-11-16 15:19:45,332 - root - INFO - [Epoch 1 Batch 2620/3072] loss=0.4177, lr=0.0000215, metrics:accuracy:0.7970
+2019-11-16 15:19:54,807 - root - INFO - [Epoch 1 Batch 2630/3072] loss=0.4373, lr=0.0000214, metrics:accuracy:0.7971
+2019-11-16 15:20:04,379 - root - INFO - [Epoch 1 Batch 2640/3072] loss=0.4617, lr=0.0000214, metrics:accuracy:0.7972
+2019-11-16 15:20:13,998 - root - INFO - [Epoch 1 Batch 2650/3072] loss=0.4195, lr=0.0000214, metrics:accuracy:0.7973
+2019-11-16 15:20:23,428 - root - INFO - [Epoch 1 Batch 2660/3072] loss=0.4114, lr=0.0000213, metrics:accuracy:0.7975
+2019-11-16 15:20:33,125 - root - INFO - [Epoch 1 Batch 2670/3072] loss=0.4098, lr=0.0000213, metrics:accuracy:0.7977
+2019-11-16 15:20:42,791 - root - INFO - [Epoch 1 Batch 2680/3072] loss=0.4347, lr=0.0000213, metrics:accuracy:0.7979
+2019-11-16 15:20:52,465 - root - INFO - [Epoch 1 Batch 2690/3072] loss=0.4345, lr=0.0000212, metrics:accuracy:0.7980
+2019-11-16 15:21:02,071 - root - INFO - [Epoch 1 Batch 2700/3072] loss=0.4456, lr=0.0000212, metrics:accuracy:0.7981
+2019-11-16 15:21:11,695 - root - INFO - [Epoch 1 Batch 2710/3072] loss=0.3949, lr=0.0000212, metrics:accuracy:0.7983
+2019-11-16 15:21:21,185 - root - INFO - [Epoch 1 Batch 2720/3072] loss=0.4156, lr=0.0000211, metrics:accuracy:0.7985
+2019-11-16 15:21:30,701 - root - INFO - [Epoch 1 Batch 2730/3072] loss=0.4036, lr=0.0000211, metrics:accuracy:0.7987
+2019-11-16 15:21:40,108 - root - INFO - [Epoch 1 Batch 2740/3072] loss=0.3734, lr=0.0000211, metrics:accuracy:0.7989
+2019-11-16 15:21:49,502 - root - INFO - [Epoch 1 Batch 2750/3072] loss=0.4548, lr=0.0000210, metrics:accuracy:0.7989
+2019-11-16 15:21:59,050 - root - INFO - [Epoch 1 Batch 2760/3072] loss=0.4022, lr=0.0000210, metrics:accuracy:0.7991
+2019-11-16 15:22:08,591 - root - INFO - [Epoch 1 Batch 2770/3072] loss=0.4140, lr=0.0000210, metrics:accuracy:0.7993
+2019-11-16 15:22:18,022 - root - INFO - [Epoch 1 Batch 2780/3072] loss=0.4011, lr=0.0000209, metrics:accuracy:0.7994
+2019-11-16 15:22:27,537 - root - INFO - [Epoch 1 Batch 2790/3072] loss=0.4170, lr=0.0000209, metrics:accuracy:0.7996
+2019-11-16 15:22:36,997 - root - INFO - [Epoch 1 Batch 2800/3072] loss=0.4237, lr=0.0000209, metrics:accuracy:0.7997
+2019-11-16 15:22:46,472 - root - INFO - [Epoch 1 Batch 2810/3072] loss=0.4267, lr=0.0000208, metrics:accuracy:0.7998
+2019-11-16 15:22:55,890 - root - INFO - [Epoch 1 Batch 2820/3072] loss=0.3933, lr=0.0000208, metrics:accuracy:0.8000
+2019-11-16 15:23:05,468 - root - INFO - [Epoch 1 Batch 2830/3072] loss=0.4292, lr=0.0000208, metrics:accuracy:0.8001
+2019-11-16 15:23:14,980 - root - INFO - [Epoch 1 Batch 2840/3072] loss=0.4168, lr=0.0000207, metrics:accuracy:0.8003
+2019-11-16 15:23:24,546 - root - INFO - [Epoch 1 Batch 2850/3072] loss=0.4404, lr=0.0000207, metrics:accuracy:0.8004
+2019-11-16 15:23:34,049 - root - INFO - [Epoch 1 Batch 2860/3072] loss=0.3858, lr=0.0000207, metrics:accuracy:0.8006
+2019-11-16 15:23:43,687 - root - INFO - [Epoch 1 Batch 2870/3072] loss=0.4091, lr=0.0000206, metrics:accuracy:0.8007
+2019-11-16 15:23:53,219 - root - INFO - [Epoch 1 Batch 2880/3072] loss=0.4286, lr=0.0000206, metrics:accuracy:0.8008
+2019-11-16 15:24:02,716 - root - INFO - [Epoch 1 Batch 2890/3072] loss=0.4198, lr=0.0000206, metrics:accuracy:0.8009
+2019-11-16 15:24:12,398 - root - INFO - [Epoch 1 Batch 2900/3072] loss=0.4034, lr=0.0000205, metrics:accuracy:0.8010
+2019-11-16 15:24:22,190 - root - INFO - [Epoch 1 Batch 2910/3072] loss=0.4238, lr=0.0000205, metrics:accuracy:0.8012
+2019-11-16 15:24:31,907 - root - INFO - [Epoch 1 Batch 2920/3072] loss=0.4391, lr=0.0000205, metrics:accuracy:0.8013
+2019-11-16 15:24:41,608 - root - INFO - [Epoch 1 Batch 2930/3072] loss=0.4119, lr=0.0000205, metrics:accuracy:0.8014
+2019-11-16 15:24:51,174 - root - INFO - [Epoch 1 Batch 2940/3072] loss=0.3808, lr=0.0000204, metrics:accuracy:0.8016
+2019-11-16 15:25:00,843 - root - INFO - [Epoch 1 Batch 2950/3072] loss=0.4314, lr=0.0000204, metrics:accuracy:0.8017
+2019-11-16 15:25:10,482 - root - INFO - [Epoch 1 Batch 2960/3072] loss=0.4254, lr=0.0000204, metrics:accuracy:0.8018
+2019-11-16 15:25:20,193 - root - INFO - [Epoch 1 Batch 2970/3072] loss=0.3734, lr=0.0000203, metrics:accuracy:0.8020
+2019-11-16 15:25:30,010 - root - INFO - [Epoch 1 Batch 2980/3072] loss=0.4470, lr=0.0000203, metrics:accuracy:0.8022
+2019-11-16 15:25:39,561 - root - INFO - [Epoch 1 Batch 2990/3072] loss=0.3767, lr=0.0000203, metrics:accuracy:0.8023
+2019-11-16 15:25:48,962 - root - INFO - [Epoch 1 Batch 3000/3072] loss=0.4386, lr=0.0000202, metrics:accuracy:0.8024
+2019-11-16 15:25:58,603 - root - INFO - [Epoch 1 Batch 3010/3072] loss=0.4364, lr=0.0000202, metrics:accuracy:0.8025
+2019-11-16 15:26:08,496 - root - INFO - [Epoch 1 Batch 3020/3072] loss=0.4369, lr=0.0000202, metrics:accuracy:0.8026
+2019-11-16 15:26:18,259 - root - INFO - [Epoch 1 Batch 3030/3072] loss=0.4089, lr=0.0000201, metrics:accuracy:0.8027
+2019-11-16 15:26:27,886 - root - INFO - [Epoch 1 Batch 3040/3072] loss=0.4296, lr=0.0000201, metrics:accuracy:0.8028
+2019-11-16 15:26:37,563 - root - INFO - [Epoch 1 Batch 3050/3072] loss=0.4060, lr=0.0000201, metrics:accuracy:0.8029
+2019-11-16 15:26:47,214 - root - INFO - [Epoch 1 Batch 3060/3072] loss=0.3845, lr=0.0000200, metrics:accuracy:0.8031
+2019-11-16 15:26:56,744 - root - INFO - [Epoch 1 Batch 3070/3072] loss=0.3989, lr=0.0000200, metrics:accuracy:0.8032
+2019-11-16 15:26:58,613 - root - INFO - Now we are doing evaluation on dev_matched with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2019-11-16 15:27:00,285 - root - INFO - [Batch 10/307] loss=3.1990, metrics:accuracy:0.8406
+2019-11-16 15:27:01,938 - root - INFO - [Batch 20/307] loss=3.0995, metrics:accuracy:0.8594
+2019-11-16 15:27:03,587 - root - INFO - [Batch 30/307] loss=3.2257, metrics:accuracy:0.8594
+2019-11-16 15:27:05,230 - root - INFO - [Batch 40/307] loss=2.9807, metrics:accuracy:0.8594
+2019-11-16 15:27:06,878 - root - INFO - [Batch 50/307] loss=3.3542, metrics:accuracy:0.8569
+2019-11-16 15:27:08,524 - root - INFO - [Batch 60/307] loss=2.8984, metrics:accuracy:0.8583
+2019-11-16 15:27:10,168 - root - INFO - [Batch 70/307] loss=2.7075, metrics:accuracy:0.8589
+2019-11-16 15:27:11,810 - root - INFO - [Batch 80/307] loss=3.0204, metrics:accuracy:0.8566
+2019-11-16 15:27:13,455 - root - INFO - [Batch 90/307] loss=3.1374, metrics:accuracy:0.8573
+2019-11-16 15:27:15,119 - root - INFO - [Batch 100/307] loss=2.8542, metrics:accuracy:0.8588
+2019-11-16 15:27:16,917 - root - INFO - [Batch 110/307] loss=3.4286, metrics:accuracy:0.8571
+2019-11-16 15:27:18,708 - root - INFO - [Batch 120/307] loss=2.6906, metrics:accuracy:0.8607
+2019-11-16 15:27:20,502 - root - INFO - [Batch 130/307] loss=3.1131, metrics:accuracy:0.8603
+2019-11-16 15:27:22,276 - root - INFO - [Batch 140/307] loss=2.9545, metrics:accuracy:0.8609
+2019-11-16 15:27:24,041 - root - INFO - [Batch 150/307] loss=2.6275, metrics:accuracy:0.8608
+2019-11-16 15:27:25,808 - root - INFO - [Batch 160/307] loss=3.6153, metrics:accuracy:0.8578
+2019-11-16 15:27:27,573 - root - INFO - [Batch 170/307] loss=3.0746, metrics:accuracy:0.8572
+2019-11-16 15:27:29,338 - root - INFO - [Batch 180/307] loss=2.7070, metrics:accuracy:0.8589
+2019-11-16 15:27:31,107 - root - INFO - [Batch 190/307] loss=3.0778, metrics:accuracy:0.8586
+2019-11-16 15:27:32,875 - root - INFO - [Batch 200/307] loss=2.6019, metrics:accuracy:0.8586
+2019-11-16 15:27:34,643 - root - INFO - [Batch 210/307] loss=3.3152, metrics:accuracy:0.8579
+2019-11-16 15:27:36,408 - root - INFO - [Batch 220/307] loss=2.7351, metrics:accuracy:0.8594
+2019-11-16 15:27:38,171 - root - INFO - [Batch 230/307] loss=2.5946, metrics:accuracy:0.8601
+2019-11-16 15:27:39,929 - root - INFO - [Batch 240/307] loss=3.3351, metrics:accuracy:0.8585
+2019-11-16 15:27:41,700 - root - INFO - [Batch 250/307] loss=3.7185, metrics:accuracy:0.8575
+2019-11-16 15:27:43,468 - root - INFO - [Batch 260/307] loss=3.7444, metrics:accuracy:0.8564
+2019-11-16 15:27:45,234 - root - INFO - [Batch 270/307] loss=2.9279, metrics:accuracy:0.8572
+2019-11-16 15:27:46,999 - root - INFO - [Batch 280/307] loss=3.0976, metrics:accuracy:0.8569
+2019-11-16 15:27:48,762 - root - INFO - [Batch 290/307] loss=3.3724, metrics:accuracy:0.8559
+2019-11-16 15:27:50,527 - root - INFO - [Batch 300/307] loss=2.6785, metrics:accuracy:0.8570
+2019-11-16 15:27:51,918 - root - INFO - validation metrics:accuracy:0.8570
+2019-11-16 15:27:51,919 - root - INFO - Time cost=53.31s, throughput=184.29 samples/s
+2019-11-16 15:27:51,919 - root - INFO - Now we are doing evaluation on dev_mismatched with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2019-11-16 15:27:53,664 - root - INFO - [Batch 10/308] loss=2.9757, metrics:accuracy:0.8469
+2019-11-16 15:27:55,409 - root - INFO - [Batch 20/308] loss=3.1845, metrics:accuracy:0.8484
+2019-11-16 15:27:57,175 - root - INFO - [Batch 30/308] loss=2.2638, metrics:accuracy:0.8625
+2019-11-16 15:27:58,952 - root - INFO - [Batch 40/308] loss=3.1639, metrics:accuracy:0.8656
+2019-11-16 15:28:00,709 - root - INFO - [Batch 50/308] loss=3.0124, metrics:accuracy:0.8625
+2019-11-16 15:28:02,341 - root - INFO - [Batch 60/308] loss=2.3928, metrics:accuracy:0.8651
+2019-11-16 15:28:03,959 - root - INFO - [Batch 70/308] loss=2.7270, metrics:accuracy:0.8652
+2019-11-16 15:28:05,582 - root - INFO - [Batch 80/308] loss=3.1551, metrics:accuracy:0.8621
+2019-11-16 15:28:07,201 - root - INFO - [Batch 90/308] loss=2.8518, metrics:accuracy:0.8625
+2019-11-16 15:28:08,815 - root - INFO - [Batch 100/308] loss=2.7642, metrics:accuracy:0.8619
+2019-11-16 15:28:10,440 - root - INFO - [Batch 110/308] loss=3.4440, metrics:accuracy:0.8605
+2019-11-16 15:28:12,057 - root - INFO - [Batch 120/308] loss=2.6714, metrics:accuracy:0.8612
+2019-11-16 15:28:13,685 - root - INFO - [Batch 130/308] loss=3.0485, metrics:accuracy:0.8608
+2019-11-16 15:28:15,301 - root - INFO - [Batch 140/308] loss=2.9475, metrics:accuracy:0.8607
+2019-11-16 15:28:16,919 - root - INFO - [Batch 150/308] loss=2.5934, metrics:accuracy:0.8627
+2019-11-16 15:28:18,536 - root - INFO - [Batch 160/308] loss=3.2861, metrics:accuracy:0.8623
+2019-11-16 15:28:20,158 - root - INFO - [Batch 170/308] loss=3.4801, metrics:accuracy:0.8603
+2019-11-16 15:28:21,778 - root - INFO - [Batch 180/308] loss=3.2136, metrics:accuracy:0.8601
+2019-11-16 15:28:23,398 - root - INFO - [Batch 190/308] loss=2.8324, metrics:accuracy:0.8607
+2019-11-16 15:28:25,009 - root - INFO - [Batch 200/308] loss=3.0292, metrics:accuracy:0.8609
+2019-11-16 15:28:26,626 - root - INFO - [Batch 210/308] loss=3.3258, metrics:accuracy:0.8609
+2019-11-16 15:28:28,238 - root - INFO - [Batch 220/308] loss=2.7608, metrics:accuracy:0.8615
+2019-11-16 15:28:29,854 - root - INFO - [Batch 230/308] loss=3.7131, metrics:accuracy:0.8596
+2019-11-16 15:28:31,472 - root - INFO - [Batch 240/308] loss=3.1147, metrics:accuracy:0.8598
+2019-11-16 15:28:33,080 - root - INFO - [Batch 250/308] loss=2.6655, metrics:accuracy:0.8596
+2019-11-16 15:28:34,687 - root - INFO - [Batch 260/308] loss=3.8847, metrics:accuracy:0.8579
+2019-11-16 15:28:36,441 - root - INFO - [Batch 270/308] loss=2.8878, metrics:accuracy:0.8583
+2019-11-16 15:28:38,063 - root - INFO - [Batch 280/308] loss=2.7855, metrics:accuracy:0.8588
+2019-11-16 15:28:39,743 - root - INFO - [Batch 290/308] loss=3.5696, metrics:accuracy:0.8577
+2019-11-16 15:28:41,429 - root - INFO - [Batch 300/308] loss=3.0149, metrics:accuracy:0.8572
+2019-11-16 15:28:42,778 - root - INFO - validation metrics:accuracy:0.8569
+2019-11-16 15:28:42,778 - root - INFO - Time cost=50.86s, throughput=193.79 samples/s
+2019-11-16 15:28:44,768 - root - INFO - params saved in: ./output_dir/model_xlnet_MNLI_0.params
+2019-11-16 15:28:44,770 - root - INFO - Time cost=3065.98s
+2019-11-16 15:28:54,990 - root - INFO - [Epoch 2 Batch 10/3072] loss=0.3396, lr=0.0000200, metrics:accuracy:0.8734
+2019-11-16 15:29:04,628 - root - INFO - [Epoch 2 Batch 20/3072] loss=0.3360, lr=0.0000199, metrics:accuracy:0.8742
+2019-11-16 15:29:14,280 - root - INFO - [Epoch 2 Batch 30/3072] loss=0.3470, lr=0.0000199, metrics:accuracy:0.8729
+2019-11-16 15:29:23,881 - root - INFO - [Epoch 2 Batch 40/3072] loss=0.3240, lr=0.0000199, metrics:accuracy:0.8739
+2019-11-16 15:29:33,487 - root - INFO - [Epoch 2 Batch 50/3072] loss=0.3362, lr=0.0000198, metrics:accuracy:0.8738
+2019-11-16 15:29:43,154 - root - INFO - [Epoch 2 Batch 60/3072] loss=0.3694, lr=0.0000198, metrics:accuracy:0.8709
+2019-11-16 15:29:52,783 - root - INFO - [Epoch 2 Batch 70/3072] loss=0.3437, lr=0.0000198, metrics:accuracy:0.8719
+2019-11-16 15:30:02,297 - root - INFO - [Epoch 2 Batch 80/3072] loss=0.3586, lr=0.0000197, metrics:accuracy:0.8711
+2019-11-16 15:30:12,000 - root - INFO - [Epoch 2 Batch 90/3072] loss=0.3270, lr=0.0000197, metrics:accuracy:0.8711
+2019-11-16 15:30:21,702 - root - INFO - [Epoch 2 Batch 100/3072] loss=0.3695, lr=0.0000197, metrics:accuracy:0.8703
+2019-11-16 15:30:31,496 - root - INFO - [Epoch 2 Batch 110/3072] loss=0.3619, lr=0.0000196, metrics:accuracy:0.8698
+2019-11-16 15:30:40,993 - root - INFO - [Epoch 2 Batch 120/3072] loss=0.3335, lr=0.0000196, metrics:accuracy:0.8700
+2019-11-16 15:30:50,532 - root - INFO - [Epoch 2 Batch 130/3072] loss=0.3251, lr=0.0000196, metrics:accuracy:0.8711
+2019-11-16 15:31:00,236 - root - INFO - [Epoch 2 Batch 140/3072] loss=0.3537, lr=0.0000195, metrics:accuracy:0.8709
+2019-11-16 15:31:09,825 - root - INFO - [Epoch 2 Batch 150/3072] loss=0.3189, lr=0.0000195, metrics:accuracy:0.8716
+2019-11-16 15:31:19,312 - root - INFO - [Epoch 2 Batch 160/3072] loss=0.3372, lr=0.0000195, metrics:accuracy:0.8721
+2019-11-16 15:31:28,773 - root - INFO - [Epoch 2 Batch 170/3072] loss=0.3293, lr=0.0000194, metrics:accuracy:0.8720
+2019-11-16 15:31:38,380 - root - INFO - [Epoch 2 Batch 180/3072] loss=0.3111, lr=0.0000194, metrics:accuracy:0.8723
+2019-11-16 15:31:47,999 - root - INFO - [Epoch 2 Batch 190/3072] loss=0.3494, lr=0.0000194, metrics:accuracy:0.8729
+2019-11-16 15:31:57,630 - root - INFO - [Epoch 2 Batch 200/3072] loss=0.3351, lr=0.0000193, metrics:accuracy:0.8734
+2019-11-16 15:32:07,317 - root - INFO - [Epoch 2 Batch 210/3072] loss=0.2893, lr=0.0000193, metrics:accuracy:0.8745
+2019-11-16 15:32:17,046 - root - INFO - [Epoch 2 Batch 220/3072] loss=0.3460, lr=0.0000193, metrics:accuracy:0.8744
+2019-11-16 15:32:26,636 - root - INFO - [Epoch 2 Batch 230/3072] loss=0.3543, lr=0.0000192, metrics:accuracy:0.8743
+2019-11-16 15:32:36,555 - root - INFO - [Epoch 2 Batch 240/3072] loss=0.3156, lr=0.0000192, metrics:accuracy:0.8746
+2019-11-16 15:32:46,371 - root - INFO - [Epoch 2 Batch 250/3072] loss=0.3444, lr=0.0000192, metrics:accuracy:0.8745
+2019-11-16 15:32:55,877 - root - INFO - [Epoch 2 Batch 260/3072] loss=0.3382, lr=0.0000191, metrics:accuracy:0.8744
+2019-11-16 15:33:05,360 - root - INFO - [Epoch 2 Batch 270/3072] loss=0.3412, lr=0.0000191, metrics:accuracy:0.8742
+2019-11-16 15:33:14,806 - root - INFO - [Epoch 2 Batch 280/3072] loss=0.3322, lr=0.0000191, metrics:accuracy:0.8742
+2019-11-16 15:33:24,357 - root - INFO - [Epoch 2 Batch 290/3072] loss=0.3689, lr=0.0000190, metrics:accuracy:0.8740
+2019-11-16 15:33:33,958 - root - INFO - [Epoch 2 Batch 300/3072] loss=0.3089, lr=0.0000190, metrics:accuracy:0.8743
+2019-11-16 15:33:43,534 - root - INFO - [Epoch 2 Batch 310/3072] loss=0.3237, lr=0.0000190, metrics:accuracy:0.8744
+2019-11-16 15:33:52,992 - root - INFO - [Epoch 2 Batch 320/3072] loss=0.3673, lr=0.0000189, metrics:accuracy:0.8741
+2019-11-16 15:34:02,643 - root - INFO - [Epoch 2 Batch 330/3072] loss=0.3234, lr=0.0000189, metrics:accuracy:0.8742
+2019-11-16 15:34:12,460 - root - INFO - [Epoch 2 Batch 340/3072] loss=0.3190, lr=0.0000189, metrics:accuracy:0.8742
+2019-11-16 15:34:22,264 - root - INFO - [Epoch 2 Batch 350/3072] loss=0.3269, lr=0.0000188, metrics:accuracy:0.8740
+2019-11-16 15:34:31,878 - root - INFO - [Epoch 2 Batch 360/3072] loss=0.3512, lr=0.0000188, metrics:accuracy:0.8738
+2019-11-16 15:34:41,385 - root - INFO - [Epoch 2 Batch 370/3072] loss=0.3523, lr=0.0000188, metrics:accuracy:0.8734
+2019-11-16 15:34:50,940 - root - INFO - [Epoch 2 Batch 380/3072] loss=0.3413, lr=0.0000188, metrics:accuracy:0.8733
+2019-11-16 15:35:00,437 - root - INFO - [Epoch 2 Batch 390/3072] loss=0.3796, lr=0.0000187, metrics:accuracy:0.8726
+2019-11-16 15:35:09,963 - root - INFO - [Epoch 2 Batch 400/3072] loss=0.3543, lr=0.0000187, metrics:accuracy:0.8723
+2019-11-16 15:35:19,755 - root - INFO - [Epoch 2 Batch 410/3072] loss=0.3435, lr=0.0000187, metrics:accuracy:0.8723
+2019-11-16 15:35:29,473 - root - INFO - [Epoch 2 Batch 420/3072] loss=0.3599, lr=0.0000186, metrics:accuracy:0.8718
+2019-11-16 15:35:39,453 - root - INFO - [Epoch 2 Batch 430/3072] loss=0.3821, lr=0.0000186, metrics:accuracy:0.8716
+2019-11-16 15:35:49,212 - root - INFO - [Epoch 2 Batch 440/3072] loss=0.3506, lr=0.0000186, metrics:accuracy:0.8715
+2019-11-16 15:35:58,949 - root - INFO - [Epoch 2 Batch 450/3072] loss=0.3005, lr=0.0000185, metrics:accuracy:0.8719
+2019-11-16 15:36:08,710 - root - INFO - [Epoch 2 Batch 460/3072] loss=0.3345, lr=0.0000185, metrics:accuracy:0.8718
+2019-11-16 15:36:18,501 - root - INFO - [Epoch 2 Batch 470/3072] loss=0.3609, lr=0.0000185, metrics:accuracy:0.8718
+2019-11-16 15:36:28,341 - root - INFO - [Epoch 2 Batch 480/3072] loss=0.3458, lr=0.0000184, metrics:accuracy:0.8719
+2019-11-16 15:36:37,843 - root - INFO - [Epoch 2 Batch 490/3072] loss=0.3370, lr=0.0000184, metrics:accuracy:0.8718
+2019-11-16 15:36:47,413 - root - INFO - [Epoch 2 Batch 500/3072] loss=0.3492, lr=0.0000184, metrics:accuracy:0.8716
+2019-11-16 15:36:57,103 - root - INFO - [Epoch 2 Batch 510/3072] loss=0.3462, lr=0.0000183, metrics:accuracy:0.8714
+2019-11-16 15:37:06,686 - root - INFO - [Epoch 2 Batch 520/3072] loss=0.3204, lr=0.0000183, metrics:accuracy:0.8717
+2019-11-16 15:37:16,339 - root - INFO - [Epoch 2 Batch 530/3072] loss=0.3615, lr=0.0000183, metrics:accuracy:0.8713
+2019-11-16 15:37:26,197 - root - INFO - [Epoch 2 Batch 540/3072] loss=0.3743, lr=0.0000182, metrics:accuracy:0.8711
+2019-11-16 15:37:35,656 - root - INFO - [Epoch 2 Batch 550/3072] loss=0.3699, lr=0.0000182, metrics:accuracy:0.8709
+2019-11-16 15:37:45,201 - root - INFO - [Epoch 2 Batch 560/3072] loss=0.3359, lr=0.0000182, metrics:accuracy:0.8710
+2019-11-16 15:37:54,819 - root - INFO - [Epoch 2 Batch 570/3072] loss=0.3515, lr=0.0000181, metrics:accuracy:0.8709
+2019-11-16 15:38:04,695 - root - INFO - [Epoch 2 Batch 580/3072] loss=0.3301, lr=0.0000181, metrics:accuracy:0.8710
+2019-11-16 15:38:14,300 - root - INFO - [Epoch 2 Batch 590/3072] loss=0.3453, lr=0.0000181, metrics:accuracy:0.8709
+2019-11-16 15:38:23,783 - root - INFO - [Epoch 2 Batch 600/3072] loss=0.3734, lr=0.0000180, metrics:accuracy:0.8706
+2019-11-16 15:38:33,470 - root - INFO - [Epoch 2 Batch 610/3072] loss=0.3558, lr=0.0000180, metrics:accuracy:0.8707
+2019-11-16 15:38:43,105 - root - INFO - [Epoch 2 Batch 620/3072] loss=0.3487, lr=0.0000180, metrics:accuracy:0.8707
+2019-11-16 15:38:52,530 - root - INFO - [Epoch 2 Batch 630/3072] loss=0.3124, lr=0.0000179, metrics:accuracy:0.8709
+2019-11-16 15:39:01,927 - root - INFO - [Epoch 2 Batch 640/3072] loss=0.3263, lr=0.0000179, metrics:accuracy:0.8711
+2019-11-16 15:39:11,533 - root - INFO - [Epoch 2 Batch 650/3072] loss=0.3985, lr=0.0000179, metrics:accuracy:0.8708
+2019-11-16 15:39:21,101 - root - INFO - [Epoch 2 Batch 660/3072] loss=0.2938, lr=0.0000178, metrics:accuracy:0.8712
+2019-11-16 15:39:31,113 - root - INFO - [Epoch 2 Batch 670/3072] loss=0.3450, lr=0.0000178, metrics:accuracy:0.8712
+2019-11-16 15:39:40,843 - root - INFO - [Epoch 2 Batch 680/3072] loss=0.3492, lr=0.0000178, metrics:accuracy:0.8712
+2019-11-16 15:39:50,455 - root - INFO - [Epoch 2 Batch 690/3072] loss=0.3434, lr=0.0000177, metrics:accuracy:0.8710
+2019-11-16 15:40:00,148 - root - INFO - [Epoch 2 Batch 700/3072] loss=0.3616, lr=0.0000177, metrics:accuracy:0.8709
+2019-11-16 15:40:09,730 - root - INFO - [Epoch 2 Batch 710/3072] loss=0.3506, lr=0.0000177, metrics:accuracy:0.8710
+2019-11-16 15:40:19,214 - root - INFO - [Epoch 2 Batch 720/3072] loss=0.3376, lr=0.0000176, metrics:accuracy:0.8711
+2019-11-16 15:40:28,772 - root - INFO - [Epoch 2 Batch 730/3072] loss=0.3691, lr=0.0000176, metrics:accuracy:0.8710
+2019-11-16 15:40:38,447 - root - INFO - [Epoch 2 Batch 740/3072] loss=0.3268, lr=0.0000176, metrics:accuracy:0.8709
+2019-11-16 15:40:48,262 - root - INFO - [Epoch 2 Batch 750/3072] loss=0.3668, lr=0.0000175, metrics:accuracy:0.8707
+2019-11-16 15:40:58,136 - root - INFO - [Epoch 2 Batch 760/3072] loss=0.3494, lr=0.0000175, metrics:accuracy:0.8705
+2019-11-16 15:41:07,861 - root - INFO - [Epoch 2 Batch 770/3072] loss=0.3705, lr=0.0000175, metrics:accuracy:0.8704
+2019-11-16 15:41:17,621 - root - INFO - [Epoch 2 Batch 780/3072] loss=0.3762, lr=0.0000174, metrics:accuracy:0.8702
+2019-11-16 15:41:27,439 - root - INFO - [Epoch 2 Batch 790/3072] loss=0.3272, lr=0.0000174, metrics:accuracy:0.8703
+2019-11-16 15:41:37,240 - root - INFO - [Epoch 2 Batch 800/3072] loss=0.3435, lr=0.0000174, metrics:accuracy:0.8702
+2019-11-16 15:41:46,863 - root - INFO - [Epoch 2 Batch 810/3072] loss=0.3253, lr=0.0000173, metrics:accuracy:0.8704
+2019-11-16 15:41:56,471 - root - INFO - [Epoch 2 Batch 820/3072] loss=0.3239, lr=0.0000173, metrics:accuracy:0.8705
+2019-11-16 15:42:06,111 - root - INFO - [Epoch 2 Batch 830/3072] loss=0.3171, lr=0.0000173, metrics:accuracy:0.8706
+2019-11-16 15:42:15,578 - root - INFO - [Epoch 2 Batch 840/3072] loss=0.3440, lr=0.0000173, metrics:accuracy:0.8706
+2019-11-16 15:42:25,295 - root - INFO - [Epoch 2 Batch 850/3072] loss=0.3304, lr=0.0000172, metrics:accuracy:0.8706
+2019-11-16 15:42:34,925 - root - INFO - [Epoch 2 Batch 860/3072] loss=0.3792, lr=0.0000172, metrics:accuracy:0.8703
+2019-11-16 15:42:44,490 - root - INFO - [Epoch 2 Batch 870/3072] loss=0.3488, lr=0.0000172, metrics:accuracy:0.8703
+2019-11-16 15:42:54,059 - root - INFO - [Epoch 2 Batch 880/3072] loss=0.3353, lr=0.0000171, metrics:accuracy:0.8704
+2019-11-16 15:43:03,610 - root - INFO - [Epoch 2 Batch 890/3072] loss=0.3853, lr=0.0000171, metrics:accuracy:0.8702
+2019-11-16 15:43:13,325 - root - INFO - [Epoch 2 Batch 900/3072] loss=0.3347, lr=0.0000171, metrics:accuracy:0.8703
+2019-11-16 15:43:22,773 - root - INFO - [Epoch 2 Batch 910/3072] loss=0.3424, lr=0.0000170, metrics:accuracy:0.8704
+2019-11-16 15:43:32,388 - root - INFO - [Epoch 2 Batch 920/3072] loss=0.3307, lr=0.0000170, metrics:accuracy:0.8704
+2019-11-16 15:43:41,944 - root - INFO - [Epoch 2 Batch 930/3072] loss=0.3734, lr=0.0000170, metrics:accuracy:0.8703
+2019-11-16 15:43:51,542 - root - INFO - [Epoch 2 Batch 940/3072] loss=0.3159, lr=0.0000169, metrics:accuracy:0.8704
+2019-11-16 15:44:01,055 - root - INFO - [Epoch 2 Batch 950/3072] loss=0.3240, lr=0.0000169, metrics:accuracy:0.8704
+2019-11-16 15:44:10,771 - root - INFO - [Epoch 2 Batch 960/3072] loss=0.3328, lr=0.0000169, metrics:accuracy:0.8704
+2019-11-16 15:44:20,498 - root - INFO - [Epoch 2 Batch 970/3072] loss=0.3601, lr=0.0000168, metrics:accuracy:0.8703
+2019-11-16 15:44:30,291 - root - INFO - [Epoch 2 Batch 980/3072] loss=0.3095, lr=0.0000168, metrics:accuracy:0.8705
+2019-11-16 15:44:39,914 - root - INFO - [Epoch 2 Batch 990/3072] loss=0.3629, lr=0.0000168, metrics:accuracy:0.8704
+2019-11-16 15:44:49,582 - root - INFO - [Epoch 2 Batch 1000/3072] loss=0.3195, lr=0.0000167, metrics:accuracy:0.8704
+2019-11-16 15:44:59,395 - root - INFO - [Epoch 2 Batch 1010/3072] loss=0.3149, lr=0.0000167, metrics:accuracy:0.8705
+2019-11-16 15:45:09,172 - root - INFO - [Epoch 2 Batch 1020/3072] loss=0.3344, lr=0.0000167, metrics:accuracy:0.8706
+2019-11-16 15:45:18,824 - root - INFO - [Epoch 2 Batch 1030/3072] loss=0.3354, lr=0.0000166, metrics:accuracy:0.8706
+2019-11-16 15:45:28,372 - root - INFO - [Epoch 2 Batch 1040/3072] loss=0.3305, lr=0.0000166, metrics:accuracy:0.8707
+2019-11-16 15:45:37,983 - root - INFO - [Epoch 2 Batch 1050/3072] loss=0.3522, lr=0.0000166, metrics:accuracy:0.8706
+2019-11-16 15:45:47,612 - root - INFO - [Epoch 2 Batch 1060/3072] loss=0.3549, lr=0.0000165, metrics:accuracy:0.8705
+2019-11-16 15:45:57,059 - root - INFO - [Epoch 2 Batch 1070/3072] loss=0.3003, lr=0.0000165, metrics:accuracy:0.8707
+2019-11-16 15:46:06,815 - root - INFO - [Epoch 2 Batch 1080/3072] loss=0.3146, lr=0.0000165, metrics:accuracy:0.8709
+2019-11-16 15:46:16,457 - root - INFO - [Epoch 2 Batch 1090/3072] loss=0.3705, lr=0.0000164, metrics:accuracy:0.8707
+2019-11-16 15:46:26,056 - root - INFO - [Epoch 2 Batch 1100/3072] loss=0.3268, lr=0.0000164, metrics:accuracy:0.8708
+2019-11-16 15:46:35,824 - root - INFO - [Epoch 2 Batch 1110/3072] loss=0.3094, lr=0.0000164, metrics:accuracy:0.8709
+2019-11-16 15:46:45,486 - root - INFO - [Epoch 2 Batch 1120/3072] loss=0.3085, lr=0.0000163, metrics:accuracy:0.8709
+2019-11-16 15:46:54,868 - root - INFO - [Epoch 2 Batch 1130/3072] loss=0.3560, lr=0.0000163, metrics:accuracy:0.8708
+2019-11-16 15:47:04,297 - root - INFO - [Epoch 2 Batch 1140/3072] loss=0.3176, lr=0.0000163, metrics:accuracy:0.8710
+2019-11-16 15:47:13,864 - root - INFO - [Epoch 2 Batch 1150/3072] loss=0.3286, lr=0.0000162, metrics:accuracy:0.8710
+2019-11-16 15:47:23,560 - root - INFO - [Epoch 2 Batch 1160/3072] loss=0.3573, lr=0.0000162, metrics:accuracy:0.8710
+2019-11-16 15:47:33,223 - root - INFO - [Epoch 2 Batch 1170/3072] loss=0.3534, lr=0.0000162, metrics:accuracy:0.8709
+2019-11-16 15:47:42,759 - root - INFO - [Epoch 2 Batch 1180/3072] loss=0.3404, lr=0.0000161, metrics:accuracy:0.8709
+2019-11-16 15:47:52,435 - root - INFO - [Epoch 2 Batch 1190/3072] loss=0.3296, lr=0.0000161, metrics:accuracy:0.8709
+2019-11-16 15:48:02,016 - root - INFO - [Epoch 2 Batch 1200/3072] loss=0.3393, lr=0.0000161, metrics:accuracy:0.8709
+2019-11-16 15:48:11,634 - root - INFO - [Epoch 2 Batch 1210/3072] loss=0.3106, lr=0.0000160, metrics:accuracy:0.8710
+2019-11-16 15:48:21,225 - root - INFO - [Epoch 2 Batch 1220/3072] loss=0.3223, lr=0.0000160, metrics:accuracy:0.8711
+2019-11-16 15:48:30,846 - root - INFO - [Epoch 2 Batch 1230/3072] loss=0.2930, lr=0.0000160, metrics:accuracy:0.8713
+2019-11-16 15:48:40,459 - root - INFO - [Epoch 2 Batch 1240/3072] loss=0.3444, lr=0.0000159, metrics:accuracy:0.8713
+2019-11-16 15:48:49,964 - root - INFO - [Epoch 2 Batch 1250/3072] loss=0.3319, lr=0.0000159, metrics:accuracy:0.8714
+2019-11-16 15:48:59,581 - root - INFO - [Epoch 2 Batch 1260/3072] loss=0.3278, lr=0.0000159, metrics:accuracy:0.8714
+2019-11-16 15:49:09,404 - root - INFO - [Epoch 2 Batch 1270/3072] loss=0.3174, lr=0.0000158, metrics:accuracy:0.8716
+2019-11-16 15:49:18,963 - root - INFO - [Epoch 2 Batch 1280/3072] loss=0.3591, lr=0.0000158, metrics:accuracy:0.8714
+2019-11-16 15:49:28,466 - root - INFO - [Epoch 2 Batch 1290/3072] loss=0.3144, lr=0.0000158, metrics:accuracy:0.8716
+2019-11-16 15:49:37,956 - root - INFO - [Epoch 2 Batch 1300/3072] loss=0.3092, lr=0.0000158, metrics:accuracy:0.8716
+2019-11-16 15:49:47,545 - root - INFO - [Epoch 2 Batch 1310/3072] loss=0.3434, lr=0.0000157, metrics:accuracy:0.8716
+2019-11-16 15:49:57,072 - root - INFO - [Epoch 2 Batch 1320/3072] loss=0.3263, lr=0.0000157, metrics:accuracy:0.8717
+2019-11-16 15:50:06,886 - root - INFO - [Epoch 2 Batch 1330/3072] loss=0.3313, lr=0.0000157, metrics:accuracy:0.8718
+2019-11-16 15:50:16,639 - root - INFO - [Epoch 2 Batch 1340/3072] loss=0.3025, lr=0.0000156, metrics:accuracy:0.8718
+2019-11-16 15:50:26,578 - root - INFO - [Epoch 2 Batch 1350/3072] loss=0.3478, lr=0.0000156, metrics:accuracy:0.8718
+2019-11-16 15:50:36,368 - root - INFO - [Epoch 2 Batch 1360/3072] loss=0.3219, lr=0.0000156, metrics:accuracy:0.8719
+2019-11-16 15:50:45,960 - root - INFO - [Epoch 2 Batch 1370/3072] loss=0.3650, lr=0.0000155, metrics:accuracy:0.8719
+2019-11-16 15:50:55,560 - root - INFO - [Epoch 2 Batch 1380/3072] loss=0.3356, lr=0.0000155, metrics:accuracy:0.8719
+2019-11-16 15:51:05,130 - root - INFO - [Epoch 2 Batch 1390/3072] loss=0.3325, lr=0.0000155, metrics:accuracy:0.8719
+2019-11-16 15:51:14,756 - root - INFO - [Epoch 2 Batch 1400/3072] loss=0.3497, lr=0.0000154, metrics:accuracy:0.8719
+2019-11-16 15:51:24,317 - root - INFO - [Epoch 2 Batch 1410/3072] loss=0.3411, lr=0.0000154, metrics:accuracy:0.8718
+2019-11-16 15:51:33,932 - root - INFO - [Epoch 2 Batch 1420/3072] loss=0.3445, lr=0.0000154, metrics:accuracy:0.8718
+2019-11-16 15:51:43,531 - root - INFO - [Epoch 2 Batch 1430/3072] loss=0.3474, lr=0.0000153, metrics:accuracy:0.8718
+2019-11-16 15:51:53,362 - root - INFO - [Epoch 2 Batch 1440/3072] loss=0.3106, lr=0.0000153, metrics:accuracy:0.8719
+2019-11-16 15:52:03,018 - root - INFO - [Epoch 2 Batch 1450/3072] loss=0.3282, lr=0.0000153, metrics:accuracy:0.8720
+2019-11-16 15:52:12,642 - root - INFO - [Epoch 2 Batch 1460/3072] loss=0.3133, lr=0.0000152, metrics:accuracy:0.8720
+2019-11-16 15:52:22,050 - root - INFO - [Epoch 2 Batch 1470/3072] loss=0.3524, lr=0.0000152, metrics:accuracy:0.8720
+2019-11-16 15:52:31,789 - root - INFO - [Epoch 2 Batch 1480/3072] loss=0.3446, lr=0.0000152, metrics:accuracy:0.8720
+2019-11-16 15:52:41,567 - root - INFO - [Epoch 2 Batch 1490/3072] loss=0.3753, lr=0.0000151, metrics:accuracy:0.8719
+2019-11-16 15:52:51,064 - root - INFO - [Epoch 2 Batch 1500/3072] loss=0.3404, lr=0.0000151, metrics:accuracy:0.8720
+2019-11-16 15:53:00,918 - root - INFO - [Epoch 2 Batch 1510/3072] loss=0.3495, lr=0.0000151, metrics:accuracy:0.8720
+2019-11-16 15:53:10,381 - root - INFO - [Epoch 2 Batch 1520/3072] loss=0.3406, lr=0.0000150, metrics:accuracy:0.8720
+2019-11-16 15:53:19,986 - root - INFO - [Epoch 2 Batch 1530/3072] loss=0.3325, lr=0.0000150, metrics:accuracy:0.8720
+2019-11-16 15:53:29,613 - root - INFO - [Epoch 2 Batch 1540/3072] loss=0.3266, lr=0.0000150, metrics:accuracy:0.8720
+2019-11-16 15:53:39,116 - root - INFO - [Epoch 2 Batch 1550/3072] loss=0.3324, lr=0.0000149, metrics:accuracy:0.8721
+2019-11-16 15:53:48,552 - root - INFO - [Epoch 2 Batch 1560/3072] loss=0.3125, lr=0.0000149, metrics:accuracy:0.8721
+2019-11-16 15:53:58,234 - root - INFO - [Epoch 2 Batch 1570/3072] loss=0.3351, lr=0.0000149, metrics:accuracy:0.8721
+2019-11-16 15:54:07,852 - root - INFO - [Epoch 2 Batch 1580/3072] loss=0.3164, lr=0.0000148, metrics:accuracy:0.8722
+2019-11-16 15:54:17,364 - root - INFO - [Epoch 2 Batch 1590/3072] loss=0.3696, lr=0.0000148, metrics:accuracy:0.8722
+2019-11-16 15:54:26,881 - root - INFO - [Epoch 2 Batch 1600/3072] loss=0.3186, lr=0.0000148, metrics:accuracy:0.8723
+2019-11-16 15:54:36,423 - root - INFO - [Epoch 2 Batch 1610/3072] loss=0.3675, lr=0.0000147, metrics:accuracy:0.8723
+2019-11-16 15:54:46,048 - root - INFO - [Epoch 2 Batch 1620/3072] loss=0.3254, lr=0.0000147, metrics:accuracy:0.8723
+2019-11-16 15:54:55,556 - root - INFO - [Epoch 2 Batch 1630/3072] loss=0.3281, lr=0.0000147, metrics:accuracy:0.8724
+2019-11-16 15:55:05,319 - root - INFO - [Epoch 2 Batch 1640/3072] loss=0.3625, lr=0.0000146, metrics:accuracy:0.8723
+2019-11-16 15:55:14,902 - root - INFO - [Epoch 2 Batch 1650/3072] loss=0.3144, lr=0.0000146, metrics:accuracy:0.8724
+2019-11-16 15:55:24,488 - root - INFO - [Epoch 2 Batch 1660/3072] loss=0.3229, lr=0.0000146, metrics:accuracy:0.8724
+2019-11-16 15:55:34,082 - root - INFO - [Epoch 2 Batch 1670/3072] loss=0.3337, lr=0.0000145, metrics:accuracy:0.8724
+2019-11-16 15:55:43,566 - root - INFO - [Epoch 2 Batch 1680/3072] loss=0.3159, lr=0.0000145, metrics:accuracy:0.8725
+2019-11-16 15:55:53,111 - root - INFO - [Epoch 2 Batch 1690/3072] loss=0.3528, lr=0.0000145, metrics:accuracy:0.8724
+2019-11-16 15:56:02,706 - root - INFO - [Epoch 2 Batch 1700/3072] loss=0.3545, lr=0.0000144, metrics:accuracy:0.8724
+2019-11-16 15:56:12,257 - root - INFO - [Epoch 2 Batch 1710/3072] loss=0.3381, lr=0.0000144, metrics:accuracy:0.8724
+2019-11-16 15:56:21,861 - root - INFO - [Epoch 2 Batch 1720/3072] loss=0.3133, lr=0.0000144, metrics:accuracy:0.8724
+2019-11-16 15:56:31,698 - root - INFO - [Epoch 2 Batch 1730/3072] loss=0.3181, lr=0.0000143, metrics:accuracy:0.8725
+2019-11-16 15:56:41,183 - root - INFO - [Epoch 2 Batch 1740/3072] loss=0.3237, lr=0.0000143, metrics:accuracy:0.8726
+2019-11-16 15:56:50,943 - root - INFO - [Epoch 2 Batch 1750/3072] loss=0.3151, lr=0.0000143, metrics:accuracy:0.8726
+2019-11-16 15:57:00,674 - root - INFO - [Epoch 2 Batch 1760/3072] loss=0.2895, lr=0.0000143, metrics:accuracy:0.8727
+2019-11-16 15:57:10,501 - root - INFO - [Epoch 2 Batch 1770/3072] loss=0.3476, lr=0.0000142, metrics:accuracy:0.8727
+2019-11-16 15:57:20,097 - root - INFO - [Epoch 2 Batch 1780/3072] loss=0.3298, lr=0.0000142, metrics:accuracy:0.8727
+2019-11-16 15:57:29,785 - root - INFO - [Epoch 2 Batch 1790/3072] loss=0.3237, lr=0.0000142, metrics:accuracy:0.8727
+2019-11-16 15:57:39,596 - root - INFO - [Epoch 2 Batch 1800/3072] loss=0.3321, lr=0.0000141, metrics:accuracy:0.8727
+2019-11-16 15:57:49,273 - root - INFO - [Epoch 2 Batch 1810/3072] loss=0.3247, lr=0.0000141, metrics:accuracy:0.8727
+2019-11-16 15:57:58,750 - root - INFO - [Epoch 2 Batch 1820/3072] loss=0.3346, lr=0.0000141, metrics:accuracy:0.8727
+2019-11-16 15:58:08,355 - root - INFO - [Epoch 2 Batch 1830/3072] loss=0.3202, lr=0.0000140, metrics:accuracy:0.8727
+2019-11-16 15:58:18,349 - root - INFO - [Epoch 2 Batch 1840/3072] loss=0.3040, lr=0.0000140, metrics:accuracy:0.8728
+2019-11-16 15:58:28,227 - root - INFO - [Epoch 2 Batch 1850/3072] loss=0.2782, lr=0.0000140, metrics:accuracy:0.8729
+2019-11-16 15:58:37,882 - root - INFO - [Epoch 2 Batch 1860/3072] loss=0.3459, lr=0.0000139, metrics:accuracy:0.8729
+2019-11-16 15:58:47,448 - root - INFO - [Epoch 2 Batch 1870/3072] loss=0.3543, lr=0.0000139, metrics:accuracy:0.8728
+2019-11-16 15:58:56,920 - root - INFO - [Epoch 2 Batch 1880/3072] loss=0.3412, lr=0.0000139, metrics:accuracy:0.8728
+2019-11-16 15:59:06,422 - root - INFO - [Epoch 2 Batch 1890/3072] loss=0.3257, lr=0.0000138, metrics:accuracy:0.8728
+2019-11-16 15:59:16,092 - root - INFO - [Epoch 2 Batch 1900/3072] loss=0.3439, lr=0.0000138, metrics:accuracy:0.8728
+2019-11-16 15:59:25,568 - root - INFO - [Epoch 2 Batch 1910/3072] loss=0.3712, lr=0.0000138, metrics:accuracy:0.8727
+2019-11-16 15:59:35,044 - root - INFO - [Epoch 2 Batch 1920/3072] loss=0.3521, lr=0.0000137, metrics:accuracy:0.8727
+2019-11-16 15:59:44,717 - root - INFO - [Epoch 2 Batch 1930/3072] loss=0.3194, lr=0.0000137, metrics:accuracy:0.8726
+2019-11-16 15:59:54,291 - root - INFO - [Epoch 2 Batch 1940/3072] loss=0.3283, lr=0.0000137, metrics:accuracy:0.8727
+2019-11-16 16:00:03,903 - root - INFO - [Epoch 2 Batch 1950/3072] loss=0.3254, lr=0.0000136, metrics:accuracy:0.8727
+2019-11-16 16:00:13,583 - root - INFO - [Epoch 2 Batch 1960/3072] loss=0.3698, lr=0.0000136, metrics:accuracy:0.8726
+2019-11-16 16:00:23,165 - root - INFO - [Epoch 2 Batch 1970/3072] loss=0.3266, lr=0.0000136, metrics:accuracy:0.8726
+2019-11-16 16:00:32,681 - root - INFO - [Epoch 2 Batch 1980/3072] loss=0.3147, lr=0.0000135, metrics:accuracy:0.8727
+2019-11-16 16:00:42,317 - root - INFO - [Epoch 2 Batch 1990/3072] loss=0.3174, lr=0.0000135, metrics:accuracy:0.8727
+2019-11-16 16:00:51,858 - root - INFO - [Epoch 2 Batch 2000/3072] loss=0.3659, lr=0.0000135, metrics:accuracy:0.8727
+2019-11-16 16:01:01,466 - root - INFO - [Epoch 2 Batch 2010/3072] loss=0.3474, lr=0.0000134, metrics:accuracy:0.8727
+2019-11-16 16:01:11,081 - root - INFO - [Epoch 2 Batch 2020/3072] loss=0.3328, lr=0.0000134, metrics:accuracy:0.8727
+2019-11-16 16:01:20,694 - root - INFO - [Epoch 2 Batch 2030/3072] loss=0.3441, lr=0.0000134, metrics:accuracy:0.8726
+2019-11-16 16:01:30,286 - root - INFO - [Epoch 2 Batch 2040/3072] loss=0.3073, lr=0.0000133, metrics:accuracy:0.8727
+2019-11-16 16:01:40,020 - root - INFO - [Epoch 2 Batch 2050/3072] loss=0.3199, lr=0.0000133, metrics:accuracy:0.8727
+2019-11-16 16:01:49,655 - root - INFO - [Epoch 2 Batch 2060/3072] loss=0.3620, lr=0.0000133, metrics:accuracy:0.8726
+2019-11-16 16:01:59,130 - root - INFO - [Epoch 2 Batch 2070/3072] loss=0.3556, lr=0.0000132, metrics:accuracy:0.8726
+2019-11-16 16:02:08,903 - root - INFO - [Epoch 2 Batch 2080/3072] loss=0.3386, lr=0.0000132, metrics:accuracy:0.8726
+2019-11-16 16:02:18,510 - root - INFO - [Epoch 2 Batch 2090/3072] loss=0.3097, lr=0.0000132, metrics:accuracy:0.8727
+2019-11-16 16:02:27,965 - root - INFO - [Epoch 2 Batch 2100/3072] loss=0.3834, lr=0.0000131, metrics:accuracy:0.8725
+2019-11-16 16:02:37,411 - root - INFO - [Epoch 2 Batch 2110/3072] loss=0.3353, lr=0.0000131, metrics:accuracy:0.8725
+2019-11-16 16:02:46,824 - root - INFO - [Epoch 2 Batch 2120/3072] loss=0.3307, lr=0.0000131, metrics:accuracy:0.8725
+2019-11-16 16:02:56,241 - root - INFO - [Epoch 2 Batch 2130/3072] loss=0.3438, lr=0.0000130, metrics:accuracy:0.8725
+2019-11-16 16:03:05,840 - root - INFO - [Epoch 2 Batch 2140/3072] loss=0.3202, lr=0.0000130, metrics:accuracy:0.8725
+2019-11-16 16:03:15,326 - root - INFO - [Epoch 2 Batch 2150/3072] loss=0.3413, lr=0.0000130, metrics:accuracy:0.8726
+2019-11-16 16:03:25,078 - root - INFO - [Epoch 2 Batch 2160/3072] loss=0.3376, lr=0.0000129, metrics:accuracy:0.8725
+2019-11-16 16:03:34,703 - root - INFO - [Epoch 2 Batch 2170/3072] loss=0.3148, lr=0.0000129, metrics:accuracy:0.8726
+2019-11-16 16:03:44,170 - root - INFO - [Epoch 2 Batch 2180/3072] loss=0.3159, lr=0.0000129, metrics:accuracy:0.8726
+2019-11-16 16:03:53,634 - root - INFO - [Epoch 2 Batch 2190/3072] loss=0.3399, lr=0.0000129, metrics:accuracy:0.8726
+2019-11-16 16:04:03,304 - root - INFO - [Epoch 2 Batch 2200/3072] loss=0.3219, lr=0.0000128, metrics:accuracy:0.8726
+2019-11-16 16:04:12,851 - root - INFO - [Epoch 2 Batch 2210/3072] loss=0.3074, lr=0.0000128, metrics:accuracy:0.8727
+2019-11-16 16:04:22,483 - root - INFO - [Epoch 2 Batch 2220/3072] loss=0.3626, lr=0.0000128, metrics:accuracy:0.8727
+2019-11-16 16:04:32,252 - root - INFO - [Epoch 2 Batch 2230/3072] loss=0.3162, lr=0.0000127, metrics:accuracy:0.8727
+2019-11-16 16:04:41,747 - root - INFO - [Epoch 2 Batch 2240/3072] loss=0.3099, lr=0.0000127, metrics:accuracy:0.8727
+2019-11-16 16:04:51,192 - root - INFO - [Epoch 2 Batch 2250/3072] loss=0.3444, lr=0.0000127, metrics:accuracy:0.8727
+2019-11-16 16:05:01,055 - root - INFO - [Epoch 2 Batch 2260/3072] loss=0.3427, lr=0.0000126, metrics:accuracy:0.8727
+2019-11-16 16:05:10,934 - root - INFO - [Epoch 2 Batch 2270/3072] loss=0.3384, lr=0.0000126, metrics:accuracy:0.8727
+2019-11-16 16:05:20,685 - root - INFO - [Epoch 2 Batch 2280/3072] loss=0.3136, lr=0.0000126, metrics:accuracy:0.8727
+2019-11-16 16:05:30,224 - root - INFO - [Epoch 2 Batch 2290/3072] loss=0.3125, lr=0.0000125, metrics:accuracy:0.8728
+2019-11-16 16:05:39,788 - root - INFO - [Epoch 2 Batch 2300/3072] loss=0.3278, lr=0.0000125, metrics:accuracy:0.8728
+2019-11-16 16:05:49,400 - root - INFO - [Epoch 2 Batch 2310/3072] loss=0.3503, lr=0.0000125, metrics:accuracy:0.8728
+2019-11-16 16:05:59,310 - root - INFO - [Epoch 2 Batch 2320/3072] loss=0.3450, lr=0.0000124, metrics:accuracy:0.8728
+2019-11-16 16:06:08,920 - root - INFO - [Epoch 2 Batch 2330/3072] loss=0.3400, lr=0.0000124, metrics:accuracy:0.8727
+2019-11-16 16:06:18,514 - root - INFO - [Epoch 2 Batch 2340/3072] loss=0.3430, lr=0.0000124, metrics:accuracy:0.8727
+2019-11-16 16:06:27,951 - root - INFO - [Epoch 2 Batch 2350/3072] loss=0.3122, lr=0.0000123, metrics:accuracy:0.8728
+2019-11-16 16:06:37,400 - root - INFO - [Epoch 2 Batch 2360/3072] loss=0.3121, lr=0.0000123, metrics:accuracy:0.8729
+2019-11-16 16:06:46,891 - root - INFO - [Epoch 2 Batch 2370/3072] loss=0.3473, lr=0.0000123, metrics:accuracy:0.8728
+2019-11-16 16:06:56,600 - root - INFO - [Epoch 2 Batch 2380/3072] loss=0.3560, lr=0.0000122, metrics:accuracy:0.8728
+2019-11-16 16:07:06,330 - root - INFO - [Epoch 2 Batch 2390/3072] loss=0.3076, lr=0.0000122, metrics:accuracy:0.8728
+2019-11-16 16:07:15,911 - root - INFO - [Epoch 2 Batch 2400/3072] loss=0.3300, lr=0.0000122, metrics:accuracy:0.8729
+2019-11-16 16:07:25,480 - root - INFO - [Epoch 2 Batch 2410/3072] loss=0.2959, lr=0.0000121, metrics:accuracy:0.8729
+2019-11-16 16:07:35,176 - root - INFO - [Epoch 2 Batch 2420/3072] loss=0.3364, lr=0.0000121, metrics:accuracy:0.8729
+2019-11-16 16:07:44,801 - root - INFO - [Epoch 2 Batch 2430/3072] loss=0.3449, lr=0.0000121, metrics:accuracy:0.8728
+2019-11-16 16:07:54,270 - root - INFO - [Epoch 2 Batch 2440/3072] loss=0.2989, lr=0.0000120, metrics:accuracy:0.8729
+2019-11-16 16:08:03,810 - root - INFO - [Epoch 2 Batch 2450/3072] loss=0.3003, lr=0.0000120, metrics:accuracy:0.8729
+2019-11-16 16:08:13,293 - root - INFO - [Epoch 2 Batch 2460/3072] loss=0.3288, lr=0.0000120, metrics:accuracy:0.8730
+2019-11-16 16:08:22,912 - root - INFO - [Epoch 2 Batch 2470/3072] loss=0.3237, lr=0.0000119, metrics:accuracy:0.8730
+2019-11-16 16:08:32,464 - root - INFO - [Epoch 2 Batch 2480/3072] loss=0.3504, lr=0.0000119, metrics:accuracy:0.8730
+2019-11-16 16:08:42,178 - root - INFO - [Epoch 2 Batch 2490/3072] loss=0.3107, lr=0.0000119, metrics:accuracy:0.8730
+2019-11-16 16:08:51,891 - root - INFO - [Epoch 2 Batch 2500/3072] loss=0.3293, lr=0.0000118, metrics:accuracy:0.8730
+2019-11-16 16:09:01,735 - root - INFO - [Epoch 2 Batch 2510/3072] loss=0.3532, lr=0.0000118, metrics:accuracy:0.8729
+2019-11-16 16:09:11,347 - root - INFO - [Epoch 2 Batch 2520/3072] loss=0.3301, lr=0.0000118, metrics:accuracy:0.8730
+2019-11-16 16:09:20,797 - root - INFO - [Epoch 2 Batch 2530/3072] loss=0.3177, lr=0.0000117, metrics:accuracy:0.8730
+2019-11-16 16:09:30,342 - root - INFO - [Epoch 2 Batch 2540/3072] loss=0.3234, lr=0.0000117, metrics:accuracy:0.8731
+2019-11-16 16:09:39,959 - root - INFO - [Epoch 2 Batch 2550/3072] loss=0.3190, lr=0.0000117, metrics:accuracy:0.8731
+2019-11-16 16:09:49,571 - root - INFO - [Epoch 2 Batch 2560/3072] loss=0.3233, lr=0.0000116, metrics:accuracy:0.8731
+2019-11-16 16:09:59,300 - root - INFO - [Epoch 2 Batch 2570/3072] loss=0.3053, lr=0.0000116, metrics:accuracy:0.8731
+2019-11-16 16:10:09,077 - root - INFO - [Epoch 2 Batch 2580/3072] loss=0.3568, lr=0.0000116, metrics:accuracy:0.8731
+2019-11-16 16:10:18,799 - root - INFO - [Epoch 2 Batch 2590/3072] loss=0.3180, lr=0.0000115, metrics:accuracy:0.8731
+2019-11-16 16:10:28,250 - root - INFO - [Epoch 2 Batch 2600/3072] loss=0.3216, lr=0.0000115, metrics:accuracy:0.8731
+2019-11-16 16:10:37,794 - root - INFO - [Epoch 2 Batch 2610/3072] loss=0.3133, lr=0.0000115, metrics:accuracy:0.8731
+2019-11-16 16:10:47,331 - root - INFO - [Epoch 2 Batch 2620/3072] loss=0.2893, lr=0.0000114, metrics:accuracy:0.8732
+2019-11-16 16:10:56,963 - root - INFO - [Epoch 2 Batch 2630/3072] loss=0.3534, lr=0.0000114, metrics:accuracy:0.8732
+2019-11-16 16:11:06,636 - root - INFO - [Epoch 2 Batch 2640/3072] loss=0.3358, lr=0.0000114, metrics:accuracy:0.8732
+2019-11-16 16:11:16,394 - root - INFO - [Epoch 2 Batch 2650/3072] loss=0.3029, lr=0.0000114, metrics:accuracy:0.8732
+2019-11-16 16:11:25,859 - root - INFO - [Epoch 2 Batch 2660/3072] loss=0.2993, lr=0.0000113, metrics:accuracy:0.8733
+2019-11-16 16:11:35,372 - root - INFO - [Epoch 2 Batch 2670/3072] loss=0.3058, lr=0.0000113, metrics:accuracy:0.8733
+2019-11-16 16:11:45,000 - root - INFO - [Epoch 2 Batch 2680/3072] loss=0.3533, lr=0.0000113, metrics:accuracy:0.8733
+2019-11-16 16:11:54,464 - root - INFO - [Epoch 2 Batch 2690/3072] loss=0.3229, lr=0.0000112, metrics:accuracy:0.8734
+2019-11-16 16:12:04,132 - root - INFO - [Epoch 2 Batch 2700/3072] loss=0.2786, lr=0.0000112, metrics:accuracy:0.8734
+2019-11-16 16:12:13,838 - root - INFO - [Epoch 2 Batch 2710/3072] loss=0.3448, lr=0.0000112, metrics:accuracy:0.8734
+2019-11-16 16:12:23,456 - root - INFO - [Epoch 2 Batch 2720/3072] loss=0.3119, lr=0.0000111, metrics:accuracy:0.8734
+2019-11-16 16:12:32,958 - root - INFO - [Epoch 2 Batch 2730/3072] loss=0.3452, lr=0.0000111, metrics:accuracy:0.8735
+2019-11-16 16:12:42,554 - root - INFO - [Epoch 2 Batch 2740/3072] loss=0.3486, lr=0.0000111, metrics:accuracy:0.8734
+2019-11-16 16:12:52,172 - root - INFO - [Epoch 2 Batch 2750/3072] loss=0.2973, lr=0.0000110, metrics:accuracy:0.8735
+2019-11-16 16:13:01,730 - root - INFO - [Epoch 2 Batch 2760/3072] loss=0.3840, lr=0.0000110, metrics:accuracy:0.8734
+2019-11-16 16:13:11,336 - root - INFO - [Epoch 2 Batch 2770/3072] loss=0.3256, lr=0.0000110, metrics:accuracy:0.8734
+2019-11-16 16:13:21,183 - root - INFO - [Epoch 2 Batch 2780/3072] loss=0.3157, lr=0.0000109, metrics:accuracy:0.8735
+2019-11-16 16:13:30,953 - root - INFO - [Epoch 2 Batch 2790/3072] loss=0.3297, lr=0.0000109, metrics:accuracy:0.8735
+2019-11-16 16:13:40,464 - root - INFO - [Epoch 2 Batch 2800/3072] loss=0.2879, lr=0.0000109, metrics:accuracy:0.8735
+2019-11-16 16:13:50,109 - root - INFO - [Epoch 2 Batch 2810/3072] loss=0.3254, lr=0.0000108, metrics:accuracy:0.8736
+2019-11-16 16:13:59,805 - root - INFO - [Epoch 2 Batch 2820/3072] loss=0.3425, lr=0.0000108, metrics:accuracy:0.8735
+2019-11-16 16:14:09,402 - root - INFO - [Epoch 2 Batch 2830/3072] loss=0.3039, lr=0.0000108, metrics:accuracy:0.8736
+2019-11-16 16:14:18,841 - root - INFO - [Epoch 2 Batch 2840/3072] loss=0.2871, lr=0.0000107, metrics:accuracy:0.8737
+2019-11-16 16:14:28,268 - root - INFO - [Epoch 2 Batch 2850/3072] loss=0.3074, lr=0.0000107, metrics:accuracy:0.8737
+2019-11-16 16:14:37,932 - root - INFO - [Epoch 2 Batch 2860/3072] loss=0.3608, lr=0.0000107, metrics:accuracy:0.8737
+2019-11-16 16:14:47,436 - root - INFO - [Epoch 2 Batch 2870/3072] loss=0.3560, lr=0.0000106, metrics:accuracy:0.8737
+2019-11-16 16:14:57,008 - root - INFO - [Epoch 2 Batch 2880/3072] loss=0.3293, lr=0.0000106, metrics:accuracy:0.8736
+2019-11-16 16:15:06,649 - root - INFO - [Epoch 2 Batch 2890/3072] loss=0.3281, lr=0.0000106, metrics:accuracy:0.8736
+2019-11-16 16:15:16,266 - root - INFO - [Epoch 2 Batch 2900/3072] loss=0.2927, lr=0.0000105, metrics:accuracy:0.8737
+2019-11-16 16:15:25,876 - root - INFO - [Epoch 2 Batch 2910/3072] loss=0.3083, lr=0.0000105, metrics:accuracy:0.8737
+2019-11-16 16:15:35,522 - root - INFO - [Epoch 2 Batch 2920/3072] loss=0.3183, lr=0.0000105, metrics:accuracy:0.8737
+2019-11-16 16:15:45,058 - root - INFO - [Epoch 2 Batch 2930/3072] loss=0.3255, lr=0.0000104, metrics:accuracy:0.8737
+2019-11-16 16:15:54,599 - root - INFO - [Epoch 2 Batch 2940/3072] loss=0.3161, lr=0.0000104, metrics:accuracy:0.8737
+2019-11-16 16:16:04,538 - root - INFO - [Epoch 2 Batch 2950/3072] loss=0.3422, lr=0.0000104, metrics:accuracy:0.8738
+2019-11-16 16:16:14,191 - root - INFO - [Epoch 2 Batch 2960/3072] loss=0.3359, lr=0.0000103, metrics:accuracy:0.8738
+2019-11-16 16:16:24,110 - root - INFO - [Epoch 2 Batch 2970/3072] loss=0.3262, lr=0.0000103, metrics:accuracy:0.8738
+2019-11-16 16:16:33,615 - root - INFO - [Epoch 2 Batch 2980/3072] loss=0.3180, lr=0.0000103, metrics:accuracy:0.8738
+2019-11-16 16:16:43,105 - root - INFO - [Epoch 2 Batch 2990/3072] loss=0.3546, lr=0.0000102, metrics:accuracy:0.8738
+2019-11-16 16:16:52,661 - root - INFO - [Epoch 2 Batch 3000/3072] loss=0.3413, lr=0.0000102, metrics:accuracy:0.8737
+2019-11-16 16:17:02,302 - root - INFO - [Epoch 2 Batch 3010/3072] loss=0.3282, lr=0.0000102, metrics:accuracy:0.8737
+2019-11-16 16:17:11,872 - root - INFO - [Epoch 2 Batch 3020/3072] loss=0.2560, lr=0.0000101, metrics:accuracy:0.8738
+2019-11-16 16:17:21,427 - root - INFO - [Epoch 2 Batch 3030/3072] loss=0.3399, lr=0.0000101, metrics:accuracy:0.8738
+2019-11-16 16:17:30,994 - root - INFO - [Epoch 2 Batch 3040/3072] loss=0.3221, lr=0.0000101, metrics:accuracy:0.8738
+2019-11-16 16:17:40,546 - root - INFO - [Epoch 2 Batch 3050/3072] loss=0.3434, lr=0.0000100, metrics:accuracy:0.8738
+2019-11-16 16:17:50,283 - root - INFO - [Epoch 2 Batch 3060/3072] loss=0.3427, lr=0.0000100, metrics:accuracy:0.8738
+2019-11-16 16:17:59,893 - root - INFO - [Epoch 2 Batch 3070/3072] loss=0.3154, lr=0.0000100, metrics:accuracy:0.8739
+2019-11-16 16:18:01,860 - root - INFO - Now we are doing evaluation on dev_matched with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2019-11-16 16:18:03,548 - root - INFO - [Batch 10/307] loss=3.0083, metrics:accuracy:0.8625
+2019-11-16 16:18:05,229 - root - INFO - [Batch 20/307] loss=3.1381, metrics:accuracy:0.8672
+2019-11-16 16:18:06,919 - root - INFO - [Batch 30/307] loss=2.8731, metrics:accuracy:0.8667
+2019-11-16 16:18:08,577 - root - INFO - [Batch 40/307] loss=3.0454, metrics:accuracy:0.8672
+2019-11-16 16:18:10,296 - root - INFO - [Batch 50/307] loss=3.5241, metrics:accuracy:0.8644
+2019-11-16 16:18:12,042 - root - INFO - [Batch 60/307] loss=2.7896, metrics:accuracy:0.8651
+2019-11-16 16:18:13,763 - root - INFO - [Batch 70/307] loss=2.6304, metrics:accuracy:0.8661
+2019-11-16 16:18:15,483 - root - INFO - [Batch 80/307] loss=3.1775, metrics:accuracy:0.8652
+2019-11-16 16:18:17,191 - root - INFO - [Batch 90/307] loss=3.3465, metrics:accuracy:0.8628
+2019-11-16 16:18:18,907 - root - INFO - [Batch 100/307] loss=2.8444, metrics:accuracy:0.8659
+2019-11-16 16:18:20,620 - root - INFO - [Batch 110/307] loss=3.5580, metrics:accuracy:0.8656
+2019-11-16 16:18:22,338 - root - INFO - [Batch 120/307] loss=2.7717, metrics:accuracy:0.8677
+2019-11-16 16:18:24,043 - root - INFO - [Batch 130/307] loss=2.8070, metrics:accuracy:0.8683
+2019-11-16 16:18:25,754 - root - INFO - [Batch 140/307] loss=2.8466, metrics:accuracy:0.8685
+2019-11-16 16:18:27,465 - root - INFO - [Batch 150/307] loss=2.5809, metrics:accuracy:0.8694
+2019-11-16 16:18:29,170 - root - INFO - [Batch 160/307] loss=3.3629, metrics:accuracy:0.8668
+2019-11-16 16:18:30,883 - root - INFO - [Batch 170/307] loss=3.0682, metrics:accuracy:0.8662
+2019-11-16 16:18:32,591 - root - INFO - [Batch 180/307] loss=2.6470, metrics:accuracy:0.8672
+2019-11-16 16:18:34,301 - root - INFO - [Batch 190/307] loss=2.9833, metrics:accuracy:0.8668
+2019-11-16 16:18:36,002 - root - INFO - [Batch 200/307] loss=2.5404, metrics:accuracy:0.8673
+2019-11-16 16:18:37,712 - root - INFO - [Batch 210/307] loss=3.2273, metrics:accuracy:0.8665
+2019-11-16 16:18:39,418 - root - INFO - [Batch 220/307] loss=3.0163, metrics:accuracy:0.8672
+2019-11-16 16:18:41,048 - root - INFO - [Batch 230/307] loss=2.4177, metrics:accuracy:0.8675
+2019-11-16 16:18:42,673 - root - INFO - [Batch 240/307] loss=3.1502, metrics:accuracy:0.8661
+2019-11-16 16:18:44,299 - root - INFO - [Batch 250/307] loss=3.7543, metrics:accuracy:0.8658
+2019-11-16 16:18:45,926 - root - INFO - [Batch 260/307] loss=3.9501, metrics:accuracy:0.8643
+2019-11-16 16:18:47,548 - root - INFO - [Batch 270/307] loss=2.8613, metrics:accuracy:0.8648
+2019-11-16 16:18:49,167 - root - INFO - [Batch 280/307] loss=3.0308, metrics:accuracy:0.8650
+2019-11-16 16:18:50,791 - root - INFO - [Batch 290/307] loss=3.0849, metrics:accuracy:0.8641
+2019-11-16 16:18:52,410 - root - INFO - [Batch 300/307] loss=2.7518, metrics:accuracy:0.8647
+2019-11-16 16:18:53,636 - root - INFO - validation metrics:accuracy:0.8651
+2019-11-16 16:18:53,636 - root - INFO - Time cost=51.78s, throughput=189.74 samples/s
+2019-11-16 16:18:53,636 - root - INFO - Now we are doing evaluation on dev_mismatched with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2019-11-16 16:18:55,257 - root - INFO - [Batch 10/308] loss=3.1831, metrics:accuracy:0.8406
+2019-11-16 16:18:56,873 - root - INFO - [Batch 20/308] loss=3.4787, metrics:accuracy:0.8453
+2019-11-16 16:18:58,614 - root - INFO - [Batch 30/308] loss=2.3317, metrics:accuracy:0.8615
+2019-11-16 16:19:00,355 - root - INFO - [Batch 40/308] loss=3.2745, metrics:accuracy:0.8562
+2019-11-16 16:19:02,119 - root - INFO - [Batch 50/308] loss=2.9911, metrics:accuracy:0.8562
+2019-11-16 16:19:03,868 - root - INFO - [Batch 60/308] loss=2.7310, metrics:accuracy:0.8573
+2019-11-16 16:19:05,613 - root - INFO - [Batch 70/308] loss=2.9613, metrics:accuracy:0.8554
+2019-11-16 16:19:07,357 - root - INFO - [Batch 80/308] loss=3.1066, metrics:accuracy:0.8551
+2019-11-16 16:19:09,102 - root - INFO - [Batch 90/308] loss=2.6295, metrics:accuracy:0.8576
+2019-11-16 16:19:10,847 - root - INFO - [Batch 100/308] loss=2.7244, metrics:accuracy:0.8594
+2019-11-16 16:19:12,588 - root - INFO - [Batch 110/308] loss=3.4183, metrics:accuracy:0.8580
+2019-11-16 16:19:14,334 - root - INFO - [Batch 120/308] loss=2.4972, metrics:accuracy:0.8607
+2019-11-16 16:19:16,083 - root - INFO - [Batch 130/308] loss=3.1859, metrics:accuracy:0.8587
+2019-11-16 16:19:17,833 - root - INFO - [Batch 140/308] loss=3.0103, metrics:accuracy:0.8594
+2019-11-16 16:19:19,579 - root - INFO - [Batch 150/308] loss=2.5988, metrics:accuracy:0.8621
+2019-11-16 16:19:21,334 - root - INFO - [Batch 160/308] loss=3.2688, metrics:accuracy:0.8617
+2019-11-16 16:19:23,078 - root - INFO - [Batch 170/308] loss=3.3126, metrics:accuracy:0.8608
+2019-11-16 16:19:24,821 - root - INFO - [Batch 180/308] loss=2.9189, metrics:accuracy:0.8608
+2019-11-16 16:19:26,564 - root - INFO - [Batch 190/308] loss=2.6280, metrics:accuracy:0.8613
+2019-11-16 16:19:28,306 - root - INFO - [Batch 200/308] loss=2.8989, metrics:accuracy:0.8619
+2019-11-16 16:19:30,049 - root - INFO - [Batch 210/308] loss=3.2624, metrics:accuracy:0.8628
+2019-11-16 16:19:31,784 - root - INFO - [Batch 220/308] loss=2.7128, metrics:accuracy:0.8641
+2019-11-16 16:19:33,378 - root - INFO - [Batch 230/308] loss=3.6105, metrics:accuracy:0.8622
+2019-11-16 16:19:34,979 - root - INFO - [Batch 240/308] loss=3.0172, metrics:accuracy:0.8624
+2019-11-16 16:19:36,568 - root - INFO - [Batch 250/308] loss=2.7176, metrics:accuracy:0.8622
+2019-11-16 16:19:38,160 - root - INFO - [Batch 260/308] loss=4.1509, metrics:accuracy:0.8608
+2019-11-16 16:19:39,772 - root - INFO - [Batch 270/308] loss=2.8642, metrics:accuracy:0.8611
+2019-11-16 16:19:41,501 - root - INFO - [Batch 280/308] loss=2.8744, metrics:accuracy:0.8614
+2019-11-16 16:19:43,221 - root - INFO - [Batch 290/308] loss=3.3810, metrics:accuracy:0.8611
+2019-11-16 16:19:44,936 - root - INFO - [Batch 300/308] loss=2.9457, metrics:accuracy:0.8614
+2019-11-16 16:19:46,309 - root - INFO - validation metrics:accuracy:0.8612
+2019-11-16 16:19:46,309 - root - INFO - Time cost=52.67s, throughput=187.12 samples/s
+2019-11-16 16:19:48,613 - root - INFO - params saved in: ./output_dir/model_xlnet_MNLI_1.params
+2019-11-16 16:19:48,614 - root - INFO - Time cost=3063.84s
+2019-11-16 16:19:58,755 - root - INFO - [Epoch 3 Batch 10/3072] loss=0.2684, lr=0.0000099, metrics:accuracy:0.8938
+2019-11-16 16:20:08,427 - root - INFO - [Epoch 3 Batch 20/3072] loss=0.3241, lr=0.0000099, metrics:accuracy:0.8844
+2019-11-16 16:20:18,152 - root - INFO - [Epoch 3 Batch 30/3072] loss=0.2503, lr=0.0000099, metrics:accuracy:0.8938
+2019-11-16 16:20:28,424 - root - INFO - [Epoch 3 Batch 40/3072] loss=0.2670, lr=0.0000098, metrics:accuracy:0.8970
+2019-11-16 16:20:38,426 - root - INFO - [Epoch 3 Batch 50/3072] loss=0.2314, lr=0.0000098, metrics:accuracy:0.9015
+2019-11-16 16:20:47,964 - root - INFO - [Epoch 3 Batch 60/3072] loss=0.2569, lr=0.0000098, metrics:accuracy:0.9002
+2019-11-16 16:20:57,581 - root - INFO - [Epoch 3 Batch 70/3072] loss=0.2981, lr=0.0000097, metrics:accuracy:0.8983
+2019-11-16 16:21:07,270 - root - INFO - [Epoch 3 Batch 80/3072] loss=0.2484, lr=0.0000097, metrics:accuracy:0.8997
+2019-11-16 16:21:16,851 - root - INFO - [Epoch 3 Batch 90/3072] loss=0.2613, lr=0.0000097, metrics:accuracy:0.9000
+2019-11-16 16:21:26,384 - root - INFO - [Epoch 3 Batch 100/3072] loss=0.2386, lr=0.0000096, metrics:accuracy:0.9022
+2019-11-16 16:21:36,143 - root - INFO - [Epoch 3 Batch 110/3072] loss=0.2644, lr=0.0000096, metrics:accuracy:0.9029
+2019-11-16 16:21:45,849 - root - INFO - [Epoch 3 Batch 120/3072] loss=0.2626, lr=0.0000096, metrics:accuracy:0.9026
+2019-11-16 16:21:55,399 - root - INFO - [Epoch 3 Batch 130/3072] loss=0.2613, lr=0.0000096, metrics:accuracy:0.9024
+2019-11-16 16:22:04,972 - root - INFO - [Epoch 3 Batch 140/3072] loss=0.2617, lr=0.0000095, metrics:accuracy:0.9020
+2019-11-16 16:22:14,644 - root - INFO - [Epoch 3 Batch 150/3072] loss=0.2281, lr=0.0000095, metrics:accuracy:0.9032
+2019-11-16 16:22:24,188 - root - INFO - [Epoch 3 Batch 160/3072] loss=0.2766, lr=0.0000095, metrics:accuracy:0.9029
+2019-11-16 16:22:33,804 - root - INFO - [Epoch 3 Batch 170/3072] loss=0.2606, lr=0.0000094, metrics:accuracy:0.9030
+2019-11-16 16:22:43,464 - root - INFO - [Epoch 3 Batch 180/3072] loss=0.2383, lr=0.0000094, metrics:accuracy:0.9038
+2019-11-16 16:22:53,470 - root - INFO - [Epoch 3 Batch 190/3072] loss=0.2840, lr=0.0000094, metrics:accuracy:0.9035
+2019-11-16 16:23:03,034 - root - INFO - [Epoch 3 Batch 200/3072] loss=0.2655, lr=0.0000093, metrics:accuracy:0.9037
+2019-11-16 16:23:12,484 - root - INFO - [Epoch 3 Batch 210/3072] loss=0.2443, lr=0.0000093, metrics:accuracy:0.9043
+2019-11-16 16:23:21,864 - root - INFO - [Epoch 3 Batch 220/3072] loss=0.2953, lr=0.0000093, metrics:accuracy:0.9036
+2019-11-16 16:23:31,398 - root - INFO - [Epoch 3 Batch 230/3072] loss=0.2440, lr=0.0000092, metrics:accuracy:0.9039
+2019-11-16 16:23:40,975 - root - INFO - [Epoch 3 Batch 240/3072] loss=0.2412, lr=0.0000092, metrics:accuracy:0.9042
+2019-11-16 16:23:50,593 - root - INFO - [Epoch 3 Batch 250/3072] loss=0.2650, lr=0.0000092, metrics:accuracy:0.9044
+2019-11-16 16:24:00,143 - root - INFO - [Epoch 3 Batch 260/3072] loss=0.2780, lr=0.0000091, metrics:accuracy:0.9038
+2019-11-16 16:24:10,155 - root - INFO - [Epoch 3 Batch 270/3072] loss=0.2580, lr=0.0000091, metrics:accuracy:0.9036
+2019-11-16 16:24:19,634 - root - INFO - [Epoch 3 Batch 280/3072] loss=0.2550, lr=0.0000091, metrics:accuracy:0.9037
+2019-11-16 16:24:29,332 - root - INFO - [Epoch 3 Batch 290/3072] loss=0.2875, lr=0.0000090, metrics:accuracy:0.9033
+2019-11-16 16:24:39,089 - root - INFO - [Epoch 3 Batch 300/3072] loss=0.2464, lr=0.0000090, metrics:accuracy:0.9036
+2019-11-16 16:24:48,714 - root - INFO - [Epoch 3 Batch 310/3072] loss=0.2318, lr=0.0000090, metrics:accuracy:0.9041
+2019-11-16 16:24:58,456 - root - INFO - [Epoch 3 Batch 320/3072] loss=0.2438, lr=0.0000089, metrics:accuracy:0.9047
+2019-11-16 16:25:08,148 - root - INFO - [Epoch 3 Batch 330/3072] loss=0.2325, lr=0.0000089, metrics:accuracy:0.9050
+2019-11-16 16:25:17,857 - root - INFO - [Epoch 3 Batch 340/3072] loss=0.2267, lr=0.0000089, metrics:accuracy:0.9053
+2019-11-16 16:25:27,310 - root - INFO - [Epoch 3 Batch 350/3072] loss=0.2822, lr=0.0000088, metrics:accuracy:0.9053
+2019-11-16 16:25:36,876 - root - INFO - [Epoch 3 Batch 360/3072] loss=0.2550, lr=0.0000088, metrics:accuracy:0.9055
+2019-11-16 16:25:46,666 - root - INFO - [Epoch 3 Batch 370/3072] loss=0.2625, lr=0.0000088, metrics:accuracy:0.9053
+2019-11-16 16:25:56,380 - root - INFO - [Epoch 3 Batch 380/3072] loss=0.2363, lr=0.0000087, metrics:accuracy:0.9055
+2019-11-16 16:26:05,968 - root - INFO - [Epoch 3 Batch 390/3072] loss=0.2552, lr=0.0000087, metrics:accuracy:0.9054
+2019-11-16 16:26:15,465 - root - INFO - [Epoch 3 Batch 400/3072] loss=0.2916, lr=0.0000087, metrics:accuracy:0.9050
+2019-11-16 16:26:25,016 - root - INFO - [Epoch 3 Batch 410/3072] loss=0.2984, lr=0.0000086, metrics:accuracy:0.9050
+2019-11-16 16:26:34,646 - root - INFO - [Epoch 3 Batch 420/3072] loss=0.2603, lr=0.0000086, metrics:accuracy:0.9048
+2019-11-16 16:26:44,163 - root - INFO - [Epoch 3 Batch 430/3072] loss=0.2539, lr=0.0000086, metrics:accuracy:0.9048
+2019-11-16 16:26:53,816 - root - INFO - [Epoch 3 Batch 440/3072] loss=0.2718, lr=0.0000085, metrics:accuracy:0.9048
+2019-11-16 16:27:03,291 - root - INFO - [Epoch 3 Batch 450/3072] loss=0.2314, lr=0.0000085, metrics:accuracy:0.9052
+2019-11-16 16:27:12,863 - root - INFO - [Epoch 3 Batch 460/3072] loss=0.2509, lr=0.0000085, metrics:accuracy:0.9051
+2019-11-16 16:27:22,702 - root - INFO - [Epoch 3 Batch 470/3072] loss=0.2800, lr=0.0000084, metrics:accuracy:0.9048
+2019-11-16 16:27:32,325 - root - INFO - [Epoch 3 Batch 480/3072] loss=0.2463, lr=0.0000084, metrics:accuracy:0.9049
+2019-11-16 16:27:41,855 - root - INFO - [Epoch 3 Batch 490/3072] loss=0.2348, lr=0.0000084, metrics:accuracy:0.9051
+2019-11-16 16:27:51,267 - root - INFO - [Epoch 3 Batch 500/3072] loss=0.2473, lr=0.0000083, metrics:accuracy:0.9051
+2019-11-16 16:28:00,765 - root - INFO - [Epoch 3 Batch 510/3072] loss=0.2508, lr=0.0000083, metrics:accuracy:0.9050
+2019-11-16 16:28:10,520 - root - INFO - [Epoch 3 Batch 520/3072] loss=0.2501, lr=0.0000083, metrics:accuracy:0.9052
+2019-11-16 16:28:20,096 - root - INFO - [Epoch 3 Batch 530/3072] loss=0.2645, lr=0.0000082, metrics:accuracy:0.9051
+2019-11-16 16:28:29,673 - root - INFO - [Epoch 3 Batch 540/3072] loss=0.2347, lr=0.0000082, metrics:accuracy:0.9054
+2019-11-16 16:28:39,201 - root - INFO - [Epoch 3 Batch 550/3072] loss=0.2532, lr=0.0000082, metrics:accuracy:0.9055
+2019-11-16 16:28:49,060 - root - INFO - [Epoch 3 Batch 560/3072] loss=0.2548, lr=0.0000081, metrics:accuracy:0.9054
+2019-11-16 16:28:58,651 - root - INFO - [Epoch 3 Batch 570/3072] loss=0.2909, lr=0.0000081, metrics:accuracy:0.9052
+2019-11-16 16:29:08,241 - root - INFO - [Epoch 3 Batch 580/3072] loss=0.2418, lr=0.0000081, metrics:accuracy:0.9052
+2019-11-16 16:29:17,757 - root - INFO - [Epoch 3 Batch 590/3072] loss=0.2613, lr=0.0000081, metrics:accuracy:0.9050
+2019-11-16 16:29:27,532 - root - INFO - [Epoch 3 Batch 600/3072] loss=0.2387, lr=0.0000080, metrics:accuracy:0.9050
+2019-11-16 16:29:37,081 - root - INFO - [Epoch 3 Batch 610/3072] loss=0.2558, lr=0.0000080, metrics:accuracy:0.9050
+2019-11-16 16:29:46,651 - root - INFO - [Epoch 3 Batch 620/3072] loss=0.2609, lr=0.0000080, metrics:accuracy:0.9049
+2019-11-16 16:29:56,435 - root - INFO - [Epoch 3 Batch 630/3072] loss=0.2439, lr=0.0000079, metrics:accuracy:0.9049
+2019-11-16 16:30:05,863 - root - INFO - [Epoch 3 Batch 640/3072] loss=0.2362, lr=0.0000079, metrics:accuracy:0.9050
+2019-11-16 16:30:15,391 - root - INFO - [Epoch 3 Batch 650/3072] loss=0.2282, lr=0.0000079, metrics:accuracy:0.9052
+2019-11-16 16:30:24,916 - root - INFO - [Epoch 3 Batch 660/3072] loss=0.2433, lr=0.0000078, metrics:accuracy:0.9052
+2019-11-16 16:30:34,647 - root - INFO - [Epoch 3 Batch 670/3072] loss=0.2381, lr=0.0000078, metrics:accuracy:0.9053
+2019-11-16 16:30:44,366 - root - INFO - [Epoch 3 Batch 680/3072] loss=0.2514, lr=0.0000078, metrics:accuracy:0.9054
+2019-11-16 16:30:53,919 - root - INFO - [Epoch 3 Batch 690/3072] loss=0.2479, lr=0.0000077, metrics:accuracy:0.9054
+2019-11-16 16:31:03,628 - root - INFO - [Epoch 3 Batch 700/3072] loss=0.2580, lr=0.0000077, metrics:accuracy:0.9051
+2019-11-16 16:31:13,034 - root - INFO - [Epoch 3 Batch 710/3072] loss=0.2802, lr=0.0000077, metrics:accuracy:0.9051
+2019-11-16 16:31:22,669 - root - INFO - [Epoch 3 Batch 720/3072] loss=0.2659, lr=0.0000076, metrics:accuracy:0.9051
+2019-11-16 16:31:32,291 - root - INFO - [Epoch 3 Batch 730/3072] loss=0.2890, lr=0.0000076, metrics:accuracy:0.9049
+2019-11-16 16:31:41,859 - root - INFO - [Epoch 3 Batch 740/3072] loss=0.2655, lr=0.0000076, metrics:accuracy:0.9047
+2019-11-16 16:31:51,610 - root - INFO - [Epoch 3 Batch 750/3072] loss=0.2374, lr=0.0000075, metrics:accuracy:0.9049
+2019-11-16 16:32:01,205 - root - INFO - [Epoch 3 Batch 760/3072] loss=0.2468, lr=0.0000075, metrics:accuracy:0.9049
+2019-11-16 16:32:10,852 - root - INFO - [Epoch 3 Batch 770/3072] loss=0.2536, lr=0.0000075, metrics:accuracy:0.9049
+2019-11-16 16:32:20,329 - root - INFO - [Epoch 3 Batch 780/3072] loss=0.2455, lr=0.0000074, metrics:accuracy:0.9050
+2019-11-16 16:32:29,845 - root - INFO - [Epoch 3 Batch 790/3072] loss=0.2365, lr=0.0000074, metrics:accuracy:0.9050
+2019-11-16 16:32:39,339 - root - INFO - [Epoch 3 Batch 800/3072] loss=0.2353, lr=0.0000074, metrics:accuracy:0.9052
+2019-11-16 16:32:49,247 - root - INFO - [Epoch 3 Batch 810/3072] loss=0.2444, lr=0.0000073, metrics:accuracy:0.9052
+2019-11-16 16:32:58,874 - root - INFO - [Epoch 3 Batch 820/3072] loss=0.2693, lr=0.0000073, metrics:accuracy:0.9051
+2019-11-16 16:33:08,438 - root - INFO - [Epoch 3 Batch 830/3072] loss=0.2314, lr=0.0000073, metrics:accuracy:0.9052
+2019-11-16 16:33:18,178 - root - INFO - [Epoch 3 Batch 840/3072] loss=0.2308, lr=0.0000072, metrics:accuracy:0.9054
+2019-11-16 16:33:27,929 - root - INFO - [Epoch 3 Batch 850/3072] loss=0.2863, lr=0.0000072, metrics:accuracy:0.9053
+2019-11-16 16:33:37,559 - root - INFO - [Epoch 3 Batch 860/3072] loss=0.2462, lr=0.0000072, metrics:accuracy:0.9053
+2019-11-16 16:33:47,148 - root - INFO - [Epoch 3 Batch 870/3072] loss=0.2304, lr=0.0000071, metrics:accuracy:0.9053
+2019-11-16 16:33:56,673 - root - INFO - [Epoch 3 Batch 880/3072] loss=0.2239, lr=0.0000071, metrics:accuracy:0.9056
+2019-11-16 16:34:06,471 - root - INFO - [Epoch 3 Batch 890/3072] loss=0.2391, lr=0.0000071, metrics:accuracy:0.9057
+2019-11-16 16:34:15,885 - root - INFO - [Epoch 3 Batch 900/3072] loss=0.2619, lr=0.0000070, metrics:accuracy:0.9057
+2019-11-16 16:34:25,724 - root - INFO - [Epoch 3 Batch 910/3072] loss=0.2301, lr=0.0000070, metrics:accuracy:0.9058
+2019-11-16 16:34:35,418 - root - INFO - [Epoch 3 Batch 920/3072] loss=0.2355, lr=0.0000070, metrics:accuracy:0.9059
+2019-11-16 16:34:44,919 - root - INFO - [Epoch 3 Batch 930/3072] loss=0.2545, lr=0.0000069, metrics:accuracy:0.9058
+2019-11-16 16:34:54,479 - root - INFO - [Epoch 3 Batch 940/3072] loss=0.2345, lr=0.0000069, metrics:accuracy:0.9060
+2019-11-16 16:35:04,025 - root - INFO - [Epoch 3 Batch 950/3072] loss=0.2681, lr=0.0000069, metrics:accuracy:0.9059
+2019-11-16 16:35:13,578 - root - INFO - [Epoch 3 Batch 960/3072] loss=0.2713, lr=0.0000068, metrics:accuracy:0.9059
+2019-11-16 16:35:23,071 - root - INFO - [Epoch 3 Batch 970/3072] loss=0.2806, lr=0.0000068, metrics:accuracy:0.9058
+2019-11-16 16:35:32,759 - root - INFO - [Epoch 3 Batch 980/3072] loss=0.2602, lr=0.0000068, metrics:accuracy:0.9058
+2019-11-16 16:35:42,456 - root - INFO - [Epoch 3 Batch 990/3072] loss=0.2621, lr=0.0000067, metrics:accuracy:0.9058
+2019-11-16 16:35:52,044 - root - INFO - [Epoch 3 Batch 1000/3072] loss=0.2706, lr=0.0000067, metrics:accuracy:0.9057
+2019-11-16 16:36:01,750 - root - INFO - [Epoch 3 Batch 1010/3072] loss=0.2259, lr=0.0000067, metrics:accuracy:0.9058
+2019-11-16 16:36:11,477 - root - INFO - [Epoch 3 Batch 1020/3072] loss=0.2379, lr=0.0000067, metrics:accuracy:0.9058
+2019-11-16 16:36:21,085 - root - INFO - [Epoch 3 Batch 1030/3072] loss=0.2550, lr=0.0000066, metrics:accuracy:0.9058
+2019-11-16 16:36:30,573 - root - INFO - [Epoch 3 Batch 1040/3072] loss=0.2678, lr=0.0000066, metrics:accuracy:0.9057
+2019-11-16 16:36:40,248 - root - INFO - [Epoch 3 Batch 1050/3072] loss=0.2574, lr=0.0000066, metrics:accuracy:0.9057
+2019-11-16 16:36:50,793 - root - INFO - [Epoch 3 Batch 1060/3072] loss=0.3107, lr=0.0000065, metrics:accuracy:0.9058
+2019-11-16 16:37:00,374 - root - INFO - [Epoch 3 Batch 1070/3072] loss=0.2985, lr=0.0000065, metrics:accuracy:0.9055
+2019-11-16 16:37:09,963 - root - INFO - [Epoch 3 Batch 1080/3072] loss=0.2529, lr=0.0000065, metrics:accuracy:0.9056
+2019-11-16 16:37:19,620 - root - INFO - [Epoch 3 Batch 1090/3072] loss=0.2550, lr=0.0000064, metrics:accuracy:0.9055
+2019-11-16 16:37:29,143 - root - INFO - [Epoch 3 Batch 1100/3072] loss=0.2786, lr=0.0000064, metrics:accuracy:0.9054
+2019-11-16 16:37:38,880 - root - INFO - [Epoch 3 Batch 1110/3072] loss=0.2555, lr=0.0000064, metrics:accuracy:0.9054
+2019-11-16 16:37:48,448 - root - INFO - [Epoch 3 Batch 1120/3072] loss=0.2779, lr=0.0000063, metrics:accuracy:0.9053
+2019-11-16 16:37:58,170 - root - INFO - [Epoch 3 Batch 1130/3072] loss=0.2306, lr=0.0000063, metrics:accuracy:0.9053
+2019-11-16 16:38:07,782 - root - INFO - [Epoch 3 Batch 1140/3072] loss=0.2483, lr=0.0000063, metrics:accuracy:0.9054
+2019-11-16 16:38:17,379 - root - INFO - [Epoch 3 Batch 1150/3072] loss=0.2454, lr=0.0000062, metrics:accuracy:0.9054
+2019-11-16 16:38:26,915 - root - INFO - [Epoch 3 Batch 1160/3072] loss=0.2418, lr=0.0000062, metrics:accuracy:0.9055
+2019-11-16 16:38:36,670 - root - INFO - [Epoch 3 Batch 1170/3072] loss=0.2552, lr=0.0000062, metrics:accuracy:0.9055
+2019-11-16 16:38:46,257 - root - INFO - [Epoch 3 Batch 1180/3072] loss=0.2295, lr=0.0000061, metrics:accuracy:0.9056
+2019-11-16 16:38:55,937 - root - INFO - [Epoch 3 Batch 1190/3072] loss=0.2329, lr=0.0000061, metrics:accuracy:0.9057
+2019-11-16 16:39:05,493 - root - INFO - [Epoch 3 Batch 1200/3072] loss=0.2504, lr=0.0000061, metrics:accuracy:0.9058
+2019-11-16 16:39:15,054 - root - INFO - [Epoch 3 Batch 1210/3072] loss=0.2724, lr=0.0000060, metrics:accuracy:0.9057
+2019-11-16 16:39:24,737 - root - INFO - [Epoch 3 Batch 1220/3072] loss=0.2305, lr=0.0000060, metrics:accuracy:0.9058
+2019-11-16 16:39:34,178 - root - INFO - [Epoch 3 Batch 1230/3072] loss=0.2638, lr=0.0000060, metrics:accuracy:0.9057
+2019-11-16 16:39:43,693 - root - INFO - [Epoch 3 Batch 1240/3072] loss=0.2611, lr=0.0000059, metrics:accuracy:0.9057
+2019-11-16 16:39:53,198 - root - INFO - [Epoch 3 Batch 1250/3072] loss=0.2422, lr=0.0000059, metrics:accuracy:0.9058
+2019-11-16 16:40:02,976 - root - INFO - [Epoch 3 Batch 1260/3072] loss=0.2712, lr=0.0000059, metrics:accuracy:0.9057
+2019-11-16 16:40:12,560 - root - INFO - [Epoch 3 Batch 1270/3072] loss=0.2622, lr=0.0000058, metrics:accuracy:0.9057
+2019-11-16 16:40:22,210 - root - INFO - [Epoch 3 Batch 1280/3072] loss=0.2458, lr=0.0000058, metrics:accuracy:0.9057
+2019-11-16 16:40:31,766 - root - INFO - [Epoch 3 Batch 1290/3072] loss=0.2642, lr=0.0000058, metrics:accuracy:0.9057
+2019-11-16 16:40:41,268 - root - INFO - [Epoch 3 Batch 1300/3072] loss=0.2440, lr=0.0000057, metrics:accuracy:0.9058
+2019-11-16 16:40:50,857 - root - INFO - [Epoch 3 Batch 1310/3072] loss=0.2367, lr=0.0000057, metrics:accuracy:0.9058
+2019-11-16 16:41:00,338 - root - INFO - [Epoch 3 Batch 1320/3072] loss=0.2426, lr=0.0000057, metrics:accuracy:0.9059
+2019-11-16 16:41:09,945 - root - INFO - [Epoch 3 Batch 1330/3072] loss=0.2426, lr=0.0000056, metrics:accuracy:0.9060
+2019-11-16 16:41:19,382 - root - INFO - [Epoch 3 Batch 1340/3072] loss=0.2141, lr=0.0000056, metrics:accuracy:0.9061
+2019-11-16 16:41:29,143 - root - INFO - [Epoch 3 Batch 1350/3072] loss=0.2521, lr=0.0000056, metrics:accuracy:0.9061
+2019-11-16 16:41:38,779 - root - INFO - [Epoch 3 Batch 1360/3072] loss=0.2658, lr=0.0000055, metrics:accuracy:0.9060
+2019-11-16 16:41:48,387 - root - INFO - [Epoch 3 Batch 1370/3072] loss=0.2684, lr=0.0000055, metrics:accuracy:0.9059
+2019-11-16 16:41:57,948 - root - INFO - [Epoch 3 Batch 1380/3072] loss=0.2782, lr=0.0000055, metrics:accuracy:0.9059
+2019-11-16 16:42:07,711 - root - INFO - [Epoch 3 Batch 1390/3072] loss=0.2403, lr=0.0000054, metrics:accuracy:0.9059
+2019-11-16 16:42:17,275 - root - INFO - [Epoch 3 Batch 1400/3072] loss=0.2649, lr=0.0000054, metrics:accuracy:0.9059
+2019-11-16 16:42:26,867 - root - INFO - [Epoch 3 Batch 1410/3072] loss=0.2958, lr=0.0000054, metrics:accuracy:0.9058
+2019-11-16 16:42:36,725 - root - INFO - [Epoch 3 Batch 1420/3072] loss=0.2399, lr=0.0000053, metrics:accuracy:0.9058
+2019-11-16 16:42:46,452 - root - INFO - [Epoch 3 Batch 1430/3072] loss=0.2655, lr=0.0000053, metrics:accuracy:0.9057
+2019-11-16 16:42:56,058 - root - INFO - [Epoch 3 Batch 1440/3072] loss=0.2295, lr=0.0000053, metrics:accuracy:0.9058
+2019-11-16 16:43:05,813 - root - INFO - [Epoch 3 Batch 1450/3072] loss=0.2727, lr=0.0000052, metrics:accuracy:0.9058
+2019-11-16 16:43:15,399 - root - INFO - [Epoch 3 Batch 1460/3072] loss=0.2626, lr=0.0000052, metrics:accuracy:0.9058
+2019-11-16 16:43:24,913 - root - INFO - [Epoch 3 Batch 1470/3072] loss=0.2564, lr=0.0000052, metrics:accuracy:0.9058
+2019-11-16 16:43:34,602 - root - INFO - [Epoch 3 Batch 1480/3072] loss=0.2786, lr=0.0000052, metrics:accuracy:0.9057
+2019-11-16 16:43:44,177 - root - INFO - [Epoch 3 Batch 1490/3072] loss=0.2565, lr=0.0000051, metrics:accuracy:0.9057
+2019-11-16 16:43:53,671 - root - INFO - [Epoch 3 Batch 1500/3072] loss=0.2319, lr=0.0000051, metrics:accuracy:0.9058
+2019-11-16 16:44:03,250 - root - INFO - [Epoch 3 Batch 1510/3072] loss=0.2610, lr=0.0000051, metrics:accuracy:0.9057
+2019-11-16 16:44:13,206 - root - INFO - [Epoch 3 Batch 1520/3072] loss=0.2624, lr=0.0000050, metrics:accuracy:0.9056
+2019-11-16 16:44:23,092 - root - INFO - [Epoch 3 Batch 1530/3072] loss=0.2481, lr=0.0000050, metrics:accuracy:0.9057
+2019-11-16 16:44:32,595 - root - INFO - [Epoch 3 Batch 1540/3072] loss=0.2660, lr=0.0000050, metrics:accuracy:0.9058
+2019-11-16 16:44:42,183 - root - INFO - [Epoch 3 Batch 1550/3072] loss=0.2395, lr=0.0000049, metrics:accuracy:0.9058
+2019-11-16 16:44:52,072 - root - INFO - [Epoch 3 Batch 1560/3072] loss=0.2442, lr=0.0000049, metrics:accuracy:0.9058
+2019-11-16 16:45:01,871 - root - INFO - [Epoch 3 Batch 1570/3072] loss=0.2729, lr=0.0000049, metrics:accuracy:0.9058
+2019-11-16 16:45:11,495 - root - INFO - [Epoch 3 Batch 1580/3072] loss=0.2456, lr=0.0000048, metrics:accuracy:0.9058
+2019-11-16 16:45:20,977 - root - INFO - [Epoch 3 Batch 1590/3072] loss=0.2454, lr=0.0000048, metrics:accuracy:0.9059
+2019-11-16 16:45:30,488 - root - INFO - [Epoch 3 Batch 1600/3072] loss=0.2532, lr=0.0000048, metrics:accuracy:0.9059
+2019-11-16 16:45:39,899 - root - INFO - [Epoch 3 Batch 1610/3072] loss=0.2746, lr=0.0000047, metrics:accuracy:0.9058
+2019-11-16 16:45:49,460 - root - INFO - [Epoch 3 Batch 1620/3072] loss=0.2427, lr=0.0000047, metrics:accuracy:0.9058
+2019-11-16 16:45:59,219 - root - INFO - [Epoch 3 Batch 1630/3072] loss=0.2442, lr=0.0000047, metrics:accuracy:0.9058
+2019-11-16 16:46:08,845 - root - INFO - [Epoch 3 Batch 1640/3072] loss=0.2686, lr=0.0000046, metrics:accuracy:0.9058
+2019-11-16 16:46:18,519 - root - INFO - [Epoch 3 Batch 1650/3072] loss=0.2495, lr=0.0000046, metrics:accuracy:0.9059
+2019-11-16 16:46:28,128 - root - INFO - [Epoch 3 Batch 1660/3072] loss=0.2443, lr=0.0000046, metrics:accuracy:0.9059
+2019-11-16 16:46:37,898 - root - INFO - [Epoch 3 Batch 1670/3072] loss=0.2593, lr=0.0000045, metrics:accuracy:0.9058
+2019-11-16 16:46:47,541 - root - INFO - [Epoch 3 Batch 1680/3072] loss=0.2495, lr=0.0000045, metrics:accuracy:0.9059
+2019-11-16 16:46:57,149 - root - INFO - [Epoch 3 Batch 1690/3072] loss=0.2679, lr=0.0000045, metrics:accuracy:0.9059
+2019-11-16 16:47:06,626 - root - INFO - [Epoch 3 Batch 1700/3072] loss=0.2432, lr=0.0000044, metrics:accuracy:0.9059
+2019-11-16 16:47:16,233 - root - INFO - [Epoch 3 Batch 1710/3072] loss=0.2599, lr=0.0000044, metrics:accuracy:0.9059
+2019-11-16 16:47:25,855 - root - INFO - [Epoch 3 Batch 1720/3072] loss=0.2452, lr=0.0000044, metrics:accuracy:0.9060
+2019-11-16 16:47:35,466 - root - INFO - [Epoch 3 Batch 1730/3072] loss=0.2444, lr=0.0000043, metrics:accuracy:0.9060
+2019-11-16 16:47:45,228 - root - INFO - [Epoch 3 Batch 1740/3072] loss=0.2699, lr=0.0000043, metrics:accuracy:0.9060
+2019-11-16 16:47:54,822 - root - INFO - [Epoch 3 Batch 1750/3072] loss=0.2411, lr=0.0000043, metrics:accuracy:0.9060
+2019-11-16 16:48:04,462 - root - INFO - [Epoch 3 Batch 1760/3072] loss=0.2251, lr=0.0000042, metrics:accuracy:0.9061
+2019-11-16 16:48:14,077 - root - INFO - [Epoch 3 Batch 1770/3072] loss=0.2665, lr=0.0000042, metrics:accuracy:0.9060
+2019-11-16 16:48:23,982 - root - INFO - [Epoch 3 Batch 1780/3072] loss=0.2706, lr=0.0000042, metrics:accuracy:0.9060
+2019-11-16 16:48:33,712 - root - INFO - [Epoch 3 Batch 1790/3072] loss=0.2654, lr=0.0000041, metrics:accuracy:0.9060
+2019-11-16 16:48:43,318 - root - INFO - [Epoch 3 Batch 1800/3072] loss=0.2340, lr=0.0000041, metrics:accuracy:0.9060
+2019-11-16 16:48:53,046 - root - INFO - [Epoch 3 Batch 1810/3072] loss=0.2608, lr=0.0000041, metrics:accuracy:0.9060
+2019-11-16 16:49:02,875 - root - INFO - [Epoch 3 Batch 1820/3072] loss=0.2712, lr=0.0000040, metrics:accuracy:0.9060
+2019-11-16 16:49:12,507 - root - INFO - [Epoch 3 Batch 1830/3072] loss=0.2892, lr=0.0000040, metrics:accuracy:0.9059
+2019-11-16 16:49:22,279 - root - INFO - [Epoch 3 Batch 1840/3072] loss=0.2619, lr=0.0000040, metrics:accuracy:0.9059
+2019-11-16 16:49:32,082 - root - INFO - [Epoch 3 Batch 1850/3072] loss=0.2582, lr=0.0000039, metrics:accuracy:0.9059
+2019-11-16 16:49:41,775 - root - INFO - [Epoch 3 Batch 1860/3072] loss=0.2734, lr=0.0000039, metrics:accuracy:0.9058
+2019-11-16 16:49:51,210 - root - INFO - [Epoch 3 Batch 1870/3072] loss=0.2518, lr=0.0000039, metrics:accuracy:0.9058
+2019-11-16 16:50:00,841 - root - INFO - [Epoch 3 Batch 1880/3072] loss=0.2641, lr=0.0000038, metrics:accuracy:0.9058
+2019-11-16 16:50:10,675 - root - INFO - [Epoch 3 Batch 1890/3072] loss=0.2309, lr=0.0000038, metrics:accuracy:0.9059
+2019-11-16 16:50:20,204 - root - INFO - [Epoch 3 Batch 1900/3072] loss=0.2713, lr=0.0000038, metrics:accuracy:0.9058
+2019-11-16 16:50:29,752 - root - INFO - [Epoch 3 Batch 1910/3072] loss=0.2653, lr=0.0000037, metrics:accuracy:0.9058
+2019-11-16 16:50:39,618 - root - INFO - [Epoch 3 Batch 1920/3072] loss=0.2198, lr=0.0000037, metrics:accuracy:0.9059
+2019-11-16 16:50:49,104 - root - INFO - [Epoch 3 Batch 1930/3072] loss=0.2503, lr=0.0000037, metrics:accuracy:0.9059
+2019-11-16 16:50:58,767 - root - INFO - [Epoch 3 Batch 1940/3072] loss=0.2450, lr=0.0000037, metrics:accuracy:0.9059
+2019-11-16 16:51:08,450 - root - INFO - [Epoch 3 Batch 1950/3072] loss=0.2585, lr=0.0000036, metrics:accuracy:0.9060
+2019-11-16 16:51:18,294 - root - INFO - [Epoch 3 Batch 1960/3072] loss=0.2458, lr=0.0000036, metrics:accuracy:0.9060
+2019-11-16 16:51:27,925 - root - INFO - [Epoch 3 Batch 1970/3072] loss=0.2530, lr=0.0000036, metrics:accuracy:0.9061
+2019-11-16 16:51:37,502 - root - INFO - [Epoch 3 Batch 1980/3072] loss=0.2797, lr=0.0000035, metrics:accuracy:0.9060
+2019-11-16 16:51:47,057 - root - INFO - [Epoch 3 Batch 1990/3072] loss=0.2740, lr=0.0000035, metrics:accuracy:0.9060
+2019-11-16 16:51:56,627 - root - INFO - [Epoch 3 Batch 2000/3072] loss=0.2269, lr=0.0000035, metrics:accuracy:0.9061
+2019-11-16 16:52:06,125 - root - INFO - [Epoch 3 Batch 2010/3072] loss=0.2253, lr=0.0000034, metrics:accuracy:0.9062
+2019-11-16 16:52:15,691 - root - INFO - [Epoch 3 Batch 2020/3072] loss=0.2683, lr=0.0000034, metrics:accuracy:0.9062
+2019-11-16 16:52:25,349 - root - INFO - [Epoch 3 Batch 2030/3072] loss=0.2406, lr=0.0000034, metrics:accuracy:0.9062
+2019-11-16 16:52:34,846 - root - INFO - [Epoch 3 Batch 2040/3072] loss=0.2582, lr=0.0000033, metrics:accuracy:0.9061
+2019-11-16 16:52:44,513 - root - INFO - [Epoch 3 Batch 2050/3072] loss=0.2736, lr=0.0000033, metrics:accuracy:0.9061
+2019-11-16 16:52:54,157 - root - INFO - [Epoch 3 Batch 2060/3072] loss=0.2558, lr=0.0000033, metrics:accuracy:0.9061
+2019-11-16 16:53:03,804 - root - INFO - [Epoch 3 Batch 2070/3072] loss=0.2353, lr=0.0000032, metrics:accuracy:0.9061
+2019-11-16 16:53:13,398 - root - INFO - [Epoch 3 Batch 2080/3072] loss=0.3032, lr=0.0000032, metrics:accuracy:0.9060
+2019-11-16 16:53:22,951 - root - INFO - [Epoch 3 Batch 2090/3072] loss=0.2736, lr=0.0000032, metrics:accuracy:0.9060
+2019-11-16 16:53:32,530 - root - INFO - [Epoch 3 Batch 2100/3072] loss=0.2734, lr=0.0000031, metrics:accuracy:0.9060
+2019-11-16 16:53:42,020 - root - INFO - [Epoch 3 Batch 2110/3072] loss=0.2657, lr=0.0000031, metrics:accuracy:0.9060
+2019-11-16 16:53:51,585 - root - INFO - [Epoch 3 Batch 2120/3072] loss=0.2867, lr=0.0000031, metrics:accuracy:0.9059
+2019-11-16 16:54:01,263 - root - INFO - [Epoch 3 Batch 2130/3072] loss=0.2340, lr=0.0000030, metrics:accuracy:0.9059
+2019-11-16 16:54:11,119 - root - INFO - [Epoch 3 Batch 2140/3072] loss=0.2565, lr=0.0000030, metrics:accuracy:0.9059
+2019-11-16 16:54:20,694 - root - INFO - [Epoch 3 Batch 2150/3072] loss=0.2669, lr=0.0000030, metrics:accuracy:0.9058
+2019-11-16 16:54:30,192 - root - INFO - [Epoch 3 Batch 2160/3072] loss=0.2933, lr=0.0000029, metrics:accuracy:0.9058
+2019-11-16 16:54:39,818 - root - INFO - [Epoch 3 Batch 2170/3072] loss=0.2312, lr=0.0000029, metrics:accuracy:0.9058
+2019-11-16 16:54:49,396 - root - INFO - [Epoch 3 Batch 2180/3072] loss=0.2568, lr=0.0000029, metrics:accuracy:0.9058
+2019-11-16 16:54:59,033 - root - INFO - [Epoch 3 Batch 2190/3072] loss=0.2520, lr=0.0000028, metrics:accuracy:0.9058
+2019-11-16 16:55:08,483 - root - INFO - [Epoch 3 Batch 2200/3072] loss=0.2582, lr=0.0000028, metrics:accuracy:0.9058
+2019-11-16 16:55:18,162 - root - INFO - [Epoch 3 Batch 2210/3072] loss=0.2701, lr=0.0000028, metrics:accuracy:0.9058
+2019-11-16 16:55:27,817 - root - INFO - [Epoch 3 Batch 2220/3072] loss=0.2120, lr=0.0000027, metrics:accuracy:0.9058
+2019-11-16 16:55:37,490 - root - INFO - [Epoch 3 Batch 2230/3072] loss=0.2546, lr=0.0000027, metrics:accuracy:0.9058
+2019-11-16 16:55:47,026 - root - INFO - [Epoch 3 Batch 2240/3072] loss=0.2267, lr=0.0000027, metrics:accuracy:0.9059
+2019-11-16 16:55:56,848 - root - INFO - [Epoch 3 Batch 2250/3072] loss=0.2337, lr=0.0000026, metrics:accuracy:0.9059
+2019-11-16 16:56:06,445 - root - INFO - [Epoch 3 Batch 2260/3072] loss=0.2370, lr=0.0000026, metrics:accuracy:0.9060
+2019-11-16 16:56:16,145 - root - INFO - [Epoch 3 Batch 2270/3072] loss=0.2676, lr=0.0000026, metrics:accuracy:0.9059
+2019-11-16 16:56:26,002 - root - INFO - [Epoch 3 Batch 2280/3072] loss=0.2200, lr=0.0000025, metrics:accuracy:0.9060
+2019-11-16 16:56:35,683 - root - INFO - [Epoch 3 Batch 2290/3072] loss=0.2762, lr=0.0000025, metrics:accuracy:0.9060
+2019-11-16 16:56:45,533 - root - INFO - [Epoch 3 Batch 2300/3072] loss=0.2643, lr=0.0000025, metrics:accuracy:0.9060
+2019-11-16 16:56:55,345 - root - INFO - [Epoch 3 Batch 2310/3072] loss=0.2334, lr=0.0000024, metrics:accuracy:0.9061
+2019-11-16 16:57:04,908 - root - INFO - [Epoch 3 Batch 2320/3072] loss=0.2481, lr=0.0000024, metrics:accuracy:0.9061
+2019-11-16 16:57:14,410 - root - INFO - [Epoch 3 Batch 2330/3072] loss=0.2386, lr=0.0000024, metrics:accuracy:0.9061
+2019-11-16 16:57:23,988 - root - INFO - [Epoch 3 Batch 2340/3072] loss=0.2214, lr=0.0000023, metrics:accuracy:0.9062
+2019-11-16 16:57:33,504 - root - INFO - [Epoch 3 Batch 2350/3072] loss=0.2650, lr=0.0000023, metrics:accuracy:0.9061
+2019-11-16 16:57:43,004 - root - INFO - [Epoch 3 Batch 2360/3072] loss=0.2025, lr=0.0000023, metrics:accuracy:0.9062
+2019-11-16 16:57:52,496 - root - INFO - [Epoch 3 Batch 2370/3072] loss=0.2644, lr=0.0000022, metrics:accuracy:0.9062
+2019-11-16 16:58:02,796 - root - INFO - [Epoch 3 Batch 2380/3072] loss=0.2353, lr=0.0000022, metrics:accuracy:0.9062
+2019-11-16 16:58:12,537 - root - INFO - [Epoch 3 Batch 2390/3072] loss=0.2608, lr=0.0000022, metrics:accuracy:0.9062
+2019-11-16 16:58:22,038 - root - INFO - [Epoch 3 Batch 2400/3072] loss=0.2418, lr=0.0000022, metrics:accuracy:0.9062
+2019-11-16 16:58:31,504 - root - INFO - [Epoch 3 Batch 2410/3072] loss=0.2674, lr=0.0000021, metrics:accuracy:0.9062
+2019-11-16 16:58:41,192 - root - INFO - [Epoch 3 Batch 2420/3072] loss=0.2501, lr=0.0000021, metrics:accuracy:0.9062
+2019-11-16 16:58:51,076 - root - INFO - [Epoch 3 Batch 2430/3072] loss=0.2729, lr=0.0000021, metrics:accuracy:0.9062
+2019-11-16 16:59:00,699 - root - INFO - [Epoch 3 Batch 2440/3072] loss=0.2014, lr=0.0000020, metrics:accuracy:0.9063
+2019-11-16 16:59:10,731 - root - INFO - [Epoch 3 Batch 2450/3072] loss=0.2858, lr=0.0000020, metrics:accuracy:0.9063
+2019-11-16 16:59:20,509 - root - INFO - [Epoch 3 Batch 2460/3072] loss=0.2380, lr=0.0000020, metrics:accuracy:0.9063
+2019-11-16 16:59:30,115 - root - INFO - [Epoch 3 Batch 2470/3072] loss=0.2606, lr=0.0000019, metrics:accuracy:0.9063
+2019-11-16 16:59:39,663 - root - INFO - [Epoch 3 Batch 2480/3072] loss=0.2379, lr=0.0000019, metrics:accuracy:0.9063
+2019-11-16 16:59:49,248 - root - INFO - [Epoch 3 Batch 2490/3072] loss=0.2341, lr=0.0000019, metrics:accuracy:0.9063
+2019-11-16 16:59:58,956 - root - INFO - [Epoch 3 Batch 2500/3072] loss=0.2542, lr=0.0000018, metrics:accuracy:0.9063
+2019-11-16 17:00:08,664 - root - INFO - [Epoch 3 Batch 2510/3072] loss=0.2904, lr=0.0000018, metrics:accuracy:0.9062
+2019-11-16 17:00:18,256 - root - INFO - [Epoch 3 Batch 2520/3072] loss=0.2542, lr=0.0000018, metrics:accuracy:0.9062
+2019-11-16 17:00:28,013 - root - INFO - [Epoch 3 Batch 2530/3072] loss=0.2364, lr=0.0000017, metrics:accuracy:0.9062
+2019-11-16 17:00:37,652 - root - INFO - [Epoch 3 Batch 2540/3072] loss=0.2890, lr=0.0000017, metrics:accuracy:0.9062
+2019-11-16 17:00:47,288 - root - INFO - [Epoch 3 Batch 2550/3072] loss=0.2381, lr=0.0000017, metrics:accuracy:0.9062
+2019-11-16 17:00:57,028 - root - INFO - [Epoch 3 Batch 2560/3072] loss=0.2527, lr=0.0000016, metrics:accuracy:0.9062
+2019-11-16 17:01:07,063 - root - INFO - [Epoch 3 Batch 2570/3072] loss=0.2710, lr=0.0000016, metrics:accuracy:0.9062
+2019-11-16 17:01:16,786 - root - INFO - [Epoch 3 Batch 2580/3072] loss=0.2335, lr=0.0000016, metrics:accuracy:0.9062
+2019-11-16 17:01:26,698 - root - INFO - [Epoch 3 Batch 2590/3072] loss=0.2739, lr=0.0000015, metrics:accuracy:0.9062
+2019-11-16 17:01:36,363 - root - INFO - [Epoch 3 Batch 2600/3072] loss=0.2540, lr=0.0000015, metrics:accuracy:0.9062
+2019-11-16 17:01:46,001 - root - INFO - [Epoch 3 Batch 2610/3072] loss=0.2818, lr=0.0000015, metrics:accuracy:0.9061
+2019-11-16 17:01:55,565 - root - INFO - [Epoch 3 Batch 2620/3072] loss=0.2334, lr=0.0000014, metrics:accuracy:0.9062
+2019-11-16 17:02:05,187 - root - INFO - [Epoch 3 Batch 2630/3072] loss=0.2660, lr=0.0000014, metrics:accuracy:0.9061
+2019-11-16 17:02:14,971 - root - INFO - [Epoch 3 Batch 2640/3072] loss=0.2378, lr=0.0000014, metrics:accuracy:0.9062
+2019-11-16 17:02:24,680 - root - INFO - [Epoch 3 Batch 2650/3072] loss=0.2687, lr=0.0000013, metrics:accuracy:0.9062
+2019-11-16 17:02:34,291 - root - INFO - [Epoch 3 Batch 2660/3072] loss=0.2576, lr=0.0000013, metrics:accuracy:0.9062
+2019-11-16 17:02:43,775 - root - INFO - [Epoch 3 Batch 2670/3072] loss=0.2285, lr=0.0000013, metrics:accuracy:0.9062
+2019-11-16 17:02:53,374 - root - INFO - [Epoch 3 Batch 2680/3072] loss=0.2461, lr=0.0000012, metrics:accuracy:0.9062
+2019-11-16 17:03:03,053 - root - INFO - [Epoch 3 Batch 2690/3072] loss=0.2425, lr=0.0000012, metrics:accuracy:0.9063
+2019-11-16 17:03:12,590 - root - INFO - [Epoch 3 Batch 2700/3072] loss=0.2218, lr=0.0000012, metrics:accuracy:0.9063
+2019-11-16 17:03:22,117 - root - INFO - [Epoch 3 Batch 2710/3072] loss=0.2707, lr=0.0000011, metrics:accuracy:0.9063
+2019-11-16 17:03:31,664 - root - INFO - [Epoch 3 Batch 2720/3072] loss=0.2650, lr=0.0000011, metrics:accuracy:0.9062
+2019-11-16 17:03:41,207 - root - INFO - [Epoch 3 Batch 2730/3072] loss=0.2434, lr=0.0000011, metrics:accuracy:0.9063
+2019-11-16 17:03:50,708 - root - INFO - [Epoch 3 Batch 2740/3072] loss=0.2480, lr=0.0000010, metrics:accuracy:0.9063
+2019-11-16 17:04:00,167 - root - INFO - [Epoch 3 Batch 2750/3072] loss=0.2648, lr=0.0000010, metrics:accuracy:0.9063
+2019-11-16 17:04:09,744 - root - INFO - [Epoch 3 Batch 2760/3072] loss=0.2359, lr=0.0000010, metrics:accuracy:0.9063
+2019-11-16 17:04:19,554 - root - INFO - [Epoch 3 Batch 2770/3072] loss=0.2349, lr=0.0000009, metrics:accuracy:0.9063
+2019-11-16 17:04:29,298 - root - INFO - [Epoch 3 Batch 2780/3072] loss=0.2390, lr=0.0000009, metrics:accuracy:0.9064
+2019-11-16 17:04:39,111 - root - INFO - [Epoch 3 Batch 2790/3072] loss=0.2325, lr=0.0000009, metrics:accuracy:0.9064
+2019-11-16 17:04:48,629 - root - INFO - [Epoch 3 Batch 2800/3072] loss=0.2376, lr=0.0000008, metrics:accuracy:0.9064
+2019-11-16 17:04:58,026 - root - INFO - [Epoch 3 Batch 2810/3072] loss=0.2721, lr=0.0000008, metrics:accuracy:0.9064
+2019-11-16 17:05:07,601 - root - INFO - [Epoch 3 Batch 2820/3072] loss=0.3046, lr=0.0000008, metrics:accuracy:0.9063
+2019-11-16 17:05:17,216 - root - INFO - [Epoch 3 Batch 2830/3072] loss=0.2603, lr=0.0000007, metrics:accuracy:0.9063
+2019-11-16 17:05:27,040 - root - INFO - [Epoch 3 Batch 2840/3072] loss=0.2476, lr=0.0000007, metrics:accuracy:0.9063
+2019-11-16 17:05:36,836 - root - INFO - [Epoch 3 Batch 2850/3072] loss=0.2815, lr=0.0000007, metrics:accuracy:0.9063
+2019-11-16 17:05:46,520 - root - INFO - [Epoch 3 Batch 2860/3072] loss=0.2477, lr=0.0000007, metrics:accuracy:0.9063
+2019-11-16 17:05:56,025 - root - INFO - [Epoch 3 Batch 2870/3072] loss=0.2523, lr=0.0000006, metrics:accuracy:0.9063
+2019-11-16 17:06:05,613 - root - INFO - [Epoch 3 Batch 2880/3072] loss=0.2311, lr=0.0000006, metrics:accuracy:0.9063
+2019-11-16 17:06:15,216 - root - INFO - [Epoch 3 Batch 2890/3072] loss=0.2169, lr=0.0000006, metrics:accuracy:0.9064
+2019-11-16 17:06:24,746 - root - INFO - [Epoch 3 Batch 2900/3072] loss=0.2704, lr=0.0000005, metrics:accuracy:0.9064
+2019-11-16 17:06:34,366 - root - INFO - [Epoch 3 Batch 2910/3072] loss=0.2382, lr=0.0000005, metrics:accuracy:0.9064
+2019-11-16 17:06:44,017 - root - INFO - [Epoch 3 Batch 2920/3072] loss=0.2292, lr=0.0000005, metrics:accuracy:0.9064
+2019-11-16 17:06:53,589 - root - INFO - [Epoch 3 Batch 2930/3072] loss=0.2741, lr=0.0000004, metrics:accuracy:0.9064
+2019-11-16 17:07:03,045 - root - INFO - [Epoch 3 Batch 2940/3072] loss=0.2491, lr=0.0000004, metrics:accuracy:0.9064
+2019-11-16 17:07:12,716 - root - INFO - [Epoch 3 Batch 2950/3072] loss=0.2338, lr=0.0000004, metrics:accuracy:0.9065
+2019-11-16 17:07:22,362 - root - INFO - [Epoch 3 Batch 2960/3072] loss=0.2505, lr=0.0000003, metrics:accuracy:0.9064
+2019-11-16 17:07:32,113 - root - INFO - [Epoch 3 Batch 2970/3072] loss=0.2470, lr=0.0000003, metrics:accuracy:0.9065
+2019-11-16 17:07:41,699 - root - INFO - [Epoch 3 Batch 2980/3072] loss=0.2319, lr=0.0000003, metrics:accuracy:0.9065
+2019-11-16 17:07:51,238 - root - INFO - [Epoch 3 Batch 2990/3072] loss=0.2320, lr=0.0000002, metrics:accuracy:0.9065
+2019-11-16 17:08:00,988 - root - INFO - [Epoch 3 Batch 3000/3072] loss=0.3096, lr=0.0000002, metrics:accuracy:0.9065
+2019-11-16 17:08:10,546 - root - INFO - [Epoch 3 Batch 3010/3072] loss=0.2471, lr=0.0000002, metrics:accuracy:0.9065
+2019-11-16 17:08:20,229 - root - INFO - [Epoch 3 Batch 3020/3072] loss=0.2360, lr=0.0000001, metrics:accuracy:0.9065
+2019-11-16 17:08:29,802 - root - INFO - [Epoch 3 Batch 3030/3072] loss=0.2271, lr=0.0000001, metrics:accuracy:0.9065
+2019-11-16 17:08:39,531 - root - INFO - [Epoch 3 Batch 3040/3072] loss=0.2395, lr=0.0000001, metrics:accuracy:0.9066
+2019-11-16 17:08:49,105 - root - INFO - [Epoch 3 Batch 3050/3072] loss=0.2722, lr=0.0000000, metrics:accuracy:0.9065
+2019-11-16 17:08:58,705 - root - INFO - [Epoch 3 Batch 3060/3072] loss=0.2520, lr=0.0000000, metrics:accuracy:0.9065
+2019-11-16 17:09:08,493 - root - INFO - [Epoch 3 Batch 3070/3072] loss=0.2459, lr=-0.0000000, metrics:accuracy:0.9066
+2019-11-16 17:09:10,413 - root - INFO - Now we are doing evaluation on dev_matched with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2019-11-16 17:09:12,077 - root - INFO - [Batch 10/307] loss=2.9442, metrics:accuracy:0.8688
+2019-11-16 17:09:13,707 - root - INFO - [Batch 20/307] loss=3.2694, metrics:accuracy:0.8719
+2019-11-16 17:09:15,337 - root - INFO - [Batch 30/307] loss=2.9766, metrics:accuracy:0.8740
+2019-11-16 17:09:16,955 - root - INFO - [Batch 40/307] loss=2.9847, metrics:accuracy:0.8727
+2019-11-16 17:09:18,570 - root - INFO - [Batch 50/307] loss=3.6560, metrics:accuracy:0.8688
+2019-11-16 17:09:20,185 - root - INFO - [Batch 60/307] loss=2.9227, metrics:accuracy:0.8714
+2019-11-16 17:09:21,817 - root - INFO - [Batch 70/307] loss=2.6388, metrics:accuracy:0.8714
+2019-11-16 17:09:23,552 - root - INFO - [Batch 80/307] loss=3.2950, metrics:accuracy:0.8695
+2019-11-16 17:09:25,284 - root - INFO - [Batch 90/307] loss=3.5905, metrics:accuracy:0.8667
+2019-11-16 17:09:27,007 - root - INFO - [Batch 100/307] loss=3.0979, metrics:accuracy:0.8688
+2019-11-16 17:09:28,727 - root - INFO - [Batch 110/307] loss=3.6648, metrics:accuracy:0.8685
+2019-11-16 17:09:30,451 - root - INFO - [Batch 120/307] loss=2.8723, metrics:accuracy:0.8703
+2019-11-16 17:09:32,182 - root - INFO - [Batch 130/307] loss=2.9523, metrics:accuracy:0.8712
+2019-11-16 17:09:33,912 - root - INFO - [Batch 140/307] loss=2.8872, metrics:accuracy:0.8712
+2019-11-16 17:09:35,651 - root - INFO - [Batch 150/307] loss=2.5400, metrics:accuracy:0.8725
+2019-11-16 17:09:37,381 - root - INFO - [Batch 160/307] loss=3.5913, metrics:accuracy:0.8703
+2019-11-16 17:09:39,105 - root - INFO - [Batch 170/307] loss=2.8566, metrics:accuracy:0.8717
+2019-11-16 17:09:40,823 - root - INFO - [Batch 180/307] loss=2.7444, metrics:accuracy:0.8733
+2019-11-16 17:09:42,548 - root - INFO - [Batch 190/307] loss=3.1706, metrics:accuracy:0.8724
+2019-11-16 17:09:44,272 - root - INFO - [Batch 200/307] loss=2.6397, metrics:accuracy:0.8734
+2019-11-16 17:09:45,995 - root - INFO - [Batch 210/307] loss=3.3606, metrics:accuracy:0.8725
+2019-11-16 17:09:47,720 - root - INFO - [Batch 220/307] loss=2.9230, metrics:accuracy:0.8729
+2019-11-16 17:09:49,451 - root - INFO - [Batch 230/307] loss=2.6155, metrics:accuracy:0.8731
+2019-11-16 17:09:51,180 - root - INFO - [Batch 240/307] loss=3.2016, metrics:accuracy:0.8721
+2019-11-16 17:09:52,905 - root - INFO - [Batch 250/307] loss=3.9758, metrics:accuracy:0.8711
+2019-11-16 17:09:54,632 - root - INFO - [Batch 260/307] loss=4.0008, metrics:accuracy:0.8702
+2019-11-16 17:09:56,357 - root - INFO - [Batch 270/307] loss=3.0910, metrics:accuracy:0.8703
+2019-11-16 17:09:58,088 - root - INFO - [Batch 280/307] loss=3.2032, metrics:accuracy:0.8699
+2019-11-16 17:09:59,813 - root - INFO - [Batch 290/307] loss=3.1154, metrics:accuracy:0.8695
+2019-11-16 17:10:01,541 - root - INFO - [Batch 300/307] loss=2.6977, metrics:accuracy:0.8702
+2019-11-16 17:10:02,875 - root - INFO - validation metrics:accuracy:0.8706
+2019-11-16 17:10:02,876 - root - INFO - Time cost=52.46s, throughput=187.26 samples/s
+2019-11-16 17:10:02,876 - root - INFO - Now we are doing evaluation on dev_mismatched with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2019-11-16 17:10:04,616 - root - INFO - [Batch 10/308] loss=3.4471, metrics:accuracy:0.8625
+2019-11-16 17:10:06,335 - root - INFO - [Batch 20/308] loss=3.7399, metrics:accuracy:0.8641
+2019-11-16 17:10:07,965 - root - INFO - [Batch 30/308] loss=2.3288, metrics:accuracy:0.8740
+2019-11-16 17:10:09,560 - root - INFO - [Batch 40/308] loss=3.5461, metrics:accuracy:0.8648
+2019-11-16 17:10:11,156 - root - INFO - [Batch 50/308] loss=3.1947, metrics:accuracy:0.8638
+2019-11-16 17:10:12,747 - root - INFO - [Batch 60/308] loss=2.6280, metrics:accuracy:0.8656
+2019-11-16 17:10:14,349 - root - INFO - [Batch 70/308] loss=2.9601, metrics:accuracy:0.8638
+2019-11-16 17:10:15,954 - root - INFO - [Batch 80/308] loss=3.3016, metrics:accuracy:0.8629
+2019-11-16 17:10:17,554 - root - INFO - [Batch 90/308] loss=2.9041, metrics:accuracy:0.8646
+2019-11-16 17:10:19,152 - root - INFO - [Batch 100/308] loss=2.8115, metrics:accuracy:0.8656
+2019-11-16 17:10:20,750 - root - INFO - [Batch 110/308] loss=3.5895, metrics:accuracy:0.8639
+2019-11-16 17:10:22,354 - root - INFO - [Batch 120/308] loss=2.6327, metrics:accuracy:0.8664
+2019-11-16 17:10:23,946 - root - INFO - [Batch 130/308] loss=3.3062, metrics:accuracy:0.8649
+2019-11-16 17:10:25,545 - root - INFO - [Batch 140/308] loss=3.0478, metrics:accuracy:0.8654
+2019-11-16 17:10:27,145 - root - INFO - [Batch 150/308] loss=2.7467, metrics:accuracy:0.8673
+2019-11-16 17:10:28,739 - root - INFO - [Batch 160/308] loss=3.3782, metrics:accuracy:0.8684
+2019-11-16 17:10:30,336 - root - INFO - [Batch 170/308] loss=3.6406, metrics:accuracy:0.8675
+2019-11-16 17:10:31,932 - root - INFO - [Batch 180/308] loss=2.9653, metrics:accuracy:0.8681
+2019-11-16 17:10:33,532 - root - INFO - [Batch 190/308] loss=2.6768, metrics:accuracy:0.8688
+2019-11-16 17:10:35,126 - root - INFO - [Batch 200/308] loss=2.9469, metrics:accuracy:0.8694
+2019-11-16 17:10:36,719 - root - INFO - [Batch 210/308] loss=3.3042, metrics:accuracy:0.8692
+2019-11-16 17:10:38,316 - root - INFO - [Batch 220/308] loss=2.8271, metrics:accuracy:0.8700
+2019-11-16 17:10:39,910 - root - INFO - [Batch 230/308] loss=3.8971, metrics:accuracy:0.8693
+2019-11-16 17:10:41,509 - root - INFO - [Batch 240/308] loss=3.3723, metrics:accuracy:0.8689
+2019-11-16 17:10:43,104 - root - INFO - [Batch 250/308] loss=2.9680, metrics:accuracy:0.8686
+2019-11-16 17:10:44,721 - root - INFO - [Batch 260/308] loss=4.3669, metrics:accuracy:0.8672
+2019-11-16 17:10:46,355 - root - INFO - [Batch 270/308] loss=3.0969, metrics:accuracy:0.8676
+2019-11-16 17:10:47,988 - root - INFO - [Batch 280/308] loss=3.0151, metrics:accuracy:0.8674
+2019-11-16 17:10:49,622 - root - INFO - [Batch 290/308] loss=3.7569, metrics:accuracy:0.8666
+2019-11-16 17:10:51,257 - root - INFO - [Batch 300/308] loss=3.1244, metrics:accuracy:0.8666
+2019-11-16 17:10:52,566 - root - INFO - validation metrics:accuracy:0.8660
+2019-11-16 17:10:52,566 - root - INFO - Time cost=49.69s, throughput=198.35 samples/s
+2019-11-16 17:10:54,840 - root - INFO - params saved in: ./output_dir/model_xlnet_MNLI_2.params
+2019-11-16 17:10:54,841 - root - INFO - Time cost=3066.23s
+2019-11-16 17:10:55,363 - root - INFO - Best model at epoch 3. Validation metrics:accuracy:0.8706
+2019-11-16 17:10:55,363 - root - INFO - Now we are doing testing on test_matched with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2019-11-16 17:11:43,358 - root - INFO - Time cost=47.99s, throughput=204.69 samples/s
+2019-11-16 17:11:43,365 - root - INFO - Now we are doing testing on test_mismatched with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2019-11-16 17:12:33,339 - root - INFO - Time cost=49.97s, throughput=197.22 samples/s

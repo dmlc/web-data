@@ -1,0 +1,359 @@
+2019-11-22 07:14:48,587 - root - INFO - Namespace(accumulate=None, attention_dropout=0.0, batch_size=32, cpu=None, dataset='126gb', dev_batch_size=32, dropout=0.0, early_stop=None, epochs=10, epsilon=1e-06, gpu=8, log_interval=10, lr=3e-05, lr_decay='linear', max_len=128, model_name='xlnet_cased_l12_h768_a12', model_parameters=None, only_inference=False, output_dir='./output_dir', pad=True, seed=77, task_name='CoLA', warmup_ratio=0.1)
+2019-11-22 07:15:28,413 - root - INFO - processing dataset...
+2019-11-22 07:15:48,762 - py.warnings - WARNING - /home/ubuntu/.local/lib/python3.6/site-packages/gluonnlp/data/sampler.py:352: UserWarning: Some buckets are empty and will be removed. Unused bucket keys=[44]
+  str(unused_bucket_keys))
+
+2019-11-22 07:15:53,024 - root - INFO - Now we are doing XLNet classification training on [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)]!
+2019-11-22 07:16:12,565 - root - INFO - [Epoch 1 Batch 10/272] loss=0.6985, lr=0.0000010
+2019-11-22 07:16:19,871 - root - INFO - [Epoch 1 Batch 20/272] loss=0.6609, lr=0.0000021
+2019-11-22 07:16:27,087 - root - INFO - [Epoch 1 Batch 30/272] loss=0.6057, lr=0.0000033
+2019-11-22 07:16:34,664 - root - INFO - [Epoch 1 Batch 40/272] loss=0.6082, lr=0.0000044
+2019-11-22 07:16:41,784 - root - INFO - [Epoch 1 Batch 50/272] loss=0.5892, lr=0.0000055
+2019-11-22 07:16:48,832 - root - INFO - [Epoch 1 Batch 60/272] loss=0.5928, lr=0.0000066
+2019-11-22 07:16:56,149 - root - INFO - [Epoch 1 Batch 70/272] loss=0.5333, lr=0.0000078
+2019-11-22 07:17:03,877 - root - INFO - [Epoch 1 Batch 80/272] loss=0.6015, lr=0.0000089
+2019-11-22 07:17:10,908 - root - INFO - [Epoch 1 Batch 90/272] loss=0.5574, lr=0.0000100
+2019-11-22 07:17:18,271 - root - INFO - [Epoch 1 Batch 100/272] loss=0.5989, lr=0.0000111
+2019-11-22 07:17:25,602 - root - INFO - [Epoch 1 Batch 110/272] loss=0.6148, lr=0.0000122
+2019-11-22 07:17:33,128 - root - INFO - [Epoch 1 Batch 120/272] loss=0.5339, lr=0.0000134
+2019-11-22 07:17:40,714 - root - INFO - [Epoch 1 Batch 130/272] loss=0.6069, lr=0.0000145
+2019-11-22 07:17:48,041 - root - INFO - [Epoch 1 Batch 140/272] loss=0.5571, lr=0.0000156
+2019-11-22 07:17:55,278 - root - INFO - [Epoch 1 Batch 150/272] loss=0.6278, lr=0.0000167
+2019-11-22 07:18:02,511 - root - INFO - [Epoch 1 Batch 160/272] loss=0.5921, lr=0.0000179
+2019-11-22 07:18:09,637 - root - INFO - [Epoch 1 Batch 170/272] loss=0.5792, lr=0.0000190
+2019-11-22 07:18:16,782 - root - INFO - [Epoch 1 Batch 180/272] loss=0.5986, lr=0.0000201
+2019-11-22 07:18:24,036 - root - INFO - [Epoch 1 Batch 190/272] loss=0.5610, lr=0.0000212
+2019-11-22 07:18:31,211 - root - INFO - [Epoch 1 Batch 200/272] loss=0.5439, lr=0.0000224
+2019-11-22 07:18:38,440 - root - INFO - [Epoch 1 Batch 210/272] loss=0.5798, lr=0.0000235
+2019-11-22 07:18:45,880 - root - INFO - [Epoch 1 Batch 220/272] loss=0.5678, lr=0.0000246
+2019-11-22 07:18:53,122 - root - INFO - [Epoch 1 Batch 230/272] loss=0.6373, lr=0.0000257
+2019-11-22 07:19:00,424 - root - INFO - [Epoch 1 Batch 240/272] loss=0.5575, lr=0.0000269
+2019-11-22 07:19:07,355 - root - INFO - [Epoch 1 Batch 250/272] loss=0.4775, lr=0.0000280
+2019-11-22 07:19:14,606 - root - INFO - [Epoch 1 Batch 260/272] loss=0.4925, lr=0.0000291
+2019-11-22 07:19:21,878 - root - INFO - [Epoch 1 Batch 270/272] loss=0.5752, lr=0.0000300
+2019-11-22 07:19:23,276 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2019-11-22 07:19:24,727 - root - INFO - [Batch 10/33] loss=0.5682
+2019-11-22 07:19:26,168 - root - INFO - [Batch 20/33] loss=0.5339
+2019-11-22 07:19:27,599 - root - INFO - [Batch 30/33] loss=0.5333
+2019-11-22 07:19:28,161 - root - INFO - validation metrics:mcc:0.2695
+2019-11-22 07:19:28,162 - root - INFO - Time cost=4.89s, throughput=216.14 samples/s
+2019-11-22 07:19:29,872 - root - INFO - params saved in: ./output_dir/model_xlnet_CoLA_0.params
+2019-11-22 07:19:29,873 - root - INFO - Time cost=216.84s
+2019-11-22 07:19:37,446 - root - INFO - [Epoch 2 Batch 10/272] loss=0.4046, lr=0.0000298
+2019-11-22 07:19:44,420 - root - INFO - [Epoch 2 Batch 20/272] loss=0.4182, lr=0.0000297
+2019-11-22 07:19:51,814 - root - INFO - [Epoch 2 Batch 30/272] loss=0.3893, lr=0.0000296
+2019-11-22 07:19:58,895 - root - INFO - [Epoch 2 Batch 40/272] loss=0.4754, lr=0.0000295
+2019-11-22 07:20:06,054 - root - INFO - [Epoch 2 Batch 50/272] loss=0.3903, lr=0.0000293
+2019-11-22 07:20:13,377 - root - INFO - [Epoch 2 Batch 60/272] loss=0.4367, lr=0.0000292
+2019-11-22 07:20:20,996 - root - INFO - [Epoch 2 Batch 70/272] loss=0.5382, lr=0.0000291
+2019-11-22 07:20:28,779 - root - INFO - [Epoch 2 Batch 80/272] loss=0.4331, lr=0.0000290
+2019-11-22 07:20:36,219 - root - INFO - [Epoch 2 Batch 90/272] loss=0.4665, lr=0.0000288
+2019-11-22 07:20:43,348 - root - INFO - [Epoch 2 Batch 100/272] loss=0.3950, lr=0.0000287
+2019-11-22 07:20:50,496 - root - INFO - [Epoch 2 Batch 110/272] loss=0.3878, lr=0.0000286
+2019-11-22 07:20:57,697 - root - INFO - [Epoch 2 Batch 120/272] loss=0.3931, lr=0.0000285
+2019-11-22 07:21:04,997 - root - INFO - [Epoch 2 Batch 130/272] loss=0.4527, lr=0.0000283
+2019-11-22 07:21:12,312 - root - INFO - [Epoch 2 Batch 140/272] loss=0.4120, lr=0.0000282
+2019-11-22 07:21:19,468 - root - INFO - [Epoch 2 Batch 150/272] loss=0.5013, lr=0.0000281
+2019-11-22 07:21:26,873 - root - INFO - [Epoch 2 Batch 160/272] loss=0.3959, lr=0.0000280
+2019-11-22 07:21:34,308 - root - INFO - [Epoch 2 Batch 170/272] loss=0.4263, lr=0.0000278
+2019-11-22 07:21:41,555 - root - INFO - [Epoch 2 Batch 180/272] loss=0.4534, lr=0.0000277
+2019-11-22 07:21:48,714 - root - INFO - [Epoch 2 Batch 190/272] loss=0.4023, lr=0.0000276
+2019-11-22 07:21:55,888 - root - INFO - [Epoch 2 Batch 200/272] loss=0.4339, lr=0.0000275
+2019-11-22 07:22:03,266 - root - INFO - [Epoch 2 Batch 210/272] loss=0.4550, lr=0.0000273
+2019-11-22 07:22:10,591 - root - INFO - [Epoch 2 Batch 220/272] loss=0.3693, lr=0.0000272
+2019-11-22 07:22:17,864 - root - INFO - [Epoch 2 Batch 230/272] loss=0.4070, lr=0.0000271
+2019-11-22 07:22:25,153 - root - INFO - [Epoch 2 Batch 240/272] loss=0.3393, lr=0.0000270
+2019-11-22 07:22:32,040 - root - INFO - [Epoch 2 Batch 250/272] loss=0.4288, lr=0.0000268
+2019-11-22 07:22:39,179 - root - INFO - [Epoch 2 Batch 260/272] loss=0.4348, lr=0.0000267
+2019-11-22 07:22:46,588 - root - INFO - [Epoch 2 Batch 270/272] loss=0.3784, lr=0.0000266
+2019-11-22 07:22:48,043 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2019-11-22 07:22:49,683 - root - INFO - [Batch 10/33] loss=0.4394
+2019-11-22 07:22:51,328 - root - INFO - [Batch 20/33] loss=0.5163
+2019-11-22 07:22:52,998 - root - INFO - [Batch 30/33] loss=0.4504
+2019-11-22 07:22:53,550 - root - INFO - validation metrics:mcc:0.4907
+2019-11-22 07:22:53,551 - root - INFO - Time cost=5.51s, throughput=191.76 samples/s
+2019-11-22 07:22:55,334 - root - INFO - params saved in: ./output_dir/model_xlnet_CoLA_1.params
+2019-11-22 07:22:55,336 - root - INFO - Time cost=205.46s
+2019-11-22 07:23:02,587 - root - INFO - [Epoch 3 Batch 10/272] loss=0.2017, lr=0.0000264
+2019-11-22 07:23:09,923 - root - INFO - [Epoch 3 Batch 20/272] loss=0.1939, lr=0.0000263
+2019-11-22 07:23:17,500 - root - INFO - [Epoch 3 Batch 30/272] loss=0.1780, lr=0.0000262
+2019-11-22 07:23:24,877 - root - INFO - [Epoch 3 Batch 40/272] loss=0.2524, lr=0.0000261
+2019-11-22 07:23:32,335 - root - INFO - [Epoch 3 Batch 50/272] loss=0.2267, lr=0.0000259
+2019-11-22 07:23:39,829 - root - INFO - [Epoch 3 Batch 60/272] loss=0.2185, lr=0.0000258
+2019-11-22 07:23:47,368 - root - INFO - [Epoch 3 Batch 70/272] loss=0.2320, lr=0.0000257
+2019-11-22 07:23:54,583 - root - INFO - [Epoch 3 Batch 80/272] loss=0.2930, lr=0.0000256
+2019-11-22 07:24:01,657 - root - INFO - [Epoch 3 Batch 90/272] loss=0.2084, lr=0.0000254
+2019-11-22 07:24:08,858 - root - INFO - [Epoch 3 Batch 100/272] loss=0.2325, lr=0.0000253
+2019-11-22 07:24:16,081 - root - INFO - [Epoch 3 Batch 110/272] loss=0.2097, lr=0.0000252
+2019-11-22 07:24:23,272 - root - INFO - [Epoch 3 Batch 120/272] loss=0.1974, lr=0.0000251
+2019-11-22 07:24:30,421 - root - INFO - [Epoch 3 Batch 130/272] loss=0.2376, lr=0.0000249
+2019-11-22 07:24:37,720 - root - INFO - [Epoch 3 Batch 140/272] loss=0.2114, lr=0.0000248
+2019-11-22 07:24:44,941 - root - INFO - [Epoch 3 Batch 150/272] loss=0.2930, lr=0.0000247
+2019-11-22 07:24:52,205 - root - INFO - [Epoch 3 Batch 160/272] loss=0.2022, lr=0.0000246
+2019-11-22 07:24:59,498 - root - INFO - [Epoch 3 Batch 170/272] loss=0.1477, lr=0.0000244
+2019-11-22 07:25:06,319 - root - INFO - [Epoch 3 Batch 180/272] loss=0.1739, lr=0.0000243
+2019-11-22 07:25:13,538 - root - INFO - [Epoch 3 Batch 190/272] loss=0.1951, lr=0.0000242
+2019-11-22 07:25:21,018 - root - INFO - [Epoch 3 Batch 200/272] loss=0.2296, lr=0.0000241
+2019-11-22 07:25:28,530 - root - INFO - [Epoch 3 Batch 210/272] loss=0.2651, lr=0.0000239
+2019-11-22 07:25:35,894 - root - INFO - [Epoch 3 Batch 220/272] loss=0.3684, lr=0.0000238
+2019-11-22 07:25:43,217 - root - INFO - [Epoch 3 Batch 230/272] loss=0.2249, lr=0.0000237
+2019-11-22 07:25:50,385 - root - INFO - [Epoch 3 Batch 240/272] loss=0.2333, lr=0.0000236
+2019-11-22 07:25:57,731 - root - INFO - [Epoch 3 Batch 250/272] loss=0.3220, lr=0.0000234
+2019-11-22 07:26:05,141 - root - INFO - [Epoch 3 Batch 260/272] loss=0.1839, lr=0.0000233
+2019-11-22 07:26:12,345 - root - INFO - [Epoch 3 Batch 270/272] loss=0.2282, lr=0.0000232
+2019-11-22 07:26:13,768 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2019-11-22 07:26:15,281 - root - INFO - [Batch 10/33] loss=0.5299
+2019-11-22 07:26:16,790 - root - INFO - [Batch 20/33] loss=0.6450
+2019-11-22 07:26:18,330 - root - INFO - [Batch 30/33] loss=0.4600
+2019-11-22 07:26:18,861 - root - INFO - validation metrics:mcc:0.4810
+2019-11-22 07:26:18,861 - root - INFO - Time cost=5.09s, throughput=207.34 samples/s
+2019-11-22 07:26:20,401 - root - INFO - params saved in: ./output_dir/model_xlnet_CoLA_2.params
+2019-11-22 07:26:20,403 - root - INFO - Time cost=205.07s
+2019-11-22 07:26:27,933 - root - INFO - [Epoch 4 Batch 10/272] loss=0.1284, lr=0.0000230
+2019-11-22 07:26:35,314 - root - INFO - [Epoch 4 Batch 20/272] loss=0.1475, lr=0.0000229
+2019-11-22 07:26:42,435 - root - INFO - [Epoch 4 Batch 30/272] loss=0.1028, lr=0.0000228
+2019-11-22 07:26:49,822 - root - INFO - [Epoch 4 Batch 40/272] loss=0.1045, lr=0.0000227
+2019-11-22 07:26:57,056 - root - INFO - [Epoch 4 Batch 50/272] loss=0.1488, lr=0.0000225
+2019-11-22 07:27:04,439 - root - INFO - [Epoch 4 Batch 60/272] loss=0.1951, lr=0.0000224
+2019-11-22 07:27:11,678 - root - INFO - [Epoch 4 Batch 70/272] loss=0.1423, lr=0.0000223
+2019-11-22 07:27:18,949 - root - INFO - [Epoch 4 Batch 80/272] loss=0.1192, lr=0.0000222
+2019-11-22 07:27:26,201 - root - INFO - [Epoch 4 Batch 90/272] loss=0.1586, lr=0.0000220
+2019-11-22 07:27:33,545 - root - INFO - [Epoch 4 Batch 100/272] loss=0.1151, lr=0.0000219
+2019-11-22 07:27:40,806 - root - INFO - [Epoch 4 Batch 110/272] loss=0.2058, lr=0.0000218
+2019-11-22 07:27:48,324 - root - INFO - [Epoch 4 Batch 120/272] loss=0.1022, lr=0.0000217
+2019-11-22 07:27:55,453 - root - INFO - [Epoch 4 Batch 130/272] loss=0.0855, lr=0.0000215
+2019-11-22 07:28:02,729 - root - INFO - [Epoch 4 Batch 140/272] loss=0.1512, lr=0.0000214
+2019-11-22 07:28:10,214 - root - INFO - [Epoch 4 Batch 150/272] loss=0.0723, lr=0.0000213
+2019-11-22 07:28:17,518 - root - INFO - [Epoch 4 Batch 160/272] loss=0.1561, lr=0.0000212
+2019-11-22 07:28:24,849 - root - INFO - [Epoch 4 Batch 170/272] loss=0.1707, lr=0.0000210
+2019-11-22 07:28:32,420 - root - INFO - [Epoch 4 Batch 180/272] loss=0.1365, lr=0.0000209
+2019-11-22 07:28:40,073 - root - INFO - [Epoch 4 Batch 190/272] loss=0.1370, lr=0.0000208
+2019-11-22 07:28:47,325 - root - INFO - [Epoch 4 Batch 200/272] loss=0.1206, lr=0.0000207
+2019-11-22 07:28:54,906 - root - INFO - [Epoch 4 Batch 210/272] loss=0.1444, lr=0.0000205
+2019-11-22 07:29:02,382 - root - INFO - [Epoch 4 Batch 220/272] loss=0.2066, lr=0.0000204
+2019-11-22 07:29:09,991 - root - INFO - [Epoch 4 Batch 230/272] loss=0.1285, lr=0.0000203
+2019-11-22 07:29:17,285 - root - INFO - [Epoch 4 Batch 240/272] loss=0.1422, lr=0.0000202
+2019-11-22 07:29:24,674 - root - INFO - [Epoch 4 Batch 250/272] loss=0.1216, lr=0.0000200
+2019-11-22 07:29:31,965 - root - INFO - [Epoch 4 Batch 260/272] loss=0.0958, lr=0.0000199
+2019-11-22 07:29:39,031 - root - INFO - [Epoch 4 Batch 270/272] loss=0.1288, lr=0.0000198
+2019-11-22 07:29:40,537 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2019-11-22 07:29:42,180 - root - INFO - [Batch 10/33] loss=0.6880
+2019-11-22 07:29:43,854 - root - INFO - [Batch 20/33] loss=0.8435
+2019-11-22 07:29:45,542 - root - INFO - [Batch 30/33] loss=0.5051
+2019-11-22 07:29:46,094 - root - INFO - validation metrics:mcc:0.5043
+2019-11-22 07:29:46,094 - root - INFO - Time cost=5.56s, throughput=190.05 samples/s
+2019-11-22 07:29:47,180 - root - INFO - params saved in: ./output_dir/model_xlnet_CoLA_3.params
+2019-11-22 07:29:47,181 - root - INFO - Time cost=206.78s
+2019-11-22 07:29:54,469 - root - INFO - [Epoch 5 Batch 10/272] loss=0.0572, lr=0.0000196
+2019-11-22 07:30:01,765 - root - INFO - [Epoch 5 Batch 20/272] loss=0.1115, lr=0.0000195
+2019-11-22 07:30:08,697 - root - INFO - [Epoch 5 Batch 30/272] loss=0.0796, lr=0.0000194
+2019-11-22 07:30:16,041 - root - INFO - [Epoch 5 Batch 40/272] loss=0.0655, lr=0.0000193
+2019-11-22 07:30:23,180 - root - INFO - [Epoch 5 Batch 50/272] loss=0.0718, lr=0.0000191
+2019-11-22 07:30:30,673 - root - INFO - [Epoch 5 Batch 60/272] loss=0.0913, lr=0.0000190
+2019-11-22 07:30:38,273 - root - INFO - [Epoch 5 Batch 70/272] loss=0.0891, lr=0.0000189
+2019-11-22 07:30:45,947 - root - INFO - [Epoch 5 Batch 80/272] loss=0.0760, lr=0.0000188
+2019-11-22 07:30:53,337 - root - INFO - [Epoch 5 Batch 90/272] loss=0.1272, lr=0.0000186
+2019-11-22 07:31:01,003 - root - INFO - [Epoch 5 Batch 100/272] loss=0.0879, lr=0.0000185
+2019-11-22 07:31:08,687 - root - INFO - [Epoch 5 Batch 110/272] loss=0.0814, lr=0.0000184
+2019-11-22 07:31:16,096 - root - INFO - [Epoch 5 Batch 120/272] loss=0.0898, lr=0.0000183
+2019-11-22 07:31:23,397 - root - INFO - [Epoch 5 Batch 130/272] loss=0.1281, lr=0.0000181
+2019-11-22 07:31:30,674 - root - INFO - [Epoch 5 Batch 140/272] loss=0.0522, lr=0.0000180
+2019-11-22 07:31:38,069 - root - INFO - [Epoch 5 Batch 150/272] loss=0.1163, lr=0.0000179
+2019-11-22 07:31:45,446 - root - INFO - [Epoch 5 Batch 160/272] loss=0.0700, lr=0.0000178
+2019-11-22 07:31:53,034 - root - INFO - [Epoch 5 Batch 170/272] loss=0.1101, lr=0.0000177
+2019-11-22 07:32:00,211 - root - INFO - [Epoch 5 Batch 180/272] loss=0.1072, lr=0.0000175
+2019-11-22 07:32:07,636 - root - INFO - [Epoch 5 Batch 190/272] loss=0.1350, lr=0.0000174
+2019-11-22 07:32:15,070 - root - INFO - [Epoch 5 Batch 200/272] loss=0.1545, lr=0.0000173
+2019-11-22 07:32:22,372 - root - INFO - [Epoch 5 Batch 210/272] loss=0.1041, lr=0.0000172
+2019-11-22 07:32:30,020 - root - INFO - [Epoch 5 Batch 220/272] loss=0.0825, lr=0.0000170
+2019-11-22 07:32:37,283 - root - INFO - [Epoch 5 Batch 230/272] loss=0.1237, lr=0.0000169
+2019-11-22 07:32:44,334 - root - INFO - [Epoch 5 Batch 240/272] loss=0.0578, lr=0.0000168
+2019-11-22 07:32:51,527 - root - INFO - [Epoch 5 Batch 250/272] loss=0.0994, lr=0.0000167
+2019-11-22 07:32:59,109 - root - INFO - [Epoch 5 Batch 260/272] loss=0.0901, lr=0.0000165
+2019-11-22 07:33:06,671 - root - INFO - [Epoch 5 Batch 270/272] loss=0.0764, lr=0.0000164
+2019-11-22 07:33:08,089 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2019-11-22 07:33:09,698 - root - INFO - [Batch 10/33] loss=0.8688
+2019-11-22 07:33:11,312 - root - INFO - [Batch 20/33] loss=0.8371
+2019-11-22 07:33:12,957 - root - INFO - [Batch 30/33] loss=0.6472
+2019-11-22 07:33:13,492 - root - INFO - validation metrics:mcc:0.5316
+2019-11-22 07:33:13,492 - root - INFO - Time cost=5.40s, throughput=195.45 samples/s
+2019-11-22 07:33:14,404 - root - INFO - params saved in: ./output_dir/model_xlnet_CoLA_4.params
+2019-11-22 07:33:14,406 - root - INFO - Time cost=207.22s
+2019-11-22 07:33:21,926 - root - INFO - [Epoch 6 Batch 10/272] loss=0.0854, lr=0.0000163
+2019-11-22 07:33:29,505 - root - INFO - [Epoch 6 Batch 20/272] loss=0.0685, lr=0.0000161
+2019-11-22 07:33:36,424 - root - INFO - [Epoch 6 Batch 30/272] loss=0.0769, lr=0.0000160
+2019-11-22 07:33:43,648 - root - INFO - [Epoch 6 Batch 40/272] loss=0.0865, lr=0.0000159
+2019-11-22 07:33:50,797 - root - INFO - [Epoch 6 Batch 50/272] loss=0.0830, lr=0.0000158
+2019-11-22 07:33:58,281 - root - INFO - [Epoch 6 Batch 60/272] loss=0.0505, lr=0.0000156
+2019-11-22 07:34:05,466 - root - INFO - [Epoch 6 Batch 70/272] loss=0.0111, lr=0.0000155
+2019-11-22 07:34:12,569 - root - INFO - [Epoch 6 Batch 80/272] loss=0.0182, lr=0.0000154
+2019-11-22 07:34:19,946 - root - INFO - [Epoch 6 Batch 90/272] loss=0.0658, lr=0.0000153
+2019-11-22 07:34:27,384 - root - INFO - [Epoch 6 Batch 100/272] loss=0.0621, lr=0.0000151
+2019-11-22 07:34:34,577 - root - INFO - [Epoch 6 Batch 110/272] loss=0.0280, lr=0.0000150
+2019-11-22 07:34:41,869 - root - INFO - [Epoch 6 Batch 120/272] loss=0.1597, lr=0.0000149
+2019-11-22 07:34:49,281 - root - INFO - [Epoch 6 Batch 130/272] loss=0.0973, lr=0.0000148
+2019-11-22 07:34:56,408 - root - INFO - [Epoch 6 Batch 140/272] loss=0.0248, lr=0.0000146
+2019-11-22 07:35:03,576 - root - INFO - [Epoch 6 Batch 150/272] loss=0.0216, lr=0.0000145
+2019-11-22 07:35:11,144 - root - INFO - [Epoch 6 Batch 160/272] loss=0.0917, lr=0.0000144
+2019-11-22 07:35:18,417 - root - INFO - [Epoch 6 Batch 170/272] loss=0.0150, lr=0.0000143
+2019-11-22 07:35:25,599 - root - INFO - [Epoch 6 Batch 180/272] loss=0.0800, lr=0.0000141
+2019-11-22 07:35:33,026 - root - INFO - [Epoch 6 Batch 190/272] loss=0.0302, lr=0.0000140
+2019-11-22 07:35:40,397 - root - INFO - [Epoch 6 Batch 200/272] loss=0.0312, lr=0.0000139
+2019-11-22 07:35:47,583 - root - INFO - [Epoch 6 Batch 210/272] loss=0.1123, lr=0.0000138
+2019-11-22 07:35:54,669 - root - INFO - [Epoch 6 Batch 220/272] loss=0.1106, lr=0.0000136
+2019-11-22 07:36:01,812 - root - INFO - [Epoch 6 Batch 230/272] loss=0.0265, lr=0.0000135
+2019-11-22 07:36:09,178 - root - INFO - [Epoch 6 Batch 240/272] loss=0.0646, lr=0.0000134
+2019-11-22 07:36:16,712 - root - INFO - [Epoch 6 Batch 250/272] loss=0.0452, lr=0.0000133
+2019-11-22 07:36:23,894 - root - INFO - [Epoch 6 Batch 260/272] loss=0.0723, lr=0.0000131
+2019-11-22 07:36:31,754 - root - INFO - [Epoch 6 Batch 270/272] loss=0.0239, lr=0.0000130
+2019-11-22 07:36:33,314 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2019-11-22 07:36:34,961 - root - INFO - [Batch 10/33] loss=0.9668
+2019-11-22 07:36:36,611 - root - INFO - [Batch 20/33] loss=0.8867
+2019-11-22 07:36:38,288 - root - INFO - [Batch 30/33] loss=0.6545
+2019-11-22 07:36:38,830 - root - INFO - validation metrics:mcc:0.5526
+2019-11-22 07:36:38,831 - root - INFO - Time cost=5.52s, throughput=191.44 samples/s
+2019-11-22 07:36:39,631 - root - INFO - params saved in: ./output_dir/model_xlnet_CoLA_5.params
+2019-11-22 07:36:39,632 - root - INFO - Time cost=205.23s
+2019-11-22 07:36:46,977 - root - INFO - [Epoch 7 Batch 10/272] loss=0.0543, lr=0.0000129
+2019-11-22 07:36:54,210 - root - INFO - [Epoch 7 Batch 20/272] loss=0.0161, lr=0.0000127
+2019-11-22 07:37:01,671 - root - INFO - [Epoch 7 Batch 30/272] loss=0.0225, lr=0.0000126
+2019-11-22 07:37:08,961 - root - INFO - [Epoch 7 Batch 40/272] loss=0.0223, lr=0.0000125
+2019-11-22 07:37:16,426 - root - INFO - [Epoch 7 Batch 50/272] loss=0.0490, lr=0.0000124
+2019-11-22 07:37:24,235 - root - INFO - [Epoch 7 Batch 60/272] loss=0.0059, lr=0.0000122
+2019-11-22 07:37:31,666 - root - INFO - [Epoch 7 Batch 70/272] loss=0.0469, lr=0.0000121
+2019-11-22 07:37:39,247 - root - INFO - [Epoch 7 Batch 80/272] loss=0.0420, lr=0.0000120
+2019-11-22 07:37:46,564 - root - INFO - [Epoch 7 Batch 90/272] loss=0.0291, lr=0.0000119
+2019-11-22 07:37:54,141 - root - INFO - [Epoch 7 Batch 100/272] loss=0.0288, lr=0.0000117
+2019-11-22 07:38:01,253 - root - INFO - [Epoch 7 Batch 110/272] loss=0.0060, lr=0.0000116
+2019-11-22 07:38:08,719 - root - INFO - [Epoch 7 Batch 120/272] loss=0.0483, lr=0.0000115
+2019-11-22 07:38:16,218 - root - INFO - [Epoch 7 Batch 130/272] loss=0.0016, lr=0.0000114
+2019-11-22 07:38:23,873 - root - INFO - [Epoch 7 Batch 140/272] loss=0.0179, lr=0.0000112
+2019-11-22 07:38:31,384 - root - INFO - [Epoch 7 Batch 150/272] loss=0.0650, lr=0.0000111
+2019-11-22 07:38:38,892 - root - INFO - [Epoch 7 Batch 160/272] loss=0.0374, lr=0.0000110
+2019-11-22 07:38:46,440 - root - INFO - [Epoch 7 Batch 170/272] loss=0.0741, lr=0.0000109
+2019-11-22 07:38:54,096 - root - INFO - [Epoch 7 Batch 180/272] loss=0.0441, lr=0.0000107
+2019-11-22 07:39:01,310 - root - INFO - [Epoch 7 Batch 190/272] loss=0.0105, lr=0.0000106
+2019-11-22 07:39:08,787 - root - INFO - [Epoch 7 Batch 200/272] loss=0.0328, lr=0.0000105
+2019-11-22 07:39:16,194 - root - INFO - [Epoch 7 Batch 210/272] loss=0.0215, lr=0.0000104
+2019-11-22 07:39:23,482 - root - INFO - [Epoch 7 Batch 220/272] loss=0.0765, lr=0.0000102
+2019-11-22 07:39:30,743 - root - INFO - [Epoch 7 Batch 230/272] loss=0.0481, lr=0.0000101
+2019-11-22 07:39:37,789 - root - INFO - [Epoch 7 Batch 240/272] loss=0.0167, lr=0.0000100
+2019-11-22 07:39:44,993 - root - INFO - [Epoch 7 Batch 250/272] loss=0.0196, lr=0.0000099
+2019-11-22 07:39:52,530 - root - INFO - [Epoch 7 Batch 260/272] loss=0.0227, lr=0.0000097
+2019-11-22 07:39:59,837 - root - INFO - [Epoch 7 Batch 270/272] loss=0.0311, lr=0.0000096
+2019-11-22 07:40:01,309 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2019-11-22 07:40:02,862 - root - INFO - [Batch 10/33] loss=1.1135
+2019-11-22 07:40:04,393 - root - INFO - [Batch 20/33] loss=1.0696
+2019-11-22 07:40:05,941 - root - INFO - [Batch 30/33] loss=0.7426
+2019-11-22 07:40:06,461 - root - INFO - validation metrics:mcc:0.5422
+2019-11-22 07:40:06,461 - root - INFO - Time cost=5.15s, throughput=204.96 samples/s
+2019-11-22 07:40:07,280 - root - INFO - params saved in: ./output_dir/model_xlnet_CoLA_6.params
+2019-11-22 07:40:07,281 - root - INFO - Time cost=207.65s
+2019-11-22 07:40:14,517 - root - INFO - [Epoch 8 Batch 10/272] loss=0.0018, lr=0.0000095
+2019-11-22 07:40:21,718 - root - INFO - [Epoch 8 Batch 20/272] loss=0.0062, lr=0.0000093
+2019-11-22 07:40:28,942 - root - INFO - [Epoch 8 Batch 30/272] loss=0.0143, lr=0.0000092
+2019-11-22 07:40:35,926 - root - INFO - [Epoch 8 Batch 40/272] loss=0.0304, lr=0.0000091
+2019-11-22 07:40:43,357 - root - INFO - [Epoch 8 Batch 50/272] loss=0.0282, lr=0.0000090
+2019-11-22 07:40:50,756 - root - INFO - [Epoch 8 Batch 60/272] loss=0.0066, lr=0.0000088
+2019-11-22 07:40:58,273 - root - INFO - [Epoch 8 Batch 70/272] loss=0.0198, lr=0.0000087
+2019-11-22 07:41:05,656 - root - INFO - [Epoch 8 Batch 80/272] loss=0.0198, lr=0.0000086
+2019-11-22 07:41:12,939 - root - INFO - [Epoch 8 Batch 90/272] loss=0.0184, lr=0.0000085
+2019-11-22 07:41:20,408 - root - INFO - [Epoch 8 Batch 100/272] loss=0.0153, lr=0.0000083
+2019-11-22 07:41:27,543 - root - INFO - [Epoch 8 Batch 110/272] loss=0.0252, lr=0.0000082
+2019-11-22 07:41:34,964 - root - INFO - [Epoch 8 Batch 120/272] loss=0.0006, lr=0.0000081
+2019-11-22 07:41:42,412 - root - INFO - [Epoch 8 Batch 130/272] loss=0.0011, lr=0.0000080
+2019-11-22 07:41:49,932 - root - INFO - [Epoch 8 Batch 140/272] loss=0.0009, lr=0.0000078
+2019-11-22 07:41:57,275 - root - INFO - [Epoch 8 Batch 150/272] loss=0.0032, lr=0.0000077
+2019-11-22 07:42:04,842 - root - INFO - [Epoch 8 Batch 160/272] loss=0.0063, lr=0.0000076
+2019-11-22 07:42:12,095 - root - INFO - [Epoch 8 Batch 170/272] loss=0.0203, lr=0.0000075
+2019-11-22 07:42:19,378 - root - INFO - [Epoch 8 Batch 180/272] loss=0.0062, lr=0.0000073
+2019-11-22 07:42:26,536 - root - INFO - [Epoch 8 Batch 190/272] loss=0.0076, lr=0.0000072
+2019-11-22 07:42:33,798 - root - INFO - [Epoch 8 Batch 200/272] loss=0.0016, lr=0.0000071
+2019-11-22 07:42:41,201 - root - INFO - [Epoch 8 Batch 210/272] loss=0.0354, lr=0.0000070
+2019-11-22 07:42:48,434 - root - INFO - [Epoch 8 Batch 220/272] loss=0.0317, lr=0.0000068
+2019-11-22 07:42:55,659 - root - INFO - [Epoch 8 Batch 230/272] loss=0.0166, lr=0.0000067
+2019-11-22 07:43:02,905 - root - INFO - [Epoch 8 Batch 240/272] loss=0.0240, lr=0.0000066
+2019-11-22 07:43:10,171 - root - INFO - [Epoch 8 Batch 250/272] loss=0.0379, lr=0.0000065
+2019-11-22 07:43:17,442 - root - INFO - [Epoch 8 Batch 260/272] loss=0.0178, lr=0.0000063
+2019-11-22 07:43:24,667 - root - INFO - [Epoch 8 Batch 270/272] loss=0.0155, lr=0.0000062
+2019-11-22 07:43:26,087 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2019-11-22 07:43:27,592 - root - INFO - [Batch 10/33] loss=1.2489
+2019-11-22 07:43:29,070 - root - INFO - [Batch 20/33] loss=1.1677
+2019-11-22 07:43:30,569 - root - INFO - [Batch 30/33] loss=0.8057
+2019-11-22 07:43:31,080 - root - INFO - validation metrics:mcc:0.5436
+2019-11-22 07:43:31,081 - root - INFO - Time cost=4.99s, throughput=211.47 samples/s
+2019-11-22 07:43:31,916 - root - INFO - params saved in: ./output_dir/model_xlnet_CoLA_7.params
+2019-11-22 07:43:31,917 - root - INFO - Time cost=204.64s
+2019-11-22 07:43:39,211 - root - INFO - [Epoch 9 Batch 10/272] loss=0.0108, lr=0.0000061
+2019-11-22 07:43:46,747 - root - INFO - [Epoch 9 Batch 20/272] loss=0.0034, lr=0.0000060
+2019-11-22 07:43:53,507 - root - INFO - [Epoch 9 Batch 30/272] loss=0.0021, lr=0.0000058
+2019-11-22 07:44:00,726 - root - INFO - [Epoch 9 Batch 40/272] loss=0.0045, lr=0.0000057
+2019-11-22 07:44:08,278 - root - INFO - [Epoch 9 Batch 50/272] loss=0.0045, lr=0.0000056
+2019-11-22 07:44:15,498 - root - INFO - [Epoch 9 Batch 60/272] loss=0.0014, lr=0.0000055
+2019-11-22 07:44:22,973 - root - INFO - [Epoch 9 Batch 70/272] loss=0.0028, lr=0.0000053
+2019-11-22 07:44:30,202 - root - INFO - [Epoch 9 Batch 80/272] loss=0.0156, lr=0.0000052
+2019-11-22 07:44:37,554 - root - INFO - [Epoch 9 Batch 90/272] loss=0.0123, lr=0.0000051
+2019-11-22 07:44:44,790 - root - INFO - [Epoch 9 Batch 100/272] loss=0.0193, lr=0.0000050
+2019-11-22 07:44:52,029 - root - INFO - [Epoch 9 Batch 110/272] loss=0.0247, lr=0.0000048
+2019-11-22 07:44:59,233 - root - INFO - [Epoch 9 Batch 120/272] loss=0.0023, lr=0.0000047
+2019-11-22 07:45:06,482 - root - INFO - [Epoch 9 Batch 130/272] loss=0.0003, lr=0.0000046
+2019-11-22 07:45:14,262 - root - INFO - [Epoch 9 Batch 140/272] loss=0.0338, lr=0.0000045
+2019-11-22 07:45:21,391 - root - INFO - [Epoch 9 Batch 150/272] loss=0.0025, lr=0.0000043
+2019-11-22 07:45:28,497 - root - INFO - [Epoch 9 Batch 160/272] loss=0.0037, lr=0.0000042
+2019-11-22 07:45:35,630 - root - INFO - [Epoch 9 Batch 170/272] loss=0.0091, lr=0.0000041
+2019-11-22 07:45:43,009 - root - INFO - [Epoch 9 Batch 180/272] loss=0.0244, lr=0.0000040
+2019-11-22 07:45:50,312 - root - INFO - [Epoch 9 Batch 190/272] loss=0.0054, lr=0.0000038
+2019-11-22 07:45:57,504 - root - INFO - [Epoch 9 Batch 200/272] loss=0.0038, lr=0.0000037
+2019-11-22 07:46:05,256 - root - INFO - [Epoch 9 Batch 210/272] loss=0.0104, lr=0.0000036
+2019-11-22 07:46:12,840 - root - INFO - [Epoch 9 Batch 220/272] loss=0.0094, lr=0.0000035
+2019-11-22 07:46:20,197 - root - INFO - [Epoch 9 Batch 230/272] loss=0.0136, lr=0.0000033
+2019-11-22 07:46:27,367 - root - INFO - [Epoch 9 Batch 240/272] loss=0.0024, lr=0.0000032
+2019-11-22 07:46:34,473 - root - INFO - [Epoch 9 Batch 250/272] loss=0.0007, lr=0.0000031
+2019-11-22 07:46:41,246 - root - INFO - [Epoch 9 Batch 260/272] loss=0.0019, lr=0.0000030
+2019-11-22 07:46:48,821 - root - INFO - [Epoch 9 Batch 270/272] loss=0.0168, lr=0.0000028
+2019-11-22 07:46:50,272 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2019-11-22 07:46:51,803 - root - INFO - [Batch 10/33] loss=1.3374
+2019-11-22 07:46:53,324 - root - INFO - [Batch 20/33] loss=1.2255
+2019-11-22 07:46:54,871 - root - INFO - [Batch 30/33] loss=0.8630
+2019-11-22 07:46:55,380 - root - INFO - validation metrics:mcc:0.5530
+2019-11-22 07:46:55,381 - root - INFO - Time cost=5.11s, throughput=206.71 samples/s
+2019-11-22 07:46:56,196 - root - INFO - params saved in: ./output_dir/model_xlnet_CoLA_8.params
+2019-11-22 07:46:56,197 - root - INFO - Time cost=204.28s
+2019-11-22 07:47:03,832 - root - INFO - [Epoch 10 Batch 10/272] loss=0.0084, lr=0.0000027
+2019-11-22 07:47:11,334 - root - INFO - [Epoch 10 Batch 20/272] loss=0.0253, lr=0.0000026
+2019-11-22 07:47:18,588 - root - INFO - [Epoch 10 Batch 30/272] loss=0.0299, lr=0.0000024
+2019-11-22 07:47:25,945 - root - INFO - [Epoch 10 Batch 40/272] loss=0.0022, lr=0.0000023
+2019-11-22 07:47:32,872 - root - INFO - [Epoch 10 Batch 50/272] loss=0.0007, lr=0.0000022
+2019-11-22 07:47:39,942 - root - INFO - [Epoch 10 Batch 60/272] loss=0.0003, lr=0.0000021
+2019-11-22 07:47:47,286 - root - INFO - [Epoch 10 Batch 70/272] loss=0.0014, lr=0.0000019
+2019-11-22 07:47:54,523 - root - INFO - [Epoch 10 Batch 80/272] loss=0.0044, lr=0.0000018
+2019-11-22 07:48:01,901 - root - INFO - [Epoch 10 Batch 90/272] loss=0.0063, lr=0.0000017
+2019-11-22 07:48:09,636 - root - INFO - [Epoch 10 Batch 100/272] loss=0.0086, lr=0.0000016
+2019-11-22 07:48:17,029 - root - INFO - [Epoch 10 Batch 110/272] loss=0.0057, lr=0.0000014
+2019-11-22 07:48:24,338 - root - INFO - [Epoch 10 Batch 120/272] loss=0.0063, lr=0.0000013
+2019-11-22 07:48:31,493 - root - INFO - [Epoch 10 Batch 130/272] loss=0.0191, lr=0.0000012
+2019-11-22 07:48:38,838 - root - INFO - [Epoch 10 Batch 140/272] loss=0.0039, lr=0.0000011
+2019-11-22 07:48:46,331 - root - INFO - [Epoch 10 Batch 150/272] loss=0.0003, lr=0.0000009
+2019-11-22 07:48:54,097 - root - INFO - [Epoch 10 Batch 160/272] loss=0.0003, lr=0.0000008
+2019-11-22 07:49:01,685 - root - INFO - [Epoch 10 Batch 170/272] loss=0.0020, lr=0.0000007
+2019-11-22 07:49:09,505 - root - INFO - [Epoch 10 Batch 180/272] loss=0.0003, lr=0.0000006
+2019-11-22 07:49:16,578 - root - INFO - [Epoch 10 Batch 190/272] loss=0.0002, lr=0.0000004
+2019-11-22 07:49:23,561 - root - INFO - [Epoch 10 Batch 200/272] loss=0.0048, lr=0.0000003
+2019-11-22 07:49:30,735 - root - INFO - [Epoch 10 Batch 210/272] loss=0.0050, lr=0.0000002
+2019-11-22 07:49:38,310 - root - INFO - [Epoch 10 Batch 220/272] loss=0.0096, lr=0.0000001
+2019-11-22 07:49:45,763 - root - INFO - [Epoch 10 Batch 230/272] loss=0.0055, lr=0.0000000
+2019-11-22 07:49:52,986 - root - INFO - [Epoch 10 Batch 240/272] loss=0.0004, lr=0.0000000
+2019-11-22 07:50:00,458 - root - INFO - [Epoch 10 Batch 250/272] loss=0.0084, lr=0.0000000
+2019-11-22 07:50:08,492 - root - INFO - [Epoch 10 Batch 260/272] loss=0.0068, lr=0.0000000
+2019-11-22 07:50:16,173 - root - INFO - [Epoch 10 Batch 270/272] loss=0.0047, lr=0.0000000
+2019-11-22 07:50:17,648 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2019-11-22 07:50:19,188 - root - INFO - [Batch 10/33] loss=1.3410
+2019-11-22 07:50:20,713 - root - INFO - [Batch 20/33] loss=1.2298
+2019-11-22 07:50:22,375 - root - INFO - [Batch 30/33] loss=0.8630
+2019-11-22 07:50:22,919 - root - INFO - validation metrics:mcc:0.5605
+2019-11-22 07:50:22,920 - root - INFO - Time cost=5.27s, throughput=200.34 samples/s
+2019-11-22 07:50:23,829 - root - INFO - params saved in: ./output_dir/model_xlnet_CoLA_9.params
+2019-11-22 07:50:23,830 - root - INFO - Time cost=207.63s
+2019-11-22 07:50:24,371 - root - INFO - Best model at epoch 10. Validation metrics:mcc:0.5605
+2019-11-22 07:50:24,371 - root - INFO - Now we are doing testing on test with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2019-11-22 07:50:29,428 - root - INFO - Time cost=5.06s, throughput=215.18 samples/s
