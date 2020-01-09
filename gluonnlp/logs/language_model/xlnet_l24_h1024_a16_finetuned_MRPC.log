@@ -1,0 +1,131 @@
+2019-12-19 08:59:04,560 - root - INFO - Namespace(accumulate=None, attention_dropout=0.1, batch_size=32, cpu=None, dataset='126gb', dev_batch_size=32, dropout=0.1, early_stop=None, epochs=7, epsilon=1e-06, gpu=8, log_interval=10, lr=3e-05, lr_decay='linear', max_len=128, model_name='xlnet_cased_l24_h1024_a16', model_parameters=None, only_inference=False, output_dir='./output_dir', pad=True, seed=10, task_name='MRPC', training_steps=None, warmup_ratio=0.25)
+2019-12-19 08:59:46,918 - root - INFO - processing dataset...
+2019-12-19 09:00:18,510 - root - INFO - Now we are doing XLNet classification training on [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)]!
+2019-12-19 09:00:18,522 - root - INFO - training steps=802.000000s
+2019-12-19 09:00:42,172 - root - INFO - Time cost for the first forward-backward =23.64s
+2019-12-19 09:01:02,272 - root - INFO - [Epoch 1 Batch 10/120] loss=0.6513, lr=0.0000013
+2019-12-19 09:01:18,768 - root - INFO - [Epoch 1 Batch 20/120] loss=0.5909, lr=0.0000028
+2019-12-19 09:01:35,737 - root - INFO - [Epoch 1 Batch 30/120] loss=0.6484, lr=0.0000043
+2019-12-19 09:01:52,780 - root - INFO - [Epoch 1 Batch 40/120] loss=0.6549, lr=0.0000058
+2019-12-19 09:02:09,811 - root - INFO - [Epoch 1 Batch 50/120] loss=0.6419, lr=0.0000073
+2019-12-19 09:02:27,381 - root - INFO - [Epoch 1 Batch 60/120] loss=0.6589, lr=0.0000088
+2019-12-19 09:02:44,681 - root - INFO - [Epoch 1 Batch 70/120] loss=0.5529, lr=0.0000104
+2019-12-19 09:03:01,913 - root - INFO - [Epoch 1 Batch 80/120] loss=0.6385, lr=0.0000119
+2019-12-19 09:03:18,984 - root - INFO - [Epoch 1 Batch 90/120] loss=0.5855, lr=0.0000134
+2019-12-19 09:03:36,553 - root - INFO - [Epoch 1 Batch 100/120] loss=0.6152, lr=0.0000149
+2019-12-19 09:03:53,409 - root - INFO - [Epoch 1 Batch 110/120] loss=0.5219, lr=0.0000164
+2019-12-19 09:04:10,735 - root - INFO - [Epoch 1 Batch 120/120] loss=0.5595, lr=0.0000179
+2019-12-19 09:04:10,736 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2019-12-19 09:04:14,492 - root - INFO - [Batch 10/13] loss=0.5134
+2019-12-19 09:04:15,623 - root - INFO - validation metrics:f1:0.8333,accuracy:0.7353
+2019-12-19 09:04:15,624 - root - INFO - Time cost=4.89s, throughput=85.11 samples/s
+2019-12-19 09:04:22,692 - root - INFO - params saved in: ./output_dir/model_xlnet_MRPC_0.params
+2019-12-19 09:04:22,697 - root - INFO - Time cost=244.17s
+2019-12-19 09:04:40,670 - root - INFO - [Epoch 2 Batch 10/120] loss=0.5970, lr=0.0000193
+2019-12-19 09:04:58,330 - root - INFO - [Epoch 2 Batch 20/120] loss=0.4887, lr=0.0000209
+2019-12-19 09:05:15,158 - root - INFO - [Epoch 2 Batch 30/120] loss=0.4713, lr=0.0000224
+2019-12-19 09:05:32,377 - root - INFO - [Epoch 2 Batch 40/120] loss=0.5351, lr=0.0000239
+2019-12-19 09:05:49,871 - root - INFO - [Epoch 2 Batch 50/120] loss=0.4912, lr=0.0000253
+2019-12-19 09:06:07,078 - root - INFO - [Epoch 2 Batch 60/120] loss=0.4893, lr=0.0000268
+2019-12-19 09:06:24,562 - root - INFO - [Epoch 2 Batch 70/120] loss=0.3740, lr=0.0000284
+2019-12-19 09:06:41,967 - root - INFO - [Epoch 2 Batch 80/120] loss=0.3870, lr=0.0000299
+2019-12-19 09:06:58,923 - root - INFO - [Epoch 2 Batch 90/120] loss=0.4735, lr=0.0000296
+2019-12-19 09:07:16,381 - root - INFO - [Epoch 2 Batch 100/120] loss=0.5025, lr=0.0000291
+2019-12-19 09:07:33,680 - root - INFO - [Epoch 2 Batch 110/120] loss=0.5024, lr=0.0000286
+2019-12-19 09:07:50,940 - root - INFO - [Epoch 2 Batch 120/120] loss=0.4043, lr=0.0000281
+2019-12-19 09:07:50,941 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2019-12-19 09:07:54,676 - root - INFO - [Batch 10/13] loss=0.3709
+2019-12-19 09:07:55,824 - root - INFO - validation metrics:f1:0.8995,accuracy:0.8603
+2019-12-19 09:07:55,824 - root - INFO - Time cost=4.88s, throughput=85.19 samples/s
+2019-12-19 09:08:03,341 - root - INFO - params saved in: ./output_dir/model_xlnet_MRPC_1.params
+2019-12-19 09:08:03,343 - root - INFO - Time cost=220.65s
+2019-12-19 09:08:20,583 - root - INFO - [Epoch 3 Batch 10/120] loss=0.3243, lr=0.0000276
+2019-12-19 09:08:37,955 - root - INFO - [Epoch 3 Batch 20/120] loss=0.3804, lr=0.0000271
+2019-12-19 09:08:55,292 - root - INFO - [Epoch 3 Batch 30/120] loss=0.3327, lr=0.0000266
+2019-12-19 09:09:12,477 - root - INFO - [Epoch 3 Batch 40/120] loss=0.3215, lr=0.0000261
+2019-12-19 09:09:29,427 - root - INFO - [Epoch 3 Batch 50/120] loss=0.2774, lr=0.0000256
+2019-12-19 09:09:46,789 - root - INFO - [Epoch 3 Batch 60/120] loss=0.4066, lr=0.0000251
+2019-12-19 09:10:03,197 - root - INFO - [Epoch 3 Batch 70/120] loss=0.4148, lr=0.0000246
+2019-12-19 09:10:20,284 - root - INFO - [Epoch 3 Batch 80/120] loss=0.3347, lr=0.0000241
+2019-12-19 09:10:38,276 - root - INFO - [Epoch 3 Batch 90/120] loss=0.2517, lr=0.0000236
+2019-12-19 09:10:56,104 - root - INFO - [Epoch 3 Batch 100/120] loss=0.3458, lr=0.0000231
+2019-12-19 09:11:13,734 - root - INFO - [Epoch 3 Batch 110/120] loss=0.2610, lr=0.0000226
+2019-12-19 09:11:31,063 - root - INFO - [Epoch 3 Batch 120/120] loss=0.3122, lr=0.0000221
+2019-12-19 09:11:31,063 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2019-12-19 09:11:34,711 - root - INFO - [Batch 10/13] loss=0.2793
+2019-12-19 09:11:35,838 - root - INFO - validation metrics:f1:0.9276,accuracy:0.8971
+2019-12-19 09:11:35,838 - root - INFO - Time cost=4.77s, throughput=87.12 samples/s
+2019-12-19 09:11:42,867 - root - INFO - params saved in: ./output_dir/model_xlnet_MRPC_2.params
+2019-12-19 09:11:42,869 - root - INFO - Time cost=219.53s
+2019-12-19 09:12:00,139 - root - INFO - [Epoch 4 Batch 10/120] loss=0.1743, lr=0.0000216
+2019-12-19 09:12:17,932 - root - INFO - [Epoch 4 Batch 20/120] loss=0.2229, lr=0.0000211
+2019-12-19 09:12:35,292 - root - INFO - [Epoch 4 Batch 30/120] loss=0.1682, lr=0.0000206
+2019-12-19 09:12:52,675 - root - INFO - [Epoch 4 Batch 40/120] loss=0.2195, lr=0.0000201
+2019-12-19 09:13:09,955 - root - INFO - [Epoch 4 Batch 50/120] loss=0.2951, lr=0.0000196
+2019-12-19 09:13:27,045 - root - INFO - [Epoch 4 Batch 60/120] loss=0.2062, lr=0.0000191
+2019-12-19 09:13:44,447 - root - INFO - [Epoch 4 Batch 70/120] loss=0.2792, lr=0.0000186
+2019-12-19 09:14:01,478 - root - INFO - [Epoch 4 Batch 80/120] loss=0.2627, lr=0.0000181
+2019-12-19 09:14:19,758 - root - INFO - [Epoch 4 Batch 90/120] loss=0.1569, lr=0.0000176
+2019-12-19 09:14:37,327 - root - INFO - [Epoch 4 Batch 100/120] loss=0.2301, lr=0.0000171
+2019-12-19 09:14:54,741 - root - INFO - [Epoch 4 Batch 110/120] loss=0.2451, lr=0.0000166
+2019-12-19 09:15:11,540 - root - INFO - [Epoch 4 Batch 120/120] loss=0.1949, lr=0.0000161
+2019-12-19 09:15:11,540 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2019-12-19 09:15:15,273 - root - INFO - [Batch 10/13] loss=0.3049
+2019-12-19 09:15:16,412 - root - INFO - validation metrics:f1:0.9313,accuracy:0.9020
+2019-12-19 09:15:16,412 - root - INFO - Time cost=4.87s, throughput=85.39 samples/s
+2019-12-19 09:15:23,615 - root - INFO - params saved in: ./output_dir/model_xlnet_MRPC_3.params
+2019-12-19 09:15:23,617 - root - INFO - Time cost=220.75s
+2019-12-19 09:15:41,010 - root - INFO - [Epoch 5 Batch 10/120] loss=0.1164, lr=0.0000156
+2019-12-19 09:15:58,059 - root - INFO - [Epoch 5 Batch 20/120] loss=0.1138, lr=0.0000151
+2019-12-19 09:16:14,666 - root - INFO - [Epoch 5 Batch 30/120] loss=0.0379, lr=0.0000146
+2019-12-19 09:16:31,890 - root - INFO - [Epoch 5 Batch 40/120] loss=0.1613, lr=0.0000141
+2019-12-19 09:16:49,193 - root - INFO - [Epoch 5 Batch 50/120] loss=0.1621, lr=0.0000136
+2019-12-19 09:17:07,347 - root - INFO - [Epoch 5 Batch 60/120] loss=0.0877, lr=0.0000131
+2019-12-19 09:17:24,547 - root - INFO - [Epoch 5 Batch 70/120] loss=0.1060, lr=0.0000126
+2019-12-19 09:17:41,785 - root - INFO - [Epoch 5 Batch 80/120] loss=0.0639, lr=0.0000121
+2019-12-19 09:17:59,027 - root - INFO - [Epoch 5 Batch 90/120] loss=0.1434, lr=0.0000116
+2019-12-19 09:18:16,853 - root - INFO - [Epoch 5 Batch 100/120] loss=0.0998, lr=0.0000111
+2019-12-19 09:18:34,002 - root - INFO - [Epoch 5 Batch 110/120] loss=0.1224, lr=0.0000106
+2019-12-19 09:18:50,746 - root - INFO - [Epoch 5 Batch 120/120] loss=0.1727, lr=0.0000101
+2019-12-19 09:18:50,746 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2019-12-19 09:18:54,480 - root - INFO - [Batch 10/13] loss=0.4313
+2019-12-19 09:18:55,622 - root - INFO - validation metrics:f1:0.9283,accuracy:0.9020
+2019-12-19 09:18:55,622 - root - INFO - Time cost=4.88s, throughput=85.31 samples/s
+2019-12-19 09:19:02,569 - root - INFO - params saved in: ./output_dir/model_xlnet_MRPC_4.params
+2019-12-19 09:19:02,570 - root - INFO - Time cost=218.95s
+2019-12-19 09:19:20,031 - root - INFO - [Epoch 6 Batch 10/120] loss=0.0491, lr=0.0000096
+2019-12-19 09:19:37,543 - root - INFO - [Epoch 6 Batch 20/120] loss=0.0324, lr=0.0000091
+2019-12-19 09:19:54,847 - root - INFO - [Epoch 6 Batch 30/120] loss=0.0739, lr=0.0000086
+2019-12-19 09:20:11,128 - root - INFO - [Epoch 6 Batch 40/120] loss=0.1448, lr=0.0000081
+2019-12-19 09:20:28,323 - root - INFO - [Epoch 6 Batch 50/120] loss=0.0498, lr=0.0000076
+2019-12-19 09:20:45,165 - root - INFO - [Epoch 6 Batch 60/120] loss=0.1001, lr=0.0000071
+2019-12-19 09:21:02,681 - root - INFO - [Epoch 6 Batch 70/120] loss=0.0989, lr=0.0000066
+2019-12-19 09:21:20,407 - root - INFO - [Epoch 6 Batch 80/120] loss=0.0827, lr=0.0000061
+2019-12-19 09:21:37,863 - root - INFO - [Epoch 6 Batch 90/120] loss=0.0591, lr=0.0000056
+2019-12-19 09:21:55,464 - root - INFO - [Epoch 6 Batch 100/120] loss=0.0527, lr=0.0000051
+2019-12-19 09:22:13,471 - root - INFO - [Epoch 6 Batch 110/120] loss=0.0651, lr=0.0000046
+2019-12-19 09:22:30,548 - root - INFO - [Epoch 6 Batch 120/120] loss=0.0459, lr=0.0000041
+2019-12-19 09:22:30,549 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2019-12-19 09:22:34,217 - root - INFO - [Batch 10/13] loss=0.4889
+2019-12-19 09:22:35,326 - root - INFO - validation metrics:f1:0.9257,accuracy:0.8946
+2019-12-19 09:22:35,327 - root - INFO - Time cost=4.78s, throughput=87.07 samples/s
+2019-12-19 09:22:42,746 - root - INFO - params saved in: ./output_dir/model_xlnet_MRPC_5.params
+2019-12-19 09:22:42,748 - root - INFO - Time cost=220.18s
+2019-12-19 09:23:00,003 - root - INFO - [Epoch 7 Batch 10/120] loss=0.0723, lr=0.0000036
+2019-12-19 09:23:16,602 - root - INFO - [Epoch 7 Batch 20/120] loss=0.0233, lr=0.0000031
+2019-12-19 09:23:33,322 - root - INFO - [Epoch 7 Batch 30/120] loss=0.0473, lr=0.0000026
+2019-12-19 09:23:50,820 - root - INFO - [Epoch 7 Batch 40/120] loss=0.1189, lr=0.0000021
+2019-12-19 09:24:08,091 - root - INFO - [Epoch 7 Batch 50/120] loss=0.0251, lr=0.0000016
+2019-12-19 09:24:24,869 - root - INFO - [Epoch 7 Batch 60/120] loss=0.0226, lr=0.0000011
+2019-12-19 09:24:42,563 - root - INFO - [Epoch 7 Batch 70/120] loss=0.0559, lr=0.0000006
+2019-12-19 09:24:59,849 - root - INFO - [Epoch 7 Batch 80/120] loss=0.0543, lr=0.0000001
+2019-12-19 09:25:03,388 - root - INFO - Finish training step: 802
+2019-12-19 09:25:03,389 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2019-12-19 09:25:07,353 - root - INFO - [Batch 10/13] loss=0.5020
+2019-12-19 09:25:08,538 - root - INFO - validation metrics:f1:0.9260,accuracy:0.8946
+2019-12-19 09:25:08,538 - root - INFO - Time cost=5.15s, throughput=80.78 samples/s
+2019-12-19 09:25:15,755 - root - INFO - params saved in: ./output_dir/model_xlnet_MRPC_6.params
+2019-12-19 09:25:15,756 - root - INFO - Time cost=153.01s
+2019-12-19 09:25:17,237 - root - INFO - Best model at epoch 4. Validation metrics:f1:0.9313,accuracy:0.9020
+2019-12-19 09:25:17,237 - root - INFO - Now we are doing testing on test with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2019-12-19 09:25:37,033 - root - INFO - Time cost=19.80s, throughput=87.29 samples/s
