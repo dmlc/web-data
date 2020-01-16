@@ -1,0 +1,318 @@
+INFO:root:09:29:44 Namespace(accumulate=None, batch_size=32, bert_dataset='book_corpus_wiki_en_uncased', bert_model='bert_12_768_12', dev_batch_size=8, dtype='float32', early_stop=None, epochs=7, epsilon=1e-06, gpu=0, log_interval=10, lr=2e-05, max_len=128, model_parameters=None, only_inference=False, optimizer='bertadam', output_dir='./output_dir', pad=False, pretrained_bert_parameters=None, seed=2, task_name='CoLA', training_steps=None, warmup_ratio=0.1)
+INFO:root:09:29:49 processing dataset...
+INFO:root:09:29:49 Now we are doing BERT classification training on gpu(0)!
+INFO:root:09:29:50 training steps=1870
+INFO:root:09:29:52 [Epoch 1 Batch 10/274] loss=0.5970, lr=0.0000010, metrics:mcc:0.0000
+INFO:root:09:29:52 [Epoch 1 Batch 20/274] loss=0.6404, lr=0.0000020, metrics:mcc:-0.0273
+INFO:root:09:29:53 [Epoch 1 Batch 30/274] loss=0.6090, lr=0.0000031, metrics:mcc:-0.0091
+INFO:root:09:29:54 [Epoch 1 Batch 40/274] loss=0.6032, lr=0.0000042, metrics:mcc:0.0277
+INFO:root:09:29:55 [Epoch 1 Batch 50/274] loss=0.5282, lr=0.0000052, metrics:mcc:0.0625
+INFO:root:09:29:56 [Epoch 1 Batch 60/274] loss=0.5952, lr=0.0000063, metrics:mcc:0.1367
+INFO:root:09:29:56 [Epoch 1 Batch 70/274] loss=0.4732, lr=0.0000074, metrics:mcc:0.1730
+INFO:root:09:29:57 [Epoch 1 Batch 80/274] loss=0.4813, lr=0.0000084, metrics:mcc:0.1937
+INFO:root:09:29:58 [Epoch 1 Batch 90/274] loss=0.5105, lr=0.0000095, metrics:mcc:0.2135
+INFO:root:09:29:59 [Epoch 1 Batch 100/274] loss=0.5200, lr=0.0000106, metrics:mcc:0.2456
+INFO:root:09:30:00 [Epoch 1 Batch 110/274] loss=0.4607, lr=0.0000117, metrics:mcc:0.2683
+INFO:root:09:30:00 [Epoch 1 Batch 120/274] loss=0.4907, lr=0.0000127, metrics:mcc:0.2849
+INFO:root:09:30:01 [Epoch 1 Batch 130/274] loss=0.4609, lr=0.0000138, metrics:mcc:0.3012
+INFO:root:09:30:02 [Epoch 1 Batch 140/274] loss=0.4046, lr=0.0000149, metrics:mcc:0.3153
+INFO:root:09:30:03 [Epoch 1 Batch 150/274] loss=0.4896, lr=0.0000159, metrics:mcc:0.3280
+INFO:root:09:30:03 [Epoch 1 Batch 160/274] loss=0.5046, lr=0.0000170, metrics:mcc:0.3317
+INFO:root:09:30:04 [Epoch 1 Batch 170/274] loss=0.4463, lr=0.0000181, metrics:mcc:0.3375
+INFO:root:09:30:05 [Epoch 1 Batch 180/274] loss=0.4666, lr=0.0000191, metrics:mcc:0.3408
+INFO:root:09:30:06 [Epoch 1 Batch 190/274] loss=0.4448, lr=0.0000200, metrics:mcc:0.3477
+INFO:root:09:30:07 [Epoch 1 Batch 200/274] loss=0.4490, lr=0.0000199, metrics:mcc:0.3593
+INFO:root:09:30:07 [Epoch 1 Batch 210/274] loss=0.4842, lr=0.0000197, metrics:mcc:0.3571
+INFO:root:09:30:08 [Epoch 1 Batch 220/274] loss=0.4789, lr=0.0000196, metrics:mcc:0.3583
+INFO:root:09:30:09 [Epoch 1 Batch 230/274] loss=0.3853, lr=0.0000195, metrics:mcc:0.3726
+INFO:root:09:30:10 [Epoch 1 Batch 240/274] loss=0.4836, lr=0.0000194, metrics:mcc:0.3803
+INFO:root:09:30:11 [Epoch 1 Batch 250/274] loss=0.4117, lr=0.0000193, metrics:mcc:0.3873
+INFO:root:09:30:11 [Epoch 1 Batch 260/274] loss=0.4007, lr=0.0000191, metrics:mcc:0.3957
+INFO:root:09:30:12 [Epoch 1 Batch 270/274] loss=0.4206, lr=0.0000190, metrics:mcc:0.4026
+INFO:root:09:30:13 Now we are doing evaluation on dev with gpu(0).
+INFO:root:09:30:13 [Batch 10/131] loss=0.5826, metrics:mcc:0.4988
+INFO:root:09:30:13 [Batch 20/131] loss=0.5205, metrics:mcc:0.5210
+INFO:root:09:30:13 [Batch 30/131] loss=0.3477, metrics:mcc:0.5954
+INFO:root:09:30:13 [Batch 40/131] loss=0.5632, metrics:mcc:0.5813
+INFO:root:09:30:13 [Batch 50/131] loss=0.3481, metrics:mcc:0.5679
+INFO:root:09:30:13 [Batch 60/131] loss=0.4345, metrics:mcc:0.5664
+INFO:root:09:30:14 [Batch 70/131] loss=0.7304, metrics:mcc:0.5222
+INFO:root:09:30:14 [Batch 80/131] loss=0.7483, metrics:mcc:0.5010
+INFO:root:09:30:14 [Batch 90/131] loss=0.6535, metrics:mcc:0.4875
+INFO:root:09:30:14 [Batch 100/131] loss=0.5196, metrics:mcc:0.4815
+INFO:root:09:30:14 [Batch 110/131] loss=0.4895, metrics:mcc:0.4914
+INFO:root:09:30:14 [Batch 120/131] loss=0.3070, metrics:mcc:0.5195
+INFO:root:09:30:14 [Batch 130/131] loss=0.5546, metrics:mcc:0.5094
+INFO:root:09:30:14 validation metrics:mcc:0.5085
+INFO:root:09:30:14 Time cost=1.77s, throughput=592.26 samples/s
+INFO:root:09:30:25 params saved in: ./output_dir/model_bert_CoLA_0.params
+INFO:root:09:30:25 Time cost=35.56s
+INFO:root:09:30:26 [Epoch 2 Batch 10/274] loss=0.2700, lr=0.0000189, metrics:mcc:0.7349
+INFO:root:09:30:27 [Epoch 2 Batch 20/274] loss=0.3027, lr=0.0000187, metrics:mcc:0.6919
+INFO:root:09:30:28 [Epoch 2 Batch 30/274] loss=0.2856, lr=0.0000186, metrics:mcc:0.7101
+INFO:root:09:30:28 [Epoch 2 Batch 40/274] loss=0.2965, lr=0.0000185, metrics:mcc:0.7264
+INFO:root:09:30:29 [Epoch 2 Batch 50/274] loss=0.2904, lr=0.0000184, metrics:mcc:0.7307
+INFO:root:09:30:30 [Epoch 2 Batch 60/274] loss=0.3016, lr=0.0000183, metrics:mcc:0.7287
+INFO:root:09:30:31 [Epoch 2 Batch 70/274] loss=0.3228, lr=0.0000181, metrics:mcc:0.7267
+INFO:root:09:30:31 [Epoch 2 Batch 80/274] loss=0.2635, lr=0.0000180, metrics:mcc:0.7213
+INFO:root:09:30:32 [Epoch 2 Batch 90/274] loss=0.3258, lr=0.0000179, metrics:mcc:0.7252
+INFO:root:09:30:33 [Epoch 2 Batch 100/274] loss=0.2897, lr=0.0000178, metrics:mcc:0.7231
+INFO:root:09:30:34 [Epoch 2 Batch 110/274] loss=0.2614, lr=0.0000177, metrics:mcc:0.7256
+INFO:root:09:30:35 [Epoch 2 Batch 120/274] loss=0.2473, lr=0.0000176, metrics:mcc:0.7270
+INFO:root:09:30:35 [Epoch 2 Batch 130/274] loss=0.2481, lr=0.0000174, metrics:mcc:0.7277
+INFO:root:09:30:36 [Epoch 2 Batch 140/274] loss=0.2703, lr=0.0000173, metrics:mcc:0.7284
+INFO:root:09:30:37 [Epoch 2 Batch 150/274] loss=0.3537, lr=0.0000172, metrics:mcc:0.7206
+INFO:root:09:30:38 [Epoch 2 Batch 160/274] loss=0.2755, lr=0.0000171, metrics:mcc:0.7226
+INFO:root:09:30:39 [Epoch 2 Batch 170/274] loss=0.3268, lr=0.0000170, metrics:mcc:0.7225
+INFO:root:09:30:39 [Epoch 2 Batch 180/274] loss=0.3045, lr=0.0000168, metrics:mcc:0.7195
+INFO:root:09:30:40 [Epoch 2 Batch 190/274] loss=0.2892, lr=0.0000167, metrics:mcc:0.7196
+INFO:root:09:30:41 [Epoch 2 Batch 200/274] loss=0.2743, lr=0.0000166, metrics:mcc:0.7189
+INFO:root:09:30:42 [Epoch 2 Batch 210/274] loss=0.2515, lr=0.0000165, metrics:mcc:0.7193
+INFO:root:09:30:43 [Epoch 2 Batch 220/274] loss=0.2667, lr=0.0000164, metrics:mcc:0.7207
+INFO:root:09:30:43 [Epoch 2 Batch 230/274] loss=0.2698, lr=0.0000162, metrics:mcc:0.7224
+INFO:root:09:30:44 [Epoch 2 Batch 240/274] loss=0.2978, lr=0.0000161, metrics:mcc:0.7236
+INFO:root:09:30:45 [Epoch 2 Batch 250/274] loss=0.2203, lr=0.0000160, metrics:mcc:0.7270
+INFO:root:09:30:46 [Epoch 2 Batch 260/274] loss=0.2927, lr=0.0000159, metrics:mcc:0.7270
+INFO:root:09:30:47 [Epoch 2 Batch 270/274] loss=0.2660, lr=0.0000158, metrics:mcc:0.7274
+INFO:root:09:30:47 Now we are doing evaluation on dev with gpu(0).
+INFO:root:09:30:47 [Batch 10/131] loss=0.5873, metrics:mcc:0.4405
+INFO:root:09:30:47 [Batch 20/131] loss=0.4589, metrics:mcc:0.5563
+INFO:root:09:30:47 [Batch 30/131] loss=0.4163, metrics:mcc:0.6011
+INFO:root:09:30:47 [Batch 40/131] loss=0.4792, metrics:mcc:0.5849
+INFO:root:09:30:47 [Batch 50/131] loss=0.3132, metrics:mcc:0.5981
+INFO:root:09:30:48 [Batch 60/131] loss=0.2840, metrics:mcc:0.6154
+INFO:root:09:30:48 [Batch 70/131] loss=0.5654, metrics:mcc:0.5842
+INFO:root:09:30:48 [Batch 80/131] loss=0.7880, metrics:mcc:0.5585
+INFO:root:09:30:48 [Batch 90/131] loss=0.6491, metrics:mcc:0.5497
+INFO:root:09:30:48 [Batch 100/131] loss=0.4199, metrics:mcc:0.5402
+INFO:root:09:30:48 [Batch 110/131] loss=0.2207, metrics:mcc:0.5759
+INFO:root:09:30:48 [Batch 120/131] loss=0.2159, metrics:mcc:0.5928
+INFO:root:09:30:48 [Batch 130/131] loss=0.3949, metrics:mcc:0.5895
+INFO:root:09:30:48 validation metrics:mcc:0.5884
+INFO:root:09:30:48 Time cost=1.61s, throughput=650.75 samples/s
+INFO:root:09:31:00 params saved in: ./output_dir/model_bert_CoLA_1.params
+INFO:root:09:31:00 Time cost=34.92s
+INFO:root:09:31:01 [Epoch 3 Batch 10/274] loss=0.1418, lr=0.0000156, metrics:mcc:0.8891
+INFO:root:09:31:02 [Epoch 3 Batch 20/274] loss=0.1456, lr=0.0000155, metrics:mcc:0.8744
+INFO:root:09:31:02 [Epoch 3 Batch 30/274] loss=0.1452, lr=0.0000154, metrics:mcc:0.8789
+INFO:root:09:31:03 [Epoch 3 Batch 40/274] loss=0.0733, lr=0.0000152, metrics:mcc:0.8906
+INFO:root:09:31:04 [Epoch 3 Batch 50/274] loss=0.1792, lr=0.0000151, metrics:mcc:0.8853
+INFO:root:09:31:05 [Epoch 3 Batch 60/274] loss=0.1232, lr=0.0000150, metrics:mcc:0.8890
+INFO:root:09:31:06 [Epoch 3 Batch 70/274] loss=0.1703, lr=0.0000149, metrics:mcc:0.8850
+INFO:root:09:31:06 [Epoch 3 Batch 80/274] loss=0.1404, lr=0.0000148, metrics:mcc:0.8857
+INFO:root:09:31:07 [Epoch 3 Batch 90/274] loss=0.1598, lr=0.0000147, metrics:mcc:0.8826
+INFO:root:09:31:08 [Epoch 3 Batch 100/274] loss=0.2011, lr=0.0000145, metrics:mcc:0.8784
+INFO:root:09:31:09 [Epoch 3 Batch 110/274] loss=0.1455, lr=0.0000144, metrics:mcc:0.8756
+INFO:root:09:31:09 [Epoch 3 Batch 120/274] loss=0.1643, lr=0.0000143, metrics:mcc:0.8782
+INFO:root:09:31:10 [Epoch 3 Batch 130/274] loss=0.1819, lr=0.0000142, metrics:mcc:0.8768
+INFO:root:09:31:11 [Epoch 3 Batch 140/274] loss=0.1095, lr=0.0000141, metrics:mcc:0.8791
+INFO:root:09:31:12 [Epoch 3 Batch 150/274] loss=0.1803, lr=0.0000139, metrics:mcc:0.8798
+INFO:root:09:31:13 [Epoch 3 Batch 160/274] loss=0.1559, lr=0.0000138, metrics:mcc:0.8807
+INFO:root:09:31:13 [Epoch 3 Batch 170/274] loss=0.1007, lr=0.0000137, metrics:mcc:0.8809
+INFO:root:09:31:14 [Epoch 3 Batch 180/274] loss=0.1636, lr=0.0000136, metrics:mcc:0.8791
+INFO:root:09:31:15 [Epoch 3 Batch 190/274] loss=0.1357, lr=0.0000135, metrics:mcc:0.8785
+INFO:root:09:31:16 [Epoch 3 Batch 200/274] loss=0.1455, lr=0.0000133, metrics:mcc:0.8790
+INFO:root:09:31:17 [Epoch 3 Batch 210/274] loss=0.1384, lr=0.0000132, metrics:mcc:0.8797
+INFO:root:09:31:17 [Epoch 3 Batch 220/274] loss=0.1267, lr=0.0000131, metrics:mcc:0.8804
+INFO:root:09:31:18 [Epoch 3 Batch 230/274] loss=0.1298, lr=0.0000130, metrics:mcc:0.8806
+INFO:root:09:31:19 [Epoch 3 Batch 240/274] loss=0.0900, lr=0.0000129, metrics:mcc:0.8822
+INFO:root:09:31:20 [Epoch 3 Batch 250/274] loss=0.1732, lr=0.0000128, metrics:mcc:0.8818
+INFO:root:09:31:21 [Epoch 3 Batch 260/274] loss=0.1003, lr=0.0000126, metrics:mcc:0.8832
+INFO:root:09:31:21 [Epoch 3 Batch 270/274] loss=0.1810, lr=0.0000125, metrics:mcc:0.8830
+INFO:root:09:31:22 Now we are doing evaluation on dev with gpu(0).
+INFO:root:09:31:22 [Batch 10/131] loss=0.8241, metrics:mcc:0.4713
+INFO:root:09:31:22 [Batch 20/131] loss=0.4607, metrics:mcc:0.5655
+INFO:root:09:31:22 [Batch 30/131] loss=0.6044, metrics:mcc:0.6054
+INFO:root:09:31:22 [Batch 40/131] loss=0.5154, metrics:mcc:0.6189
+INFO:root:09:31:22 [Batch 50/131] loss=0.3937, metrics:mcc:0.6423
+INFO:root:09:31:23 [Batch 60/131] loss=0.3884, metrics:mcc:0.6513
+INFO:root:09:31:23 [Batch 70/131] loss=0.7381, metrics:mcc:0.6147
+INFO:root:09:31:23 [Batch 80/131] loss=0.9875, metrics:mcc:0.5780
+INFO:root:09:31:23 [Batch 90/131] loss=0.7386, metrics:mcc:0.5712
+INFO:root:09:31:23 [Batch 100/131] loss=0.5130, metrics:mcc:0.5685
+INFO:root:09:31:23 [Batch 110/131] loss=0.2140, metrics:mcc:0.5996
+INFO:root:09:31:23 [Batch 120/131] loss=0.2643, metrics:mcc:0.6166
+INFO:root:09:31:23 [Batch 130/131] loss=0.8625, metrics:mcc:0.5948
+INFO:root:09:31:23 validation metrics:mcc:0.5936
+INFO:root:09:31:23 Time cost=1.63s, throughput=642.74 samples/s
+INFO:root:09:31:34 params saved in: ./output_dir/model_bert_CoLA_2.params
+INFO:root:09:31:34 Time cost=34.31s
+INFO:root:09:31:35 [Epoch 4 Batch 10/274] loss=0.0790, lr=0.0000123, metrics:mcc:0.9300
+INFO:root:09:31:36 [Epoch 4 Batch 20/274] loss=0.0800, lr=0.0000122, metrics:mcc:0.9399
+INFO:root:09:31:37 [Epoch 4 Batch 30/274] loss=0.0954, lr=0.0000121, metrics:mcc:0.9391
+INFO:root:09:31:38 [Epoch 4 Batch 40/274] loss=0.0683, lr=0.0000120, metrics:mcc:0.9394
+INFO:root:09:31:38 [Epoch 4 Batch 50/274] loss=0.0547, lr=0.0000119, metrics:mcc:0.9407
+INFO:root:09:31:39 [Epoch 4 Batch 60/274] loss=0.0330, lr=0.0000118, metrics:mcc:0.9480
+INFO:root:09:31:40 [Epoch 4 Batch 70/274] loss=0.1760, lr=0.0000116, metrics:mcc:0.9414
+INFO:root:09:31:41 [Epoch 4 Batch 80/274] loss=0.1184, lr=0.0000115, metrics:mcc:0.9383
+INFO:root:09:31:42 [Epoch 4 Batch 90/274] loss=0.0522, lr=0.0000114, metrics:mcc:0.9384
+INFO:root:09:31:42 [Epoch 4 Batch 100/274] loss=0.1053, lr=0.0000113, metrics:mcc:0.9349
+INFO:root:09:31:43 [Epoch 4 Batch 110/274] loss=0.1015, lr=0.0000112, metrics:mcc:0.9355
+INFO:root:09:31:44 [Epoch 4 Batch 120/274] loss=0.1904, lr=0.0000110, metrics:mcc:0.9297
+INFO:root:09:31:45 [Epoch 4 Batch 130/274] loss=0.0936, lr=0.0000109, metrics:mcc:0.9303
+INFO:root:09:31:46 [Epoch 4 Batch 140/274] loss=0.1079, lr=0.0000108, metrics:mcc:0.9270
+INFO:root:09:31:47 [Epoch 4 Batch 150/274] loss=0.1800, lr=0.0000107, metrics:mcc:0.9244
+INFO:root:09:31:47 [Epoch 4 Batch 160/274] loss=0.0400, lr=0.0000106, metrics:mcc:0.9282
+INFO:root:09:31:48 [Epoch 4 Batch 170/274] loss=0.0924, lr=0.0000104, metrics:mcc:0.9272
+INFO:root:09:31:49 [Epoch 4 Batch 180/274] loss=0.1208, lr=0.0000103, metrics:mcc:0.9274
+INFO:root:09:31:50 [Epoch 4 Batch 190/274] loss=0.0781, lr=0.0000102, metrics:mcc:0.9282
+INFO:root:09:31:51 [Epoch 4 Batch 200/274] loss=0.1228, lr=0.0000101, metrics:mcc:0.9273
+INFO:root:09:31:51 [Epoch 4 Batch 210/274] loss=0.0757, lr=0.0000100, metrics:mcc:0.9278
+INFO:root:09:31:52 [Epoch 4 Batch 220/274] loss=0.1019, lr=0.0000099, metrics:mcc:0.9274
+INFO:root:09:31:53 [Epoch 4 Batch 230/274] loss=0.1253, lr=0.0000097, metrics:mcc:0.9266
+INFO:root:09:31:54 [Epoch 4 Batch 240/274] loss=0.1090, lr=0.0000096, metrics:mcc:0.9267
+INFO:root:09:31:55 [Epoch 4 Batch 250/274] loss=0.0651, lr=0.0000095, metrics:mcc:0.9269
+INFO:root:09:31:55 [Epoch 4 Batch 260/274] loss=0.0649, lr=0.0000094, metrics:mcc:0.9284
+INFO:root:09:31:56 [Epoch 4 Batch 270/274] loss=0.1022, lr=0.0000093, metrics:mcc:0.9286
+INFO:root:09:31:56 Now we are doing evaluation on dev with gpu(0).
+INFO:root:09:31:57 [Batch 10/131] loss=0.9556, metrics:mcc:0.5017
+INFO:root:09:31:57 [Batch 20/131] loss=0.6326, metrics:mcc:0.5956
+INFO:root:09:31:57 [Batch 30/131] loss=0.6043, metrics:mcc:0.6343
+INFO:root:09:31:57 [Batch 40/131] loss=0.6500, metrics:mcc:0.6180
+INFO:root:09:31:57 [Batch 50/131] loss=0.3102, metrics:mcc:0.6337
+INFO:root:09:31:57 [Batch 60/131] loss=0.4048, metrics:mcc:0.6487
+INFO:root:09:31:57 [Batch 70/131] loss=1.0664, metrics:mcc:0.5986
+INFO:root:09:31:58 [Batch 80/131] loss=1.1776, metrics:mcc:0.5717
+INFO:root:09:31:58 [Batch 90/131] loss=0.9756, metrics:mcc:0.5582
+INFO:root:09:31:58 [Batch 100/131] loss=0.5070, metrics:mcc:0.5625
+INFO:root:09:31:58 [Batch 110/131] loss=0.2433, metrics:mcc:0.5854
+INFO:root:09:31:58 [Batch 120/131] loss=0.3241, metrics:mcc:0.6040
+INFO:root:09:31:58 [Batch 130/131] loss=0.6555, metrics:mcc:0.6045
+INFO:root:09:31:58 validation metrics:mcc:0.6032
+INFO:root:09:31:58 Time cost=1.64s, throughput=640.90 samples/s
+INFO:root:09:32:09 params saved in: ./output_dir/model_bert_CoLA_3.params
+INFO:root:09:32:09 Time cost=35.07s
+INFO:root:09:32:10 [Epoch 5 Batch 10/274] loss=0.0332, lr=0.0000091, metrics:mcc:0.9695
+INFO:root:09:32:11 [Epoch 5 Batch 20/274] loss=0.0936, lr=0.0000090, metrics:mcc:0.9554
+INFO:root:09:32:12 [Epoch 5 Batch 30/274] loss=0.0685, lr=0.0000089, metrics:mcc:0.9562
+INFO:root:09:32:13 [Epoch 5 Batch 40/274] loss=0.0520, lr=0.0000087, metrics:mcc:0.9568
+INFO:root:09:32:13 [Epoch 5 Batch 50/274] loss=0.0728, lr=0.0000086, metrics:mcc:0.9566
+INFO:root:09:32:14 [Epoch 5 Batch 60/274] loss=0.0402, lr=0.0000085, metrics:mcc:0.9587
+INFO:root:09:32:15 [Epoch 5 Batch 70/274] loss=0.0680, lr=0.0000084, metrics:mcc:0.9602
+INFO:root:09:32:16 [Epoch 5 Batch 80/274] loss=0.0456, lr=0.0000083, metrics:mcc:0.9621
+INFO:root:09:32:17 [Epoch 5 Batch 90/274] loss=0.0451, lr=0.0000081, metrics:mcc:0.9627
+INFO:root:09:32:17 [Epoch 5 Batch 100/274] loss=0.0733, lr=0.0000080, metrics:mcc:0.9622
+INFO:root:09:32:18 [Epoch 5 Batch 110/274] loss=0.0649, lr=0.0000079, metrics:mcc:0.9615
+INFO:root:09:32:19 [Epoch 5 Batch 120/274] loss=0.0423, lr=0.0000078, metrics:mcc:0.9636
+INFO:root:09:32:20 [Epoch 5 Batch 130/274] loss=0.0135, lr=0.0000077, metrics:mcc:0.9655
+INFO:root:09:32:20 [Epoch 5 Batch 140/274] loss=0.0402, lr=0.0000075, metrics:mcc:0.9661
+INFO:root:09:32:21 [Epoch 5 Batch 150/274] loss=0.0330, lr=0.0000074, metrics:mcc:0.9673
+INFO:root:09:32:22 [Epoch 5 Batch 160/274] loss=0.0862, lr=0.0000073, metrics:mcc:0.9660
+INFO:root:09:32:23 [Epoch 5 Batch 170/274] loss=0.0800, lr=0.0000072, metrics:mcc:0.9652
+INFO:root:09:32:24 [Epoch 5 Batch 180/274] loss=0.1342, lr=0.0000071, metrics:mcc:0.9652
+INFO:root:09:32:24 [Epoch 5 Batch 190/274] loss=0.0475, lr=0.0000070, metrics:mcc:0.9660
+INFO:root:09:32:25 [Epoch 5 Batch 200/274] loss=0.0392, lr=0.0000068, metrics:mcc:0.9662
+INFO:root:09:32:26 [Epoch 5 Batch 210/274] loss=0.0802, lr=0.0000067, metrics:mcc:0.9660
+INFO:root:09:32:27 [Epoch 5 Batch 220/274] loss=0.0419, lr=0.0000066, metrics:mcc:0.9669
+INFO:root:09:32:28 [Epoch 5 Batch 230/274] loss=0.1152, lr=0.0000065, metrics:mcc:0.9654
+INFO:root:09:32:28 [Epoch 5 Batch 240/274] loss=0.0770, lr=0.0000064, metrics:mcc:0.9643
+INFO:root:09:32:29 [Epoch 5 Batch 250/274] loss=0.0917, lr=0.0000062, metrics:mcc:0.9634
+INFO:root:09:32:30 [Epoch 5 Batch 260/274] loss=0.0700, lr=0.0000061, metrics:mcc:0.9631
+INFO:root:09:32:31 [Epoch 5 Batch 270/274] loss=0.0811, lr=0.0000060, metrics:mcc:0.9624
+INFO:root:09:32:31 Now we are doing evaluation on dev with gpu(0).
+INFO:root:09:32:31 [Batch 10/131] loss=1.1981, metrics:mcc:0.4366
+INFO:root:09:32:31 [Batch 20/131] loss=0.7259, metrics:mcc:0.5662
+INFO:root:09:32:32 [Batch 30/131] loss=0.8019, metrics:mcc:0.5963
+INFO:root:09:32:32 [Batch 40/131] loss=0.7435, metrics:mcc:0.6042
+INFO:root:09:32:32 [Batch 50/131] loss=0.3421, metrics:mcc:0.6273
+INFO:root:09:32:32 [Batch 60/131] loss=0.4472, metrics:mcc:0.6306
+INFO:root:09:32:32 [Batch 70/131] loss=1.3800, metrics:mcc:0.5834
+INFO:root:09:32:32 [Batch 80/131] loss=1.4080, metrics:mcc:0.5580
+INFO:root:09:32:32 [Batch 90/131] loss=1.1538, metrics:mcc:0.5421
+INFO:root:09:32:32 [Batch 100/131] loss=0.6472, metrics:mcc:0.5436
+INFO:root:09:32:33 [Batch 110/131] loss=0.3512, metrics:mcc:0.5721
+INFO:root:09:32:33 [Batch 120/131] loss=0.4168, metrics:mcc:0.5866
+INFO:root:09:32:33 [Batch 130/131] loss=0.9821, metrics:mcc:0.5747
+INFO:root:09:32:33 validation metrics:mcc:0.5735
+INFO:root:09:32:33 Time cost=1.64s, throughput=640.78 samples/s
+INFO:root:09:32:44 params saved in: ./output_dir/model_bert_CoLA_4.params
+INFO:root:09:32:44 Time cost=34.50s
+INFO:root:09:32:45 [Epoch 6 Batch 10/274] loss=0.0824, lr=0.0000058, metrics:mcc:0.9568
+INFO:root:09:32:46 [Epoch 6 Batch 20/274] loss=0.0361, lr=0.0000057, metrics:mcc:0.9652
+INFO:root:09:32:46 [Epoch 6 Batch 30/274] loss=0.0373, lr=0.0000056, metrics:mcc:0.9690
+INFO:root:09:32:47 [Epoch 6 Batch 40/274] loss=0.0316, lr=0.0000055, metrics:mcc:0.9714
+INFO:root:09:32:48 [Epoch 6 Batch 50/274] loss=0.0293, lr=0.0000054, metrics:mcc:0.9729
+INFO:root:09:32:49 [Epoch 6 Batch 60/274] loss=0.0208, lr=0.0000052, metrics:mcc:0.9760
+INFO:root:09:32:50 [Epoch 6 Batch 70/274] loss=0.0064, lr=0.0000051, metrics:mcc:0.9781
+INFO:root:09:32:50 [Epoch 6 Batch 80/274] loss=0.0154, lr=0.0000050, metrics:mcc:0.9790
+INFO:root:09:32:51 [Epoch 6 Batch 90/274] loss=0.0514, lr=0.0000049, metrics:mcc:0.9780
+INFO:root:09:32:52 [Epoch 6 Batch 100/274] loss=0.0251, lr=0.0000048, metrics:mcc:0.9784
+INFO:root:09:32:53 [Epoch 6 Batch 110/274] loss=0.0314, lr=0.0000046, metrics:mcc:0.9785
+INFO:root:09:32:54 [Epoch 6 Batch 120/274] loss=0.0513, lr=0.0000045, metrics:mcc:0.9783
+INFO:root:09:32:54 [Epoch 6 Batch 130/274] loss=0.0465, lr=0.0000044, metrics:mcc:0.9783
+INFO:root:09:32:55 [Epoch 6 Batch 140/274] loss=0.0785, lr=0.0000043, metrics:mcc:0.9773
+INFO:root:09:32:56 [Epoch 6 Batch 150/274] loss=0.0474, lr=0.0000042, metrics:mcc:0.9769
+INFO:root:09:32:57 [Epoch 6 Batch 160/274] loss=0.0151, lr=0.0000041, metrics:mcc:0.9773
+INFO:root:09:32:57 [Epoch 6 Batch 170/274] loss=0.0330, lr=0.0000039, metrics:mcc:0.9773
+INFO:root:09:32:58 [Epoch 6 Batch 180/274] loss=0.0568, lr=0.0000038, metrics:mcc:0.9773
+INFO:root:09:32:59 [Epoch 6 Batch 190/274] loss=0.0469, lr=0.0000037, metrics:mcc:0.9772
+INFO:root:09:33:00 [Epoch 6 Batch 200/274] loss=0.0324, lr=0.0000036, metrics:mcc:0.9771
+INFO:root:09:33:01 [Epoch 6 Batch 210/274] loss=0.0358, lr=0.0000035, metrics:mcc:0.9767
+INFO:root:09:33:01 [Epoch 6 Batch 220/274] loss=0.0721, lr=0.0000033, metrics:mcc:0.9760
+INFO:root:09:33:02 [Epoch 6 Batch 230/274] loss=0.0206, lr=0.0000032, metrics:mcc:0.9764
+INFO:root:09:33:03 [Epoch 6 Batch 240/274] loss=0.0344, lr=0.0000031, metrics:mcc:0.9760
+INFO:root:09:33:04 [Epoch 6 Batch 250/274] loss=0.0125, lr=0.0000030, metrics:mcc:0.9767
+INFO:root:09:33:05 [Epoch 6 Batch 260/274] loss=0.0757, lr=0.0000029, metrics:mcc:0.9764
+INFO:root:09:33:05 [Epoch 6 Batch 270/274] loss=0.0767, lr=0.0000027, metrics:mcc:0.9752
+INFO:root:09:33:06 Now we are doing evaluation on dev with gpu(0).
+INFO:root:09:33:06 [Batch 10/131] loss=1.2856, metrics:mcc:0.4693
+INFO:root:09:33:06 [Batch 20/131] loss=0.7820, metrics:mcc:0.5803
+INFO:root:09:33:06 [Batch 30/131] loss=0.7881, metrics:mcc:0.6150
+INFO:root:09:33:06 [Batch 40/131] loss=0.7901, metrics:mcc:0.6186
+INFO:root:09:33:06 [Batch 50/131] loss=0.3805, metrics:mcc:0.6397
+INFO:root:09:33:07 [Batch 60/131] loss=0.4616, metrics:mcc:0.6470
+INFO:root:09:33:07 [Batch 70/131] loss=1.5271, metrics:mcc:0.5929
+INFO:root:09:33:07 [Batch 80/131] loss=1.5169, metrics:mcc:0.5663
+INFO:root:09:33:07 [Batch 90/131] loss=1.2652, metrics:mcc:0.5496
+INFO:root:09:33:07 [Batch 100/131] loss=0.7460, metrics:mcc:0.5473
+INFO:root:09:33:07 [Batch 110/131] loss=0.3564, metrics:mcc:0.5753
+INFO:root:09:33:07 [Batch 120/131] loss=0.4824, metrics:mcc:0.5895
+INFO:root:09:33:07 [Batch 130/131] loss=1.0828, metrics:mcc:0.5800
+INFO:root:09:33:07 validation metrics:mcc:0.5788
+INFO:root:09:33:07 Time cost=1.65s, throughput=635.87 samples/s
+INFO:root:09:33:18 params saved in: ./output_dir/model_bert_CoLA_5.params
+INFO:root:09:33:18 Time cost=34.50s
+INFO:root:09:33:19 [Epoch 7 Batch 10/274] loss=0.0526, lr=0.0000026, metrics:mcc:0.9775
+INFO:root:09:33:20 [Epoch 7 Batch 20/274] loss=0.0542, lr=0.0000025, metrics:mcc:0.9731
+INFO:root:09:33:21 [Epoch 7 Batch 30/274] loss=0.0247, lr=0.0000023, metrics:mcc:0.9802
+INFO:root:09:33:22 [Epoch 7 Batch 40/274] loss=0.0432, lr=0.0000022, metrics:mcc:0.9771
+INFO:root:09:33:22 [Epoch 7 Batch 50/274] loss=0.0427, lr=0.0000021, metrics:mcc:0.9770
+INFO:root:09:33:23 [Epoch 7 Batch 60/274] loss=0.0246, lr=0.0000020, metrics:mcc:0.9798
+INFO:root:09:33:24 [Epoch 7 Batch 70/274] loss=0.0112, lr=0.0000019, metrics:mcc:0.9816
+INFO:root:09:33:25 [Epoch 7 Batch 80/274] loss=0.0462, lr=0.0000017, metrics:mcc:0.9801
+INFO:root:09:33:26 [Epoch 7 Batch 90/274] loss=0.0383, lr=0.0000016, metrics:mcc:0.9799
+INFO:root:09:33:26 [Epoch 7 Batch 100/274] loss=0.0193, lr=0.0000015, metrics:mcc:0.9812
+INFO:root:09:33:27 [Epoch 7 Batch 110/274] loss=0.0086, lr=0.0000014, metrics:mcc:0.9823
+INFO:root:09:33:28 [Epoch 7 Batch 120/274] loss=0.0419, lr=0.0000013, metrics:mcc:0.9812
+INFO:root:09:33:29 [Epoch 7 Batch 130/274] loss=0.0195, lr=0.0000012, metrics:mcc:0.9814
+INFO:root:09:33:29 [Epoch 7 Batch 140/274] loss=0.0178, lr=0.0000010, metrics:mcc:0.9815
+INFO:root:09:33:30 [Epoch 7 Batch 150/274] loss=0.0071, lr=0.0000009, metrics:mcc:0.9821
+INFO:root:09:33:31 [Epoch 7 Batch 160/274] loss=0.0236, lr=0.0000008, metrics:mcc:0.9818
+INFO:root:09:33:32 [Epoch 7 Batch 170/274] loss=0.0829, lr=0.0000007, metrics:mcc:0.9803
+INFO:root:09:33:33 [Epoch 7 Batch 180/274] loss=0.0257, lr=0.0000006, metrics:mcc:0.9796
+INFO:root:09:33:34 [Epoch 7 Batch 190/274] loss=0.0667, lr=0.0000004, metrics:mcc:0.9791
+INFO:root:09:33:34 [Epoch 7 Batch 200/274] loss=0.0443, lr=0.0000003, metrics:mcc:0.9781
+INFO:root:09:33:35 [Epoch 7 Batch 210/274] loss=0.0202, lr=0.0000002, metrics:mcc:0.9787
+INFO:root:09:33:36 [Epoch 7 Batch 220/274] loss=0.0378, lr=0.0000001, metrics:mcc:0.9786
+INFO:root:09:33:36 Finish training step: 1870
+INFO:root:09:33:36 Now we are doing evaluation on dev with gpu(0).
+INFO:root:09:33:36 [Batch 10/131] loss=1.3086, metrics:mcc:0.4693
+INFO:root:09:33:37 [Batch 20/131] loss=0.7752, metrics:mcc:0.5966
+INFO:root:09:33:37 [Batch 30/131] loss=0.8125, metrics:mcc:0.6254
+INFO:root:09:33:37 [Batch 40/131] loss=0.8102, metrics:mcc:0.6186
+INFO:root:09:33:37 [Batch 50/131] loss=0.3888, metrics:mcc:0.6460
+INFO:root:09:33:37 [Batch 60/131] loss=0.4621, metrics:mcc:0.6524
+INFO:root:09:33:37 [Batch 70/131] loss=1.5685, metrics:mcc:0.6023
+INFO:root:09:33:37 [Batch 80/131] loss=1.5692, metrics:mcc:0.5706
+INFO:root:09:33:37 [Batch 90/131] loss=1.2850, metrics:mcc:0.5535
+INFO:root:09:33:38 [Batch 100/131] loss=0.7582, metrics:mcc:0.5543
+INFO:root:09:33:38 [Batch 110/131] loss=0.3832, metrics:mcc:0.5814
+INFO:root:09:33:38 [Batch 120/131] loss=0.4744, metrics:mcc:0.5951
+INFO:root:09:33:38 [Batch 130/131] loss=1.0833, metrics:mcc:0.5856
+INFO:root:09:33:38 validation metrics:mcc:0.5843
+INFO:root:09:33:38 Time cost=1.60s, throughput=653.88 samples/s
+INFO:root:09:33:49 params saved in: ./output_dir/model_bert_CoLA_6.params
+INFO:root:09:33:49 Time cost=30.80s
+INFO:root:09:33:49 Best model at epoch 3. Validation metrics:mcc:0.6032
+INFO:root:09:33:49 Now we are doing testing on test with gpu(0).
+INFO:root:09:33:51 Time cost=1.52s, throughput=702.24 samples/s

@@ -1,1 +1,1 @@
-python run_glue.py --gpu 8 --task_name QQP --model_name xlnet_cased_l12_h768_a12 --seed 49 --lr 4e-5 --epochs 5
+python3 run_glue.py --gpu 8 --task QQP --lr 3e-5 --training_steps 14000 --warmup_ratio 0.07 --seed 5 --batch_size 128 --lr 3e-5 --optimizer Adam

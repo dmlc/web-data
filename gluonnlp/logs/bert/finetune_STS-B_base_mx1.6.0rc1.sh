@@ -1,0 +1,1 @@
+python3 finetune_classifier.py --batch_size 32 --lr 2e-5 --epochs 5 --gpu 0 --seed 24 --task_name STS-B --warmup_ratio 0.1

@@ -1,0 +1,150 @@
+INFO:root:08:52:32 Namespace(accumulate=None, batch_size=64, bert_dataset='book_corpus_wiki_en_uncased', bert_model='bert_12_768_12', dev_batch_size=8, dtype='float32', early_stop=None, epochs=4, epsilon=1e-06, gpu=0, log_interval=500, lr=2e-05, max_len=128, model_parameters=None, only_inference=False, optimizer='bertadam', output_dir='./output_dir', pad=False, pretrained_bert_parameters=None, seed=2, task_name='MNLI', training_steps=None, warmup_ratio=0.1)
+INFO:root:08:52:36 processing dataset...
+INFO:root:08:53:56 Now we are doing BERT classification training on gpu(0)!
+INFO:root:08:53:56 training steps=24543
+INFO:root:08:55:55 [Epoch 1 Batch 500/6141] loss=0.9783, lr=0.0000041, metrics:accuracy:0.5087
+INFO:root:08:57:52 [Epoch 1 Batch 1000/6141] loss=0.7071, lr=0.0000081, metrics:accuracy:0.6053
+INFO:root:08:59:45 [Epoch 1 Batch 1500/6141] loss=0.6160, lr=0.0000122, metrics:accuracy:0.6535
+INFO:root:09:01:44 [Epoch 1 Batch 2000/6141] loss=0.5872, lr=0.0000163, metrics:accuracy:0.6811
+INFO:root:09:03:44 [Epoch 1 Batch 2500/6141] loss=0.5590, lr=0.0000200, metrics:accuracy:0.6998
+INFO:root:09:05:45 [Epoch 1 Batch 3000/6141] loss=0.5350, lr=0.0000195, metrics:accuracy:0.7144
+INFO:root:09:07:40 [Epoch 1 Batch 3500/6141] loss=0.5219, lr=0.0000191, metrics:accuracy:0.7254
+INFO:root:09:09:32 [Epoch 1 Batch 4000/6141] loss=0.5083, lr=0.0000186, metrics:accuracy:0.7344
+INFO:root:09:11:28 [Epoch 1 Batch 4500/6141] loss=0.4899, lr=0.0000181, metrics:accuracy:0.7425
+INFO:root:09:13:22 [Epoch 1 Batch 5000/6141] loss=0.4887, lr=0.0000177, metrics:accuracy:0.7490
+INFO:root:09:15:19 [Epoch 1 Batch 5500/6141] loss=0.4763, lr=0.0000172, metrics:accuracy:0.7549
+INFO:root:09:17:16 [Epoch 1 Batch 6000/6141] loss=0.4694, lr=0.0000168, metrics:accuracy:0.7600
+INFO:root:09:17:48 Now we are doing evaluation on dev_matched with gpu(0).
+INFO:root:09:17:58 [Batch 500/1227] loss=0.4238, metrics:accuracy:0.8333
+INFO:root:09:18:07 [Batch 1000/1227] loss=0.4263, metrics:accuracy:0.8329
+INFO:root:09:18:12 validation metrics:accuracy:0.8326
+INFO:root:09:18:12 Time cost=24.07s, throughput=407.82 samples/s
+INFO:root:09:18:12 Now we are doing evaluation on dev_mismatched with gpu(0).
+INFO:root:09:18:22 [Batch 500/1229] loss=0.4090, metrics:accuracy:0.8430
+INFO:root:09:18:32 [Batch 1000/1229] loss=0.4316, metrics:accuracy:0.8406
+INFO:root:09:18:36 validation metrics:accuracy:0.8405
+INFO:root:09:18:36 Time cost=24.35s, throughput=403.71 samples/s
+INFO:root:09:18:37 params saved in: ./output_dir/model_bert_MNLI_0.params
+INFO:root:09:18:37 Time cost=1481.42s
+INFO:root:09:21:25 Namespace(accumulate=None, batch_size=48, bert_dataset='book_corpus_wiki_en_uncased', bert_model='bert_12_768_12', dev_batch_size=8, dtype='float32', early_stop=None, epochs=4, epsilon=1e-06, gpu=0, log_interval=500, lr=2e-05, max_len=128, model_parameters=None, only_inference=False, optimizer='bertadam', output_dir='./output_dir', pad=False, pretrained_bert_parameters=None, seed=2, task_name='MNLI', training_steps=None, warmup_ratio=0.1)
+INFO:root:09:21:29 processing dataset...
+INFO:root:09:22:48 Now we are doing BERT classification training on gpu(0)!
+INFO:root:09:22:48 training steps=32725
+INFO:root:09:24:19 [Epoch 1 Batch 500/8186] loss=1.0303, lr=0.0000031, metrics:accuracy:0.4675
+INFO:root:09:25:51 [Epoch 1 Batch 1000/8186] loss=0.7474, lr=0.0000061, metrics:accuracy:0.5754
+INFO:root:09:27:18 [Epoch 1 Batch 1500/8186] loss=0.6591, lr=0.0000092, metrics:accuracy:0.6271
+INFO:root:09:28:49 [Epoch 1 Batch 2000/8186] loss=0.6159, lr=0.0000122, metrics:accuracy:0.6583
+INFO:root:09:30:21 [Epoch 1 Batch 2500/8186] loss=0.5879, lr=0.0000153, metrics:accuracy:0.6790
+INFO:root:09:31:52 [Epoch 1 Batch 3000/8186] loss=0.5728, lr=0.0000183, metrics:accuracy:0.6938
+INFO:root:09:33:24 [Epoch 1 Batch 3500/8186] loss=0.5452, lr=0.0000198, metrics:accuracy:0.7065
+INFO:root:09:34:56 [Epoch 1 Batch 4000/8186] loss=0.5282, lr=0.0000195, metrics:accuracy:0.7169
+INFO:root:09:36:28 [Epoch 1 Batch 4500/8186] loss=0.5100, lr=0.0000192, metrics:accuracy:0.7259
+INFO:root:09:38:00 [Epoch 1 Batch 5000/8186] loss=0.5010, lr=0.0000188, metrics:accuracy:0.7336
+INFO:root:09:39:29 [Epoch 1 Batch 5500/8186] loss=0.5003, lr=0.0000185, metrics:accuracy:0.7401
+INFO:root:09:40:59 [Epoch 1 Batch 6000/8186] loss=0.4900, lr=0.0000181, metrics:accuracy:0.7460
+INFO:root:09:42:29 [Epoch 1 Batch 6500/8186] loss=0.4835, lr=0.0000178, metrics:accuracy:0.7510
+INFO:root:09:43:59 [Epoch 1 Batch 7000/8186] loss=0.4830, lr=0.0000175, metrics:accuracy:0.7551
+INFO:root:09:45:28 [Epoch 1 Batch 7500/8186] loss=0.4664, lr=0.0000171, metrics:accuracy:0.7592
+INFO:root:09:47:01 [Epoch 1 Batch 8000/8186] loss=0.4600, lr=0.0000168, metrics:accuracy:0.7629
+INFO:root:09:47:33 Now we are doing evaluation on dev_matched with gpu(0).
+INFO:root:09:47:43 [Batch 500/1227] loss=0.4398, metrics:accuracy:0.8275
+INFO:root:09:47:53 [Batch 1000/1227] loss=0.4537, metrics:accuracy:0.8260
+INFO:root:09:47:57 validation metrics:accuracy:0.8265
+INFO:root:09:47:57 Time cost=23.86s, throughput=411.45 samples/s
+INFO:root:09:47:57 Now we are doing evaluation on dev_mismatched with gpu(0).
+INFO:root:09:48:07 [Batch 500/1229] loss=0.4300, metrics:accuracy:0.8325
+INFO:root:09:48:17 [Batch 1000/1229] loss=0.4338, metrics:accuracy:0.8349
+INFO:root:09:48:21 validation metrics:accuracy:0.8329
+INFO:root:09:48:21 Time cost=24.08s, throughput=408.30 samples/s
+INFO:root:09:48:23 params saved in: ./output_dir/model_bert_MNLI_0.params
+INFO:root:09:48:23 Time cost=1534.45s
+INFO:root:09:49:51 [Epoch 2 Batch 500/8186] loss=0.3802, lr=0.0000163, metrics:accuracy:0.8577
+INFO:root:09:51:23 [Epoch 2 Batch 1000/8186] loss=0.3768, lr=0.0000160, metrics:accuracy:0.8570
+INFO:root:09:52:55 [Epoch 2 Batch 1500/8186] loss=0.3753, lr=0.0000156, metrics:accuracy:0.8580
+INFO:root:09:54:27 [Epoch 2 Batch 2000/8186] loss=0.3777, lr=0.0000153, metrics:accuracy:0.8581
+INFO:root:09:55:55 [Epoch 2 Batch 2500/8186] loss=0.3703, lr=0.0000150, metrics:accuracy:0.8587
+INFO:root:09:57:26 [Epoch 2 Batch 3000/8186] loss=0.3874, lr=0.0000146, metrics:accuracy:0.8576
+INFO:root:09:58:58 [Epoch 2 Batch 3500/8186] loss=0.3824, lr=0.0000143, metrics:accuracy:0.8573
+INFO:root:10:00:28 [Epoch 2 Batch 4000/8186] loss=0.3682, lr=0.0000139, metrics:accuracy:0.8577
+INFO:root:10:01:59 [Epoch 2 Batch 4500/8186] loss=0.3743, lr=0.0000136, metrics:accuracy:0.8578
+INFO:root:10:03:30 [Epoch 2 Batch 5000/8186] loss=0.3717, lr=0.0000133, metrics:accuracy:0.8582
+INFO:root:10:05:04 [Epoch 2 Batch 5500/8186] loss=0.3682, lr=0.0000129, metrics:accuracy:0.8583
+INFO:root:10:06:34 [Epoch 2 Batch 6000/8186] loss=0.3687, lr=0.0000126, metrics:accuracy:0.8584
+INFO:root:10:08:05 [Epoch 2 Batch 6500/8186] loss=0.3771, lr=0.0000123, metrics:accuracy:0.8584
+INFO:root:10:09:35 [Epoch 2 Batch 7000/8186] loss=0.3735, lr=0.0000119, metrics:accuracy:0.8584
+INFO:root:10:11:03 [Epoch 2 Batch 7500/8186] loss=0.3687, lr=0.0000116, metrics:accuracy:0.8587
+INFO:root:10:12:35 [Epoch 2 Batch 8000/8186] loss=0.3689, lr=0.0000112, metrics:accuracy:0.8588
+INFO:root:10:13:09 Now we are doing evaluation on dev_matched with gpu(0).
+INFO:root:10:13:19 [Batch 500/1227] loss=0.4076, metrics:accuracy:0.8472
+INFO:root:10:13:29 [Batch 1000/1227] loss=0.4133, metrics:accuracy:0.8431
+INFO:root:10:13:33 validation metrics:accuracy:0.8429
+INFO:root:10:13:33 Time cost=23.75s, throughput=413.34 samples/s
+INFO:root:10:13:33 Now we are doing evaluation on dev_mismatched with gpu(0).
+INFO:root:10:13:43 [Batch 500/1229] loss=0.3912, metrics:accuracy:0.8508
+INFO:root:10:13:52 [Batch 1000/1229] loss=0.4085, metrics:accuracy:0.8506
+INFO:root:10:13:57 validation metrics:accuracy:0.8507
+INFO:root:10:13:57 Time cost=24.11s, throughput=407.87 samples/s
+INFO:root:10:13:58 params saved in: ./output_dir/model_bert_MNLI_1.params
+INFO:root:10:13:58 Time cost=1535.64s
+INFO:root:10:15:31 [Epoch 3 Batch 500/8186] loss=0.2737, lr=0.0000108, metrics:accuracy:0.8997
+INFO:root:10:17:00 [Epoch 3 Batch 1000/8186] loss=0.2675, lr=0.0000104, metrics:accuracy:0.9013
+INFO:root:10:18:30 [Epoch 3 Batch 1500/8186] loss=0.2666, lr=0.0000101, metrics:accuracy:0.9017
+INFO:root:10:20:02 [Epoch 3 Batch 2000/8186] loss=0.2652, lr=0.0000097, metrics:accuracy:0.9025
+INFO:root:10:21:36 [Epoch 3 Batch 2500/8186] loss=0.2661, lr=0.0000094, metrics:accuracy:0.9026
+INFO:root:10:23:07 [Epoch 3 Batch 3000/8186] loss=0.2615, lr=0.0000091, metrics:accuracy:0.9028
+INFO:root:10:24:37 [Epoch 3 Batch 3500/8186] loss=0.2670, lr=0.0000087, metrics:accuracy:0.9030
+INFO:root:10:26:07 [Epoch 3 Batch 4000/8186] loss=0.2664, lr=0.0000084, metrics:accuracy:0.9029
+INFO:root:10:27:38 [Epoch 3 Batch 4500/8186] loss=0.2713, lr=0.0000080, metrics:accuracy:0.9029
+INFO:root:10:29:10 [Epoch 3 Batch 5000/8186] loss=0.2613, lr=0.0000077, metrics:accuracy:0.9031
+INFO:root:10:30:40 [Epoch 3 Batch 5500/8186] loss=0.2642, lr=0.0000074, metrics:accuracy:0.9031
+INFO:root:10:32:12 [Epoch 3 Batch 6000/8186] loss=0.2632, lr=0.0000070, metrics:accuracy:0.9031
+INFO:root:10:33:44 [Epoch 3 Batch 6500/8186] loss=0.2520, lr=0.0000067, metrics:accuracy:0.9035
+INFO:root:10:35:13 [Epoch 3 Batch 7000/8186] loss=0.2649, lr=0.0000064, metrics:accuracy:0.9035
+INFO:root:10:36:45 [Epoch 3 Batch 7500/8186] loss=0.2648, lr=0.0000060, metrics:accuracy:0.9035
+INFO:root:10:38:15 [Epoch 3 Batch 8000/8186] loss=0.2653, lr=0.0000057, metrics:accuracy:0.9036
+INFO:root:10:38:48 Now we are doing evaluation on dev_matched with gpu(0).
+INFO:root:10:38:58 [Batch 500/1227] loss=0.4515, metrics:accuracy:0.8500
+INFO:root:10:39:08 [Batch 1000/1227] loss=0.4525, metrics:accuracy:0.8459
+INFO:root:10:39:13 validation metrics:accuracy:0.8458
+INFO:root:10:39:13 Time cost=24.48s, throughput=400.99 samples/s
+INFO:root:10:39:13 Now we are doing evaluation on dev_mismatched with gpu(0).
+INFO:root:10:39:22 [Batch 500/1229] loss=0.4432, metrics:accuracy:0.8448
+INFO:root:10:39:32 [Batch 1000/1229] loss=0.4381, metrics:accuracy:0.8489
+INFO:root:10:39:37 validation metrics:accuracy:0.8476
+INFO:root:10:39:37 Time cost=24.04s, throughput=409.05 samples/s
+INFO:root:10:39:39 params saved in: ./output_dir/model_bert_MNLI_2.params
+INFO:root:10:39:39 Time cost=1540.34s
+INFO:root:10:41:07 [Epoch 4 Batch 500/8186] loss=0.1910, lr=0.0000052, metrics:accuracy:0.9358
+INFO:root:10:42:39 [Epoch 4 Batch 1000/8186] loss=0.1920, lr=0.0000049, metrics:accuracy:0.9348
+INFO:root:10:44:11 [Epoch 4 Batch 1500/8186] loss=0.1962, lr=0.0000045, metrics:accuracy:0.9341
+INFO:root:10:45:42 [Epoch 4 Batch 2000/8186] loss=0.1970, lr=0.0000042, metrics:accuracy:0.9333
+INFO:root:10:47:15 [Epoch 4 Batch 2500/8186] loss=0.1968, lr=0.0000038, metrics:accuracy:0.9330
+INFO:root:10:48:56 [Epoch 4 Batch 3000/8186] loss=0.2001, lr=0.0000035, metrics:accuracy:0.9322
+INFO:root:10:50:27 [Epoch 4 Batch 3500/8186] loss=0.1959, lr=0.0000032, metrics:accuracy:0.9322
+INFO:root:10:51:55 [Epoch 4 Batch 4000/8186] loss=0.1919, lr=0.0000028, metrics:accuracy:0.9323
+INFO:root:10:53:24 [Epoch 4 Batch 4500/8186] loss=0.1900, lr=0.0000025, metrics:accuracy:0.9323
+INFO:root:10:54:53 [Epoch 4 Batch 5000/8186] loss=0.1908, lr=0.0000022, metrics:accuracy:0.9325
+INFO:root:10:56:25 [Epoch 4 Batch 5500/8186] loss=0.1996, lr=0.0000018, metrics:accuracy:0.9323
+INFO:root:10:57:57 [Epoch 4 Batch 6000/8186] loss=0.1882, lr=0.0000015, metrics:accuracy:0.9324
+INFO:root:10:59:27 [Epoch 4 Batch 6500/8186] loss=0.1927, lr=0.0000011, metrics:accuracy:0.9324
+INFO:root:11:00:58 [Epoch 4 Batch 7000/8186] loss=0.1925, lr=0.0000008, metrics:accuracy:0.9324
+INFO:root:11:02:27 [Epoch 4 Batch 7500/8186] loss=0.1910, lr=0.0000005, metrics:accuracy:0.9324
+INFO:root:11:03:56 [Epoch 4 Batch 8000/8186] loss=0.1928, lr=0.0000001, metrics:accuracy:0.9324
+INFO:root:11:04:28 Finish training step: 32725
+INFO:root:11:04:28 Now we are doing evaluation on dev_matched with gpu(0).
+INFO:root:11:04:37 [Batch 500/1227] loss=0.5208, metrics:accuracy:0.8502
+INFO:root:11:04:47 [Batch 1000/1227] loss=0.5214, metrics:accuracy:0.8465
+INFO:root:11:04:52 validation metrics:accuracy:0.8467
+INFO:root:11:04:52 Time cost=23.93s, throughput=410.15 samples/s
+INFO:root:11:04:52 Now we are doing evaluation on dev_mismatched with gpu(0).
+INFO:root:11:05:01 [Batch 500/1229] loss=0.5141, metrics:accuracy:0.8438
+INFO:root:11:05:11 [Batch 1000/1229] loss=0.4988, metrics:accuracy:0.8466
+INFO:root:11:05:16 validation metrics:accuracy:0.8454
+INFO:root:11:05:16 Time cost=24.17s, throughput=406.74 samples/s
+INFO:root:11:05:17 params saved in: ./output_dir/model_bert_MNLI_3.params
+INFO:root:11:05:17 Time cost=1538.46s
+INFO:root:11:05:17 Best model at epoch 1. Validation metrics:accuracy:0.8507
+INFO:root:11:05:17 Now we are doing testing on test_matched with gpu(0).
+INFO:root:11:05:40 Time cost=22.18s, throughput=441.88 samples/s
+INFO:root:11:05:40 Now we are doing testing on test_mismatched with gpu(0).
+INFO:root:11:06:02 Time cost=22.27s, throughput=442.13 samples/s
