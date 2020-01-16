@@ -1,0 +1,934 @@
+PSPNet(
+  (conv1): HybridSequential(
+    (0): Conv2D(3 -> 64, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+    (1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=64)
+    (2): Activation(relu)
+    (3): Conv2D(64 -> 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+    (4): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=64)
+    (5): Activation(relu)
+    (6): Conv2D(64 -> 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  )
+  (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=128)
+  (relu): Activation(relu)
+  (maxpool): MaxPool2D(size=(3, 3), stride=(2, 2), padding=(1, 1), ceil_mode=False)
+  (layer1): HybridSequential(
+    (0): BottleneckV1b(
+      (conv1): Conv2D(128 -> 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=64)
+      (relu1): Activation(relu)
+      (conv2): Conv2D(64 -> 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=64)
+      (relu2): Activation(relu)
+      (conv3): Conv2D(64 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (relu3): Activation(relu)
+      (downsample): HybridSequential(
+        (0): Conv2D(128 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      )
+    )
+    (1): BottleneckV1b(
+      (conv1): Conv2D(256 -> 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=64)
+      (relu1): Activation(relu)
+      (conv2): Conv2D(64 -> 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=64)
+      (relu2): Activation(relu)
+      (conv3): Conv2D(64 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (relu3): Activation(relu)
+    )
+    (2): BottleneckV1b(
+      (conv1): Conv2D(256 -> 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=64)
+      (relu1): Activation(relu)
+      (conv2): Conv2D(64 -> 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=64)
+      (relu2): Activation(relu)
+      (conv3): Conv2D(64 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (relu3): Activation(relu)
+    )
+  )
+  (layer2): HybridSequential(
+    (0): BottleneckV1b(
+      (conv1): Conv2D(256 -> 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=128)
+      (relu1): Activation(relu)
+      (conv2): Conv2D(128 -> 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=128)
+      (relu2): Activation(relu)
+      (conv3): Conv2D(128 -> 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=512)
+      (relu3): Activation(relu)
+      (downsample): HybridSequential(
+        (0): Conv2D(256 -> 512, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=512)
+      )
+    )
+    (1): BottleneckV1b(
+      (conv1): Conv2D(512 -> 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=128)
+      (relu1): Activation(relu)
+      (conv2): Conv2D(128 -> 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=128)
+      (relu2): Activation(relu)
+      (conv3): Conv2D(128 -> 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=512)
+      (relu3): Activation(relu)
+    )
+    (2): BottleneckV1b(
+      (conv1): Conv2D(512 -> 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=128)
+      (relu1): Activation(relu)
+      (conv2): Conv2D(128 -> 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=128)
+      (relu2): Activation(relu)
+      (conv3): Conv2D(128 -> 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=512)
+      (relu3): Activation(relu)
+    )
+    (3): BottleneckV1b(
+      (conv1): Conv2D(512 -> 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=128)
+      (relu1): Activation(relu)
+      (conv2): Conv2D(128 -> 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=128)
+      (relu2): Activation(relu)
+      (conv3): Conv2D(128 -> 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=512)
+      (relu3): Activation(relu)
+    )
+  )
+  (layer3): HybridSequential(
+    (0): BottleneckV1b(
+      (conv1): Conv2D(512 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (relu1): Activation(relu)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (relu2): Activation(relu)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      (relu3): Activation(relu)
+      (downsample): HybridSequential(
+        (0): Conv2D(512 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      )
+    )
+    (1): BottleneckV1b(
+      (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (relu1): Activation(relu)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (relu2): Activation(relu)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      (relu3): Activation(relu)
+    )
+    (2): BottleneckV1b(
+      (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (relu1): Activation(relu)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (relu2): Activation(relu)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      (relu3): Activation(relu)
+    )
+    (3): BottleneckV1b(
+      (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (relu1): Activation(relu)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (relu2): Activation(relu)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      (relu3): Activation(relu)
+    )
+    (4): BottleneckV1b(
+      (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (relu1): Activation(relu)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (relu2): Activation(relu)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      (relu3): Activation(relu)
+    )
+    (5): BottleneckV1b(
+      (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (relu1): Activation(relu)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (relu2): Activation(relu)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      (relu3): Activation(relu)
+    )
+    (6): BottleneckV1b(
+      (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (relu1): Activation(relu)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (relu2): Activation(relu)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      (relu3): Activation(relu)
+    )
+    (7): BottleneckV1b(
+      (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (relu1): Activation(relu)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (relu2): Activation(relu)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      (relu3): Activation(relu)
+    )
+    (8): BottleneckV1b(
+      (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (relu1): Activation(relu)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (relu2): Activation(relu)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      (relu3): Activation(relu)
+    )
+    (9): BottleneckV1b(
+      (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (relu1): Activation(relu)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (relu2): Activation(relu)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      (relu3): Activation(relu)
+    )
+    (10): BottleneckV1b(
+      (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (relu1): Activation(relu)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (relu2): Activation(relu)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      (relu3): Activation(relu)
+    )
+    (11): BottleneckV1b(
+      (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (relu1): Activation(relu)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (relu2): Activation(relu)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      (relu3): Activation(relu)
+    )
+    (12): BottleneckV1b(
+      (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (relu1): Activation(relu)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (relu2): Activation(relu)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      (relu3): Activation(relu)
+    )
+    (13): BottleneckV1b(
+      (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (relu1): Activation(relu)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (relu2): Activation(relu)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      (relu3): Activation(relu)
+    )
+    (14): BottleneckV1b(
+      (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (relu1): Activation(relu)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (relu2): Activation(relu)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      (relu3): Activation(relu)
+    )
+    (15): BottleneckV1b(
+      (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (relu1): Activation(relu)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (relu2): Activation(relu)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      (relu3): Activation(relu)
+    )
+    (16): BottleneckV1b(
+      (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (relu1): Activation(relu)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (relu2): Activation(relu)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      (relu3): Activation(relu)
+    )
+    (17): BottleneckV1b(
+      (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (relu1): Activation(relu)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (relu2): Activation(relu)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      (relu3): Activation(relu)
+    )
+    (18): BottleneckV1b(
+      (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (relu1): Activation(relu)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (relu2): Activation(relu)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      (relu3): Activation(relu)
+    )
+    (19): BottleneckV1b(
+      (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (relu1): Activation(relu)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (relu2): Activation(relu)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      (relu3): Activation(relu)
+    )
+    (20): BottleneckV1b(
+      (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (relu1): Activation(relu)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (relu2): Activation(relu)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      (relu3): Activation(relu)
+    )
+    (21): BottleneckV1b(
+      (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (relu1): Activation(relu)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (relu2): Activation(relu)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      (relu3): Activation(relu)
+    )
+    (22): BottleneckV1b(
+      (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (relu1): Activation(relu)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (relu2): Activation(relu)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+      (relu3): Activation(relu)
+    )
+  )
+  (layer4): HybridSequential(
+    (0): BottleneckV1b(
+      (conv1): Conv2D(1024 -> 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=512)
+      (relu1): Activation(relu)
+      (conv2): Conv2D(512 -> 512, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=512)
+      (relu2): Activation(relu)
+      (conv3): Conv2D(512 -> 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=2048)
+      (relu3): Activation(relu)
+      (downsample): HybridSequential(
+        (0): Conv2D(1024 -> 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=2048)
+      )
+    )
+    (1): BottleneckV1b(
+      (conv1): Conv2D(2048 -> 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=512)
+      (relu1): Activation(relu)
+      (conv2): Conv2D(512 -> 512, kernel_size=(3, 3), stride=(1, 1), padding=(4, 4), dilation=(4, 4), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=512)
+      (relu2): Activation(relu)
+      (conv3): Conv2D(512 -> 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=2048)
+      (relu3): Activation(relu)
+    )
+    (2): BottleneckV1b(
+      (conv1): Conv2D(2048 -> 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=512)
+      (relu1): Activation(relu)
+      (conv2): Conv2D(512 -> 512, kernel_size=(3, 3), stride=(1, 1), padding=(4, 4), dilation=(4, 4), bias=False)
+      (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=512)
+      (relu2): Activation(relu)
+      (conv3): Conv2D(512 -> 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=2048)
+      (relu3): Activation(relu)
+    )
+  )
+  (head): _PSPHead(
+    (psp): _PyramidPooling(
+      (conv1): HybridSequential(
+        (0): Conv2D(2048 -> 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=512)
+        (2): Activation(relu)
+      )
+      (conv2): HybridSequential(
+        (0): Conv2D(2048 -> 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=512)
+        (2): Activation(relu)
+      )
+      (conv3): HybridSequential(
+        (0): Conv2D(2048 -> 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=512)
+        (2): Activation(relu)
+      )
+      (conv4): HybridSequential(
+        (0): Conv2D(2048 -> 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=512)
+        (2): Activation(relu)
+      )
+    )
+    (block): HybridSequential(
+      (0): Conv2D(4096 -> 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=512)
+      (2): Activation(relu)
+      (3): Dropout(p = 0.1, axes=())
+      (4): Conv2D(512 -> 19, kernel_size=(1, 1), stride=(1, 1))
+    )
+  )
+  (auxlayer): _FCNHead(
+    (block): HybridSequential(
+      (0): Conv2D(1024 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+      (2): Activation(relu)
+      (3): Dropout(p = 0.1, axes=())
+      (4): Conv2D(256 -> 19, kernel_size=(1, 1), stride=(1, 1))
+    )
+  )
+)  
+Starting Epoch: 0
+Total Epochs: 240
+  0%|                                                                                                                         | 0/185 [00:00<?, ?it/s][06:11:59] src/operator/nn/./cudnn/./cudnn_algoreg-inl.h:97: Running performance tests t
+o find the best convolution algorithm, this can take a while... (setting env variable MXNET_CUDNN_AUTOTUNE_DEFAULT to 0 to disable)
+[06:12:22] src/kvstore/././comm.h:744: only 32 out of 56 GPU pairs are enabled direct access. It may affect the performance. You can set MXNET_ENABLE_GPU_P2P=0 to turn it off
+[06:12:22] src/kvstore/././comm.h:753: .vvvv...
+[06:12:22] src/kvstore/././comm.h:753: v.vv.v..
+[06:12:22] src/kvstore/././comm.h:753: vv.v..v.
+[06:12:22] src/kvstore/././comm.h:753: vvv....v
+[06:12:22] src/kvstore/././comm.h:753: v....vvv
+[06:12:22] src/kvstore/././comm.h:753: .v..v.vv
+[06:12:22] src/kvstore/././comm.h:753: ..v.vv.v
+[06:12:22] src/kvstore/././comm.h:753: ...vvvv.
+Epoch 0, training loss 0.830: 100%|█████████████████████████████████████████████████████████████████████████████████| 185/185 [13:55<00:00,  4.52s/it]
+Epoch 0, validation pixAcc: 0.901, mIoU: 0.418: 100%|█████████████████████████████████████████████████████████████████| 31/31 [00:45<00:00,  1.48s/it]
+Epoch 1, training loss 0.435: 100%|█████████████████████████████████████████████████████████████████████████████████| 186/186 [13:38<00:00,  4.40s/it]
+Epoch 1, validation pixAcc: 0.927, mIoU: 0.515: 100%|█████████████████████████████████████████████████████████████████| 31/31 [00:44<00:00,  1.44s/it]
+Epoch 2, training loss 0.393: 100%|█████████████████████████████████████████████████████████████████████████████████| 186/186 [13:28<00:00,  4.34s/it]
+Epoch 2, validation pixAcc: 0.929, mIoU: 0.525: 100%|█████████████████████████████████████████████████████████████████| 31/31 [00:44<00:00,  1.44s/it]
+Epoch 3, training loss 0.348: 100%|█████████████████████████████████████████████████████████████████████████████████| 186/186 [13:29<00:00,  4.35s/it]
+Epoch 3, validation pixAcc: 0.935, mIoU: 0.572: 100%|█████████████████████████████████████████████████████████████████| 32/32 [00:47<00:00,  1.49s/it]
+Epoch 4, training loss 0.310: 100%|█████████████████████████████████████████████████████████████████████████████████| 186/186 [13:30<00:00,  4.36s/it]
+Epoch 4, validation pixAcc: 0.938, mIoU: 0.587: 100%|█████████████████████████████████████████████████████████████████| 31/31 [00:46<00:00,  1.50s/it]
+Epoch 5, training loss 0.312: 100%|█████████████████████████████████████████████████████████████████████████████████| 186/186 [13:35<00:00,  4.38s/it]
+Epoch 5, validation pixAcc: 0.938, mIoU: 0.594: 100%|█████████████████████████████████████████████████████████████████| 31/31 [00:47<00:00,  1.53s/it]
+Epoch 6, training loss 0.295: 100%|█████████████████████████████████████████████████████████████████████████████████| 186/186 [13:21<00:00,  4.31s/it]
+Epoch 6, validation pixAcc: 0.943, mIoU: 0.619: 100%|█████████████████████████████████████████████████████████████████| 31/31 [00:45<00:00,  1.47s/it]
+Epoch 7, training loss 0.286: 100%|█████████████████████████████████████████████████████████████████████████████████| 186/186 [13:21<00:00,  4.31s/it]
+Epoch 7, validation pixAcc: 0.942, mIoU: 0.616: 100%|█████████████████████████████████████████████████████████████████| 32/32 [00:47<00:00,  1.50s/it]
+Epoch 8, training loss 0.277: 100%|█████████████████████████████████████████████████████████████████████████████████| 186/186 [13:44<00:00,  4.43s/it]
+Epoch 8, validation pixAcc: 0.944, mIoU: 0.617: 100%|█████████████████████████████████████████████████████████████████| 31/31 [00:45<00:00,  1.45s/it]
+Epoch 9, training loss 0.278: 100%|█████████████████████████████████████████████████████████████████████████████████| 186/186 [13:21<00:00,  4.31s/it]
+Epoch 9, validation pixAcc: 0.945, mIoU: 0.613: 100%|█████████████████████████████████████████████████████████████████| 31/31 [00:45<00:00,  1.46s/it]
+Epoch 10, training loss 0.252: 100%|████████████████████████████████████████████████████████████████████████████████| 186/186 [13:37<00:00,  4.40s/it]
+Epoch 10, validation pixAcc: 0.945, mIoU: 0.620: 100%|████████████████████████████████████████████████████████████████| 31/31 [00:45<00:00,  1.46s/it]
+Epoch 11, training loss 0.255: 100%|████████████████████████████████████████████████████████████████████████████████| 186/186 [13:38<00:00,  4.40s/it]
+Epoch 11, validation pixAcc: 0.947, mIoU: 0.639: 100%|████████████████████████████████████████████████████████████████| 32/32 [00:46<00:00,  1.44s/it]
+Epoch 12, training loss 0.249: 100%|████████████████████████████████████████████████████████████████████████████████| 186/186 [13:31<00:00,  4.36s/it]
+Epoch 12, validation pixAcc: 0.948, mIoU: 0.652: 100%|████████████████████████████████████████████████████████████████| 31/31 [00:46<00:00,  1.49s/it]
+Epoch 13, training loss 0.243: 100%|████████████████████████████████████████████████████████████████████████████████| 186/186 [13:36<00:00,  4.39s/it]
+Epoch 13, validation pixAcc: 0.948, mIoU: 0.651: 100%|████████████████████████████████████████████████████████████████| 31/31 [00:46<00:00,  1.51s/it]
+Epoch 14, training loss 0.242: 100%|████████████████████████████████████████████████████████████████████████████████| 186/186 [13:23<00:00,  4.32s/it]
+Epoch 14, validation pixAcc: 0.948, mIoU: 0.628: 100%|████████████████████████████████████████████████████████████████| 31/31 [00:44<00:00,  1.43s/it]
+Epoch 15, training loss 0.234: 100%|████████████████████████████████████████████████████████████████████████████████| 186/186 [13:42<00:00,  4.42s/it]
+Epoch 15, validation pixAcc: 0.948, mIoU: 0.647: 100%|████████████████████████████████████████████████████████████████| 32/32 [00:47<00:00,  1.47s/it]
+Epoch 16, training loss 0.234: 100%|████████████████████████████████████████████████████████████████████████████████| 185/185 [13:19<00:00,  4.32s/it]
+Epoch 16, validation pixAcc: 0.948, mIoU: 0.647: 100%|████████████████████████████████████████████████████████████████| 31/31 [00:44<00:00,  1.43s/it]
+Epoch 17, training loss 0.245: 100%|████████████████████████████████████████████████████████████████████████████████| 186/186 [13:38<00:00,  4.40s/it]
+Epoch 17, validation pixAcc: 0.949, mIoU: 0.658: 100%|████████████████████████████████████████████████████████████████| 31/31 [00:46<00:00,  1.50s/it]
+Epoch 18, training loss 0.226: 100%|████████████████████████████████████████████████████████████████████████████████| 186/186 [13:41<00:00,  4.42s/it]
+Epoch 18, validation pixAcc: 0.949, mIoU: 0.645: 100%|████████████████████████████████████████████████████████████████| 31/31 [00:44<00:00,  1.43s/it]
+Epoch 19, training loss 0.227: 100%|████████████████████████████████████████████████████████████████████████████████| 186/186 [13:31<00:00,  4.36s/it]
+Epoch 19, validation pixAcc: 0.952, mIoU: 0.677: 100%|████████████████████████████████████████████████████████████████| 32/32 [00:47<00:00,  1.49s/it]
+Epoch 20, training loss 0.215: 100%|████████████████████████████████████████████████████████████████████████████████| 186/186 [13:32<00:00,  4.37s/it]
+Epoch 20, validation pixAcc: 0.951, mIoU: 0.670: 100%|████████████████████████████████████████████████████████████████| 31/31 [00:45<00:00,  1.48s/it]
+Epoch 21, training loss 0.215: 100%|████████████████████████████████████████████████████████████████████████████████| 186/186 [13:40<00:00,  4.41s/it]
+Epoch 21, validation pixAcc: 0.952, mIoU: 0.669: 100%|████████████████████████████████████████████████████████████████| 31/31 [00:45<00:00,  1.47s/it]
+Epoch 22, training loss 0.216: 100%|████████████████████████████████████████████████████████████████████████████████| 186/186 [13:47<00:00,  4.45s/it]
+Epoch 22, validation pixAcc: 0.951, mIoU: 0.646: 100%|████████████████████████████████████████████████████████████████| 31/31 [00:45<00:00,  1.46s/it]
+Epoch 23, training loss 0.218: 100%|████████████████████████████████████████████████████████████████████████████████| 186/186 [13:16<00:00,  4.28s/it]
+Epoch 23, validation pixAcc: 0.951, mIoU: 0.670: 100%|████████████████████████████████████████████████████████████████| 32/32 [00:47<00:00,  1.49s/it]
+Epoch 24, training loss 0.214: 100%|████████████████████████████████████████████████████████████████████████████████| 186/186 [13:30<00:00,  4.36s/it]
+Epoch 24, validation pixAcc: 0.952, mIoU: 0.681: 100%|████████████████████████████████████████████████████████████████| 31/31 [00:46<00:00,  1.49s/it]
+Epoch 25, training loss 0.210: 100%|████████████████████████████████████████████████████████████████████████████████| 186/186 [13:25<00:00,  4.33s/it]
+Epoch 25, validation pixAcc: 0.952, mIoU: 0.668: 100%|████████████████████████████████████████████████████████████████| 31/31 [00:46<00:00,  1.49s/it]
+Epoch 26, training loss 0.204: 100%|████████████████████████████████████████████████████████████████████████████████| 186/186 [13:33<00:00,  4.37s/it]
+Epoch 26, validation pixAcc: 0.951, mIoU: 0.668: 100%|████████████████████████████████████████████████████████████████| 31/31 [00:46<00:00,  1.52s/it]
+Epoch 27, training loss 0.207: 100%|████████████████████████████████████████████████████████████████████████████████| 186/186 [13:36<00:00,  4.39s/it]
+Epoch 27, validation pixAcc: 0.952, mIoU: 0.666: 100%|████████████████████████████████████████████████████████████████| 32/32 [00:47<00:00,  1.48s/it]
+Epoch 28, training loss 0.201: 100%|████████████████████████████████████████████████████████████████████████████████| 186/186 [13:37<00:00,  4.40s/it]
+Epoch 28, validation pixAcc: 0.954, mIoU: 0.678: 100%|████████████████████████████████████████████████████████████████| 31/31 [00:45<00:00,  1.47s/it]
+Epoch 29, training loss 0.205: 100%|████████████████████████████████████████████████████████████████████████████████| 186/186 [13:09<00:00,  4.25s/it]
+Epoch 29, validation pixAcc: 0.953, mIoU: 0.660: 100%|████████████████████████████████████████████████████████████████| 31/31 [00:46<00:00,  1.49s/it]
+Epoch 30, training loss 0.209: 100%|████████████████████████████████████████████████████████████████████████████████| 186/186 [13:36<00:00,  4.39s/it]
+Epoch 30, validation pixAcc: 0.951, mIoU: 0.649: 100%|████████████████████████████████████████████████████████████████| 31/31 [00:47<00:00,  1.52s/it]
+Epoch 31, training loss 0.198: 100%|████████████████████████████████████████████████████████████████████████████████| 186/186 [13:23<00:00,  4.32s/it]
+Epoch 31, validation pixAcc: 0.954, mIoU: 0.677: 100%|████████████████████████████████████████████████████████████████| 32/32 [00:46<00:00,  1.46s/it]
+Epoch 32, training loss 0.192: 100%|████████████████████████████████████████████████████████████████████████████████| 185/185 [13:39<00:00,  4.43s/it]
+Epoch 32, validation pixAcc: 0.953, mIoU: 0.688: 100%|████████████████████████████████████████████████████████████████| 31/31 [00:46<00:00,  1.51s/it]
+Epoch 33, training loss 0.204: 100%|████████████████████████████████████████████████████████████████████████████████| 186/186 [13:23<00:00,  4.32s/it]
+Epoch 33, validation pixAcc: 0.954, mIoU: 0.684: 100%|████████████████████████████████████████████████████████████████| 31/31 [00:46<00:00,  1.49s/it]
+Epoch 34, training loss 0.197: 100%|████████████████████████████████████████████████████████████████████████████████| 186/186 [13:40<00:00,  4.41s/it]
+Epoch 34, validation pixAcc: 0.955, mIoU: 0.685: 100%|████████████████████████████████████████████████████████████████| 31/31 [00:46<00:00,  1.51s/it]
+Epoch 35, training loss 0.188: 100%|████████████████████████████████████████████████████████████████████████████████| 186/186 [13:40<00:00,  4.41s/it]
+Epoch 35, validation pixAcc: 0.953, mIoU: 0.686: 100%|████████████████████████████████████████████████████████████████| 32/32 [00:47<00:00,  1.48s/it]
+Epoch 36, training loss 0.190: 100%|████████████████████████████████████████████████████████████████████████████████| 186/186 [13:42<00:00,  4.42s/it]
+Epoch 36, validation pixAcc: 0.954, mIoU: 0.695: 100%|████████████████████████████████████████████████████████████████| 31/31 [00:46<00:00,  1.50s/it]
+Epoch 37, training loss 0.191: 100%|████████████████████████████████████████████████████████████████████████████████| 186/186 [13:37<00:00,  4.39s/it]
+Epoch 37, validation pixAcc: 0.954, mIoU: 0.691: 100%|████████████████████████████████████████████████████████████████| 31/31 [00:46<00:00,  1.50s/it]
+Epoch 38, training loss 0.186: 100%|████████████████████████████████████████████████████████████████████████████████| 186/186 [13:27<00:00,  4.34s/it]
+Epoch 38, validation pixAcc: 0.952, mIoU: 0.677: 100%|████████████████████████████████████████████████████████████████| 31/31 [00:45<00:00,  1.46s/it]
+Epoch 39, training loss 0.196: 100%|████████████████████████████████████████████████████████████████████████████████| 186/186 [13:34<00:00,  4.38s/it]
+Epoch 39, validation pixAcc: 0.953, mIoU: 0.689: 100%|████████████████████████████████████████████████████████████████| 32/32 [00:46<00:00,  1.46s/it]
+Epoch 40, training loss 0.192: 100%|████████████████████████████████████████████████████████████████████████████████| 186/186 [13:18<00:00,  4.29s/it]
+Epoch 40, validation pixAcc: 0.955, mIoU: 0.692: 100%|████████████████████████████████████████████████████████████████| 31/31 [00:46<00:00,  1.50s/it]
+Epoch 41, training loss 0.198: 100%|████████████████████████████████████████████████████████████████████████████████| 186/186 [13:28<00:00,  4.35s/it]
+Epoch 41, validation pixAcc: 0.953, mIoU: 0.682: 100%|████████████████████████████████████████████████████████████████| 31/31 [00:45<00:00,  1.48s/it]
+Epoch 42, training loss 0.191: 100%|████████████████████████████████████████████████████████████████████████████████| 186/186 [13:23<00:00,  4.32s/it]
+Epoch 42, validation pixAcc: 0.955, mIoU: 0.695: 100%|████████████████████████████████████████████████████████████████| 31/31 [00:46<00:00,  1.49s/it]
+Epoch 43, training loss 0.190: 100%|████████████████████████████████████████████████████████████████████████████████| 186/186 [13:28<00:00,  4.35s/it]
+Epoch 43, validation pixAcc: 0.952, mIoU: 0.638: 100%|████████████████████████████████████████████████████████████████| 32/32 [00:48<00:00,  1.51s/it]
+Epoch 44, training loss 0.188: 100%|████████████████████████████████████████████████████████████████████████████████| 186/186 [13:24<00:00,  4.32s/it]
+Epoch 44, validation pixAcc: 0.955, mIoU: 0.682: 100%|████████████████████████████████████████████████████████████████| 31/31 [00:44<00:00,  1.45s/it]
+Epoch 45, validation pixAcc: 0.956, mIoU: 0.675: 100%|█████████████████████████████████████████| 31/31 [00:46<00:00,  1.49s/it]
+Epoch 46, training loss 0.187: 100%|█████████████████████████████████████████████████████████| 186/186 [13:40<00:00,  4.41s/it]
+Epoch 46, validation pixAcc: 0.952, mIoU: 0.671: 100%|█████████████████████████████████████████| 31/31 [00:44<00:00,  1.44s/it]
+Epoch 47, training loss 0.176: 100%|█████████████████████████████████████████████████████████| 186/186 [13:21<00:00,  4.31s/it]
+Epoch 47, validation pixAcc: 0.957, mIoU: 0.699: 100%|█████████████████████████████████████████| 32/32 [00:46<00:00,  1.45s/it]
+Epoch 48, training loss 0.176: 100%|█████████████████████████████████████████████████████████| 185/185 [13:24<00:00,  4.35s/it]
+Epoch 48, validation pixAcc: 0.956, mIoU: 0.687: 100%|█████████████████████████████████████████| 31/31 [00:45<00:00,  1.47s/it]
+Epoch 49, training loss 0.177: 100%|█████████████████████████████████████████████████████████| 186/186 [13:36<00:00,  4.39s/it]
+Epoch 49, validation pixAcc: 0.956, mIoU: 0.691: 100%|█████████████████████████████████████████| 31/31 [00:45<00:00,  1.46s/it]
+Epoch 50, training loss 0.171: 100%|█████████████████████████████████████████████████████████| 186/186 [13:29<00:00,  4.35s/it]
+Epoch 50, validation pixAcc: 0.957, mIoU: 0.689: 100%|█████████████████████████████████████████| 31/31 [00:45<00:00,  1.47s/it]
+Epoch 51, training loss 0.171: 100%|█████████████████████████████████████████████████████████| 186/186 [13:33<00:00,  4.37s/it]
+Epoch 51, validation pixAcc: 0.957, mIoU: 0.685: 100%|█████████████████████████████████████████| 32/32 [00:48<00:00,  1.50s/it]
+Epoch 52, training loss 0.174: 100%|█████████████████████████████████████████████████████████| 186/186 [13:39<00:00,  4.41s/it]
+Epoch 52, validation pixAcc: 0.955, mIoU: 0.694: 100%|█████████████████████████████████████████| 31/31 [00:46<00:00,  1.50s/it]
+Epoch 53, training loss 0.179: 100%|█████████████████████████████████████████████████████████| 186/186 [13:11<00:00,  4.26s/it]
+Epoch 53, validation pixAcc: 0.954, mIoU: 0.675: 100%|█████████████████████████████████████████| 31/31 [00:46<00:00,  1.49s/it]
+Epoch 54, training loss 0.176: 100%|█████████████████████████████████████████████████████████| 186/186 [13:35<00:00,  4.38s/it]
+Epoch 54, validation pixAcc: 0.956, mIoU: 0.701: 100%|█████████████████████████████████████████| 31/31 [00:45<00:00,  1.48s/it]
+Epoch 55, training loss 0.163: 100%|█████████████████████████████████████████████████████████| 186/186 [13:30<00:00,  4.36s/it]
+Epoch 55, validation pixAcc: 0.957, mIoU: 0.706: 100%|█████████████████████████████████████████| 32/32 [00:47<00:00,  1.49s/it]
+Epoch 56, training loss 0.177: 100%|█████████████████████████████████████████████████████████| 186/186 [13:38<00:00,  4.40s/it]
+Epoch 56, validation pixAcc: 0.955, mIoU: 0.693: 100%|█████████████████████████████████████████| 31/31 [00:46<00:00,  1.48s/it]
+Epoch 57, training loss 0.180: 100%|█████████████████████████████████████████████████████████| 186/186 [13:23<00:00,  4.32s/it]
+Epoch 57, validation pixAcc: 0.956, mIoU: 0.703: 100%|█████████████████████████████████████████| 31/31 [00:45<00:00,  1.48s/it]
+Epoch 58, training loss 0.172: 100%|█████████████████████████████████████████████████████████| 186/186 [13:33<00:00,  4.37s/it]
+Epoch 58, validation pixAcc: 0.956, mIoU: 0.696: 100%|█████████████████████████████████████████| 31/31 [00:46<00:00,  1.49s/it]
+Epoch 59, training loss 0.170: 100%|█████████████████████████████████████████████████████████| 186/186 [13:20<00:00,  4.31s/it]
+Epoch 59, validation pixAcc: 0.957, mIoU: 0.696: 100%|█████████████████████████████████████████| 32/32 [00:46<00:00,  1.45s/it]
+Epoch 60, training loss 0.165: 100%|█████████████████████████████████████████████████████████| 186/186 [13:14<00:00,  4.27s/it]
+Epoch 60, validation pixAcc: 0.957, mIoU: 0.698: 100%|█████████████████████████████████████████| 31/31 [00:47<00:00,  1.53s/it]
+Epoch 61, training loss 0.176: 100%|█████████████████████████████████████████████████████████| 186/186 [13:25<00:00,  4.33s/it]
+Epoch 61, validation pixAcc: 0.956, mIoU: 0.691: 100%|█████████████████████████████████████████| 31/31 [00:46<00:00,  1.49s/it]
+Epoch 62, training loss 0.173: 100%|█████████████████████████████████████████████████████████| 186/186 [13:17<00:00,  4.29s/it]
+Epoch 62, validation pixAcc: 0.955, mIoU: 0.700: 100%|█████████████████████████████████████████| 31/31 [00:45<00:00,  1.48s/it]
+Epoch 63, training loss 0.170: 100%|█████████████████████████████████████████████████████████| 186/186 [13:34<00:00,  4.38s/it]
+Epoch 63, validation pixAcc: 0.957, mIoU: 0.701: 100%|█████████████████████████████████████████| 32/32 [00:47<00:00,  1.49s/it]
+Epoch 64, training loss 0.168: 100%|█████████████████████████████████████████████████████████| 185/185 [13:28<00:00,  4.37s/it]
+Epoch 64, validation pixAcc: 0.958, mIoU: 0.704: 100%|█████████████████████████████████████████| 31/31 [00:45<00:00,  1.46s/it]
+Epoch 65, training loss 0.160: 100%|█████████████████████████████████████████████████████████| 186/186 [13:31<00:00,  4.36s/it]
+Epoch 65, validation pixAcc: 0.958, mIoU: 0.712: 100%|█████████████████████████████████████████| 31/31 [00:46<00:00,  1.51s/it]
+Epoch 66, training loss 0.167: 100%|█████████████████████████████████████████████████████████| 186/186 [13:27<00:00,  4.34s/it]
+Epoch 66, validation pixAcc: 0.954, mIoU: 0.686: 100%|█████████████████████████████████████████| 31/31 [00:47<00:00,  1.54s/it]
+Epoch 67, training loss 0.173: 100%|█████████████████████████████████████████████████████████| 186/186 [13:26<00:00,  4.34s/it]
+Epoch 67, validation pixAcc: 0.958, mIoU: 0.698: 100%|█████████████████████████████████████████| 32/32 [00:47<00:00,  1.48s/it]
+Epoch 68, training loss 0.163: 100%|█████████████████████████████████████████████████████████| 186/186 [13:14<00:00,  4.27s/it]
+Epoch 68, validation pixAcc: 0.956, mIoU: 0.694: 100%|█████████████████████████████████████████| 31/31 [00:47<00:00,  1.53s/it]
+Epoch 69, training loss 0.166: 100%|█████████████████████████████████████████████████████████| 186/186 [13:16<00:00,  4.28s/it]
+Epoch 69, validation pixAcc: 0.957, mIoU: 0.706: 100%|█████████████████████████████████████████| 31/31 [00:43<00:00,  1.41s/it]
+Epoch 70, training loss 0.165: 100%|█████████████████████████████████████████████████████████| 186/186 [13:35<00:00,  4.39s/it]
+Epoch 70, validation pixAcc: 0.958, mIoU: 0.708: 100%|█████████████████████████████████████████| 31/31 [00:45<00:00,  1.47s/it]
+Epoch 71, training loss 0.163: 100%|█████████████████████████████████████████████████████████| 186/186 [13:46<00:00,  4.44s/it]
+Epoch 71, validation pixAcc: 0.958, mIoU: 0.705: 100%|█████████████████████████████████████████| 32/32 [00:47<00:00,  1.49s/it]
+Epoch 72, training loss 0.161: 100%|█████████████████████████████████████████████████████████| 186/186 [13:29<00:00,  4.35s/it]
+Epoch 72, validation pixAcc: 0.958, mIoU: 0.717: 100%|█████████████████████████████████████████| 31/31 [00:45<00:00,  1.47s/it]
+Epoch 73, training loss 0.161: 100%|█████████████████████████████████████████████████████████| 186/186 [13:32<00:00,  4.37s/it]
+Epoch 73, validation pixAcc: 0.958, mIoU: 0.710: 100%|█████████████████████████████████████████| 31/31 [00:46<00:00,  1.52s/it]
+Epoch 74, training loss 0.158: 100%|█████████████████████████████████████████████████████████| 186/186 [13:52<00:00,  4.47s/it]
+Epoch 74, validation pixAcc: 0.958, mIoU: 0.704: 100%|█████████████████████████████████████████| 31/31 [00:45<00:00,  1.46s/it]
+Epoch 75, training loss 0.161: 100%|█████████████████████████████████████████████████████████| 186/186 [13:57<00:00,  4.50s/it]
+Epoch 75, validation pixAcc: 0.954, mIoU: 0.647: 100%|█████████████████████████████████████████| 32/32 [00:47<00:00,  1.50s/it]
+Epoch 76, training loss 0.164: 100%|█████████████████████████████████████████████████████████| 186/186 [13:49<00:00,  4.46s/it]
+Epoch 76, validation pixAcc: 0.957, mIoU: 0.710: 100%|█████████████████████████████████████████| 31/31 [00:46<00:00,  1.49s/it]
+Epoch 77, training loss 0.158: 100%|█████████████████████████████████████████████████████████| 186/186 [14:03<00:00,  4.53s/it]
+Epoch 77, validation pixAcc: 0.958, mIoU: 0.701: 100%|█████████████████████████████████████████| 31/31 [00:46<00:00,  1.48s/it]
+Epoch 78, training loss 0.155: 100%|█████████████████████████████████████████████████████████| 186/186 [13:44<00:00,  4.43s/it]
+Epoch 78, validation pixAcc: 0.958, mIoU: 0.709: 100%|█████████████████████████████████████████| 31/31 [00:46<00:00,  1.50s/it]
+Epoch 79, training loss 0.151: 100%|█████████████████████████████████████████████████████████| 186/186 [14:06<00:00,  4.55s/it]
+Epoch 79, validation pixAcc: 0.958, mIoU: 0.701: 100%|█████████████████████████████████████████| 32/32 [00:48<00:00,  1.50s/it]
+Epoch 80, training loss 0.157: 100%|█████████████████████████████████████████████████████████| 185/185 [13:53<00:00,  4.51s/it]
+Epoch 80, validation pixAcc: 0.959, mIoU: 0.717: 100%|█████████████████████████████████████████| 31/31 [00:46<00:00,  1.49s/it]
+Epoch 81, training loss 0.154: 100%|█████████████████████████████████████████████████████████| 186/186 [13:57<00:00,  4.50s/it]
+Epoch 81, validation pixAcc: 0.958, mIoU: 0.718: 100%|█████████████████████████████████████████| 31/31 [00:45<00:00,  1.48s/it]
+Epoch 82, training loss 0.155: 100%|█████████████████████████████████████████████████████████| 186/186 [13:51<00:00,  4.47s/it]
+Epoch 82, validation pixAcc: 0.959, mIoU: 0.709: 100%|█████████████████████████████████████████| 31/31 [00:46<00:00,  1.49s/it]
+Epoch 83, training loss 0.156: 100%|█████████████████████████████████████████████████████████| 186/186 [13:49<00:00,  4.46s/it]
+Epoch 83, validation pixAcc: 0.958, mIoU: 0.698: 100%|█████████████████████████████████████████| 32/32 [00:47<00:00,  1.50s/it]
+Epoch 84, training loss 0.151: 100%|█████████████████████████████████████████████████████████| 186/186 [14:08<00:00,  4.56s/it]
+Epoch 84, validation pixAcc: 0.958, mIoU: 0.700: 100%|█████████████████████████████████████████| 31/31 [00:46<00:00,  1.50s/it]
+Epoch 85, training loss 0.155: 100%|█████████████████████████████████████████████████████████| 186/186 [13:52<00:00,  4.48s/it]
+Epoch 85, validation pixAcc: 0.959, mIoU: 0.710: 100%|█████████████████████████████████████████| 31/31 [00:45<00:00,  1.47s/it]
+Epoch 86, training loss 0.150: 100%|█████████████████████████████████████████████████████████| 186/186 [13:47<00:00,  4.45s/it]
+Epoch 86, validation pixAcc: 0.959, mIoU: 0.715: 100%|█████████████████████████████████████████| 31/31 [00:45<00:00,  1.46s/it]
+Epoch 87, training loss 0.157: 100%|█████████████████████████████████████████████████████████| 186/186 [14:04<00:00,  4.54s/it]
+Epoch 87, validation pixAcc: 0.958, mIoU: 0.688: 100%|█████████████████████████████████████████| 32/32 [00:47<00:00,  1.49s/it]
+Epoch 88, training loss 0.153: 100%|█████████████████████████████████████████████████████████| 186/186 [13:52<00:00,  4.48s/it]
+Epoch 88, validation pixAcc: 0.959, mIoU: 0.712: 100%|█████████████████████████████████████████| 31/31 [00:45<00:00,  1.45s/it]
+Epoch 89, training loss 0.147: 100%|█████████████████████████████████████████████████████████| 186/186 [13:45<00:00,  4.44s/it]
+Epoch 89, validation pixAcc: 0.957, mIoU: 0.695: 100%|█████████████████████████████████████████| 31/31 [00:46<00:00,  1.50s/it]
+Epoch 90, training loss 0.153: 100%|█████████████████████████████████████████████████████████| 186/186 [13:43<00:00,  4.42s/it]
+Epoch 90, validation pixAcc: 0.959, mIoU: 0.711: 100%|█████████████████████████████████████████| 31/31 [00:45<00:00,  1.46s/it]
+Epoch 91, training loss 0.149: 100%|█████████████████████████████████████████████████████████| 186/186 [13:52<00:00,  4.48s/it]
+Epoch 91, validation pixAcc: 0.958, mIoU: 0.709: 100%|█████████████████████████████████████████| 32/32 [00:46<00:00,  1.47s/it]
+Epoch 92, training loss 0.154: 100%|█████████████████████████████████████████████████████████| 186/186 [13:37<00:00,  4.40s/it]
+Epoch 92, validation pixAcc: 0.956, mIoU: 0.700: 100%|█████████████████████████████████████████| 31/31 [00:46<00:00,  1.50s/it]
+Epoch 93, training loss 0.148: 100%|█████████████████████████████████████████████████████████| 186/186 [13:56<00:00,  4.50s/it]
+Epoch 93, validation pixAcc: 0.959, mIoU: 0.708: 100%|█████████████████████████████████████████| 31/31 [00:45<00:00,  1.46s/it]
+Epoch 94, training loss 0.153: 100%|█████████████████████████████████████████████████████████| 186/186 [13:55<00:00,  4.49s/it]
+Epoch 94, validation pixAcc: 0.954, mIoU: 0.682: 100%|█████████████████████████████████████████| 31/31 [00:47<00:00,  1.52s/it]
+Epoch 95, training loss 0.154: 100%|█████████████████████████████████████████████████████████| 186/186 [13:36<00:00,  4.39s/it]
+Epoch 95, validation pixAcc: 0.959, mIoU: 0.711: 100%|█████████████████████████████████████████| 32/32 [00:47<00:00,  1.49s/it]
+Epoch 96, training loss 0.150: 100%|█████████████████████████████████████████████████████████| 185/185 [13:45<00:00,  4.46s/it]
+Epoch 96, validation pixAcc: 0.958, mIoU: 0.706: 100%|█████████████████████████████████████████| 31/31 [00:46<00:00,  1.49s/it]
+Epoch 97, training loss 0.152: 100%|█████████████████████████████████████████████████████████| 186/186 [13:38<00:00,  4.40s/it]
+Epoch 97, validation pixAcc: 0.958, mIoU: 0.705: 100%|██████████████████████████████████████████████████████████████| 31/31 [00:45<00:00,  1.48s/it]
+Epoch 98, training loss 0.146: 100%|██████████████████████████████████████████████████████████████████████████████| 186/186 [13:30<00:00,  4.36s/it]
+Epoch 98, validation pixAcc: 0.959, mIoU: 0.720: 100%|██████████████████████████████████████████████████████████████| 31/31 [00:45<00:00,  1.48s/it]
+Epoch 99, training loss 0.141: 100%|██████████████████████████████████████████████████████████████████████████████| 186/186 [13:52<00:00,  4.48s/it]
+Epoch 99, validation pixAcc: 0.959, mIoU: 0.716: 100%|██████████████████████████████████████████████████████████████| 32/32 [00:47<00:00,  1.48s/it]
+Epoch 100, training loss 0.148: 100%|█████████████████████████████████████████████████████████████████████████████| 186/186 [14:02<00:00,  4.53s/it]
+Epoch 100, validation pixAcc: 0.959, mIoU: 0.709: 100%|█████████████████████████████████████████████████████████████| 31/31 [00:46<00:00,  1.50s/it]
+Epoch 101, training loss 0.146: 100%|█████████████████████████████████████████████████████████████████████████████| 186/186 [13:37<00:00,  4.40s/it]
+Epoch 101, validation pixAcc: 0.958, mIoU: 0.711: 100%|█████████████████████████████████████████████████████████████| 31/31 [00:45<00:00,  1.46s/it]
+Epoch 102, training loss 0.146: 100%|█████████████████████████████████████████████████████████████████████████████| 186/186 [13:46<00:00,  4.45s/it]
+Epoch 102, validation pixAcc: 0.959, mIoU: 0.718: 100%|█████████████████████████████████████████████████████████████| 31/31 [00:45<00:00,  1.48s/it]
+Epoch 103, training loss 0.143: 100%|█████████████████████████████████████████████████████████████████████████████| 186/186 [13:37<00:00,  4.40s/it]
+Epoch 103, validation pixAcc: 0.959, mIoU: 0.708: 100%|█████████████████████████████████████████████████████████████| 32/32 [00:47<00:00,  1.49s/it]
+Epoch 104, training loss 0.146: 100%|█████████████████████████████████████████████████████████████████████████████| 186/186 [13:48<00:00,  4.46s/it]
+Epoch 104, validation pixAcc: 0.958, mIoU: 0.709: 100%|█████████████████████████████████████████████████████████████| 31/31 [00:46<00:00,  1.49s/it]
+Epoch 105, training loss 0.144: 100%|█████████████████████████████████████████████████████████████████████████████| 186/186 [13:43<00:00,  4.43s/it]
+Epoch 105, validation pixAcc: 0.959, mIoU: 0.720: 100%|█████████████████████████████████████████████████████████████| 31/31 [00:46<00:00,  1.50s/it]
+Epoch 106, training loss 0.141: 100%|█████████████████████████████████████████████████████████████████████████████| 186/186 [13:35<00:00,  4.38s/it]
+Epoch 106, validation pixAcc: 0.958, mIoU: 0.702: 100%|█████████████████████████████████████████████████████████████| 31/31 [00:45<00:00,  1.45s/it]
+Epoch 107, training loss 0.141: 100%|█████████████████████████████████████████████████████████████████████████████| 186/186 [13:54<00:00,  4.49s/it]
+Epoch 107, validation pixAcc: 0.959, mIoU: 0.711: 100%|█████████████████████████████████████████████████████████████| 32/32 [00:47<00:00,  1.48s/it]
+Epoch 108, training loss 0.148: 100%|█████████████████████████████████████████████████████████████████████████████| 186/186 [13:52<00:00,  4.47s/it]
+Epoch 108, validation pixAcc: 0.957, mIoU: 0.707: 100%|█████████████████████████████████████████████████████████████| 31/31 [00:46<00:00,  1.50s/it]
+Epoch 109, training loss 0.139: 100%|█████████████████████████████████████████████████████████████████████████████| 186/186 [13:38<00:00,  4.40s/it]
+Epoch 109, validation pixAcc: 0.958, mIoU: 0.708: 100%|█████████████████████████████████████████████████████████████| 31/31 [00:45<00:00,  1.45s/it]
+Epoch 110, training loss 0.139: 100%|█████████████████████████████████████████████████████████████████████████████| 186/186 [14:00<00:00,  4.52s/it]
+Epoch 110, validation pixAcc: 0.960, mIoU: 0.720: 100%|█████████████████████████████████████████████████████████████| 31/31 [00:46<00:00,  1.49s/it]
+Epoch 111, training loss 0.144: 100%|█████████████████████████████████████████████████████████████████████████████| 186/186 [13:33<00:00,  4.37s/it]
+Epoch 111, validation pixAcc: 0.960, mIoU: 0.709: 100%|█████████████████████████████████████████████████████████████| 32/32 [00:47<00:00,  1.49s/it]
+Epoch 112, training loss 0.139: 100%|█████████████████████████████████████████████████████████████████████████████| 185/185 [13:36<00:00,  4.42s/it]
+Epoch 112, validation pixAcc: 0.959, mIoU: 0.709: 100%|█████████████████████████████████████████████████████████████| 31/31 [00:45<00:00,  1.47s/it]
+Epoch 113, training loss 0.141: 100%|█████████████████████████████████████████████████████████████████████████████| 186/186 [13:54<00:00,  4.49s/it]
+Epoch 113, validation pixAcc: 0.960, mIoU: 0.720: 100%|█████████████████████████████████████████████████████████████| 31/31 [00:45<00:00,  1.47s/it]
+Epoch 114, training loss 0.137: 100%|█████████████████████████████████████████████████████████████████████████████| 186/186 [13:44<00:00,  4.43s/it]
+Epoch 114, validation pixAcc: 0.959, mIoU: 0.707: 100%|█████████████████████████████████████████████████████████████| 31/31 [00:46<00:00,  1.49s/it]
+Epoch 115, training loss 0.138: 100%|█████████████████████████████████████████████████████████████████████████████| 186/186 [13:41<00:00,  4.41s/it]
+Epoch 115, validation pixAcc: 0.960, mIoU: 0.708: 100%|█████████████████████████████████████████████████████████████| 32/32 [00:46<00:00,  1.46s/it]
+Epoch 116, training loss 0.137: 100%|█████████████████████████████████████████████████████████████████████████████| 186/186 [13:38<00:00,  4.40s/it]
+Epoch 116, validation pixAcc: 0.959, mIoU: 0.713: 100%|█████████████████████████████████████████████████████████████| 31/31 [00:45<00:00,  1.46s/it]
+Epoch 117, training loss 0.141: 100%|█████████████████████████████████████████████████████████████████████████████| 186/186 [13:22<00:00,  4.32s/it]
+Epoch 117, validation pixAcc: 0.959, mIoU: 0.712: 100%|█████████████████████████████████████████████████████████████| 31/31 [00:46<00:00,  1.49s/it]
+Epoch 118, training loss 0.147: 100%|█████████████████████████████████████████████████████████████████████████████| 186/186 [13:37<00:00,  4.40s/it]
+Epoch 118, validation pixAcc: 0.960, mIoU: 0.711: 100%|█████████████████████████████████████████████████████████████| 31/31 [00:45<00:00,  1.47s/it]
+Epoch 119, training loss 0.137: 100%|█████████████████████████████████████████████████████████████████████████████| 186/186 [13:40<00:00,  4.41s/it]
+Epoch 119, validation pixAcc: 0.959, mIoU: 0.703: 100%|█████████████████████████████████████████████████████████████| 32/32 [00:47<00:00,  1.47s/it]
+Epoch 120, training loss 0.143: 100%|█████████████████████████████████████████████████████████████████████████████| 186/186 [13:46<00:00,  4.44s/it]
+Epoch 120, validation pixAcc: 0.959, mIoU: 0.717: 100%|█████████████████████████████████████████████████████████████| 31/31 [00:46<00:00,  1.51s/it]
+Epoch 121, training loss 0.141: 100%|█████████████████████████████████████████████████████████████████████████████| 186/186 [13:35<00:00,  4.38s/it]
+Epoch 121, validation pixAcc: 0.960, mIoU: 0.729: 100%|█████████████████████████████████████████████████████████████| 31/31 [00:46<00:00,  1.49s/it]
+Epoch 122, training loss 0.135: 100%|█████████████████████████████████████████████████████████████████████████████| 186/186 [13:47<00:00,  4.45s/it]
+Epoch 122, validation pixAcc: 0.960, mIoU: 0.723: 100%|█████████████████████████████████████████████████████████████| 31/31 [00:46<00:00,  1.49s/it]
+Epoch 123, training loss 0.141: 100%|█████████████████████████████████████████████████████████████████████████████| 186/186 [13:49<00:00,  4.46s/it]
+Epoch 123, validation pixAcc: 0.958, mIoU: 0.708: 100%|█████████████████████████████████████████████████████████████| 32/32 [00:46<00:00,  1.46s/it]
+Epoch 124, training loss 0.145: 100%|█████████████████████████████████████████████████████████████████████████████| 186/186 [13:42<00:00,  4.42s/it]
+Epoch 124, validation pixAcc: 0.959, mIoU: 0.706: 100%|█████████████████████████████████████████████████████████████| 31/31 [00:46<00:00,  1.51s/it]
+Epoch 125, training loss 0.148: 100%|█████████████████████████████████████████████████████████████████████████████| 186/186 [13:31<00:00,  4.36s/it]
+Epoch 125, validation pixAcc: 0.959, mIoU: 0.707: 100%|█████████████████████████████████████████████████████████████| 31/31 [00:46<00:00,  1.51s/it]
+Epoch 126, training loss 0.137: 100%|█████████████████████████████████████████████████████████████████████████████| 186/186 [13:28<00:00,  4.35s/it]
+Epoch 126, validation pixAcc: 0.960, mIoU: 0.713: 100%|█████████████████████████████████████████████████████████████| 31/31 [00:45<00:00,  1.48s/it]
+Epoch 127, training loss 0.136: 100%|█████████████████████████████████████████████████████████████████████████████| 186/186 [13:38<00:00,  4.40s/it]
+Epoch 127, validation pixAcc: 0.960, mIoU: 0.719: 100%|█████████████████████████████████████████████████████████████| 32/32 [00:46<00:00,  1.46s/it]
+Epoch 128, training loss 0.133: 100%|█████████████████████████████████████████████████████████████████████████████| 185/185 [13:23<00:00,  4.34s/it]
+Epoch 128, validation pixAcc: 0.960, mIoU: 0.720: 100%|█████████████████████████████████████████████████████████████| 31/31 [00:46<00:00,  1.49s/it]
+Epoch 129, training loss 0.134: 100%|█████████████████████████████████████████████████████████████████████████████| 186/186 [13:44<00:00,  4.43s/it]
+Epoch 129, validation pixAcc: 0.960, mIoU: 0.719: 100%|█████████████████████████████████████████████████████████████| 31/31 [00:47<00:00,  1.52s/it]
+Epoch 130, training loss 0.137: 100%|█████████████████████████████████████████████████████████████████████████████| 186/186 [13:42<00:00,  4.42s/it]
+Epoch 130, validation pixAcc: 0.960, mIoU: 0.712: 100%|█████████████████████████████████████████████████████████████| 31/31 [00:46<00:00,  1.52s/it]
+Epoch 131, training loss 0.138: 100%|█████████████████████████████████████████████████████████████████████████████| 186/186 [13:43<00:00,  4.42s/it]
+Epoch 131, validation pixAcc: 0.959, mIoU: 0.707: 100%|█████████████████████████████████████████████████████████████| 32/32 [00:47<00:00,  1.49s/it]
+Epoch 132, training loss 0.138: 100%|█████████████████████████████████████████████████████████████████████████████| 186/186 [13:39<00:00,  4.40s/it]
+Epoch 132, validation pixAcc: 0.959, mIoU: 0.713: 100%|█████████████████████████████████████████████████████████████| 31/31 [00:46<00:00,  1.50s/it]
+Epoch 133, training loss 0.135: 100%|█████████████████████████████████████████████████████████████████████████████| 186/186 [13:28<00:00,  4.35s/it]
+Epoch 133, validation pixAcc: 0.959, mIoU: 0.712: 100%|█████████████████████████████████████████████████████████████| 31/31 [00:45<00:00,  1.46s/it]
+Epoch 134, training loss 0.138: 100%|█████████████████████████████████████████████████████████████████████████████| 186/186 [13:23<00:00,  4.32s/it]
+Epoch 134, validation pixAcc: 0.959, mIoU: 0.709: 100%|█████████████████████████████████████████████████████████████| 31/31 [00:46<00:00,  1.49s/it]
+Epoch 135, training loss 0.134: 100%|█████████████████████████████████████████████████████████████████████████████| 186/186 [13:42<00:00,  4.42s/it]
+Epoch 135, validation pixAcc: 0.960, mIoU: 0.715: 100%|█████████████████████████████████████████████████████████████| 32/32 [00:47<00:00,  1.50s/it]
+Epoch 136, training loss 0.131: 100%|█████████████████████████████████████████████████████████████████████████████| 186/186 [13:18<00:00,  4.29s/it]
+Epoch 136, validation pixAcc: 0.960, mIoU: 0.711: 100%|█████████████████████████████████████████████████████████████| 31/31 [00:45<00:00,  1.48s/it]
+Epoch 137, training loss 0.133: 100%|█████████████████████████████████████████████████████████████████████████████| 186/186 [13:26<00:00,  4.33s/it]
+Epoch 137, validation pixAcc: 0.960, mIoU: 0.718: 100%|█████████████████████████████████████████████████████████████| 31/31 [00:45<00:00,  1.46s/it]
+Epoch 138, training loss 0.138: 100%|█████████████████████████████████████████████████████████████████████████████| 186/186 [13:46<00:00,  4.44s/it]
+Epoch 138, validation pixAcc: 0.960, mIoU: 0.721: 100%|█████████████████████████████████████████████████████████████| 31/31 [00:46<00:00,  1.51s/it]
+Epoch 139, training loss 0.131: 100%|█████████████████████████████████████████████████████████████████████████████| 186/186 [13:41<00:00,  4.42s/it]
+Epoch 139, validation pixAcc: 0.959, mIoU: 0.716: 100%|█████████████████████████████████████████████████████████████| 32/32 [00:48<00:00,  1.51s/it]
+Epoch 140, training loss 0.130: 100%|█████████████████████████████████████████████████████████████████████████████| 186/186 [13:48<00:00,  4.45s/it]
+Epoch 140, validation pixAcc: 0.960, mIoU: 0.721: 100%|█████████████████████████████████████████████████████████████| 31/31 [00:46<00:00,  1.48s/it]
+Epoch 141, training loss 0.132: 100%|█████████████████████████████████████████████████████████████████████████████| 186/186 [13:33<00:00,  4.37s/it]
+Epoch 141, validation pixAcc: 0.961, mIoU: 0.721: 100%|█████████████████████████████████████████████████████████████| 31/31 [00:46<00:00,  1.48s/it]
+Epoch 142, training loss 0.125: 100%|█████████████████████████████████████████████████████████████████████████████| 186/186 [13:38<00:00,  4.40s/it]
+Epoch 142, validation pixAcc: 0.960, mIoU: 0.723: 100%|█████████████████████████████████████████████████████████████| 31/31 [00:46<00:00,  1.49s/it]
+Epoch 143, training loss 0.131: 100%|█████████████████████████████████████████████████████████████████████████████| 186/186 [13:25<00:00,  4.33s/it]
+Epoch 143, validation pixAcc: 0.960, mIoU: 0.713: 100%|█████████████████████████████████████████████████████████████| 32/32 [00:47<00:00,  1.48s/it]
+Epoch 144, training loss 0.129: 100%|█████████████████████████████████████████████████████████████████████████████| 185/185 [13:23<00:00,  4.34s/it]
+Epoch 144, validation pixAcc: 0.961, mIoU: 0.719: 100%|█████████████████████████████████████████████████████████████| 31/31 [00:45<00:00,  1.48s/it]
+Epoch 145, training loss 0.125: 100%|█████████████████████████████████████████████████████████████████████████████| 186/186 [13:25<00:00,  4.33s/it]
+Epoch 145, validation pixAcc: 0.961, mIoU: 0.723: 100%|█████████████████████████████████████████████████████████████| 31/31 [00:46<00:00,  1.51s/it]
+Epoch 146, training loss 0.128: 100%|█████████████████████████████████████████████████████████████████████████████| 186/186 [13:07<00:00,  4.23s/it]
+Epoch 146, validation pixAcc: 0.960, mIoU: 0.719: 100%|█████████████████████████████████████████████████████████████| 31/31 [00:46<00:00,  1.51s/it]
+Epoch 147, training loss 0.126: 100%|█████████████████████████████████████████████████████████████████████████████| 186/186 [13:44<00:00,  4.43s/it]
+Epoch 147, validation pixAcc: 0.961, mIoU: 0.724: 100%|█████████████████████████████████████████████████████████████| 32/32 [00:46<00:00,  1.47s/it]
+Epoch 148, training loss 0.135: 100%|█████████████████████████████████████████████████████████████████████████████| 186/186 [13:23<00:00,  4.32s/it]
+Epoch 148, validation pixAcc: 0.959, mIoU: 0.711: 100%|█████████████████████████████████████████████████████████████| 31/31 [00:45<00:00,  1.47s/it]
+Epoch 149, training loss 0.128: 100%|█████████████████████████████████████████████████████████████████████████████| 186/186 [13:32<00:00,  4.37s/it]
+Epoch 149, validation pixAcc: 0.960, mIoU: 0.720: 100%|█████████████████████████████████████████████████████████████| 31/31 [00:46<00:00,  1.49s/it]
+Epoch 150, training loss 0.126: 100%|█████████████████████████████████████████████████████████████████████████████| 186/186 [13:35<00:00,  4.38s/it]
+Epoch 150, validation pixAcc: 0.960, mIoU: 0.717: 100%|█████████████████████████████████████████████████████████████| 31/31 [00:45<00:00,  1.47s/it]
+Epoch 151, training loss 0.126: 100%|█████████████████████████████████████████████████████████████████████████████| 186/186 [13:22<00:00,  4.31s/it]
+Epoch 151, validation pixAcc: 0.960, mIoU: 0.722: 100%|█████████████████████████████████████████████████████████████| 32/32 [00:45<00:00,  1.44s/it]
+Epoch 152, training loss 0.127: 100%|█████████████████████████████████████████████████████████████████████████████| 186/186 [13:36<00:00,  4.39s/it]
+Epoch 152, validation pixAcc: 0.961, mIoU: 0.723: 100%|█████████████████████████████████████████████████████████████| 31/31 [00:46<00:00,  1.51s/it]
+Epoch 153, training loss 0.129: 100%|█████████████████████████████████████████████████████████████████████████████| 186/186 [13:25<00:00,  4.33s/it]
+Epoch 153, validation pixAcc: 0.959, mIoU: 0.720: 100%|█████████████████████████████████████████████████████████████| 31/31 [00:46<00:00,  1.51s/it]
+Epoch 154, training loss 0.130: 100%|█████████████████████████████████████████████████████████████████████████████| 186/186 [13:18<00:00,  4.29s/it]
+Epoch 154, validation pixAcc: 0.960, mIoU: 0.721: 100%|█████████████████████████████████████████████████████████████| 31/31 [00:46<00:00,  1.50s/it]
+Epoch 155, training loss 0.126: 100%|█████████████████████████████████████████████████████████████████████████████| 186/186 [13:23<00:00,  4.32s/it]
+Epoch 155, validation pixAcc: 0.961, mIoU: 0.730: 100%|█████████████████████████████████████████████████████████████| 32/32 [00:47<00:00,  1.47s/it]
+Epoch 156, training loss 0.125: 100%|█████████████████████████████████████████████████████████████████████████████| 186/186 [13:24<00:00,  4.33s/it]
+Epoch 156, validation pixAcc: 0.960, mIoU: 0.719: 100%|█████████████████████████████████████████████████████████████| 31/31 [00:46<00:00,  1.51s/it]
+Epoch 157, training loss 0.127: 100%|█████████████████████████████████████████████████████████████████████████████| 186/186 [13:45<00:00,  4.44s/it]
+Epoch 157, validation pixAcc: 0.960, mIoU: 0.724: 100%|█████████████████████████████████████████████████████████████| 31/31 [00:45<00:00,  1.47s/it]
+Epoch 158, training loss 0.126: 100%|█████████████████████████████████████████████████████████████████████████████| 186/186 [13:18<00:00,  4.29s/it]
+Epoch 158, validation pixAcc: 0.961, mIoU: 0.731: 100%|█████████████████████████████████████████████████████████████| 31/31 [00:44<00:00,  1.45s/it]
+Epoch 159, training loss 0.123: 100%|█████████████████████████████████████████████████████████████████████████████| 186/186 [13:37<00:00,  4.39s/it]
+Epoch 159, validation pixAcc: 0.961, mIoU: 0.723: 100%|█████████████████████████████████████████████████████████████| 32/32 [00:47<00:00,  1.48s/it]
+Epoch 160, training loss 0.125: 100%|█████████████████████████████████████████████████████████████████████████████| 185/185 [13:39<00:00,  4.43s/it]
+Epoch 160, validation pixAcc: 0.961, mIoU: 0.724: 100%|█████████████████████████████████████████████████████████████| 31/31 [00:46<00:00,  1.49s/it]
+Epoch 161, training loss 0.121: 100%|█████████████████████████████████████████████████████████████████████████████| 186/186 [13:21<00:00,  4.31s/it]
+Epoch 161, validation pixAcc: 0.961, mIoU: 0.725: 100%|█████████████████████████████████████████████████████████████| 31/31 [00:44<00:00,  1.45s/it]
+Epoch 162, training loss 0.124: 100%|█████████████████████████████████████████████████████████████████████████████| 186/186 [13:27<00:00,  4.34s/it]
+Epoch 162, validation pixAcc: 0.960, mIoU: 0.717: 100%|█████████████████████████████████████████████████████████████| 31/31 [00:46<00:00,  1.51s/it]
+Epoch 163, training loss 0.123: 100%|█████████████████████████████████████████████████████████████████████████████| 186/186 [13:35<00:00,  4.38s/it]
+Epoch 163, training loss 0.123: 100%|█████████████████████████████████████████████████████████████████████████████| 186/186 [13:35<00:00,  4.38s/it]
+Epoch 163, validation pixAcc: 0.961, mIoU: 0.727: 100%|█████████████████████████████████████████████████████████████| 32/32 [00:49<00:00,  1.54s/it]
+Epoch 164, training loss 0.126: 100%|█████████████████████████████████████████████████████████████████████████████| 186/186 [13:15<00:00,  4.28s/it]
+Epoch 164, validation pixAcc: 0.960, mIoU: 0.724: 100%|█████████████████████████████████████████████████████████████| 31/31 [00:47<00:00,  1.52s/it]
+Epoch 165, training loss 0.120: 100%|█████████████████████████████████████████████████████████████████████████████| 186/186 [13:27<00:00,  4.34s/it]
+Epoch 165, validation pixAcc: 0.961, mIoU: 0.715: 100%|█████████████████████████████████████████████████████████████| 31/31 [00:46<00:00,  1.49s/it]
+Epoch 166, training loss 0.124: 100%|█████████████████████████████████████████████████████████████████████████████| 186/186 [13:30<00:00,  4.36s/it]
+Epoch 166, validation pixAcc: 0.960, mIoU: 0.722: 100%|█████████████████████████████████████████████████████████████| 31/31 [00:45<00:00,  1.47s/it]
+Epoch 167, training loss 0.122: 100%|█████████████████████████████████████████████████████████████████████████████| 186/186 [13:22<00:00,  4.31s/it]
+Epoch 167, validation pixAcc: 0.961, mIoU: 0.724: 100%|█████████████████████████████████████████████████████████████| 32/32 [00:47<00:00,  1.48s/it]
+Epoch 168, training loss 0.119: 100%|█████████████████████████████████████████████████████████████████████████████| 186/186 [13:29<00:00,  4.35s/it]
+Epoch 168, validation pixAcc: 0.960, mIoU: 0.724: 100%|█████████████████████████████████████████████████████████████| 31/31 [00:46<00:00,  1.49s/it]
+Epoch 169, training loss 0.120: 100%|█████████████████████████████████████████████████████████████████████████████| 186/186 [13:28<00:00,  4.35s/it]
+Epoch 169, validation pixAcc: 0.961, mIoU: 0.722: 100%|█████████████████████████████████████████████████████████████| 31/31 [00:46<00:00,  1.49s/it]
+Epoch 170, training loss 0.123: 100%|█████████████████████████████████████████████████████████████████████████████| 186/186 [13:33<00:00,  4.37s/it]
+Epoch 170, validation pixAcc: 0.960, mIoU: 0.725: 100%|█████████████████████████████████████████████████████████████| 31/31 [00:46<00:00,  1.49s/it]
+Epoch 171, training loss 0.121: 100%|█████████████████████████████████████████████████████████████████████████████| 186/186 [13:39<00:00,  4.41s/it]
+Epoch 171, validation pixAcc: 0.961, mIoU: 0.734: 100%|█████████████████████████████████████████████████████████████| 32/32 [00:47<00:00,  1.48s/it]
+Epoch 172, training loss 0.121: 100%|█████████████████████████████████████████████████████████████████████████████| 186/186 [13:34<00:00,  4.38s/it]
+Epoch 172, validation pixAcc: 0.961, mIoU: 0.728: 100%|█████████████████████████████████████████████████████████████| 31/31 [00:45<00:00,  1.46s/it]
+Epoch 173, training loss 0.120: 100%|█████████████████████████████████████████████████████████████████████████████| 186/186 [13:28<00:00,  4.35s/it]
+Epoch 173, validation pixAcc: 0.961, mIoU: 0.727: 100%|█████████████████████████████████████████████████████████████| 31/31 [00:46<00:00,  1.51s/it]
+Epoch 174, training loss 0.118: 100%|█████████████████████████████████████████████████████████████████████████████| 186/186 [13:28<00:00,  4.35s/it]
+Epoch 174, validation pixAcc: 0.961, mIoU: 0.719: 100%|█████████████████████████████████████████████████████████████| 31/31 [00:44<00:00,  1.42s/it]
+Epoch 175, training loss 0.120: 100%|█████████████████████████████████████████████████████████████████████████████| 186/186 [13:15<00:00,  4.28s/it]
+Epoch 175, validation pixAcc: 0.960, mIoU: 0.717: 100%|█████████████████████████████████████████████████████████████| 32/32 [00:46<00:00,  1.46s/it]
+Epoch 176, training loss 0.121: 100%|█████████████████████████████████████████████████████████████████████████████| 185/185 [13:09<00:00,  4.27s/it]
+Epoch 176, validation pixAcc: 0.961, mIoU: 0.722: 100%|█████████████████████████████████████████████████████████████| 31/31 [00:46<00:00,  1.51s/it]
+Epoch 177, training loss 0.119: 100%|█████████████████████████████████████████████████████████████████████████████| 186/186 [13:25<00:00,  4.33s/it]
+Epoch 177, validation pixAcc: 0.961, mIoU: 0.718: 100%|█████████████████████████████████████████████████████████████| 31/31 [00:45<00:00,  1.48s/it]
+Epoch 178, training loss 0.120: 100%|█████████████████████████████████████████████████████████████████████████████| 186/186 [13:29<00:00,  4.35s/it]
+Epoch 178, validation pixAcc: 0.961, mIoU: 0.719: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 31/31 [00:45<00:00,  1.46s/it]
+Epoch 179, training loss 0.119: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 186/186 [13:43<00:00,  4.43s/it]
+Epoch 179, validation pixAcc: 0.961, mIoU: 0.725: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 32/32 [00:47<00:00,  1.50s/it]
+Epoch 180, training loss 0.117: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 186/186 [13:25<00:00,  4.33s/it]
+Epoch 180, validation pixAcc: 0.961, mIoU: 0.719: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 31/31 [00:45<00:00,  1.48s/it]
+Epoch 181, training loss 0.117: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 186/186 [13:51<00:00,  4.47s/it]
+Epoch 181, validation pixAcc: 0.960, mIoU: 0.717: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 31/31 [00:46<00:00,  1.51s/it]
+Epoch 182, training loss 0.118: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 186/186 [13:41<00:00,  4.42s/it]
+Epoch 182, validation pixAcc: 0.960, mIoU: 0.714: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 31/31 [00:45<00:00,  1.47s/it]
+Epoch 183, training loss 0.120: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 186/186 [13:36<00:00,  4.39s/it]
+Epoch 183, validation pixAcc: 0.961, mIoU: 0.722: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 32/32 [00:47<00:00,  1.49s/it]
+Epoch 184, training loss 0.116: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 186/186 [13:33<00:00,  4.38s/it]
+Epoch 184, validation pixAcc: 0.961, mIoU: 0.731: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 31/31 [00:45<00:00,  1.46s/it]
+Epoch 185, training loss 0.113: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 186/186 [13:31<00:00,  4.36s/it]
+Epoch 185, validation pixAcc: 0.961, mIoU: 0.727: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 31/31 [00:45<00:00,  1.47s/it]
+Epoch 186, training loss 0.118: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 186/186 [13:29<00:00,  4.35s/it]
+Epoch 186, validation pixAcc: 0.961, mIoU: 0.723: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 31/31 [00:47<00:00,  1.52s/it]
+Epoch 187, training loss 0.117: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 186/186 [13:22<00:00,  4.32s/it]
+Epoch 187, validation pixAcc: 0.961, mIoU: 0.723: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 32/32 [00:47<00:00,  1.50s/it]
+Epoch 188, training loss 0.115: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 186/186 [13:25<00:00,  4.33s/it]
+Epoch 188, validation pixAcc: 0.961, mIoU: 0.730: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 31/31 [00:47<00:00,  1.54s/it]
+Epoch 189, training loss 0.116: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 186/186 [13:30<00:00,  4.36s/it]
+Epoch 189, validation pixAcc: 0.961, mIoU: 0.726: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 31/31 [00:46<00:00,  1.49s/it]
+Epoch 190, training loss 0.116: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 186/186 [13:27<00:00,  4.34s/it]
+Epoch 190, validation pixAcc: 0.961, mIoU: 0.734: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 31/31 [00:46<00:00,  1.49s/it]
+Epoch 191, training loss 0.115: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 186/186 [13:23<00:00,  4.32s/it]
+Epoch 191, validation pixAcc: 0.962, mIoU: 0.726: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 32/32 [00:46<00:00,  1.45s/it]
+Epoch 192, training loss 0.119: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 185/185 [13:25<00:00,  4.36s/it]
+Epoch 192, validation pixAcc: 0.961, mIoU: 0.727: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 31/31 [00:45<00:00,  1.47s/it]
+Epoch 193, training loss 0.116: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 186/186 [13:15<00:00,  4.28s/it]
+Epoch 193, validation pixAcc: 0.961, mIoU: 0.725: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 31/31 [00:46<00:00,  1.49s/it]
+Epoch 194, training loss 0.114: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 186/186 [13:23<00:00,  4.32s/it]
+Epoch 194, validation pixAcc: 0.961, mIoU: 0.724: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 31/31 [00:44<00:00,  1.43s/it]
+Epoch 195, training loss 0.114: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 186/186 [13:28<00:00,  4.34s/it]
+Epoch 195, validation pixAcc: 0.961, mIoU: 0.725: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 32/32 [00:48<00:00,  1.51s/it]
+Epoch 196, training loss 0.111: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 186/186 [13:21<00:00,  4.31s/it]
+Epoch 196, validation pixAcc: 0.961, mIoU: 0.725: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 31/31 [00:46<00:00,  1.51s/it]
+Epoch 197, training loss 0.114: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 186/186 [13:18<00:00,  4.29s/it]
+Epoch 197, validation pixAcc: 0.961, mIoU: 0.727: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 31/31 [00:45<00:00,  1.48s/it]
+Epoch 198, training loss 0.115: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 186/186 [13:35<00:00,  4.38s/it]
+Epoch 198, validation pixAcc: 0.961, mIoU: 0.726: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 31/31 [00:45<00:00,  1.47s/it]
+Epoch 199, training loss 0.113: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 186/186 [13:30<00:00,  4.36s/it]
+Epoch 199, validation pixAcc: 0.961, mIoU: 0.727: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 32/32 [00:47<00:00,  1.49s/it]
+Epoch 200, training loss 0.115: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 186/186 [13:28<00:00,  4.35s/it]
+Epoch 200, validation pixAcc: 0.961, mIoU: 0.727: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 31/31 [00:46<00:00,  1.51s/it]
+Epoch 201, training loss 0.114: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 186/186 [13:13<00:00,  4.27s/it]
+Epoch 201, validation pixAcc: 0.961, mIoU: 0.729: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 31/31 [00:44<00:00,  1.42s/it]
+Epoch 202, training loss 0.113: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 186/186 [13:36<00:00,  4.39s/it]
+Epoch 202, validation pixAcc: 0.961, mIoU: 0.729: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 31/31 [00:47<00:00,  1.54s/it]
+Epoch 203, training loss 0.114: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 186/186 [13:21<00:00,  4.31s/it]
+Epoch 203, validation pixAcc: 0.962, mIoU: 0.728: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 32/32 [00:47<00:00,  1.49s/it]
+Epoch 204, training loss 0.114: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 186/186 [13:33<00:00,  4.38s/it]
+Epoch 204, validation pixAcc: 0.961, mIoU: 0.726: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 31/31 [00:46<00:00,  1.50s/it]
+Epoch 205, training loss 0.112: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 186/186 [13:21<00:00,  4.31s/it]
+Epoch 205, validation pixAcc: 0.961, mIoU: 0.729: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 31/31 [00:47<00:00,  1.52s/it]
+Epoch 206, training loss 0.112: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 186/186 [13:41<00:00,  4.42s/it]
+Epoch 206, validation pixAcc: 0.961, mIoU: 0.727: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 31/31 [00:47<00:00,  1.53s/it]
+Epoch 207, training loss 0.110: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 186/186 [13:53<00:00,  4.48s/it]
+Epoch 207, validation pixAcc: 0.961, mIoU: 0.727: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 32/32 [00:48<00:00,  1.50s/it]
+Epoch 208, training loss 0.112: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 185/185 [13:56<00:00,  4.52s/it]
+Epoch 208, validation pixAcc: 0.962, mIoU: 0.731: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 31/31 [00:46<00:00,  1.51s/it]
+Epoch 209, training loss 0.113: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 186/186 [13:58<00:00,  4.51s/it]
+Epoch 209, validation pixAcc: 0.962, mIoU: 0.726: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 31/31 [00:45<00:00,  1.46s/it]
+Epoch 210, training loss 0.113: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 186/186 [14:03<00:00,  4.53s/it]
+Epoch 210, validation pixAcc: 0.962, mIoU: 0.729: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 31/31 [00:45<00:00,  1.46s/it]
+Epoch 211, training loss 0.110: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 186/186 [13:55<00:00,  4.49s/it]
+Epoch 211, validation pixAcc: 0.962, mIoU: 0.724: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 32/32 [00:47<00:00,  1.49s/it]
+Epoch 212, training loss 0.113: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 186/186 [14:04<00:00,  4.54s/it]
+Epoch 212, validation pixAcc: 0.962, mIoU: 0.729: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 31/31 [00:44<00:00,  1.44s/it]
+Epoch 213, training loss 0.110: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 186/186 [13:57<00:00,  4.50s/it]
+Epoch 213, validation pixAcc: 0.961, mIoU: 0.728: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 31/31 [00:46<00:00,  1.49s/it]
+Epoch 214, training loss 0.111: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 186/186 [14:05<00:00,  4.55s/it]
+Epoch 214, validation pixAcc: 0.961, mIoU: 0.727: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 31/31 [00:46<00:00,  1.50s/it]
+Epoch 215, training loss 0.112: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 186/186 [13:56<00:00,  4.50s/it]
+Epoch 215, validation pixAcc: 0.961, mIoU: 0.725: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 32/32 [00:47<00:00,  1.48s/it]
+Epoch 216, training loss 0.113: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 186/186 [13:45<00:00,  4.44s/it]
+Epoch 216, validation pixAcc: 0.962, mIoU: 0.727: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 31/31 [00:46<00:00,  1.50s/it]
+Epoch 217, training loss 0.110: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 186/186 [14:00<00:00,  4.52s/it]
+Epoch 217, validation pixAcc: 0.961, mIoU: 0.726: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 31/31 [00:46<00:00,  1.49s/it]
+Epoch 218, training loss 0.111: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 186/186 [13:57<00:00,  4.50s/it]
+Epoch 218, validation pixAcc: 0.962, mIoU: 0.727: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 31/31 [00:47<00:00,  1.52s/it]
+Epoch 219, training loss 0.111: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 186/186 [14:00<00:00,  4.52s/it]
+Epoch 219, validation pixAcc: 0.962, mIoU: 0.726: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 32/32 [00:47<00:00,  1.47s/it]
+Epoch 220, training loss 0.111: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 186/186 [14:01<00:00,  4.52s/it]
+Epoch 220, validation pixAcc: 0.961, mIoU: 0.726: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 31/31 [00:46<00:00,  1.51s/it]
+Epoch 221, training loss 0.110: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 186/186 [14:00<00:00,  4.52s/it]
+Epoch 221, validation pixAcc: 0.961, mIoU: 0.727: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 31/31 [00:45<00:00,  1.48s/it]
+Epoch 222, training loss 0.111: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 186/186 [14:05<00:00,  4.54s/it]
+Epoch 222, validation pixAcc: 0.961, mIoU: 0.725: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 31/31 [00:46<00:00,  1.48s/it]
+Epoch 223, training loss 0.110: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 186/186 [13:59<00:00,  4.51s/it]
+Epoch 223, validation pixAcc: 0.962, mIoU: 0.727: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 32/32 [00:47<00:00,  1.48s/it]
+Epoch 224, training loss 0.108: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 185/185 [13:59<00:00,  4.54s/it]
+Epoch 224, validation pixAcc: 0.961, mIoU: 0.728: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 31/31 [00:46<00:00,  1.51s/it]
+Epoch 225, training loss 0.109: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 186/186 [13:48<00:00,  4.45s/it]
+Epoch 225, validation pixAcc: 0.961, mIoU: 0.728: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 31/31 [00:45<00:00,  1.46s/it]
+Epoch 226, training loss 0.108: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 186/186 [13:51<00:00,  4.47s/it]
+Epoch 226, validation pixAcc: 0.961, mIoU: 0.728: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 31/31 [00:47<00:00,  1.52s/it]
+Epoch 227, training loss 0.108: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 186/186 [13:37<00:00,  4.39s/it]
+Epoch 227, validation pixAcc: 0.962, mIoU: 0.726: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 32/32 [00:45<00:00,  1.43s/it]
+Epoch 228, training loss 0.109: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 186/186 [13:58<00:00,  4.51s/it]
+Epoch 228, validation pixAcc: 0.962, mIoU: 0.729: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 31/31 [00:45<00:00,  1.45s/it]
+Epoch 229, training loss 0.110: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 186/186 [13:53<00:00,  4.48s/it]
+Epoch 229, validation pixAcc: 0.962, mIoU: 0.727: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 31/31 [00:46<00:00,  1.49s/it]
+Epoch 230, training loss 0.111: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 186/186 [13:25<00:00,  4.33s/it]
+Epoch 230, validation pixAcc: 0.962, mIoU: 0.727: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 31/31 [00:46<00:00,  1.50s/it]
+Epoch 231, training loss 0.108: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 186/186 [13:57<00:00,  4.50s/it]
+Epoch 231, validation pixAcc: 0.962, mIoU: 0.727: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 32/32 [00:48<00:00,  1.51s/it]
+Epoch 232, training loss 0.109: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 186/186 [14:19<00:00,  4.62s/it]
+Epoch 232, validation pixAcc: 0.962, mIoU: 0.727: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 31/31 [00:46<00:00,  1.49s/it]
+Epoch 233, training loss 0.109: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 186/186 [13:38<00:00,  4.40s/it]
+Epoch 233, validation pixAcc: 0.961, mIoU: 0.726: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 31/31 [00:45<00:00,  1.48s/it]
+Epoch 234, training loss 0.109: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 186/186 [13:39<00:00,  4.40s/it]
+Epoch 234, validation pixAcc: 0.962, mIoU: 0.728: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 31/31 [00:47<00:00,  1.52s/it]
+Epoch 235, training loss 0.108: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 186/186 [13:23<00:00,  4.32s/it]
+Epoch 235, validation pixAcc: 0.962, mIoU: 0.728: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 32/32 [00:47<00:00,  1.50s/it]
+Epoch 236, training loss 0.109: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 186/186 [13:33<00:00,  4.38s/it]
+Epoch 236, validation pixAcc: 0.962, mIoU: 0.728: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 31/31 [00:47<00:00,  1.52s/it]
+Epoch 237, training loss 0.110: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 186/186 [13:33<00:00,  4.38s/it]
+Epoch 237, validation pixAcc: 0.962, mIoU: 0.728: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 31/31 [00:46<00:00,  1.51s/it]
+Epoch 238, training loss 0.111: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 186/186 [13:32<00:00,  4.37s/it]
+Epoch 238, validation pixAcc: 0.962, mIoU: 0.727: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 31/31 [00:45<00:00,  1.47s/it]
+Epoch 239, training loss 0.109: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 186/186 [13:37<00:00,  4.40s/it]
+Epoch 239, validation pixAcc: 0.962, mIoU: 0.728: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 32/32 [00:47<00:00,  1.49s/it]

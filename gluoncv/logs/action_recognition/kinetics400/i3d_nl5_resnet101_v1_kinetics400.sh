@@ -1,16 +1,17 @@
 #!/usr/bin/env bash
 
-CUDA_VISIBLE_DEVICES=7,6,5,4,3,2,1,0 python ./scripts/action-recognition/train_recognizer.py \
+CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 python ./scripts/action-recognition/train_recognizer.py \
     --dataset kinetics400 \
-    --data-dir /home/ubuntu/third_disk/data/kinetics400/rawframes_train \
-    --val-data-dir /home/ubuntu/third_disk/data/kinetics400/rawframes_val \
-    --train-list /home/ubuntu/third_disk/data/kinetics400/kinetics400_train_list_rawframes_full.txt \
-    --val-list /home/ubuntu/third_disk/data/kinetics400/kinetics400_val_list_rawframes_full.txt \
+    --data-dir /home/ubuntu/data/kinetics400/train_256 \
+    --val-data-dir /home/ubuntu/data/kinetics400/val_256 \
+    --train-list /home/ubuntu/data/kinetics400/k400_train_240618.txt \
+    --val-list /home/ubuntu/data/kinetics400/k400_val_19761_cleanv3.txt \
     --mode hybrid \
     --dtype float32 \
     --prefetch-ratio 1.0 \
-    --input-5d \
     --model i3d_nl5_resnet101_v1_kinetics400 \
+    --video-loader \
+    --use-decord \
     --num-classes 400 \
     --batch-size 8 \
     --num-gpus 8 \
@@ -28,8 +29,6 @@ CUDA_VISIBLE_DEVICES=7,6,5,4,3,2,1,0 python ./scripts/action-recognition/train_r
     --lr-decay-epoch 40,80,100 \
     --num-epochs 100 \
     --scale-ratios 1.0,0.8 \
-    --save-frequency 5 \
-    --clip-grad 40 \
-    --log-interval 20 \
-    --logging-file i3d_nl5_resnet101_v1_kinetics400.log \
-    --save-dir ./logs/ \
+    --save-frequency 20 \
+    --log-interval 50 \
+    --logging-file i3d_nl5_resnet101_v1_kinetics400.log

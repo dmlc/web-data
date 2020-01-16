@@ -1,0 +1,97 @@
+2019-11-22 05:39:59,115 - root - INFO - Time cost=7.08s, throughput=198.93 samples/s
+2019-11-22 06:02:18,468 - root - INFO - Namespace(accumulate=None, attention_dropout=0.0, batch_size=64, cpu=None, dataset='126gb', dev_batch_size=32, dropout=0.1, early_stop=None, epochs=5, epsilon=1e-06, gpu=8, log_interval=10, lr=3e-05, lr_decay='linear', max_len=128, model_name='xlnet_cased_l12_h768_a12', model_parameters=None, only_inference=False, output_dir='./output_dir', pad=True, seed=49, task_name='STS-B', warmup_ratio=0)
+2019-11-22 06:03:00,954 - root - INFO - processing dataset...
+2019-11-22 06:03:27,778 - root - INFO - Now we are doing XLNet classification training on [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)]!
+2019-11-22 06:03:49,677 - root - INFO - [Epoch 1 Batch 10/96] loss=1.6873, lr=0.0000294
+2019-11-22 06:03:57,433 - root - INFO - [Epoch 1 Batch 20/96] loss=1.0409, lr=0.0000287
+2019-11-22 06:04:05,995 - root - INFO - [Epoch 1 Batch 30/96] loss=0.8407, lr=0.0000281
+2019-11-22 06:04:14,009 - root - INFO - [Epoch 1 Batch 40/96] loss=0.9478, lr=0.0000274
+2019-11-22 06:04:22,367 - root - INFO - [Epoch 1 Batch 50/96] loss=0.5269, lr=0.0000267
+2019-11-22 06:04:30,386 - root - INFO - [Epoch 1 Batch 60/96] loss=0.4667, lr=0.0000261
+2019-11-22 06:04:38,030 - root - INFO - [Epoch 1 Batch 70/96] loss=0.6265, lr=0.0000254
+2019-11-22 06:04:46,162 - root - INFO - [Epoch 1 Batch 80/96] loss=0.6486, lr=0.0000247
+2019-11-22 06:04:54,043 - root - INFO - [Epoch 1 Batch 90/96] loss=0.5115, lr=0.0000241
+2019-11-22 06:04:58,680 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2019-11-22 06:05:00,279 - root - INFO - [Batch 10/47] loss=0.4706
+2019-11-22 06:05:01,856 - root - INFO - [Batch 20/47] loss=0.8338
+2019-11-22 06:05:03,478 - root - INFO - [Batch 30/47] loss=1.7863
+2019-11-22 06:05:05,122 - root - INFO - [Batch 40/47] loss=0.7302
+2019-11-22 06:05:06,356 - root - INFO - validation metrics:pearsonr:0.7796
+2019-11-22 06:05:06,357 - root - INFO - Time cost=7.68s, throughput=195.91 samples/s
+2019-11-22 06:05:07,962 - root - INFO - params saved in: ./output_dir/model_xlnet_STS-B_0.params
+2019-11-22 06:05:07,966 - root - INFO - Time cost=100.18s
+2019-11-22 06:05:16,472 - root - INFO - [Epoch 2 Batch 10/96] loss=0.4435, lr=0.0000230
+2019-11-22 06:05:24,318 - root - INFO - [Epoch 2 Batch 20/96] loss=0.3225, lr=0.0000223
+2019-11-22 06:05:32,470 - root - INFO - [Epoch 2 Batch 30/96] loss=0.3797, lr=0.0000216
+2019-11-22 06:05:40,599 - root - INFO - [Epoch 2 Batch 40/96] loss=0.2982, lr=0.0000210
+2019-11-22 06:05:48,686 - root - INFO - [Epoch 2 Batch 50/96] loss=0.2856, lr=0.0000203
+2019-11-22 06:05:56,578 - root - INFO - [Epoch 2 Batch 60/96] loss=0.3592, lr=0.0000196
+2019-11-22 06:06:04,245 - root - INFO - [Epoch 2 Batch 70/96] loss=0.2776, lr=0.0000190
+2019-11-22 06:06:12,146 - root - INFO - [Epoch 2 Batch 80/96] loss=0.3008, lr=0.0000183
+2019-11-22 06:06:19,770 - root - INFO - [Epoch 2 Batch 90/96] loss=0.2786, lr=0.0000176
+2019-11-22 06:06:24,651 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2019-11-22 06:06:26,240 - root - INFO - [Batch 10/47] loss=0.1692
+2019-11-22 06:06:27,832 - root - INFO - [Batch 20/47] loss=0.2907
+2019-11-22 06:06:29,446 - root - INFO - [Batch 30/47] loss=0.4770
+2019-11-22 06:06:31,033 - root - INFO - [Batch 40/47] loss=0.2465
+2019-11-22 06:06:32,222 - root - INFO - validation metrics:pearsonr:0.8642
+2019-11-22 06:06:32,222 - root - INFO - Time cost=7.57s, throughput=198.66 samples/s
+2019-11-22 06:06:34,120 - root - INFO - params saved in: ./output_dir/model_xlnet_STS-B_1.params
+2019-11-22 06:06:34,122 - root - INFO - Time cost=86.16s
+2019-11-22 06:06:42,192 - root - INFO - [Epoch 3 Batch 10/96] loss=0.2301, lr=0.0000166
+2019-11-22 06:06:49,850 - root - INFO - [Epoch 3 Batch 20/96] loss=0.2241, lr=0.0000159
+2019-11-22 06:06:57,847 - root - INFO - [Epoch 3 Batch 30/96] loss=0.2396, lr=0.0000152
+2019-11-22 06:07:05,639 - root - INFO - [Epoch 3 Batch 40/96] loss=0.2360, lr=0.0000146
+2019-11-22 06:07:13,391 - root - INFO - [Epoch 3 Batch 50/96] loss=0.2488, lr=0.0000139
+2019-11-22 06:07:21,379 - root - INFO - [Epoch 3 Batch 60/96] loss=0.2467, lr=0.0000132
+2019-11-22 06:07:29,674 - root - INFO - [Epoch 3 Batch 70/96] loss=0.2132, lr=0.0000126
+2019-11-22 06:07:37,585 - root - INFO - [Epoch 3 Batch 80/96] loss=0.2287, lr=0.0000119
+2019-11-22 06:07:46,150 - root - INFO - [Epoch 3 Batch 90/96] loss=0.2362, lr=0.0000112
+2019-11-22 06:07:50,971 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2019-11-22 06:07:52,641 - root - INFO - [Batch 10/47] loss=0.1681
+2019-11-22 06:07:54,262 - root - INFO - [Batch 20/47] loss=0.3046
+2019-11-22 06:07:55,856 - root - INFO - [Batch 30/47] loss=0.4743
+2019-11-22 06:07:57,452 - root - INFO - [Batch 40/47] loss=0.2318
+2019-11-22 06:07:58,651 - root - INFO - validation metrics:pearsonr:0.8636
+2019-11-22 06:07:58,652 - root - INFO - Time cost=7.68s, throughput=195.81 samples/s
+2019-11-22 06:08:00,189 - root - INFO - params saved in: ./output_dir/model_xlnet_STS-B_2.params
+2019-11-22 06:08:00,191 - root - INFO - Time cost=86.07s
+2019-11-22 06:08:08,341 - root - INFO - [Epoch 4 Batch 10/96] loss=0.1821, lr=0.0000102
+2019-11-22 06:08:16,261 - root - INFO - [Epoch 4 Batch 20/96] loss=0.1727, lr=0.0000095
+2019-11-22 06:08:24,885 - root - INFO - [Epoch 4 Batch 30/96] loss=0.1970, lr=0.0000088
+2019-11-22 06:08:32,933 - root - INFO - [Epoch 4 Batch 40/96] loss=0.1794, lr=0.0000082
+2019-11-22 06:08:41,023 - root - INFO - [Epoch 4 Batch 50/96] loss=0.1458, lr=0.0000075
+2019-11-22 06:08:49,072 - root - INFO - [Epoch 4 Batch 60/96] loss=0.2024, lr=0.0000068
+2019-11-22 06:08:56,954 - root - INFO - [Epoch 4 Batch 70/96] loss=0.1550, lr=0.0000061
+2019-11-22 06:09:05,292 - root - INFO - [Epoch 4 Batch 80/96] loss=0.1869, lr=0.0000055
+2019-11-22 06:09:13,205 - root - INFO - [Epoch 4 Batch 90/96] loss=0.1799, lr=0.0000048
+2019-11-22 06:09:17,937 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2019-11-22 06:09:19,508 - root - INFO - [Batch 10/47] loss=0.1719
+2019-11-22 06:09:21,065 - root - INFO - [Batch 20/47] loss=0.3036
+2019-11-22 06:09:22,619 - root - INFO - [Batch 30/47] loss=0.4537
+2019-11-22 06:09:24,156 - root - INFO - [Batch 40/47] loss=0.2297
+2019-11-22 06:09:25,301 - root - INFO - validation metrics:pearsonr:0.8660
+2019-11-22 06:09:25,301 - root - INFO - Time cost=7.36s, throughput=204.26 samples/s
+2019-11-22 06:09:26,882 - root - INFO - params saved in: ./output_dir/model_xlnet_STS-B_3.params
+2019-11-22 06:09:26,889 - root - INFO - Time cost=86.70s
+2019-11-22 06:09:34,520 - root - INFO - [Epoch 5 Batch 10/96] loss=0.1243, lr=0.0000037
+2019-11-22 06:09:42,444 - root - INFO - [Epoch 5 Batch 20/96] loss=0.1548, lr=0.0000031
+2019-11-22 06:09:50,397 - root - INFO - [Epoch 5 Batch 30/96] loss=0.1439, lr=0.0000024
+2019-11-22 06:09:58,371 - root - INFO - [Epoch 5 Batch 40/96] loss=0.1717, lr=0.0000017
+2019-11-22 06:10:06,695 - root - INFO - [Epoch 5 Batch 50/96] loss=0.1583, lr=0.0000011
+2019-11-22 06:10:14,721 - root - INFO - [Epoch 5 Batch 60/96] loss=0.1450, lr=0.0000004
+2019-11-22 06:10:22,984 - root - INFO - [Epoch 5 Batch 70/96] loss=0.1714, lr=0.0000000
+2019-11-22 06:10:30,782 - root - INFO - [Epoch 5 Batch 80/96] loss=0.1574, lr=0.0000000
+2019-11-22 06:10:38,657 - root - INFO - [Epoch 5 Batch 90/96] loss=0.1567, lr=0.0000000
+2019-11-22 06:10:43,561 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2019-11-22 06:10:45,181 - root - INFO - [Batch 10/47] loss=0.1753
+2019-11-22 06:10:46,798 - root - INFO - [Batch 20/47] loss=0.3166
+2019-11-22 06:10:48,460 - root - INFO - [Batch 30/47] loss=0.4464
+2019-11-22 06:10:50,010 - root - INFO - [Batch 40/47] loss=0.2309
+2019-11-22 06:10:51,155 - root - INFO - validation metrics:pearsonr:0.8659
+2019-11-22 06:10:51,155 - root - INFO - Time cost=7.59s, throughput=198.06 samples/s
+2019-11-22 06:10:52,725 - root - INFO - params saved in: ./output_dir/model_xlnet_STS-B_4.params
+2019-11-22 06:10:52,727 - root - INFO - Time cost=85.84s
+2019-11-22 06:10:53,283 - root - INFO - Best model at epoch 4. Validation metrics:pearsonr:0.8660
+2019-11-22 06:10:53,284 - root - INFO - Now we are doing testing on test with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2019-11-22 06:10:59,625 - root - INFO - Time cost=6.34s, throughput=222.05 samples/s

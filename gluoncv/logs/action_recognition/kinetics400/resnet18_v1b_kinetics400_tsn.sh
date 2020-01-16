@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+
+CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 python ./scripts/action-recognition/train_recognizer.py \
+	--dataset kinetics400 \
+    --data-dir /home/ubuntu/data/kinetics400/train_256 \
+    --val-data-dir /home/ubuntu/data/kinetics400/val_256 \
+    --train-list /home/ubuntu/data/kinetics400/k400_train_240618.txt \
+    --val-list /home/ubuntu/data/kinetics400/k400_val_19761_cleanv3.txt \
+    --video-loader \
+    --use-decord \
+	--model resnet18_v1b_kinetics400 \
+	--mode hybrid \
+	--dtype float32 \
+    --prefetch-ratio 1.0 \
+	--num-classes 400 \
+	--batch-size 8 \
+	--num-segments 7 \
+	--num-gpus 8 \
+	--num-data-workers 32 \
+	--new-height 256 \
+	--new-width 340 \
+	--new-length 1 \
+	--new-step 1 \
+	--input-size 224 \
+	--lr-mode cosine \
+	--lr 0.01 \
+	--momentum 0.9 \
+	--wd 0.0001 \
+	--num-epochs 100 \
+	--scale-ratios 1.0,0.8 \
+	--save-frequency 20 \
+	--log-interval 50 \
+	--logging-file resnet18_v1b_kinetics400.log

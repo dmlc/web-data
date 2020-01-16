@@ -1,0 +1,1 @@
+python3 ~/gluon-cv/scripts/detection/center_net/train_center_net.py --gpus 2,3 -j 30 --dataset voc  --batch-size 32 --log-interval 10 --epochs 70 --lr-decay-epoch 45,60  --lr 0.000125 --wd 0.00001 --momentum 0.9 --wh-weight 0.1 --warmup-epochs 0 --val-interval 5  --network resnet50_v1b --flip-validation
