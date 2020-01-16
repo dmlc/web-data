@@ -1,1 +1,1 @@
-python run_glue.py --gpu 8 --task_name STS-B --seed 49 --lr 3e-5 --epochs 5 --batch_size 64 --attention_dropout 0
+python3 run_glue.py --gpu 8 --task STS-B --batch_size 48 --training_steps 3000 --warmup_ratio 0.1 --lr 3e-5 --seed 3 --optimizer Adam

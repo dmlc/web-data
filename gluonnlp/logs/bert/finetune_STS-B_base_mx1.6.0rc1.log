@@ -1,0 +1,210 @@
+INFO:root:04:26:58 Namespace(accumulate=None, batch_size=32, bert_dataset='book_corpus_wiki_en_uncased', bert_model='bert_12_768_12', dev_batch_size=8, dtype='float32', early_stop=None, epochs=5, epsilon=1e-06, gpu=0, log_interval=10, lr=2e-05, max_len=128, model_parameters=None, only_inference=False, optimizer='bertadam', output_dir='./output_dir', pad=False, pretrained_bert_parameters=None, seed=24, task_name='STS-B', training_steps=None, warmup_ratio=0.1)
+INFO:root:04:27:03 processing dataset...
+INFO:root:04:27:04 Now we are doing BERT classification training on gpu(0)!
+INFO:root:04:27:04 training steps=898
+INFO:root:04:27:07 [Epoch 1 Batch 10/186] loss=3.6108, lr=0.0000020, metrics:pearsonr:0.1008
+INFO:root:04:27:08 [Epoch 1 Batch 20/186] loss=2.6426, lr=0.0000043, metrics:pearsonr:0.0770
+INFO:root:04:27:09 [Epoch 1 Batch 30/186] loss=2.3315, lr=0.0000065, metrics:pearsonr:0.0852
+INFO:root:04:27:10 [Epoch 1 Batch 40/186] loss=1.1828, lr=0.0000088, metrics:pearsonr:0.0428
+INFO:root:04:27:11 [Epoch 1 Batch 50/186] loss=0.5126, lr=0.0000110, metrics:pearsonr:0.1694
+INFO:root:04:27:12 [Epoch 1 Batch 60/186] loss=0.4436, lr=0.0000133, metrics:pearsonr:0.2465
+INFO:root:04:27:13 [Epoch 1 Batch 70/186] loss=0.4791, lr=0.0000155, metrics:pearsonr:0.3107
+INFO:root:04:27:14 [Epoch 1 Batch 80/186] loss=0.4374, lr=0.0000178, metrics:pearsonr:0.3517
+INFO:root:04:27:15 [Epoch 1 Batch 90/186] loss=0.4406, lr=0.0000200, metrics:pearsonr:0.3972
+INFO:root:04:27:17 [Epoch 1 Batch 100/186] loss=0.3405, lr=0.0000198, metrics:pearsonr:0.4323
+INFO:root:04:27:18 [Epoch 1 Batch 110/186] loss=0.3176, lr=0.0000195, metrics:pearsonr:0.4679
+INFO:root:04:27:19 [Epoch 1 Batch 120/186] loss=0.3588, lr=0.0000193, metrics:pearsonr:0.4952
+INFO:root:04:27:20 [Epoch 1 Batch 130/186] loss=0.3048, lr=0.0000190, metrics:pearsonr:0.5134
+INFO:root:04:27:21 [Epoch 1 Batch 140/186] loss=0.3876, lr=0.0000188, metrics:pearsonr:0.5301
+INFO:root:04:27:22 [Epoch 1 Batch 150/186] loss=0.3090, lr=0.0000185, metrics:pearsonr:0.5488
+INFO:root:04:27:23 [Epoch 1 Batch 160/186] loss=0.2981, lr=0.0000183, metrics:pearsonr:0.5699
+INFO:root:04:27:24 [Epoch 1 Batch 170/186] loss=0.2682, lr=0.0000180, metrics:pearsonr:0.5855
+INFO:root:04:27:25 [Epoch 1 Batch 180/186] loss=0.2268, lr=0.0000178, metrics:pearsonr:0.6013
+INFO:root:04:27:26 Now we are doing evaluation on dev with gpu(0).
+INFO:root:04:27:26 [Batch 10/188] loss=0.1964, metrics:pearsonr:0.9240
+INFO:root:04:27:26 [Batch 20/188] loss=0.2029, metrics:pearsonr:0.9312
+INFO:root:04:27:27 [Batch 30/188] loss=0.1690, metrics:pearsonr:0.9320
+INFO:root:04:27:27 [Batch 40/188] loss=0.2815, metrics:pearsonr:0.9231
+INFO:root:04:27:27 [Batch 50/188] loss=0.2446, metrics:pearsonr:0.9188
+INFO:root:04:27:27 [Batch 60/188] loss=0.1665, metrics:pearsonr:0.9205
+INFO:root:04:27:27 [Batch 70/188] loss=0.3285, metrics:pearsonr:0.9133
+INFO:root:04:27:27 [Batch 80/188] loss=0.2654, metrics:pearsonr:0.9111
+INFO:root:04:27:28 [Batch 90/188] loss=0.3748, metrics:pearsonr:0.9015
+INFO:root:04:27:28 [Batch 100/188] loss=0.2416, metrics:pearsonr:0.8989
+INFO:root:04:27:28 [Batch 110/188] loss=0.2666, metrics:pearsonr:0.8932
+INFO:root:04:27:28 [Batch 120/188] loss=0.2792, metrics:pearsonr:0.8904
+INFO:root:04:27:28 [Batch 130/188] loss=0.2010, metrics:pearsonr:0.8909
+INFO:root:04:27:28 [Batch 140/188] loss=0.1779, metrics:pearsonr:0.8930
+INFO:root:04:27:29 [Batch 150/188] loss=0.1559, metrics:pearsonr:0.8940
+INFO:root:04:27:29 [Batch 160/188] loss=0.2053, metrics:pearsonr:0.8939
+INFO:root:04:27:29 [Batch 170/188] loss=0.2128, metrics:pearsonr:0.8932
+INFO:root:04:27:29 [Batch 180/188] loss=0.2666, metrics:pearsonr:0.8912
+INFO:root:04:27:29 validation metrics:pearsonr:0.8910
+INFO:root:04:27:29 Time cost=3.22s, throughput=467.47 samples/s
+INFO:root:04:27:30 params saved in: ./output_dir/model_bert_STS-B_0.params
+INFO:root:04:27:30 Time cost=26.37s
+INFO:root:04:27:31 [Epoch 2 Batch 10/186] loss=0.2125, lr=0.0000174, metrics:pearsonr:0.9066
+INFO:root:04:27:33 [Epoch 2 Batch 20/186] loss=0.1993, lr=0.0000171, metrics:pearsonr:0.8988
+INFO:root:04:27:34 [Epoch 2 Batch 30/186] loss=0.1767, lr=0.0000169, metrics:pearsonr:0.9088
+INFO:root:04:27:35 [Epoch 2 Batch 40/186] loss=0.1865, lr=0.0000166, metrics:pearsonr:0.9086
+INFO:root:04:27:36 [Epoch 2 Batch 50/186] loss=0.1736, lr=0.0000164, metrics:pearsonr:0.9092
+INFO:root:04:27:37 [Epoch 2 Batch 60/186] loss=0.1796, lr=0.0000161, metrics:pearsonr:0.9097
+INFO:root:04:27:38 [Epoch 2 Batch 70/186] loss=0.1830, lr=0.0000159, metrics:pearsonr:0.9110
+INFO:root:04:27:39 [Epoch 2 Batch 80/186] loss=0.2054, lr=0.0000156, metrics:pearsonr:0.9093
+INFO:root:04:27:40 [Epoch 2 Batch 90/186] loss=0.2154, lr=0.0000154, metrics:pearsonr:0.9069
+INFO:root:04:27:42 [Epoch 2 Batch 100/186] loss=0.1643, lr=0.0000152, metrics:pearsonr:0.9085
+INFO:root:04:27:43 [Epoch 2 Batch 110/186] loss=0.1976, lr=0.0000149, metrics:pearsonr:0.9088
+INFO:root:04:27:44 [Epoch 2 Batch 120/186] loss=0.1669, lr=0.0000147, metrics:pearsonr:0.9094
+INFO:root:04:27:45 [Epoch 2 Batch 130/186] loss=0.1826, lr=0.0000144, metrics:pearsonr:0.9088
+INFO:root:04:27:46 [Epoch 2 Batch 140/186] loss=0.1740, lr=0.0000142, metrics:pearsonr:0.9083
+INFO:root:04:27:47 [Epoch 2 Batch 150/186] loss=0.1869, lr=0.0000139, metrics:pearsonr:0.9079
+INFO:root:04:27:48 [Epoch 2 Batch 160/186] loss=0.2017, lr=0.0000137, metrics:pearsonr:0.9074
+INFO:root:04:27:49 [Epoch 2 Batch 170/186] loss=0.1681, lr=0.0000134, metrics:pearsonr:0.9078
+INFO:root:04:27:50 [Epoch 2 Batch 180/186] loss=0.1615, lr=0.0000132, metrics:pearsonr:0.9090
+INFO:root:04:27:51 Now we are doing evaluation on dev with gpu(0).
+INFO:root:04:27:51 [Batch 10/188] loss=0.1701, metrics:pearsonr:0.9377
+INFO:root:04:27:51 [Batch 20/188] loss=0.1612, metrics:pearsonr:0.9442
+INFO:root:04:27:51 [Batch 30/188] loss=0.1650, metrics:pearsonr:0.9415
+INFO:root:04:27:51 [Batch 40/188] loss=0.1976, metrics:pearsonr:0.9369
+INFO:root:04:27:52 [Batch 50/188] loss=0.2091, metrics:pearsonr:0.9331
+INFO:root:04:27:52 [Batch 60/188] loss=0.1240, metrics:pearsonr:0.9358
+INFO:root:04:27:52 [Batch 70/188] loss=0.2863, metrics:pearsonr:0.9288
+INFO:root:04:27:52 [Batch 80/188] loss=0.2148, metrics:pearsonr:0.9267
+INFO:root:04:27:52 [Batch 90/188] loss=0.3524, metrics:pearsonr:0.9163
+INFO:root:04:27:52 [Batch 100/188] loss=0.2587, metrics:pearsonr:0.9114
+INFO:root:04:27:53 [Batch 110/188] loss=0.2672, metrics:pearsonr:0.9050
+INFO:root:04:27:53 [Batch 120/188] loss=0.2762, metrics:pearsonr:0.9013
+INFO:root:04:27:53 [Batch 130/188] loss=0.1914, metrics:pearsonr:0.9015
+INFO:root:04:27:53 [Batch 140/188] loss=0.1941, metrics:pearsonr:0.9030
+INFO:root:04:27:53 [Batch 150/188] loss=0.1684, metrics:pearsonr:0.9034
+INFO:root:04:27:53 [Batch 160/188] loss=0.2332, metrics:pearsonr:0.9026
+INFO:root:04:27:54 [Batch 170/188] loss=0.2447, metrics:pearsonr:0.9015
+INFO:root:04:27:54 [Batch 180/188] loss=0.2437, metrics:pearsonr:0.9007
+INFO:root:04:27:54 validation metrics:pearsonr:0.9004
+INFO:root:04:27:54 Time cost=2.92s, throughput=515.63 samples/s
+INFO:root:04:27:55 params saved in: ./output_dir/model_bert_STS-B_1.params
+INFO:root:04:27:55 Time cost=24.59s
+INFO:root:04:27:56 [Epoch 3 Batch 10/186] loss=0.1064, lr=0.0000128, metrics:pearsonr:0.9422
+INFO:root:04:27:57 [Epoch 3 Batch 20/186] loss=0.0958, lr=0.0000125, metrics:pearsonr:0.9489
+INFO:root:04:27:58 [Epoch 3 Batch 30/186] loss=0.1009, lr=0.0000123, metrics:pearsonr:0.9503
+INFO:root:04:28:00 [Epoch 3 Batch 40/186] loss=0.0887, lr=0.0000120, metrics:pearsonr:0.9521
+INFO:root:04:28:01 [Epoch 3 Batch 50/186] loss=0.0993, lr=0.0000118, metrics:pearsonr:0.9525
+INFO:root:04:28:02 [Epoch 3 Batch 60/186] loss=0.0940, lr=0.0000115, metrics:pearsonr:0.9542
+INFO:root:04:28:03 [Epoch 3 Batch 70/186] loss=0.1059, lr=0.0000113, metrics:pearsonr:0.9542
+INFO:root:04:28:04 [Epoch 3 Batch 80/186] loss=0.0964, lr=0.0000111, metrics:pearsonr:0.9546
+INFO:root:04:28:05 [Epoch 3 Batch 90/186] loss=0.0899, lr=0.0000108, metrics:pearsonr:0.9546
+INFO:root:04:28:06 [Epoch 3 Batch 100/186] loss=0.0925, lr=0.0000106, metrics:pearsonr:0.9551
+INFO:root:04:28:07 [Epoch 3 Batch 110/186] loss=0.0828, lr=0.0000103, metrics:pearsonr:0.9551
+INFO:root:04:28:08 [Epoch 3 Batch 120/186] loss=0.0868, lr=0.0000101, metrics:pearsonr:0.9552
+INFO:root:04:28:09 [Epoch 3 Batch 130/186] loss=0.0894, lr=0.0000098, metrics:pearsonr:0.9551
+INFO:root:04:28:11 [Epoch 3 Batch 140/186] loss=0.1161, lr=0.0000096, metrics:pearsonr:0.9539
+INFO:root:04:28:12 [Epoch 3 Batch 150/186] loss=0.0878, lr=0.0000093, metrics:pearsonr:0.9541
+INFO:root:04:28:13 [Epoch 3 Batch 160/186] loss=0.0973, lr=0.0000091, metrics:pearsonr:0.9542
+INFO:root:04:28:14 [Epoch 3 Batch 170/186] loss=0.0834, lr=0.0000088, metrics:pearsonr:0.9547
+INFO:root:04:28:15 [Epoch 3 Batch 180/186] loss=0.1055, lr=0.0000086, metrics:pearsonr:0.9545
+INFO:root:04:28:16 Now we are doing evaluation on dev with gpu(0).
+INFO:root:04:28:16 [Batch 10/188] loss=0.1523, metrics:pearsonr:0.9427
+INFO:root:04:28:16 [Batch 20/188] loss=0.1635, metrics:pearsonr:0.9471
+INFO:root:04:28:16 [Batch 30/188] loss=0.1505, metrics:pearsonr:0.9459
+INFO:root:04:28:16 [Batch 40/188] loss=0.1863, metrics:pearsonr:0.9421
+INFO:root:04:28:16 [Batch 50/188] loss=0.2061, metrics:pearsonr:0.9378
+INFO:root:04:28:16 [Batch 60/188] loss=0.1104, metrics:pearsonr:0.9405
+INFO:root:04:28:17 [Batch 70/188] loss=0.3029, metrics:pearsonr:0.9325
+INFO:root:04:28:17 [Batch 80/188] loss=0.2330, metrics:pearsonr:0.9305
+INFO:root:04:28:17 [Batch 90/188] loss=0.3750, metrics:pearsonr:0.9198
+INFO:root:04:28:17 [Batch 100/188] loss=0.2723, metrics:pearsonr:0.9152
+INFO:root:04:28:17 [Batch 110/188] loss=0.2558, metrics:pearsonr:0.9086
+INFO:root:04:28:17 [Batch 120/188] loss=0.3045, metrics:pearsonr:0.9039
+INFO:root:04:28:18 [Batch 130/188] loss=0.1875, metrics:pearsonr:0.9042
+INFO:root:04:28:18 [Batch 140/188] loss=0.1634, metrics:pearsonr:0.9059
+INFO:root:04:28:18 [Batch 150/188] loss=0.1392, metrics:pearsonr:0.9067
+INFO:root:04:28:18 [Batch 160/188] loss=0.2007, metrics:pearsonr:0.9061
+INFO:root:04:28:18 [Batch 170/188] loss=0.2210, metrics:pearsonr:0.9048
+INFO:root:04:28:18 [Batch 180/188] loss=0.2268, metrics:pearsonr:0.9036
+INFO:root:04:28:18 validation metrics:pearsonr:0.9034
+INFO:root:04:28:18 Time cost=2.91s, throughput=517.01 samples/s
+INFO:root:04:28:20 params saved in: ./output_dir/model_bert_STS-B_2.params
+INFO:root:04:28:20 Time cost=24.59s
+INFO:root:04:28:21 [Epoch 4 Batch 10/186] loss=0.0695, lr=0.0000082, metrics:pearsonr:0.9696
+INFO:root:04:28:22 [Epoch 4 Batch 20/186] loss=0.0697, lr=0.0000079, metrics:pearsonr:0.9689
+INFO:root:04:28:23 [Epoch 4 Batch 30/186] loss=0.0672, lr=0.0000077, metrics:pearsonr:0.9682
+INFO:root:04:28:24 [Epoch 4 Batch 40/186] loss=0.0736, lr=0.0000074, metrics:pearsonr:0.9673
+INFO:root:04:28:25 [Epoch 4 Batch 50/186] loss=0.0571, lr=0.0000072, metrics:pearsonr:0.9679
+INFO:root:04:28:26 [Epoch 4 Batch 60/186] loss=0.0775, lr=0.0000069, metrics:pearsonr:0.9679
+INFO:root:04:28:28 [Epoch 4 Batch 70/186] loss=0.0653, lr=0.0000067, metrics:pearsonr:0.9681
+INFO:root:04:28:29 [Epoch 4 Batch 80/186] loss=0.0702, lr=0.0000065, metrics:pearsonr:0.9677
+INFO:root:04:28:30 [Epoch 4 Batch 90/186] loss=0.0641, lr=0.0000062, metrics:pearsonr:0.9672
+INFO:root:04:28:31 [Epoch 4 Batch 100/186] loss=0.0613, lr=0.0000060, metrics:pearsonr:0.9678
+INFO:root:04:28:32 [Epoch 4 Batch 110/186] loss=0.0684, lr=0.0000057, metrics:pearsonr:0.9681
+INFO:root:04:28:33 [Epoch 4 Batch 120/186] loss=0.0604, lr=0.0000055, metrics:pearsonr:0.9681
+INFO:root:04:28:34 [Epoch 4 Batch 130/186] loss=0.0662, lr=0.0000052, metrics:pearsonr:0.9682
+INFO:root:04:28:35 [Epoch 4 Batch 140/186] loss=0.0642, lr=0.0000050, metrics:pearsonr:0.9685
+INFO:root:04:28:36 [Epoch 4 Batch 150/186] loss=0.0709, lr=0.0000047, metrics:pearsonr:0.9685
+INFO:root:04:28:37 [Epoch 4 Batch 160/186] loss=0.0623, lr=0.0000045, metrics:pearsonr:0.9687
+INFO:root:04:28:39 [Epoch 4 Batch 170/186] loss=0.0628, lr=0.0000042, metrics:pearsonr:0.9686
+INFO:root:04:28:40 [Epoch 4 Batch 180/186] loss=0.0719, lr=0.0000040, metrics:pearsonr:0.9684
+INFO:root:04:28:40 Now we are doing evaluation on dev with gpu(0).
+INFO:root:04:28:40 [Batch 10/188] loss=0.1636, metrics:pearsonr:0.9383
+INFO:root:04:28:40 [Batch 20/188] loss=0.1687, metrics:pearsonr:0.9433
+INFO:root:04:28:41 [Batch 30/188] loss=0.1242, metrics:pearsonr:0.9450
+INFO:root:04:28:41 [Batch 40/188] loss=0.1781, metrics:pearsonr:0.9419
+INFO:root:04:28:41 [Batch 50/188] loss=0.1929, metrics:pearsonr:0.9386
+INFO:root:04:28:41 [Batch 60/188] loss=0.1110, metrics:pearsonr:0.9415
+INFO:root:04:28:41 [Batch 70/188] loss=0.2980, metrics:pearsonr:0.9333
+INFO:root:04:28:41 [Batch 80/188] loss=0.2274, metrics:pearsonr:0.9307
+INFO:root:04:28:42 [Batch 90/188] loss=0.3642, metrics:pearsonr:0.9196
+INFO:root:04:28:42 [Batch 100/188] loss=0.2594, metrics:pearsonr:0.9148
+INFO:root:04:28:42 [Batch 110/188] loss=0.2700, metrics:pearsonr:0.9078
+INFO:root:04:28:42 [Batch 120/188] loss=0.3053, metrics:pearsonr:0.9028
+INFO:root:04:28:42 [Batch 130/188] loss=0.1881, metrics:pearsonr:0.9029
+INFO:root:04:28:42 [Batch 140/188] loss=0.1650, metrics:pearsonr:0.9047
+INFO:root:04:28:43 [Batch 150/188] loss=0.1393, metrics:pearsonr:0.9054
+INFO:root:04:28:43 [Batch 160/188] loss=0.2182, metrics:pearsonr:0.9046
+INFO:root:04:28:43 [Batch 170/188] loss=0.2394, metrics:pearsonr:0.9032
+INFO:root:04:28:43 [Batch 180/188] loss=0.2298, metrics:pearsonr:0.9025
+INFO:root:04:28:43 validation metrics:pearsonr:0.9024
+INFO:root:04:28:43 Time cost=2.92s, throughput=514.64 samples/s
+INFO:root:04:28:44 params saved in: ./output_dir/model_bert_STS-B_3.params
+INFO:root:04:28:44 Time cost=24.74s
+INFO:root:04:28:45 [Epoch 5 Batch 10/186] loss=0.0482, lr=0.0000036, metrics:pearsonr:0.9784
+INFO:root:04:28:47 [Epoch 5 Batch 20/186] loss=0.0478, lr=0.0000033, metrics:pearsonr:0.9767
+INFO:root:04:28:48 [Epoch 5 Batch 30/186] loss=0.0455, lr=0.0000031, metrics:pearsonr:0.9760
+INFO:root:04:28:49 [Epoch 5 Batch 40/186] loss=0.0504, lr=0.0000028, metrics:pearsonr:0.9762
+INFO:root:04:28:50 [Epoch 5 Batch 50/186] loss=0.0415, lr=0.0000026, metrics:pearsonr:0.9764
+INFO:root:04:28:51 [Epoch 5 Batch 60/186] loss=0.0537, lr=0.0000023, metrics:pearsonr:0.9763
+INFO:root:04:28:53 [Epoch 5 Batch 70/186] loss=0.0599, lr=0.0000021, metrics:pearsonr:0.9759
+INFO:root:04:28:55 [Epoch 5 Batch 80/186] loss=0.0568, lr=0.0000019, metrics:pearsonr:0.9760
+INFO:root:04:28:56 [Epoch 5 Batch 90/186] loss=0.0459, lr=0.0000016, metrics:pearsonr:0.9761
+INFO:root:04:28:57 [Epoch 5 Batch 100/186] loss=0.0482, lr=0.0000014, metrics:pearsonr:0.9762
+INFO:root:04:28:58 [Epoch 5 Batch 110/186] loss=0.0441, lr=0.0000011, metrics:pearsonr:0.9768
+INFO:root:04:28:59 [Epoch 5 Batch 120/186] loss=0.0477, lr=0.0000009, metrics:pearsonr:0.9769
+INFO:root:04:29:00 [Epoch 5 Batch 130/186] loss=0.0480, lr=0.0000006, metrics:pearsonr:0.9770
+INFO:root:04:29:01 [Epoch 5 Batch 140/186] loss=0.0437, lr=0.0000004, metrics:pearsonr:0.9771
+INFO:root:04:29:02 [Epoch 5 Batch 150/186] loss=0.0581, lr=0.0000001, metrics:pearsonr:0.9766
+INFO:root:04:29:03 Finish training step: 898
+INFO:root:04:29:03 Now we are doing evaluation on dev with gpu(0).
+INFO:root:04:29:03 [Batch 10/188] loss=0.1655, metrics:pearsonr:0.9379
+INFO:root:04:29:03 [Batch 20/188] loss=0.1691, metrics:pearsonr:0.9431
+INFO:root:04:29:03 [Batch 30/188] loss=0.1231, metrics:pearsonr:0.9452
+INFO:root:04:29:03 [Batch 40/188] loss=0.1781, metrics:pearsonr:0.9421
+INFO:root:04:29:04 [Batch 50/188] loss=0.2032, metrics:pearsonr:0.9384
+INFO:root:04:29:04 [Batch 60/188] loss=0.1151, metrics:pearsonr:0.9412
+INFO:root:04:29:04 [Batch 70/188] loss=0.3041, metrics:pearsonr:0.9330
+INFO:root:04:29:04 [Batch 80/188] loss=0.2338, metrics:pearsonr:0.9303
+INFO:root:04:29:04 [Batch 90/188] loss=0.3693, metrics:pearsonr:0.9192
+INFO:root:04:29:04 [Batch 100/188] loss=0.2605, metrics:pearsonr:0.9144
+INFO:root:04:29:05 [Batch 110/188] loss=0.2713, metrics:pearsonr:0.9075
+INFO:root:04:29:05 [Batch 120/188] loss=0.3024, metrics:pearsonr:0.9027
+INFO:root:04:29:05 [Batch 130/188] loss=0.1898, metrics:pearsonr:0.9027
+INFO:root:04:29:05 [Batch 140/188] loss=0.1653, metrics:pearsonr:0.9046
+INFO:root:04:29:05 [Batch 150/188] loss=0.1373, metrics:pearsonr:0.9054
+INFO:root:04:29:05 [Batch 160/188] loss=0.2164, metrics:pearsonr:0.9047
+INFO:root:04:29:06 [Batch 170/188] loss=0.2402, metrics:pearsonr:0.9033
+INFO:root:04:29:06 [Batch 180/188] loss=0.2323, metrics:pearsonr:0.9026
+INFO:root:04:29:06 validation metrics:pearsonr:0.9023
+INFO:root:04:29:06 Time cost=2.91s, throughput=516.48 samples/s
+INFO:root:04:29:07 params saved in: ./output_dir/model_bert_STS-B_4.params
+INFO:root:04:29:07 Time cost=22.60s
+INFO:root:04:29:07 Best model at epoch 2. Validation metrics:pearsonr:0.9034
+INFO:root:04:29:07 Now we are doing testing on test with gpu(0).
+INFO:root:04:29:10 Time cost=2.43s, throughput=568.96 samples/s
