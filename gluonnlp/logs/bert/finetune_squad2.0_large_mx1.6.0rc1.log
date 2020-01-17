@@ -178,3 +178,16 @@ INFO:gluonnlp:21:31:28 start prediction
 INFO:gluonnlp:21:34:43 Time cost=195.41 s, Thoughput=62.60 samples/s
 INFO:gluonnlp:21:34:43 Get prediction results...
 INFO:gluonnlp:21:35:31 Please run evaluate-v2.0.py to get evaluation results for SQuAD 2.0
+
+{
+  "exact": 78.1436873578708,
+  "f1": 81.26842941027371,
+  "total": 11873,
+  "HasAns_exact": 73.56612685560054,
+  "HasAns_f1": 79.82457192783059,
+  "HasAns_total": 5928,
+  "NoAns_exact": 82.70815811606391,
+  "NoAns_f1": 82.70815811606391,
+  "NoAns_total": 5945
+}
+
