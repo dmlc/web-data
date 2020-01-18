@@ -1,0 +1,2699 @@
+Namespace(aux=False, aux_weight=0.5, backbone='resnet50', base_size=2048, batch_size=16, checkname='default', crop_size=768, ctx=[gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)], dataset='citys', dtype='float32', epochs=240, eval=False, kvstore='device', log_interval=20, logging_file='train.log', lr=0.01, mode=None, model='icnet', model_zoo=None, momentum=0.9, ngpus=8, no_cuda=False, no_val=False, no_wd=False, norm_kwargs={'num_devices': 8}, norm_layer=<class 'mxnet.gluon.contrib.nn.basic_layers.SyncBatchNorm'>, resume=None, save_dir='runs/citys/icnet/resnet50/', start_epoch=0, syncbn=True, test_batch_size=16, train_split='train', weight_decay=0.0001, workers=32)
+ICNet(
+  (conv1): HybridSequential(
+    (0): Conv2D(3 -> 64, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+    (1): SyncBatchNorm(eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, ndev=8, key='icnet0_resnetv1s_syncbatchnorm0_', in_channels=64)
+    (2): Activation(relu)
+    (3): Conv2D(64 -> 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+    (4): SyncBatchNorm(eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, ndev=8, key='icnet0_resnetv1s_syncbatchnorm1_', in_channels=64)
+    (5): Activation(relu)
+    (6): Conv2D(64 -> 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  )
+  (bn1): SyncBatchNorm(eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, ndev=8, key='icnet0_resnetv1s_syncbatchnorm2_', in_channels=128)
+  (relu): Activation(relu)
+  (maxpool): MaxPool2D(size=(3, 3), stride=(2, 2), padding=(1, 1), ceil_mode=False, global_pool=False, pool_type=max, layout=NCHW)
+  (layer1): HybridSequential(
+    (0): BottleneckV1b(
+      (conv1): Conv2D(128 -> 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): SyncBatchNorm(eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, ndev=8, key='icnet0_resnetv1s_layers1_syncbatchnorm0_', in_channels=64)
+      (relu1): Activation(relu)
+      (conv2): Conv2D(64 -> 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): SyncBatchNorm(eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, ndev=8, key='icnet0_resnetv1s_layers1_syncbatchnorm1_', in_channels=64)
+      (relu2): Activation(relu)
+      (conv3): Conv2D(64 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): SyncBatchNorm(eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, ndev=8, key='icnet0_resnetv1s_layers1_syncbatchnorm2_', in_channels=256)
+      (relu3): Activation(relu)
+      (downsample): HybridSequential(
+        (0): Conv2D(128 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): SyncBatchNorm(eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, ndev=8, key='icnet0_resnetv1s_down1_syncbatchnorm0_', in_channels=256)
+      )
+    )
+    (1): BottleneckV1b(
+      (conv1): Conv2D(256 -> 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): SyncBatchNorm(eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, ndev=8, key='icnet0_resnetv1s_layers1_syncbatchnorm3_', in_channels=64)
+      (relu1): Activation(relu)
+      (conv2): Conv2D(64 -> 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): SyncBatchNorm(eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, ndev=8, key='icnet0_resnetv1s_layers1_syncbatchnorm4_', in_channels=64)
+      (relu2): Activation(relu)
+      (conv3): Conv2D(64 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): SyncBatchNorm(eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, ndev=8, key='icnet0_resnetv1s_layers1_syncbatchnorm5_', in_channels=256)
+      (relu3): Activation(relu)
+    )
+    (2): BottleneckV1b(
+      (conv1): Conv2D(256 -> 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): SyncBatchNorm(eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, ndev=8, key='icnet0_resnetv1s_layers1_syncbatchnorm6_', in_channels=64)
+      (relu1): Activation(relu)
+      (conv2): Conv2D(64 -> 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): SyncBatchNorm(eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, ndev=8, key='icnet0_resnetv1s_layers1_syncbatchnorm7_', in_channels=64)
+      (relu2): Activation(relu)
+      (conv3): Conv2D(64 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): SyncBatchNorm(eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, ndev=8, key='icnet0_resnetv1s_layers1_syncbatchnorm8_', in_channels=256)
+      (relu3): Activation(relu)
+    )
+  )
+  (layer2): HybridSequential(
+    (0): BottleneckV1b(
+      (conv1): Conv2D(256 -> 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): SyncBatchNorm(eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, ndev=8, key='icnet0_resnetv1s_layers2_syncbatchnorm0_', in_channels=128)
+      (relu1): Activation(relu)
+      (conv2): Conv2D(128 -> 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn2): SyncBatchNorm(eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, ndev=8, key='icnet0_resnetv1s_layers2_syncbatchnorm1_', in_channels=128)
+      (relu2): Activation(relu)
+      (conv3): Conv2D(128 -> 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): SyncBatchNorm(eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, ndev=8, key='icnet0_resnetv1s_layers2_syncbatchnorm2_', in_channels=512)
+      (relu3): Activation(relu)
+      (downsample): HybridSequential(
+        (0): Conv2D(256 -> 512, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): SyncBatchNorm(eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, ndev=8, key='icnet0_resnetv1s_down2_syncbatchnorm0_', in_channels=512)
+      )
+    )
+    (1): BottleneckV1b(
+      (conv1): Conv2D(512 -> 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): SyncBatchNorm(eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, ndev=8, key='icnet0_resnetv1s_layers2_syncbatchnorm3_', in_channels=128)
+      (relu1): Activation(relu)
+      (conv2): Conv2D(128 -> 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): SyncBatchNorm(eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, ndev=8, key='icnet0_resnetv1s_layers2_syncbatchnorm4_', in_channels=128)
+      (relu2): Activation(relu)
+      (conv3): Conv2D(128 -> 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): SyncBatchNorm(eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, ndev=8, key='icnet0_resnetv1s_layers2_syncbatchnorm5_', in_channels=512)
+      (relu3): Activation(relu)
+    )
+    (2): BottleneckV1b(
+      (conv1): Conv2D(512 -> 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): SyncBatchNorm(eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, ndev=8, key='icnet0_resnetv1s_layers2_syncbatchnorm6_', in_channels=128)
+      (relu1): Activation(relu)
+      (conv2): Conv2D(128 -> 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): SyncBatchNorm(eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, ndev=8, key='icnet0_resnetv1s_layers2_syncbatchnorm7_', in_channels=128)
+      (relu2): Activation(relu)
+      (conv3): Conv2D(128 -> 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): SyncBatchNorm(eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, ndev=8, key='icnet0_resnetv1s_layers2_syncbatchnorm8_', in_channels=512)
+      (relu3): Activation(relu)
+    )
+    (3): BottleneckV1b(
+      (conv1): Conv2D(512 -> 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): SyncBatchNorm(eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, ndev=8, key='icnet0_resnetv1s_layers2_syncbatchnorm9_', in_channels=128)
+      (relu1): Activation(relu)
+      (conv2): Conv2D(128 -> 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): SyncBatchNorm(eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, ndev=8, key='icnet0_resnetv1s_layers2_syncbatchnorm10_', in_channels=128)
+      (relu2): Activation(relu)
+      (conv3): Conv2D(128 -> 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): SyncBatchNorm(eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, ndev=8, key='icnet0_resnetv1s_layers2_syncbatchnorm11_', in_channels=512)
+      (relu3): Activation(relu)
+    )
+  )
+  (layer3): HybridSequential(
+    (0): BottleneckV1b(
+      (conv1): Conv2D(512 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): SyncBatchNorm(eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, ndev=8, key='icnet0_resnetv1s_layers3_syncbatchnorm0_', in_channels=256)
+      (relu1): Activation(relu)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): SyncBatchNorm(eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, ndev=8, key='icnet0_resnetv1s_layers3_syncbatchnorm1_', in_channels=256)
+      (relu2): Activation(relu)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): SyncBatchNorm(eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, ndev=8, key='icnet0_resnetv1s_layers3_syncbatchnorm2_', in_channels=1024)
+      (relu3): Activation(relu)
+      (downsample): HybridSequential(
+        (0): Conv2D(512 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): SyncBatchNorm(eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, ndev=8, key='icnet0_resnetv1s_down3_syncbatchnorm0_', in_channels=1024)
+      )
+    )
+    (1): BottleneckV1b(
+      (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): SyncBatchNorm(eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, ndev=8, key='icnet0_resnetv1s_layers3_syncbatchnorm3_', in_channels=256)
+      (relu1): Activation(relu)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+      (bn2): SyncBatchNorm(eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, ndev=8, key='icnet0_resnetv1s_layers3_syncbatchnorm4_', in_channels=256)
+      (relu2): Activation(relu)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): SyncBatchNorm(eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, ndev=8, key='icnet0_resnetv1s_layers3_syncbatchnorm5_', in_channels=1024)
+      (relu3): Activation(relu)
+    )
+    (2): BottleneckV1b(
+      (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): SyncBatchNorm(eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, ndev=8, key='icnet0_resnetv1s_layers3_syncbatchnorm6_', in_channels=256)
+      (relu1): Activation(relu)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+      (bn2): SyncBatchNorm(eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, ndev=8, key='icnet0_resnetv1s_layers3_syncbatchnorm7_', in_channels=256)
+      (relu2): Activation(relu)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): SyncBatchNorm(eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, ndev=8, key='icnet0_resnetv1s_layers3_syncbatchnorm8_', in_channels=1024)
+      (relu3): Activation(relu)
+    )
+    (3): BottleneckV1b(
+      (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): SyncBatchNorm(eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, ndev=8, key='icnet0_resnetv1s_layers3_syncbatchnorm9_', in_channels=256)
+      (relu1): Activation(relu)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+      (bn2): SyncBatchNorm(eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, ndev=8, key='icnet0_resnetv1s_layers3_syncbatchnorm10_', in_channels=256)
+      (relu2): Activation(relu)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): SyncBatchNorm(eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, ndev=8, key='icnet0_resnetv1s_layers3_syncbatchnorm11_', in_channels=1024)
+      (relu3): Activation(relu)
+    )
+    (4): BottleneckV1b(
+      (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): SyncBatchNorm(eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, ndev=8, key='icnet0_resnetv1s_layers3_syncbatchnorm12_', in_channels=256)
+      (relu1): Activation(relu)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+      (bn2): SyncBatchNorm(eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, ndev=8, key='icnet0_resnetv1s_layers3_syncbatchnorm13_', in_channels=256)
+      (relu2): Activation(relu)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): SyncBatchNorm(eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, ndev=8, key='icnet0_resnetv1s_layers3_syncbatchnorm14_', in_channels=1024)
+      (relu3): Activation(relu)
+    )
+    (5): BottleneckV1b(
+      (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): SyncBatchNorm(eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, ndev=8, key='icnet0_resnetv1s_layers3_syncbatchnorm15_', in_channels=256)
+      (relu1): Activation(relu)
+      (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+      (bn2): SyncBatchNorm(eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, ndev=8, key='icnet0_resnetv1s_layers3_syncbatchnorm16_', in_channels=256)
+      (relu2): Activation(relu)
+      (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): SyncBatchNorm(eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, ndev=8, key='icnet0_resnetv1s_layers3_syncbatchnorm17_', in_channels=1024)
+      (relu3): Activation(relu)
+    )
+  )
+  (layer4): HybridSequential(
+    (0): BottleneckV1b(
+      (conv1): Conv2D(1024 -> 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): SyncBatchNorm(eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, ndev=8, key='icnet0_resnetv1s_layers4_syncbatchnorm0_', in_channels=512)
+      (relu1): Activation(relu)
+      (conv2): Conv2D(512 -> 512, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+      (bn2): SyncBatchNorm(eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, ndev=8, key='icnet0_resnetv1s_layers4_syncbatchnorm1_', in_channels=512)
+      (relu2): Activation(relu)
+      (conv3): Conv2D(512 -> 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): SyncBatchNorm(eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, ndev=8, key='icnet0_resnetv1s_layers4_syncbatchnorm2_', in_channels=2048)
+      (relu3): Activation(relu)
+      (downsample): HybridSequential(
+        (0): Conv2D(1024 -> 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): SyncBatchNorm(eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, ndev=8, key='icnet0_resnetv1s_down4_syncbatchnorm0_', in_channels=2048)
+      )
+    )
+    (1): BottleneckV1b(
+      (conv1): Conv2D(2048 -> 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): SyncBatchNorm(eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, ndev=8, key='icnet0_resnetv1s_layers4_syncbatchnorm3_', in_channels=512)
+      (relu1): Activation(relu)
+      (conv2): Conv2D(512 -> 512, kernel_size=(3, 3), stride=(1, 1), padding=(4, 4), dilation=(4, 4), bias=False)
+      (bn2): SyncBatchNorm(eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, ndev=8, key='icnet0_resnetv1s_layers4_syncbatchnorm4_', in_channels=512)
+      (relu2): Activation(relu)
+      (conv3): Conv2D(512 -> 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): SyncBatchNorm(eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, ndev=8, key='icnet0_resnetv1s_layers4_syncbatchnorm5_', in_channels=2048)
+      (relu3): Activation(relu)
+    )
+    (2): BottleneckV1b(
+      (conv1): Conv2D(2048 -> 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): SyncBatchNorm(eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, ndev=8, key='icnet0_resnetv1s_layers4_syncbatchnorm6_', in_channels=512)
+      (relu1): Activation(relu)
+      (conv2): Conv2D(512 -> 512, kernel_size=(3, 3), stride=(1, 1), padding=(4, 4), dilation=(4, 4), bias=False)
+      (bn2): SyncBatchNorm(eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, ndev=8, key='icnet0_resnetv1s_layers4_syncbatchnorm7_', in_channels=512)
+      (relu2): Activation(relu)
+      (conv3): Conv2D(512 -> 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): SyncBatchNorm(eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, ndev=8, key='icnet0_resnetv1s_layers4_syncbatchnorm8_', in_channels=2048)
+      (relu3): Activation(relu)
+    )
+  )
+  (conv_sub1): HybridSequential(
+    (0): ConvBnRelu(
+      (conv): Conv2D(3 -> 32, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn): SyncBatchNorm(eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, ndev=8, key='icnet0_hybridsequential0_convbnrelu0_syncbatchnorm0_', in_channels=32)
+      (relu): Activation(relu)
+    )
+    (1): ConvBnRelu(
+      (conv): Conv2D(32 -> 32, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn): SyncBatchNorm(eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, ndev=8, key='icnet0_hybridsequential0_convbnrelu1_syncbatchnorm0_', in_channels=32)
+      (relu): Activation(relu)
+    )
+    (2): ConvBnRelu(
+      (conv): Conv2D(32 -> 64, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn): SyncBatchNorm(eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, ndev=8, key='icnet0_hybridsequential0_convbnrelu2_syncbatchnorm0_', in_channels=64)
+      (relu): Activation(relu)
+    )
+  )
+  (psp_head): HybridSequential(
+    (0): _PyramidPooling(
+      (conv1): HybridSequential(
+        (0): Conv2D(2048 -> 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): SyncBatchNorm(eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, ndev=8, key='icnet0__pyramidpooling0_hybridsequential0_syncbatchnorm0_', in_channels=512)
+        (2): Activation(relu)
+      )
+      (conv2): HybridSequential(
+        (0): Conv2D(2048 -> 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): SyncBatchNorm(eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, ndev=8, key='icnet0__pyramidpooling0_hybridsequential1_syncbatchnorm0_', in_channels=512)
+        (2): Activation(relu)
+      )
+      (conv3): HybridSequential(
+        (0): Conv2D(2048 -> 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): SyncBatchNorm(eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, ndev=8, key='icnet0__pyramidpooling0_hybridsequential2_syncbatchnorm0_', in_channels=512)
+        (2): Activation(relu)
+      )
+      (conv4): HybridSequential(
+        (0): Conv2D(2048 -> 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): SyncBatchNorm(eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, ndev=8, key='icnet0__pyramidpooling0_hybridsequential3_syncbatchnorm0_', in_channels=512)
+        (2): Activation(relu)
+      )
+    )
+    (1): HybridSequential(
+      (0): Conv2D(4096 -> 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (1): SyncBatchNorm(eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, ndev=8, key='icnet0__psphead0_syncbatchnorm0_', in_channels=512)
+      (2): Activation(relu)
+      (3): Dropout(p = 0.1, axes=())
+    )
+  )
+  (head): _ICHead(
+    (cff_12): CascadeFeatureFusion(
+      (conv_low): HybridSequential(
+        (0): Conv2D(128 -> 128, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+        (1): SyncBatchNorm(eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, ndev=8, key='icnet0_cascadefeaturefusion0_hybridsequential0_syncbatchnorm0_', in_channels=128)
+      )
+      (conv_hign): HybridSequential(
+        (0): Conv2D(64 -> 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): SyncBatchNorm(eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, ndev=8, key='icnet0_cascadefeaturefusion0_hybridsequential1_syncbatchnorm0_', in_channels=128)
+      )
+      (conv_low_cls): Conv2D(128 -> 19, kernel_size=(1, 1), stride=(1, 1), bias=False)
+    )
+    (cff_24): CascadeFeatureFusion(
+      (conv_low): HybridSequential(
+        (0): Conv2D(256 -> 128, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+        (1): SyncBatchNorm(eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, ndev=8, key='icnet0_cascadefeaturefusion1_hybridsequential0_syncbatchnorm0_', in_channels=128)
+      )
+      (conv_hign): HybridSequential(
+        (0): Conv2D(256 -> 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): SyncBatchNorm(eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, ndev=8, key='icnet0_cascadefeaturefusion1_hybridsequential1_syncbatchnorm0_', in_channels=128)
+      )
+      (conv_low_cls): Conv2D(128 -> 19, kernel_size=(1, 1), stride=(1, 1), bias=False)
+    )
+    (conv_cls): Conv2D(128 -> 19, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  )
+  (conv_sub4): ConvBnRelu(
+    (conv): Conv2D(512 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+    (bn): SyncBatchNorm(eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, ndev=8, key='icnet0_convbnrelu0_syncbatchnorm0_', in_channels=256)
+    (relu): Activation(relu)
+  )
+  (conv_sub2): ConvBnRelu(
+    (conv): Conv2D(512 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+    (bn): SyncBatchNorm(eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, ndev=8, key='icnet0_convbnrelu1_syncbatchnorm0_', in_channels=256)
+    (relu): Activation(relu)
+  )
+)
+Starting Epoch: 0
+Total Epochs: 240
+Epoch 0 iteration 0020/0185: training loss 3.792
+Epoch 0 iteration 0040/0185: training loss 3.107
+Epoch 0 iteration 0060/0185: training loss 2.772
+Epoch 0 iteration 0080/0185: training loss 2.578
+Epoch 0 iteration 0100/0185: training loss 2.450
+Epoch 0 iteration 0120/0185: training loss 2.324
+Epoch 0 iteration 0140/0186: training loss 2.239
+Epoch 0 iteration 0160/0186: training loss 2.160
+Epoch 0 iteration 0180/0186: training loss 2.083
+Epoch 0 validation pixAcc: 0.885, mIoU: 0.276
+Epoch 1 iteration 0020/0185: training loss 1.440
+Epoch 1 iteration 0040/0185: training loss 1.484
+Epoch 1 iteration 0060/0185: training loss 1.415
+Epoch 1 iteration 0080/0185: training loss 1.383
+Epoch 1 iteration 0100/0185: training loss 1.346
+Epoch 1 iteration 0120/0185: training loss 1.327
+Epoch 1 iteration 0140/0186: training loss 1.323
+Epoch 1 iteration 0160/0186: training loss 1.318
+Epoch 1 iteration 0180/0186: training loss 1.304
+Epoch 1 validation pixAcc: 0.876, mIoU: 0.294
+Epoch 2 iteration 0020/0185: training loss 1.302
+Epoch 2 iteration 0040/0185: training loss 1.272
+Epoch 2 iteration 0060/0185: training loss 1.210
+Epoch 2 iteration 0080/0185: training loss 1.186
+Epoch 2 iteration 0100/0185: training loss 1.171
+Epoch 2 iteration 0120/0185: training loss 1.162
+Epoch 2 iteration 0140/0186: training loss 1.151
+Epoch 2 iteration 0160/0186: training loss 1.137
+Epoch 2 iteration 0180/0186: training loss 1.115
+Epoch 2 validation pixAcc: 0.895, mIoU: 0.359
+Epoch 3 iteration 0020/0185: training loss 1.055
+Epoch 3 iteration 0040/0185: training loss 0.983
+Epoch 3 iteration 0060/0185: training loss 1.012
+Epoch 3 iteration 0080/0185: training loss 1.012
+Epoch 3 iteration 0100/0185: training loss 0.980
+Epoch 3 iteration 0120/0185: training loss 0.959
+Epoch 3 iteration 0140/0186: training loss 0.943
+Epoch 3 iteration 0160/0186: training loss 0.938
+Epoch 3 iteration 0180/0186: training loss 0.941
+Epoch 3 validation pixAcc: 0.908, mIoU: 0.361
+Epoch 4 iteration 0020/0185: training loss 0.868
+Epoch 4 iteration 0040/0185: training loss 0.851
+Epoch 4 iteration 0060/0185: training loss 0.852
+Epoch 4 iteration 0080/0185: training loss 0.878
+Epoch 4 iteration 0100/0185: training loss 0.906
+Epoch 4 iteration 0120/0185: training loss 0.924
+Epoch 4 iteration 0140/0186: training loss 0.920
+Epoch 4 iteration 0160/0186: training loss 0.919
+Epoch 4 iteration 0180/0186: training loss 0.930
+Epoch 4 validation pixAcc: 0.909, mIoU: 0.371
+Epoch 5 iteration 0020/0185: training loss 0.886
+Epoch 5 iteration 0040/0185: training loss 0.871
+Epoch 5 iteration 0060/0185: training loss 0.849
+Epoch 5 iteration 0080/0185: training loss 0.854
+Epoch 5 iteration 0100/0185: training loss 0.842
+Epoch 5 iteration 0120/0185: training loss 0.833
+Epoch 5 iteration 0140/0186: training loss 0.821
+Epoch 5 iteration 0160/0186: training loss 0.820
+Epoch 5 iteration 0180/0186: training loss 0.816
+Epoch 5 validation pixAcc: 0.917, mIoU: 0.430
+Epoch 6 iteration 0020/0185: training loss 0.728
+Epoch 6 iteration 0040/0185: training loss 0.746
+Epoch 6 iteration 0060/0185: training loss 0.768
+Epoch 6 iteration 0080/0185: training loss 0.785
+Epoch 6 iteration 0100/0185: training loss 0.779
+Epoch 6 iteration 0120/0185: training loss 0.799
+Epoch 6 iteration 0140/0186: training loss 0.813
+Epoch 6 iteration 0160/0186: training loss 0.813
+Epoch 6 iteration 0180/0186: training loss 0.815
+Epoch 6 validation pixAcc: 0.891, mIoU: 0.381
+Epoch 7 iteration 0020/0185: training loss 0.775
+Epoch 7 iteration 0040/0185: training loss 0.778
+Epoch 7 iteration 0060/0185: training loss 0.781
+Epoch 7 iteration 0080/0185: training loss 0.802
+Epoch 7 iteration 0100/0185: training loss 0.824
+Epoch 7 iteration 0120/0185: training loss 0.833
+Epoch 7 iteration 0140/0186: training loss 0.833
+Epoch 7 iteration 0160/0186: training loss 0.836
+Epoch 7 iteration 0180/0186: training loss 0.826
+Epoch 7 validation pixAcc: 0.920, mIoU: 0.456
+Epoch 8 iteration 0020/0185: training loss 0.943
+Epoch 8 iteration 0040/0185: training loss 0.857
+Epoch 8 iteration 0060/0185: training loss 0.832
+Epoch 8 iteration 0080/0185: training loss 0.796
+Epoch 8 iteration 0100/0185: training loss 0.797
+Epoch 8 iteration 0120/0185: training loss 0.795
+Epoch 8 iteration 0140/0186: training loss 0.787
+Epoch 8 iteration 0160/0186: training loss 0.789
+Epoch 8 iteration 0180/0186: training loss 0.798
+Epoch 8 validation pixAcc: 0.919, mIoU: 0.410
+Epoch 9 iteration 0020/0185: training loss 0.796
+Epoch 9 iteration 0040/0185: training loss 0.803
+Epoch 9 iteration 0060/0185: training loss 0.769
+Epoch 9 iteration 0080/0185: training loss 0.749
+Epoch 9 iteration 0100/0185: training loss 0.730
+Epoch 9 iteration 0120/0185: training loss 0.731
+Epoch 9 iteration 0140/0186: training loss 0.741
+Epoch 9 iteration 0160/0186: training loss 0.737
+Epoch 9 iteration 0180/0186: training loss 0.738
+Epoch 9 validation pixAcc: 0.921, mIoU: 0.456
+Epoch 10 iteration 0020/0185: training loss 0.733
+Epoch 10 iteration 0040/0185: training loss 0.772
+Epoch 10 iteration 0060/0185: training loss 0.827
+Epoch 10 iteration 0080/0185: training loss 0.899
+Epoch 10 iteration 0100/0185: training loss 0.911
+Epoch 10 iteration 0120/0185: training loss 0.896
+Epoch 10 iteration 0140/0186: training loss 0.888
+Epoch 10 iteration 0160/0186: training loss 0.883
+Epoch 10 iteration 0180/0186: training loss 0.871
+Epoch 10 validation pixAcc: 0.917, mIoU: 0.444
+Epoch 11 iteration 0020/0185: training loss 0.844
+Epoch 11 iteration 0040/0185: training loss 0.882
+Epoch 11 iteration 0060/0185: training loss 0.896
+Epoch 11 iteration 0080/0185: training loss 0.895
+Epoch 11 iteration 0100/0185: training loss 0.873
+Epoch 11 iteration 0120/0185: training loss 0.863
+Epoch 11 iteration 0140/0186: training loss 0.845
+Epoch 11 iteration 0160/0186: training loss 0.844
+Epoch 11 iteration 0180/0186: training loss 0.828
+Epoch 11 validation pixAcc: 0.918, mIoU: 0.464
+Epoch 12 iteration 0020/0185: training loss 0.708
+Epoch 12 iteration 0040/0185: training loss 0.717
+Epoch 12 iteration 0060/0185: training loss 0.725
+Epoch 12 iteration 0080/0185: training loss 0.723
+Epoch 12 iteration 0100/0185: training loss 0.716
+Epoch 12 iteration 0120/0185: training loss 0.705
+Epoch 12 iteration 0140/0186: training loss 0.697
+Epoch 12 iteration 0160/0186: training loss 0.703
+Epoch 12 iteration 0180/0186: training loss 0.720
+Epoch 12 validation pixAcc: 0.919, mIoU: 0.435
+Epoch 13 iteration 0020/0185: training loss 0.715
+Epoch 13 iteration 0040/0185: training loss 0.708
+Epoch 13 iteration 0060/0185: training loss 0.709
+Epoch 13 iteration 0080/0185: training loss 0.705
+Epoch 13 iteration 0100/0185: training loss 0.705
+Epoch 13 iteration 0120/0185: training loss 0.701
+Epoch 13 iteration 0140/0186: training loss 0.685
+Epoch 13 iteration 0160/0186: training loss 0.688
+Epoch 13 iteration 0180/0186: training loss 0.685
+Epoch 13 validation pixAcc: 0.929, mIoU: 0.499
+Epoch 14 iteration 0020/0185: training loss 0.637
+Epoch 14 iteration 0040/0185: training loss 0.616
+Epoch 14 iteration 0060/0185: training loss 0.646
+Epoch 14 iteration 0080/0185: training loss 0.664
+Epoch 14 iteration 0100/0185: training loss 0.673
+Epoch 14 iteration 0120/0185: training loss 0.662
+Epoch 14 iteration 0140/0186: training loss 0.685
+Epoch 14 iteration 0160/0186: training loss 0.712
+Epoch 14 iteration 0180/0186: training loss 0.711
+Epoch 14 validation pixAcc: 0.922, mIoU: 0.478
+Epoch 15 iteration 0020/0185: training loss 0.728
+Epoch 15 iteration 0040/0185: training loss 0.727
+Epoch 15 iteration 0060/0185: training loss 0.728
+Epoch 15 iteration 0080/0185: training loss 0.714
+Epoch 15 iteration 0100/0185: training loss 0.706
+Epoch 15 iteration 0120/0185: training loss 0.697
+Epoch 15 iteration 0140/0185: training loss 0.693
+Epoch 15 iteration 0160/0185: training loss 0.683
+Epoch 15 iteration 0180/0185: training loss 0.679
+Epoch 15 validation pixAcc: 0.929, mIoU: 0.512
+Epoch 16 iteration 0020/0185: training loss 0.645
+Epoch 16 iteration 0040/0185: training loss 0.637
+Epoch 16 iteration 0060/0185: training loss 0.637
+Epoch 16 iteration 0080/0185: training loss 0.650
+Epoch 16 iteration 0100/0185: training loss 0.642
+Epoch 16 iteration 0120/0185: training loss 0.632
+Epoch 16 iteration 0140/0186: training loss 0.631
+Epoch 16 iteration 0160/0186: training loss 0.642
+Epoch 16 iteration 0180/0186: training loss 0.645
+Epoch 16 validation pixAcc: 0.924, mIoU: 0.469
+Epoch 17 iteration 0020/0185: training loss 0.643
+Epoch 17 iteration 0040/0185: training loss 0.672
+Epoch 17 iteration 0060/0185: training loss 0.659
+Epoch 17 iteration 0080/0185: training loss 0.656
+Epoch 17 iteration 0100/0185: training loss 0.663
+Epoch 17 iteration 0120/0185: training loss 0.669
+Epoch 17 iteration 0140/0186: training loss 0.671
+Epoch 17 iteration 0160/0186: training loss 0.675
+Epoch 17 iteration 0180/0186: training loss 0.669
+Epoch 17 validation pixAcc: 0.921, mIoU: 0.469
+Epoch 18 iteration 0020/0185: training loss 0.634
+Epoch 18 iteration 0040/0185: training loss 0.631
+Epoch 18 iteration 0060/0185: training loss 0.624
+Epoch 18 iteration 0080/0185: training loss 0.636
+Epoch 18 iteration 0100/0185: training loss 0.643
+Epoch 18 iteration 0120/0185: training loss 0.634
+Epoch 18 iteration 0140/0186: training loss 0.626
+Epoch 18 iteration 0160/0186: training loss 0.620
+Epoch 18 iteration 0180/0186: training loss 0.621
+Epoch 18 validation pixAcc: 0.932, mIoU: 0.510
+Epoch 19 iteration 0020/0185: training loss 0.593
+Epoch 19 iteration 0040/0185: training loss 0.580
+Epoch 19 iteration 0060/0185: training loss 0.633
+Epoch 19 iteration 0080/0185: training loss 0.641
+Epoch 19 iteration 0100/0185: training loss 0.637
+Epoch 19 iteration 0120/0185: training loss 0.633
+Epoch 19 iteration 0140/0186: training loss 0.631
+Epoch 19 iteration 0160/0186: training loss 0.628
+Epoch 19 iteration 0180/0186: training loss 0.628
+Epoch 19 validation pixAcc: 0.924, mIoU: 0.501
+Epoch 20 iteration 0020/0185: training loss 0.619
+Epoch 20 iteration 0040/0185: training loss 0.608
+Epoch 20 iteration 0060/0185: training loss 0.607
+Epoch 20 iteration 0080/0185: training loss 0.617
+Epoch 20 iteration 0100/0185: training loss 0.631
+Epoch 20 iteration 0120/0185: training loss 0.629
+Epoch 20 iteration 0140/0186: training loss 0.623
+Epoch 20 iteration 0160/0186: training loss 0.625
+Epoch 20 iteration 0180/0186: training loss 0.634
+Epoch 20 validation pixAcc: 0.927, mIoU: 0.520
+Epoch 21 iteration 0020/0185: training loss 0.668
+Epoch 21 iteration 0040/0185: training loss 0.652
+Epoch 21 iteration 0060/0185: training loss 0.654
+Epoch 21 iteration 0080/0185: training loss 0.642
+Epoch 21 iteration 0100/0185: training loss 0.641
+Epoch 21 iteration 0120/0185: training loss 0.634
+Epoch 21 iteration 0140/0186: training loss 0.636
+Epoch 21 iteration 0160/0186: training loss 0.642
+Epoch 21 iteration 0180/0186: training loss 0.662
+Epoch 21 validation pixAcc: 0.918, mIoU: 0.479
+Epoch 22 iteration 0020/0185: training loss 0.637
+Epoch 22 iteration 0040/0185: training loss 0.609
+Epoch 22 iteration 0060/0185: training loss 0.629
+Epoch 22 iteration 0080/0185: training loss 0.644
+Epoch 22 iteration 0100/0185: training loss 0.656
+Epoch 22 iteration 0120/0185: training loss 0.655
+Epoch 22 iteration 0140/0186: training loss 0.645
+Epoch 22 iteration 0160/0186: training loss 0.636
+Epoch 22 iteration 0180/0186: training loss 0.632
+Epoch 22 validation pixAcc: 0.927, mIoU: 0.523
+Epoch 23 iteration 0020/0185: training loss 0.573
+Epoch 23 iteration 0040/0185: training loss 0.555
+Epoch 23 iteration 0060/0185: training loss 0.582
+Epoch 23 iteration 0080/0185: training loss 0.602
+Epoch 23 iteration 0100/0185: training loss 0.606
+Epoch 23 iteration 0120/0185: training loss 0.608
+Epoch 23 iteration 0140/0186: training loss 0.603
+Epoch 23 iteration 0160/0186: training loss 0.600
+Epoch 23 iteration 0180/0186: training loss 0.596
+Epoch 23 validation pixAcc: 0.933, mIoU: 0.544
+Epoch 24 iteration 0020/0185: training loss 0.524
+Epoch 24 iteration 0040/0185: training loss 0.543
+Epoch 24 iteration 0060/0185: training loss 0.569
+Epoch 24 iteration 0080/0185: training loss 0.583
+Epoch 24 iteration 0100/0185: training loss 0.589
+Epoch 24 iteration 0120/0185: training loss 0.601
+Epoch 24 iteration 0140/0186: training loss 0.602
+Epoch 24 iteration 0160/0186: training loss 0.599
+Epoch 24 iteration 0180/0186: training loss 0.594
+Epoch 24 validation pixAcc: 0.934, mIoU: 0.538
+Epoch 25 iteration 0020/0185: training loss 0.567
+Epoch 25 iteration 0040/0185: training loss 0.555
+Epoch 25 iteration 0060/0185: training loss 0.552
+Epoch 25 iteration 0080/0185: training loss 0.549
+Epoch 25 iteration 0100/0185: training loss 0.549
+Epoch 25 iteration 0120/0185: training loss 0.549
+Epoch 25 iteration 0140/0186: training loss 0.550
+Epoch 25 iteration 0160/0186: training loss 0.548
+Epoch 25 iteration 0180/0186: training loss 0.548
+Epoch 25 validation pixAcc: 0.933, mIoU: 0.535
+Epoch 26 iteration 0020/0185: training loss 0.562
+Epoch 26 iteration 0040/0185: training loss 0.613
+Epoch 26 iteration 0060/0185: training loss 0.625
+Epoch 26 iteration 0080/0185: training loss 0.651
+Epoch 26 iteration 0100/0185: training loss 0.655
+Epoch 26 iteration 0120/0185: training loss 0.659
+Epoch 26 iteration 0140/0186: training loss 0.660
+Epoch 26 iteration 0160/0186: training loss 0.659
+Epoch 26 iteration 0180/0186: training loss 0.656
+Epoch 26 validation pixAcc: 0.932, mIoU: 0.528
+Epoch 27 iteration 0020/0185: training loss 0.582
+Epoch 27 iteration 0040/0185: training loss 0.574
+Epoch 27 iteration 0060/0185: training loss 0.568
+Epoch 27 iteration 0080/0185: training loss 0.564
+Epoch 27 iteration 0100/0185: training loss 0.564
+Epoch 27 iteration 0120/0185: training loss 0.562
+Epoch 27 iteration 0140/0186: training loss 0.555
+Epoch 27 iteration 0160/0186: training loss 0.552
+Epoch 27 iteration 0180/0186: training loss 0.548
+Epoch 27 validation pixAcc: 0.932, mIoU: 0.536
+Epoch 28 iteration 0020/0185: training loss 0.509
+Epoch 28 iteration 0040/0185: training loss 0.508
+Epoch 28 iteration 0060/0185: training loss 0.524
+Epoch 28 iteration 0080/0185: training loss 0.529
+Epoch 28 iteration 0100/0185: training loss 0.533
+Epoch 28 iteration 0120/0185: training loss 0.533
+Epoch 28 iteration 0140/0186: training loss 0.532
+Epoch 28 iteration 0160/0186: training loss 0.533
+Epoch 28 iteration 0180/0186: training loss 0.538
+Epoch 28 validation pixAcc: 0.933, mIoU: 0.528
+Epoch 29 iteration 0020/0185: training loss 0.593
+Epoch 29 iteration 0040/0185: training loss 0.596
+Epoch 29 iteration 0060/0185: training loss 0.578
+Epoch 29 iteration 0080/0185: training loss 0.563
+Epoch 29 iteration 0100/0185: training loss 0.555
+Epoch 29 iteration 0120/0185: training loss 0.550
+Epoch 29 iteration 0140/0186: training loss 0.549
+Epoch 29 iteration 0160/0186: training loss 0.558
+Epoch 29 iteration 0180/0186: training loss 0.558
+Epoch 29 validation pixAcc: 0.933, mIoU: 0.542
+Epoch 30 iteration 0020/0185: training loss 0.540
+Epoch 30 iteration 0040/0185: training loss 0.548
+Epoch 30 iteration 0060/0185: training loss 0.553
+Epoch 30 iteration 0080/0185: training loss 0.561
+Epoch 30 iteration 0100/0185: training loss 0.557
+Epoch 30 iteration 0120/0185: training loss 0.562
+Epoch 30 iteration 0140/0186: training loss 0.567
+Epoch 30 iteration 0160/0186: training loss 0.572
+Epoch 30 iteration 0180/0186: training loss 0.574
+Epoch 30 validation pixAcc: 0.933, mIoU: 0.547
+Epoch 31 iteration 0020/0185: training loss 0.534
+Epoch 31 iteration 0040/0185: training loss 0.526
+Epoch 31 iteration 0060/0185: training loss 0.523
+Epoch 31 iteration 0080/0185: training loss 0.521
+Epoch 31 iteration 0100/0185: training loss 0.539
+Epoch 31 iteration 0120/0185: training loss 0.538
+Epoch 31 iteration 0140/0185: training loss 0.540
+Epoch 31 iteration 0160/0185: training loss 0.540
+Epoch 31 iteration 0180/0185: training loss 0.536
+Epoch 31 validation pixAcc: 0.935, mIoU: 0.552
+Epoch 32 iteration 0020/0185: training loss 0.536
+Epoch 32 iteration 0040/0185: training loss 0.568
+Epoch 32 iteration 0060/0185: training loss 0.592
+Epoch 32 iteration 0080/0185: training loss 0.603
+Epoch 32 iteration 0100/0185: training loss 0.589
+Epoch 32 iteration 0120/0185: training loss 0.587
+Epoch 32 iteration 0140/0186: training loss 0.584
+Epoch 32 iteration 0160/0186: training loss 0.587
+Epoch 32 iteration 0180/0186: training loss 0.581
+Epoch 32 validation pixAcc: 0.934, mIoU: 0.527
+Epoch 33 iteration 0020/0185: training loss 0.546
+Epoch 33 iteration 0040/0185: training loss 0.533
+Epoch 33 iteration 0060/0185: training loss 0.546
+Epoch 33 iteration 0080/0185: training loss 0.536
+Epoch 33 iteration 0100/0185: training loss 0.525
+Epoch 33 iteration 0120/0185: training loss 0.518
+Epoch 33 iteration 0140/0186: training loss 0.516
+Epoch 33 iteration 0160/0186: training loss 0.516
+Epoch 33 iteration 0180/0186: training loss 0.523
+Epoch 33 validation pixAcc: 0.934, mIoU: 0.533
+Epoch 34 iteration 0020/0185: training loss 0.522
+Epoch 34 iteration 0040/0185: training loss 0.518
+Epoch 34 iteration 0060/0185: training loss 0.527
+Epoch 34 iteration 0080/0185: training loss 0.529
+Epoch 34 iteration 0100/0185: training loss 0.528
+Epoch 34 iteration 0120/0185: training loss 0.527
+Epoch 34 iteration 0140/0186: training loss 0.529
+Epoch 34 iteration 0160/0186: training loss 0.530
+Epoch 34 iteration 0180/0186: training loss 0.528
+Epoch 34 validation pixAcc: 0.937, mIoU: 0.569
+Epoch 35 iteration 0020/0185: training loss 0.530
+Epoch 35 iteration 0040/0185: training loss 0.512
+Epoch 35 iteration 0060/0185: training loss 0.495
+Epoch 35 iteration 0080/0185: training loss 0.495
+Epoch 35 iteration 0100/0185: training loss 0.505
+Epoch 35 iteration 0120/0185: training loss 0.511
+Epoch 35 iteration 0140/0186: training loss 0.514
+Epoch 35 iteration 0160/0186: training loss 0.519
+Epoch 35 iteration 0180/0186: training loss 0.522
+Epoch 35 validation pixAcc: 0.936, mIoU: 0.550
+Epoch 36 iteration 0020/0185: training loss 0.513
+Epoch 36 iteration 0040/0185: training loss 0.486
+Epoch 36 iteration 0060/0185: training loss 0.493
+Epoch 36 iteration 0080/0185: training loss 0.491
+Epoch 36 iteration 0100/0185: training loss 0.504
+Epoch 36 iteration 0120/0185: training loss 0.500
+Epoch 36 iteration 0140/0186: training loss 0.503
+Epoch 36 iteration 0160/0186: training loss 0.507
+Epoch 36 iteration 0180/0186: training loss 0.508
+Epoch 36 validation pixAcc: 0.934, mIoU: 0.544
+Epoch 37 iteration 0020/0185: training loss 0.535
+Epoch 37 iteration 0040/0185: training loss 0.519
+Epoch 37 iteration 0060/0185: training loss 0.530
+Epoch 37 iteration 0080/0185: training loss 0.532
+Epoch 37 iteration 0100/0185: training loss 0.533
+Epoch 37 iteration 0120/0185: training loss 0.524
+Epoch 37 iteration 0140/0186: training loss 0.520
+Epoch 37 iteration 0160/0186: training loss 0.514
+Epoch 37 iteration 0180/0186: training loss 0.511
+Epoch 37 validation pixAcc: 0.939, mIoU: 0.597
+Epoch 38 iteration 0020/0185: training loss 0.466
+Epoch 38 iteration 0040/0185: training loss 0.598
+Epoch 38 iteration 0060/0185: training loss 0.671
+Epoch 38 iteration 0080/0185: training loss 0.682
+Epoch 38 iteration 0100/0185: training loss 0.670
+Epoch 38 iteration 0120/0185: training loss 0.656
+Epoch 38 iteration 0140/0186: training loss 0.647
+Epoch 38 iteration 0160/0186: training loss 0.648
+Epoch 38 iteration 0180/0186: training loss 0.643
+Epoch 38 validation pixAcc: 0.934, mIoU: 0.558
+Epoch 39 iteration 0020/0185: training loss 0.563
+Epoch 39 iteration 0040/0185: training loss 0.547
+Epoch 39 iteration 0060/0185: training loss 0.538
+Epoch 39 iteration 0080/0185: training loss 0.551
+Epoch 39 iteration 0100/0185: training loss 0.545
+Epoch 39 iteration 0120/0185: training loss 0.557
+Epoch 39 iteration 0140/0186: training loss 0.555
+Epoch 39 iteration 0160/0186: training loss 0.548
+Epoch 39 iteration 0180/0186: training loss 0.540
+Epoch 39 validation pixAcc: 0.939, mIoU: 0.589
+Epoch 40 iteration 0020/0185: training loss 0.541
+Epoch 40 iteration 0040/0185: training loss 0.570
+Epoch 40 iteration 0060/0185: training loss 0.572
+Epoch 40 iteration 0080/0185: training loss 0.561
+Epoch 40 iteration 0100/0185: training loss 0.553
+Epoch 40 iteration 0120/0185: training loss 0.567
+Epoch 40 iteration 0140/0186: training loss 0.557
+Epoch 40 iteration 0160/0186: training loss 0.550
+Epoch 40 iteration 0180/0186: training loss 0.546
+Epoch 40 validation pixAcc: 0.932, mIoU: 0.531
+Epoch 41 iteration 0020/0185: training loss 0.548
+Epoch 41 iteration 0040/0185: training loss 0.566
+Epoch 41 iteration 0060/0185: training loss 0.553
+Epoch 41 iteration 0080/0185: training loss 0.546
+Epoch 41 iteration 0100/0185: training loss 0.539
+Epoch 41 iteration 0120/0185: training loss 0.540
+Epoch 41 iteration 0140/0186: training loss 0.534
+Epoch 41 iteration 0160/0186: training loss 0.529
+Epoch 41 iteration 0180/0186: training loss 0.529
+Epoch 41 validation pixAcc: 0.929, mIoU: 0.518
+Epoch 42 iteration 0020/0185: training loss 0.555
+Epoch 42 iteration 0040/0185: training loss 0.548
+Epoch 42 iteration 0060/0185: training loss 0.548
+Epoch 42 iteration 0080/0185: training loss 0.542
+Epoch 42 iteration 0100/0185: training loss 0.533
+Epoch 42 iteration 0120/0185: training loss 0.531
+Epoch 42 iteration 0140/0186: training loss 0.531
+Epoch 42 iteration 0160/0186: training loss 0.525
+Epoch 42 iteration 0180/0186: training loss 0.525
+Epoch 42 validation pixAcc: 0.936, mIoU: 0.581
+Epoch 43 iteration 0020/0185: training loss 0.465
+Epoch 43 iteration 0040/0185: training loss 0.473
+Epoch 43 iteration 0060/0185: training loss 0.486
+Epoch 43 iteration 0080/0185: training loss 0.491
+Epoch 43 iteration 0100/0185: training loss 0.501
+Epoch 43 iteration 0120/0185: training loss 0.502
+Epoch 43 iteration 0140/0186: training loss 0.498
+Epoch 43 iteration 0160/0186: training loss 0.494
+Epoch 43 iteration 0180/0186: training loss 0.496
+Epoch 43 validation pixAcc: 0.939, mIoU: 0.589
+Epoch 44 iteration 0020/0185: training loss 0.499
+Epoch 44 iteration 0040/0185: training loss 0.499
+Epoch 44 iteration 0060/0185: training loss 0.507
+Epoch 44 iteration 0080/0185: training loss 0.499
+Epoch 44 iteration 0100/0185: training loss 0.491
+Epoch 44 iteration 0120/0185: training loss 0.489
+Epoch 44 iteration 0140/0186: training loss 0.492
+Epoch 44 iteration 0160/0186: training loss 0.493
+Epoch 44 iteration 0180/0186: training loss 0.492
+Epoch 44 validation pixAcc: 0.940, mIoU: 0.577
+Epoch 45 iteration 0020/0185: training loss 0.475
+Epoch 45 iteration 0040/0185: training loss 0.489
+Epoch 45 iteration 0060/0185: training loss 0.493
+Epoch 45 iteration 0080/0185: training loss 0.500
+Epoch 45 iteration 0100/0185: training loss 0.501
+Epoch 45 iteration 0120/0185: training loss 0.497
+Epoch 45 iteration 0140/0186: training loss 0.491
+Epoch 45 iteration 0160/0186: training loss 0.491
+Epoch 45 iteration 0180/0186: training loss 0.492
+Epoch 45 validation pixAcc: 0.935, mIoU: 0.533
+Epoch 46 iteration 0020/0185: training loss 0.501
+Epoch 46 iteration 0040/0185: training loss 0.520
+Epoch 46 iteration 0060/0185: training loss 0.534
+Epoch 46 iteration 0080/0185: training loss 0.529
+Epoch 46 iteration 0100/0185: training loss 0.523
+Epoch 46 iteration 0120/0185: training loss 0.516
+Epoch 46 iteration 0140/0186: training loss 0.514
+Epoch 46 iteration 0160/0186: training loss 0.511
+Epoch 46 iteration 0180/0186: training loss 0.509
+Epoch 46 validation pixAcc: 0.939, mIoU: 0.577
+Epoch 47 iteration 0020/0185: training loss 0.516
+Epoch 47 iteration 0040/0185: training loss 0.513
+Epoch 47 iteration 0060/0185: training loss 0.509
+Epoch 47 iteration 0080/0185: training loss 0.506
+Epoch 47 iteration 0100/0185: training loss 0.512
+Epoch 47 iteration 0120/0185: training loss 0.509
+Epoch 47 iteration 0140/0185: training loss 0.505
+Epoch 47 iteration 0160/0185: training loss 0.509
+Epoch 47 iteration 0180/0185: training loss 0.511
+Epoch 47 validation pixAcc: 0.938, mIoU: 0.577
+Epoch 48 iteration 0020/0185: training loss 0.570
+Epoch 48 iteration 0040/0185: training loss 0.571
+Epoch 48 iteration 0060/0185: training loss 0.539
+Epoch 48 iteration 0080/0185: training loss 0.527
+Epoch 48 iteration 0100/0185: training loss 0.515
+Epoch 48 iteration 0120/0185: training loss 0.510
+Epoch 48 iteration 0140/0186: training loss 0.509
+Epoch 48 iteration 0160/0186: training loss 0.508
+Epoch 48 iteration 0180/0186: training loss 0.501
+Epoch 48 validation pixAcc: 0.939, mIoU: 0.591
+Epoch 49 iteration 0020/0185: training loss 0.456
+Epoch 49 iteration 0040/0185: training loss 0.467
+Epoch 49 iteration 0060/0185: training loss 0.461
+Epoch 49 iteration 0080/0185: training loss 0.459
+Epoch 49 iteration 0100/0185: training loss 0.466
+Epoch 49 iteration 0120/0185: training loss 0.470
+Epoch 49 iteration 0140/0186: training loss 0.474
+Epoch 49 iteration 0160/0186: training loss 0.471
+Epoch 49 iteration 0180/0186: training loss 0.471
+Epoch 49 validation pixAcc: 0.941, mIoU: 0.598
+Epoch 50 iteration 0020/0185: training loss 0.479
+Epoch 50 iteration 0040/0185: training loss 0.465
+Epoch 50 iteration 0060/0185: training loss 0.468
+Epoch 50 iteration 0080/0185: training loss 0.455
+Epoch 50 iteration 0100/0185: training loss 0.464
+Epoch 50 iteration 0120/0185: training loss 0.463
+Epoch 50 iteration 0140/0186: training loss 0.471
+Epoch 50 iteration 0160/0186: training loss 0.475
+Epoch 50 iteration 0180/0186: training loss 0.479
+Epoch 50 validation pixAcc: 0.938, mIoU: 0.572
+Epoch 51 iteration 0020/0185: training loss 0.513
+Epoch 51 iteration 0040/0185: training loss 0.497
+Epoch 51 iteration 0060/0185: training loss 0.493
+Epoch 51 iteration 0080/0185: training loss 0.487
+Epoch 51 iteration 0100/0185: training loss 0.480
+Epoch 51 iteration 0120/0185: training loss 0.477
+Epoch 51 iteration 0140/0186: training loss 0.471
+Epoch 51 iteration 0160/0186: training loss 0.470
+Epoch 51 iteration 0180/0186: training loss 0.470
+Epoch 51 validation pixAcc: 0.940, mIoU: 0.579
+Epoch 52 iteration 0020/0185: training loss 0.476
+Epoch 52 iteration 0040/0185: training loss 0.477
+Epoch 52 iteration 0060/0185: training loss 0.470
+Epoch 52 iteration 0080/0185: training loss 0.466
+Epoch 52 iteration 0100/0185: training loss 0.469
+Epoch 52 iteration 0120/0185: training loss 0.471
+Epoch 52 iteration 0140/0186: training loss 0.468
+Epoch 52 iteration 0160/0186: training loss 0.466
+Epoch 52 iteration 0180/0186: training loss 0.465
+Epoch 52 validation pixAcc: 0.940, mIoU: 0.582
+Epoch 53 iteration 0020/0185: training loss 0.474
+Epoch 53 iteration 0040/0185: training loss 0.471
+Epoch 53 iteration 0060/0185: training loss 0.465
+Epoch 53 iteration 0080/0185: training loss 0.478
+Epoch 53 iteration 0100/0185: training loss 0.481
+Epoch 53 iteration 0120/0185: training loss 0.482
+Epoch 53 iteration 0140/0186: training loss 0.478
+Epoch 53 iteration 0160/0186: training loss 0.474
+Epoch 53 iteration 0180/0186: training loss 0.477
+Epoch 53 validation pixAcc: 0.937, mIoU: 0.586
+Epoch 54 iteration 0020/0185: training loss 0.471
+Epoch 54 iteration 0040/0185: training loss 0.469
+Epoch 54 iteration 0060/0185: training loss 0.466
+Epoch 54 iteration 0080/0185: training loss 0.471
+Epoch 54 iteration 0100/0185: training loss 0.471
+Epoch 54 iteration 0120/0185: training loss 0.473
+Epoch 54 iteration 0140/0186: training loss 0.474
+Epoch 54 iteration 0160/0186: training loss 0.480
+Epoch 54 iteration 0180/0186: training loss 0.486
+Epoch 54 validation pixAcc: 0.929, mIoU: 0.547
+Epoch 55 iteration 0020/0185: training loss 0.506
+Epoch 55 iteration 0040/0185: training loss 0.507
+Epoch 55 iteration 0060/0185: training loss 0.507
+Epoch 55 iteration 0080/0185: training loss 0.504
+Epoch 55 iteration 0100/0185: training loss 0.508
+Epoch 55 iteration 0120/0185: training loss 0.523
+Epoch 55 iteration 0140/0186: training loss 0.527
+Epoch 55 iteration 0160/0186: training loss 0.519
+Epoch 55 iteration 0180/0186: training loss 0.519
+Epoch 55 validation pixAcc: 0.936, mIoU: 0.563
+Epoch 56 iteration 0020/0185: training loss 0.459
+Epoch 56 iteration 0040/0185: training loss 0.458
+Epoch 56 iteration 0060/0185: training loss 0.465
+Epoch 56 iteration 0080/0185: training loss 0.463
+Epoch 56 iteration 0100/0185: training loss 0.462
+Epoch 56 iteration 0120/0185: training loss 0.460
+Epoch 56 iteration 0140/0186: training loss 0.457
+Epoch 56 iteration 0160/0186: training loss 0.465
+Epoch 56 iteration 0180/0186: training loss 0.467
+Epoch 56 validation pixAcc: 0.940, mIoU: 0.582
+Epoch 57 iteration 0020/0185: training loss 0.498
+Epoch 57 iteration 0040/0185: training loss 0.478
+Epoch 57 iteration 0060/0185: training loss 0.488
+Epoch 57 iteration 0080/0185: training loss 0.482
+Epoch 57 iteration 0100/0185: training loss 0.481
+Epoch 57 iteration 0120/0185: training loss 0.479
+Epoch 57 iteration 0140/0186: training loss 0.478
+Epoch 57 iteration 0160/0186: training loss 0.475
+Epoch 57 iteration 0180/0186: training loss 0.473
+Epoch 57 validation pixAcc: 0.942, mIoU: 0.598
+Epoch 58 iteration 0020/0185: training loss 0.493
+Epoch 58 iteration 0040/0185: training loss 0.477
+Epoch 58 iteration 0060/0185: training loss 0.469
+Epoch 58 iteration 0080/0185: training loss 0.480
+Epoch 58 iteration 0100/0185: training loss 0.482
+Epoch 58 iteration 0120/0185: training loss 0.491
+Epoch 58 iteration 0140/0186: training loss 0.488
+Epoch 58 iteration 0160/0186: training loss 0.500
+Epoch 58 iteration 0180/0186: training loss 0.498
+Epoch 58 validation pixAcc: 0.939, mIoU: 0.574
+Epoch 59 iteration 0020/0185: training loss 0.461
+Epoch 59 iteration 0040/0185: training loss 0.439
+Epoch 59 iteration 0060/0185: training loss 0.447
+Epoch 59 iteration 0080/0185: training loss 0.473
+Epoch 59 iteration 0100/0185: training loss 0.466
+Epoch 59 iteration 0120/0185: training loss 0.467
+Epoch 59 iteration 0140/0186: training loss 0.463
+Epoch 59 iteration 0160/0186: training loss 0.464
+Epoch 59 iteration 0180/0186: training loss 0.463
+Epoch 59 validation pixAcc: 0.939, mIoU: 0.587
+Epoch 60 iteration 0020/0185: training loss 0.456
+Epoch 60 iteration 0040/0185: training loss 0.455
+Epoch 60 iteration 0060/0185: training loss 0.443
+Epoch 60 iteration 0080/0185: training loss 0.441
+Epoch 60 iteration 0100/0185: training loss 0.437
+Epoch 60 iteration 0120/0185: training loss 0.444
+Epoch 60 iteration 0140/0186: training loss 0.448
+Epoch 60 iteration 0160/0186: training loss 0.449
+Epoch 60 iteration 0180/0186: training loss 0.448
+Epoch 60 validation pixAcc: 0.942, mIoU: 0.601
+Epoch 61 iteration 0020/0185: training loss 0.454
+Epoch 61 iteration 0040/0185: training loss 0.435
+Epoch 61 iteration 0060/0185: training loss 0.440
+Epoch 61 iteration 0080/0185: training loss 0.438
+Epoch 61 iteration 0100/0185: training loss 0.438
+Epoch 61 iteration 0120/0185: training loss 0.440
+Epoch 61 iteration 0140/0186: training loss 0.440
+Epoch 61 iteration 0160/0186: training loss 0.439
+Epoch 61 iteration 0180/0186: training loss 0.440
+Epoch 61 validation pixAcc: 0.941, mIoU: 0.595
+Epoch 62 iteration 0020/0185: training loss 0.410
+Epoch 62 iteration 0040/0185: training loss 0.416
+Epoch 62 iteration 0060/0185: training loss 0.421
+Epoch 62 iteration 0080/0185: training loss 0.421
+Epoch 62 iteration 0100/0185: training loss 0.444
+Epoch 62 iteration 0120/0185: training loss 0.448
+Epoch 62 iteration 0140/0186: training loss 0.447
+Epoch 62 iteration 0160/0186: training loss 0.444
+Epoch 62 iteration 0180/0186: training loss 0.451
+Epoch 62 validation pixAcc: 0.935, mIoU: 0.544
+Epoch 63 iteration 0020/0185: training loss 0.494
+Epoch 63 iteration 0040/0185: training loss 0.467
+Epoch 63 iteration 0060/0185: training loss 0.471
+Epoch 63 iteration 0080/0185: training loss 0.462
+Epoch 63 iteration 0100/0185: training loss 0.456
+Epoch 63 iteration 0120/0185: training loss 0.456
+Epoch 63 iteration 0140/0185: training loss 0.451
+Epoch 63 iteration 0160/0185: training loss 0.448
+Epoch 63 iteration 0180/0185: training loss 0.449
+Epoch 63 validation pixAcc: 0.944, mIoU: 0.607
+Epoch 64 iteration 0020/0185: training loss 0.431
+Epoch 64 iteration 0040/0185: training loss 0.430
+Epoch 64 iteration 0060/0185: training loss 0.436
+Epoch 64 iteration 0080/0185: training loss 0.441
+Epoch 64 iteration 0100/0185: training loss 0.436
+Epoch 64 iteration 0120/0185: training loss 0.428
+Epoch 64 iteration 0140/0186: training loss 0.428
+Epoch 64 iteration 0160/0186: training loss 0.432
+Epoch 64 iteration 0180/0186: training loss 0.429
+Epoch 64 validation pixAcc: 0.943, mIoU: 0.608
+Epoch 65 iteration 0020/0185: training loss 0.439
+Epoch 65 iteration 0040/0185: training loss 0.440
+Epoch 65 iteration 0060/0185: training loss 0.435
+Epoch 65 iteration 0080/0185: training loss 0.437
+Epoch 65 iteration 0100/0185: training loss 0.437
+Epoch 65 iteration 0120/0185: training loss 0.437
+Epoch 65 iteration 0140/0186: training loss 0.435
+Epoch 65 iteration 0160/0186: training loss 0.438
+Epoch 65 iteration 0180/0186: training loss 0.439
+Epoch 65 validation pixAcc: 0.942, mIoU: 0.602
+Epoch 66 iteration 0020/0185: training loss 0.434
+Epoch 66 iteration 0040/0185: training loss 0.445
+Epoch 66 iteration 0060/0185: training loss 0.438
+Epoch 66 iteration 0080/0185: training loss 0.430
+Epoch 66 iteration 0100/0185: training loss 0.433
+Epoch 66 iteration 0120/0185: training loss 0.429
+Epoch 66 iteration 0140/0186: training loss 0.427
+Epoch 66 iteration 0160/0186: training loss 0.426
+Epoch 66 iteration 0180/0186: training loss 0.424
+Epoch 66 validation pixAcc: 0.943, mIoU: 0.597
+Epoch 67 iteration 0020/0185: training loss 0.482
+Epoch 67 iteration 0040/0185: training loss 0.491
+Epoch 67 iteration 0060/0185: training loss 0.488
+Epoch 67 iteration 0080/0185: training loss 0.479
+Epoch 67 iteration 0100/0185: training loss 0.471
+Epoch 67 iteration 0120/0185: training loss 0.472
+Epoch 67 iteration 0140/0186: training loss 0.469
+Epoch 67 iteration 0160/0186: training loss 0.476
+Epoch 67 iteration 0180/0186: training loss 0.480
+Epoch 67 validation pixAcc: 0.940, mIoU: 0.580
+Epoch 68 iteration 0020/0185: training loss 0.461
+Epoch 68 iteration 0040/0185: training loss 0.440
+Epoch 68 iteration 0060/0185: training loss 0.429
+Epoch 68 iteration 0080/0185: training loss 0.460
+Epoch 68 iteration 0100/0185: training loss 0.462
+Epoch 68 iteration 0120/0185: training loss 0.459
+Epoch 68 iteration 0140/0186: training loss 0.455
+Epoch 68 iteration 0160/0186: training loss 0.455
+Epoch 68 iteration 0180/0186: training loss 0.465
+Epoch 68 validation pixAcc: 0.941, mIoU: 0.574
+Epoch 69 iteration 0020/0185: training loss 0.403
+Epoch 69 iteration 0040/0185: training loss 0.415
+Epoch 69 iteration 0060/0185: training loss 0.414
+Epoch 69 iteration 0080/0185: training loss 0.433
+Epoch 69 iteration 0100/0185: training loss 0.435
+Epoch 69 iteration 0120/0185: training loss 0.433
+Epoch 69 iteration 0140/0186: training loss 0.435
+Epoch 69 iteration 0160/0186: training loss 0.436
+Epoch 69 iteration 0180/0186: training loss 0.435
+Epoch 69 validation pixAcc: 0.942, mIoU: 0.597
+Epoch 70 iteration 0020/0185: training loss 0.424
+Epoch 70 iteration 0040/0185: training loss 0.430
+Epoch 70 iteration 0060/0185: training loss 0.432
+Epoch 70 iteration 0080/0185: training loss 0.443
+Epoch 70 iteration 0100/0185: training loss 0.435
+Epoch 70 iteration 0120/0185: training loss 0.435
+Epoch 70 iteration 0140/0186: training loss 0.434
+Epoch 70 iteration 0160/0186: training loss 0.434
+Epoch 70 iteration 0180/0186: training loss 0.449
+Epoch 70 validation pixAcc: 0.927, mIoU: 0.551
+Epoch 71 iteration 0020/0185: training loss 0.506
+Epoch 71 iteration 0040/0185: training loss 0.471
+Epoch 71 iteration 0060/0185: training loss 0.465
+Epoch 71 iteration 0080/0185: training loss 0.456
+Epoch 71 iteration 0100/0185: training loss 0.453
+Epoch 71 iteration 0120/0185: training loss 0.454
+Epoch 71 iteration 0140/0186: training loss 0.454
+Epoch 71 iteration 0160/0186: training loss 0.451
+Epoch 71 iteration 0180/0186: training loss 0.448
+Epoch 71 validation pixAcc: 0.944, mIoU: 0.607
+Epoch 72 iteration 0020/0185: training loss 0.427
+Epoch 72 iteration 0040/0185: training loss 0.417
+Epoch 72 iteration 0060/0185: training loss 0.420
+Epoch 72 iteration 0080/0185: training loss 0.434
+Epoch 72 iteration 0100/0185: training loss 0.434
+Epoch 72 iteration 0120/0185: training loss 0.436
+Epoch 72 iteration 0140/0186: training loss 0.437
+Epoch 72 iteration 0160/0186: training loss 0.436
+Epoch 72 iteration 0180/0186: training loss 0.434
+Epoch 72 validation pixAcc: 0.945, mIoU: 0.619
+Epoch 73 iteration 0020/0185: training loss 0.426
+Epoch 73 iteration 0040/0185: training loss 0.430
+Epoch 73 iteration 0060/0185: training loss 0.425
+Epoch 73 iteration 0080/0185: training loss 0.429
+Epoch 73 iteration 0100/0185: training loss 0.428
+Epoch 73 iteration 0120/0185: training loss 0.426
+Epoch 73 iteration 0140/0186: training loss 0.420
+Epoch 73 iteration 0160/0186: training loss 0.418
+Epoch 73 iteration 0180/0186: training loss 0.415
+Epoch 73 validation pixAcc: 0.945, mIoU: 0.626
+Epoch 74 iteration 0020/0185: training loss 0.421
+Epoch 74 iteration 0040/0185: training loss 0.412
+Epoch 74 iteration 0060/0185: training loss 0.409
+Epoch 74 iteration 0080/0185: training loss 0.419
+Epoch 74 iteration 0100/0185: training loss 0.431
+Epoch 74 iteration 0120/0185: training loss 0.428
+Epoch 74 iteration 0140/0186: training loss 0.429
+Epoch 74 iteration 0160/0186: training loss 0.430
+Epoch 74 iteration 0180/0186: training loss 0.436
+Epoch 74 validation pixAcc: 0.938, mIoU: 0.572
+Epoch 75 iteration 0020/0185: training loss 0.480
+Epoch 75 iteration 0040/0185: training loss 0.475
+Epoch 75 iteration 0060/0185: training loss 0.469
+Epoch 75 iteration 0080/0185: training loss 0.462
+Epoch 75 iteration 0100/0185: training loss 0.458
+Epoch 75 iteration 0120/0185: training loss 0.453
+Epoch 75 iteration 0140/0186: training loss 0.451
+Epoch 75 iteration 0160/0186: training loss 0.448
+Epoch 75 iteration 0180/0186: training loss 0.442
+Epoch 75 validation pixAcc: 0.943, mIoU: 0.615
+Epoch 76 iteration 0020/0185: training loss 0.419
+Epoch 76 iteration 0040/0185: training loss 0.438
+Epoch 76 iteration 0060/0185: training loss 0.424
+Epoch 76 iteration 0080/0185: training loss 0.423
+Epoch 76 iteration 0100/0185: training loss 0.423
+Epoch 76 iteration 0120/0185: training loss 0.422
+Epoch 76 iteration 0140/0186: training loss 0.426
+Epoch 76 iteration 0160/0186: training loss 0.427
+Epoch 76 iteration 0180/0186: training loss 0.428
+Epoch 76 validation pixAcc: 0.941, mIoU: 0.588
+Epoch 77 iteration 0020/0185: training loss 0.419
+Epoch 77 iteration 0040/0185: training loss 0.445
+Epoch 77 iteration 0060/0185: training loss 0.440
+Epoch 77 iteration 0080/0185: training loss 0.440
+Epoch 77 iteration 0100/0185: training loss 0.442
+Epoch 77 iteration 0120/0185: training loss 0.442
+Epoch 77 iteration 0140/0186: training loss 0.440
+Epoch 77 iteration 0160/0186: training loss 0.435
+Epoch 77 iteration 0180/0186: training loss 0.434
+Epoch 77 validation pixAcc: 0.941, mIoU: 0.592
+Epoch 78 iteration 0020/0185: training loss 0.406
+Epoch 78 iteration 0040/0185: training loss 0.414
+Epoch 78 iteration 0060/0185: training loss 0.410
+Epoch 78 iteration 0080/0185: training loss 0.424
+Epoch 78 iteration 0100/0185: training loss 0.433
+Epoch 78 iteration 0120/0185: training loss 0.451
+Epoch 78 iteration 0140/0186: training loss 0.449
+Epoch 78 iteration 0160/0186: training loss 0.451
+Epoch 78 iteration 0180/0186: training loss 0.450
+Epoch 78 validation pixAcc: 0.944, mIoU: 0.613
+Epoch 79 iteration 0020/0185: training loss 0.424
+Epoch 79 iteration 0040/0185: training loss 0.420
+Epoch 79 iteration 0060/0185: training loss 0.420
+Epoch 79 iteration 0080/0185: training loss 0.421
+Epoch 79 iteration 0100/0185: training loss 0.426
+Epoch 79 iteration 0120/0185: training loss 0.426
+Epoch 79 iteration 0140/0185: training loss 0.426
+Epoch 79 iteration 0160/0185: training loss 0.424
+Epoch 79 iteration 0180/0185: training loss 0.422
+Epoch 79 validation pixAcc: 0.946, mIoU: 0.624
+Epoch 80 iteration 0020/0185: training loss 0.400
+Epoch 80 iteration 0040/0185: training loss 0.415
+Epoch 80 iteration 0060/0185: training loss 0.419
+Epoch 80 iteration 0080/0185: training loss 0.415
+Epoch 80 iteration 0100/0185: training loss 0.421
+Epoch 80 iteration 0120/0185: training loss 0.418
+Epoch 80 iteration 0140/0186: training loss 0.421
+Epoch 80 iteration 0160/0186: training loss 0.421
+Epoch 80 iteration 0180/0186: training loss 0.427
+Epoch 80 validation pixAcc: 0.942, mIoU: 0.569
+Epoch 81 iteration 0020/0185: training loss 0.398
+Epoch 81 iteration 0040/0185: training loss 0.389
+Epoch 81 iteration 0060/0185: training loss 0.399
+Epoch 81 iteration 0080/0185: training loss 0.406
+Epoch 81 iteration 0100/0185: training loss 0.413
+Epoch 81 iteration 0120/0185: training loss 0.414
+Epoch 81 iteration 0140/0186: training loss 0.413
+Epoch 81 iteration 0160/0186: training loss 0.413
+Epoch 81 iteration 0180/0186: training loss 0.413
+Epoch 81 validation pixAcc: 0.946, mIoU: 0.628
+Epoch 82 iteration 0020/0185: training loss 0.382
+Epoch 82 iteration 0040/0185: training loss 0.369
+Epoch 82 iteration 0060/0185: training loss 0.381
+Epoch 82 iteration 0080/0185: training loss 0.392
+Epoch 82 iteration 0100/0185: training loss 0.391
+Epoch 82 iteration 0120/0185: training loss 0.393
+Epoch 82 iteration 0140/0186: training loss 0.395
+Epoch 82 iteration 0160/0186: training loss 0.400
+Epoch 82 iteration 0180/0186: training loss 0.409
+Epoch 82 validation pixAcc: 0.944, mIoU: 0.607
+Epoch 83 iteration 0020/0185: training loss 0.430
+Epoch 83 iteration 0040/0185: training loss 0.431
+Epoch 83 iteration 0060/0185: training loss 0.428
+Epoch 83 iteration 0080/0185: training loss 0.429
+Epoch 83 iteration 0100/0185: training loss 0.428
+Epoch 83 iteration 0120/0185: training loss 0.428
+Epoch 83 iteration 0140/0186: training loss 0.432
+Epoch 83 iteration 0160/0186: training loss 0.429
+Epoch 83 iteration 0180/0186: training loss 0.429
+Epoch 83 validation pixAcc: 0.947, mIoU: 0.632
+Epoch 84 iteration 0020/0185: training loss 0.431
+Epoch 84 iteration 0040/0185: training loss 0.408
+Epoch 84 iteration 0060/0185: training loss 0.402
+Epoch 84 iteration 0080/0185: training loss 0.399
+Epoch 84 iteration 0100/0185: training loss 0.397
+Epoch 84 iteration 0120/0185: training loss 0.402
+Epoch 84 iteration 0140/0186: training loss 0.405
+Epoch 84 iteration 0160/0186: training loss 0.400
+Epoch 84 iteration 0180/0186: training loss 0.401
+Epoch 84 validation pixAcc: 0.946, mIoU: 0.626
+Epoch 85 iteration 0020/0185: training loss 0.404
+Epoch 85 iteration 0040/0185: training loss 0.460
+Epoch 85 iteration 0060/0185: training loss 0.457
+Epoch 85 iteration 0080/0185: training loss 0.458
+Epoch 85 iteration 0100/0185: training loss 0.454
+Epoch 85 iteration 0120/0185: training loss 0.446
+Epoch 85 iteration 0140/0186: training loss 0.443
+Epoch 85 iteration 0160/0186: training loss 0.436
+Epoch 85 iteration 0180/0186: training loss 0.433
+Epoch 85 validation pixAcc: 0.946, mIoU: 0.616
+Epoch 86 iteration 0020/0185: training loss 0.394
+Epoch 86 iteration 0040/0185: training loss 0.415
+Epoch 86 iteration 0060/0185: training loss 0.419
+Epoch 86 iteration 0080/0185: training loss 0.414
+Epoch 86 iteration 0100/0185: training loss 0.412
+Epoch 86 iteration 0120/0185: training loss 0.409
+Epoch 86 iteration 0140/0186: training loss 0.410
+Epoch 86 iteration 0160/0186: training loss 0.406
+Epoch 86 iteration 0180/0186: training loss 0.404
+Epoch 86 validation pixAcc: 0.946, mIoU: 0.629
+Epoch 87 iteration 0020/0185: training loss 0.443
+Epoch 87 iteration 0040/0185: training loss 0.439
+Epoch 87 iteration 0060/0185: training loss 0.428
+Epoch 87 iteration 0080/0185: training loss 0.419
+Epoch 87 iteration 0100/0185: training loss 0.417
+Epoch 87 iteration 0120/0185: training loss 0.417
+Epoch 87 iteration 0140/0186: training loss 0.418
+Epoch 87 iteration 0160/0186: training loss 0.417
+Epoch 87 iteration 0180/0186: training loss 0.415
+Epoch 87 validation pixAcc: 0.947, mIoU: 0.629
+Epoch 88 iteration 0020/0185: training loss 0.423
+Epoch 88 iteration 0040/0185: training loss 0.419
+Epoch 88 iteration 0060/0185: training loss 0.421
+Epoch 88 iteration 0080/0185: training loss 0.416
+Epoch 88 iteration 0100/0185: training loss 0.407
+Epoch 88 iteration 0120/0185: training loss 0.405
+Epoch 88 iteration 0140/0186: training loss 0.405
+Epoch 88 iteration 0160/0186: training loss 0.411
+Epoch 88 iteration 0180/0186: training loss 0.413
+Epoch 88 validation pixAcc: 0.946, mIoU: 0.634
+Epoch 89 iteration 0020/0185: training loss 0.457
+Epoch 89 iteration 0040/0185: training loss 0.443
+Epoch 89 iteration 0060/0185: training loss 0.435
+Epoch 89 iteration 0080/0185: training loss 0.431
+Epoch 89 iteration 0100/0185: training loss 0.427
+Epoch 89 iteration 0120/0185: training loss 0.419
+Epoch 89 iteration 0140/0186: training loss 0.416
+Epoch 89 iteration 0160/0186: training loss 0.411
+Epoch 89 iteration 0180/0186: training loss 0.407
+Epoch 89 validation pixAcc: 0.947, mIoU: 0.633
+Epoch 90 iteration 0020/0185: training loss 0.389
+Epoch 90 iteration 0040/0185: training loss 0.393
+Epoch 90 iteration 0060/0185: training loss 0.394
+Epoch 90 iteration 0080/0185: training loss 0.392
+Epoch 90 iteration 0100/0185: training loss 0.393
+Epoch 90 iteration 0120/0185: training loss 0.392
+Epoch 90 iteration 0140/0186: training loss 0.392
+Epoch 90 iteration 0160/0186: training loss 0.394
+Epoch 90 iteration 0180/0186: training loss 0.396
+Epoch 90 validation pixAcc: 0.946, mIoU: 0.626
+Epoch 91 iteration 0020/0185: training loss 0.409
+Epoch 91 iteration 0040/0185: training loss 0.410
+Epoch 91 iteration 0060/0185: training loss 0.404
+Epoch 91 iteration 0080/0185: training loss 0.407
+Epoch 91 iteration 0100/0185: training loss 0.410
+Epoch 91 iteration 0120/0185: training loss 0.408
+Epoch 91 iteration 0140/0186: training loss 0.415
+Epoch 91 iteration 0160/0186: training loss 0.413
+Epoch 91 iteration 0180/0186: training loss 0.411
+Epoch 91 validation pixAcc: 0.947, mIoU: 0.632
+Epoch 92 iteration 0020/0185: training loss 0.387
+Epoch 92 iteration 0040/0185: training loss 0.391
+Epoch 92 iteration 0060/0185: training loss 0.390
+Epoch 92 iteration 0080/0185: training loss 0.387
+Epoch 92 iteration 0100/0185: training loss 0.387
+Epoch 92 iteration 0120/0185: training loss 0.384
+Epoch 92 iteration 0140/0186: training loss 0.390
+Epoch 92 iteration 0160/0186: training loss 0.387
+Epoch 92 iteration 0180/0186: training loss 0.386
+Epoch 92 validation pixAcc: 0.948, mIoU: 0.631
+Epoch 93 iteration 0020/0185: training loss 0.381
+Epoch 93 iteration 0040/0185: training loss 0.376
+Epoch 93 iteration 0060/0185: training loss 0.390
+Epoch 93 iteration 0080/0185: training loss 0.385
+Epoch 93 iteration 0100/0185: training loss 0.391
+Epoch 93 iteration 0120/0185: training loss 0.394
+Epoch 93 iteration 0140/0186: training loss 0.393
+Epoch 93 iteration 0160/0186: training loss 0.394
+Epoch 93 iteration 0180/0186: training loss 0.393
+Epoch 93 validation pixAcc: 0.947, mIoU: 0.628
+Epoch 94 iteration 0020/0185: training loss 0.383
+Epoch 94 iteration 0040/0185: training loss 0.376
+Epoch 94 iteration 0060/0185: training loss 0.379
+Epoch 94 iteration 0080/0185: training loss 0.378
+Epoch 94 iteration 0100/0185: training loss 0.381
+Epoch 94 iteration 0120/0185: training loss 0.383
+Epoch 94 iteration 0140/0186: training loss 0.382
+Epoch 94 iteration 0160/0186: training loss 0.380
+Epoch 94 iteration 0180/0186: training loss 0.382
+Epoch 94 validation pixAcc: 0.946, mIoU: 0.614
+Epoch 95 iteration 0020/0185: training loss 0.445
+Epoch 95 iteration 0040/0185: training loss 0.414
+Epoch 95 iteration 0060/0185: training loss 0.397
+Epoch 95 iteration 0080/0185: training loss 0.389
+Epoch 95 iteration 0100/0185: training loss 0.390
+Epoch 95 iteration 0120/0185: training loss 0.385
+Epoch 95 iteration 0140/0185: training loss 0.384
+Epoch 95 iteration 0160/0185: training loss 0.381
+Epoch 95 iteration 0180/0185: training loss 0.380
+Epoch 95 validation pixAcc: 0.947, mIoU: 0.645
+Epoch 96 iteration 0020/0185: training loss 0.361
+Epoch 96 iteration 0040/0185: training loss 0.363
+Epoch 96 iteration 0060/0185: training loss 0.361
+Epoch 96 iteration 0080/0185: training loss 0.373
+Epoch 96 iteration 0100/0185: training loss 0.386
+Epoch 96 iteration 0120/0185: training loss 0.386
+Epoch 96 iteration 0140/0186: training loss 0.388
+Epoch 96 iteration 0160/0186: training loss 0.387
+Epoch 96 iteration 0180/0186: training loss 0.386
+Epoch 96 validation pixAcc: 0.947, mIoU: 0.626
+Epoch 97 iteration 0020/0185: training loss 0.369
+Epoch 97 iteration 0040/0185: training loss 0.363
+Epoch 97 iteration 0060/0185: training loss 0.371
+Epoch 97 iteration 0080/0185: training loss 0.382
+Epoch 97 iteration 0100/0185: training loss 0.382
+Epoch 97 iteration 0120/0185: training loss 0.383
+Epoch 97 iteration 0140/0186: training loss 0.384
+Epoch 97 iteration 0160/0186: training loss 0.385
+Epoch 97 iteration 0180/0186: training loss 0.389
+Epoch 97 validation pixAcc: 0.947, mIoU: 0.628
+Epoch 98 iteration 0020/0185: training loss 0.397
+Epoch 98 iteration 0040/0185: training loss 0.394
+Epoch 98 iteration 0060/0185: training loss 0.391
+Epoch 98 iteration 0080/0185: training loss 0.386
+Epoch 98 iteration 0100/0185: training loss 0.386
+Epoch 98 iteration 0120/0185: training loss 0.391
+Epoch 98 iteration 0140/0186: training loss 0.388
+Epoch 98 iteration 0160/0186: training loss 0.387
+Epoch 98 iteration 0180/0186: training loss 0.389
+Epoch 98 validation pixAcc: 0.915, mIoU: 0.490
+Epoch 99 iteration 0020/0185: training loss 0.517
+Epoch 99 iteration 0040/0185: training loss 0.495
+Epoch 99 iteration 0060/0185: training loss 0.467
+Epoch 99 iteration 0080/0185: training loss 0.447
+Epoch 99 iteration 0100/0185: training loss 0.436
+Epoch 99 iteration 0120/0185: training loss 0.435
+Epoch 99 iteration 0140/0186: training loss 0.431
+Epoch 99 iteration 0160/0186: training loss 0.428
+Epoch 99 iteration 0180/0186: training loss 0.425
+Epoch 99 validation pixAcc: 0.945, mIoU: 0.632
+Epoch 100 iteration 0020/0185: training loss 0.400
+Epoch 100 iteration 0040/0185: training loss 0.405
+Epoch 100 iteration 0060/0185: training loss 0.414
+Epoch 100 iteration 0080/0185: training loss 0.423
+Epoch 100 iteration 0100/0185: training loss 0.430
+Epoch 100 iteration 0120/0185: training loss 0.435
+Epoch 100 iteration 0140/0186: training loss 0.432
+Epoch 100 iteration 0160/0186: training loss 0.431
+Epoch 100 iteration 0180/0186: training loss 0.432
+Epoch 100 validation pixAcc: 0.941, mIoU: 0.594
+Epoch 101 iteration 0020/0185: training loss 0.436
+Epoch 101 iteration 0040/0185: training loss 0.417
+Epoch 101 iteration 0060/0185: training loss 0.408
+Epoch 101 iteration 0080/0185: training loss 0.411
+Epoch 101 iteration 0100/0185: training loss 0.409
+Epoch 101 iteration 0120/0185: training loss 0.406
+Epoch 101 iteration 0140/0186: training loss 0.400
+Epoch 101 iteration 0160/0186: training loss 0.400
+Epoch 101 iteration 0180/0186: training loss 0.396
+Epoch 101 validation pixAcc: 0.945, mIoU: 0.610
+Epoch 102 iteration 0020/0185: training loss 0.414
+Epoch 102 iteration 0040/0185: training loss 0.413
+Epoch 102 iteration 0060/0185: training loss 0.435
+Epoch 102 iteration 0080/0185: training loss 0.424
+Epoch 102 iteration 0100/0185: training loss 0.419
+Epoch 102 iteration 0120/0185: training loss 0.413
+Epoch 102 iteration 0140/0186: training loss 0.410
+Epoch 102 iteration 0160/0186: training loss 0.411
+Epoch 102 iteration 0180/0186: training loss 0.409
+Epoch 102 validation pixAcc: 0.945, mIoU: 0.624
+Epoch 103 iteration 0020/0185: training loss 0.399
+Epoch 103 iteration 0040/0185: training loss 0.395
+Epoch 103 iteration 0060/0185: training loss 0.402
+Epoch 103 iteration 0080/0185: training loss 0.407
+Epoch 103 iteration 0100/0185: training loss 0.408
+Epoch 103 iteration 0120/0185: training loss 0.410
+Epoch 103 iteration 0140/0186: training loss 0.408
+Epoch 103 iteration 0160/0186: training loss 0.410
+Epoch 103 iteration 0180/0186: training loss 0.412
+Epoch 103 validation pixAcc: 0.946, mIoU: 0.629
+Epoch 104 iteration 0020/0185: training loss 0.382
+Epoch 104 iteration 0040/0185: training loss 0.378
+Epoch 104 iteration 0060/0185: training loss 0.391
+Epoch 104 iteration 0080/0185: training loss 0.388
+Epoch 104 iteration 0100/0185: training loss 0.389
+Epoch 104 iteration 0120/0185: training loss 0.390
+Epoch 104 iteration 0140/0186: training loss 0.386
+Epoch 104 iteration 0160/0186: training loss 0.384
+Epoch 104 iteration 0180/0186: training loss 0.383
+Epoch 104 validation pixAcc: 0.945, mIoU: 0.632
+Epoch 105 iteration 0020/0185: training loss 0.366
+Epoch 105 iteration 0040/0185: training loss 0.387
+Epoch 105 iteration 0060/0185: training loss 0.396
+Epoch 105 iteration 0080/0185: training loss 0.392
+Epoch 105 iteration 0100/0185: training loss 0.391
+Epoch 105 iteration 0120/0185: training loss 0.394
+Epoch 105 iteration 0140/0186: training loss 0.391
+Epoch 105 iteration 0160/0186: training loss 0.388
+Epoch 105 iteration 0180/0186: training loss 0.385
+Epoch 105 validation pixAcc: 0.948, mIoU: 0.628
+Epoch 106 iteration 0020/0185: training loss 0.380
+Epoch 106 iteration 0040/0185: training loss 0.384
+Epoch 106 iteration 0060/0185: training loss 0.385
+Epoch 106 iteration 0080/0185: training loss 0.380
+Epoch 106 iteration 0100/0185: training loss 0.379
+Epoch 106 iteration 0120/0185: training loss 0.376
+Epoch 106 iteration 0140/0186: training loss 0.372
+Epoch 106 iteration 0160/0186: training loss 0.373
+Epoch 106 iteration 0180/0186: training loss 0.373
+Epoch 106 validation pixAcc: 0.944, mIoU: 0.634
+Epoch 107 iteration 0020/0185: training loss 0.382
+Epoch 107 iteration 0040/0185: training loss 0.375
+Epoch 107 iteration 0060/0185: training loss 0.369
+Epoch 107 iteration 0080/0185: training loss 0.369
+Epoch 107 iteration 0100/0185: training loss 0.368
+Epoch 107 iteration 0120/0185: training loss 0.366
+Epoch 107 iteration 0140/0186: training loss 0.365
+Epoch 107 iteration 0160/0186: training loss 0.367
+Epoch 107 iteration 0180/0186: training loss 0.369
+Epoch 107 validation pixAcc: 0.949, mIoU: 0.655
+Epoch 108 iteration 0020/0185: training loss 0.359
+Epoch 108 iteration 0040/0185: training loss 0.367
+Epoch 108 iteration 0060/0185: training loss 0.365
+Epoch 108 iteration 0080/0185: training loss 0.372
+Epoch 108 iteration 0100/0185: training loss 0.368
+Epoch 108 iteration 0120/0185: training loss 0.364
+Epoch 108 iteration 0140/0186: training loss 0.359
+Epoch 108 iteration 0160/0186: training loss 0.360
+Epoch 108 iteration 0180/0186: training loss 0.363
+Epoch 108 validation pixAcc: 0.948, mIoU: 0.650
+Epoch 109 iteration 0020/0185: training loss 0.374
+Epoch 109 iteration 0040/0185: training loss 0.384
+Epoch 109 iteration 0060/0185: training loss 0.389
+Epoch 109 iteration 0080/0185: training loss 0.391
+Epoch 109 iteration 0100/0185: training loss 0.396
+Epoch 109 iteration 0120/0185: training loss 0.399
+Epoch 109 iteration 0140/0186: training loss 0.397
+Epoch 109 iteration 0160/0186: training loss 0.396
+Epoch 109 iteration 0180/0186: training loss 0.400
+Epoch 109 validation pixAcc: 0.946, mIoU: 0.626
+Epoch 110 iteration 0020/0185: training loss 0.361
+Epoch 110 iteration 0040/0185: training loss 0.363
+Epoch 110 iteration 0060/0185: training loss 0.384
+Epoch 110 iteration 0080/0185: training loss 0.385
+Epoch 110 iteration 0100/0185: training loss 0.390
+Epoch 110 iteration 0120/0185: training loss 0.391
+Epoch 110 iteration 0140/0186: training loss 0.388
+Epoch 110 iteration 0160/0186: training loss 0.385
+Epoch 110 iteration 0180/0186: training loss 0.385
+Epoch 110 validation pixAcc: 0.943, mIoU: 0.613
+Epoch 111 iteration 0020/0185: training loss 0.385
+Epoch 111 iteration 0040/0185: training loss 0.384
+Epoch 111 iteration 0060/0185: training loss 0.373
+Epoch 111 iteration 0080/0185: training loss 0.375
+Epoch 111 iteration 0100/0185: training loss 0.373
+Epoch 111 iteration 0120/0185: training loss 0.370
+Epoch 111 iteration 0140/0185: training loss 0.374
+Epoch 111 iteration 0160/0185: training loss 0.378
+Epoch 111 iteration 0180/0185: training loss 0.381
+Epoch 111 validation pixAcc: 0.948, mIoU: 0.647
+Epoch 112 iteration 0020/0185: training loss 0.387
+Epoch 112 iteration 0040/0185: training loss 0.377
+Epoch 112 iteration 0060/0185: training loss 0.374
+Epoch 112 iteration 0080/0185: training loss 0.369
+Epoch 112 iteration 0100/0185: training loss 0.380
+Epoch 112 iteration 0120/0185: training loss 0.386
+Epoch 112 iteration 0140/0186: training loss 0.388
+Epoch 112 iteration 0160/0186: training loss 0.390
+Epoch 112 iteration 0180/0186: training loss 0.391
+Epoch 112 validation pixAcc: 0.947, mIoU: 0.622
+Epoch 113 iteration 0020/0185: training loss 0.388
+Epoch 113 iteration 0040/0185: training loss 0.379
+Epoch 113 iteration 0060/0185: training loss 0.382
+Epoch 113 iteration 0080/0185: training loss 0.382
+Epoch 113 iteration 0100/0185: training loss 0.376
+Epoch 113 iteration 0120/0185: training loss 0.375
+Epoch 113 iteration 0140/0186: training loss 0.374
+Epoch 113 iteration 0160/0186: training loss 0.373
+Epoch 113 iteration 0180/0186: training loss 0.374
+Epoch 113 validation pixAcc: 0.946, mIoU: 0.627
+Epoch 114 iteration 0020/0185: training loss 0.379
+Epoch 114 iteration 0040/0185: training loss 0.391
+Epoch 114 iteration 0060/0185: training loss 0.393
+Epoch 114 iteration 0080/0185: training loss 0.386
+Epoch 114 iteration 0100/0185: training loss 0.384
+Epoch 114 iteration 0120/0185: training loss 0.386
+Epoch 114 iteration 0140/0186: training loss 0.386
+Epoch 114 iteration 0160/0186: training loss 0.385
+Epoch 114 iteration 0180/0186: training loss 0.383
+Epoch 114 validation pixAcc: 0.948, mIoU: 0.635
+Epoch 115 iteration 0020/0185: training loss 0.342
+Epoch 115 iteration 0040/0185: training loss 0.342
+Epoch 115 iteration 0060/0185: training loss 0.342
+Epoch 115 iteration 0080/0185: training loss 0.350
+Epoch 115 iteration 0100/0185: training loss 0.356
+Epoch 115 iteration 0120/0185: training loss 0.369
+Epoch 115 iteration 0140/0186: training loss 0.371
+Epoch 115 iteration 0160/0186: training loss 0.368
+Epoch 115 iteration 0180/0186: training loss 0.367
+Epoch 115 validation pixAcc: 0.950, mIoU: 0.656
+Epoch 116 iteration 0020/0185: training loss 0.367
+Epoch 116 iteration 0040/0185: training loss 0.353
+Epoch 116 iteration 0060/0185: training loss 0.356
+Epoch 116 iteration 0080/0185: training loss 0.354
+Epoch 116 iteration 0100/0185: training loss 0.350
+Epoch 116 iteration 0120/0185: training loss 0.352
+Epoch 116 iteration 0140/0186: training loss 0.355
+Epoch 116 iteration 0160/0186: training loss 0.359
+Epoch 116 iteration 0180/0186: training loss 0.362
+Epoch 116 validation pixAcc: 0.948, mIoU: 0.646
+Epoch 117 iteration 0020/0185: training loss 0.352
+Epoch 117 iteration 0040/0185: training loss 0.352
+Epoch 117 iteration 0060/0185: training loss 0.368
+Epoch 117 iteration 0080/0185: training loss 0.373
+Epoch 117 iteration 0100/0185: training loss 0.382
+Epoch 117 iteration 0120/0185: training loss 0.374
+Epoch 117 iteration 0140/0186: training loss 0.377
+Epoch 117 iteration 0160/0186: training loss 0.377
+Epoch 117 iteration 0180/0186: training loss 0.379
+Epoch 117 validation pixAcc: 0.949, mIoU: 0.644
+Epoch 118 iteration 0020/0185: training loss 0.361
+Epoch 118 iteration 0040/0185: training loss 0.357
+Epoch 118 iteration 0060/0185: training loss 0.359
+Epoch 118 iteration 0080/0185: training loss 0.362
+Epoch 118 iteration 0100/0185: training loss 0.359
+Epoch 118 iteration 0120/0185: training loss 0.362
+Epoch 118 iteration 0140/0186: training loss 0.363
+Epoch 118 iteration 0160/0186: training loss 0.366
+Epoch 118 iteration 0180/0186: training loss 0.364
+Epoch 118 validation pixAcc: 0.949, mIoU: 0.634
+Epoch 119 iteration 0020/0185: training loss 0.366
+Epoch 119 iteration 0040/0185: training loss 0.362
+Epoch 119 iteration 0060/0185: training loss 0.378
+Epoch 119 iteration 0080/0185: training loss 0.377
+Epoch 119 iteration 0100/0185: training loss 0.386
+Epoch 119 iteration 0120/0185: training loss 0.389
+Epoch 119 iteration 0140/0186: training loss 0.387
+Epoch 119 iteration 0160/0186: training loss 0.386
+Epoch 119 iteration 0180/0186: training loss 0.386
+Epoch 119 validation pixAcc: 0.949, mIoU: 0.642
+Epoch 120 iteration 0020/0185: training loss 0.391
+Epoch 120 iteration 0040/0185: training loss 0.367
+Epoch 120 iteration 0060/0185: training loss 0.364
+Epoch 120 iteration 0080/0185: training loss 0.371
+Epoch 120 iteration 0100/0185: training loss 0.369
+Epoch 120 iteration 0120/0185: training loss 0.371
+Epoch 120 iteration 0140/0186: training loss 0.370
+Epoch 120 iteration 0160/0186: training loss 0.367
+Epoch 120 iteration 0180/0186: training loss 0.368
+Epoch 120 validation pixAcc: 0.950, mIoU: 0.641
+Epoch 121 iteration 0020/0185: training loss 0.379
+Epoch 121 iteration 0040/0185: training loss 0.374
+Epoch 121 iteration 0060/0185: training loss 0.365
+Epoch 121 iteration 0080/0185: training loss 0.369
+Epoch 121 iteration 0100/0185: training loss 0.373
+Epoch 121 iteration 0120/0185: training loss 0.371
+Epoch 121 iteration 0140/0186: training loss 0.369
+Epoch 121 iteration 0160/0186: training loss 0.369
+Epoch 121 iteration 0180/0186: training loss 0.369
+Epoch 121 validation pixAcc: 0.948, mIoU: 0.639
+Epoch 122 iteration 0020/0185: training loss 0.360
+Epoch 122 iteration 0040/0185: training loss 0.361
+Epoch 122 iteration 0060/0185: training loss 0.356
+Epoch 122 iteration 0080/0185: training loss 0.354
+Epoch 122 iteration 0100/0185: training loss 0.352
+Epoch 122 iteration 0120/0185: training loss 0.357
+Epoch 122 iteration 0140/0186: training loss 0.357
+Epoch 122 iteration 0160/0186: training loss 0.354
+Epoch 122 iteration 0180/0186: training loss 0.356
+Epoch 122 validation pixAcc: 0.950, mIoU: 0.648
+Epoch 123 iteration 0020/0185: training loss 0.360
+Epoch 123 iteration 0040/0185: training loss 0.350
+Epoch 123 iteration 0060/0185: training loss 0.349
+Epoch 123 iteration 0080/0185: training loss 0.354
+Epoch 123 iteration 0100/0185: training loss 0.352
+Epoch 123 iteration 0120/0185: training loss 0.355
+Epoch 123 iteration 0140/0186: training loss 0.357
+Epoch 123 iteration 0160/0186: training loss 0.357
+Epoch 123 iteration 0180/0186: training loss 0.357
+Epoch 123 validation pixAcc: 0.950, mIoU: 0.647
+Epoch 124 iteration 0020/0185: training loss 0.361
+Epoch 124 iteration 0040/0185: training loss 0.355
+Epoch 124 iteration 0060/0185: training loss 0.358
+Epoch 124 iteration 0080/0185: training loss 0.357
+Epoch 124 iteration 0100/0185: training loss 0.357
+Epoch 124 iteration 0120/0185: training loss 0.356
+Epoch 124 iteration 0140/0186: training loss 0.352
+Epoch 124 iteration 0160/0186: training loss 0.352
+Epoch 124 iteration 0180/0186: training loss 0.352
+Epoch 124 validation pixAcc: 0.951, mIoU: 0.650
+Epoch 125 iteration 0020/0185: training loss 0.373
+Epoch 125 iteration 0040/0185: training loss 0.367
+Epoch 125 iteration 0060/0185: training loss 0.365
+Epoch 125 iteration 0080/0185: training loss 0.366
+Epoch 125 iteration 0100/0185: training loss 0.364
+Epoch 125 iteration 0120/0185: training loss 0.365
+Epoch 125 iteration 0140/0186: training loss 0.363
+Epoch 125 iteration 0160/0186: training loss 0.365
+Epoch 125 iteration 0180/0186: training loss 0.369
+Epoch 125 validation pixAcc: 0.948, mIoU: 0.643
+Epoch 126 iteration 0020/0185: training loss 0.391
+Epoch 126 iteration 0040/0185: training loss 0.379
+Epoch 126 iteration 0060/0185: training loss 0.374
+Epoch 126 iteration 0080/0185: training loss 0.367
+Epoch 126 iteration 0100/0185: training loss 0.368
+Epoch 126 iteration 0120/0185: training loss 0.370
+Epoch 126 iteration 0140/0186: training loss 0.370
+Epoch 126 iteration 0160/0186: training loss 0.372
+Epoch 126 iteration 0180/0186: training loss 0.371
+Epoch 126 validation pixAcc: 0.949, mIoU: 0.650
+Epoch 127 iteration 0020/0185: training loss 0.339
+Epoch 127 iteration 0040/0185: training loss 0.363
+Epoch 127 iteration 0060/0185: training loss 0.369
+Epoch 127 iteration 0080/0185: training loss 0.369
+Epoch 127 iteration 0100/0185: training loss 0.366
+Epoch 127 iteration 0120/0185: training loss 0.368
+Epoch 127 iteration 0140/0185: training loss 0.367
+Epoch 127 iteration 0160/0185: training loss 0.364
+Epoch 127 iteration 0180/0185: training loss 0.369
+Epoch 127 validation pixAcc: 0.949, mIoU: 0.640
+Epoch 128 iteration 0020/0185: training loss 0.336
+Epoch 128 iteration 0040/0185: training loss 0.347
+Epoch 128 iteration 0060/0185: training loss 0.354
+Epoch 128 iteration 0080/0185: training loss 0.360
+Epoch 128 iteration 0100/0185: training loss 0.367
+Epoch 128 iteration 0120/0185: training loss 0.365
+Epoch 128 iteration 0140/0186: training loss 0.363
+Epoch 128 iteration 0160/0186: training loss 0.364
+Epoch 128 iteration 0180/0186: training loss 0.363
+Epoch 128 validation pixAcc: 0.949, mIoU: 0.643
+Epoch 129 iteration 0020/0185: training loss 0.349
+Epoch 129 iteration 0040/0185: training loss 0.361
+Epoch 129 iteration 0060/0185: training loss 0.365
+Epoch 129 iteration 0080/0185: training loss 0.361
+Epoch 129 iteration 0100/0185: training loss 0.363
+Epoch 129 iteration 0120/0185: training loss 0.361
+Epoch 129 iteration 0140/0186: training loss 0.359
+Epoch 129 iteration 0160/0186: training loss 0.357
+Epoch 129 iteration 0180/0186: training loss 0.358
+Epoch 129 validation pixAcc: 0.949, mIoU: 0.654
+Epoch 130 iteration 0020/0185: training loss 0.338
+Epoch 130 iteration 0040/0185: training loss 0.345
+Epoch 130 iteration 0060/0185: training loss 0.348
+Epoch 130 iteration 0080/0185: training loss 0.355
+Epoch 130 iteration 0100/0185: training loss 0.355
+Epoch 130 iteration 0120/0185: training loss 0.355
+Epoch 130 iteration 0140/0186: training loss 0.358
+Epoch 130 iteration 0160/0186: training loss 0.361
+Epoch 130 iteration 0180/0186: training loss 0.363
+Epoch 130 validation pixAcc: 0.949, mIoU: 0.639
+Epoch 131 iteration 0020/0185: training loss 0.334
+Epoch 131 iteration 0040/0185: training loss 0.327
+Epoch 131 iteration 0060/0185: training loss 0.342
+Epoch 131 iteration 0080/0185: training loss 0.344
+Epoch 131 iteration 0100/0185: training loss 0.345
+Epoch 131 iteration 0120/0185: training loss 0.343
+Epoch 131 iteration 0140/0186: training loss 0.343
+Epoch 131 iteration 0160/0186: training loss 0.350
+Epoch 131 iteration 0180/0186: training loss 0.351
+Epoch 131 validation pixAcc: 0.947, mIoU: 0.634
+Epoch 132 iteration 0020/0185: training loss 0.359
+Epoch 132 iteration 0040/0185: training loss 0.346
+Epoch 132 iteration 0060/0185: training loss 0.347
+Epoch 132 iteration 0080/0185: training loss 0.346
+Epoch 132 iteration 0100/0185: training loss 0.343
+Epoch 132 iteration 0120/0185: training loss 0.345
+Epoch 132 iteration 0140/0186: training loss 0.346
+Epoch 132 iteration 0160/0186: training loss 0.351
+Epoch 132 iteration 0180/0186: training loss 0.354
+Epoch 132 validation pixAcc: 0.950, mIoU: 0.644
+Epoch 133 iteration 0020/0185: training loss 0.367
+Epoch 133 iteration 0040/0185: training loss 0.354
+Epoch 133 iteration 0060/0185: training loss 0.356
+Epoch 133 iteration 0080/0185: training loss 0.359
+Epoch 133 iteration 0100/0185: training loss 0.356
+Epoch 133 iteration 0120/0185: training loss 0.350
+Epoch 133 iteration 0140/0186: training loss 0.347
+Epoch 133 iteration 0160/0186: training loss 0.350
+Epoch 133 iteration 0180/0186: training loss 0.351
+Epoch 133 validation pixAcc: 0.948, mIoU: 0.643
+Epoch 134 iteration 0020/0185: training loss 0.350
+Epoch 134 iteration 0040/0185: training loss 0.354
+Epoch 134 iteration 0060/0185: training loss 0.352
+Epoch 134 iteration 0080/0185: training loss 0.352
+Epoch 134 iteration 0100/0185: training loss 0.350
+Epoch 134 iteration 0120/0185: training loss 0.352
+Epoch 134 iteration 0140/0186: training loss 0.349
+Epoch 134 iteration 0160/0186: training loss 0.350
+Epoch 134 iteration 0180/0186: training loss 0.348
+Epoch 134 validation pixAcc: 0.949, mIoU: 0.643
+Epoch 135 iteration 0020/0185: training loss 0.332
+Epoch 135 iteration 0040/0185: training loss 0.349
+Epoch 135 iteration 0060/0185: training loss 0.353
+Epoch 135 iteration 0080/0185: training loss 0.353
+Epoch 135 iteration 0100/0185: training loss 0.360
+Epoch 135 iteration 0120/0185: training loss 0.361
+Epoch 135 iteration 0140/0186: training loss 0.360
+Epoch 135 iteration 0160/0186: training loss 0.361
+Epoch 135 iteration 0180/0186: training loss 0.358
+Epoch 135 validation pixAcc: 0.949, mIoU: 0.645
+Epoch 136 iteration 0020/0185: training loss 0.356
+Epoch 136 iteration 0040/0185: training loss 0.350
+Epoch 136 iteration 0060/0185: training loss 0.349
+Epoch 136 iteration 0080/0185: training loss 0.355
+Epoch 136 iteration 0100/0185: training loss 0.363
+Epoch 136 iteration 0120/0185: training loss 0.361
+Epoch 136 iteration 0140/0186: training loss 0.363
+Epoch 136 iteration 0160/0186: training loss 0.361
+Epoch 136 iteration 0180/0186: training loss 0.359
+Epoch 136 validation pixAcc: 0.950, mIoU: 0.644
+Epoch 137 iteration 0020/0185: training loss 0.338
+Epoch 137 iteration 0040/0185: training loss 0.349
+Epoch 137 iteration 0060/0185: training loss 0.342
+Epoch 137 iteration 0080/0185: training loss 0.332
+Epoch 137 iteration 0100/0185: training loss 0.333
+Epoch 137 iteration 0120/0185: training loss 0.334
+Epoch 137 iteration 0140/0186: training loss 0.335
+Epoch 137 iteration 0160/0186: training loss 0.337
+Epoch 137 iteration 0180/0186: training loss 0.337
+Epoch 137 validation pixAcc: 0.950, mIoU: 0.644
+Epoch 138 iteration 0020/0185: training loss 0.318
+Epoch 138 iteration 0040/0185: training loss 0.338
+Epoch 138 iteration 0060/0185: training loss 0.335
+Epoch 138 iteration 0080/0185: training loss 0.335
+Epoch 138 iteration 0100/0185: training loss 0.333
+Epoch 138 iteration 0120/0185: training loss 0.333
+Epoch 138 iteration 0140/0186: training loss 0.331
+Epoch 138 iteration 0160/0186: training loss 0.329
+Epoch 138 iteration 0180/0186: training loss 0.329
+Epoch 138 validation pixAcc: 0.951, mIoU: 0.654
+Epoch 139 iteration 0020/0185: training loss 0.333
+Epoch 139 iteration 0040/0185: training loss 0.347
+Epoch 139 iteration 0060/0185: training loss 0.349
+Epoch 139 iteration 0080/0185: training loss 0.348
+Epoch 139 iteration 0100/0185: training loss 0.350
+Epoch 139 iteration 0120/0185: training loss 0.356
+Epoch 139 iteration 0140/0186: training loss 0.357
+Epoch 139 iteration 0160/0186: training loss 0.356
+Epoch 139 iteration 0180/0186: training loss 0.356
+Epoch 139 validation pixAcc: 0.951, mIoU: 0.655
+Epoch 140 iteration 0020/0185: training loss 0.336
+Epoch 140 iteration 0040/0185: training loss 0.341
+Epoch 140 iteration 0060/0185: training loss 0.338
+Epoch 140 iteration 0080/0185: training loss 0.337
+Epoch 140 iteration 0100/0185: training loss 0.338
+Epoch 140 iteration 0120/0185: training loss 0.340
+Epoch 140 iteration 0140/0186: training loss 0.341
+Epoch 140 iteration 0160/0186: training loss 0.342
+Epoch 140 iteration 0180/0186: training loss 0.347
+Epoch 140 validation pixAcc: 0.948, mIoU: 0.635
+Epoch 141 iteration 0020/0185: training loss 0.378
+Epoch 141 iteration 0040/0185: training loss 0.378
+Epoch 141 iteration 0060/0185: training loss 0.376
+Epoch 141 iteration 0080/0185: training loss 0.371
+Epoch 141 iteration 0100/0185: training loss 0.364
+Epoch 141 iteration 0120/0185: training loss 0.362
+Epoch 141 iteration 0140/0186: training loss 0.358
+Epoch 141 iteration 0160/0186: training loss 0.357
+Epoch 141 iteration 0180/0186: training loss 0.359
+Epoch 141 validation pixAcc: 0.950, mIoU: 0.654
+Epoch 142 iteration 0020/0185: training loss 0.348
+Epoch 142 iteration 0040/0185: training loss 0.330
+Epoch 142 iteration 0060/0185: training loss 0.329
+Epoch 142 iteration 0080/0185: training loss 0.335
+Epoch 142 iteration 0100/0185: training loss 0.338
+Epoch 142 iteration 0120/0185: training loss 0.349
+Epoch 142 iteration 0140/0186: training loss 0.354
+Epoch 142 iteration 0160/0186: training loss 0.358
+Epoch 142 iteration 0180/0186: training loss 0.361
+Epoch 142 validation pixAcc: 0.949, mIoU: 0.644
+Epoch 143 iteration 0020/0185: training loss 0.359
+Epoch 143 iteration 0040/0185: training loss 0.346
+Epoch 143 iteration 0060/0185: training loss 0.344
+Epoch 143 iteration 0080/0185: training loss 0.346
+Epoch 143 iteration 0100/0185: training loss 0.340
+Epoch 143 iteration 0120/0185: training loss 0.347
+Epoch 143 iteration 0140/0185: training loss 0.345
+Epoch 143 iteration 0160/0185: training loss 0.346
+Epoch 143 iteration 0180/0185: training loss 0.348
+Epoch 143 validation pixAcc: 0.948, mIoU: 0.656
+Epoch 144 iteration 0020/0185: training loss 0.338
+Epoch 144 iteration 0040/0185: training loss 0.344
+Epoch 144 iteration 0060/0185: training loss 0.344
+Epoch 144 iteration 0080/0185: training loss 0.344
+Epoch 144 iteration 0100/0185: training loss 0.344
+Epoch 144 iteration 0120/0185: training loss 0.343
+Epoch 144 iteration 0140/0186: training loss 0.345
+Epoch 144 iteration 0160/0186: training loss 0.343
+Epoch 144 iteration 0180/0186: training loss 0.341
+Epoch 144 validation pixAcc: 0.952, mIoU: 0.666
+Epoch 145 iteration 0020/0185: training loss 0.327
+Epoch 145 iteration 0040/0185: training loss 0.335
+Epoch 145 iteration 0060/0185: training loss 0.334
+Epoch 145 iteration 0080/0185: training loss 0.331
+Epoch 145 iteration 0100/0185: training loss 0.338
+Epoch 145 iteration 0120/0185: training loss 0.344
+Epoch 145 iteration 0140/0186: training loss 0.356
+Epoch 145 iteration 0160/0186: training loss 0.355
+Epoch 145 iteration 0180/0186: training loss 0.354
+Epoch 145 validation pixAcc: 0.949, mIoU: 0.647
+Epoch 146 iteration 0020/0185: training loss 0.380
+Epoch 146 iteration 0040/0185: training loss 0.404
+Epoch 146 iteration 0060/0185: training loss 0.398
+Epoch 146 iteration 0080/0185: training loss 0.391
+Epoch 146 iteration 0100/0185: training loss 0.384
+Epoch 146 iteration 0120/0185: training loss 0.379
+Epoch 146 iteration 0140/0186: training loss 0.373
+Epoch 146 iteration 0160/0186: training loss 0.371
+Epoch 146 iteration 0180/0186: training loss 0.370
+Epoch 146 validation pixAcc: 0.949, mIoU: 0.647
+Epoch 147 iteration 0020/0185: training loss 0.355
+Epoch 147 iteration 0040/0185: training loss 0.376
+Epoch 147 iteration 0060/0185: training loss 0.375
+Epoch 147 iteration 0080/0185: training loss 0.369
+Epoch 147 iteration 0100/0185: training loss 0.361
+Epoch 147 iteration 0120/0185: training loss 0.355
+Epoch 147 iteration 0140/0186: training loss 0.351
+Epoch 147 iteration 0160/0186: training loss 0.353
+Epoch 147 iteration 0180/0186: training loss 0.353
+Epoch 147 validation pixAcc: 0.951, mIoU: 0.654
+Epoch 148 iteration 0020/0185: training loss 0.327
+Epoch 148 iteration 0040/0185: training loss 0.334
+Epoch 148 iteration 0060/0185: training loss 0.335
+Epoch 148 iteration 0080/0185: training loss 0.336
+Epoch 148 iteration 0100/0185: training loss 0.338
+Epoch 148 iteration 0120/0185: training loss 0.337
+Epoch 148 iteration 0140/0186: training loss 0.337
+Epoch 148 iteration 0160/0186: training loss 0.337
+Epoch 148 iteration 0180/0186: training loss 0.337
+Epoch 148 validation pixAcc: 0.952, mIoU: 0.666
+Epoch 149 iteration 0020/0185: training loss 0.336
+Epoch 149 iteration 0040/0185: training loss 0.348
+Epoch 149 iteration 0060/0185: training loss 0.344
+Epoch 149 iteration 0080/0185: training loss 0.339
+Epoch 149 iteration 0100/0185: training loss 0.338
+Epoch 149 iteration 0120/0185: training loss 0.337
+Epoch 149 iteration 0140/0186: training loss 0.333
+Epoch 149 iteration 0160/0186: training loss 0.333
+Epoch 149 iteration 0180/0186: training loss 0.335
+Epoch 149 validation pixAcc: 0.950, mIoU: 0.664
+Epoch 150 iteration 0020/0185: training loss 0.367
+Epoch 150 iteration 0040/0185: training loss 0.362
+Epoch 150 iteration 0060/0185: training loss 0.359
+Epoch 150 iteration 0080/0185: training loss 0.352
+Epoch 150 iteration 0100/0185: training loss 0.349
+Epoch 150 iteration 0120/0185: training loss 0.344
+Epoch 150 iteration 0140/0186: training loss 0.342
+Epoch 150 iteration 0160/0186: training loss 0.342
+Epoch 150 iteration 0180/0186: training loss 0.342
+Epoch 150 validation pixAcc: 0.951, mIoU: 0.663
+Epoch 151 iteration 0020/0185: training loss 0.315
+Epoch 151 iteration 0040/0185: training loss 0.330
+Epoch 151 iteration 0060/0185: training loss 0.329
+Epoch 151 iteration 0080/0185: training loss 0.327
+Epoch 151 iteration 0100/0185: training loss 0.330
+Epoch 151 iteration 0120/0185: training loss 0.330
+Epoch 151 iteration 0140/0186: training loss 0.332
+Epoch 151 iteration 0160/0186: training loss 0.331
+Epoch 151 iteration 0180/0186: training loss 0.329
+Epoch 151 validation pixAcc: 0.952, mIoU: 0.670
+Epoch 152 iteration 0020/0185: training loss 0.323
+Epoch 152 iteration 0040/0185: training loss 0.324
+Epoch 152 iteration 0060/0185: training loss 0.324
+Epoch 152 iteration 0080/0185: training loss 0.328
+Epoch 152 iteration 0100/0185: training loss 0.330
+Epoch 152 iteration 0120/0185: training loss 0.331
+Epoch 152 iteration 0140/0186: training loss 0.330
+Epoch 152 iteration 0160/0186: training loss 0.330
+Epoch 152 iteration 0180/0186: training loss 0.334
+Epoch 152 validation pixAcc: 0.951, mIoU: 0.661
+Epoch 153 iteration 0020/0185: training loss 0.339
+Epoch 153 iteration 0040/0185: training loss 0.341
+Epoch 153 iteration 0060/0185: training loss 0.341
+Epoch 153 iteration 0080/0185: training loss 0.341
+Epoch 153 iteration 0100/0185: training loss 0.339
+Epoch 153 iteration 0120/0185: training loss 0.337
+Epoch 153 iteration 0140/0186: training loss 0.334
+Epoch 153 iteration 0160/0186: training loss 0.334
+Epoch 153 iteration 0180/0186: training loss 0.334
+Epoch 153 validation pixAcc: 0.951, mIoU: 0.666
+Epoch 154 iteration 0020/0185: training loss 0.341
+Epoch 154 iteration 0040/0185: training loss 0.337
+Epoch 154 iteration 0060/0185: training loss 0.330
+Epoch 154 iteration 0080/0185: training loss 0.332
+Epoch 154 iteration 0100/0185: training loss 0.335
+Epoch 154 iteration 0120/0185: training loss 0.333
+Epoch 154 iteration 0140/0186: training loss 0.330
+Epoch 154 iteration 0160/0186: training loss 0.329
+Epoch 154 iteration 0180/0186: training loss 0.329
+Epoch 154 validation pixAcc: 0.951, mIoU: 0.662
+Epoch 155 iteration 0020/0185: training loss 0.323
+Epoch 155 iteration 0040/0185: training loss 0.349
+Epoch 155 iteration 0060/0185: training loss 0.344
+Epoch 155 iteration 0080/0185: training loss 0.347
+Epoch 155 iteration 0100/0185: training loss 0.343
+Epoch 155 iteration 0120/0185: training loss 0.342
+Epoch 155 iteration 0140/0186: training loss 0.338
+Epoch 155 iteration 0160/0186: training loss 0.338
+Epoch 155 iteration 0180/0186: training loss 0.337
+Epoch 155 validation pixAcc: 0.952, mIoU: 0.665
+Epoch 156 iteration 0020/0185: training loss 0.323
+Epoch 156 iteration 0040/0185: training loss 0.327
+Epoch 156 iteration 0060/0185: training loss 0.325
+Epoch 156 iteration 0080/0185: training loss 0.325
+Epoch 156 iteration 0100/0185: training loss 0.329
+Epoch 156 iteration 0120/0185: training loss 0.329
+Epoch 156 iteration 0140/0186: training loss 0.330
+Epoch 156 iteration 0160/0186: training loss 0.331
+Epoch 156 iteration 0180/0186: training loss 0.331
+Epoch 156 validation pixAcc: 0.951, mIoU: 0.659
+Epoch 157 iteration 0020/0185: training loss 0.326
+Epoch 157 iteration 0040/0185: training loss 0.331
+Epoch 157 iteration 0060/0185: training loss 0.326
+Epoch 157 iteration 0080/0185: training loss 0.328
+Epoch 157 iteration 0100/0185: training loss 0.327
+Epoch 157 iteration 0120/0185: training loss 0.330
+Epoch 157 iteration 0140/0186: training loss 0.331
+Epoch 157 iteration 0160/0186: training loss 0.335
+Epoch 157 iteration 0180/0186: training loss 0.334
+Epoch 157 validation pixAcc: 0.951, mIoU: 0.662
+Epoch 158 iteration 0020/0185: training loss 0.325
+Epoch 158 iteration 0040/0185: training loss 0.328
+Epoch 158 iteration 0060/0185: training loss 0.324
+Epoch 158 iteration 0080/0185: training loss 0.325
+Epoch 158 iteration 0100/0185: training loss 0.323
+Epoch 158 iteration 0120/0185: training loss 0.322
+Epoch 158 iteration 0140/0186: training loss 0.324
+Epoch 158 iteration 0160/0186: training loss 0.327
+Epoch 158 iteration 0180/0186: training loss 0.327
+Epoch 158 validation pixAcc: 0.951, mIoU: 0.669
+Epoch 159 iteration 0020/0185: training loss 0.322
+Epoch 159 iteration 0040/0185: training loss 0.315
+Epoch 159 iteration 0060/0185: training loss 0.321
+Epoch 159 iteration 0080/0185: training loss 0.323
+Epoch 159 iteration 0100/0185: training loss 0.332
+Epoch 159 iteration 0120/0185: training loss 0.332
+Epoch 159 iteration 0140/0185: training loss 0.335
+Epoch 159 iteration 0160/0185: training loss 0.339
+Epoch 159 iteration 0180/0185: training loss 0.337
+Epoch 159 validation pixAcc: 0.951, mIoU: 0.651
+Epoch 160 iteration 0020/0185: training loss 0.353
+Epoch 160 iteration 0040/0185: training loss 0.352
+Epoch 160 iteration 0060/0185: training loss 0.344
+Epoch 160 iteration 0080/0185: training loss 0.346
+Epoch 160 iteration 0100/0185: training loss 0.345
+Epoch 160 iteration 0120/0185: training loss 0.343
+Epoch 160 iteration 0140/0186: training loss 0.341
+Epoch 160 iteration 0160/0186: training loss 0.342
+Epoch 160 iteration 0180/0186: training loss 0.346
+Epoch 160 validation pixAcc: 0.949, mIoU: 0.650
+Epoch 161 iteration 0020/0185: training loss 0.343
+Epoch 161 iteration 0040/0185: training loss 0.351
+Epoch 161 iteration 0060/0185: training loss 0.345
+Epoch 161 iteration 0080/0185: training loss 0.339
+Epoch 161 iteration 0100/0185: training loss 0.338
+Epoch 161 iteration 0120/0185: training loss 0.335
+Epoch 161 iteration 0140/0186: training loss 0.332
+Epoch 161 iteration 0160/0186: training loss 0.333
+Epoch 161 iteration 0180/0186: training loss 0.334
+Epoch 161 validation pixAcc: 0.951, mIoU: 0.661
+Epoch 162 iteration 0020/0185: training loss 0.322
+Epoch 162 iteration 0040/0185: training loss 0.328
+Epoch 162 iteration 0060/0185: training loss 0.342
+Epoch 162 iteration 0080/0185: training loss 0.345
+Epoch 162 iteration 0100/0185: training loss 0.348
+Epoch 162 iteration 0120/0185: training loss 0.343
+Epoch 162 iteration 0140/0186: training loss 0.341
+Epoch 162 iteration 0160/0186: training loss 0.339
+Epoch 162 iteration 0180/0186: training loss 0.340
+Epoch 162 validation pixAcc: 0.952, mIoU: 0.656
+Epoch 163 iteration 0020/0185: training loss 0.336
+Epoch 163 iteration 0040/0185: training loss 0.326
+Epoch 163 iteration 0060/0185: training loss 0.328
+Epoch 163 iteration 0080/0185: training loss 0.320
+Epoch 163 iteration 0100/0185: training loss 0.320
+Epoch 163 iteration 0120/0185: training loss 0.318
+Epoch 163 iteration 0140/0186: training loss 0.318
+Epoch 163 iteration 0160/0186: training loss 0.318
+Epoch 163 iteration 0180/0186: training loss 0.319
+Epoch 163 validation pixAcc: 0.953, mIoU: 0.659
+Epoch 164 iteration 0020/0185: training loss 0.309
+Epoch 164 iteration 0040/0185: training loss 0.317
+Epoch 164 iteration 0060/0185: training loss 0.312
+Epoch 164 iteration 0080/0185: training loss 0.312
+Epoch 164 iteration 0100/0185: training loss 0.314
+Epoch 164 iteration 0120/0185: training loss 0.315
+Epoch 164 iteration 0140/0186: training loss 0.316
+Epoch 164 iteration 0160/0186: training loss 0.317
+Epoch 164 iteration 0180/0186: training loss 0.318
+Epoch 164 validation pixAcc: 0.952, mIoU: 0.652
+Epoch 165 iteration 0020/0185: training loss 0.323
+Epoch 165 iteration 0040/0185: training loss 0.330
+Epoch 165 iteration 0060/0185: training loss 0.334
+Epoch 165 iteration 0080/0185: training loss 0.344
+Epoch 165 iteration 0100/0185: training loss 0.347
+Epoch 165 iteration 0120/0185: training loss 0.347
+Epoch 165 iteration 0140/0186: training loss 0.345
+Epoch 165 iteration 0160/0186: training loss 0.347
+Epoch 165 iteration 0180/0186: training loss 0.345
+Epoch 165 validation pixAcc: 0.951, mIoU: 0.648
+Epoch 166 iteration 0020/0185: training loss 0.360
+Epoch 166 iteration 0040/0185: training loss 0.339
+Epoch 166 iteration 0060/0185: training loss 0.334
+Epoch 166 iteration 0080/0185: training loss 0.338
+Epoch 166 iteration 0100/0185: training loss 0.338
+Epoch 166 iteration 0120/0185: training loss 0.338
+Epoch 166 iteration 0140/0186: training loss 0.332
+Epoch 166 iteration 0160/0186: training loss 0.333
+Epoch 166 iteration 0180/0186: training loss 0.332
+Epoch 166 validation pixAcc: 0.952, mIoU: 0.657
+Epoch 167 iteration 0020/0185: training loss 0.313
+Epoch 167 iteration 0040/0185: training loss 0.315
+Epoch 167 iteration 0060/0185: training loss 0.331
+Epoch 167 iteration 0080/0185: training loss 0.334
+Epoch 167 iteration 0100/0185: training loss 0.332
+Epoch 167 iteration 0120/0185: training loss 0.331
+Epoch 167 iteration 0140/0186: training loss 0.330
+Epoch 167 iteration 0160/0186: training loss 0.330
+Epoch 167 iteration 0180/0186: training loss 0.329
+Epoch 167 validation pixAcc: 0.952, mIoU: 0.662
+Epoch 168 iteration 0020/0185: training loss 0.337
+Epoch 168 iteration 0040/0185: training loss 0.327
+Epoch 168 iteration 0060/0185: training loss 0.327
+Epoch 168 iteration 0080/0185: training loss 0.326
+Epoch 168 iteration 0100/0185: training loss 0.323
+Epoch 168 iteration 0120/0185: training loss 0.322
+Epoch 168 iteration 0140/0186: training loss 0.323
+Epoch 168 iteration 0160/0186: training loss 0.323
+Epoch 168 iteration 0180/0186: training loss 0.323
+Epoch 168 validation pixAcc: 0.949, mIoU: 0.647
+Epoch 169 iteration 0020/0185: training loss 0.304
+Epoch 169 iteration 0040/0185: training loss 0.309
+Epoch 169 iteration 0060/0185: training loss 0.311
+Epoch 169 iteration 0080/0185: training loss 0.312
+Epoch 169 iteration 0100/0185: training loss 0.311
+Epoch 169 iteration 0120/0185: training loss 0.308
+Epoch 169 iteration 0140/0186: training loss 0.308
+Epoch 169 iteration 0160/0186: training loss 0.309
+Epoch 169 iteration 0180/0186: training loss 0.310
+Epoch 169 validation pixAcc: 0.952, mIoU: 0.663
+Epoch 170 iteration 0020/0185: training loss 0.329
+Epoch 170 iteration 0040/0185: training loss 0.335
+Epoch 170 iteration 0060/0185: training loss 0.322
+Epoch 170 iteration 0080/0185: training loss 0.318
+Epoch 170 iteration 0100/0185: training loss 0.320
+Epoch 170 iteration 0120/0185: training loss 0.321
+Epoch 170 iteration 0140/0186: training loss 0.319
+Epoch 170 iteration 0160/0186: training loss 0.320
+Epoch 170 iteration 0180/0186: training loss 0.320
+Epoch 170 validation pixAcc: 0.953, mIoU: 0.661
+Epoch 171 iteration 0020/0185: training loss 0.319
+Epoch 171 iteration 0040/0185: training loss 0.315
+Epoch 171 iteration 0060/0185: training loss 0.310
+Epoch 171 iteration 0080/0185: training loss 0.312
+Epoch 171 iteration 0100/0185: training loss 0.317
+Epoch 171 iteration 0120/0185: training loss 0.319
+Epoch 171 iteration 0140/0186: training loss 0.318
+Epoch 171 iteration 0160/0186: training loss 0.318
+Epoch 171 iteration 0180/0186: training loss 0.321
+Epoch 171 validation pixAcc: 0.942, mIoU: 0.654
+Epoch 172 iteration 0020/0185: training loss 0.329
+Epoch 172 iteration 0040/0185: training loss 0.331
+Epoch 172 iteration 0060/0185: training loss 0.334
+Epoch 172 iteration 0080/0185: training loss 0.330
+Epoch 172 iteration 0100/0185: training loss 0.328
+Epoch 172 iteration 0120/0185: training loss 0.327
+Epoch 172 iteration 0140/0186: training loss 0.325
+Epoch 172 iteration 0160/0186: training loss 0.323
+Epoch 172 iteration 0180/0186: training loss 0.323
+Epoch 172 validation pixAcc: 0.952, mIoU: 0.664
+Epoch 173 iteration 0020/0185: training loss 0.334
+Epoch 173 iteration 0040/0185: training loss 0.332
+Epoch 173 iteration 0060/0185: training loss 0.329
+Epoch 173 iteration 0080/0185: training loss 0.329
+Epoch 173 iteration 0100/0185: training loss 0.328
+Epoch 173 iteration 0120/0185: training loss 0.327
+Epoch 173 iteration 0140/0186: training loss 0.325
+Epoch 173 iteration 0160/0186: training loss 0.323
+Epoch 173 iteration 0180/0186: training loss 0.321
+Epoch 173 validation pixAcc: 0.953, mIoU: 0.673
+Epoch 174 iteration 0020/0185: training loss 0.316
+Epoch 174 iteration 0040/0185: training loss 0.308
+Epoch 174 iteration 0060/0185: training loss 0.315
+Epoch 174 iteration 0080/0185: training loss 0.318
+Epoch 174 iteration 0100/0185: training loss 0.316
+Epoch 174 iteration 0120/0185: training loss 0.320
+Epoch 174 iteration 0140/0186: training loss 0.318
+Epoch 174 iteration 0160/0186: training loss 0.317
+Epoch 174 iteration 0180/0186: training loss 0.316
+Epoch 174 validation pixAcc: 0.952, mIoU: 0.673
+Epoch 175 iteration 0020/0185: training loss 0.296
+Epoch 175 iteration 0040/0185: training loss 0.307
+Epoch 175 iteration 0060/0185: training loss 0.312
+Epoch 175 iteration 0080/0185: training loss 0.315
+Epoch 175 iteration 0100/0185: training loss 0.316
+Epoch 175 iteration 0120/0185: training loss 0.315
+Epoch 175 iteration 0140/0185: training loss 0.312
+Epoch 175 iteration 0160/0185: training loss 0.314
+Epoch 175 iteration 0180/0185: training loss 0.314
+Epoch 175 validation pixAcc: 0.953, mIoU: 0.678
+Epoch 176 iteration 0020/0185: training loss 0.295
+Epoch 176 iteration 0040/0185: training loss 0.304
+Epoch 176 iteration 0060/0185: training loss 0.307
+Epoch 176 iteration 0080/0185: training loss 0.312
+Epoch 176 iteration 0100/0185: training loss 0.319
+Epoch 176 iteration 0120/0185: training loss 0.319
+Epoch 176 iteration 0140/0186: training loss 0.320
+Epoch 176 iteration 0160/0186: training loss 0.320
+Epoch 176 iteration 0180/0186: training loss 0.317
+Epoch 176 validation pixAcc: 0.953, mIoU: 0.667
+Epoch 177 iteration 0020/0185: training loss 0.314
+Epoch 177 iteration 0040/0185: training loss 0.310
+Epoch 177 iteration 0060/0185: training loss 0.314
+Epoch 177 iteration 0080/0185: training loss 0.313
+Epoch 177 iteration 0100/0185: training loss 0.306
+Epoch 177 iteration 0120/0185: training loss 0.311
+Epoch 177 iteration 0140/0186: training loss 0.311
+Epoch 177 iteration 0160/0186: training loss 0.309
+Epoch 177 iteration 0180/0186: training loss 0.310
+Epoch 177 validation pixAcc: 0.953, mIoU: 0.672
+Epoch 178 iteration 0020/0185: training loss 0.320
+Epoch 178 iteration 0040/0185: training loss 0.319
+Epoch 178 iteration 0060/0185: training loss 0.317
+Epoch 178 iteration 0080/0185: training loss 0.332
+Epoch 178 iteration 0100/0185: training loss 0.335
+Epoch 178 iteration 0120/0185: training loss 0.333
+Epoch 178 iteration 0140/0186: training loss 0.329
+Epoch 178 iteration 0160/0186: training loss 0.328
+Epoch 178 iteration 0180/0186: training loss 0.326
+Epoch 178 validation pixAcc: 0.953, mIoU: 0.671
+Epoch 179 iteration 0020/0185: training loss 0.300
+Epoch 179 iteration 0040/0185: training loss 0.306
+Epoch 179 iteration 0060/0185: training loss 0.305
+Epoch 179 iteration 0080/0185: training loss 0.306
+Epoch 179 iteration 0100/0185: training loss 0.307
+Epoch 179 iteration 0120/0185: training loss 0.310
+Epoch 179 iteration 0140/0186: training loss 0.313
+Epoch 179 iteration 0160/0186: training loss 0.314
+Epoch 179 iteration 0180/0186: training loss 0.312
+Epoch 179 validation pixAcc: 0.953, mIoU: 0.670
+Epoch 180 iteration 0020/0185: training loss 0.295
+Epoch 180 iteration 0040/0185: training loss 0.292
+Epoch 180 iteration 0060/0185: training loss 0.303
+Epoch 180 iteration 0080/0185: training loss 0.306
+Epoch 180 iteration 0100/0185: training loss 0.308
+Epoch 180 iteration 0120/0185: training loss 0.309
+Epoch 180 iteration 0140/0186: training loss 0.310
+Epoch 180 iteration 0160/0186: training loss 0.310
+Epoch 180 iteration 0180/0186: training loss 0.309
+Epoch 180 validation pixAcc: 0.952, mIoU: 0.660
+Epoch 181 iteration 0020/0185: training loss 0.326
+Epoch 181 iteration 0040/0185: training loss 0.322
+Epoch 181 iteration 0060/0185: training loss 0.314
+Epoch 181 iteration 0080/0185: training loss 0.316
+Epoch 181 iteration 0100/0185: training loss 0.317
+Epoch 181 iteration 0120/0185: training loss 0.316
+Epoch 181 iteration 0140/0186: training loss 0.312
+Epoch 181 iteration 0160/0186: training loss 0.312
+Epoch 181 iteration 0180/0186: training loss 0.311
+Epoch 181 validation pixAcc: 0.953, mIoU: 0.668
+Epoch 182 iteration 0020/0185: training loss 0.293
+Epoch 182 iteration 0040/0185: training loss 0.300
+Epoch 182 iteration 0060/0185: training loss 0.305
+Epoch 182 iteration 0080/0185: training loss 0.309
+Epoch 182 iteration 0100/0185: training loss 0.307
+Epoch 182 iteration 0120/0185: training loss 0.306
+Epoch 182 iteration 0140/0186: training loss 0.307
+Epoch 182 iteration 0160/0186: training loss 0.309
+Epoch 182 iteration 0180/0186: training loss 0.306
+Epoch 182 validation pixAcc: 0.953, mIoU: 0.672
+Epoch 183 iteration 0020/0185: training loss 0.309
+Epoch 183 iteration 0040/0185: training loss 0.307
+Epoch 183 iteration 0060/0185: training loss 0.305
+Epoch 183 iteration 0080/0185: training loss 0.308
+Epoch 183 iteration 0100/0185: training loss 0.309
+Epoch 183 iteration 0120/0185: training loss 0.307
+Epoch 183 iteration 0140/0186: training loss 0.306
+Epoch 183 iteration 0160/0186: training loss 0.307
+Epoch 183 iteration 0180/0186: training loss 0.308
+Epoch 183 validation pixAcc: 0.954, mIoU: 0.672
+Epoch 184 iteration 0020/0185: training loss 0.325
+Epoch 184 iteration 0040/0185: training loss 0.312
+Epoch 184 iteration 0060/0185: training loss 0.307
+Epoch 184 iteration 0080/0185: training loss 0.306
+Epoch 184 iteration 0100/0185: training loss 0.306
+Epoch 184 iteration 0120/0185: training loss 0.305
+Epoch 184 iteration 0140/0186: training loss 0.305
+Epoch 184 iteration 0160/0186: training loss 0.304
+Epoch 184 iteration 0180/0186: training loss 0.307
+Epoch 184 validation pixAcc: 0.953, mIoU: 0.675
+Epoch 185 iteration 0020/0185: training loss 0.312
+Epoch 185 iteration 0040/0185: training loss 0.318
+Epoch 185 iteration 0060/0185: training loss 0.315
+Epoch 185 iteration 0080/0185: training loss 0.314
+Epoch 185 iteration 0100/0185: training loss 0.313
+Epoch 185 iteration 0120/0185: training loss 0.311
+Epoch 185 iteration 0140/0186: training loss 0.311
+Epoch 185 iteration 0160/0186: training loss 0.311
+Epoch 185 iteration 0180/0186: training loss 0.310
+Epoch 185 validation pixAcc: 0.953, mIoU: 0.672
+Epoch 186 iteration 0020/0185: training loss 0.310
+Epoch 186 iteration 0040/0185: training loss 0.310
+Epoch 186 iteration 0060/0185: training loss 0.303
+Epoch 186 iteration 0080/0185: training loss 0.301
+Epoch 186 iteration 0100/0185: training loss 0.302
+Epoch 186 iteration 0120/0185: training loss 0.301
+Epoch 186 iteration 0140/0186: training loss 0.304
+Epoch 186 iteration 0160/0186: training loss 0.309
+Epoch 186 iteration 0180/0186: training loss 0.308
+Epoch 186 validation pixAcc: 0.952, mIoU: 0.667
+Epoch 187 iteration 0020/0185: training loss 0.328
+Epoch 187 iteration 0040/0185: training loss 0.320
+Epoch 187 iteration 0060/0185: training loss 0.315
+Epoch 187 iteration 0080/0185: training loss 0.313
+Epoch 187 iteration 0100/0185: training loss 0.310
+Epoch 187 iteration 0120/0185: training loss 0.309
+Epoch 187 iteration 0140/0186: training loss 0.307
+Epoch 187 iteration 0160/0186: training loss 0.305
+Epoch 187 iteration 0180/0186: training loss 0.305
+Epoch 187 validation pixAcc: 0.953, mIoU: 0.667
+Epoch 188 iteration 0020/0185: training loss 0.284
+Epoch 188 iteration 0040/0185: training loss 0.318
+Epoch 188 iteration 0060/0185: training loss 0.323
+Epoch 188 iteration 0080/0185: training loss 0.318
+Epoch 188 iteration 0100/0185: training loss 0.318
+Epoch 188 iteration 0120/0185: training loss 0.318
+Epoch 188 iteration 0140/0186: training loss 0.314
+Epoch 188 iteration 0160/0186: training loss 0.316
+Epoch 188 iteration 0180/0186: training loss 0.312
+Epoch 188 validation pixAcc: 0.953, mIoU: 0.660
+Epoch 189 iteration 0020/0185: training loss 0.299
+Epoch 189 iteration 0040/0185: training loss 0.309
+Epoch 189 iteration 0060/0185: training loss 0.305
+Epoch 189 iteration 0080/0185: training loss 0.303
+Epoch 189 iteration 0100/0185: training loss 0.304
+Epoch 189 iteration 0120/0185: training loss 0.304
+Epoch 189 iteration 0140/0186: training loss 0.302
+Epoch 189 iteration 0160/0186: training loss 0.301
+Epoch 189 iteration 0180/0186: training loss 0.300
+Epoch 189 validation pixAcc: 0.953, mIoU: 0.669
+Epoch 190 iteration 0020/0185: training loss 0.307
+Epoch 190 iteration 0040/0185: training loss 0.308
+Epoch 190 iteration 0060/0185: training loss 0.308
+Epoch 190 iteration 0080/0185: training loss 0.307
+Epoch 190 iteration 0100/0185: training loss 0.308
+Epoch 190 iteration 0120/0185: training loss 0.309
+Epoch 190 iteration 0140/0186: training loss 0.306
+Epoch 190 iteration 0160/0186: training loss 0.305
+Epoch 190 iteration 0180/0186: training loss 0.305
+Epoch 190 validation pixAcc: 0.953, mIoU: 0.669
+Epoch 191 iteration 0020/0185: training loss 0.318
+Epoch 191 iteration 0040/0185: training loss 0.326
+Epoch 191 iteration 0060/0185: training loss 0.322
+Epoch 191 iteration 0080/0185: training loss 0.313
+Epoch 191 iteration 0100/0185: training loss 0.312
+Epoch 191 iteration 0120/0185: training loss 0.308
+Epoch 191 iteration 0140/0185: training loss 0.304
+Epoch 191 iteration 0160/0185: training loss 0.303
+Epoch 191 iteration 0180/0185: training loss 0.304
+Epoch 191 validation pixAcc: 0.953, mIoU: 0.664
+Epoch 192 iteration 0020/0185: training loss 0.294
+Epoch 192 iteration 0040/0185: training loss 0.291
+Epoch 192 iteration 0060/0185: training loss 0.293
+Epoch 192 iteration 0080/0185: training loss 0.300
+Epoch 192 iteration 0100/0185: training loss 0.300
+Epoch 192 iteration 0120/0185: training loss 0.302
+Epoch 192 iteration 0140/0186: training loss 0.303
+Epoch 192 iteration 0160/0186: training loss 0.302
+Epoch 192 iteration 0180/0186: training loss 0.303
+Epoch 192 validation pixAcc: 0.953, mIoU: 0.663
+Epoch 193 iteration 0020/0185: training loss 0.315
+Epoch 193 iteration 0040/0185: training loss 0.305
+Epoch 193 iteration 0060/0185: training loss 0.300
+Epoch 193 iteration 0080/0185: training loss 0.304
+Epoch 193 iteration 0100/0185: training loss 0.303
+Epoch 193 iteration 0120/0185: training loss 0.306
+Epoch 193 iteration 0140/0186: training loss 0.303
+Epoch 193 iteration 0160/0186: training loss 0.301
+Epoch 193 iteration 0180/0186: training loss 0.301
+Epoch 193 validation pixAcc: 0.953, mIoU: 0.667
+Epoch 194 iteration 0020/0185: training loss 0.294
+Epoch 194 iteration 0040/0185: training loss 0.295
+Epoch 194 iteration 0060/0185: training loss 0.294
+Epoch 194 iteration 0080/0185: training loss 0.292
+Epoch 194 iteration 0100/0185: training loss 0.294
+Epoch 194 iteration 0120/0185: training loss 0.294
+Epoch 194 iteration 0140/0186: training loss 0.294
+Epoch 194 iteration 0160/0186: training loss 0.294
+Epoch 194 iteration 0180/0186: training loss 0.293
+Epoch 194 validation pixAcc: 0.953, mIoU: 0.672
+Epoch 195 iteration 0020/0185: training loss 0.291
+Epoch 195 iteration 0040/0185: training loss 0.302
+Epoch 195 iteration 0060/0185: training loss 0.304
+Epoch 195 iteration 0080/0185: training loss 0.299
+Epoch 195 iteration 0100/0185: training loss 0.298
+Epoch 195 iteration 0120/0185: training loss 0.297
+Epoch 195 iteration 0140/0186: training loss 0.298
+Epoch 195 iteration 0160/0186: training loss 0.300
+Epoch 195 iteration 0180/0186: training loss 0.300
+Epoch 195 validation pixAcc: 0.954, mIoU: 0.672
+Epoch 196 iteration 0020/0185: training loss 0.298
+Epoch 196 iteration 0040/0185: training loss 0.298
+Epoch 196 iteration 0060/0185: training loss 0.301
+Epoch 196 iteration 0080/0185: training loss 0.309
+Epoch 196 iteration 0100/0185: training loss 0.311
+Epoch 196 iteration 0120/0185: training loss 0.307
+Epoch 196 iteration 0140/0186: training loss 0.308
+Epoch 196 iteration 0160/0186: training loss 0.309
+Epoch 196 iteration 0180/0186: training loss 0.309
+Epoch 196 validation pixAcc: 0.953, mIoU: 0.676
+Epoch 197 iteration 0020/0185: training loss 0.301
+Epoch 197 iteration 0040/0185: training loss 0.299
+Epoch 197 iteration 0060/0185: training loss 0.312
+Epoch 197 iteration 0080/0185: training loss 0.307
+Epoch 197 iteration 0100/0185: training loss 0.307
+Epoch 197 iteration 0120/0185: training loss 0.307
+Epoch 197 iteration 0140/0186: training loss 0.309
+Epoch 197 iteration 0160/0186: training loss 0.307
+Epoch 197 iteration 0180/0186: training loss 0.306
+Epoch 197 validation pixAcc: 0.954, mIoU: 0.675
+Epoch 198 iteration 0020/0185: training loss 0.295
+Epoch 198 iteration 0040/0185: training loss 0.294
+Epoch 198 iteration 0060/0185: training loss 0.293
+Epoch 198 iteration 0080/0185: training loss 0.297
+Epoch 198 iteration 0100/0185: training loss 0.296
+Epoch 198 iteration 0120/0185: training loss 0.298
+Epoch 198 iteration 0140/0186: training loss 0.297
+Epoch 198 iteration 0160/0186: training loss 0.298
+Epoch 198 iteration 0180/0186: training loss 0.297
+Epoch 198 validation pixAcc: 0.954, mIoU: 0.674
+Epoch 199 iteration 0020/0185: training loss 0.301
+Epoch 199 iteration 0040/0185: training loss 0.304
+Epoch 199 iteration 0060/0185: training loss 0.296
+Epoch 199 iteration 0080/0185: training loss 0.298
+Epoch 199 iteration 0100/0185: training loss 0.294
+Epoch 199 iteration 0120/0185: training loss 0.295
+Epoch 199 iteration 0140/0186: training loss 0.297
+Epoch 199 iteration 0160/0186: training loss 0.298
+Epoch 199 iteration 0180/0186: training loss 0.297
+Epoch 199 validation pixAcc: 0.954, mIoU: 0.680
+Epoch 200 iteration 0020/0185: training loss 0.293
+Epoch 200 iteration 0040/0185: training loss 0.294
+Epoch 200 iteration 0060/0185: training loss 0.293
+Epoch 200 iteration 0080/0185: training loss 0.291
+Epoch 200 iteration 0100/0185: training loss 0.294
+Epoch 200 iteration 0120/0185: training loss 0.293
+Epoch 200 iteration 0140/0186: training loss 0.293
+Epoch 200 iteration 0160/0186: training loss 0.294
+Epoch 200 iteration 0180/0186: training loss 0.294
+Epoch 200 validation pixAcc: 0.954, mIoU: 0.673
+Epoch 201 iteration 0020/0185: training loss 0.296
+Epoch 201 iteration 0040/0185: training loss 0.293
+Epoch 201 iteration 0060/0185: training loss 0.295
+Epoch 201 iteration 0080/0185: training loss 0.294
+Epoch 201 iteration 0100/0185: training loss 0.292
+Epoch 201 iteration 0120/0185: training loss 0.299
+Epoch 201 iteration 0140/0186: training loss 0.300
+Epoch 201 iteration 0160/0186: training loss 0.299
+Epoch 201 iteration 0180/0186: training loss 0.305
+Epoch 201 validation pixAcc: 0.950, mIoU: 0.678
+Epoch 202 iteration 0020/0185: training loss 0.294
+Epoch 202 iteration 0040/0185: training loss 0.291
+Epoch 202 iteration 0060/0185: training loss 0.298
+Epoch 202 iteration 0080/0185: training loss 0.297
+Epoch 202 iteration 0100/0185: training loss 0.299
+Epoch 202 iteration 0120/0185: training loss 0.299
+Epoch 202 iteration 0140/0186: training loss 0.299
+Epoch 202 iteration 0160/0186: training loss 0.302
+Epoch 202 iteration 0180/0186: training loss 0.302
+Epoch 202 validation pixAcc: 0.954, mIoU: 0.678
+Epoch 203 iteration 0020/0185: training loss 0.294
+Epoch 203 iteration 0040/0185: training loss 0.290
+Epoch 203 iteration 0060/0185: training loss 0.288
+Epoch 203 iteration 0080/0185: training loss 0.289
+Epoch 203 iteration 0100/0185: training loss 0.289
+Epoch 203 iteration 0120/0185: training loss 0.291
+Epoch 203 iteration 0140/0186: training loss 0.291
+Epoch 203 iteration 0160/0186: training loss 0.290
+Epoch 203 iteration 0180/0186: training loss 0.291
+Epoch 203 validation pixAcc: 0.954, mIoU: 0.679
+Epoch 204 iteration 0020/0185: training loss 0.316
+Epoch 204 iteration 0040/0185: training loss 0.308
+Epoch 204 iteration 0060/0185: training loss 0.306
+Epoch 204 iteration 0080/0185: training loss 0.297
+Epoch 204 iteration 0100/0185: training loss 0.294
+Epoch 204 iteration 0120/0185: training loss 0.295
+Epoch 204 iteration 0140/0186: training loss 0.297
+Epoch 204 iteration 0160/0186: training loss 0.296
+Epoch 204 iteration 0180/0186: training loss 0.297
+Epoch 204 validation pixAcc: 0.953, mIoU: 0.676
+Epoch 205 iteration 0020/0185: training loss 0.300
+Epoch 205 iteration 0040/0185: training loss 0.295
+Epoch 205 iteration 0060/0185: training loss 0.295
+Epoch 205 iteration 0080/0185: training loss 0.297
+Epoch 205 iteration 0100/0185: training loss 0.297
+Epoch 205 iteration 0120/0185: training loss 0.296
+Epoch 205 iteration 0140/0186: training loss 0.295
+Epoch 205 iteration 0160/0186: training loss 0.299
+Epoch 205 iteration 0180/0186: training loss 0.300
+Epoch 205 validation pixAcc: 0.954, mIoU: 0.673
+Epoch 206 iteration 0020/0185: training loss 0.295
+Epoch 206 iteration 0040/0185: training loss 0.294
+Epoch 206 iteration 0060/0185: training loss 0.295
+Epoch 206 iteration 0080/0185: training loss 0.292
+Epoch 206 iteration 0100/0185: training loss 0.291
+Epoch 206 iteration 0120/0185: training loss 0.294
+Epoch 206 iteration 0140/0186: training loss 0.297
+Epoch 206 iteration 0160/0186: training loss 0.295
+Epoch 206 iteration 0180/0186: training loss 0.294
+Epoch 206 validation pixAcc: 0.954, mIoU: 0.679
+Epoch 207 iteration 0020/0185: training loss 0.305
+Epoch 207 iteration 0040/0185: training loss 0.295
+Epoch 207 iteration 0060/0185: training loss 0.299
+Epoch 207 iteration 0080/0185: training loss 0.296
+Epoch 207 iteration 0100/0185: training loss 0.294
+Epoch 207 iteration 0120/0185: training loss 0.293
+Epoch 207 iteration 0140/0185: training loss 0.291
+Epoch 207 iteration 0160/0185: training loss 0.292
+Epoch 207 iteration 0180/0185: training loss 0.292
+Epoch 207 validation pixAcc: 0.954, mIoU: 0.676
+Epoch 208 iteration 0020/0185: training loss 0.276
+Epoch 208 iteration 0040/0185: training loss 0.283
+Epoch 208 iteration 0060/0185: training loss 0.288
+Epoch 208 iteration 0080/0185: training loss 0.288
+Epoch 208 iteration 0100/0185: training loss 0.290
+Epoch 208 iteration 0120/0185: training loss 0.288
+Epoch 208 iteration 0140/0186: training loss 0.288
+Epoch 208 iteration 0160/0186: training loss 0.290
+Epoch 208 iteration 0180/0186: training loss 0.290
+Epoch 208 validation pixAcc: 0.954, mIoU: 0.678
+Epoch 209 iteration 0020/0185: training loss 0.309
+Epoch 209 iteration 0040/0185: training loss 0.303
+Epoch 209 iteration 0060/0185: training loss 0.302
+Epoch 209 iteration 0080/0185: training loss 0.297
+Epoch 209 iteration 0100/0185: training loss 0.297
+Epoch 209 iteration 0120/0185: training loss 0.297
+Epoch 209 iteration 0140/0186: training loss 0.295
+Epoch 209 iteration 0160/0186: training loss 0.294
+Epoch 209 iteration 0180/0186: training loss 0.294
+Epoch 209 validation pixAcc: 0.954, mIoU: 0.677
+Epoch 210 iteration 0020/0185: training loss 0.296
+Epoch 210 iteration 0040/0185: training loss 0.290
+Epoch 210 iteration 0060/0185: training loss 0.291
+Epoch 210 iteration 0080/0185: training loss 0.292
+Epoch 210 iteration 0100/0185: training loss 0.295
+Epoch 210 iteration 0120/0185: training loss 0.292
+Epoch 210 iteration 0140/0186: training loss 0.292
+Epoch 210 iteration 0160/0186: training loss 0.292
+Epoch 210 iteration 0180/0186: training loss 0.293
+Epoch 210 validation pixAcc: 0.954, mIoU: 0.678
+Epoch 211 iteration 0020/0185: training loss 0.299
+Epoch 211 iteration 0040/0185: training loss 0.291
+Epoch 211 iteration 0060/0185: training loss 0.288
+Epoch 211 iteration 0080/0185: training loss 0.292
+Epoch 211 iteration 0100/0185: training loss 0.294
+Epoch 211 iteration 0120/0185: training loss 0.294
+Epoch 211 iteration 0140/0186: training loss 0.294
+Epoch 211 iteration 0160/0186: training loss 0.294
+Epoch 211 iteration 0180/0186: training loss 0.293
+Epoch 211 validation pixAcc: 0.954, mIoU: 0.671
+Epoch 212 iteration 0020/0185: training loss 0.295
+Epoch 212 iteration 0040/0185: training loss 0.293
+Epoch 212 iteration 0060/0185: training loss 0.290
+Epoch 212 iteration 0080/0185: training loss 0.285
+Epoch 212 iteration 0100/0185: training loss 0.286
+Epoch 212 iteration 0120/0185: training loss 0.287
+Epoch 212 iteration 0140/0186: training loss 0.286
+Epoch 212 iteration 0160/0186: training loss 0.288
+Epoch 212 iteration 0180/0186: training loss 0.289
+Epoch 212 validation pixAcc: 0.954, mIoU: 0.678
+Epoch 213 iteration 0020/0185: training loss 0.294
+Epoch 213 iteration 0040/0185: training loss 0.296
+Epoch 213 iteration 0060/0185: training loss 0.295
+Epoch 213 iteration 0080/0185: training loss 0.291
+Epoch 213 iteration 0100/0185: training loss 0.290
+Epoch 213 iteration 0120/0185: training loss 0.290
+Epoch 213 iteration 0140/0186: training loss 0.290
+Epoch 213 iteration 0160/0186: training loss 0.291
+Epoch 213 iteration 0180/0186: training loss 0.292
+Epoch 213 validation pixAcc: 0.954, mIoU: 0.674
+Epoch 214 iteration 0020/0185: training loss 0.293
+Epoch 214 iteration 0040/0185: training loss 0.294
+Epoch 214 iteration 0060/0185: training loss 0.293
+Epoch 214 iteration 0080/0185: training loss 0.293
+Epoch 214 iteration 0100/0185: training loss 0.297
+Epoch 214 iteration 0120/0185: training loss 0.296
+Epoch 214 iteration 0140/0186: training loss 0.297
+Epoch 214 iteration 0160/0186: training loss 0.298
+Epoch 214 iteration 0180/0186: training loss 0.298
+Epoch 214 validation pixAcc: 0.954, mIoU: 0.677
+Epoch 215 iteration 0020/0185: training loss 0.298
+Epoch 215 iteration 0040/0185: training loss 0.278
+Epoch 215 iteration 0060/0185: training loss 0.283
+Epoch 215 iteration 0080/0185: training loss 0.286
+Epoch 215 iteration 0100/0185: training loss 0.286
+Epoch 215 iteration 0120/0185: training loss 0.289
+Epoch 215 iteration 0140/0186: training loss 0.288
+Epoch 215 iteration 0160/0186: training loss 0.288
+Epoch 215 iteration 0180/0186: training loss 0.287
+Epoch 215 validation pixAcc: 0.955, mIoU: 0.677
+Epoch 216 iteration 0020/0185: training loss 0.279
+Epoch 216 iteration 0040/0185: training loss 0.293
+Epoch 216 iteration 0060/0185: training loss 0.292
+Epoch 216 iteration 0080/0185: training loss 0.292
+Epoch 216 iteration 0100/0185: training loss 0.294
+Epoch 216 iteration 0120/0185: training loss 0.293
+Epoch 216 iteration 0140/0186: training loss 0.293
+Epoch 216 iteration 0160/0186: training loss 0.293
+Epoch 216 iteration 0180/0186: training loss 0.291
+Epoch 216 validation pixAcc: 0.954, mIoU: 0.677
+Epoch 217 iteration 0020/0185: training loss 0.278
+Epoch 217 iteration 0040/0185: training loss 0.281
+Epoch 217 iteration 0060/0185: training loss 0.282
+Epoch 217 iteration 0080/0185: training loss 0.286
+Epoch 217 iteration 0100/0185: training loss 0.284
+Epoch 217 iteration 0120/0185: training loss 0.284
+Epoch 217 iteration 0140/0186: training loss 0.284
+Epoch 217 iteration 0160/0186: training loss 0.284
+Epoch 217 iteration 0180/0186: training loss 0.286
+Epoch 217 validation pixAcc: 0.954, mIoU: 0.678
+Epoch 218 iteration 0020/0185: training loss 0.293
+Epoch 218 iteration 0040/0185: training loss 0.296
+Epoch 218 iteration 0060/0185: training loss 0.291
+Epoch 218 iteration 0080/0185: training loss 0.286
+Epoch 218 iteration 0100/0185: training loss 0.289
+Epoch 218 iteration 0120/0185: training loss 0.286
+Epoch 218 iteration 0140/0186: training loss 0.287
+Epoch 218 iteration 0160/0186: training loss 0.287
+Epoch 218 iteration 0180/0186: training loss 0.288
+Epoch 218 validation pixAcc: 0.954, mIoU: 0.676
+Epoch 219 iteration 0020/0185: training loss 0.285
+Epoch 219 iteration 0040/0185: training loss 0.281
+Epoch 219 iteration 0060/0185: training loss 0.282
+Epoch 219 iteration 0080/0185: training loss 0.280
+Epoch 219 iteration 0100/0185: training loss 0.280
+Epoch 219 iteration 0120/0185: training loss 0.278
+Epoch 219 iteration 0140/0186: training loss 0.278
+Epoch 219 iteration 0160/0186: training loss 0.278
+Epoch 219 iteration 0180/0186: training loss 0.278
+Epoch 219 validation pixAcc: 0.955, mIoU: 0.678
+Epoch 220 iteration 0020/0185: training loss 0.289
+Epoch 220 iteration 0040/0185: training loss 0.296
+Epoch 220 iteration 0060/0185: training loss 0.290
+Epoch 220 iteration 0080/0185: training loss 0.286
+Epoch 220 iteration 0100/0185: training loss 0.286
+Epoch 220 iteration 0120/0185: training loss 0.283
+Epoch 220 iteration 0140/0186: training loss 0.285
+Epoch 220 iteration 0160/0186: training loss 0.286
+Epoch 220 iteration 0180/0186: training loss 0.285
+Epoch 220 validation pixAcc: 0.955, mIoU: 0.683
+Epoch 221 iteration 0020/0185: training loss 0.271
+Epoch 221 iteration 0040/0185: training loss 0.279
+Epoch 221 iteration 0060/0185: training loss 0.279
+Epoch 221 iteration 0080/0185: training loss 0.280
+Epoch 221 iteration 0100/0185: training loss 0.282
+Epoch 221 iteration 0120/0185: training loss 0.281
+Epoch 221 iteration 0140/0186: training loss 0.282
+Epoch 221 iteration 0160/0186: training loss 0.285
+Epoch 221 iteration 0180/0186: training loss 0.285
+Epoch 221 validation pixAcc: 0.955, mIoU: 0.683
+Epoch 222 iteration 0020/0185: training loss 0.291
+Epoch 222 iteration 0040/0185: training loss 0.294
+Epoch 222 iteration 0060/0185: training loss 0.283
+Epoch 222 iteration 0080/0185: training loss 0.281
+Epoch 222 iteration 0100/0185: training loss 0.285
+Epoch 222 iteration 0120/0185: training loss 0.285
+Epoch 222 iteration 0140/0186: training loss 0.284
+Epoch 222 iteration 0160/0186: training loss 0.285
+Epoch 222 iteration 0180/0186: training loss 0.285
+Epoch 222 validation pixAcc: 0.955, mIoU: 0.678
+Epoch 223 iteration 0020/0185: training loss 0.286
+Epoch 223 iteration 0040/0185: training loss 0.283
+Epoch 223 iteration 0060/0185: training loss 0.286
+Epoch 223 iteration 0080/0185: training loss 0.286
+Epoch 223 iteration 0100/0185: training loss 0.285
+Epoch 223 iteration 0120/0185: training loss 0.286
+Epoch 223 iteration 0140/0185: training loss 0.287
+Epoch 223 iteration 0160/0185: training loss 0.285
+Epoch 223 iteration 0180/0185: training loss 0.287
+Epoch 223 validation pixAcc: 0.955, mIoU: 0.678
+Epoch 224 iteration 0020/0185: training loss 0.278
+Epoch 224 iteration 0040/0185: training loss 0.279
+Epoch 224 iteration 0060/0185: training loss 0.284
+Epoch 224 iteration 0080/0185: training loss 0.284
+Epoch 224 iteration 0100/0185: training loss 0.279
+Epoch 224 iteration 0120/0185: training loss 0.281
+Epoch 224 iteration 0140/0186: training loss 0.282
+Epoch 224 iteration 0160/0186: training loss 0.281
+Epoch 224 iteration 0180/0186: training loss 0.282
+Epoch 224 validation pixAcc: 0.955, mIoU: 0.675
+Epoch 225 iteration 0020/0185: training loss 0.275
+Epoch 225 iteration 0040/0185: training loss 0.282
+Epoch 225 iteration 0060/0185: training loss 0.278
+Epoch 225 iteration 0080/0185: training loss 0.278
+Epoch 225 iteration 0100/0185: training loss 0.278
+Epoch 225 iteration 0120/0185: training loss 0.282
+Epoch 225 iteration 0140/0186: training loss 0.280
+Epoch 225 iteration 0160/0186: training loss 0.279
+Epoch 225 iteration 0180/0186: training loss 0.279
+Epoch 225 validation pixAcc: 0.954, mIoU: 0.674
+Epoch 226 iteration 0020/0185: training loss 0.282
+Epoch 226 iteration 0040/0185: training loss 0.278
+Epoch 226 iteration 0060/0185: training loss 0.275
+Epoch 226 iteration 0080/0185: training loss 0.277
+Epoch 226 iteration 0100/0185: training loss 0.279
+Epoch 226 iteration 0120/0185: training loss 0.280
+Epoch 226 iteration 0140/0186: training loss 0.281
+Epoch 226 iteration 0160/0186: training loss 0.283
+Epoch 226 iteration 0180/0186: training loss 0.284
+Epoch 226 validation pixAcc: 0.954, mIoU: 0.674
+Epoch 227 iteration 0020/0185: training loss 0.301
+Epoch 227 iteration 0040/0185: training loss 0.285
+Epoch 227 iteration 0060/0185: training loss 0.281
+Epoch 227 iteration 0080/0185: training loss 0.284
+Epoch 227 iteration 0100/0185: training loss 0.282
+Epoch 227 iteration 0120/0185: training loss 0.280
+Epoch 227 iteration 0140/0186: training loss 0.283
+Epoch 227 iteration 0160/0186: training loss 0.283
+Epoch 227 iteration 0180/0186: training loss 0.282
+Epoch 227 validation pixAcc: 0.955, mIoU: 0.681
+Epoch 228 iteration 0020/0185: training loss 0.271
+Epoch 228 iteration 0040/0185: training loss 0.281
+Epoch 228 iteration 0060/0185: training loss 0.275
+Epoch 228 iteration 0080/0185: training loss 0.279
+Epoch 228 iteration 0100/0185: training loss 0.278
+Epoch 228 iteration 0120/0185: training loss 0.276
+Epoch 228 iteration 0140/0186: training loss 0.275
+Epoch 228 iteration 0160/0186: training loss 0.278
+Epoch 228 iteration 0180/0186: training loss 0.279
+Epoch 228 validation pixAcc: 0.955, mIoU: 0.679
+Epoch 229 iteration 0020/0185: training loss 0.271
+Epoch 229 iteration 0040/0185: training loss 0.269
+Epoch 229 iteration 0060/0185: training loss 0.276
+Epoch 229 iteration 0080/0185: training loss 0.278
+Epoch 229 iteration 0100/0185: training loss 0.278
+Epoch 229 iteration 0120/0185: training loss 0.280
+Epoch 229 iteration 0140/0186: training loss 0.280
+Epoch 229 iteration 0160/0186: training loss 0.281
+Epoch 229 iteration 0180/0186: training loss 0.280
+Epoch 229 validation pixAcc: 0.955, mIoU: 0.679
+Epoch 230 iteration 0020/0185: training loss 0.288
+Epoch 230 iteration 0040/0185: training loss 0.285
+Epoch 230 iteration 0060/0185: training loss 0.278
+Epoch 230 iteration 0080/0185: training loss 0.280
+Epoch 230 iteration 0100/0185: training loss 0.280
+Epoch 230 iteration 0120/0185: training loss 0.279
+Epoch 230 iteration 0140/0186: training loss 0.280
+Epoch 230 iteration 0160/0186: training loss 0.280
+Epoch 230 iteration 0180/0186: training loss 0.281
+Epoch 230 validation pixAcc: 0.955, mIoU: 0.676
+Epoch 231 iteration 0020/0185: training loss 0.279
+Epoch 231 iteration 0040/0185: training loss 0.276
+Epoch 231 iteration 0060/0185: training loss 0.274
+Epoch 231 iteration 0080/0185: training loss 0.272
+Epoch 231 iteration 0100/0185: training loss 0.274
+Epoch 231 iteration 0120/0185: training loss 0.278
+Epoch 231 iteration 0140/0186: training loss 0.277
+Epoch 231 iteration 0160/0186: training loss 0.275
+Epoch 231 iteration 0180/0186: training loss 0.276
+Epoch 231 validation pixAcc: 0.955, mIoU: 0.675
+Epoch 232 iteration 0020/0185: training loss 0.269
+Epoch 232 iteration 0040/0185: training loss 0.275
+Epoch 232 iteration 0060/0185: training loss 0.276
+Epoch 232 iteration 0080/0185: training loss 0.276
+Epoch 232 iteration 0100/0185: training loss 0.273
+Epoch 232 iteration 0120/0185: training loss 0.274
+Epoch 232 iteration 0140/0186: training loss 0.276
+Epoch 232 iteration 0160/0186: training loss 0.278
+Epoch 232 iteration 0180/0186: training loss 0.278
+Epoch 232 validation pixAcc: 0.955, mIoU: 0.681
+Epoch 233 iteration 0020/0185: training loss 0.274
+Epoch 233 iteration 0040/0185: training loss 0.276
+Epoch 233 iteration 0060/0185: training loss 0.280
+Epoch 233 iteration 0080/0185: training loss 0.277
+Epoch 233 iteration 0100/0185: training loss 0.279
+Epoch 233 iteration 0120/0185: training loss 0.278
+Epoch 233 iteration 0140/0186: training loss 0.279
+Epoch 233 iteration 0160/0186: training loss 0.283
+Epoch 233 iteration 0180/0186: training loss 0.284
+Epoch 233 validation pixAcc: 0.955, mIoU: 0.681
+Epoch 234 iteration 0020/0185: training loss 0.291
+Epoch 234 iteration 0040/0185: training loss 0.277
+Epoch 234 iteration 0060/0185: training loss 0.280
+Epoch 234 iteration 0080/0185: training loss 0.281
+Epoch 234 iteration 0100/0185: training loss 0.281
+Epoch 234 iteration 0120/0185: training loss 0.282
+Epoch 234 iteration 0140/0186: training loss 0.283
+Epoch 234 iteration 0160/0186: training loss 0.284
+Epoch 234 iteration 0180/0186: training loss 0.284
+Epoch 234 validation pixAcc: 0.955, mIoU: 0.678
+Epoch 235 iteration 0020/0185: training loss 0.283
+Epoch 235 iteration 0040/0185: training loss 0.274
+Epoch 235 iteration 0060/0185: training loss 0.274
+Epoch 235 iteration 0080/0185: training loss 0.272
+Epoch 235 iteration 0100/0185: training loss 0.275
+Epoch 235 iteration 0120/0185: training loss 0.278
+Epoch 235 iteration 0140/0186: training loss 0.278
+Epoch 235 iteration 0160/0186: training loss 0.280
+Epoch 235 iteration 0180/0186: training loss 0.279
+Epoch 235 validation pixAcc: 0.955, mIoU: 0.681
+Epoch 236 iteration 0020/0185: training loss 0.286
+Epoch 236 iteration 0040/0185: training loss 0.285
+Epoch 236 iteration 0060/0185: training loss 0.283
+Epoch 236 iteration 0080/0185: training loss 0.285
+Epoch 236 iteration 0100/0185: training loss 0.284
+Epoch 236 iteration 0120/0185: training loss 0.281
+Epoch 236 iteration 0140/0186: training loss 0.279
+Epoch 236 iteration 0160/0186: training loss 0.277
+Epoch 236 iteration 0180/0186: training loss 0.276
+Epoch 236 validation pixAcc: 0.955, mIoU: 0.681
+Epoch 237 iteration 0020/0185: training loss 0.278
+Epoch 237 iteration 0040/0185: training loss 0.277
+Epoch 237 iteration 0060/0185: training loss 0.276
+Epoch 237 iteration 0080/0185: training loss 0.275
+Epoch 237 iteration 0100/0185: training loss 0.273
+Epoch 237 iteration 0120/0185: training loss 0.276
+Epoch 237 iteration 0140/0186: training loss 0.279
+Epoch 237 iteration 0160/0186: training loss 0.279
+Epoch 237 iteration 0180/0186: training loss 0.280
+Epoch 237 validation pixAcc: 0.955, mIoU: 0.681
+Epoch 238 iteration 0020/0185: training loss 0.282
+Epoch 238 iteration 0040/0185: training loss 0.286
+Epoch 238 iteration 0060/0185: training loss 0.280
+Epoch 238 iteration 0080/0185: training loss 0.283
+Epoch 238 iteration 0100/0185: training loss 0.283
+Epoch 238 iteration 0120/0185: training loss 0.282
+Epoch 238 iteration 0140/0186: training loss 0.282
+Epoch 238 iteration 0160/0186: training loss 0.282
+Epoch 238 iteration 0180/0186: training loss 0.282
+Epoch 238 validation pixAcc: 0.955, mIoU: 0.681
+Epoch 239 iteration 0020/0185: training loss 0.285
+Epoch 239 iteration 0040/0185: training loss 0.284
+Epoch 239 iteration 0060/0185: training loss 0.282
+Epoch 239 iteration 0080/0185: training loss 0.284
+Epoch 239 iteration 0100/0185: training loss 0.278
+Epoch 239 iteration 0120/0185: training loss 0.279
+Epoch 239 iteration 0140/0185: training loss 0.280
+Epoch 239 iteration 0160/0185: training loss 0.279
+Epoch 239 iteration 0180/0185: training loss 0.279
+Epoch 239 validation pixAcc: 0.955, mIoU: 0.682
