@@ -1,0 +1,1 @@
+python3 run_squad.py --version_2  --gpu 8  --max_seq_len 384 --batch_size 32 --training_steps 10000 --seed 16  --wd 0 --optimizer Adam --layerwise_decay 1
