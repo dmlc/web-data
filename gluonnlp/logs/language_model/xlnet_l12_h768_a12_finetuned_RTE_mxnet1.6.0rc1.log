@@ -1,0 +1,137 @@
+2020-01-20 04:33:21,100 - root - INFO - Namespace(accumulate=None, attention_dropout=0.1, batch_size=32, dataset='126gb', dev_batch_size=32, dropout=0.1, early_stop=None, epochs=3, epsilon=1e-06, gpu=2, log_interval=10, lr=3e-05, lr_decay='linear', max_len=128, model_name='xlnet_cased_l12_h768_a12', model_parameters=None, only_inference=False, optimizer='Adam', output_dir='./output_dir', pad=True, seed=55, task_name='RTE', training_steps=800, warmup_ratio=0.25)
+2020-01-20 04:33:30,117 - root - INFO - processing dataset...
+2020-01-20 04:33:33,434 - root - INFO - Now we are doing XLNet classification training on [gpu(0), gpu(1)]!
+2020-01-20 04:33:33,441 - root - INFO - training steps=800
+2020-01-20 04:33:46,027 - root - INFO - Time cost for the first forward-backward =12.58s
+2020-01-20 04:33:49,967 - root - INFO - [Epoch 1 Batch 10/82] loss=0.7010, lr=0.0000013
+2020-01-20 04:33:53,344 - root - INFO - [Epoch 1 Batch 20/82] loss=0.7141, lr=0.0000028
+2020-01-20 04:33:56,559 - root - INFO - [Epoch 1 Batch 30/82] loss=0.7170, lr=0.0000043
+2020-01-20 04:34:00,241 - root - INFO - [Epoch 1 Batch 40/82] loss=0.7014, lr=0.0000058
+2020-01-20 04:34:03,229 - root - INFO - [Epoch 1 Batch 50/82] loss=0.7131, lr=0.0000073
+2020-01-20 04:34:06,601 - root - INFO - [Epoch 1 Batch 60/82] loss=0.6933, lr=0.0000088
+2020-01-20 04:34:09,833 - root - INFO - [Epoch 1 Batch 70/82] loss=0.6950, lr=0.0000104
+2020-01-20 04:34:12,512 - root - INFO - [Epoch 1 Batch 80/82] loss=0.7055, lr=0.0000119
+2020-01-20 04:34:13,029 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1)].
+2020-01-20 04:34:14,556 - root - INFO - validation metrics:accuracy:0.5126
+2020-01-20 04:34:14,558 - root - INFO - Time cost=1.53s, throughput=188.41 samples/s
+2020-01-20 04:34:15,988 - root - INFO - params saved in: ./output_dir/model_xlnet_RTE_0.params
+2020-01-20 04:34:15,989 - root - INFO - Time cost=42.54s
+2020-01-20 04:34:20,197 - root - INFO - [Epoch 2 Batch 10/82] loss=0.6937, lr=0.0000137
+2020-01-20 04:34:23,426 - root - INFO - [Epoch 2 Batch 20/82] loss=0.6976, lr=0.0000152
+2020-01-20 04:34:26,709 - root - INFO - [Epoch 2 Batch 30/82] loss=0.6953, lr=0.0000167
+2020-01-20 04:34:30,361 - root - INFO - [Epoch 2 Batch 40/82] loss=0.6944, lr=0.0000182
+2020-01-20 04:34:33,143 - root - INFO - [Epoch 2 Batch 50/82] loss=0.6875, lr=0.0000197
+2020-01-20 04:34:35,852 - root - INFO - [Epoch 2 Batch 60/82] loss=0.6832, lr=0.0000212
+2020-01-20 04:34:38,596 - root - INFO - [Epoch 2 Batch 70/82] loss=0.6938, lr=0.0000227
+2020-01-20 04:34:41,769 - root - INFO - [Epoch 2 Batch 80/82] loss=0.6951, lr=0.0000242
+2020-01-20 04:34:42,550 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1)].
+2020-01-20 04:34:43,938 - root - INFO - validation metrics:accuracy:0.5523
+2020-01-20 04:34:43,939 - root - INFO - Time cost=1.39s, throughput=207.48 samples/s
+2020-01-20 04:34:45,723 - root - INFO - params saved in: ./output_dir/model_xlnet_RTE_1.params
+2020-01-20 04:34:45,725 - root - INFO - Time cost=29.74s
+2020-01-20 04:34:49,787 - root - INFO - [Epoch 3 Batch 10/82] loss=0.6799, lr=0.0000260
+2020-01-20 04:34:52,897 - root - INFO - [Epoch 3 Batch 20/82] loss=0.6810, lr=0.0000274
+2020-01-20 04:34:56,273 - root - INFO - [Epoch 3 Batch 30/82] loss=0.6778, lr=0.0000289
+2020-01-20 04:34:58,786 - root - INFO - [Epoch 3 Batch 40/82] loss=0.6584, lr=0.0000299
+2020-01-20 04:35:02,454 - root - INFO - [Epoch 3 Batch 50/82] loss=0.6530, lr=0.0000294
+2020-01-20 04:35:05,987 - root - INFO - [Epoch 3 Batch 60/82] loss=0.6146, lr=0.0000288
+2020-01-20 04:35:09,624 - root - INFO - [Epoch 3 Batch 70/82] loss=0.6263, lr=0.0000284
+2020-01-20 04:35:12,748 - root - INFO - [Epoch 3 Batch 80/82] loss=0.6563, lr=0.0000278
+2020-01-20 04:35:13,214 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1)].
+2020-01-20 04:35:14,594 - root - INFO - validation metrics:accuracy:0.5848
+2020-01-20 04:35:14,594 - root - INFO - Time cost=1.38s, throughput=208.68 samples/s
+2020-01-20 04:35:16,002 - root - INFO - params saved in: ./output_dir/model_xlnet_RTE_2.params
+2020-01-20 04:35:16,003 - root - INFO - Time cost=30.28s
+2020-01-20 04:35:19,818 - root - INFO - [Epoch 4 Batch 10/82] loss=0.5971, lr=0.0000273
+2020-01-20 04:35:23,178 - root - INFO - [Epoch 4 Batch 20/82] loss=0.6051, lr=0.0000267
+2020-01-20 04:35:27,016 - root - INFO - [Epoch 4 Batch 30/82] loss=0.5745, lr=0.0000263
+2020-01-20 04:35:30,011 - root - INFO - [Epoch 4 Batch 40/82] loss=0.6044, lr=0.0000258
+2020-01-20 04:35:33,536 - root - INFO - [Epoch 4 Batch 50/82] loss=0.6018, lr=0.0000253
+2020-01-20 04:35:36,727 - root - INFO - [Epoch 4 Batch 60/82] loss=0.5772, lr=0.0000248
+2020-01-20 04:35:39,665 - root - INFO - [Epoch 4 Batch 70/82] loss=0.6154, lr=0.0000242
+2020-01-20 04:35:43,121 - root - INFO - [Epoch 4 Batch 80/82] loss=0.5711, lr=0.0000238
+2020-01-20 04:35:43,674 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1)].
+2020-01-20 04:35:45,052 - root - INFO - validation metrics:accuracy:0.6606
+2020-01-20 04:35:45,052 - root - INFO - Time cost=1.38s, throughput=209.02 samples/s
+2020-01-20 04:35:46,719 - root - INFO - params saved in: ./output_dir/model_xlnet_RTE_3.params
+2020-01-20 04:35:46,720 - root - INFO - Time cost=30.72s
+2020-01-20 04:35:50,404 - root - INFO - [Epoch 5 Batch 10/82] loss=0.4584, lr=0.0000232
+2020-01-20 04:35:53,272 - root - INFO - [Epoch 5 Batch 20/82] loss=0.4607, lr=0.0000227
+2020-01-20 04:35:57,552 - root - INFO - [Epoch 5 Batch 30/82] loss=0.4168, lr=0.0000222
+2020-01-20 04:36:00,599 - root - INFO - [Epoch 5 Batch 40/82] loss=0.4494, lr=0.0000217
+2020-01-20 04:36:03,476 - root - INFO - [Epoch 5 Batch 50/82] loss=0.4092, lr=0.0000211
+2020-01-20 04:36:06,272 - root - INFO - [Epoch 5 Batch 60/82] loss=0.5494, lr=0.0000207
+2020-01-20 04:36:09,893 - root - INFO - [Epoch 5 Batch 70/82] loss=0.4376, lr=0.0000202
+2020-01-20 04:36:12,892 - root - INFO - [Epoch 5 Batch 80/82] loss=0.3872, lr=0.0000197
+2020-01-20 04:36:13,495 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1)].
+2020-01-20 04:36:14,872 - root - INFO - validation metrics:accuracy:0.7473
+2020-01-20 04:36:14,873 - root - INFO - Time cost=1.38s, throughput=209.07 samples/s
+2020-01-20 04:36:16,276 - root - INFO - params saved in: ./output_dir/model_xlnet_RTE_4.params
+2020-01-20 04:36:16,278 - root - INFO - Time cost=29.56s
+2020-01-20 04:36:20,608 - root - INFO - [Epoch 6 Batch 10/82] loss=0.3206, lr=0.0000191
+2020-01-20 04:36:23,352 - root - INFO - [Epoch 6 Batch 20/82] loss=0.2193, lr=0.0000186
+2020-01-20 04:36:26,571 - root - INFO - [Epoch 6 Batch 30/82] loss=0.2574, lr=0.0000181
+2020-01-20 04:36:30,003 - root - INFO - [Epoch 6 Batch 40/82] loss=0.2824, lr=0.0000175
+2020-01-20 04:36:33,239 - root - INFO - [Epoch 6 Batch 50/82] loss=0.2368, lr=0.0000171
+2020-01-20 04:36:36,433 - root - INFO - [Epoch 6 Batch 60/82] loss=0.3039, lr=0.0000166
+2020-01-20 04:36:39,575 - root - INFO - [Epoch 6 Batch 70/82] loss=0.3482, lr=0.0000161
+2020-01-20 04:36:43,053 - root - INFO - [Epoch 6 Batch 80/82] loss=0.2757, lr=0.0000155
+2020-01-20 04:36:43,845 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1)].
+2020-01-20 04:36:45,230 - root - INFO - validation metrics:accuracy:0.7220
+2020-01-20 04:36:45,230 - root - INFO - Time cost=1.38s, throughput=208.06 samples/s
+2020-01-20 04:36:46,582 - root - INFO - params saved in: ./output_dir/model_xlnet_RTE_5.params
+2020-01-20 04:36:46,583 - root - INFO - Time cost=30.31s
+2020-01-20 04:36:50,296 - root - INFO - [Epoch 7 Batch 10/82] loss=0.1787, lr=0.0000149
+2020-01-20 04:36:53,666 - root - INFO - [Epoch 7 Batch 20/82] loss=0.2016, lr=0.0000145
+2020-01-20 04:36:56,675 - root - INFO - [Epoch 7 Batch 30/82] loss=0.1741, lr=0.0000140
+2020-01-20 04:37:00,225 - root - INFO - [Epoch 7 Batch 40/82] loss=0.2360, lr=0.0000135
+2020-01-20 04:37:03,121 - root - INFO - [Epoch 7 Batch 50/82] loss=0.1848, lr=0.0000129
+2020-01-20 04:37:06,522 - root - INFO - [Epoch 7 Batch 60/82] loss=0.1493, lr=0.0000125
+2020-01-20 04:37:09,573 - root - INFO - [Epoch 7 Batch 70/82] loss=0.1290, lr=0.0000119
+2020-01-20 04:37:12,378 - root - INFO - [Epoch 7 Batch 80/82] loss=0.1945, lr=0.0000115
+2020-01-20 04:37:12,859 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1)].
+2020-01-20 04:37:14,243 - root - INFO - validation metrics:accuracy:0.7509
+2020-01-20 04:37:14,244 - root - INFO - Time cost=1.38s, throughput=207.99 samples/s
+2020-01-20 04:37:15,564 - root - INFO - params saved in: ./output_dir/model_xlnet_RTE_6.params
+2020-01-20 04:37:15,565 - root - INFO - Time cost=28.98s
+2020-01-20 04:37:18,546 - root - INFO - [Epoch 8 Batch 10/82] loss=0.1540, lr=0.0000108
+2020-01-20 04:37:21,598 - root - INFO - [Epoch 8 Batch 20/82] loss=0.1166, lr=0.0000104
+2020-01-20 04:37:24,579 - root - INFO - [Epoch 8 Batch 30/82] loss=0.0852, lr=0.0000099
+2020-01-20 04:37:27,727 - root - INFO - [Epoch 8 Batch 40/82] loss=0.1159, lr=0.0000094
+2020-01-20 04:37:31,118 - root - INFO - [Epoch 8 Batch 50/82] loss=0.0525, lr=0.0000089
+2020-01-20 04:37:34,324 - root - INFO - [Epoch 8 Batch 60/82] loss=0.1366, lr=0.0000083
+2020-01-20 04:37:37,089 - root - INFO - [Epoch 8 Batch 70/82] loss=0.0831, lr=0.0000079
+2020-01-20 04:37:40,394 - root - INFO - [Epoch 8 Batch 80/82] loss=0.1195, lr=0.0000073
+2020-01-20 04:37:41,456 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1)].
+2020-01-20 04:37:42,829 - root - INFO - validation metrics:accuracy:0.7473
+2020-01-20 04:37:42,829 - root - INFO - Time cost=1.37s, throughput=209.74 samples/s
+2020-01-20 04:37:44,163 - root - INFO - params saved in: ./output_dir/model_xlnet_RTE_7.params
+2020-01-20 04:37:44,164 - root - INFO - Time cost=28.60s
+2020-01-20 04:37:47,722 - root - INFO - [Epoch 9 Batch 10/82] loss=0.0900, lr=0.0000067
+2020-01-20 04:37:51,011 - root - INFO - [Epoch 9 Batch 20/82] loss=0.0355, lr=0.0000063
+2020-01-20 04:37:54,212 - root - INFO - [Epoch 9 Batch 30/82] loss=0.0913, lr=0.0000058
+2020-01-20 04:37:58,136 - root - INFO - [Epoch 9 Batch 40/82] loss=0.0416, lr=0.0000053
+2020-01-20 04:38:01,350 - root - INFO - [Epoch 9 Batch 50/82] loss=0.0751, lr=0.0000048
+2020-01-20 04:38:04,664 - root - INFO - [Epoch 9 Batch 60/82] loss=0.0638, lr=0.0000043
+2020-01-20 04:38:07,172 - root - INFO - [Epoch 9 Batch 70/82] loss=0.0933, lr=0.0000037
+2020-01-20 04:38:10,090 - root - INFO - [Epoch 9 Batch 80/82] loss=0.0676, lr=0.0000032
+2020-01-20 04:38:10,595 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1)].
+2020-01-20 04:38:11,972 - root - INFO - validation metrics:accuracy:0.7401
+2020-01-20 04:38:11,972 - root - INFO - Time cost=1.38s, throughput=209.30 samples/s
+2020-01-20 04:38:13,235 - root - INFO - params saved in: ./output_dir/model_xlnet_RTE_8.params
+2020-01-20 04:38:13,236 - root - INFO - Time cost=29.07s
+2020-01-20 04:38:17,221 - root - INFO - [Epoch 10 Batch 10/82] loss=0.0944, lr=0.0000027
+2020-01-20 04:38:20,672 - root - INFO - [Epoch 10 Batch 20/82] loss=0.0570, lr=0.0000021
+2020-01-20 04:38:23,274 - root - INFO - [Epoch 10 Batch 30/82] loss=0.0317, lr=0.0000017
+2020-01-20 04:38:26,952 - root - INFO - [Epoch 10 Batch 40/82] loss=0.0533, lr=0.0000012
+2020-01-20 04:38:29,963 - root - INFO - [Epoch 10 Batch 50/82] loss=0.0480, lr=0.0000006
+2020-01-20 04:38:33,218 - root - INFO - [Epoch 10 Batch 60/82] loss=0.0302, lr=0.0000002
+2020-01-20 04:38:33,864 - root - INFO - Finish training step: 800
+2020-01-20 04:38:33,865 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1)].
+2020-01-20 04:38:35,241 - root - INFO - validation metrics:accuracy:0.7329
+2020-01-20 04:38:35,242 - root - INFO - Time cost=1.38s, throughput=209.18 samples/s
+2020-01-20 04:38:36,680 - root - INFO - params saved in: ./output_dir/model_xlnet_RTE_9.params
+2020-01-20 04:38:36,684 - root - INFO - Time cost=23.45s
+2020-01-20 04:38:37,083 - root - INFO - Best model at epoch 7. Validation metrics:accuracy:0.7509
+2020-01-20 04:38:37,083 - root - INFO - Now we are doing testing on test with [gpu(0), gpu(1)].
+2020-01-20 04:38:49,578 - root - INFO - Time cost=12.49s, throughput=240.75 samples/s
