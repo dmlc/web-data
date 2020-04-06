@@ -1,0 +1,1 @@
+MXNET_CUDNN_AUTOTUNE_DEFAULT=0 MXNET_GPU_MEM_POOL_TYPE=Round MXNET_GPU_MEM_POOL_ROUND_LINEAR_CUTOFF=32 python train_mask_rcnn.py --gpus 0,1,2,3,4,5,6,7 --dataset coco --network resnet18_v1b --val-interval 2 -j 8 --verbose

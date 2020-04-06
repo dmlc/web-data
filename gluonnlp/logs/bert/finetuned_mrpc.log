@@ -1,0 +1,305 @@
+INFO:root:Namespace(accumulate=None, batch_size=32, dev_batch_size=8, epochs=3, gpu=True, log_interval=10, lr=2e-05, max_len=128, optimizer='bertadam', seed=2, task_name='MRPC', test_batch_size=8, warmup_ratio=0.1)
+[11:45:38] src/storage/storage.cc:108: Using GPUPooledRoundedStorageManager.
+INFO:root:BERTClassifier(
+  (bert): BERTModel(
+    (encoder): BERTEncoder(
+      (dropout_layer): Dropout(p = 0.1, axes=())
+      (layer_norm): BERTLayerNorm(eps=1e-12, axis=-1, center=True, scale=True, in_channels=768)
+      (transformer_cells): HybridSequential(
+        (0): BERTEncoderCell(
+          (dropout_layer): Dropout(p = 0.1, axes=())
+          (attention_cell): MultiHeadAttentionCell(
+            (_base_cell): DotProductAttentionCell(
+              (_dropout_layer): Dropout(p = 0.1, axes=())
+            )
+            (proj_query): Dense(768 -> 768, linear)
+            (proj_key): Dense(768 -> 768, linear)
+            (proj_value): Dense(768 -> 768, linear)
+          )
+          (proj): Dense(768 -> 768, linear)
+          (ffn): BERTPositionwiseFFN(
+            (ffn_1): Dense(768 -> 3072, linear)
+            (activation): GELU()
+            (ffn_2): Dense(3072 -> 768, linear)
+            (dropout_layer): Dropout(p = 0.1, axes=())
+            (layer_norm): BERTLayerNorm(eps=1e-12, axis=-1, center=True, scale=True, in_channels=768)
+          )
+          (layer_norm): BERTLayerNorm(eps=1e-12, axis=-1, center=True, scale=True, in_channels=768)
+        )
+        (1): BERTEncoderCell(
+          (dropout_layer): Dropout(p = 0.1, axes=())
+          (attention_cell): MultiHeadAttentionCell(
+            (_base_cell): DotProductAttentionCell(
+              (_dropout_layer): Dropout(p = 0.1, axes=())
+            )
+            (proj_query): Dense(768 -> 768, linear)
+            (proj_key): Dense(768 -> 768, linear)
+            (proj_value): Dense(768 -> 768, linear)
+          )
+          (proj): Dense(768 -> 768, linear)
+          (ffn): BERTPositionwiseFFN(
+            (ffn_1): Dense(768 -> 3072, linear)
+            (activation): GELU()
+            (ffn_2): Dense(3072 -> 768, linear)
+            (dropout_layer): Dropout(p = 0.1, axes=())
+            (layer_norm): BERTLayerNorm(eps=1e-12, axis=-1, center=True, scale=True, in_channels=768)
+          )
+          (layer_norm): BERTLayerNorm(eps=1e-12, axis=-1, center=True, scale=True, in_channels=768)
+        )
+        (2): BERTEncoderCell(
+          (dropout_layer): Dropout(p = 0.1, axes=())
+          (attention_cell): MultiHeadAttentionCell(
+            (_base_cell): DotProductAttentionCell(
+              (_dropout_layer): Dropout(p = 0.1, axes=())
+            )
+            (proj_query): Dense(768 -> 768, linear)
+            (proj_key): Dense(768 -> 768, linear)
+            (proj_value): Dense(768 -> 768, linear)
+          )
+          (proj): Dense(768 -> 768, linear)
+          (ffn): BERTPositionwiseFFN(
+            (ffn_1): Dense(768 -> 3072, linear)
+            (activation): GELU()
+            (ffn_2): Dense(3072 -> 768, linear)
+            (dropout_layer): Dropout(p = 0.1, axes=())
+            (layer_norm): BERTLayerNorm(eps=1e-12, axis=-1, center=True, scale=True, in_channels=768)
+          )
+          (layer_norm): BERTLayerNorm(eps=1e-12, axis=-1, center=True, scale=True, in_channels=768)
+        )
+        (3): BERTEncoderCell(
+          (dropout_layer): Dropout(p = 0.1, axes=())
+          (attention_cell): MultiHeadAttentionCell(
+            (_base_cell): DotProductAttentionCell(
+              (_dropout_layer): Dropout(p = 0.1, axes=())
+            )
+            (proj_query): Dense(768 -> 768, linear)
+            (proj_key): Dense(768 -> 768, linear)
+            (proj_value): Dense(768 -> 768, linear)
+          )
+          (proj): Dense(768 -> 768, linear)
+          (ffn): BERTPositionwiseFFN(
+            (ffn_1): Dense(768 -> 3072, linear)
+            (activation): GELU()
+            (ffn_2): Dense(3072 -> 768, linear)
+            (dropout_layer): Dropout(p = 0.1, axes=())
+            (layer_norm): BERTLayerNorm(eps=1e-12, axis=-1, center=True, scale=True, in_channels=768)
+          )
+          (layer_norm): BERTLayerNorm(eps=1e-12, axis=-1, center=True, scale=True, in_channels=768)
+        )
+        (4): BERTEncoderCell(
+          (dropout_layer): Dropout(p = 0.1, axes=())
+          (attention_cell): MultiHeadAttentionCell(
+            (_base_cell): DotProductAttentionCell(
+              (_dropout_layer): Dropout(p = 0.1, axes=())
+            )
+            (proj_query): Dense(768 -> 768, linear)
+            (proj_key): Dense(768 -> 768, linear)
+            (proj_value): Dense(768 -> 768, linear)
+          )
+          (proj): Dense(768 -> 768, linear)
+          (ffn): BERTPositionwiseFFN(
+            (ffn_1): Dense(768 -> 3072, linear)
+            (activation): GELU()
+            (ffn_2): Dense(3072 -> 768, linear)
+            (dropout_layer): Dropout(p = 0.1, axes=())
+            (layer_norm): BERTLayerNorm(eps=1e-12, axis=-1, center=True, scale=True, in_channels=768)
+          )
+          (layer_norm): BERTLayerNorm(eps=1e-12, axis=-1, center=True, scale=True, in_channels=768)
+        )
+        (5): BERTEncoderCell(
+          (dropout_layer): Dropout(p = 0.1, axes=())
+          (attention_cell): MultiHeadAttentionCell(
+            (_base_cell): DotProductAttentionCell(
+              (_dropout_layer): Dropout(p = 0.1, axes=())
+            )
+            (proj_query): Dense(768 -> 768, linear)
+            (proj_key): Dense(768 -> 768, linear)
+            (proj_value): Dense(768 -> 768, linear)
+          )
+          (proj): Dense(768 -> 768, linear)
+          (ffn): BERTPositionwiseFFN(
+            (ffn_1): Dense(768 -> 3072, linear)
+            (activation): GELU()
+            (ffn_2): Dense(3072 -> 768, linear)
+            (dropout_layer): Dropout(p = 0.1, axes=())
+            (layer_norm): BERTLayerNorm(eps=1e-12, axis=-1, center=True, scale=True, in_channels=768)
+          )
+          (layer_norm): BERTLayerNorm(eps=1e-12, axis=-1, center=True, scale=True, in_channels=768)
+        )
+        (6): BERTEncoderCell(
+          (dropout_layer): Dropout(p = 0.1, axes=())
+          (attention_cell): MultiHeadAttentionCell(
+            (_base_cell): DotProductAttentionCell(
+              (_dropout_layer): Dropout(p = 0.1, axes=())
+            )
+            (proj_query): Dense(768 -> 768, linear)
+            (proj_key): Dense(768 -> 768, linear)
+            (proj_value): Dense(768 -> 768, linear)
+          )
+          (proj): Dense(768 -> 768, linear)
+          (ffn): BERTPositionwiseFFN(
+            (ffn_1): Dense(768 -> 3072, linear)
+            (activation): GELU()
+            (ffn_2): Dense(3072 -> 768, linear)
+            (dropout_layer): Dropout(p = 0.1, axes=())
+            (layer_norm): BERTLayerNorm(eps=1e-12, axis=-1, center=True, scale=True, in_channels=768)
+          )
+          (layer_norm): BERTLayerNorm(eps=1e-12, axis=-1, center=True, scale=True, in_channels=768)
+        )
+        (7): BERTEncoderCell(
+          (dropout_layer): Dropout(p = 0.1, axes=())
+          (attention_cell): MultiHeadAttentionCell(
+            (_base_cell): DotProductAttentionCell(
+              (_dropout_layer): Dropout(p = 0.1, axes=())
+            )
+            (proj_query): Dense(768 -> 768, linear)
+            (proj_key): Dense(768 -> 768, linear)
+            (proj_value): Dense(768 -> 768, linear)
+          )
+          (proj): Dense(768 -> 768, linear)
+          (ffn): BERTPositionwiseFFN(
+            (ffn_1): Dense(768 -> 3072, linear)
+            (activation): GELU()
+            (ffn_2): Dense(3072 -> 768, linear)
+            (dropout_layer): Dropout(p = 0.1, axes=())
+            (layer_norm): BERTLayerNorm(eps=1e-12, axis=-1, center=True, scale=True, in_channels=768)
+          )
+          (layer_norm): BERTLayerNorm(eps=1e-12, axis=-1, center=True, scale=True, in_channels=768)
+        )
+        (8): BERTEncoderCell(
+          (dropout_layer): Dropout(p = 0.1, axes=())
+          (attention_cell): MultiHeadAttentionCell(
+            (_base_cell): DotProductAttentionCell(
+              (_dropout_layer): Dropout(p = 0.1, axes=())
+            )
+            (proj_query): Dense(768 -> 768, linear)
+            (proj_key): Dense(768 -> 768, linear)
+            (proj_value): Dense(768 -> 768, linear)
+          )
+          (proj): Dense(768 -> 768, linear)
+          (ffn): BERTPositionwiseFFN(
+            (ffn_1): Dense(768 -> 3072, linear)
+            (activation): GELU()
+            (ffn_2): Dense(3072 -> 768, linear)
+            (dropout_layer): Dropout(p = 0.1, axes=())
+            (layer_norm): BERTLayerNorm(eps=1e-12, axis=-1, center=True, scale=True, in_channels=768)
+          )
+          (layer_norm): BERTLayerNorm(eps=1e-12, axis=-1, center=True, scale=True, in_channels=768)
+        )
+        (9): BERTEncoderCell(
+          (dropout_layer): Dropout(p = 0.1, axes=())
+          (attention_cell): MultiHeadAttentionCell(
+            (_base_cell): DotProductAttentionCell(
+              (_dropout_layer): Dropout(p = 0.1, axes=())
+            )
+            (proj_query): Dense(768 -> 768, linear)
+            (proj_key): Dense(768 -> 768, linear)
+            (proj_value): Dense(768 -> 768, linear)
+          )
+          (proj): Dense(768 -> 768, linear)
+          (ffn): BERTPositionwiseFFN(
+            (ffn_1): Dense(768 -> 3072, linear)
+            (activation): GELU()
+            (ffn_2): Dense(3072 -> 768, linear)
+            (dropout_layer): Dropout(p = 0.1, axes=())
+            (layer_norm): BERTLayerNorm(eps=1e-12, axis=-1, center=True, scale=True, in_channels=768)
+          )
+          (layer_norm): BERTLayerNorm(eps=1e-12, axis=-1, center=True, scale=True, in_channels=768)
+        )
+        (10): BERTEncoderCell(
+          (dropout_layer): Dropout(p = 0.1, axes=())
+          (attention_cell): MultiHeadAttentionCell(
+            (_base_cell): DotProductAttentionCell(
+              (_dropout_layer): Dropout(p = 0.1, axes=())
+            )
+            (proj_query): Dense(768 -> 768, linear)
+            (proj_key): Dense(768 -> 768, linear)
+            (proj_value): Dense(768 -> 768, linear)
+          )
+          (proj): Dense(768 -> 768, linear)
+          (ffn): BERTPositionwiseFFN(
+            (ffn_1): Dense(768 -> 3072, linear)
+            (activation): GELU()
+            (ffn_2): Dense(3072 -> 768, linear)
+            (dropout_layer): Dropout(p = 0.1, axes=())
+            (layer_norm): BERTLayerNorm(eps=1e-12, axis=-1, center=True, scale=True, in_channels=768)
+          )
+          (layer_norm): BERTLayerNorm(eps=1e-12, axis=-1, center=True, scale=True, in_channels=768)
+        )
+        (11): BERTEncoderCell(
+          (dropout_layer): Dropout(p = 0.1, axes=())
+          (attention_cell): MultiHeadAttentionCell(
+            (_base_cell): DotProductAttentionCell(
+              (_dropout_layer): Dropout(p = 0.1, axes=())
+            )
+            (proj_query): Dense(768 -> 768, linear)
+            (proj_key): Dense(768 -> 768, linear)
+            (proj_value): Dense(768 -> 768, linear)
+          )
+          (proj): Dense(768 -> 768, linear)
+          (ffn): BERTPositionwiseFFN(
+            (ffn_1): Dense(768 -> 3072, linear)
+            (activation): GELU()
+            (ffn_2): Dense(3072 -> 768, linear)
+            (dropout_layer): Dropout(p = 0.1, axes=())
+            (layer_norm): BERTLayerNorm(eps=1e-12, axis=-1, center=True, scale=True, in_channels=768)
+          )
+          (layer_norm): BERTLayerNorm(eps=1e-12, axis=-1, center=True, scale=True, in_channels=768)
+        )
+      )
+    )
+    (word_embed): HybridSequential(
+      (0): Embedding(30522 -> 768, float32)
+      (1): Dropout(p = 0.1, axes=())
+    )
+    (token_type_embed): HybridSequential(
+      (0): Embedding(2 -> 768, float32)
+      (1): Dropout(p = 0.1, axes=())
+    )
+    (pooler): Dense(768 -> 768, Activation(tanh))
+  )
+  (classifier): HybridSequential(
+    (0): Dropout(p = 0.1, axes=())
+    (1): Dense(None -> 2, linear)
+  )
+)
+INFO:root:Setting MXNET_GPU_MEM_POOL_TYPE="Round" may lead to higher memory usage and faster speed. If you encounter OOM errors, please unset this environment variable.
+INFO:root:[Epoch 1 Batch 10/119] loss=0.6271, lr=0.0000059, metrics=accuracy:0.6937,f1:0.8171
+INFO:root:[Epoch 1 Batch 20/119] loss=0.6428, lr=0.0000118, metrics=accuracy:0.6709,f1:0.7933
+INFO:root:[Epoch 1 Batch 30/119] loss=0.5898, lr=0.0000176, metrics=accuracy:0.6828,f1:0.7804
+INFO:root:[Epoch 1 Batch 40/119] loss=0.5413, lr=0.0000196, metrics=accuracy:0.7017,f1:0.7784
+INFO:root:[Epoch 1 Batch 50/119] loss=0.6055, lr=0.0000190, metrics=accuracy:0.6997,f1:0.7572
+INFO:root:[Epoch 1 Batch 60/119] loss=0.5425, lr=0.0000183, metrics=accuracy:0.7070,f1:0.7427
+INFO:root:[Epoch 1 Batch 70/119] loss=0.6457, lr=0.0000177, metrics=accuracy:0.7001,f1:0.7210
+INFO:root:[Epoch 1 Batch 80/119] loss=0.5171, lr=0.0000170, metrics=accuracy:0.7043,f1:0.7207
+INFO:root:[Epoch 1 Batch 90/119] loss=0.4528, lr=0.0000164, metrics=accuracy:0.7117,f1:0.7127
+INFO:root:[Epoch 1 Batch 100/119] loss=0.4327, lr=0.0000157, metrics=accuracy:0.7196,f1:0.7091
+INFO:root:[Epoch 1 Batch 110/119] loss=0.4692, lr=0.0000151, metrics=accuracy:0.7246,f1:0.7029
+INFO:root:validation metrics:accuracy:0.8309,f1:0.7159
+INFO:root:Time cost=54.4s
+INFO:root:[Epoch 2 Batch 10/119] loss=0.3106, lr=0.0000139, metrics=accuracy:0.8969,f1:0.6467
+INFO:root:[Epoch 2 Batch 20/119] loss=0.2445, lr=0.0000132, metrics=accuracy:0.9051,f1:0.6670
+INFO:root:[Epoch 2 Batch 30/119] loss=0.2599, lr=0.0000126, metrics=accuracy:0.9023,f1:0.6672
+INFO:root:[Epoch 2 Batch 40/119] loss=0.2171, lr=0.0000119, metrics=accuracy:0.9089,f1:0.6631
+INFO:root:[Epoch 2 Batch 50/119] loss=0.3426, lr=0.0000113, metrics=accuracy:0.9020,f1:0.6684
+INFO:root:[Epoch 2 Batch 60/119] loss=0.3033, lr=0.0000106, metrics=accuracy:0.8976,f1:0.6689
+INFO:root:[Epoch 2 Batch 70/119] loss=0.2578, lr=0.0000100, metrics=accuracy:0.8958,f1:0.6712
+INFO:root:[Epoch 2 Batch 80/119] loss=0.3022, lr=0.0000093, metrics=accuracy:0.8943,f1:0.6711
+INFO:root:[Epoch 2 Batch 90/119] loss=0.2507, lr=0.0000087, metrics=accuracy:0.8924,f1:0.6719
+INFO:root:[Epoch 2 Batch 100/119] loss=0.2629, lr=0.0000080, metrics=accuracy:0.8930,f1:0.6765
+INFO:root:[Epoch 2 Batch 110/119] loss=0.2550, lr=0.0000074, metrics=accuracy:0.8931,f1:0.6736
+INFO:root:validation metrics:accuracy:0.8873,f1:0.7009
+INFO:root:Time cost=52.9s
+INFO:root:[Epoch 3 Batch 10/119] loss=0.0993, lr=0.0000061, metrics=accuracy:0.9712,f1:0.6634
+INFO:root:[Epoch 3 Batch 20/119] loss=0.0745, lr=0.0000055, metrics=accuracy:0.9728,f1:0.6612
+INFO:root:[Epoch 3 Batch 30/119] loss=0.1482, lr=0.0000049, metrics=accuracy:0.9682,f1:0.6713
+INFO:root:[Epoch 3 Batch 40/119] loss=0.1198, lr=0.0000042, metrics=accuracy:0.9684,f1:0.6792
+INFO:root:[Epoch 3 Batch 50/119] loss=0.1264, lr=0.0000036, metrics=accuracy:0.9631,f1:0.6822
+INFO:root:[Epoch 3 Batch 60/119] loss=0.0803, lr=0.0000029, metrics=accuracy:0.9652,f1:0.6830
+INFO:root:[Epoch 3 Batch 70/119] loss=0.1020, lr=0.0000023, metrics=accuracy:0.9662,f1:0.6776
+INFO:root:[Epoch 3 Batch 80/119] loss=0.0679, lr=0.0000016, metrics=accuracy:0.9686,f1:0.6788
+INFO:root:[Epoch 3 Batch 90/119] loss=0.1596, lr=0.0000010, metrics=accuracy:0.9661,f1:0.6809
+INFO:root:[Epoch 3 Batch 100/119] loss=0.1332, lr=0.0000003, metrics=accuracy:0.9651,f1:0.6849
+INFO:root:[Epoch 3 Batch 110/119] loss=0.0906, lr=-0.0000003, metrics=accuracy:0.9655,f1:0.6813
+INFO:root:validation metrics:accuracy:0.8873,f1:0.7033
+INFO:root:Time cost=52.3s

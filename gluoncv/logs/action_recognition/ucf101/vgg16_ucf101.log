@@ -1,0 +1,686 @@
+Namespace(batch_norm=False, batch_size=25, clip_grad=0, crop_ratio=0.875, data_dir='/home/ubuntu/yizhu/data/UCF101/rawframes', dtype='float32', eval=False, hard_weight=0.5, input_size=224, label_smoothing=False, last_gamma=False, log_interval=10, logging_file='2d_rgb_vgg16_f1s1_b32_g8.txt', lr=0.001, lr_decay=0.1, lr_decay_epoch='30,60,80', lr_decay_period=0, lr_mode='step', mixup=False, mixup_alpha=0.2, mixup_off_epoch=0, mode='hybrid', model='vgg16_ucf101', momentum=0.9, new_height=256, new_width=340, no_wd=False, num_classes=101, num_epochs=80, num_gpus=8, num_segments=1, num_workers=32, partial_bn=False, resume_epoch=0, resume_params='', resume_states='', save_dir='/home/ubuntu/yizhu/logs/mxnet/pullrequest/2d_rgb_vgg16_f1s1_b32_g8', save_frequency=5, teacher=None, temperature=20, train_list='/home/ubuntu/yizhu/data/UCF101/ucfTrainTestlist/ucf101_train_split_1_rawframes.txt', use_gn=False, use_pretrained=True, use_se=False, use_tsn=False, val_list='/home/ubuntu/yizhu/data/UCF101/ucfTrainTestlist/ucf101_val_split_1_rawframes.txt', warmup_epochs=0, warmup_lr=0.0, wd=0.0005)
+Total batch size is set to 200 on 8 GPUs
+ActionRecVGG16(
+  (features): HybridSequential(
+    (0): Conv2D(3 -> 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): Activation(relu)
+    (2): Conv2D(64 -> 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (3): Activation(relu)
+    (4): MaxPool2D(size=(2, 2), stride=(2, 2), padding=(0, 0), ceil_mode=False, global_pool=False, pool_type=max, layout=NCHW)
+    (5): Conv2D(64 -> 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (6): Activation(relu)
+    (7): Conv2D(128 -> 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (8): Activation(relu)
+    (9): MaxPool2D(size=(2, 2), stride=(2, 2), padding=(0, 0), ceil_mode=False, global_pool=False, pool_type=max, layout=NCHW)
+    (10): Conv2D(128 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (11): Activation(relu)
+    (12): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (13): Activation(relu)
+    (14): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (15): Activation(relu)
+    (16): MaxPool2D(size=(2, 2), stride=(2, 2), padding=(0, 0), ceil_mode=False, global_pool=False, pool_type=max, layout=NCHW)
+    (17): Conv2D(256 -> 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (18): Activation(relu)
+    (19): Conv2D(512 -> 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (20): Activation(relu)
+    (21): Conv2D(512 -> 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (22): Activation(relu)
+    (23): MaxPool2D(size=(2, 2), stride=(2, 2), padding=(0, 0), ceil_mode=False, global_pool=False, pool_type=max, layout=NCHW)
+    (24): Conv2D(512 -> 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (25): Activation(relu)
+    (26): Conv2D(512 -> 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (27): Activation(relu)
+    (28): Conv2D(512 -> 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (29): Activation(relu)
+    (30): MaxPool2D(size=(2, 2), stride=(2, 2), padding=(0, 0), ceil_mode=False, global_pool=False, pool_type=max, layout=NCHW)
+    (31): Dense(25088 -> 4096, Activation(relu))
+    (32): Dropout(p = 0.9, axes=())
+    (33): Dense(4096 -> 4096, Activation(relu))
+    (34): Dropout(p = 0.9, axes=())
+  )
+  (output): Dense(4096 -> 101, linear)
+)
+Load 9537 training samples and 3783 validation samples.
+Epoch[0] Batch [9]	Speed: 206.053349 samples/sec	accuracy=1.150000	lr=0.001000
+Epoch[0] Batch [19]	Speed: 712.369785 samples/sec	accuracy=3.175000	lr=0.001000
+Epoch[0] Batch [29]	Speed: 750.377487 samples/sec	accuracy=4.616667	lr=0.001000
+Epoch[0] Batch [39]	Speed: 769.872523 samples/sec	accuracy=6.475000	lr=0.001000
+[Epoch 0] training: accuracy=7.832652
+[Epoch 0] speed: 394 samples/sec	time cost: 30.907833
+[Epoch 0] validation: acc-top1=41.395718 acc-top5=74.200370
+successfully opened events file: /home/ubuntu/yizhu/logs/mxnet/pullrequest/2d_rgb_vgg16_f1s1_b32_g8/events.out.tfevents.1563660782.ip-172-31-90-145
+wrote 1 event to disk
+wrote 1 event to disk
+Epoch[1] Batch [9]	Speed: 455.436405 samples/sec	accuracy=18.450000	lr=0.001000
+Epoch[1] Batch [19]	Speed: 755.759591 samples/sec	accuracy=19.000000	lr=0.001000
+Epoch[1] Batch [29]	Speed: 721.981273 samples/sec	accuracy=20.233333	lr=0.001000
+Epoch[1] Batch [39]	Speed: 773.319783 samples/sec	accuracy=20.725000	lr=0.001000
+[Epoch 1] training: accuracy=21.369403
+[Epoch 1] speed: 648 samples/sec	time cost: 17.425212
+[Epoch 1] validation: acc-top1=53.766852 acc-top5=81.628337
+wrote 2 events to disk
+Epoch[2] Batch [9]	Speed: 446.539619 samples/sec	accuracy=25.650000	lr=0.001000
+Epoch[2] Batch [19]	Speed: 765.832471 samples/sec	accuracy=26.750000	lr=0.001000
+Epoch[2] Batch [29]	Speed: 769.800461 samples/sec	accuracy=26.850000	lr=0.001000
+Epoch[2] Batch [39]	Speed: 778.571132 samples/sec	accuracy=27.312500	lr=0.001000
+[Epoch 2] training: accuracy=27.681661
+[Epoch 2] speed: 650 samples/sec	time cost: 17.280995
+[Epoch 2] validation: acc-top1=57.309014 acc-top5=83.954533
+wrote 2 events to disk
+Epoch[3] Batch [9]	Speed: 430.876372 samples/sec	accuracy=30.850000	lr=0.001000
+Epoch[3] Batch [19]	Speed: 761.660077 samples/sec	accuracy=31.550000	lr=0.001000
+Epoch[3] Batch [29]	Speed: 769.931737 samples/sec	accuracy=32.033333	lr=0.001000
+Epoch[3] Batch [39]	Speed: 771.153875 samples/sec	accuracy=32.725000	lr=0.001000
+[Epoch 3] training: accuracy=32.746147
+[Epoch 3] speed: 643 samples/sec	time cost: 17.455495
+[Epoch 3] validation: acc-top1=61.168385 acc-top5=85.831351
+wrote 2 events to disk
+Epoch[4] Batch [9]	Speed: 428.335779 samples/sec	accuracy=34.950000	lr=0.001000
+Epoch[4] Batch [19]	Speed: 755.402905 samples/sec	accuracy=35.250000	lr=0.001000
+Epoch[4] Batch [29]	Speed: 757.959808 samples/sec	accuracy=35.383333	lr=0.001000
+Epoch[4] Batch [39]	Speed: 735.339293 samples/sec	accuracy=35.800000	lr=0.001000
+[Epoch 4] training: accuracy=35.965188
+[Epoch 4] speed: 634 samples/sec	time cost: 17.749789
+[Epoch 4] validation: acc-top1=63.521015 acc-top5=86.122125
+wrote 2 events to disk
+Epoch[5] Batch [9]	Speed: 419.823292 samples/sec	accuracy=39.250000	lr=0.001000
+Epoch[5] Batch [19]	Speed: 733.041047 samples/sec	accuracy=38.550000	lr=0.001000
+Epoch[5] Batch [29]	Speed: 738.156150 samples/sec	accuracy=39.233333	lr=0.001000
+Epoch[5] Batch [39]	Speed: 779.848857 samples/sec	accuracy=39.525000	lr=0.001000
+[Epoch 5] training: accuracy=39.771417
+[Epoch 5] speed: 631 samples/sec	time cost: 17.765326
+[Epoch 5] validation: acc-top1=63.098070 acc-top5=87.602432
+wrote 2 events to disk
+Epoch[6] Batch [9]	Speed: 422.351021 samples/sec	accuracy=39.950000	lr=0.001000
+Epoch[6] Batch [19]	Speed: 736.505145 samples/sec	accuracy=41.800000	lr=0.001000
+Epoch[6] Batch [29]	Speed: 748.180967 samples/sec	accuracy=41.766667	lr=0.001000
+Epoch[6] Batch [39]	Speed: 777.473585 samples/sec	accuracy=42.000000	lr=0.001000
+[Epoch 6] training: accuracy=41.994338
+[Epoch 6] speed: 634 samples/sec	time cost: 17.649794
+[Epoch 6] validation: acc-top1=65.609305 acc-top5=88.316151
+wrote 2 events to disk
+Epoch[7] Batch [9]	Speed: 452.752192 samples/sec	accuracy=43.850000	lr=0.001000
+Epoch[7] Batch [19]	Speed: 731.691995 samples/sec	accuracy=43.950000	lr=0.001000
+Epoch[7] Batch [29]	Speed: 765.847153 samples/sec	accuracy=43.850000	lr=0.001000
+Epoch[7] Batch [39]	Speed: 740.570636 samples/sec	accuracy=44.137500	lr=0.001000
+[Epoch 7] training: accuracy=44.311628
+[Epoch 7] speed: 643 samples/sec	time cost: 17.394132
+[Epoch 7] validation: acc-top1=65.873645 acc-top5=88.659794
+wrote 2 events to disk
+Epoch[8] Batch [9]	Speed: 447.759159 samples/sec	accuracy=45.000000	lr=0.001000
+Epoch[8] Batch [19]	Speed: 697.628841 samples/sec	accuracy=45.050000	lr=0.001000
+Epoch[8] Batch [29]	Speed: 734.959115 samples/sec	accuracy=46.450000	lr=0.001000
+Epoch[8] Batch [39]	Speed: 769.991385 samples/sec	accuracy=46.212500	lr=0.001000
+[Epoch 8] training: accuracy=45.947363
+[Epoch 8] speed: 631 samples/sec	time cost: 17.724521
+[Epoch 8] validation: acc-top1=67.565424 acc-top5=89.267777
+wrote 2 events to disk
+Epoch[9] Batch [9]	Speed: 437.638024 samples/sec	accuracy=47.250000	lr=0.001000
+Epoch[9] Batch [19]	Speed: 768.295614 samples/sec	accuracy=48.350000	lr=0.001000
+Epoch[9] Batch [29]	Speed: 762.919628 samples/sec	accuracy=47.833333	lr=0.001000
+Epoch[9] Batch [39]	Speed: 772.048566 samples/sec	accuracy=48.087500	lr=0.001000
+[Epoch 9] training: accuracy=48.117857
+[Epoch 9] speed: 645 samples/sec	time cost: 17.468874
+[Epoch 9] validation: acc-top1=68.384880 acc-top5=90.351573
+wrote 2 events to disk
+Epoch[10] Batch [9]	Speed: 437.946356 samples/sec	accuracy=48.500000	lr=0.001000
+Epoch[10] Batch [19]	Speed: 753.934998 samples/sec	accuracy=48.925000	lr=0.001000
+Epoch[10] Batch [29]	Speed: 751.153893 samples/sec	accuracy=49.183333	lr=0.001000
+Epoch[10] Batch [39]	Speed: 746.989795 samples/sec	accuracy=49.712500	lr=0.001000
+[Epoch 10] training: accuracy=49.795533
+[Epoch 10] speed: 641 samples/sec	time cost: 17.542967
+[Epoch 10] validation: acc-top1=68.332012 acc-top5=90.563045
+wrote 2 events to disk
+Epoch[11] Batch [9]	Speed: 438.409658 samples/sec	accuracy=52.550000	lr=0.001000
+Epoch[11] Batch [19]	Speed: 750.748994 samples/sec	accuracy=50.950000	lr=0.001000
+Epoch[11] Batch [29]	Speed: 752.315413 samples/sec	accuracy=51.183333	lr=0.001000
+Epoch[11] Batch [39]	Speed: 732.016735 samples/sec	accuracy=51.162500	lr=0.001000
+[Epoch 11] training: accuracy=51.462724
+[Epoch 11] speed: 638 samples/sec	time cost: 17.690479
+[Epoch 11] validation: acc-top1=68.464182 acc-top5=90.272271
+wrote 2 events to disk
+Epoch[12] Batch [9]	Speed: 429.594740 samples/sec	accuracy=51.800000	lr=0.001000
+Epoch[12] Batch [19]	Speed: 769.835219 samples/sec	accuracy=51.650000	lr=0.001000
+Epoch[12] Batch [29]	Speed: 777.003116 samples/sec	accuracy=51.900000	lr=0.001000
+Epoch[12] Batch [39]	Speed: 766.058297 samples/sec	accuracy=51.800000	lr=0.001000
+[Epoch 12] training: accuracy=51.850687
+[Epoch 12] speed: 644 samples/sec	time cost: 17.417272
+[Epoch 12] validation: acc-top1=69.521544 acc-top5=90.906688
+wrote 2 events to disk
+Epoch[13] Batch [9]	Speed: 444.382523 samples/sec	accuracy=51.450000	lr=0.001000
+Epoch[13] Batch [19]	Speed: 778.443323 samples/sec	accuracy=53.900000	lr=0.001000
+Epoch[13] Batch [29]	Speed: 762.879317 samples/sec	accuracy=53.766667	lr=0.001000
+Epoch[13] Batch [39]	Speed: 772.423283 samples/sec	accuracy=53.475000	lr=0.001000
+[Epoch 13] training: accuracy=53.780015
+[Epoch 13] speed: 652 samples/sec	time cost: 17.251067
+[Epoch 13] validation: acc-top1=70.288131 acc-top5=90.933122
+wrote 2 events to disk
+Epoch[14] Batch [9]	Speed: 456.410092 samples/sec	accuracy=55.750000	lr=0.001000
+Epoch[14] Batch [19]	Speed: 773.837052 samples/sec	accuracy=55.375000	lr=0.001000
+Epoch[14] Batch [29]	Speed: 770.689676 samples/sec	accuracy=55.366667	lr=0.001000
+Epoch[14] Batch [39]	Speed: 777.346280 samples/sec	accuracy=55.237500	lr=0.001000
+[Epoch 14] training: accuracy=55.174583
+[Epoch 14] speed: 657 samples/sec	time cost: 17.216147
+[Epoch 14] validation: acc-top1=70.155961 acc-top5=91.329633
+wrote 2 events to disk
+Epoch[15] Batch [9]	Speed: 459.750773 samples/sec	accuracy=54.100000	lr=0.001000
+Epoch[15] Batch [19]	Speed: 709.905536 samples/sec	accuracy=55.250000	lr=0.001000
+Epoch[15] Batch [29]	Speed: 760.190509 samples/sec	accuracy=54.833333	lr=0.001000
+Epoch[15] Batch [39]	Speed: 747.878868 samples/sec	accuracy=54.700000	lr=0.001000
+[Epoch 15] training: accuracy=55.122156
+[Epoch 15] speed: 637 samples/sec	time cost: 17.708784
+[Epoch 15] validation: acc-top1=72.217817 acc-top5=91.831879
+wrote 2 events to disk
+Epoch[16] Batch [9]	Speed: 435.981795 samples/sec	accuracy=56.600000	lr=0.001000
+Epoch[16] Batch [19]	Speed: 772.821289 samples/sec	accuracy=56.650000	lr=0.001000
+Epoch[16] Batch [29]	Speed: 770.026442 samples/sec	accuracy=56.950000	lr=0.001000
+Epoch[16] Batch [39]	Speed: 762.748146 samples/sec	accuracy=57.250000	lr=0.001000
+[Epoch 16] training: accuracy=57.407990
+[Epoch 16] speed: 646 samples/sec	time cost: 17.506273
+[Epoch 16] validation: acc-top1=71.134021 acc-top5=91.593973
+wrote 2 events to disk
+Epoch[17] Batch [9]	Speed: 451.747027 samples/sec	accuracy=58.300000	lr=0.001000
+Epoch[17] Batch [19]	Speed: 754.836004 samples/sec	accuracy=57.975000	lr=0.001000
+Epoch[17] Batch [29]	Speed: 766.387238 samples/sec	accuracy=58.166667	lr=0.001000
+Epoch[17] Batch [39]	Speed: 766.949049 samples/sec	accuracy=58.550000	lr=0.001000
+[Epoch 17] training: accuracy=58.875957
+[Epoch 17] speed: 650 samples/sec	time cost: 17.367606
+[Epoch 17] validation: acc-top1=72.112080 acc-top5=91.884748
+wrote 2 events to disk
+Epoch[18] Batch [9]	Speed: 445.177721 samples/sec	accuracy=59.050000	lr=0.001000
+Epoch[18] Batch [19]	Speed: 747.166775 samples/sec	accuracy=59.100000	lr=0.001000
+Epoch[18] Batch [29]	Speed: 734.039195 samples/sec	accuracy=59.650000	lr=0.001000
+Epoch[18] Batch [39]	Speed: 756.653704 samples/sec	accuracy=59.550000	lr=0.001000
+[Epoch 18] training: accuracy=59.756737
+[Epoch 18] speed: 640 samples/sec	time cost: 17.599734
+[Epoch 18] validation: acc-top1=71.424795 acc-top5=92.201956
+wrote 2 events to disk
+Epoch[19] Batch [9]	Speed: 436.294173 samples/sec	accuracy=59.750000	lr=0.001000
+Epoch[19] Batch [19]	Speed: 761.857016 samples/sec	accuracy=60.150000	lr=0.001000
+Epoch[19] Batch [29]	Speed: 750.786958 samples/sec	accuracy=60.450000	lr=0.001000
+Epoch[19] Batch [39]	Speed: 777.550262 samples/sec	accuracy=60.087500	lr=0.001000
+[Epoch 19] training: accuracy=60.134214
+[Epoch 19] speed: 645 samples/sec	time cost: 17.451673
+[Epoch 19] validation: acc-top1=71.451229 acc-top5=92.043352
+wrote 2 events to disk
+Epoch[20] Batch [9]	Speed: 445.982622 samples/sec	accuracy=60.650000	lr=0.001000
+Epoch[20] Batch [19]	Speed: 777.150756 samples/sec	accuracy=60.625000	lr=0.001000
+Epoch[20] Batch [29]	Speed: 764.906782 samples/sec	accuracy=60.450000	lr=0.001000
+Epoch[20] Batch [39]	Speed: 772.912504 samples/sec	accuracy=60.475000	lr=0.001000
+[Epoch 20] training: accuracy=60.469749
+[Epoch 20] speed: 652 samples/sec	time cost: 17.297302
+[Epoch 20] validation: acc-top1=72.429289 acc-top5=92.016918
+wrote 2 events to disk
+Epoch[21] Batch [9]	Speed: 456.583986 samples/sec	accuracy=61.350000	lr=0.001000
+Epoch[21] Batch [19]	Speed: 775.345361 samples/sec	accuracy=62.750000	lr=0.001000
+Epoch[21] Batch [29]	Speed: 736.406610 samples/sec	accuracy=62.483333	lr=0.001000
+Epoch[21] Batch [39]	Speed: 757.810127 samples/sec	accuracy=62.425000	lr=0.001000
+[Epoch 21] training: accuracy=62.294223
+[Epoch 21] speed: 649 samples/sec	time cost: 17.382804
+[Epoch 21] validation: acc-top1=71.054718 acc-top5=91.964050
+wrote 2 events to disk
+Epoch[22] Batch [9]	Speed: 442.438064 samples/sec	accuracy=63.450000	lr=0.001000
+Epoch[22] Batch [19]	Speed: 764.969839 samples/sec	accuracy=62.775000	lr=0.001000
+Epoch[22] Batch [29]	Speed: 770.456583 samples/sec	accuracy=62.450000	lr=0.001000
+Epoch[22] Batch [39]	Speed: 775.632911 samples/sec	accuracy=62.337500	lr=0.001000
+[Epoch 22] training: accuracy=62.210339
+[Epoch 22] speed: 651 samples/sec	time cost: 17.443846
+[Epoch 22] validation: acc-top1=73.222310 acc-top5=92.466297
+wrote 2 events to disk
+Epoch[23] Batch [9]	Speed: 432.864300 samples/sec	accuracy=63.950000	lr=0.001000
+Epoch[23] Batch [19]	Speed: 751.462347 samples/sec	accuracy=62.625000	lr=0.001000
+Epoch[23] Batch [29]	Speed: 778.317577 samples/sec	accuracy=63.383333	lr=0.001000
+Epoch[23] Batch [39]	Speed: 741.423974 samples/sec	accuracy=63.275000	lr=0.001000
+[Epoch 23] training: accuracy=63.143546
+[Epoch 23] speed: 641 samples/sec	time cost: 17.483192
+[Epoch 23] validation: acc-top1=71.874174 acc-top5=92.519165
+wrote 2 events to disk
+Epoch[24] Batch [9]	Speed: 433.778603 samples/sec	accuracy=62.100000	lr=0.001000
+Epoch[24] Batch [19]	Speed: 778.750165 samples/sec	accuracy=64.225000	lr=0.001000
+Epoch[24] Batch [29]	Speed: 767.913291 samples/sec	accuracy=63.766667	lr=0.001000
+Epoch[24] Batch [39]	Speed: 770.627584 samples/sec	accuracy=63.712500	lr=0.001000
+[Epoch 24] training: accuracy=63.573451
+[Epoch 24] speed: 641 samples/sec	time cost: 17.584409
+[Epoch 24] validation: acc-top1=73.169442 acc-top5=92.572033
+wrote 2 events to disk
+Epoch[25] Batch [9]	Speed: 446.220165 samples/sec	accuracy=62.950000	lr=0.001000
+Epoch[25] Batch [19]	Speed: 741.596621 samples/sec	accuracy=64.525000	lr=0.001000
+Epoch[25] Batch [29]	Speed: 776.163909 samples/sec	accuracy=64.850000	lr=0.001000
+Epoch[25] Batch [39]	Speed: 746.397191 samples/sec	accuracy=64.800000	lr=0.001000
+[Epoch 25] training: accuracy=64.621999
+[Epoch 25] speed: 644 samples/sec	time cost: 17.432683
+[Epoch 25] validation: acc-top1=73.830293 acc-top5=92.862807
+wrote 2 events to disk
+Epoch[26] Batch [9]	Speed: 434.237913 samples/sec	accuracy=65.250000	lr=0.001000
+Epoch[26] Batch [19]	Speed: 751.091547 samples/sec	accuracy=65.325000	lr=0.001000
+Epoch[26] Batch [29]	Speed: 771.318591 samples/sec	accuracy=65.483333	lr=0.001000
+Epoch[26] Batch [39]	Speed: 763.089590 samples/sec	accuracy=65.175000	lr=0.001000
+[Epoch 26] training: accuracy=65.020447
+[Epoch 26] speed: 643 samples/sec	time cost: 17.489232
+[Epoch 26] validation: acc-top1=73.010838 acc-top5=92.809939
+wrote 2 events to disk
+Epoch[27] Batch [9]	Speed: 455.401222 samples/sec	accuracy=67.300000	lr=0.001000
+Epoch[27] Batch [19]	Speed: 765.974357 samples/sec	accuracy=66.125000	lr=0.001000
+Epoch[27] Batch [29]	Speed: 768.515291 samples/sec	accuracy=66.100000	lr=0.001000
+Epoch[27] Batch [39]	Speed: 762.467088 samples/sec	accuracy=66.250000	lr=0.001000
+[Epoch 27] training: accuracy=66.142393
+[Epoch 27] speed: 649 samples/sec	time cost: 17.336525
+[Epoch 27] validation: acc-top1=73.513085 acc-top5=92.545599
+wrote 2 events to disk
+Epoch[28] Batch [9]	Speed: 445.975770 samples/sec	accuracy=65.550000	lr=0.001000
+Epoch[28] Batch [19]	Speed: 761.073391 samples/sec	accuracy=66.350000	lr=0.001000
+Epoch[28] Batch [29]	Speed: 761.547092 samples/sec	accuracy=66.683333	lr=0.001000
+Epoch[28] Batch [39]	Speed: 741.821235 samples/sec	accuracy=66.825000	lr=0.001000
+[Epoch 28] training: accuracy=66.687638
+[Epoch 28] speed: 643 samples/sec	time cost: 17.453518
+[Epoch 28] validation: acc-top1=73.671689 acc-top5=92.439863
+wrote 2 events to disk
+Epoch[29] Batch [9]	Speed: 426.217184 samples/sec	accuracy=66.550000	lr=0.001000
+Epoch[29] Batch [19]	Speed: 776.560029 samples/sec	accuracy=67.025000	lr=0.001000
+Epoch[29] Batch [29]	Speed: 771.217754 samples/sec	accuracy=67.083333	lr=0.001000
+Epoch[29] Batch [39]	Speed: 782.034206 samples/sec	accuracy=67.500000	lr=0.001000
+[Epoch 29] training: accuracy=67.557932
+[Epoch 29] speed: 647 samples/sec	time cost: 17.420746
+[Epoch 29] validation: acc-top1=73.592387 acc-top5=92.228390
+wrote 2 events to disk
+Epoch[30] Batch [9]	Speed: 458.612610 samples/sec	accuracy=66.550000	lr=0.000100
+Epoch[30] Batch [19]	Speed: 742.076773 samples/sec	accuracy=66.850000	lr=0.000100
+Epoch[30] Batch [29]	Speed: 765.923163 samples/sec	accuracy=67.000000	lr=0.000100
+Epoch[30] Batch [39]	Speed: 732.374308 samples/sec	accuracy=67.187500	lr=0.000100
+[Epoch 30] training: accuracy=67.316766
+[Epoch 30] speed: 646 samples/sec	time cost: 17.438060
+[Epoch 30] validation: acc-top1=73.724557 acc-top5=92.572033
+wrote 2 events to disk
+Epoch[31] Batch [9]	Speed: 442.588675 samples/sec	accuracy=68.050000	lr=0.000100
+Epoch[31] Batch [19]	Speed: 773.201104 samples/sec	accuracy=68.775000	lr=0.000100
+Epoch[31] Batch [29]	Speed: 777.161052 samples/sec	accuracy=68.616667	lr=0.000100
+Epoch[31] Batch [39]	Speed: 776.784746 samples/sec	accuracy=68.887500	lr=0.000100
+[Epoch 31] training: accuracy=68.575024
+[Epoch 31] speed: 653 samples/sec	time cost: 17.292502
+[Epoch 31] validation: acc-top1=74.544013 acc-top5=92.704203
+wrote 2 events to disk
+Epoch[32] Batch [9]	Speed: 453.732019 samples/sec	accuracy=68.500000	lr=0.000100
+Epoch[32] Batch [19]	Speed: 764.671597 samples/sec	accuracy=68.675000	lr=0.000100
+Epoch[32] Batch [29]	Speed: 777.007002 samples/sec	accuracy=69.016667	lr=0.000100
+Epoch[32] Batch [39]	Speed: 762.253001 samples/sec	accuracy=69.125000	lr=0.000100
+[Epoch 32] training: accuracy=68.868617
+[Epoch 32] speed: 655 samples/sec	time cost: 17.177548
+[Epoch 32] validation: acc-top1=74.544013 acc-top5=92.862807
+wrote 2 events to disk
+Epoch[33] Batch [9]	Speed: 448.951786 samples/sec	accuracy=69.500000	lr=0.000100
+Epoch[33] Batch [19]	Speed: 775.742295 samples/sec	accuracy=69.225000	lr=0.000100
+Epoch[33] Batch [29]	Speed: 763.677860 samples/sec	accuracy=69.416667	lr=0.000100
+Epoch[33] Batch [39]	Speed: 777.412413 samples/sec	accuracy=69.425000	lr=0.000100
+[Epoch 33] training: accuracy=69.361434
+[Epoch 33] speed: 654 samples/sec	time cost: 17.249095
+[Epoch 33] validation: acc-top1=74.438277 acc-top5=93.100714
+wrote 2 events to disk
+Epoch[34] Batch [9]	Speed: 449.696166 samples/sec	accuracy=70.300000	lr=0.000100
+Epoch[34] Batch [19]	Speed: 772.002667 samples/sec	accuracy=70.250000	lr=0.000100
+Epoch[34] Batch [29]	Speed: 749.221471 samples/sec	accuracy=69.766667	lr=0.000100
+Epoch[34] Batch [39]	Speed: 768.244038 samples/sec	accuracy=69.950000	lr=0.000100
+[Epoch 34] training: accuracy=69.403376
+[Epoch 34] speed: 651 samples/sec	time cost: 17.233223
+[Epoch 34] validation: acc-top1=74.570447 acc-top5=93.153582
+wrote 2 events to disk
+Epoch[35] Batch [9]	Speed: 445.510732 samples/sec	accuracy=70.550000	lr=0.000100
+Epoch[35] Batch [19]	Speed: 742.914440 samples/sec	accuracy=69.850000	lr=0.000100
+Epoch[35] Batch [29]	Speed: 782.476265 samples/sec	accuracy=69.833333	lr=0.000100
+Epoch[35] Batch [39]	Speed: 770.097062 samples/sec	accuracy=69.425000	lr=0.000100
+[Epoch 35] training: accuracy=69.162210
+[Epoch 35] speed: 650 samples/sec	time cost: 17.337203
+[Epoch 35] validation: acc-top1=74.544013 acc-top5=93.232884
+wrote 2 events to disk
+Epoch[36] Batch [9]	Speed: 461.312856 samples/sec	accuracy=69.950000	lr=0.000100
+Epoch[36] Batch [19]	Speed: 745.360273 samples/sec	accuracy=69.775000	lr=0.000100
+Epoch[36] Batch [29]	Speed: 773.758251 samples/sec	accuracy=70.166667	lr=0.000100
+Epoch[36] Batch [39]	Speed: 770.227237 samples/sec	accuracy=69.962500	lr=0.000100
+[Epoch 36] training: accuracy=70.095418
+[Epoch 36] speed: 654 samples/sec	time cost: 17.315077
+[Epoch 36] validation: acc-top1=74.491145 acc-top5=93.047846
+wrote 2 events to disk
+Epoch[37] Batch [9]	Speed: 440.417390 samples/sec	accuracy=69.100000	lr=0.000100
+Epoch[37] Batch [19]	Speed: 727.009199 samples/sec	accuracy=69.350000	lr=0.000100
+Epoch[37] Batch [29]	Speed: 771.690327 samples/sec	accuracy=69.416667	lr=0.000100
+Epoch[37] Batch [39]	Speed: 771.672580 samples/sec	accuracy=69.450000	lr=0.000100
+[Epoch 37] training: accuracy=69.665513
+[Epoch 37] speed: 643 samples/sec	time cost: 17.507354
+[Epoch 37] validation: acc-top1=74.306106 acc-top5=92.862807
+wrote 2 events to disk
+Epoch[38] Batch [9]	Speed: 429.852342 samples/sec	accuracy=71.250000	lr=0.000100
+Epoch[38] Batch [19]	Speed: 749.988511 samples/sec	accuracy=70.750000	lr=0.000100
+Epoch[38] Batch [29]	Speed: 762.534595 samples/sec	accuracy=70.633333	lr=0.000100
+Epoch[38] Batch [39]	Speed: 746.674300 samples/sec	accuracy=70.587500	lr=0.000100
+[Epoch 38] training: accuracy=70.451924
+[Epoch 38] speed: 634 samples/sec	time cost: 17.585196
+[Epoch 38] validation: acc-top1=74.385408 acc-top5=92.809939
+wrote 2 events to disk
+Epoch[39] Batch [9]	Speed: 440.719973 samples/sec	accuracy=69.450000	lr=0.000100
+Epoch[39] Batch [19]	Speed: 736.368277 samples/sec	accuracy=69.525000	lr=0.000100
+Epoch[39] Batch [29]	Speed: 756.522755 samples/sec	accuracy=70.466667	lr=0.000100
+Epoch[39] Batch [39]	Speed: 755.846415 samples/sec	accuracy=70.062500	lr=0.000100
+[Epoch 39] training: accuracy=69.917165
+[Epoch 39] speed: 641 samples/sec	time cost: 17.479916
+[Epoch 39] validation: acc-top1=74.358974 acc-top5=93.232884
+wrote 2 events to disk
+Epoch[40] Batch [9]	Speed: 427.133453 samples/sec	accuracy=70.700000	lr=0.000100
+Epoch[40] Batch [19]	Speed: 792.510132 samples/sec	accuracy=70.800000	lr=0.000100
+Epoch[40] Batch [29]	Speed: 772.721340 samples/sec	accuracy=70.733333	lr=0.000100
+Epoch[40] Batch [39]	Speed: 777.366954 samples/sec	accuracy=71.075000	lr=0.000100
+[Epoch 40] training: accuracy=71.091538
+[Epoch 40] speed: 647 samples/sec	time cost: 17.404035
+[Epoch 40] validation: acc-top1=74.755485 acc-top5=93.127148
+wrote 2 events to disk
+Epoch[41] Batch [9]	Speed: 432.063037 samples/sec	accuracy=70.900000	lr=0.000100
+Epoch[41] Batch [19]	Speed: 785.723866 samples/sec	accuracy=71.000000	lr=0.000100
+Epoch[41] Batch [29]	Speed: 761.837920 samples/sec	accuracy=70.650000	lr=0.000100
+Epoch[41] Batch [39]	Speed: 720.226651 samples/sec	accuracy=70.075000	lr=0.000100
+[Epoch 41] training: accuracy=70.095418
+[Epoch 41] speed: 639 samples/sec	time cost: 17.625622
+[Epoch 41] validation: acc-top1=74.438277 acc-top5=93.074280
+wrote 2 events to disk
+Epoch[42] Batch [9]	Speed: 454.187164 samples/sec	accuracy=69.850000	lr=0.000100
+Epoch[42] Batch [19]	Speed: 759.189963 samples/sec	accuracy=70.225000	lr=0.000100
+Epoch[42] Batch [29]	Speed: 714.518260 samples/sec	accuracy=70.383333	lr=0.000100
+Epoch[42] Batch [39]	Speed: 780.164935 samples/sec	accuracy=70.150000	lr=0.000100
+[Epoch 42] training: accuracy=70.294642
+[Epoch 42] speed: 646 samples/sec	time cost: 17.522548
+[Epoch 42] validation: acc-top1=74.623315 acc-top5=93.047846
+wrote 2 events to disk
+Epoch[43] Batch [9]	Speed: 463.702821 samples/sec	accuracy=71.000000	lr=0.000100
+Epoch[43] Batch [19]	Speed: 751.149521 samples/sec	accuracy=70.375000	lr=0.000100
+Epoch[43] Batch [29]	Speed: 783.639232 samples/sec	accuracy=69.950000	lr=0.000100
+Epoch[43] Batch [39]	Speed: 761.041215 samples/sec	accuracy=70.025000	lr=0.000100
+[Epoch 43] training: accuracy=70.221244
+[Epoch 43] speed: 659 samples/sec	time cost: 17.087692
+[Epoch 43] validation: acc-top1=74.279672 acc-top5=93.153582
+wrote 2 events to disk
+Epoch[44] Batch [9]	Speed: 430.771316 samples/sec	accuracy=69.750000	lr=0.000100
+Epoch[44] Batch [19]	Speed: 722.553589 samples/sec	accuracy=69.950000	lr=0.000100
+Epoch[44] Batch [29]	Speed: 766.629154 samples/sec	accuracy=70.316667	lr=0.000100
+Epoch[44] Batch [39]	Speed: 777.927382 samples/sec	accuracy=70.487500	lr=0.000100
+[Epoch 44] training: accuracy=70.525322
+[Epoch 44] speed: 637 samples/sec	time cost: 17.679612
+[Epoch 44] validation: acc-top1=74.544013 acc-top5=93.100714
+wrote 2 events to disk
+Epoch[45] Batch [9]	Speed: 433.900594 samples/sec	accuracy=69.600000	lr=0.000100
+Epoch[45] Batch [19]	Speed: 773.215001 samples/sec	accuracy=70.175000	lr=0.000100
+Epoch[45] Batch [29]	Speed: 771.516512 samples/sec	accuracy=70.400000	lr=0.000100
+Epoch[45] Batch [39]	Speed: 769.726647 samples/sec	accuracy=70.487500	lr=0.000100
+[Epoch 45] training: accuracy=70.472895
+[Epoch 45] speed: 646 samples/sec	time cost: 17.448117
+[Epoch 45] validation: acc-top1=74.940523 acc-top5=93.127148
+wrote 2 events to disk
+Epoch[46] Batch [9]	Speed: 450.263716 samples/sec	accuracy=69.950000	lr=0.000100
+Epoch[46] Batch [19]	Speed: 758.291837 samples/sec	accuracy=71.775000	lr=0.000100
+Epoch[46] Batch [29]	Speed: 762.861765 samples/sec	accuracy=70.883333	lr=0.000100
+Epoch[46] Batch [39]	Speed: 774.137273 samples/sec	accuracy=71.062500	lr=0.000100
+[Epoch 46] training: accuracy=71.206878
+[Epoch 46] speed: 649 samples/sec	time cost: 17.303622
+[Epoch 46] validation: acc-top1=74.834787 acc-top5=92.994978
+wrote 2 events to disk
+Epoch[47] Batch [9]	Speed: 447.967210 samples/sec	accuracy=70.950000	lr=0.000100
+Epoch[47] Batch [19]	Speed: 755.838243 samples/sec	accuracy=71.175000	lr=0.000100
+Epoch[47] Batch [29]	Speed: 783.715300 samples/sec	accuracy=71.483333	lr=0.000100
+Epoch[47] Batch [39]	Speed: 760.806952 samples/sec	accuracy=71.437500	lr=0.000100
+[Epoch 47] training: accuracy=71.259306
+[Epoch 47] speed: 651 samples/sec	time cost: 17.272170
+[Epoch 47] validation: acc-top1=74.649749 acc-top5=92.994978
+wrote 2 events to disk
+Epoch[48] Batch [9]	Speed: 417.124411 samples/sec	accuracy=69.900000	lr=0.000100
+Epoch[48] Batch [19]	Speed: 780.843285 samples/sec	accuracy=70.525000	lr=0.000100
+Epoch[48] Batch [29]	Speed: 724.279682 samples/sec	accuracy=70.783333	lr=0.000100
+Epoch[48] Batch [39]	Speed: 734.239203 samples/sec	accuracy=71.025000	lr=0.000100
+[Epoch 48] training: accuracy=70.860858
+[Epoch 48] speed: 628 samples/sec	time cost: 17.783137
+[Epoch 48] validation: acc-top1=74.596881 acc-top5=93.259318
+wrote 2 events to disk
+Epoch[49] Batch [9]	Speed: 452.295308 samples/sec	accuracy=71.050000	lr=0.000100
+Epoch[49] Batch [19]	Speed: 758.865316 samples/sec	accuracy=71.050000	lr=0.000100
+Epoch[49] Batch [29]	Speed: 771.753868 samples/sec	accuracy=71.233333	lr=0.000100
+Epoch[49] Batch [39]	Speed: 769.238557 samples/sec	accuracy=70.975000	lr=0.000100
+[Epoch 49] training: accuracy=70.976198
+[Epoch 49] speed: 653 samples/sec	time cost: 17.190182
+[Epoch 49] validation: acc-top1=74.781919 acc-top5=93.100714
+wrote 2 events to disk
+Epoch[50] Batch [9]	Speed: 426.789923 samples/sec	accuracy=70.500000	lr=0.000100
+Epoch[50] Batch [19]	Speed: 733.589914 samples/sec	accuracy=70.650000	lr=0.000100
+Epoch[50] Batch [29]	Speed: 761.541492 samples/sec	accuracy=70.716667	lr=0.000100
+Epoch[50] Batch [39]	Speed: 748.379676 samples/sec	accuracy=71.050000	lr=0.000100
+[Epoch 50] training: accuracy=70.997169
+[Epoch 50] speed: 634 samples/sec	time cost: 17.789037
+[Epoch 50] validation: acc-top1=75.072694 acc-top5=93.153582
+wrote 2 events to disk
+Epoch[51] Batch [9]	Speed: 442.639821 samples/sec	accuracy=70.200000	lr=0.000100
+Epoch[51] Batch [19]	Speed: 752.260496 samples/sec	accuracy=70.050000	lr=0.000100
+Epoch[51] Batch [29]	Speed: 757.444185 samples/sec	accuracy=70.433333	lr=0.000100
+Epoch[51] Batch [39]	Speed: 763.182411 samples/sec	accuracy=70.650000	lr=0.000100
+[Epoch 51] training: accuracy=70.766488
+[Epoch 51] speed: 645 samples/sec	time cost: 17.398392
+[Epoch 51] validation: acc-top1=74.702617 acc-top5=93.100714
+wrote 2 events to disk
+Epoch[52] Batch [9]	Speed: 460.735220 samples/sec	accuracy=70.750000	lr=0.000100
+Epoch[52] Batch [19]	Speed: 755.063274 samples/sec	accuracy=71.575000	lr=0.000100
+Epoch[52] Batch [29]	Speed: 726.017812 samples/sec	accuracy=72.183333	lr=0.000100
+Epoch[52] Batch [39]	Speed: 761.995980 samples/sec	accuracy=71.887500	lr=0.000100
+[Epoch 52] training: accuracy=71.710181
+[Epoch 52] speed: 648 samples/sec	time cost: 17.479544
+[Epoch 52] validation: acc-top1=74.623315 acc-top5=93.127148
+wrote 2 events to disk
+Epoch[53] Batch [9]	Speed: 420.651910 samples/sec	accuracy=73.500000	lr=0.000100
+Epoch[53] Batch [19]	Speed: 760.424324 samples/sec	accuracy=72.300000	lr=0.000100
+Epoch[53] Batch [29]	Speed: 770.973783 samples/sec	accuracy=71.700000	lr=0.000100
+Epoch[53] Batch [39]	Speed: 776.247511 samples/sec	accuracy=71.212500	lr=0.000100
+[Epoch 53] training: accuracy=71.143966
+[Epoch 53] speed: 639 samples/sec	time cost: 17.552403
+[Epoch 53] validation: acc-top1=74.834787 acc-top5=93.127148
+wrote 2 events to disk
+Epoch[54] Batch [9]	Speed: 453.849188 samples/sec	accuracy=70.550000	lr=0.000100
+Epoch[54] Batch [19]	Speed: 769.416146 samples/sec	accuracy=72.000000	lr=0.000100
+Epoch[54] Batch [29]	Speed: 763.064671 samples/sec	accuracy=72.250000	lr=0.000100
+Epoch[54] Batch [39]	Speed: 771.934041 samples/sec	accuracy=72.162500	lr=0.000100
+[Epoch 54] training: accuracy=71.783580
+[Epoch 54] speed: 656 samples/sec	time cost: 17.114799
+[Epoch 54] validation: acc-top1=75.231298 acc-top5=93.285752
+wrote 2 events to disk
+Epoch[55] Batch [9]	Speed: 430.191843 samples/sec	accuracy=72.000000	lr=0.000100
+Epoch[55] Batch [19]	Speed: 768.881088 samples/sec	accuracy=72.025000	lr=0.000100
+Epoch[55] Batch [29]	Speed: 763.911252 samples/sec	accuracy=72.033333	lr=0.000100
+Epoch[55] Batch [39]	Speed: 767.402294 samples/sec	accuracy=72.100000	lr=0.000100
+[Epoch 55] training: accuracy=71.846493
+[Epoch 55] speed: 645 samples/sec	time cost: 17.418430
+[Epoch 55] validation: acc-top1=74.702617 acc-top5=93.206450
+wrote 2 events to disk
+Epoch[56] Batch [9]	Speed: 432.322383 samples/sec	accuracy=71.400000	lr=0.000100
+Epoch[56] Batch [19]	Speed: 760.263746 samples/sec	accuracy=72.025000	lr=0.000100
+Epoch[56] Batch [29]	Speed: 764.667763 samples/sec	accuracy=72.400000	lr=0.000100
+Epoch[56] Batch [39]	Speed: 754.755931 samples/sec	accuracy=72.287500	lr=0.000100
+[Epoch 56] training: accuracy=72.402223
+[Epoch 56] speed: 642 samples/sec	time cost: 17.509584
+[Epoch 56] validation: acc-top1=74.993391 acc-top5=93.259318
+wrote 2 events to disk
+Epoch[57] Batch [9]	Speed: 431.035758 samples/sec	accuracy=71.350000	lr=0.000100
+Epoch[57] Batch [19]	Speed: 770.805461 samples/sec	accuracy=71.200000	lr=0.000100
+Epoch[57] Batch [29]	Speed: 746.467794 samples/sec	accuracy=71.133333	lr=0.000100
+Epoch[57] Batch [39]	Speed: 776.145453 samples/sec	accuracy=71.287500	lr=0.000100
+[Epoch 57] training: accuracy=71.301248
+[Epoch 57] speed: 641 samples/sec	time cost: 17.528929
+[Epoch 57] validation: acc-top1=75.046260 acc-top5=93.417922
+wrote 2 events to disk
+Epoch[58] Batch [9]	Speed: 431.291964 samples/sec	accuracy=72.300000	lr=0.000100
+Epoch[58] Batch [19]	Speed: 742.185695 samples/sec	accuracy=72.350000	lr=0.000100
+Epoch[58] Batch [29]	Speed: 763.883079 samples/sec	accuracy=72.583333	lr=0.000100
+Epoch[58] Batch [39]	Speed: 770.046870 samples/sec	accuracy=72.900000	lr=0.000100
+[Epoch 58] training: accuracy=72.821642
+[Epoch 58] speed: 639 samples/sec	time cost: 17.657033
+[Epoch 58] validation: acc-top1=75.257732 acc-top5=93.232884
+wrote 2 events to disk
+Epoch[59] Batch [9]	Speed: 447.601140 samples/sec	accuracy=70.500000	lr=0.000100
+Epoch[59] Batch [19]	Speed: 777.597040 samples/sec	accuracy=71.075000	lr=0.000100
+Epoch[59] Batch [29]	Speed: 747.804864 samples/sec	accuracy=71.083333	lr=0.000100
+Epoch[59] Batch [39]	Speed: 751.787225 samples/sec	accuracy=71.087500	lr=0.000100
+[Epoch 59] training: accuracy=71.039111
+[Epoch 59] speed: 647 samples/sec	time cost: 17.433718
+[Epoch 59] validation: acc-top1=75.231298 acc-top5=93.285752
+wrote 2 events to disk
+Epoch[60] Batch [9]	Speed: 444.632669 samples/sec	accuracy=72.450000	lr=0.000010
+Epoch[60] Batch [19]	Speed: 779.589398 samples/sec	accuracy=71.775000	lr=0.000010
+Epoch[60] Batch [29]	Speed: 720.275072 samples/sec	accuracy=71.783333	lr=0.000010
+Epoch[60] Batch [39]	Speed: 770.964571 samples/sec	accuracy=72.212500	lr=0.000010
+[Epoch 60] training: accuracy=72.056202
+[Epoch 60] speed: 644 samples/sec	time cost: 17.376278
+[Epoch 60] validation: acc-top1=75.178430 acc-top5=93.391488
+wrote 2 events to disk
+Epoch[61] Batch [9]	Speed: 447.044066 samples/sec	accuracy=70.900000	lr=0.000010
+Epoch[61] Batch [19]	Speed: 751.948151 samples/sec	accuracy=71.950000	lr=0.000010
+Epoch[61] Batch [29]	Speed: 775.730889 samples/sec	accuracy=72.083333	lr=0.000010
+Epoch[61] Batch [39]	Speed: 764.332705 samples/sec	accuracy=71.850000	lr=0.000010
+[Epoch 61] training: accuracy=72.140086
+[Epoch 61] speed: 650 samples/sec	time cost: 17.384320
+[Epoch 61] validation: acc-top1=75.178430 acc-top5=93.338620
+wrote 2 events to disk
+Epoch[62] Batch [9]	Speed: 460.549807 samples/sec	accuracy=72.350000	lr=0.000010
+Epoch[62] Batch [19]	Speed: 733.030798 samples/sec	accuracy=71.825000	lr=0.000010
+Epoch[62] Batch [29]	Speed: 774.836738 samples/sec	accuracy=71.833333	lr=0.000010
+Epoch[62] Batch [39]	Speed: 778.343431 samples/sec	accuracy=71.725000	lr=0.000010
+[Epoch 62] training: accuracy=71.762609
+[Epoch 62] speed: 655 samples/sec	time cost: 17.240287
+[Epoch 62] validation: acc-top1=75.151996 acc-top5=93.417922
+wrote 2 events to disk
+Epoch[63] Batch [9]	Speed: 444.487541 samples/sec	accuracy=72.350000	lr=0.000010
+Epoch[63] Batch [19]	Speed: 782.433204 samples/sec	accuracy=71.950000	lr=0.000010
+Epoch[63] Batch [29]	Speed: 761.654614 samples/sec	accuracy=71.583333	lr=0.000010
+Epoch[63] Batch [39]	Speed: 766.206705 samples/sec	accuracy=71.712500	lr=0.000010
+[Epoch 63] training: accuracy=71.563385
+[Epoch 63] speed: 651 samples/sec	time cost: 17.238453
+[Epoch 63] validation: acc-top1=75.125562 acc-top5=93.391488
+wrote 2 events to disk
+Epoch[64] Batch [9]	Speed: 445.135577 samples/sec	accuracy=72.650000	lr=0.000010
+Epoch[64] Batch [19]	Speed: 759.387964 samples/sec	accuracy=72.350000	lr=0.000010
+Epoch[64] Batch [29]	Speed: 721.880809 samples/sec	accuracy=72.516667	lr=0.000010
+Epoch[64] Batch [39]	Speed: 763.586935 samples/sec	accuracy=72.662500	lr=0.000010
+[Epoch 64] training: accuracy=72.538534
+[Epoch 64] speed: 641 samples/sec	time cost: 17.402065
+[Epoch 64] validation: acc-top1=75.125562 acc-top5=93.259318
+wrote 2 events to disk
+Epoch[65] Batch [9]	Speed: 443.697104 samples/sec	accuracy=72.200000	lr=0.000010
+Epoch[65] Batch [19]	Speed: 728.254333 samples/sec	accuracy=72.225000	lr=0.000010
+Epoch[65] Batch [29]	Speed: 785.135104 samples/sec	accuracy=72.200000	lr=0.000010
+Epoch[65] Batch [39]	Speed: 767.918352 samples/sec	accuracy=72.650000	lr=0.000010
+[Epoch 65] training: accuracy=72.706302
+[Epoch 65] speed: 640 samples/sec	time cost: 17.570692
+[Epoch 65] validation: acc-top1=75.363468 acc-top5=93.365054
+wrote 2 events to disk
+Epoch[66] Batch [9]	Speed: 464.206917 samples/sec	accuracy=70.600000	lr=0.000010
+Epoch[66] Batch [19]	Speed: 730.653946 samples/sec	accuracy=70.950000	lr=0.000010
+Epoch[66] Batch [29]	Speed: 769.847371 samples/sec	accuracy=71.266667	lr=0.000010
+Epoch[66] Batch [39]	Speed: 723.858317 samples/sec	accuracy=71.325000	lr=0.000010
+[Epoch 66] training: accuracy=71.615812
+[Epoch 66] speed: 648 samples/sec	time cost: 17.240807
+[Epoch 66] validation: acc-top1=75.416336 acc-top5=93.285752
+wrote 2 events to disk
+Epoch[67] Batch [9]	Speed: 461.039719 samples/sec	accuracy=73.050000	lr=0.000010
+Epoch[67] Batch [19]	Speed: 768.943674 samples/sec	accuracy=73.225000	lr=0.000010
+Epoch[67] Batch [29]	Speed: 772.252337 samples/sec	accuracy=73.450000	lr=0.000010
+Epoch[67] Batch [39]	Speed: 762.789691 samples/sec	accuracy=73.050000	lr=0.000010
+[Epoch 67] training: accuracy=73.387858
+[Epoch 67] speed: 656 samples/sec	time cost: 17.119558
+[Epoch 67] validation: acc-top1=75.337034 acc-top5=93.365054
+wrote 2 events to disk
+Epoch[68] Batch [9]	Speed: 475.289055 samples/sec	accuracy=74.250000	lr=0.000010
+Epoch[68] Batch [19]	Speed: 763.153459 samples/sec	accuracy=73.150000	lr=0.000010
+Epoch[68] Batch [29]	Speed: 774.226441 samples/sec	accuracy=73.200000	lr=0.000010
+Epoch[68] Batch [39]	Speed: 771.837020 samples/sec	accuracy=73.000000	lr=0.000010
+[Epoch 68] training: accuracy=72.947468
+[Epoch 68] speed: 666 samples/sec	time cost: 16.931285
+[Epoch 68] validation: acc-top1=75.046260 acc-top5=93.391488
+wrote 2 events to disk
+Epoch[69] Batch [9]	Speed: 446.064060 samples/sec	accuracy=71.800000	lr=0.000010
+Epoch[69] Batch [19]	Speed: 761.286401 samples/sec	accuracy=72.925000	lr=0.000010
+Epoch[69] Batch [29]	Speed: 765.495413 samples/sec	accuracy=72.500000	lr=0.000010
+Epoch[69] Batch [39]	Speed: 748.040260 samples/sec	accuracy=72.712500	lr=0.000010
+[Epoch 69] training: accuracy=72.528049
+[Epoch 69] speed: 648 samples/sec	time cost: 17.417022
+[Epoch 69] validation: acc-top1=75.125562 acc-top5=93.365054
+wrote 2 events to disk
+Epoch[70] Batch [9]	Speed: 444.462082 samples/sec	accuracy=73.350000	lr=0.000010
+Epoch[70] Batch [19]	Speed: 773.408335 samples/sec	accuracy=73.500000	lr=0.000010
+Epoch[70] Batch [29]	Speed: 770.566281 samples/sec	accuracy=73.216667	lr=0.000010
+Epoch[70] Batch [39]	Speed: 775.177202 samples/sec	accuracy=72.737500	lr=0.000010
+[Epoch 70] training: accuracy=73.115235
+[Epoch 70] speed: 652 samples/sec	time cost: 17.175776
+[Epoch 70] validation: acc-top1=75.416336 acc-top5=93.259318
+wrote 2 events to disk
+Epoch[71] Batch [9]	Speed: 453.720116 samples/sec	accuracy=71.450000	lr=0.000010
+Epoch[71] Batch [19]	Speed: 760.395856 samples/sec	accuracy=72.600000	lr=0.000010
+Epoch[71] Batch [29]	Speed: 726.128168 samples/sec	accuracy=72.516667	lr=0.000010
+Epoch[71] Batch [39]	Speed: 779.988878 samples/sec	accuracy=72.412500	lr=0.000010
+[Epoch 71] training: accuracy=72.580476
+[Epoch 71] speed: 648 samples/sec	time cost: 17.395952
+[Epoch 71] validation: acc-top1=75.151996 acc-top5=93.391488
+wrote 2 events to disk
+Epoch[72] Batch [9]	Speed: 474.177218 samples/sec	accuracy=72.400000	lr=0.000010
+Epoch[72] Batch [19]	Speed: 759.041238 samples/sec	accuracy=72.500000	lr=0.000010
+Epoch[72] Batch [29]	Speed: 772.230654 samples/sec	accuracy=72.083333	lr=0.000010
+Epoch[72] Batch [39]	Speed: 777.016790 samples/sec	accuracy=72.437500	lr=0.000010
+[Epoch 72] training: accuracy=72.936982
+[Epoch 72] speed: 663 samples/sec	time cost: 16.953462
+[Epoch 72] validation: acc-top1=75.257732 acc-top5=93.338620
+wrote 2 events to disk
+Epoch[73] Batch [9]	Speed: 428.254957 samples/sec	accuracy=71.400000	lr=0.000010
+Epoch[73] Batch [19]	Speed: 776.381858 samples/sec	accuracy=71.400000	lr=0.000010
+Epoch[73] Batch [29]	Speed: 773.364413 samples/sec	accuracy=72.183333	lr=0.000010
+Epoch[73] Batch [39]	Speed: 760.246727 samples/sec	accuracy=72.387500	lr=0.000010
+[Epoch 73] training: accuracy=72.590962
+[Epoch 73] speed: 638 samples/sec	time cost: 17.556012
+[Epoch 73] validation: acc-top1=75.231298 acc-top5=93.285752
+wrote 2 events to disk
+Epoch[74] Batch [9]	Speed: 442.483526 samples/sec	accuracy=72.950000	lr=0.000010
+Epoch[74] Batch [19]	Speed: 776.113139 samples/sec	accuracy=72.725000	lr=0.000010
+Epoch[74] Batch [29]	Speed: 773.543128 samples/sec	accuracy=72.783333	lr=0.000010
+Epoch[74] Batch [39]	Speed: 741.965651 samples/sec	accuracy=72.775000	lr=0.000010
+[Epoch 74] training: accuracy=73.062808
+[Epoch 74] speed: 648 samples/sec	time cost: 17.304685
+[Epoch 74] validation: acc-top1=75.099128 acc-top5=93.417922
+wrote 2 events to disk
+Epoch[75] Batch [9]	Speed: 450.131217 samples/sec	accuracy=73.900000	lr=0.000010
+Epoch[75] Batch [19]	Speed: 769.355882 samples/sec	accuracy=72.475000	lr=0.000010
+Epoch[75] Batch [29]	Speed: 758.543485 samples/sec	accuracy=72.633333	lr=0.000010
+Epoch[75] Batch [39]	Speed: 800.970949 samples/sec	accuracy=72.350000	lr=0.000010
+[Epoch 75] training: accuracy=72.255426
+[Epoch 75] speed: 658 samples/sec	time cost: 17.134220
+[Epoch 75] validation: acc-top1=75.151996 acc-top5=93.365054
+wrote 2 events to disk
+Epoch[76] Batch [9]	Speed: 436.636111 samples/sec	accuracy=75.350000	lr=0.000010
+Epoch[76] Batch [19]	Speed: 769.800814 samples/sec	accuracy=74.750000	lr=0.000010
+Epoch[76] Batch [29]	Speed: 770.679268 samples/sec	accuracy=73.166667	lr=0.000010
+Epoch[76] Batch [39]	Speed: 779.889966 samples/sec	accuracy=72.900000	lr=0.000010
+[Epoch 76] training: accuracy=72.884555
+[Epoch 76] speed: 647 samples/sec	time cost: 17.621810
+[Epoch 76] validation: acc-top1=75.046260 acc-top5=93.338620
+wrote 2 events to disk
+Epoch[77] Batch [9]	Speed: 444.518231 samples/sec	accuracy=72.700000	lr=0.000010
+Epoch[77] Batch [19]	Speed: 742.809447 samples/sec	accuracy=72.150000	lr=0.000010
+Epoch[77] Batch [29]	Speed: 756.374800 samples/sec	accuracy=72.183333	lr=0.000010
+Epoch[77] Batch [39]	Speed: 771.678259 samples/sec	accuracy=72.312500	lr=0.000010
+[Epoch 77] training: accuracy=72.108630
+[Epoch 77] speed: 643 samples/sec	time cost: 17.511645
+[Epoch 77] validation: acc-top1=75.046260 acc-top5=93.417922
+wrote 2 events to disk
+Epoch[78] Batch [9]	Speed: 450.284840 samples/sec	accuracy=71.700000	lr=0.000010
+Epoch[78] Batch [19]	Speed: 752.045226 samples/sec	accuracy=72.025000	lr=0.000010
+Epoch[78] Batch [29]	Speed: 787.300786 samples/sec	accuracy=72.266667	lr=0.000010
+Epoch[78] Batch [39]	Speed: 764.467557 samples/sec	accuracy=71.887500	lr=0.000010
+[Epoch 78] training: accuracy=72.328825
+[Epoch 78] speed: 653 samples/sec	time cost: 17.157336
+[Epoch 78] validation: acc-top1=75.125562 acc-top5=93.338620
+wrote 2 events to disk
+Epoch[79] Batch [9]	Speed: 445.384089 samples/sec	accuracy=72.400000	lr=0.000010
+Epoch[79] Batch [19]	Speed: 775.282947 samples/sec	accuracy=72.825000	lr=0.000010
+Epoch[79] Batch [29]	Speed: 774.938881 samples/sec	accuracy=71.800000	lr=0.000010
+Epoch[79] Batch [39]	Speed: 773.803503 samples/sec	accuracy=72.162500	lr=0.000010
+[Epoch 79] training: accuracy=72.507078
+[Epoch 79] speed: 652 samples/sec	time cost: 17.244695
+[Epoch 79] validation: acc-top1=75.099128 acc-top5=93.470790
+wrote 2 events to disk
+wrote 1 event to disk

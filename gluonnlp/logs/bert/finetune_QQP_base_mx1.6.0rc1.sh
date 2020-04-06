@@ -1,0 +1,1 @@
+python3 finetune_classifier.py --task_name QQP --batch_size 32 --lr 2e-5 --epochs 5 --warmup_ratio 0.1 --gpu 0 -seed 0

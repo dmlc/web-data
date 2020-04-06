@@ -1,320 +1,176 @@
+/home/ubuntu/anaconda3/lib/python3.6/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
 INFO:root:Ngrams range for the training run : 1
 INFO:root:Loading Training data
-INFO:root:Opening file fastText/data/dbpedia.train for reading input
+INFO:root:Opening file /dev/shm/fastText/data/dbpedia.train for reading input
+INFO:root:Loading Test data
+INFO:root:Opening file /dev/shm/fastText/data/dbpedia.test for reading input
 INFO:root:Vocabulary size: 803505
 INFO:root:Training data converting to sequences...
-INFO:root:Reading test dataset
-INFO:root:Opening file fastText/data/dbpedia.test for reading input
+INFO:root:Done! Sequence conversion Time=161.65s, #Sentences=560000
+INFO:root:Done! Sequence conversion Time=145.70s, #Sentences=70000
 INFO:root:Encoding labels
 INFO:root:Label mapping:{'__label__1': 0, '__label__10': 1, '__label__11': 2, '__label__12': 3, '__label__13': 4, '__label__14': 5, '__label__2': 6, '__label__3': 7, '__label__4': 8, '__label__5': 9, '__label__6': 10, '__label__7': 11, '__label__8': 12, '__label__9': 13}
+INFO:root:Done! Preprocessing Time=12.20s, #Sentences=560000
+INFO:root:Done! Preprocessing Time=5.16s, #Sentences=70000
+/home/ubuntu/anaconda3/lib/python3.6/site-packages/gluonnlp/data/sampler.py:366: UserWarning: Some buckets are empty and will be removed. Unused bucket keys=[833, 907, 981, 1129, 1203, 1425]
+  str(unused_bucket_keys))
 INFO:root:Number of labels: 14
 INFO:root:Initializing network
-INFO:root:Running Training on ctx:gpu(0)
+INFO:root:Running Training on ctx:gpu(1)
 INFO:root:Number of output units in the last layer :14
 INFO:root:Network initialized
 INFO:root:Loss function for training:SoftmaxCrossEntropyLoss(batch_axis=0, w=None)
 INFO:root:Starting Training!
-INFO:root:Loading the training data to memory and creating sequences!
-INFO:root:Loading the test data to memory and creating sequences
 INFO:root:Training on 560000 samples and testing on 70000 samples
 INFO:root:Number of batches for each epoch : 35000.0, Display cadence: 3500
 INFO:root:Epoch : 0, Batches complete :0
 INFO:root:Epoch : 0, Batches complete :3500
 INFO:root:Epoch : 0, Batches complete :7000
 INFO:root:Epoch : 0, Batches complete :10500
-INFO:root:Epoch : 0, Batches complete :14000
-INFO:root:Epoch : 0, Batches complete :17500
-INFO:root:Epoch : 0, Batches complete :21000
-INFO:root:Epoch : 0, Batches complete :24500
-INFO:root:Epoch : 0, Batches complete :28000
-INFO:root:Epoch : 0, Batches complete :31500
 INFO:root:Epoch complete :0, Computing Accuracy
-INFO:root:Epochs completed : 0 Test Accuracy: 0.8932, Test Loss: 0.7962570709841592
+INFO:root:Epochs completed : 0 Test Accuracy: 0.9699, Test Loss: 0.6863976057549881
 INFO:root:Epoch : 1, Batches complete :0
 INFO:root:Epoch : 1, Batches complete :3500
 INFO:root:Epoch : 1, Batches complete :7000
 INFO:root:Epoch : 1, Batches complete :10500
-INFO:root:Epoch : 1, Batches complete :14000
-INFO:root:Epoch : 1, Batches complete :17500
-INFO:root:Epoch : 1, Batches complete :21000
-INFO:root:Epoch : 1, Batches complete :24500
-INFO:root:Epoch : 1, Batches complete :28000
-INFO:root:Epoch : 1, Batches complete :31500
 INFO:root:Epoch complete :1, Computing Accuracy
-INFO:root:Epochs completed : 1 Test Accuracy: 0.9265142857142857, Test Loss: 0.5813547594206672
+INFO:root:Epochs completed : 1 Test Accuracy: 0.9768714285714286, Test Loss: 0.4500242570382416
 INFO:root:Epoch : 2, Batches complete :0
 INFO:root:Epoch : 2, Batches complete :3500
 INFO:root:Epoch : 2, Batches complete :7000
 INFO:root:Epoch : 2, Batches complete :10500
-INFO:root:Epoch : 2, Batches complete :14000
-INFO:root:Epoch : 2, Batches complete :17500
-INFO:root:Epoch : 2, Batches complete :21000
-INFO:root:Epoch : 2, Batches complete :24500
-INFO:root:Epoch : 2, Batches complete :28000
-INFO:root:Epoch : 2, Batches complete :31500
 INFO:root:Epoch complete :2, Computing Accuracy
-INFO:root:Epochs completed : 2 Test Accuracy: 0.9326142857142857, Test Loss: 0.4382454127073288
+INFO:root:Epochs completed : 2 Test Accuracy: 0.9772857142857143, Test Loss: 0.35363802586575893
 INFO:root:Epoch : 3, Batches complete :0
 INFO:root:Epoch : 3, Batches complete :3500
 INFO:root:Epoch : 3, Batches complete :7000
 INFO:root:Epoch : 3, Batches complete :10500
-INFO:root:Epoch : 3, Batches complete :14000
-INFO:root:Epoch : 3, Batches complete :17500
-INFO:root:Epoch : 3, Batches complete :21000
-INFO:root:Epoch : 3, Batches complete :24500
-INFO:root:Epoch : 3, Batches complete :28000
-INFO:root:Epoch : 3, Batches complete :31500
 INFO:root:Epoch complete :3, Computing Accuracy
-INFO:root:Epochs completed : 3 Test Accuracy: 0.9588857142857143, Test Loss: 0.22716643384524748
+INFO:root:Epochs completed : 3 Test Accuracy: 0.9792, Test Loss: 0.2845098681688672
 INFO:root:Epoch : 4, Batches complete :0
 INFO:root:Epoch : 4, Batches complete :3500
 INFO:root:Epoch : 4, Batches complete :7000
 INFO:root:Epoch : 4, Batches complete :10500
-INFO:root:Epoch : 4, Batches complete :14000
-INFO:root:Epoch : 4, Batches complete :17500
-INFO:root:Epoch : 4, Batches complete :21000
-INFO:root:Epoch : 4, Batches complete :24500
-INFO:root:Epoch : 4, Batches complete :28000
-INFO:root:Epoch : 4, Batches complete :31500
 INFO:root:Epoch complete :4, Computing Accuracy
-INFO:root:Epochs completed : 4 Test Accuracy: 0.9726285714285714, Test Loss: 0.1608757489493915
+INFO:root:Epochs completed : 4 Test Accuracy: 0.9794, Test Loss: 0.2565364573793349
 INFO:root:Epoch : 5, Batches complete :0
 INFO:root:Epoch : 5, Batches complete :3500
 INFO:root:Epoch : 5, Batches complete :7000
 INFO:root:Epoch : 5, Batches complete :10500
-INFO:root:Epoch : 5, Batches complete :14000
-INFO:root:Epoch : 5, Batches complete :17500
-INFO:root:Epoch : 5, Batches complete :21000
-INFO:root:Epoch : 5, Batches complete :24500
-INFO:root:Epoch : 5, Batches complete :28000
-INFO:root:Epoch : 5, Batches complete :31500
 INFO:root:Epoch complete :5, Computing Accuracy
-INFO:root:Epochs completed : 5 Test Accuracy: 0.9782285714285714, Test Loss: 0.1315484730260713
+INFO:root:Epochs completed : 5 Test Accuracy: 0.9788857142857142, Test Loss: 0.24630683094896577
 INFO:root:Epoch : 6, Batches complete :0
 INFO:root:Epoch : 6, Batches complete :3500
 INFO:root:Epoch : 6, Batches complete :7000
 INFO:root:Epoch : 6, Batches complete :10500
-INFO:root:Epoch : 6, Batches complete :14000
-INFO:root:Epoch : 6, Batches complete :17500
-INFO:root:Epoch : 6, Batches complete :21000
-INFO:root:Epoch : 6, Batches complete :24500
-INFO:root:Epoch : 6, Batches complete :28000
-INFO:root:Epoch : 6, Batches complete :31500
 INFO:root:Epoch complete :6, Computing Accuracy
-INFO:root:Epochs completed : 6 Test Accuracy: 0.9792285714285714, Test Loss: 0.12293769291469024
+INFO:root:Epochs completed : 6 Test Accuracy: 0.9786857142857143, Test Loss: 0.23837156017298708
 INFO:root:Epoch : 7, Batches complete :0
 INFO:root:Epoch : 7, Batches complete :3500
 INFO:root:Epoch : 7, Batches complete :7000
 INFO:root:Epoch : 7, Batches complete :10500
-INFO:root:Epoch : 7, Batches complete :14000
-INFO:root:Epoch : 7, Batches complete :17500
-INFO:root:Epoch : 7, Batches complete :21000
-INFO:root:Epoch : 7, Batches complete :24500
-INFO:root:Epoch : 7, Batches complete :28000
-INFO:root:Epoch : 7, Batches complete :31500
 INFO:root:Epoch complete :7, Computing Accuracy
-INFO:root:Epochs completed : 7 Test Accuracy: 0.9794, Test Loss: 0.12126661326204029
+INFO:root:Epochs completed : 7 Test Accuracy: 0.9786714285714285, Test Loss: 0.23524657592540643
 INFO:root:Epoch : 8, Batches complete :0
 INFO:root:Epoch : 8, Batches complete :3500
 INFO:root:Epoch : 8, Batches complete :7000
 INFO:root:Epoch : 8, Batches complete :10500
-INFO:root:Epoch : 8, Batches complete :14000
-INFO:root:Epoch : 8, Batches complete :17500
-INFO:root:Epoch : 8, Batches complete :21000
-INFO:root:Epoch : 8, Batches complete :24500
-INFO:root:Epoch : 8, Batches complete :28000
-INFO:root:Epoch : 8, Batches complete :31500
 INFO:root:Epoch complete :8, Computing Accuracy
-INFO:root:Epochs completed : 8 Test Accuracy: 0.9800428571428571, Test Loss: 0.11906558339084902
+INFO:root:Epochs completed : 8 Test Accuracy: 0.9787285714285714, Test Loss: 0.23481739638505386
 INFO:root:Epoch : 9, Batches complete :0
 INFO:root:Epoch : 9, Batches complete :3500
 INFO:root:Epoch : 9, Batches complete :7000
 INFO:root:Epoch : 9, Batches complete :10500
-INFO:root:Epoch : 9, Batches complete :14000
-INFO:root:Epoch : 9, Batches complete :17500
-INFO:root:Epoch : 9, Batches complete :21000
-INFO:root:Epoch : 9, Batches complete :24500
-INFO:root:Epoch : 9, Batches complete :28000
-INFO:root:Epoch : 9, Batches complete :31500
 INFO:root:Epoch complete :9, Computing Accuracy
-INFO:root:Epochs completed : 9 Test Accuracy: 0.9801857142857143, Test Loss: 0.11914572800908767
+INFO:root:Epochs completed : 9 Test Accuracy: 0.9787428571428571, Test Loss: 0.2338253844417883
 INFO:root:Epoch : 10, Batches complete :0
 INFO:root:Epoch : 10, Batches complete :3500
 INFO:root:Epoch : 10, Batches complete :7000
 INFO:root:Epoch : 10, Batches complete :10500
-INFO:root:Epoch : 10, Batches complete :14000
-INFO:root:Epoch : 10, Batches complete :17500
-INFO:root:Epoch : 10, Batches complete :21000
-INFO:root:Epoch : 10, Batches complete :24500
-INFO:root:Epoch : 10, Batches complete :28000
-INFO:root:Epoch : 10, Batches complete :31500
 INFO:root:Epoch complete :10, Computing Accuracy
-INFO:root:Epochs completed : 10 Test Accuracy: 0.9802285714285714, Test Loss: 0.11865360268524712
+INFO:root:Epochs completed : 10 Test Accuracy: 0.9786571428571429, Test Loss: 0.23401775828205204
 INFO:root:Epoch : 11, Batches complete :0
 INFO:root:Epoch : 11, Batches complete :3500
 INFO:root:Epoch : 11, Batches complete :7000
 INFO:root:Epoch : 11, Batches complete :10500
-INFO:root:Epoch : 11, Batches complete :14000
-INFO:root:Epoch : 11, Batches complete :17500
-INFO:root:Epoch : 11, Batches complete :21000
-INFO:root:Epoch : 11, Batches complete :24500
-INFO:root:Epoch : 11, Batches complete :28000
-INFO:root:Epoch : 11, Batches complete :31500
 INFO:root:Epoch complete :11, Computing Accuracy
-INFO:root:Epochs completed : 11 Test Accuracy: 0.9802142857142857, Test Loss: 0.11847782262734007
+INFO:root:Epochs completed : 11 Test Accuracy: 0.9786857142857143, Test Loss: 0.2339698174562463
 INFO:root:Epoch : 12, Batches complete :0
 INFO:root:Epoch : 12, Batches complete :3500
 INFO:root:Epoch : 12, Batches complete :7000
 INFO:root:Epoch : 12, Batches complete :10500
-INFO:root:Epoch : 12, Batches complete :14000
-INFO:root:Epoch : 12, Batches complete :17500
-INFO:root:Epoch : 12, Batches complete :21000
-INFO:root:Epoch : 12, Batches complete :24500
-INFO:root:Epoch : 12, Batches complete :28000
-INFO:root:Epoch : 12, Batches complete :31500
 INFO:root:Epoch complete :12, Computing Accuracy
-INFO:root:Epochs completed : 12 Test Accuracy: 0.9802285714285714, Test Loss: 0.11838984617165157
+INFO:root:Epochs completed : 12 Test Accuracy: 0.9786571428571429, Test Loss: 0.23381617988806827
 INFO:root:Epoch : 13, Batches complete :0
 INFO:root:Epoch : 13, Batches complete :3500
 INFO:root:Epoch : 13, Batches complete :7000
 INFO:root:Epoch : 13, Batches complete :10500
-INFO:root:Epoch : 13, Batches complete :14000
-INFO:root:Epoch : 13, Batches complete :17500
-INFO:root:Epoch : 13, Batches complete :21000
-INFO:root:Epoch : 13, Batches complete :24500
-INFO:root:Epoch : 13, Batches complete :28000
-INFO:root:Epoch : 13, Batches complete :31500
 INFO:root:Epoch complete :13, Computing Accuracy
-INFO:root:Epochs completed : 13 Test Accuracy: 0.9802142857142857, Test Loss: 0.11838840480361672
+INFO:root:Epochs completed : 13 Test Accuracy: 0.9786857142857143, Test Loss: 0.23380975439287707
 INFO:root:Epoch : 14, Batches complete :0
 INFO:root:Epoch : 14, Batches complete :3500
 INFO:root:Epoch : 14, Batches complete :7000
 INFO:root:Epoch : 14, Batches complete :10500
-INFO:root:Epoch : 14, Batches complete :14000
-INFO:root:Epoch : 14, Batches complete :17500
-INFO:root:Epoch : 14, Batches complete :21000
-INFO:root:Epoch : 14, Batches complete :24500
-INFO:root:Epoch : 14, Batches complete :28000
-INFO:root:Epoch : 14, Batches complete :31500
 INFO:root:Epoch complete :14, Computing Accuracy
-INFO:root:Epochs completed : 14 Test Accuracy: 0.9801857142857143, Test Loss: 0.11839249964271267
+INFO:root:Epochs completed : 14 Test Accuracy: 0.9786714285714285, Test Loss: 0.2338121177066216
 INFO:root:Epoch : 15, Batches complete :0
 INFO:root:Epoch : 15, Batches complete :3500
 INFO:root:Epoch : 15, Batches complete :7000
 INFO:root:Epoch : 15, Batches complete :10500
-INFO:root:Epoch : 15, Batches complete :14000
-INFO:root:Epoch : 15, Batches complete :17500
-INFO:root:Epoch : 15, Batches complete :21000
-INFO:root:Epoch : 15, Batches complete :24500
-INFO:root:Epoch : 15, Batches complete :28000
-INFO:root:Epoch : 15, Batches complete :31500
 INFO:root:Epoch complete :15, Computing Accuracy
-INFO:root:Epochs completed : 15 Test Accuracy: 0.9801714285714286, Test Loss: 0.11838149045194898
+INFO:root:Epochs completed : 15 Test Accuracy: 0.9786571428571429, Test Loss: 0.23381176800340597
 INFO:root:Epoch : 16, Batches complete :0
 INFO:root:Epoch : 16, Batches complete :3500
 INFO:root:Epoch : 16, Batches complete :7000
 INFO:root:Epoch : 16, Batches complete :10500
-INFO:root:Epoch : 16, Batches complete :14000
-INFO:root:Epoch : 16, Batches complete :17500
-INFO:root:Epoch : 16, Batches complete :21000
-INFO:root:Epoch : 16, Batches complete :24500
-INFO:root:Epoch : 16, Batches complete :28000
-INFO:root:Epoch : 16, Batches complete :31500
 INFO:root:Epoch complete :16, Computing Accuracy
-INFO:root:Epochs completed : 16 Test Accuracy: 0.9801571428571428, Test Loss: 0.1183883624417441
+INFO:root:Epochs completed : 16 Test Accuracy: 0.9786571428571429, Test Loss: 0.23380597550799498
 INFO:root:Epoch : 17, Batches complete :0
 INFO:root:Epoch : 17, Batches complete :3500
 INFO:root:Epoch : 17, Batches complete :7000
 INFO:root:Epoch : 17, Batches complete :10500
-INFO:root:Epoch : 17, Batches complete :14000
-INFO:root:Epoch : 17, Batches complete :17500
-INFO:root:Epoch : 17, Batches complete :21000
-INFO:root:Epoch : 17, Batches complete :24500
-INFO:root:Epoch : 17, Batches complete :28000
-INFO:root:Epoch : 17, Batches complete :31500
 INFO:root:Epoch complete :17, Computing Accuracy
-INFO:root:Epochs completed : 17 Test Accuracy: 0.9801428571428571, Test Loss: 0.11839138993195127
+INFO:root:Epochs completed : 17 Test Accuracy: 0.9786571428571429, Test Loss: 0.23380099870770082
 INFO:root:Epoch : 18, Batches complete :0
 INFO:root:Epoch : 18, Batches complete :3500
 INFO:root:Epoch : 18, Batches complete :7000
 INFO:root:Epoch : 18, Batches complete :10500
-INFO:root:Epoch : 18, Batches complete :14000
-INFO:root:Epoch : 18, Batches complete :17500
-INFO:root:Epoch : 18, Batches complete :21000
-INFO:root:Epoch : 18, Batches complete :24500
-INFO:root:Epoch : 18, Batches complete :28000
-INFO:root:Epoch : 18, Batches complete :31500
 INFO:root:Epoch complete :18, Computing Accuracy
-INFO:root:Epochs completed : 18 Test Accuracy: 0.9801571428571428, Test Loss: 0.11839457196848734
+INFO:root:Epochs completed : 18 Test Accuracy: 0.9786571428571429, Test Loss: 0.2337988977641527
 INFO:root:Epoch : 19, Batches complete :0
 INFO:root:Epoch : 19, Batches complete :3500
 INFO:root:Epoch : 19, Batches complete :7000
 INFO:root:Epoch : 19, Batches complete :10500
-INFO:root:Epoch : 19, Batches complete :14000
-INFO:root:Epoch : 19, Batches complete :17500
-INFO:root:Epoch : 19, Batches complete :21000
-INFO:root:Epoch : 19, Batches complete :24500
-INFO:root:Epoch : 19, Batches complete :28000
-INFO:root:Epoch : 19, Batches complete :31500
 INFO:root:Epoch complete :19, Computing Accuracy
-INFO:root:Epochs completed : 19 Test Accuracy: 0.9801428571428571, Test Loss: 0.11839560738631653
+INFO:root:Epochs completed : 19 Test Accuracy: 0.9786571428571429, Test Loss: 0.23379760068644875
 INFO:root:Epoch : 20, Batches complete :0
 INFO:root:Epoch : 20, Batches complete :3500
 INFO:root:Epoch : 20, Batches complete :7000
 INFO:root:Epoch : 20, Batches complete :10500
-INFO:root:Epoch : 20, Batches complete :14000
-INFO:root:Epoch : 20, Batches complete :17500
-INFO:root:Epoch : 20, Batches complete :21000
-INFO:root:Epoch : 20, Batches complete :24500
-INFO:root:Epoch : 20, Batches complete :28000
-INFO:root:Epoch : 20, Batches complete :31500
 INFO:root:Epoch complete :20, Computing Accuracy
-INFO:root:Epochs completed : 20 Test Accuracy: 0.9801428571428571, Test Loss: 0.11839546390942167
+INFO:root:Epochs completed : 20 Test Accuracy: 0.9786571428571429, Test Loss: 0.233796498817279
 INFO:root:Epoch : 21, Batches complete :0
 INFO:root:Epoch : 21, Batches complete :3500
 INFO:root:Epoch : 21, Batches complete :7000
 INFO:root:Epoch : 21, Batches complete :10500
-INFO:root:Epoch : 21, Batches complete :14000
-INFO:root:Epoch : 21, Batches complete :17500
-INFO:root:Epoch : 21, Batches complete :21000
-INFO:root:Epoch : 21, Batches complete :24500
-INFO:root:Epoch : 21, Batches complete :28000
-INFO:root:Epoch : 21, Batches complete :31500
 INFO:root:Epoch complete :21, Computing Accuracy
-INFO:root:Epochs completed : 21 Test Accuracy: 0.9801428571428571, Test Loss: 0.11839593265737808
+INFO:root:Epochs completed : 21 Test Accuracy: 0.9786571428571429, Test Loss: 0.23379624106003863
 INFO:root:Epoch : 22, Batches complete :0
 INFO:root:Epoch : 22, Batches complete :3500
 INFO:root:Epoch : 22, Batches complete :7000
 INFO:root:Epoch : 22, Batches complete :10500
-INFO:root:Epoch : 22, Batches complete :14000
-INFO:root:Epoch : 22, Batches complete :17500
-INFO:root:Epoch : 22, Batches complete :21000
-INFO:root:Epoch : 22, Batches complete :24500
-INFO:root:Epoch : 22, Batches complete :28000
-INFO:root:Epoch : 22, Batches complete :31500
 INFO:root:Epoch complete :22, Computing Accuracy
-INFO:root:Epochs completed : 22 Test Accuracy: 0.9801428571428571, Test Loss: 0.1183959456426757
+INFO:root:Epochs completed : 22 Test Accuracy: 0.9786571428571429, Test Loss: 0.2337961024970286
 INFO:root:Epoch : 23, Batches complete :0
 INFO:root:Epoch : 23, Batches complete :3500
 INFO:root:Epoch : 23, Batches complete :7000
 INFO:root:Epoch : 23, Batches complete :10500
-INFO:root:Epoch : 23, Batches complete :14000
-INFO:root:Epoch : 23, Batches complete :17500
-INFO:root:Epoch : 23, Batches complete :21000
-INFO:root:Epoch : 23, Batches complete :24500
-INFO:root:Epoch : 23, Batches complete :28000
-INFO:root:Epoch : 23, Batches complete :31500
 INFO:root:Epoch complete :23, Computing Accuracy
-INFO:root:Epochs completed : 23 Test Accuracy: 0.9801428571428571, Test Loss: 0.11839596565280647
+INFO:root:Epochs completed : 23 Test Accuracy: 0.9786571428571429, Test Loss: 0.23379605659751337
 INFO:root:Epoch : 24, Batches complete :0
 INFO:root:Epoch : 24, Batches complete :3500
 INFO:root:Epoch : 24, Batches complete :7000
 INFO:root:Epoch : 24, Batches complete :10500
-INFO:root:Epoch : 24, Batches complete :14000
-INFO:root:Epoch : 24, Batches complete :17500
-INFO:root:Epoch : 24, Batches complete :21000
-INFO:root:Epoch : 24, Batches complete :24500
-INFO:root:Epoch : 24, Batches complete :28000
-INFO:root:Epoch : 24, Batches complete :31500
 INFO:root:Epoch complete :24, Computing Accuracy
-INFO:root:Epochs completed : 24 Test Accuracy: 0.9801428571428571, Test Loss: 0.1183959660785539
+INFO:root:Epochs completed : 24 Test Accuracy: 0.9786571428571429, Test Loss: 0.23379605076231144

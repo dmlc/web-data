@@ -1,0 +1,1 @@
+python3 finetune_classifier.py --gpu 0 --task_name SST --batch_size 32 --seed 2 --lr 2e-5 --warmup_ratio 0.1 --epochs 5 --log_interval 400

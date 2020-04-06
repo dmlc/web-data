@@ -3,5 +3,7 @@ python train_imagenet.py \
   --rec-val /media/ramdisk/rec/val.rec --rec-val-idx /media/ramdisk/rec/val.idx \
   --model resnet101_v1b --mode hybrid \
   --lr 0.4 --lr-mode cosine --num-epochs 120 --batch-size 128 --num-gpus 8 -j 60 \
-  --warmup-epochs 5 --use-rec --dtype float16 --last-gamma \
-  --save-dir params_resnet101_v1b
+  --warmup-epochs 5 --dtype float16 \
+  --use-rec --last-gamma --no-wd --label-smoothing \
+  --save-dir params_resnet101_v1b_best \
+  --logging-file resnet101_v1b_best.log

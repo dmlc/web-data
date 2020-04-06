@@ -1,0 +1,1211 @@
+Namespace(accumulate=1, batch_norm=False, batch_size=16, clip_grad=40, crop_ratio=0.875, data_dir='/home/ubuntu/third_disk/data/somethingsomethingv2/20bn-something-something-v2-frames', dataset='somethingsomethingv2', dtype='float32', eval=False, hard_weight=0.5, input_5d=False, input_size=224, kvstore=None, label_smoothing=False, last_gamma=False, log_interval=50, logging_file='tsn_2d_rgb_res50_seg8_sthsthv2_b16_g8_run2.txt', lr=0.01, lr_decay=0.1, lr_decay_epoch='10,20,30', lr_decay_period=0, lr_mode='step', mixup=False, mixup_alpha=0.2, mixup_off_epoch=0, mode='hybrid', model='resnet50_v1b_sthsthv2', momentum=0.9, new_height=256, new_length=1, new_step=1, new_width=340, no_wd=False, num_classes=174, num_epochs=30, num_gpus=8, num_segments=8, num_workers=32, partial_bn=False, prefetch_ratio=1.0, resume_epoch=0, resume_params='', resume_states='', save_dir='/home/ubuntu/yizhu/logs/mxnet/somethingsomethingv2/tsn_2d_rgb_res50_seg8_sthsthv2_b16_g8_run2', save_frequency=5, scale_ratios='1.0,0.8', teacher=None, temperature=20, train_list='/home/ubuntu/third_disk/data/somethingsomethingv2/settings/train_videofolder.txt', use_amp=False, use_decord=False, use_gn=False, use_pretrained=False, use_se=False, use_tsn=True, val_data_dir='~/.mxnet/datasets/ucf101/rawframes', val_list='/home/ubuntu/third_disk/data/somethingsomethingv2/settings/val_videofolder.txt', video_loader=False, warmup_epochs=0, warmup_lr=0.0, wd=0.0001)
+Total batch size is set to 128 on 8 GPUs
+ActionRecResNetV1bTSN(
+  (basenet): ActionRecResNetV1b(
+    (conv1): Conv2D(3 -> 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias=False)
+    (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=64)
+    (relu): Activation(relu)
+    (maxpool): MaxPool2D(size=(3, 3), stride=(2, 2), padding=(1, 1), ceil_mode=False, global_pool=False, pool_type=max, layout=NCHW)
+    (layer1): HybridSequential(
+      (0): BottleneckV1b(
+        (conv1): Conv2D(64 -> 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=64)
+        (relu1): Activation(relu)
+        (conv2): Conv2D(64 -> 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=64)
+        (relu2): Activation(relu)
+        (conv3): Conv2D(64 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+        (relu3): Activation(relu)
+        (downsample): HybridSequential(
+          (0): Conv2D(64 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+        )
+      )
+      (1): BottleneckV1b(
+        (conv1): Conv2D(256 -> 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=64)
+        (relu1): Activation(relu)
+        (conv2): Conv2D(64 -> 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=64)
+        (relu2): Activation(relu)
+        (conv3): Conv2D(64 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+        (relu3): Activation(relu)
+      )
+      (2): BottleneckV1b(
+        (conv1): Conv2D(256 -> 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=64)
+        (relu1): Activation(relu)
+        (conv2): Conv2D(64 -> 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=64)
+        (relu2): Activation(relu)
+        (conv3): Conv2D(64 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+        (relu3): Activation(relu)
+      )
+    )
+    (layer2): HybridSequential(
+      (0): BottleneckV1b(
+        (conv1): Conv2D(256 -> 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=128)
+        (relu1): Activation(relu)
+        (conv2): Conv2D(128 -> 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+        (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=128)
+        (relu2): Activation(relu)
+        (conv3): Conv2D(128 -> 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=512)
+        (relu3): Activation(relu)
+        (downsample): HybridSequential(
+          (0): Conv2D(256 -> 512, kernel_size=(1, 1), stride=(2, 2), bias=False)
+          (1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=512)
+        )
+      )
+      (1): BottleneckV1b(
+        (conv1): Conv2D(512 -> 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=128)
+        (relu1): Activation(relu)
+        (conv2): Conv2D(128 -> 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=128)
+        (relu2): Activation(relu)
+        (conv3): Conv2D(128 -> 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=512)
+        (relu3): Activation(relu)
+      )
+      (2): BottleneckV1b(
+        (conv1): Conv2D(512 -> 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=128)
+        (relu1): Activation(relu)
+        (conv2): Conv2D(128 -> 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=128)
+        (relu2): Activation(relu)
+        (conv3): Conv2D(128 -> 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=512)
+        (relu3): Activation(relu)
+      )
+      (3): BottleneckV1b(
+        (conv1): Conv2D(512 -> 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=128)
+        (relu1): Activation(relu)
+        (conv2): Conv2D(128 -> 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=128)
+        (relu2): Activation(relu)
+        (conv3): Conv2D(128 -> 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=512)
+        (relu3): Activation(relu)
+      )
+    )
+    (layer3): HybridSequential(
+      (0): BottleneckV1b(
+        (conv1): Conv2D(512 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+        (relu1): Activation(relu)
+        (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+        (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+        (relu2): Activation(relu)
+        (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+        (relu3): Activation(relu)
+        (downsample): HybridSequential(
+          (0): Conv2D(512 -> 1024, kernel_size=(1, 1), stride=(2, 2), bias=False)
+          (1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+        )
+      )
+      (1): BottleneckV1b(
+        (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+        (relu1): Activation(relu)
+        (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+        (relu2): Activation(relu)
+        (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+        (relu3): Activation(relu)
+      )
+      (2): BottleneckV1b(
+        (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+        (relu1): Activation(relu)
+        (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+        (relu2): Activation(relu)
+        (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+        (relu3): Activation(relu)
+      )
+      (3): BottleneckV1b(
+        (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+        (relu1): Activation(relu)
+        (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+        (relu2): Activation(relu)
+        (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+        (relu3): Activation(relu)
+      )
+      (4): BottleneckV1b(
+        (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+        (relu1): Activation(relu)
+        (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+        (relu2): Activation(relu)
+        (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+        (relu3): Activation(relu)
+      )
+      (5): BottleneckV1b(
+        (conv1): Conv2D(1024 -> 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+        (relu1): Activation(relu)
+        (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+        (relu2): Activation(relu)
+        (conv3): Conv2D(256 -> 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=1024)
+        (relu3): Activation(relu)
+      )
+    )
+    (layer4): HybridSequential(
+      (0): BottleneckV1b(
+        (conv1): Conv2D(1024 -> 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=512)
+        (relu1): Activation(relu)
+        (conv2): Conv2D(512 -> 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+        (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=512)
+        (relu2): Activation(relu)
+        (conv3): Conv2D(512 -> 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=2048)
+        (relu3): Activation(relu)
+        (downsample): HybridSequential(
+          (0): Conv2D(1024 -> 2048, kernel_size=(1, 1), stride=(2, 2), bias=False)
+          (1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=2048)
+        )
+      )
+      (1): BottleneckV1b(
+        (conv1): Conv2D(2048 -> 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=512)
+        (relu1): Activation(relu)
+        (conv2): Conv2D(512 -> 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=512)
+        (relu2): Activation(relu)
+        (conv3): Conv2D(512 -> 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=2048)
+        (relu3): Activation(relu)
+      )
+      (2): BottleneckV1b(
+        (conv1): Conv2D(2048 -> 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=512)
+        (relu1): Activation(relu)
+        (conv2): Conv2D(512 -> 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=512)
+        (relu2): Activation(relu)
+        (conv3): Conv2D(512 -> 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=2048)
+        (relu3): Activation(relu)
+      )
+    )
+    (avgpool): GlobalAvgPool2D(size=(1, 1), stride=(1, 1), padding=(0, 0), ceil_mode=True, global_pool=True, pool_type=avg, layout=NCHW)
+    (flat): Flatten
+    (drop): Dropout(p = 0.5, axes=())
+    (output): Dense(2048 -> 174, linear)
+  )
+  (tsn_consensus): Consensus(
+  
+  )
+)
+Load 168913 training samples and 24777 validation samples.
+Epoch[000] Batch [0049]/[1319]	Speed: 153.130339 samples/sec	accuracy=2.453125	lr=0.010000
+Epoch[000] Batch [0099]/[1319]	Speed: 290.222101 samples/sec	accuracy=4.187500	lr=0.010000
+Epoch[000] Batch [0149]/[1319]	Speed: 290.869052 samples/sec	accuracy=5.750000	lr=0.010000
+Epoch[000] Batch [0199]/[1319]	Speed: 292.279584 samples/sec	accuracy=7.347656	lr=0.010000
+Epoch[000] Batch [0249]/[1319]	Speed: 292.458803 samples/sec	accuracy=8.462500	lr=0.010000
+Epoch[000] Batch [0299]/[1319]	Speed: 298.450680 samples/sec	accuracy=9.486979	lr=0.010000
+Epoch[000] Batch [0349]/[1319]	Speed: 295.061421 samples/sec	accuracy=10.386161	lr=0.010000
+Epoch[000] Batch [0399]/[1319]	Speed: 294.367253 samples/sec	accuracy=11.099609	lr=0.010000
+Epoch[000] Batch [0449]/[1319]	Speed: 295.068076 samples/sec	accuracy=11.855903	lr=0.010000
+Epoch[000] Batch [0499]/[1319]	Speed: 293.265978 samples/sec	accuracy=12.579688	lr=0.010000
+Epoch[000] Batch [0549]/[1319]	Speed: 294.366660 samples/sec	accuracy=13.272727	lr=0.010000
+Epoch[000] Batch [0599]/[1319]	Speed: 295.462124 samples/sec	accuracy=13.912760	lr=0.010000
+Epoch[000] Batch [0649]/[1319]	Speed: 290.475019 samples/sec	accuracy=14.448317	lr=0.010000
+Epoch[000] Batch [0699]/[1319]	Speed: 296.464264 samples/sec	accuracy=14.970982	lr=0.010000
+Epoch[000] Batch [0749]/[1319]	Speed: 296.486255 samples/sec	accuracy=15.463542	lr=0.010000
+Epoch[000] Batch [0799]/[1319]	Speed: 291.526298 samples/sec	accuracy=15.900391	lr=0.010000
+Epoch[000] Batch [0849]/[1319]	Speed: 292.897554 samples/sec	accuracy=16.302390	lr=0.010000
+Epoch[000] Batch [0899]/[1319]	Speed: 293.887330 samples/sec	accuracy=16.767361	lr=0.010000
+Epoch[000] Batch [0949]/[1319]	Speed: 294.523684 samples/sec	accuracy=17.144737	lr=0.010000
+Epoch[000] Batch [0999]/[1319]	Speed: 293.045931 samples/sec	accuracy=17.535938	lr=0.010000
+Epoch[000] Batch [1049]/[1319]	Speed: 294.881114 samples/sec	accuracy=17.944940	lr=0.010000
+Epoch[000] Batch [1099]/[1319]	Speed: 295.072773 samples/sec	accuracy=18.320312	lr=0.010000
+Epoch[000] Batch [1149]/[1319]	Speed: 295.546527 samples/sec	accuracy=18.686821	lr=0.010000
+Epoch[000] Batch [1199]/[1319]	Speed: 292.975737 samples/sec	accuracy=19.015625	lr=0.010000
+Epoch[000] Batch [1249]/[1319]	Speed: 291.683976 samples/sec	accuracy=19.334375	lr=0.010000
+Epoch[000] Batch [1299]/[1319]	Speed: 295.094247 samples/sec	accuracy=19.660457	lr=0.010000
+Batch [0049]/[0193]: evaluated
+Batch [0099]/[0193]: evaluated
+Batch [0149]/[0193]: evaluated
+[Epoch 000] training: accuracy=19.775872
+[Epoch 000] speed: 283 samples/sec	time cost: 658.421117
+[Epoch 000] validation: acc-top1=21.150421 acc-top5=49.777364
+successfully opened events file: /home/ubuntu/yizhu/logs/mxnet/somethingsomethingv2/tsn_2d_rgb_res50_seg8_sthsthv2_b16_g8_run2/events.out.tfevents.1571026111.ip-172-31-86-97
+wrote 1 event to disk
+wrote 1 event to disk
+Epoch[001] Batch [0049]/[1320]	Speed: 224.759018 samples/sec	accuracy=30.359375	lr=0.010000
+Epoch[001] Batch [0099]/[1320]	Speed: 296.226859 samples/sec	accuracy=29.976562	lr=0.010000
+Epoch[001] Batch [0149]/[1320]	Speed: 295.456934 samples/sec	accuracy=30.151042	lr=0.010000
+Epoch[001] Batch [0199]/[1320]	Speed: 297.694289 samples/sec	accuracy=30.070312	lr=0.010000
+Epoch[001] Batch [0249]/[1320]	Speed: 296.427211 samples/sec	accuracy=30.112500	lr=0.010000
+Epoch[001] Batch [0299]/[1320]	Speed: 298.368689 samples/sec	accuracy=30.145833	lr=0.010000
+Epoch[001] Batch [0349]/[1320]	Speed: 294.054743 samples/sec	accuracy=30.189732	lr=0.010000
+Epoch[001] Batch [0399]/[1320]	Speed: 299.609404 samples/sec	accuracy=30.263672	lr=0.010000
+Epoch[001] Batch [0449]/[1320]	Speed: 296.174800 samples/sec	accuracy=30.456597	lr=0.010000
+Epoch[001] Batch [0499]/[1320]	Speed: 296.086912 samples/sec	accuracy=30.487500	lr=0.010000
+Epoch[001] Batch [0549]/[1320]	Speed: 296.390871 samples/sec	accuracy=30.673295	lr=0.010000
+Epoch[001] Batch [0599]/[1320]	Speed: 300.230328 samples/sec	accuracy=30.734375	lr=0.010000
+Epoch[001] Batch [0649]/[1320]	Speed: 294.432943 samples/sec	accuracy=30.731971	lr=0.010000
+Epoch[001] Batch [0699]/[1320]	Speed: 297.078328 samples/sec	accuracy=30.795759	lr=0.010000
+Epoch[001] Batch [0749]/[1320]	Speed: 294.601372 samples/sec	accuracy=30.858333	lr=0.010000
+Epoch[001] Batch [0799]/[1320]	Speed: 298.180788 samples/sec	accuracy=30.956055	lr=0.010000
+Epoch[001] Batch [0849]/[1320]	Speed: 296.130583 samples/sec	accuracy=31.055147	lr=0.010000
+Epoch[001] Batch [0899]/[1320]	Speed: 296.449049 samples/sec	accuracy=31.072917	lr=0.010000
+Epoch[001] Batch [0949]/[1320]	Speed: 297.831275 samples/sec	accuracy=31.187500	lr=0.010000
+Epoch[001] Batch [0999]/[1320]	Speed: 295.528586 samples/sec	accuracy=31.238281	lr=0.010000
+Epoch[001] Batch [1049]/[1320]	Speed: 295.627319 samples/sec	accuracy=31.348214	lr=0.010000
+Epoch[001] Batch [1099]/[1320]	Speed: 295.736716 samples/sec	accuracy=31.458097	lr=0.010000
+Epoch[001] Batch [1149]/[1320]	Speed: 294.860785 samples/sec	accuracy=31.532609	lr=0.010000
+Epoch[001] Batch [1199]/[1320]	Speed: 295.684331 samples/sec	accuracy=31.589193	lr=0.010000
+Epoch[001] Batch [1249]/[1320]	Speed: 298.036987 samples/sec	accuracy=31.693750	lr=0.010000
+Epoch[001] Batch [1299]/[1320]	Speed: 296.254660 samples/sec	accuracy=31.786058	lr=0.010000
+Batch [0049]/[0193]: evaluated
+Batch [0099]/[0193]: evaluated
+Batch [0149]/[0193]: evaluated
+[Epoch 001] training: accuracy=31.843632
+[Epoch 001] speed: 292 samples/sec	time cost: 640.791668
+[Epoch 001] validation: acc-top1=22.753400 acc-top5=52.570434
+wrote 2 events to disk
+Epoch[002] Batch [0049]/[1319]	Speed: 224.298706 samples/sec	accuracy=35.234375	lr=0.010000
+Epoch[002] Batch [0099]/[1319]	Speed: 297.383234 samples/sec	accuracy=35.234375	lr=0.010000
+Epoch[002] Batch [0149]/[1319]	Speed: 297.862214 samples/sec	accuracy=35.723958	lr=0.010000
+Epoch[002] Batch [0199]/[1319]	Speed: 296.534178 samples/sec	accuracy=36.027344	lr=0.010000
+Epoch[002] Batch [0249]/[1319]	Speed: 296.368181 samples/sec	accuracy=36.034375	lr=0.010000
+Epoch[002] Batch [0299]/[1319]	Speed: 295.317480 samples/sec	accuracy=36.203125	lr=0.010000
+Epoch[002] Batch [0349]/[1319]	Speed: 293.732703 samples/sec	accuracy=36.073661	lr=0.010000
+Epoch[002] Batch [0399]/[1319]	Speed: 292.595506 samples/sec	accuracy=36.064453	lr=0.010000
+Epoch[002] Batch [0449]/[1319]	Speed: 296.286660 samples/sec	accuracy=36.177083	lr=0.010000
+Epoch[002] Batch [0499]/[1319]	Speed: 295.561392 samples/sec	accuracy=36.159375	lr=0.010000
+Epoch[002] Batch [0549]/[1319]	Speed: 294.365010 samples/sec	accuracy=36.201705	lr=0.010000
+Epoch[002] Batch [0599]/[1319]	Speed: 297.500638 samples/sec	accuracy=36.282552	lr=0.010000
+Epoch[002] Batch [0649]/[1319]	Speed: 298.710726 samples/sec	accuracy=36.217548	lr=0.010000
+Epoch[002] Batch [0699]/[1319]	Speed: 296.674564 samples/sec	accuracy=36.261161	lr=0.010000
+Epoch[002] Batch [0749]/[1319]	Speed: 296.640756 samples/sec	accuracy=36.284375	lr=0.010000
+Epoch[002] Batch [0799]/[1319]	Speed: 294.611202 samples/sec	accuracy=36.307617	lr=0.010000
+Epoch[002] Batch [0849]/[1319]	Speed: 294.108940 samples/sec	accuracy=36.367647	lr=0.010000
+Epoch[002] Batch [0899]/[1319]	Speed: 295.684745 samples/sec	accuracy=36.477431	lr=0.010000
+Epoch[002] Batch [0949]/[1319]	Speed: 296.296576 samples/sec	accuracy=36.574013	lr=0.010000
+Epoch[002] Batch [0999]/[1319]	Speed: 296.223325 samples/sec	accuracy=36.550000	lr=0.010000
+Epoch[002] Batch [1049]/[1319]	Speed: 297.176304 samples/sec	accuracy=36.610863	lr=0.010000
+Epoch[002] Batch [1099]/[1319]	Speed: 295.305047 samples/sec	accuracy=36.636364	lr=0.010000
+Epoch[002] Batch [1149]/[1319]	Speed: 294.366953 samples/sec	accuracy=36.669837	lr=0.010000
+Epoch[002] Batch [1199]/[1319]	Speed: 295.815604 samples/sec	accuracy=36.714844	lr=0.010000
+Epoch[002] Batch [1249]/[1319]	Speed: 296.874396 samples/sec	accuracy=36.727500	lr=0.010000
+Epoch[002] Batch [1299]/[1319]	Speed: 297.269797 samples/sec	accuracy=36.754808	lr=0.010000
+Batch [0049]/[0193]: evaluated
+Batch [0099]/[0193]: evaluated
+Batch [0149]/[0193]: evaluated
+[Epoch 002] training: accuracy=36.763765
+[Epoch 002] speed: 292 samples/sec	time cost: 641.033491
+[Epoch 002] validation: acc-top1=24.109456 acc-top5=53.946729
+wrote 2 events to disk
+Epoch[003] Batch [0049]/[1320]	Speed: 215.315931 samples/sec	accuracy=41.015625	lr=0.010000
+Epoch[003] Batch [0099]/[1320]	Speed: 295.173327 samples/sec	accuracy=41.125000	lr=0.010000
+Epoch[003] Batch [0149]/[1320]	Speed: 296.043737 samples/sec	accuracy=40.864583	lr=0.010000
+Epoch[003] Batch [0199]/[1320]	Speed: 296.154433 samples/sec	accuracy=40.742188	lr=0.010000
+Epoch[003] Batch [0249]/[1320]	Speed: 293.596015 samples/sec	accuracy=40.943750	lr=0.010000
+Epoch[003] Batch [0299]/[1320]	Speed: 296.949438 samples/sec	accuracy=40.669271	lr=0.010000
+Epoch[003] Batch [0349]/[1320]	Speed: 294.330507 samples/sec	accuracy=40.542411	lr=0.010000
+Epoch[003] Batch [0399]/[1320]	Speed: 296.099859 samples/sec	accuracy=40.503906	lr=0.010000
+Epoch[003] Batch [0449]/[1320]	Speed: 288.424153 samples/sec	accuracy=40.401042	lr=0.010000
+Epoch[003] Batch [0499]/[1320]	Speed: 295.926354 samples/sec	accuracy=40.464062	lr=0.010000
+Epoch[003] Batch [0549]/[1320]	Speed: 285.081256 samples/sec	accuracy=40.514205	lr=0.010000
+Epoch[003] Batch [0599]/[1320]	Speed: 294.042184 samples/sec	accuracy=40.460938	lr=0.010000
+Epoch[003] Batch [0649]/[1320]	Speed: 296.330831 samples/sec	accuracy=40.394231	lr=0.010000
+Epoch[003] Batch [0699]/[1320]	Speed: 292.054569 samples/sec	accuracy=40.327009	lr=0.010000
+Epoch[003] Batch [0749]/[1320]	Speed: 294.989635 samples/sec	accuracy=40.354167	lr=0.010000
+Epoch[003] Batch [0799]/[1320]	Speed: 291.686483 samples/sec	accuracy=40.415039	lr=0.010000
+Epoch[003] Batch [0849]/[1320]	Speed: 289.336852 samples/sec	accuracy=40.458640	lr=0.010000
+Epoch[003] Batch [0899]/[1320]	Speed: 294.471598 samples/sec	accuracy=40.431424	lr=0.010000
+Epoch[003] Batch [0949]/[1320]	Speed: 295.916701 samples/sec	accuracy=40.446546	lr=0.010000
+Epoch[003] Batch [0999]/[1320]	Speed: 291.827426 samples/sec	accuracy=40.435156	lr=0.010000
+Epoch[003] Batch [1049]/[1320]	Speed: 293.528478 samples/sec	accuracy=40.398065	lr=0.010000
+Epoch[003] Batch [1099]/[1320]	Speed: 293.859302 samples/sec	accuracy=40.419744	lr=0.010000
+Epoch[003] Batch [1149]/[1320]	Speed: 292.187380 samples/sec	accuracy=40.386549	lr=0.010000
+Epoch[003] Batch [1199]/[1320]	Speed: 296.025517 samples/sec	accuracy=40.384766	lr=0.010000
+Epoch[003] Batch [1249]/[1320]	Speed: 292.749199 samples/sec	accuracy=40.416250	lr=0.010000
+Epoch[003] Batch [1299]/[1320]	Speed: 298.149732 samples/sec	accuracy=40.439303	lr=0.010000
+Batch [0049]/[0193]: evaluated
+Batch [0099]/[0193]: evaluated
+Batch [0149]/[0193]: evaluated
+[Epoch 003] training: accuracy=40.421402
+[Epoch 003] speed: 289 samples/sec	time cost: 646.387990
+[Epoch 003] validation: acc-top1=27.274935 acc-top5=57.549385
+wrote 2 events to disk
+Epoch[004] Batch [0049]/[1320]	Speed: 223.562599 samples/sec	accuracy=44.515625	lr=0.010000
+Epoch[004] Batch [0099]/[1320]	Speed: 295.850332 samples/sec	accuracy=43.750000	lr=0.010000
+Epoch[004] Batch [0149]/[1320]	Speed: 295.519961 samples/sec	accuracy=43.468750	lr=0.010000
+Epoch[004] Batch [0199]/[1320]	Speed: 293.403351 samples/sec	accuracy=43.457031	lr=0.010000
+Epoch[004] Batch [0249]/[1320]	Speed: 293.551795 samples/sec	accuracy=43.628125	lr=0.010000
+Epoch[004] Batch [0299]/[1320]	Speed: 293.082710 samples/sec	accuracy=43.565104	lr=0.010000
+Epoch[004] Batch [0349]/[1320]	Speed: 293.067706 samples/sec	accuracy=43.647321	lr=0.010000
+Epoch[004] Batch [0399]/[1320]	Speed: 299.718841 samples/sec	accuracy=43.535156	lr=0.010000
+Epoch[004] Batch [0449]/[1320]	Speed: 296.989138 samples/sec	accuracy=43.614583	lr=0.010000
+Epoch[004] Batch [0499]/[1320]	Speed: 297.601726 samples/sec	accuracy=43.631250	lr=0.010000
+Epoch[004] Batch [0549]/[1320]	Speed: 293.870845 samples/sec	accuracy=43.475852	lr=0.010000
+Epoch[004] Batch [0599]/[1320]	Speed: 294.987538 samples/sec	accuracy=43.401042	lr=0.010000
+Epoch[004] Batch [0649]/[1320]	Speed: 293.806078 samples/sec	accuracy=43.293269	lr=0.010000
+Epoch[004] Batch [0699]/[1320]	Speed: 297.101032 samples/sec	accuracy=43.280134	lr=0.010000
+Epoch[004] Batch [0749]/[1320]	Speed: 295.951953 samples/sec	accuracy=43.341667	lr=0.010000
+Epoch[004] Batch [0799]/[1320]	Speed: 296.309308 samples/sec	accuracy=43.345703	lr=0.010000
+Epoch[004] Batch [0849]/[1320]	Speed: 298.542629 samples/sec	accuracy=43.351103	lr=0.010000
+Epoch[004] Batch [0899]/[1320]	Speed: 295.381507 samples/sec	accuracy=43.339410	lr=0.010000
+Epoch[004] Batch [0949]/[1320]	Speed: 297.563039 samples/sec	accuracy=43.330592	lr=0.010000
+Epoch[004] Batch [0999]/[1320]	Speed: 296.409572 samples/sec	accuracy=43.309375	lr=0.010000
+Epoch[004] Batch [1049]/[1320]	Speed: 298.365638 samples/sec	accuracy=43.287946	lr=0.010000
+Epoch[004] Batch [1099]/[1320]	Speed: 295.268059 samples/sec	accuracy=43.270597	lr=0.010000
+Epoch[004] Batch [1149]/[1320]	Speed: 293.933567 samples/sec	accuracy=43.240489	lr=0.010000
+Epoch[004] Batch [1199]/[1320]	Speed: 297.354943 samples/sec	accuracy=43.202474	lr=0.010000
+Epoch[004] Batch [1249]/[1320]	Speed: 295.042303 samples/sec	accuracy=43.213750	lr=0.010000
+Epoch[004] Batch [1299]/[1320]	Speed: 298.323424 samples/sec	accuracy=43.213341	lr=0.010000
+Batch [0049]/[0193]: evaluated
+Batch [0099]/[0193]: evaluated
+Batch [0149]/[0193]: evaluated
+[Epoch 004] training: accuracy=43.218513
+[Epoch 004] speed: 292 samples/sec	time cost: 641.346240
+[Epoch 004] validation: acc-top1=28.064281 acc-top5=59.152364
+wrote 2 events to disk
+Epoch[005] Batch [0049]/[1319]	Speed: 223.327225 samples/sec	accuracy=46.890625	lr=0.010000
+Epoch[005] Batch [0099]/[1319]	Speed: 295.787360 samples/sec	accuracy=45.914062	lr=0.010000
+Epoch[005] Batch [0149]/[1319]	Speed: 293.042294 samples/sec	accuracy=45.916667	lr=0.010000
+Epoch[005] Batch [0199]/[1319]	Speed: 294.615916 samples/sec	accuracy=45.980469	lr=0.010000
+Epoch[005] Batch [0249]/[1319]	Speed: 294.559473 samples/sec	accuracy=46.171875	lr=0.010000
+Epoch[005] Batch [0299]/[1319]	Speed: 293.749016 samples/sec	accuracy=46.166667	lr=0.010000
+Epoch[005] Batch [0349]/[1319]	Speed: 296.081344 samples/sec	accuracy=46.078125	lr=0.010000
+Epoch[005] Batch [0399]/[1319]	Speed: 293.669405 samples/sec	accuracy=46.027344	lr=0.010000
+Epoch[005] Batch [0449]/[1319]	Speed: 292.182212 samples/sec	accuracy=45.970486	lr=0.010000
+Epoch[005] Batch [0499]/[1319]	Speed: 294.830722 samples/sec	accuracy=45.996875	lr=0.010000
+Epoch[005] Batch [0549]/[1319]	Speed: 294.601479 samples/sec	accuracy=46.018466	lr=0.010000
+Epoch[005] Batch [0599]/[1319]	Speed: 295.012786 samples/sec	accuracy=46.016927	lr=0.010000
+Epoch[005] Batch [0649]/[1319]	Speed: 295.845226 samples/sec	accuracy=46.032452	lr=0.010000
+Epoch[005] Batch [0699]/[1319]	Speed: 296.053290 samples/sec	accuracy=45.957589	lr=0.010000
+Epoch[005] Batch [0749]/[1319]	Speed: 294.529003 samples/sec	accuracy=46.035417	lr=0.010000
+Epoch[005] Batch [0799]/[1319]	Speed: 295.416501 samples/sec	accuracy=46.014648	lr=0.010000
+Epoch[005] Batch [0849]/[1319]	Speed: 297.190319 samples/sec	accuracy=45.906250	lr=0.010000
+Epoch[005] Batch [0899]/[1319]	Speed: 293.413562 samples/sec	accuracy=45.935764	lr=0.010000
+Epoch[005] Batch [0949]/[1319]	Speed: 297.482145 samples/sec	accuracy=45.967928	lr=0.010000
+Epoch[005] Batch [0999]/[1319]	Speed: 296.353451 samples/sec	accuracy=45.888281	lr=0.010000
+Epoch[005] Batch [1049]/[1319]	Speed: 294.245607 samples/sec	accuracy=45.900298	lr=0.010000
+Epoch[005] Batch [1099]/[1319]	Speed: 294.395301 samples/sec	accuracy=45.860795	lr=0.010000
+Epoch[005] Batch [1149]/[1319]	Speed: 290.975863 samples/sec	accuracy=45.835598	lr=0.010000
+Epoch[005] Batch [1199]/[1319]	Speed: 295.569577 samples/sec	accuracy=45.825521	lr=0.010000
+Epoch[005] Batch [1249]/[1319]	Speed: 291.842459 samples/sec	accuracy=45.825625	lr=0.010000
+Epoch[005] Batch [1299]/[1319]	Speed: 298.335310 samples/sec	accuracy=45.750601	lr=0.010000
+Batch [0049]/[0193]: evaluated
+Batch [0099]/[0193]: evaluated
+Batch [0149]/[0193]: evaluated
+[Epoch 005] training: accuracy=45.756729
+[Epoch 005] speed: 291 samples/sec	time cost: 643.603558
+[Epoch 005] validation: acc-top1=28.643135 acc-top5=60.480084
+wrote 2 events to disk
+Epoch[006] Batch [0049]/[1320]	Speed: 224.998127 samples/sec	accuracy=48.375000	lr=0.010000
+Epoch[006] Batch [0099]/[1320]	Speed: 291.495477 samples/sec	accuracy=48.820312	lr=0.010000
+Epoch[006] Batch [0149]/[1320]	Speed: 296.030779 samples/sec	accuracy=48.885417	lr=0.010000
+Epoch[006] Batch [0199]/[1320]	Speed: 293.799737 samples/sec	accuracy=48.621094	lr=0.010000
+Epoch[006] Batch [0249]/[1320]	Speed: 295.107194 samples/sec	accuracy=48.634375	lr=0.010000
+Epoch[006] Batch [0299]/[1320]	Speed: 295.322392 samples/sec	accuracy=48.591146	lr=0.010000
+Epoch[006] Batch [0349]/[1320]	Speed: 294.555559 samples/sec	accuracy=48.720982	lr=0.010000
+Epoch[006] Batch [0399]/[1320]	Speed: 294.699697 samples/sec	accuracy=48.623047	lr=0.010000
+Epoch[006] Batch [0449]/[1320]	Speed: 295.525378 samples/sec	accuracy=48.439236	lr=0.010000
+Epoch[006] Batch [0499]/[1320]	Speed: 296.063008 samples/sec	accuracy=48.434375	lr=0.010000
+Epoch[006] Batch [0549]/[1320]	Speed: 294.116445 samples/sec	accuracy=48.470170	lr=0.010000
+Epoch[006] Batch [0599]/[1320]	Speed: 297.214771 samples/sec	accuracy=48.313802	lr=0.010000
+Epoch[006] Batch [0649]/[1320]	Speed: 294.011895 samples/sec	accuracy=48.256010	lr=0.010000
+Epoch[006] Batch [0699]/[1320]	Speed: 292.707688 samples/sec	accuracy=48.205357	lr=0.010000
+Epoch[006] Batch [0749]/[1320]	Speed: 296.793450 samples/sec	accuracy=48.156250	lr=0.010000
+Epoch[006] Batch [0799]/[1320]	Speed: 292.930712 samples/sec	accuracy=48.121094	lr=0.010000
+Epoch[006] Batch [0849]/[1320]	Speed: 296.363901 samples/sec	accuracy=48.098346	lr=0.010000
+Epoch[006] Batch [0899]/[1320]	Speed: 295.897378 samples/sec	accuracy=48.076389	lr=0.010000
+Epoch[006] Batch [0949]/[1320]	Speed: 295.267091 samples/sec	accuracy=48.017270	lr=0.010000
+Epoch[006] Batch [0999]/[1320]	Speed: 294.664168 samples/sec	accuracy=47.930469	lr=0.010000
+Epoch[006] Batch [1049]/[1320]	Speed: 294.164617 samples/sec	accuracy=47.897321	lr=0.010000
+Epoch[006] Batch [1099]/[1320]	Speed: 294.345734 samples/sec	accuracy=47.888494	lr=0.010000
+Epoch[006] Batch [1149]/[1320]	Speed: 293.959166 samples/sec	accuracy=47.879755	lr=0.010000
+Epoch[006] Batch [1199]/[1320]	Speed: 295.423894 samples/sec	accuracy=47.882161	lr=0.010000
+Epoch[006] Batch [1249]/[1320]	Speed: 296.311019 samples/sec	accuracy=47.854375	lr=0.010000
+Epoch[006] Batch [1299]/[1320]	Speed: 297.697435 samples/sec	accuracy=47.830529	lr=0.010000
+Batch [0049]/[0193]: evaluated
+Batch [0099]/[0193]: evaluated
+Batch [0149]/[0193]: evaluated
+[Epoch 006] training: accuracy=47.814867
+[Epoch 006] speed: 291 samples/sec	time cost: 643.293412
+[Epoch 006] validation: acc-top1=29.205797 acc-top5=60.556995
+wrote 2 events to disk
+Epoch[007] Batch [0049]/[1320]	Speed: 219.859716 samples/sec	accuracy=51.093750	lr=0.010000
+Epoch[007] Batch [0099]/[1320]	Speed: 295.492440 samples/sec	accuracy=50.484375	lr=0.010000
+Epoch[007] Batch [0149]/[1320]	Speed: 295.030587 samples/sec	accuracy=50.640625	lr=0.010000
+Epoch[007] Batch [0199]/[1320]	Speed: 293.645382 samples/sec	accuracy=50.574219	lr=0.010000
+Epoch[007] Batch [0249]/[1320]	Speed: 295.095103 samples/sec	accuracy=50.340625	lr=0.010000
+Epoch[007] Batch [0299]/[1320]	Speed: 293.954502 samples/sec	accuracy=50.354167	lr=0.010000
+Epoch[007] Batch [0349]/[1320]	Speed: 290.995729 samples/sec	accuracy=50.319196	lr=0.010000
+Epoch[007] Batch [0399]/[1320]	Speed: 294.044600 samples/sec	accuracy=50.187500	lr=0.010000
+Epoch[007] Batch [0449]/[1320]	Speed: 289.081171 samples/sec	accuracy=50.098958	lr=0.010000
+Epoch[007] Batch [0499]/[1320]	Speed: 294.174066 samples/sec	accuracy=50.076563	lr=0.010000
+Epoch[007] Batch [0549]/[1320]	Speed: 293.056392 samples/sec	accuracy=49.839489	lr=0.010000
+Epoch[007] Batch [0599]/[1320]	Speed: 292.543504 samples/sec	accuracy=49.803385	lr=0.010000
+Epoch[007] Batch [0649]/[1320]	Speed: 290.960608 samples/sec	accuracy=49.733173	lr=0.010000
+Epoch[007] Batch [0699]/[1320]	Speed: 294.780723 samples/sec	accuracy=49.695312	lr=0.010000
+Epoch[007] Batch [0749]/[1320]	Speed: 294.082812 samples/sec	accuracy=49.631250	lr=0.010000
+Epoch[007] Batch [0799]/[1320]	Speed: 291.898839 samples/sec	accuracy=49.646484	lr=0.010000
+Epoch[007] Batch [0849]/[1320]	Speed: 292.120680 samples/sec	accuracy=49.613971	lr=0.010000
+Epoch[007] Batch [0899]/[1320]	Speed: 292.275084 samples/sec	accuracy=49.609375	lr=0.010000
+Epoch[007] Batch [0949]/[1320]	Speed: 294.240785 samples/sec	accuracy=49.595395	lr=0.010000
+Epoch[007] Batch [0999]/[1320]	Speed: 292.840828 samples/sec	accuracy=49.537500	lr=0.010000
+Epoch[007] Batch [1049]/[1320]	Speed: 294.328238 samples/sec	accuracy=49.586310	lr=0.010000
+Epoch[007] Batch [1099]/[1320]	Speed: 292.220434 samples/sec	accuracy=49.536932	lr=0.010000
+Epoch[007] Batch [1149]/[1320]	Speed: 291.707343 samples/sec	accuracy=49.534647	lr=0.010000
+Epoch[007] Batch [1199]/[1320]	Speed: 292.715702 samples/sec	accuracy=49.533854	lr=0.010000
+Epoch[007] Batch [1249]/[1320]	Speed: 294.654788 samples/sec	accuracy=49.516250	lr=0.010000
+Epoch[007] Batch [1299]/[1320]	Speed: 293.704769 samples/sec	accuracy=49.548678	lr=0.010000
+Batch [0049]/[0193]: evaluated
+Batch [0099]/[0193]: evaluated
+Batch [0149]/[0193]: evaluated
+[Epoch 007] training: accuracy=49.529474
+[Epoch 007] speed: 289 samples/sec	time cost: 646.890760
+[Epoch 007] validation: acc-top1=28.724093 acc-top5=60.459845
+wrote 2 events to disk
+Epoch[008] Batch [0049]/[1319]	Speed: 217.947069 samples/sec	accuracy=52.750000	lr=0.010000
+Epoch[008] Batch [0099]/[1319]	Speed: 288.481353 samples/sec	accuracy=52.039062	lr=0.010000
+Epoch[008] Batch [0149]/[1319]	Speed: 292.031502 samples/sec	accuracy=51.760417	lr=0.010000
+Epoch[008] Batch [0199]/[1319]	Speed: 294.752057 samples/sec	accuracy=51.910156	lr=0.010000
+Epoch[008] Batch [0249]/[1319]	Speed: 291.631363 samples/sec	accuracy=51.825000	lr=0.010000
+Epoch[008] Batch [0299]/[1319]	Speed: 292.901638 samples/sec	accuracy=51.692708	lr=0.010000
+Epoch[008] Batch [0349]/[1319]	Speed: 292.647360 samples/sec	accuracy=51.720982	lr=0.010000
+Epoch[008] Batch [0399]/[1319]	Speed: 292.684629 samples/sec	accuracy=51.646484	lr=0.010000
+Epoch[008] Batch [0449]/[1319]	Speed: 291.666592 samples/sec	accuracy=51.722222	lr=0.010000
+Epoch[008] Batch [0499]/[1319]	Speed: 292.963736 samples/sec	accuracy=51.575000	lr=0.010000
+Epoch[008] Batch [0549]/[1319]	Speed: 293.488577 samples/sec	accuracy=51.524148	lr=0.010000
+Epoch[008] Batch [0599]/[1319]	Speed: 292.273158 samples/sec	accuracy=51.450521	lr=0.010000
+Epoch[008] Batch [0649]/[1319]	Speed: 293.483838 samples/sec	accuracy=51.448317	lr=0.010000
+Epoch[008] Batch [0699]/[1319]	Speed: 293.922122 samples/sec	accuracy=51.382812	lr=0.010000
+Epoch[008] Batch [0749]/[1319]	Speed: 294.446846 samples/sec	accuracy=51.358333	lr=0.010000
+Epoch[008] Batch [0799]/[1319]	Speed: 292.137847 samples/sec	accuracy=51.329102	lr=0.010000
+Epoch[008] Batch [0849]/[1319]	Speed: 289.870385 samples/sec	accuracy=51.259191	lr=0.010000
+Epoch[008] Batch [0899]/[1319]	Speed: 291.928997 samples/sec	accuracy=51.188368	lr=0.010000
+Epoch[008] Batch [0949]/[1319]	Speed: 293.765028 samples/sec	accuracy=51.125822	lr=0.010000
+Epoch[008] Batch [0999]/[1319]	Speed: 292.570319 samples/sec	accuracy=51.089844	lr=0.010000
+Epoch[008] Batch [1049]/[1319]	Speed: 293.982526 samples/sec	accuracy=51.142113	lr=0.010000
+Epoch[008] Batch [1099]/[1319]	Speed: 291.985201 samples/sec	accuracy=51.097301	lr=0.010000
+Epoch[008] Batch [1149]/[1319]	Speed: 293.111217 samples/sec	accuracy=51.058424	lr=0.010000
+Epoch[008] Batch [1199]/[1319]	Speed: 290.205569 samples/sec	accuracy=51.035156	lr=0.010000
+Epoch[008] Batch [1249]/[1319]	Speed: 290.581258 samples/sec	accuracy=51.023750	lr=0.010000
+Epoch[008] Batch [1299]/[1319]	Speed: 298.062449 samples/sec	accuracy=51.034255	lr=0.010000
+Batch [0049]/[0193]: evaluated
+Batch [0099]/[0193]: evaluated
+Batch [0149]/[0193]: evaluated
+[Epoch 008] training: accuracy=51.028241
+[Epoch 008] speed: 288 samples/sec	time cost: 649.216781
+[Epoch 008] validation: acc-top1=29.930376 acc-top5=61.152040
+wrote 2 events to disk
+Epoch[009] Batch [0049]/[1320]	Speed: 226.714863 samples/sec	accuracy=53.781250	lr=0.010000
+Epoch[009] Batch [0099]/[1320]	Speed: 292.908427 samples/sec	accuracy=53.804688	lr=0.010000
+Epoch[009] Batch [0149]/[1320]	Speed: 294.624779 samples/sec	accuracy=54.015625	lr=0.010000
+Epoch[009] Batch [0199]/[1320]	Speed: 294.884262 samples/sec	accuracy=54.023438	lr=0.010000
+Epoch[009] Batch [0249]/[1320]	Speed: 290.659377 samples/sec	accuracy=53.837500	lr=0.010000
+Epoch[009] Batch [0299]/[1320]	Speed: 290.315750 samples/sec	accuracy=53.828125	lr=0.010000
+Epoch[009] Batch [0349]/[1320]	Speed: 289.736348 samples/sec	accuracy=53.667411	lr=0.010000
+Epoch[009] Batch [0399]/[1320]	Speed: 294.031269 samples/sec	accuracy=53.640625	lr=0.010000
+Epoch[009] Batch [0449]/[1320]	Speed: 289.910420 samples/sec	accuracy=53.534722	lr=0.010000
+Epoch[009] Batch [0499]/[1320]	Speed: 291.239721 samples/sec	accuracy=53.453125	lr=0.010000
+Epoch[009] Batch [0549]/[1320]	Speed: 293.929479 samples/sec	accuracy=53.237216	lr=0.010000
+Epoch[009] Batch [0599]/[1320]	Speed: 294.200732 samples/sec	accuracy=53.238281	lr=0.010000
+Epoch[009] Batch [0649]/[1320]	Speed: 292.604264 samples/sec	accuracy=53.153846	lr=0.010000
+Epoch[009] Batch [0699]/[1320]	Speed: 289.899918 samples/sec	accuracy=53.095982	lr=0.010000
+Epoch[009] Batch [0749]/[1320]	Speed: 292.667630 samples/sec	accuracy=53.040625	lr=0.010000
+Epoch[009] Batch [0799]/[1320]	Speed: 289.153504 samples/sec	accuracy=53.052734	lr=0.010000
+Epoch[009] Batch [0849]/[1320]	Speed: 294.503966 samples/sec	accuracy=52.958640	lr=0.010000
+Epoch[009] Batch [0899]/[1320]	Speed: 294.943030 samples/sec	accuracy=52.902778	lr=0.010000
+Epoch[009] Batch [0949]/[1320]	Speed: 294.736704 samples/sec	accuracy=52.917763	lr=0.010000
+Epoch[009] Batch [0999]/[1320]	Speed: 292.244432 samples/sec	accuracy=52.930469	lr=0.010000
+Epoch[009] Batch [1049]/[1320]	Speed: 294.273722 samples/sec	accuracy=52.970982	lr=0.010000
+Epoch[009] Batch [1099]/[1320]	Speed: 290.585045 samples/sec	accuracy=52.921875	lr=0.010000
+Epoch[009] Batch [1149]/[1320]	Speed: 292.095082 samples/sec	accuracy=52.893342	lr=0.010000
+Epoch[009] Batch [1199]/[1320]	Speed: 292.086427 samples/sec	accuracy=52.830078	lr=0.010000
+Epoch[009] Batch [1249]/[1320]	Speed: 294.149280 samples/sec	accuracy=52.776250	lr=0.010000
+Epoch[009] Batch [1299]/[1320]	Speed: 295.628797 samples/sec	accuracy=52.729567	lr=0.010000
+Batch [0049]/[0193]: evaluated
+Batch [0099]/[0193]: evaluated
+Batch [0149]/[0193]: evaluated
+[Epoch 009] training: accuracy=52.732008
+[Epoch 009] speed: 289 samples/sec	time cost: 646.571737
+[Epoch 009] validation: acc-top1=30.513277 acc-top5=61.423251
+wrote 2 events to disk
+Epoch[010] Batch [0049]/[1319]	Speed: 221.868474 samples/sec	accuracy=55.281250	lr=0.001000
+Epoch[010] Batch [0099]/[1319]	Speed: 292.191006 samples/sec	accuracy=55.992188	lr=0.001000
+Epoch[010] Batch [0149]/[1319]	Speed: 293.917208 samples/sec	accuracy=56.734375	lr=0.001000
+Epoch[010] Batch [0199]/[1319]	Speed: 293.718681 samples/sec	accuracy=57.371094	lr=0.001000
+Epoch[010] Batch [0249]/[1319]	Speed: 293.679201 samples/sec	accuracy=57.750000	lr=0.001000
+Epoch[010] Batch [0299]/[1319]	Speed: 291.942811 samples/sec	accuracy=58.085937	lr=0.001000
+Epoch[010] Batch [0349]/[1319]	Speed: 291.993192 samples/sec	accuracy=58.412946	lr=0.001000
+Epoch[010] Batch [0399]/[1319]	Speed: 293.762630 samples/sec	accuracy=58.781250	lr=0.001000
+Epoch[010] Batch [0449]/[1319]	Speed: 292.981783 samples/sec	accuracy=59.059028	lr=0.001000
+Epoch[010] Batch [0499]/[1319]	Speed: 291.287404 samples/sec	accuracy=59.250000	lr=0.001000
+Epoch[010] Batch [0549]/[1319]	Speed: 292.890871 samples/sec	accuracy=59.390625	lr=0.001000
+Epoch[010] Batch [0599]/[1319]	Speed: 293.164161 samples/sec	accuracy=59.485677	lr=0.001000
+Epoch[010] Batch [0649]/[1319]	Speed: 292.535397 samples/sec	accuracy=59.626202	lr=0.001000
+Epoch[010] Batch [0699]/[1319]	Speed: 291.570768 samples/sec	accuracy=59.772321	lr=0.001000
+Epoch[010] Batch [0749]/[1319]	Speed: 293.146658 samples/sec	accuracy=59.820833	lr=0.001000
+Epoch[010] Batch [0799]/[1319]	Speed: 293.117023 samples/sec	accuracy=59.961914	lr=0.001000
+Epoch[010] Batch [0849]/[1319]	Speed: 294.661852 samples/sec	accuracy=60.045956	lr=0.001000
+Epoch[010] Batch [0899]/[1319]	Speed: 292.314999 samples/sec	accuracy=60.125000	lr=0.001000
+Epoch[010] Batch [0949]/[1319]	Speed: 296.511983 samples/sec	accuracy=60.233553	lr=0.001000
+Epoch[010] Batch [0999]/[1319]	Speed: 293.355822 samples/sec	accuracy=60.323437	lr=0.001000
+Epoch[010] Batch [1049]/[1319]	Speed: 293.930622 samples/sec	accuracy=60.419643	lr=0.001000
+Epoch[010] Batch [1099]/[1319]	Speed: 292.614997 samples/sec	accuracy=60.461648	lr=0.001000
+Epoch[010] Batch [1149]/[1319]	Speed: 291.731417 samples/sec	accuracy=60.508832	lr=0.001000
+Epoch[010] Batch [1199]/[1319]	Speed: 294.463342 samples/sec	accuracy=60.546875	lr=0.001000
+Epoch[010] Batch [1249]/[1319]	Speed: 289.381590 samples/sec	accuracy=60.596875	lr=0.001000
+Epoch[010] Batch [1299]/[1319]	Speed: 294.650402 samples/sec	accuracy=60.679688	lr=0.001000
+Batch [0049]/[0193]: evaluated
+Batch [0099]/[0193]: evaluated
+Batch [0149]/[0193]: evaluated
+[Epoch 010] training: accuracy=60.717163
+[Epoch 010] speed: 289 samples/sec	time cost: 646.240567
+[Epoch 010] validation: acc-top1=34.512630 acc-top5=65.952882
+wrote 2 events to disk
+Epoch[011] Batch [0049]/[1320]	Speed: 220.149809 samples/sec	accuracy=63.109375	lr=0.001000
+Epoch[011] Batch [0099]/[1320]	Speed: 292.346726 samples/sec	accuracy=62.906250	lr=0.001000
+Epoch[011] Batch [0149]/[1320]	Speed: 293.670166 samples/sec	accuracy=63.083333	lr=0.001000
+Epoch[011] Batch [0199]/[1320]	Speed: 295.097578 samples/sec	accuracy=62.863281	lr=0.001000
+Epoch[011] Batch [0249]/[1320]	Speed: 291.456617 samples/sec	accuracy=62.971875	lr=0.001000
+Epoch[011] Batch [0299]/[1320]	Speed: 290.961551 samples/sec	accuracy=63.093750	lr=0.001000
+Epoch[011] Batch [0349]/[1320]	Speed: 294.089246 samples/sec	accuracy=63.087054	lr=0.001000
+Epoch[011] Batch [0399]/[1320]	Speed: 291.481714 samples/sec	accuracy=63.310547	lr=0.001000
+Epoch[011] Batch [0449]/[1320]	Speed: 294.704058 samples/sec	accuracy=63.248264	lr=0.001000
+Epoch[011] Batch [0499]/[1320]	Speed: 291.738640 samples/sec	accuracy=63.273437	lr=0.001000
+Epoch[011] Batch [0549]/[1320]	Speed: 292.421751 samples/sec	accuracy=63.278409	lr=0.001000
+Epoch[011] Batch [0599]/[1320]	Speed: 290.212679 samples/sec	accuracy=63.347656	lr=0.001000
+Epoch[011] Batch [0649]/[1320]	Speed: 293.638363 samples/sec	accuracy=63.387019	lr=0.001000
+Epoch[011] Batch [0699]/[1320]	Speed: 294.356304 samples/sec	accuracy=63.431920	lr=0.001000
+Epoch[011] Batch [0749]/[1320]	Speed: 294.974258 samples/sec	accuracy=63.502083	lr=0.001000
+Epoch[011] Batch [0799]/[1320]	Speed: 292.256048 samples/sec	accuracy=63.544922	lr=0.001000
+Epoch[011] Batch [0849]/[1320]	Speed: 297.264895 samples/sec	accuracy=63.540441	lr=0.001000
+Epoch[011] Batch [0899]/[1320]	Speed: 293.806779 samples/sec	accuracy=63.577257	lr=0.001000
+Epoch[011] Batch [0949]/[1320]	Speed: 294.263860 samples/sec	accuracy=63.575658	lr=0.001000
+Epoch[011] Batch [0999]/[1320]	Speed: 292.065287 samples/sec	accuracy=63.600781	lr=0.001000
+Epoch[011] Batch [1049]/[1320]	Speed: 290.402773 samples/sec	accuracy=63.595982	lr=0.001000
+Epoch[011] Batch [1099]/[1320]	Speed: 295.550084 samples/sec	accuracy=63.571733	lr=0.001000
+Epoch[011] Batch [1149]/[1320]	Speed: 292.867254 samples/sec	accuracy=63.574728	lr=0.001000
+Epoch[011] Batch [1199]/[1320]	Speed: 293.916156 samples/sec	accuracy=63.545573	lr=0.001000
+Epoch[011] Batch [1249]/[1320]	Speed: 292.814315 samples/sec	accuracy=63.556875	lr=0.001000
+Epoch[011] Batch [1299]/[1320]	Speed: 297.665473 samples/sec	accuracy=63.549880	lr=0.001000
+Batch [0049]/[0193]: evaluated
+Batch [0099]/[0193]: evaluated
+Batch [0149]/[0193]: evaluated
+[Epoch 011] training: accuracy=63.526870
+[Epoch 011] speed: 289 samples/sec	time cost: 646.714213
+[Epoch 011] validation: acc-top1=34.605732 acc-top5=66.033841
+wrote 2 events to disk
+Epoch[012] Batch [0049]/[1320]	Speed: 221.078975 samples/sec	accuracy=63.953125	lr=0.001000
+Epoch[012] Batch [0099]/[1320]	Speed: 292.060676 samples/sec	accuracy=64.585938	lr=0.001000
+Epoch[012] Batch [0149]/[1320]	Speed: 293.391742 samples/sec	accuracy=64.572917	lr=0.001000
+Epoch[012] Batch [0199]/[1320]	Speed: 294.429448 samples/sec	accuracy=64.441406	lr=0.001000
+Epoch[012] Batch [0249]/[1320]	Speed: 293.486418 samples/sec	accuracy=64.312500	lr=0.001000
+Epoch[012] Batch [0299]/[1320]	Speed: 294.931918 samples/sec	accuracy=64.239583	lr=0.001000
+Epoch[012] Batch [0349]/[1320]	Speed: 291.915993 samples/sec	accuracy=64.256696	lr=0.001000
+Epoch[012] Batch [0399]/[1320]	Speed: 293.545570 samples/sec	accuracy=64.113281	lr=0.001000
+Epoch[012] Batch [0449]/[1320]	Speed: 295.411133 samples/sec	accuracy=64.230903	lr=0.001000
+Epoch[012] Batch [0499]/[1320]	Speed: 297.661162 samples/sec	accuracy=64.342188	lr=0.001000
+Epoch[012] Batch [0549]/[1320]	Speed: 292.666644 samples/sec	accuracy=64.437500	lr=0.001000
+Epoch[012] Batch [0599]/[1320]	Speed: 296.147761 samples/sec	accuracy=64.483073	lr=0.001000
+Epoch[012] Batch [0649]/[1320]	Speed: 292.425688 samples/sec	accuracy=64.502404	lr=0.001000
+Epoch[012] Batch [0699]/[1320]	Speed: 294.501588 samples/sec	accuracy=64.457589	lr=0.001000
+Epoch[012] Batch [0749]/[1320]	Speed: 294.333941 samples/sec	accuracy=64.481250	lr=0.001000
+Epoch[012] Batch [0799]/[1320]	Speed: 293.125905 samples/sec	accuracy=64.462891	lr=0.001000
+Epoch[012] Batch [0849]/[1320]	Speed: 294.759417 samples/sec	accuracy=64.426471	lr=0.001000
+Epoch[012] Batch [0899]/[1320]	Speed: 294.440274 samples/sec	accuracy=64.453993	lr=0.001000
+Epoch[012] Batch [0949]/[1320]	Speed: 293.649918 samples/sec	accuracy=64.509046	lr=0.001000
+Epoch[012] Batch [0999]/[1320]	Speed: 293.900906 samples/sec	accuracy=64.569531	lr=0.001000
+Epoch[012] Batch [1049]/[1320]	Speed: 296.541591 samples/sec	accuracy=64.592262	lr=0.001000
+Epoch[012] Batch [1099]/[1320]	Speed: 296.506569 samples/sec	accuracy=64.610085	lr=0.001000
+Epoch[012] Batch [1149]/[1320]	Speed: 293.880062 samples/sec	accuracy=64.618207	lr=0.001000
+Epoch[012] Batch [1199]/[1320]	Speed: 297.023475 samples/sec	accuracy=64.605469	lr=0.001000
+Epoch[012] Batch [1249]/[1320]	Speed: 295.444856 samples/sec	accuracy=64.621250	lr=0.001000
+Epoch[012] Batch [1299]/[1320]	Speed: 297.413197 samples/sec	accuracy=64.644832	lr=0.001000
+Batch [0049]/[0193]: evaluated
+Batch [0099]/[0193]: evaluated
+Batch [0149]/[0193]: evaluated
+[Epoch 012] training: accuracy=64.662642
+[Epoch 012] speed: 290 samples/sec	time cost: 643.221714
+[Epoch 012] validation: acc-top1=34.889087 acc-top5=66.333387
+wrote 2 events to disk
+Epoch[013] Batch [0049]/[1319]	Speed: 214.928633 samples/sec	accuracy=65.406250	lr=0.001000
+Epoch[013] Batch [0099]/[1319]	Speed: 295.644657 samples/sec	accuracy=65.992188	lr=0.001000
+Epoch[013] Batch [0149]/[1319]	Speed: 295.830424 samples/sec	accuracy=65.895833	lr=0.001000
+Epoch[013] Batch [0199]/[1319]	Speed: 297.622998 samples/sec	accuracy=65.937500	lr=0.001000
+Epoch[013] Batch [0249]/[1319]	Speed: 293.823389 samples/sec	accuracy=65.968750	lr=0.001000
+Epoch[013] Batch [0299]/[1319]	Speed: 295.552290 samples/sec	accuracy=65.960938	lr=0.001000
+Epoch[013] Batch [0349]/[1319]	Speed: 297.146381 samples/sec	accuracy=65.897321	lr=0.001000
+Epoch[013] Batch [0399]/[1319]	Speed: 295.359845 samples/sec	accuracy=65.769531	lr=0.001000
+Epoch[013] Batch [0449]/[1319]	Speed: 294.794963 samples/sec	accuracy=65.888889	lr=0.001000
+Epoch[013] Batch [0499]/[1319]	Speed: 293.325613 samples/sec	accuracy=65.876563	lr=0.001000
+Epoch[013] Batch [0549]/[1319]	Speed: 294.035801 samples/sec	accuracy=65.904830	lr=0.001000
+Epoch[013] Batch [0599]/[1319]	Speed: 292.636421 samples/sec	accuracy=65.838542	lr=0.001000
+Epoch[013] Batch [0649]/[1319]	Speed: 296.227565 samples/sec	accuracy=65.828125	lr=0.001000
+Epoch[013] Batch [0699]/[1319]	Speed: 294.920759 samples/sec	accuracy=65.891741	lr=0.001000
+Epoch[013] Batch [0749]/[1319]	Speed: 293.201690 samples/sec	accuracy=65.850000	lr=0.001000
+Epoch[013] Batch [0799]/[1319]	Speed: 294.589058 samples/sec	accuracy=65.818359	lr=0.001000
+Epoch[013] Batch [0849]/[1319]	Speed: 294.143443 samples/sec	accuracy=65.820772	lr=0.001000
+Epoch[013] Batch [0899]/[1319]	Speed: 294.686915 samples/sec	accuracy=65.830729	lr=0.001000
+Epoch[013] Batch [0949]/[1319]	Speed: 294.132923 samples/sec	accuracy=65.808388	lr=0.001000
+Epoch[013] Batch [0999]/[1319]	Speed: 294.414281 samples/sec	accuracy=65.822656	lr=0.001000
+Epoch[013] Batch [1049]/[1319]	Speed: 293.217043 samples/sec	accuracy=65.835565	lr=0.001000
+Epoch[013] Batch [1099]/[1319]	Speed: 295.388963 samples/sec	accuracy=65.796165	lr=0.001000
+Epoch[013] Batch [1149]/[1319]	Speed: 295.834196 samples/sec	accuracy=65.807065	lr=0.001000
+Epoch[013] Batch [1199]/[1319]	Speed: 292.634781 samples/sec	accuracy=65.792318	lr=0.001000
+Epoch[013] Batch [1249]/[1319]	Speed: 293.259401 samples/sec	accuracy=65.806250	lr=0.001000
+Epoch[013] Batch [1299]/[1319]	Speed: 298.292431 samples/sec	accuracy=65.756010	lr=0.001000
+Batch [0049]/[0193]: evaluated
+Batch [0099]/[0193]: evaluated
+Batch [0149]/[0193]: evaluated
+[Epoch 013] training: accuracy=65.764192
+[Epoch 013] speed: 290 samples/sec	time cost: 644.028542
+[Epoch 013] validation: acc-top1=34.706930 acc-top5=65.956930
+wrote 2 events to disk
+Epoch[014] Batch [0049]/[1320]	Speed: 217.771580 samples/sec	accuracy=67.250000	lr=0.001000
+Epoch[014] Batch [0099]/[1320]	Speed: 292.175250 samples/sec	accuracy=67.398438	lr=0.001000
+Epoch[014] Batch [0149]/[1320]	Speed: 296.101825 samples/sec	accuracy=66.828125	lr=0.001000
+Epoch[014] Batch [0199]/[1320]	Speed: 294.934744 samples/sec	accuracy=67.050781	lr=0.001000
+Epoch[014] Batch [0249]/[1320]	Speed: 294.933091 samples/sec	accuracy=66.818750	lr=0.001000
+Epoch[014] Batch [0299]/[1320]	Speed: 294.267754 samples/sec	accuracy=66.578125	lr=0.001000
+Epoch[014] Batch [0349]/[1320]	Speed: 294.472435 samples/sec	accuracy=66.607143	lr=0.001000
+Epoch[014] Batch [0399]/[1320]	Speed: 293.260926 samples/sec	accuracy=66.542969	lr=0.001000
+Epoch[014] Batch [0449]/[1320]	Speed: 292.662723 samples/sec	accuracy=66.536458	lr=0.001000
+Epoch[014] Batch [0499]/[1320]	Speed: 295.052145 samples/sec	accuracy=66.393750	lr=0.001000
+Epoch[014] Batch [0549]/[1320]	Speed: 293.590726 samples/sec	accuracy=66.454545	lr=0.001000
+Epoch[014] Batch [0599]/[1320]	Speed: 296.656875 samples/sec	accuracy=66.432292	lr=0.001000
+Epoch[014] Batch [0649]/[1320]	Speed: 295.329599 samples/sec	accuracy=66.417067	lr=0.001000
+Epoch[014] Batch [0699]/[1320]	Speed: 293.551403 samples/sec	accuracy=66.391741	lr=0.001000
+Epoch[014] Batch [0749]/[1320]	Speed: 289.808881 samples/sec	accuracy=66.363542	lr=0.001000
+Epoch[014] Batch [0799]/[1320]	Speed: 294.879679 samples/sec	accuracy=66.372070	lr=0.001000
+Epoch[014] Batch [0849]/[1320]	Speed: 295.615664 samples/sec	accuracy=66.392463	lr=0.001000
+Epoch[014] Batch [0899]/[1320]	Speed: 291.608255 samples/sec	accuracy=66.420139	lr=0.001000
+Epoch[014] Batch [0949]/[1320]	Speed: 293.161375 samples/sec	accuracy=66.342105	lr=0.001000
+Epoch[014] Batch [0999]/[1320]	Speed: 293.837100 samples/sec	accuracy=66.329688	lr=0.001000
+Epoch[014] Batch [1049]/[1320]	Speed: 295.436353 samples/sec	accuracy=66.352679	lr=0.001000
+Epoch[014] Batch [1099]/[1320]	Speed: 293.090057 samples/sec	accuracy=66.384943	lr=0.001000
+Epoch[014] Batch [1149]/[1320]	Speed: 292.944506 samples/sec	accuracy=66.360054	lr=0.001000
+Epoch[014] Batch [1199]/[1320]	Speed: 292.864448 samples/sec	accuracy=66.324870	lr=0.001000
+Epoch[014] Batch [1249]/[1320]	Speed: 292.713631 samples/sec	accuracy=66.320625	lr=0.001000
+Epoch[014] Batch [1299]/[1320]	Speed: 297.718140 samples/sec	accuracy=66.310096	lr=0.001000
+Batch [0049]/[0193]: evaluated
+Batch [0099]/[0193]: evaluated
+Batch [0149]/[0193]: evaluated
+[Epoch 014] training: accuracy=66.344697
+[Epoch 014] speed: 290 samples/sec	time cost: 644.880336
+[Epoch 014] validation: acc-top1=34.682642 acc-top5=66.139087
+wrote 2 events to disk
+Epoch[015] Batch [0049]/[1320]	Speed: 228.328986 samples/sec	accuracy=67.125000	lr=0.001000
+Epoch[015] Batch [0099]/[1320]	Speed: 294.647980 samples/sec	accuracy=66.359375	lr=0.001000
+Epoch[015] Batch [0149]/[1320]	Speed: 294.036429 samples/sec	accuracy=66.765625	lr=0.001000
+Epoch[015] Batch [0199]/[1320]	Speed: 293.478438 samples/sec	accuracy=67.312500	lr=0.001000
+Epoch[015] Batch [0249]/[1320]	Speed: 292.139332 samples/sec	accuracy=66.956250	lr=0.001000
+Epoch[015] Batch [0299]/[1320]	Speed: 293.657412 samples/sec	accuracy=67.054688	lr=0.001000
+Epoch[015] Batch [0349]/[1320]	Speed: 294.551076 samples/sec	accuracy=67.078125	lr=0.001000
+Epoch[015] Batch [0399]/[1320]	Speed: 293.594987 samples/sec	accuracy=67.121094	lr=0.001000
+Epoch[015] Batch [0449]/[1320]	Speed: 293.983401 samples/sec	accuracy=67.045139	lr=0.001000
+Epoch[015] Batch [0499]/[1320]	Speed: 292.367136 samples/sec	accuracy=67.048438	lr=0.001000
+Epoch[015] Batch [0549]/[1320]	Speed: 294.960648 samples/sec	accuracy=67.019886	lr=0.001000
+Epoch[015] Batch [0599]/[1320]	Speed: 292.716845 samples/sec	accuracy=67.061198	lr=0.001000
+Epoch[015] Batch [0649]/[1320]	Speed: 294.523296 samples/sec	accuracy=67.159856	lr=0.001000
+Epoch[015] Batch [0699]/[1320]	Speed: 295.670389 samples/sec	accuracy=67.117188	lr=0.001000
+Epoch[015] Batch [0749]/[1320]	Speed: 293.546800 samples/sec	accuracy=67.098958	lr=0.001000
+Epoch[015] Batch [0799]/[1320]	Speed: 294.496700 samples/sec	accuracy=67.104492	lr=0.001000
+Epoch[015] Batch [0849]/[1320]	Speed: 295.943923 samples/sec	accuracy=67.126838	lr=0.001000
+Epoch[015] Batch [0899]/[1320]	Speed: 294.734627 samples/sec	accuracy=67.149306	lr=0.001000
+Epoch[015] Batch [0949]/[1320]	Speed: 294.139018 samples/sec	accuracy=67.172697	lr=0.001000
+Epoch[015] Batch [0999]/[1320]	Speed: 294.334370 samples/sec	accuracy=67.185938	lr=0.001000
+Epoch[015] Batch [1049]/[1320]	Speed: 298.474533 samples/sec	accuracy=67.196429	lr=0.001000
+Epoch[015] Batch [1099]/[1320]	Speed: 291.572789 samples/sec	accuracy=67.196733	lr=0.001000
+Epoch[015] Batch [1149]/[1320]	Speed: 295.379713 samples/sec	accuracy=67.175951	lr=0.001000
+Epoch[015] Batch [1199]/[1320]	Speed: 291.198236 samples/sec	accuracy=67.156901	lr=0.001000
+Epoch[015] Batch [1249]/[1320]	Speed: 293.839484 samples/sec	accuracy=67.133750	lr=0.001000
+Epoch[015] Batch [1299]/[1320]	Speed: 296.460718 samples/sec	accuracy=67.146034	lr=0.001000
+Batch [0049]/[0193]: evaluated
+Batch [0099]/[0193]: evaluated
+Batch [0149]/[0193]: evaluated
+[Epoch 015] training: accuracy=67.124763
+[Epoch 015] speed: 291 samples/sec	time cost: 643.510118
+[Epoch 015] validation: acc-top1=34.605732 acc-top5=66.098608
+wrote 2 events to disk
+Epoch[016] Batch [0049]/[1319]	Speed: 220.247045 samples/sec	accuracy=68.140625	lr=0.001000
+Epoch[016] Batch [0099]/[1319]	Speed: 294.357547 samples/sec	accuracy=68.054688	lr=0.001000
+Epoch[016] Batch [0149]/[1319]	Speed: 293.484149 samples/sec	accuracy=68.192708	lr=0.001000
+Epoch[016] Batch [0199]/[1319]	Speed: 293.485227 samples/sec	accuracy=68.097656	lr=0.001000
+Epoch[016] Batch [0249]/[1319]	Speed: 292.736036 samples/sec	accuracy=67.946875	lr=0.001000
+Epoch[016] Batch [0299]/[1319]	Speed: 293.186783 samples/sec	accuracy=68.114583	lr=0.001000
+Epoch[016] Batch [0349]/[1319]	Speed: 292.647035 samples/sec	accuracy=68.082589	lr=0.001000
+Epoch[016] Batch [0399]/[1319]	Speed: 297.070533 samples/sec	accuracy=68.212891	lr=0.001000
+Epoch[016] Batch [0449]/[1319]	Speed: 297.041858 samples/sec	accuracy=68.128472	lr=0.001000
+Epoch[016] Batch [0499]/[1319]	Speed: 296.264473 samples/sec	accuracy=68.089062	lr=0.001000
+Epoch[016] Batch [0549]/[1319]	Speed: 292.760313 samples/sec	accuracy=68.071023	lr=0.001000
+Epoch[016] Batch [0599]/[1319]	Speed: 295.192524 samples/sec	accuracy=67.985677	lr=0.001000
+Epoch[016] Batch [0649]/[1319]	Speed: 293.919667 samples/sec	accuracy=67.921875	lr=0.001000
+Epoch[016] Batch [0699]/[1319]	Speed: 294.967496 samples/sec	accuracy=67.901786	lr=0.001000
+Epoch[016] Batch [0749]/[1319]	Speed: 294.819172 samples/sec	accuracy=67.955208	lr=0.001000
+Epoch[016] Batch [0799]/[1319]	Speed: 294.969081 samples/sec	accuracy=67.882812	lr=0.001000
+Epoch[016] Batch [0849]/[1319]	Speed: 296.602712 samples/sec	accuracy=67.895221	lr=0.001000
+Epoch[016] Batch [0899]/[1319]	Speed: 293.597592 samples/sec	accuracy=67.884549	lr=0.001000
+Epoch[016] Batch [0949]/[1319]	Speed: 296.054698 samples/sec	accuracy=67.879112	lr=0.001000
+Epoch[016] Batch [0999]/[1319]	Speed: 294.822834 samples/sec	accuracy=67.833594	lr=0.001000
+Epoch[016] Batch [1049]/[1319]	Speed: 296.889484 samples/sec	accuracy=67.841518	lr=0.001000
+Epoch[016] Batch [1099]/[1319]	Speed: 293.125592 samples/sec	accuracy=67.849432	lr=0.001000
+Epoch[016] Batch [1149]/[1319]	Speed: 291.803472 samples/sec	accuracy=67.881793	lr=0.001000
+Epoch[016] Batch [1199]/[1319]	Speed: 295.698223 samples/sec	accuracy=67.893880	lr=0.001000
+Epoch[016] Batch [1249]/[1319]	Speed: 295.305930 samples/sec	accuracy=67.836875	lr=0.001000
+Epoch[016] Batch [1299]/[1319]	Speed: 296.860325 samples/sec	accuracy=67.785457	lr=0.001000
+Batch [0049]/[0193]: evaluated
+Batch [0099]/[0193]: evaluated
+Batch [0149]/[0193]: evaluated
+[Epoch 016] training: accuracy=67.788097
+[Epoch 016] speed: 290 samples/sec	time cost: 642.461304
+[Epoch 016] validation: acc-top1=34.294041 acc-top5=65.871924
+wrote 2 events to disk
+Epoch[017] Batch [0049]/[1320]	Speed: 223.101683 samples/sec	accuracy=69.828125	lr=0.001000
+Epoch[017] Batch [0099]/[1320]	Speed: 293.221380 samples/sec	accuracy=69.359375	lr=0.001000
+Epoch[017] Batch [0149]/[1320]	Speed: 295.534859 samples/sec	accuracy=69.494792	lr=0.001000
+Epoch[017] Batch [0199]/[1320]	Speed: 294.835961 samples/sec	accuracy=69.496094	lr=0.001000
+Epoch[017] Batch [0249]/[1320]	Speed: 296.066032 samples/sec	accuracy=69.425000	lr=0.001000
+Epoch[017] Batch [0299]/[1320]	Speed: 295.092352 samples/sec	accuracy=69.307292	lr=0.001000
+Epoch[017] Batch [0349]/[1320]	Speed: 294.881891 samples/sec	accuracy=69.285714	lr=0.001000
+Epoch[017] Batch [0399]/[1320]	Speed: 294.214630 samples/sec	accuracy=69.109375	lr=0.001000
+Epoch[017] Batch [0449]/[1320]	Speed: 296.758083 samples/sec	accuracy=69.003472	lr=0.001000
+Epoch[017] Batch [0499]/[1320]	Speed: 293.545233 samples/sec	accuracy=68.900000	lr=0.001000
+Epoch[017] Batch [0549]/[1320]	Speed: 292.313588 samples/sec	accuracy=68.987216	lr=0.001000
+Epoch[017] Batch [0599]/[1320]	Speed: 294.670016 samples/sec	accuracy=68.983073	lr=0.001000
+Epoch[017] Batch [0649]/[1320]	Speed: 292.787187 samples/sec	accuracy=68.895433	lr=0.001000
+Epoch[017] Batch [0699]/[1320]	Speed: 296.073330 samples/sec	accuracy=68.791295	lr=0.001000
+Epoch[017] Batch [0749]/[1320]	Speed: 293.237261 samples/sec	accuracy=68.835417	lr=0.001000
+Epoch[017] Batch [0799]/[1320]	Speed: 292.688800 samples/sec	accuracy=68.775391	lr=0.001000
+Epoch[017] Batch [0849]/[1320]	Speed: 293.569419 samples/sec	accuracy=68.743566	lr=0.001000
+Epoch[017] Batch [0899]/[1320]	Speed: 295.031884 samples/sec	accuracy=68.723090	lr=0.001000
+Epoch[017] Batch [0949]/[1320]	Speed: 295.589782 samples/sec	accuracy=68.677632	lr=0.001000
+Epoch[017] Batch [0999]/[1320]	Speed: 294.986595 samples/sec	accuracy=68.679688	lr=0.001000
+Epoch[017] Batch [1049]/[1320]	Speed: 295.185243 samples/sec	accuracy=68.665923	lr=0.001000
+Epoch[017] Batch [1099]/[1320]	Speed: 294.693450 samples/sec	accuracy=68.621449	lr=0.001000
+Epoch[017] Batch [1149]/[1320]	Speed: 293.221149 samples/sec	accuracy=68.568614	lr=0.001000
+Epoch[017] Batch [1199]/[1320]	Speed: 296.230513 samples/sec	accuracy=68.550781	lr=0.001000
+Epoch[017] Batch [1249]/[1320]	Speed: 294.470710 samples/sec	accuracy=68.536250	lr=0.001000
+Epoch[017] Batch [1299]/[1320]	Speed: 297.646261 samples/sec	accuracy=68.500000	lr=0.001000
+Batch [0049]/[0193]: evaluated
+Batch [0099]/[0193]: evaluated
+Batch [0149]/[0193]: evaluated
+[Epoch 017] training: accuracy=68.497277
+[Epoch 017] speed: 291 samples/sec	time cost: 641.779159
+[Epoch 017] validation: acc-top1=34.225227 acc-top5=65.560233
+wrote 2 events to disk
+Epoch[018] Batch [0049]/[1320]	Speed: 222.860009 samples/sec	accuracy=68.781250	lr=0.001000
+Epoch[018] Batch [0099]/[1320]	Speed: 293.522508 samples/sec	accuracy=68.710938	lr=0.001000
+Epoch[018] Batch [0149]/[1320]	Speed: 295.589967 samples/sec	accuracy=68.781250	lr=0.001000
+Epoch[018] Batch [0199]/[1320]	Speed: 296.286333 samples/sec	accuracy=69.023438	lr=0.001000
+Epoch[018] Batch [0249]/[1320]	Speed: 294.658734 samples/sec	accuracy=69.050000	lr=0.001000
+Epoch[018] Batch [0299]/[1320]	Speed: 297.371179 samples/sec	accuracy=69.091146	lr=0.001000
+Epoch[018] Batch [0349]/[1320]	Speed: 293.622779 samples/sec	accuracy=69.167411	lr=0.001000
+Epoch[018] Batch [0399]/[1320]	Speed: 293.282935 samples/sec	accuracy=69.062500	lr=0.001000
+Epoch[018] Batch [0449]/[1320]	Speed: 293.179520 samples/sec	accuracy=69.175347	lr=0.001000
+Epoch[018] Batch [0499]/[1320]	Speed: 297.580288 samples/sec	accuracy=69.120312	lr=0.001000
+Epoch[018] Batch [0549]/[1320]	Speed: 293.508159 samples/sec	accuracy=69.126420	lr=0.001000
+Epoch[018] Batch [0599]/[1320]	Speed: 292.587086 samples/sec	accuracy=69.106771	lr=0.001000
+Epoch[018] Batch [0649]/[1320]	Speed: 292.477610 samples/sec	accuracy=69.092548	lr=0.001000
+Epoch[018] Batch [0699]/[1320]	Speed: 297.833105 samples/sec	accuracy=69.113839	lr=0.001000
+Epoch[018] Batch [0749]/[1320]	Speed: 294.315988 samples/sec	accuracy=69.054167	lr=0.001000
+Epoch[018] Batch [0799]/[1320]	Speed: 293.130534 samples/sec	accuracy=69.006836	lr=0.001000
+Epoch[018] Batch [0849]/[1320]	Speed: 294.558911 samples/sec	accuracy=68.986213	lr=0.001000
+Epoch[018] Batch [0899]/[1320]	Speed: 293.668621 samples/sec	accuracy=69.001736	lr=0.001000
+Epoch[018] Batch [0949]/[1320]	Speed: 295.660932 samples/sec	accuracy=68.996711	lr=0.001000
+Epoch[018] Batch [0999]/[1320]	Speed: 293.512366 samples/sec	accuracy=69.010156	lr=0.001000
+Epoch[018] Batch [1049]/[1320]	Speed: 296.954053 samples/sec	accuracy=69.016369	lr=0.001000
+Epoch[018] Batch [1099]/[1320]	Speed: 294.361104 samples/sec	accuracy=69.041903	lr=0.001000
+Epoch[018] Batch [1149]/[1320]	Speed: 294.063218 samples/sec	accuracy=69.052989	lr=0.001000
+Epoch[018] Batch [1199]/[1320]	Speed: 293.914164 samples/sec	accuracy=69.071615	lr=0.001000
+Epoch[018] Batch [1249]/[1320]	Speed: 294.682848 samples/sec	accuracy=69.057500	lr=0.001000
+Epoch[018] Batch [1299]/[1320]	Speed: 297.346274 samples/sec	accuracy=69.030048	lr=0.001000
+Batch [0049]/[0193]: evaluated
+Batch [0099]/[0193]: evaluated
+Batch [0149]/[0193]: evaluated
+[Epoch 018] training: accuracy=69.029356
+[Epoch 018] speed: 291 samples/sec	time cost: 642.487915
+[Epoch 018] validation: acc-top1=34.188795 acc-top5=65.556185
+wrote 2 events to disk
+Epoch[019] Batch [0049]/[1319]	Speed: 224.383571 samples/sec	accuracy=70.343750	lr=0.001000
+Epoch[019] Batch [0099]/[1319]	Speed: 294.101113 samples/sec	accuracy=69.828125	lr=0.001000
+Epoch[019] Batch [0149]/[1319]	Speed: 296.218291 samples/sec	accuracy=69.588542	lr=0.001000
+Epoch[019] Batch [0199]/[1319]	Speed: 295.245505 samples/sec	accuracy=69.589844	lr=0.001000
+Epoch[019] Batch [0249]/[1319]	Speed: 293.051709 samples/sec	accuracy=69.593750	lr=0.001000
+Epoch[019] Batch [0299]/[1319]	Speed: 296.969950 samples/sec	accuracy=69.585938	lr=0.001000
+Epoch[019] Batch [0349]/[1319]	Speed: 291.572355 samples/sec	accuracy=69.754464	lr=0.001000
+Epoch[019] Batch [0399]/[1319]	Speed: 295.480415 samples/sec	accuracy=69.621094	lr=0.001000
+Epoch[019] Batch [0449]/[1319]	Speed: 286.739311 samples/sec	accuracy=69.593750	lr=0.001000
+Epoch[019] Batch [0499]/[1319]	Speed: 292.665394 samples/sec	accuracy=69.590625	lr=0.001000
+Epoch[019] Batch [0549]/[1319]	Speed: 290.890488 samples/sec	accuracy=69.598011	lr=0.001000
+Epoch[019] Batch [0599]/[1319]	Speed: 292.671326 samples/sec	accuracy=69.617188	lr=0.001000
+Epoch[019] Batch [0649]/[1319]	Speed: 292.478371 samples/sec	accuracy=69.631010	lr=0.001000
+Epoch[019] Batch [0699]/[1319]	Speed: 294.203228 samples/sec	accuracy=69.602679	lr=0.001000
+Epoch[019] Batch [0749]/[1319]	Speed: 292.525310 samples/sec	accuracy=69.565625	lr=0.001000
+Epoch[019] Batch [0799]/[1319]	Speed: 292.717065 samples/sec	accuracy=69.508789	lr=0.001000
+Epoch[019] Batch [0849]/[1319]	Speed: 291.314404 samples/sec	accuracy=69.541360	lr=0.001000
+Epoch[019] Batch [0899]/[1319]	Speed: 292.546963 samples/sec	accuracy=69.553819	lr=0.001000
+Epoch[019] Batch [0949]/[1319]	Speed: 294.886391 samples/sec	accuracy=69.529605	lr=0.001000
+Epoch[019] Batch [0999]/[1319]	Speed: 290.841029 samples/sec	accuracy=69.525000	lr=0.001000
+Epoch[019] Batch [1049]/[1319]	Speed: 292.658728 samples/sec	accuracy=69.490327	lr=0.001000
+Epoch[019] Batch [1099]/[1319]	Speed: 293.505290 samples/sec	accuracy=69.474432	lr=0.001000
+Epoch[019] Batch [1149]/[1319]	Speed: 294.399812 samples/sec	accuracy=69.487092	lr=0.001000
+Epoch[019] Batch [1199]/[1319]	Speed: 294.745546 samples/sec	accuracy=69.483724	lr=0.001000
+Epoch[019] Batch [1249]/[1319]	Speed: 295.093744 samples/sec	accuracy=69.484375	lr=0.001000
+Epoch[019] Batch [1299]/[1319]	Speed: 296.723997 samples/sec	accuracy=69.492188	lr=0.001000
+Batch [0049]/[0193]: evaluated
+Batch [0099]/[0193]: evaluated
+Batch [0149]/[0193]: evaluated
+[Epoch 019] training: accuracy=69.490381
+[Epoch 019] speed: 289 samples/sec	time cost: 644.947553
+[Epoch 019] validation: acc-top1=33.978303 acc-top5=65.191872
+wrote 2 events to disk
+Epoch[020] Batch [0049]/[1320]	Speed: 219.866120 samples/sec	accuracy=69.968750	lr=0.000100
+Epoch[020] Batch [0099]/[1320]	Speed: 291.784339 samples/sec	accuracy=70.148438	lr=0.000100
+Epoch[020] Batch [0149]/[1320]	Speed: 291.902302 samples/sec	accuracy=70.427083	lr=0.000100
+Epoch[020] Batch [0199]/[1320]	Speed: 293.646760 samples/sec	accuracy=70.554688	lr=0.000100
+Epoch[020] Batch [0249]/[1320]	Speed: 290.896049 samples/sec	accuracy=70.490625	lr=0.000100
+Epoch[020] Batch [0299]/[1320]	Speed: 291.455029 samples/sec	accuracy=70.393229	lr=0.000100
+Epoch[020] Batch [0349]/[1320]	Speed: 292.270046 samples/sec	accuracy=70.524554	lr=0.000100
+Epoch[020] Batch [0399]/[1320]	Speed: 294.146495 samples/sec	accuracy=70.535156	lr=0.000100
+Epoch[020] Batch [0449]/[1320]	Speed: 293.613453 samples/sec	accuracy=70.600694	lr=0.000100
+Epoch[020] Batch [0499]/[1320]	Speed: 292.545630 samples/sec	accuracy=70.643750	lr=0.000100
+Epoch[020] Batch [0549]/[1320]	Speed: 290.575326 samples/sec	accuracy=70.649148	lr=0.000100
+Epoch[020] Batch [0599]/[1320]	Speed: 293.120125 samples/sec	accuracy=70.687500	lr=0.000100
+Epoch[020] Batch [0649]/[1320]	Speed: 292.317682 samples/sec	accuracy=70.707933	lr=0.000100
+Epoch[020] Batch [0699]/[1320]	Speed: 294.599070 samples/sec	accuracy=70.715402	lr=0.000100
+Epoch[020] Batch [0749]/[1320]	Speed: 291.054750 samples/sec	accuracy=70.762500	lr=0.000100
+Epoch[020] Batch [0799]/[1320]	Speed: 293.288023 samples/sec	accuracy=70.797852	lr=0.000100
+Epoch[020] Batch [0849]/[1320]	Speed: 293.785058 samples/sec	accuracy=70.849265	lr=0.000100
+Epoch[020] Batch [0899]/[1320]	Speed: 292.743848 samples/sec	accuracy=70.816840	lr=0.000100
+Epoch[020] Batch [0949]/[1320]	Speed: 293.505338 samples/sec	accuracy=70.786184	lr=0.000100
+Epoch[020] Batch [0999]/[1320]	Speed: 290.289227 samples/sec	accuracy=70.789844	lr=0.000100
+Epoch[020] Batch [1049]/[1320]	Speed: 293.736531 samples/sec	accuracy=70.805804	lr=0.000100
+Epoch[020] Batch [1099]/[1320]	Speed: 292.994159 samples/sec	accuracy=70.840909	lr=0.000100
+Epoch[020] Batch [1149]/[1320]	Speed: 294.972783 samples/sec	accuracy=70.890625	lr=0.000100
+Epoch[020] Batch [1199]/[1320]	Speed: 292.039257 samples/sec	accuracy=70.904948	lr=0.000100
+Epoch[020] Batch [1249]/[1320]	Speed: 292.663524 samples/sec	accuracy=70.862500	lr=0.000100
+Epoch[020] Batch [1299]/[1320]	Speed: 292.622806 samples/sec	accuracy=70.890024	lr=0.000100
+Batch [0049]/[0193]: evaluated
+Batch [0099]/[0193]: evaluated
+Batch [0149]/[0193]: evaluated
+[Epoch 020] training: accuracy=70.871212
+[Epoch 020] speed: 289 samples/sec	time cost: 646.483890
+[Epoch 020] validation: acc-top1=34.229275 acc-top5=65.560233
+wrote 2 events to disk
+Epoch[021] Batch [0049]/[1319]	Speed: 221.457984 samples/sec	accuracy=71.046875	lr=0.000100
+Epoch[021] Batch [0099]/[1319]	Speed: 295.925526 samples/sec	accuracy=70.640625	lr=0.000100
+Epoch[021] Batch [0149]/[1319]	Speed: 294.639953 samples/sec	accuracy=71.010417	lr=0.000100
+Epoch[021] Batch [0199]/[1319]	Speed: 291.094405 samples/sec	accuracy=71.117188	lr=0.000100
+Epoch[021] Batch [0249]/[1319]	Speed: 293.378977 samples/sec	accuracy=71.178125	lr=0.000100
+Epoch[021] Batch [0299]/[1319]	Speed: 291.995635 samples/sec	accuracy=71.203125	lr=0.000100
+Epoch[021] Batch [0349]/[1319]	Speed: 291.486551 samples/sec	accuracy=71.377232	lr=0.000100
+Epoch[021] Batch [0399]/[1319]	Speed: 292.562086 samples/sec	accuracy=71.363281	lr=0.000100
+Epoch[021] Batch [0449]/[1319]	Speed: 293.253150 samples/sec	accuracy=71.381944	lr=0.000100
+Epoch[021] Batch [0499]/[1319]	Speed: 293.041705 samples/sec	accuracy=71.375000	lr=0.000100
+Epoch[021] Batch [0549]/[1319]	Speed: 291.027130 samples/sec	accuracy=71.409091	lr=0.000100
+Epoch[021] Batch [0599]/[1319]	Speed: 291.404880 samples/sec	accuracy=71.377604	lr=0.000100
+Epoch[021] Batch [0649]/[1319]	Speed: 293.940883 samples/sec	accuracy=71.304087	lr=0.000100
+Epoch[021] Batch [0699]/[1319]	Speed: 293.275658 samples/sec	accuracy=71.363839	lr=0.000100
+Epoch[021] Batch [0749]/[1319]	Speed: 291.447770 samples/sec	accuracy=71.355208	lr=0.000100
+Epoch[021] Batch [0799]/[1319]	Speed: 293.103335 samples/sec	accuracy=71.349609	lr=0.000100
+Epoch[021] Batch [0849]/[1319]	Speed: 293.370297 samples/sec	accuracy=71.300551	lr=0.000100
+Epoch[021] Batch [0899]/[1319]	Speed: 293.646076 samples/sec	accuracy=71.282986	lr=0.000100
+Epoch[021] Batch [0949]/[1319]	Speed: 295.452339 samples/sec	accuracy=71.267270	lr=0.000100
+Epoch[021] Batch [0999]/[1319]	Speed: 294.044964 samples/sec	accuracy=71.280469	lr=0.000100
+Epoch[021] Batch [1049]/[1319]	Speed: 293.625098 samples/sec	accuracy=71.257440	lr=0.000100
+Epoch[021] Batch [1099]/[1319]	Speed: 291.628970 samples/sec	accuracy=71.235795	lr=0.000100
+Epoch[021] Batch [1149]/[1319]	Speed: 294.685009 samples/sec	accuracy=71.216033	lr=0.000100
+Epoch[021] Batch [1199]/[1319]	Speed: 294.275957 samples/sec	accuracy=71.192057	lr=0.000100
+Epoch[021] Batch [1249]/[1319]	Speed: 294.498519 samples/sec	accuracy=71.204375	lr=0.000100
+Epoch[021] Batch [1299]/[1319]	Speed: 296.192486 samples/sec	accuracy=71.202524	lr=0.000100
+Batch [0049]/[0193]: evaluated
+Batch [0099]/[0193]: evaluated
+Batch [0149]/[0193]: evaluated
+[Epoch 021] training: accuracy=71.216949
+[Epoch 021] speed: 289 samples/sec	time cost: 646.002054
+[Epoch 021] validation: acc-top1=34.500486 acc-top5=65.584521
+wrote 2 events to disk
+Epoch[022] Batch [0049]/[1320]	Speed: 216.616353 samples/sec	accuracy=72.031250	lr=0.000100
+Epoch[022] Batch [0099]/[1320]	Speed: 289.443481 samples/sec	accuracy=71.945312	lr=0.000100
+Epoch[022] Batch [0149]/[1320]	Speed: 292.674676 samples/sec	accuracy=72.036458	lr=0.000100
+Epoch[022] Batch [0199]/[1320]	Speed: 292.435857 samples/sec	accuracy=71.621094	lr=0.000100
+Epoch[022] Batch [0249]/[1320]	Speed: 294.053870 samples/sec	accuracy=71.409375	lr=0.000100
+Epoch[022] Batch [0299]/[1320]	Speed: 291.557122 samples/sec	accuracy=71.388021	lr=0.000100
+Epoch[022] Batch [0349]/[1320]	Speed: 290.849184 samples/sec	accuracy=71.419643	lr=0.000100
+Epoch[022] Batch [0399]/[1320]	Speed: 293.372788 samples/sec	accuracy=71.384766	lr=0.000100
+Epoch[022] Batch [0449]/[1320]	Speed: 291.310455 samples/sec	accuracy=71.324653	lr=0.000100
+Epoch[022] Batch [0499]/[1320]	Speed: 292.405652 samples/sec	accuracy=71.270313	lr=0.000100
+Epoch[022] Batch [0549]/[1320]	Speed: 293.267186 samples/sec	accuracy=71.298295	lr=0.000100
+Epoch[022] Batch [0599]/[1320]	Speed: 295.860529 samples/sec	accuracy=71.281250	lr=0.000100
+Epoch[022] Batch [0649]/[1320]	Speed: 290.066705 samples/sec	accuracy=71.198317	lr=0.000100
+Epoch[022] Batch [0699]/[1320]	Speed: 293.027403 samples/sec	accuracy=71.197545	lr=0.000100
+Epoch[022] Batch [0749]/[1320]	Speed: 296.248056 samples/sec	accuracy=71.255208	lr=0.000100
+Epoch[022] Batch [0799]/[1320]	Speed: 290.425310 samples/sec	accuracy=71.332031	lr=0.000100
+Epoch[022] Batch [0849]/[1320]	Speed: 293.038452 samples/sec	accuracy=71.347426	lr=0.000100
+Epoch[022] Batch [0899]/[1320]	Speed: 290.090472 samples/sec	accuracy=71.357639	lr=0.000100
+Epoch[022] Batch [0949]/[1320]	Speed: 291.769751 samples/sec	accuracy=71.328125	lr=0.000100
+Epoch[022] Batch [0999]/[1320]	Speed: 293.015744 samples/sec	accuracy=71.374219	lr=0.000100
+Epoch[022] Batch [1049]/[1320]	Speed: 291.572732 samples/sec	accuracy=71.361607	lr=0.000100
+Epoch[022] Batch [1099]/[1320]	Speed: 289.239542 samples/sec	accuracy=71.426136	lr=0.000100
+Epoch[022] Batch [1149]/[1320]	Speed: 291.252418 samples/sec	accuracy=71.400815	lr=0.000100
+Epoch[022] Batch [1199]/[1320]	Speed: 295.264350 samples/sec	accuracy=71.400391	lr=0.000100
+Epoch[022] Batch [1249]/[1320]	Speed: 291.062188 samples/sec	accuracy=71.364375	lr=0.000100
+Epoch[022] Batch [1299]/[1320]	Speed: 294.817770 samples/sec	accuracy=71.372596	lr=0.000100
+Batch [0049]/[0193]: evaluated
+Batch [0099]/[0193]: evaluated
+Batch [0149]/[0193]: evaluated
+[Epoch 022] training: accuracy=71.386719
+[Epoch 022] speed: 288 samples/sec	time cost: 647.934550
+[Epoch 022] validation: acc-top1=34.439767 acc-top5=65.539994
+wrote 2 events to disk
+Epoch[023] Batch [0049]/[1320]	Speed: 223.488447 samples/sec	accuracy=70.656250	lr=0.000100
+Epoch[023] Batch [0099]/[1320]	Speed: 291.845939 samples/sec	accuracy=71.679688	lr=0.000100
+Epoch[023] Batch [0149]/[1320]	Speed: 294.196431 samples/sec	accuracy=71.677083	lr=0.000100
+Epoch[023] Batch [0199]/[1320]	Speed: 294.198885 samples/sec	accuracy=71.582031	lr=0.000100
+Epoch[023] Batch [0249]/[1320]	Speed: 290.085556 samples/sec	accuracy=71.468750	lr=0.000100
+Epoch[023] Batch [0299]/[1320]	Speed: 291.947704 samples/sec	accuracy=71.385417	lr=0.000100
+Epoch[023] Batch [0349]/[1320]	Speed: 293.352125 samples/sec	accuracy=71.399554	lr=0.000100
+Epoch[023] Batch [0399]/[1320]	Speed: 296.495709 samples/sec	accuracy=71.421875	lr=0.000100
+Epoch[023] Batch [0449]/[1320]	Speed: 292.894435 samples/sec	accuracy=71.409722	lr=0.000100
+Epoch[023] Batch [0499]/[1320]	Speed: 290.651439 samples/sec	accuracy=71.442188	lr=0.000100
+Epoch[023] Batch [0549]/[1320]	Speed: 293.120317 samples/sec	accuracy=71.465909	lr=0.000100
+Epoch[023] Batch [0599]/[1320]	Speed: 294.131547 samples/sec	accuracy=71.423177	lr=0.000100
+Epoch[023] Batch [0649]/[1320]	Speed: 294.174888 samples/sec	accuracy=71.412260	lr=0.000100
+Epoch[023] Batch [0699]/[1320]	Speed: 291.858194 samples/sec	accuracy=71.383929	lr=0.000100
+Epoch[023] Batch [0749]/[1320]	Speed: 293.462470 samples/sec	accuracy=71.413542	lr=0.000100
+Epoch[023] Batch [0799]/[1320]	Speed: 294.367931 samples/sec	accuracy=71.376953	lr=0.000100
+Epoch[023] Batch [0849]/[1320]	Speed: 292.936453 samples/sec	accuracy=71.351103	lr=0.000100
+Epoch[023] Batch [0899]/[1320]	Speed: 292.247391 samples/sec	accuracy=71.348090	lr=0.000100
+Epoch[023] Batch [0949]/[1320]	Speed: 293.200210 samples/sec	accuracy=71.356086	lr=0.000100
+Epoch[023] Batch [0999]/[1320]	Speed: 294.900865 samples/sec	accuracy=71.392969	lr=0.000100
+Epoch[023] Batch [1049]/[1320]	Speed: 289.420778 samples/sec	accuracy=71.401786	lr=0.000100
+Epoch[023] Batch [1099]/[1320]	Speed: 293.689033 samples/sec	accuracy=71.371449	lr=0.000100
+Epoch[023] Batch [1149]/[1320]	Speed: 291.595473 samples/sec	accuracy=71.372283	lr=0.000100
+Epoch[023] Batch [1199]/[1320]	Speed: 294.610658 samples/sec	accuracy=71.367188	lr=0.000100
+Epoch[023] Batch [1249]/[1320]	Speed: 290.541837 samples/sec	accuracy=71.400000	lr=0.000100
+Epoch[023] Batch [1299]/[1320]	Speed: 294.957974 samples/sec	accuracy=71.455529	lr=0.000100
+Batch [0049]/[0193]: evaluated
+Batch [0099]/[0193]: evaluated
+Batch [0149]/[0193]: evaluated
+[Epoch 023] training: accuracy=71.450047
+[Epoch 023] speed: 289 samples/sec	time cost: 646.680670
+[Epoch 023] validation: acc-top1=34.391192 acc-top5=65.487370
+wrote 2 events to disk
+Epoch[024] Batch [0049]/[1319]	Speed: 222.340824 samples/sec	accuracy=72.265625	lr=0.000100
+Epoch[024] Batch [0099]/[1319]	Speed: 293.068432 samples/sec	accuracy=71.609375	lr=0.000100
+Epoch[024] Batch [0149]/[1319]	Speed: 290.078375 samples/sec	accuracy=71.786458	lr=0.000100
+Epoch[024] Batch [0199]/[1319]	Speed: 293.508929 samples/sec	accuracy=71.574219	lr=0.000100
+Epoch[024] Batch [0249]/[1319]	Speed: 294.092787 samples/sec	accuracy=71.746875	lr=0.000100
+Epoch[024] Batch [0299]/[1319]	Speed: 294.937145 samples/sec	accuracy=71.841146	lr=0.000100
+Epoch[024] Batch [0349]/[1319]	Speed: 293.872485 samples/sec	accuracy=71.763393	lr=0.000100
+Epoch[024] Batch [0399]/[1319]	Speed: 291.275090 samples/sec	accuracy=71.660156	lr=0.000100
+Epoch[024] Batch [0449]/[1319]	Speed: 291.898414 samples/sec	accuracy=71.571181	lr=0.000100
+Epoch[024] Batch [0499]/[1319]	Speed: 292.251870 samples/sec	accuracy=71.542187	lr=0.000100
+Epoch[024] Batch [0549]/[1319]	Speed: 293.972970 samples/sec	accuracy=71.590909	lr=0.000100
+Epoch[024] Batch [0599]/[1319]	Speed: 296.224812 samples/sec	accuracy=71.618490	lr=0.000100
+Epoch[024] Batch [0649]/[1319]	Speed: 295.342450 samples/sec	accuracy=71.587740	lr=0.000100
+Epoch[024] Batch [0699]/[1319]	Speed: 293.190305 samples/sec	accuracy=71.607143	lr=0.000100
+Epoch[024] Batch [0749]/[1319]	Speed: 293.850735 samples/sec	accuracy=71.571875	lr=0.000100
+Epoch[024] Batch [0799]/[1319]	Speed: 292.706044 samples/sec	accuracy=71.584961	lr=0.000100
+Epoch[024] Batch [0849]/[1319]	Speed: 295.492999 samples/sec	accuracy=71.586397	lr=0.000100
+Epoch[024] Batch [0899]/[1319]	Speed: 292.021117 samples/sec	accuracy=71.615451	lr=0.000100
+Epoch[024] Batch [0949]/[1319]	Speed: 294.769752 samples/sec	accuracy=71.591283	lr=0.000100
+Epoch[024] Batch [0999]/[1319]	Speed: 295.718289 samples/sec	accuracy=71.597656	lr=0.000100
+Epoch[024] Batch [1049]/[1319]	Speed: 294.319205 samples/sec	accuracy=71.639881	lr=0.000100
+Epoch[024] Batch [1099]/[1319]	Speed: 297.023104 samples/sec	accuracy=71.620739	lr=0.000100
+Epoch[024] Batch [1149]/[1319]	Speed: 294.879695 samples/sec	accuracy=71.603940	lr=0.000100
+Epoch[024] Batch [1199]/[1319]	Speed: 296.531967 samples/sec	accuracy=71.581380	lr=0.000100
+Epoch[024] Batch [1249]/[1319]	Speed: 294.397868 samples/sec	accuracy=71.603125	lr=0.000100
+Epoch[024] Batch [1299]/[1319]	Speed: 297.574858 samples/sec	accuracy=71.587740	lr=0.000100
+Batch [0049]/[0193]: evaluated
+Batch [0099]/[0193]: evaluated
+Batch [0149]/[0193]: evaluated
+[Epoch 024] training: accuracy=71.600171
+[Epoch 024] speed: 290 samples/sec	time cost: 643.278001
+[Epoch 024] validation: acc-top1=34.350712 acc-top5=65.475227
+wrote 2 events to disk
+Epoch[025] Batch [0049]/[1320]	Speed: 219.067834 samples/sec	accuracy=72.156250	lr=0.000100
+Epoch[025] Batch [0099]/[1320]	Speed: 295.696314 samples/sec	accuracy=71.882812	lr=0.000100
+Epoch[025] Batch [0149]/[1320]	Speed: 296.994261 samples/sec	accuracy=72.229167	lr=0.000100
+Epoch[025] Batch [0199]/[1320]	Speed: 296.100489 samples/sec	accuracy=72.031250	lr=0.000100
+Epoch[025] Batch [0249]/[1320]	Speed: 292.126494 samples/sec	accuracy=72.040625	lr=0.000100
+Epoch[025] Batch [0299]/[1320]	Speed: 294.854557 samples/sec	accuracy=71.828125	lr=0.000100
+Epoch[025] Batch [0349]/[1320]	Speed: 297.008404 samples/sec	accuracy=71.839286	lr=0.000100
+Epoch[025] Batch [0399]/[1320]	Speed: 296.587480 samples/sec	accuracy=71.822266	lr=0.000100
+Epoch[025] Batch [0449]/[1320]	Speed: 294.036239 samples/sec	accuracy=71.805556	lr=0.000100
+Epoch[025] Batch [0499]/[1320]	Speed: 294.961931 samples/sec	accuracy=71.889062	lr=0.000100
+Epoch[025] Batch [0549]/[1320]	Speed: 294.428951 samples/sec	accuracy=71.903409	lr=0.000100
+Epoch[025] Batch [0599]/[1320]	Speed: 294.433453 samples/sec	accuracy=71.893229	lr=0.000100
+Epoch[025] Batch [0649]/[1320]	Speed: 294.491017 samples/sec	accuracy=71.896635	lr=0.000100
+Epoch[025] Batch [0699]/[1320]	Speed: 296.051900 samples/sec	accuracy=71.929688	lr=0.000100
+Epoch[025] Batch [0749]/[1320]	Speed: 296.609306 samples/sec	accuracy=71.901042	lr=0.000100
+Epoch[025] Batch [0799]/[1320]	Speed: 294.194716 samples/sec	accuracy=71.922852	lr=0.000100
+Epoch[025] Batch [0849]/[1320]	Speed: 295.543104 samples/sec	accuracy=71.901654	lr=0.000100
+Epoch[025] Batch [0899]/[1320]	Speed: 296.022664 samples/sec	accuracy=71.896701	lr=0.000100
+Epoch[025] Batch [0949]/[1320]	Speed: 296.482784 samples/sec	accuracy=71.891447	lr=0.000100
+Epoch[025] Batch [0999]/[1320]	Speed: 293.275674 samples/sec	accuracy=71.874219	lr=0.000100
+Epoch[025] Batch [1049]/[1320]	Speed: 295.526149 samples/sec	accuracy=71.890625	lr=0.000100
+Epoch[025] Batch [1099]/[1320]	Speed: 294.498296 samples/sec	accuracy=71.867898	lr=0.000100
+Epoch[025] Batch [1149]/[1320]	Speed: 295.341524 samples/sec	accuracy=71.841033	lr=0.000100
+Epoch[025] Batch [1199]/[1320]	Speed: 297.162506 samples/sec	accuracy=71.827474	lr=0.000100
+Epoch[025] Batch [1249]/[1320]	Speed: 295.470424 samples/sec	accuracy=71.796875	lr=0.000100
+Epoch[025] Batch [1299]/[1320]	Speed: 297.617059 samples/sec	accuracy=71.847356	lr=0.000100
+Batch [0049]/[0193]: evaluated
+Batch [0099]/[0193]: evaluated
+Batch [0149]/[0193]: evaluated
+[Epoch 025] training: accuracy=71.844223
+[Epoch 025] speed: 291 samples/sec	time cost: 642.455804
+[Epoch 025] validation: acc-top1=34.338569 acc-top5=65.507610
+wrote 2 events to disk
+Epoch[026] Batch [0049]/[1320]	Speed: 221.386749 samples/sec	accuracy=71.796875	lr=0.000100
+Epoch[026] Batch [0099]/[1320]	Speed: 293.723881 samples/sec	accuracy=71.804688	lr=0.000100
+Epoch[026] Batch [0149]/[1320]	Speed: 293.971673 samples/sec	accuracy=71.848958	lr=0.000100
+Epoch[026] Batch [0199]/[1320]	Speed: 294.979658 samples/sec	accuracy=71.679688	lr=0.000100
+Epoch[026] Batch [0249]/[1320]	Speed: 294.111463 samples/sec	accuracy=71.765625	lr=0.000100
+Epoch[026] Batch [0299]/[1320]	Speed: 294.571401 samples/sec	accuracy=71.794271	lr=0.000100
+Epoch[026] Batch [0349]/[1320]	Speed: 294.488911 samples/sec	accuracy=71.845982	lr=0.000100
+Epoch[026] Batch [0399]/[1320]	Speed: 295.094636 samples/sec	accuracy=71.687500	lr=0.000100
+Epoch[026] Batch [0449]/[1320]	Speed: 292.164041 samples/sec	accuracy=71.746528	lr=0.000100
+Epoch[026] Batch [0499]/[1320]	Speed: 293.785421 samples/sec	accuracy=71.771875	lr=0.000100
+Epoch[026] Batch [0549]/[1320]	Speed: 293.340502 samples/sec	accuracy=71.765625	lr=0.000100
+Epoch[026] Batch [0599]/[1320]	Speed: 296.687240 samples/sec	accuracy=71.759115	lr=0.000100
+Epoch[026] Batch [0649]/[1320]	Speed: 292.179728 samples/sec	accuracy=71.742788	lr=0.000100
+Epoch[026] Batch [0699]/[1320]	Speed: 294.469007 samples/sec	accuracy=71.735491	lr=0.000100
+Epoch[026] Batch [0749]/[1320]	Speed: 294.189557 samples/sec	accuracy=71.762500	lr=0.000100
+Epoch[026] Batch [0799]/[1320]	Speed: 297.969687 samples/sec	accuracy=71.811523	lr=0.000100
+Epoch[026] Batch [0849]/[1320]	Speed: 293.398675 samples/sec	accuracy=71.816176	lr=0.000100
+Epoch[026] Batch [0899]/[1320]	Speed: 293.264944 samples/sec	accuracy=71.826389	lr=0.000100
+Epoch[026] Batch [0949]/[1320]	Speed: 295.219902 samples/sec	accuracy=71.816612	lr=0.000100
+Epoch[026] Batch [0999]/[1320]	Speed: 294.788689 samples/sec	accuracy=71.805469	lr=0.000100
+Epoch[026] Batch [1049]/[1320]	Speed: 295.653514 samples/sec	accuracy=71.816964	lr=0.000100
+Epoch[026] Batch [1099]/[1320]	Speed: 294.319202 samples/sec	accuracy=71.829545	lr=0.000100
+Epoch[026] Batch [1149]/[1320]	Speed: 294.579120 samples/sec	accuracy=71.829484	lr=0.000100
+Epoch[026] Batch [1199]/[1320]	Speed: 294.312332 samples/sec	accuracy=71.795573	lr=0.000100
+Epoch[026] Batch [1249]/[1320]	Speed: 293.332619 samples/sec	accuracy=71.787500	lr=0.000100
+Epoch[026] Batch [1299]/[1320]	Speed: 295.023856 samples/sec	accuracy=71.796274	lr=0.000100
+Batch [0049]/[0193]: evaluated
+Batch [0099]/[0193]: evaluated
+Batch [0149]/[0193]: evaluated
+[Epoch 026] training: accuracy=71.792732
+[Epoch 026] speed: 290 samples/sec	time cost: 644.586396
+[Epoch 026] validation: acc-top1=34.423575 acc-top5=65.341645
+wrote 2 events to disk
+Epoch[027] Batch [0049]/[1319]	Speed: 210.265300 samples/sec	accuracy=71.921875	lr=0.000100
+Epoch[027] Batch [0099]/[1319]	Speed: 295.352335 samples/sec	accuracy=71.859375	lr=0.000100
+Epoch[027] Batch [0149]/[1319]	Speed: 294.292417 samples/sec	accuracy=71.760417	lr=0.000100
+Epoch[027] Batch [0199]/[1319]	Speed: 291.980999 samples/sec	accuracy=71.671875	lr=0.000100
+Epoch[027] Batch [0249]/[1319]	Speed: 294.510257 samples/sec	accuracy=71.668750	lr=0.000100
+Epoch[027] Batch [0299]/[1319]	Speed: 294.452159 samples/sec	accuracy=71.713542	lr=0.000100
+Epoch[027] Batch [0349]/[1319]	Speed: 292.726855 samples/sec	accuracy=71.725446	lr=0.000100
+Epoch[027] Batch [0399]/[1319]	Speed: 292.754841 samples/sec	accuracy=71.720703	lr=0.000100
+Epoch[027] Batch [0449]/[1319]	Speed: 294.934297 samples/sec	accuracy=71.743056	lr=0.000100
+Epoch[027] Batch [0499]/[1319]	Speed: 294.882688 samples/sec	accuracy=71.745312	lr=0.000100
+Epoch[027] Batch [0549]/[1319]	Speed: 293.442397 samples/sec	accuracy=71.701705	lr=0.000100
+Epoch[027] Batch [0599]/[1319]	Speed: 294.071836 samples/sec	accuracy=71.807292	lr=0.000100
+Epoch[027] Batch [0649]/[1319]	Speed: 294.314381 samples/sec	accuracy=71.897837	lr=0.000100
+Epoch[027] Batch [0699]/[1319]	Speed: 294.764049 samples/sec	accuracy=71.832589	lr=0.000100
+Epoch[027] Batch [0749]/[1319]	Speed: 296.122259 samples/sec	accuracy=71.842708	lr=0.000100
+Epoch[027] Batch [0799]/[1319]	Speed: 295.697956 samples/sec	accuracy=71.833984	lr=0.000100
+Epoch[027] Batch [0849]/[1319]	Speed: 296.469882 samples/sec	accuracy=71.786765	lr=0.000100
+Epoch[027] Batch [0899]/[1319]	Speed: 294.853187 samples/sec	accuracy=71.802951	lr=0.000100
+Epoch[027] Batch [0949]/[1319]	Speed: 292.446692 samples/sec	accuracy=71.787007	lr=0.000100
+Epoch[027] Batch [0999]/[1319]	Speed: 293.985726 samples/sec	accuracy=71.789844	lr=0.000100
+Epoch[027] Batch [1049]/[1319]	Speed: 295.107415 samples/sec	accuracy=71.780506	lr=0.000100
+Epoch[027] Batch [1099]/[1319]	Speed: 293.754789 samples/sec	accuracy=71.731534	lr=0.000100
+Epoch[027] Batch [1149]/[1319]	Speed: 294.151478 samples/sec	accuracy=71.736413	lr=0.000100
+Epoch[027] Batch [1199]/[1319]	Speed: 293.909797 samples/sec	accuracy=71.761068	lr=0.000100
+Epoch[027] Batch [1249]/[1319]	Speed: 293.643808 samples/sec	accuracy=71.812500	lr=0.000100
+Epoch[027] Batch [1299]/[1319]	Speed: 296.411316 samples/sec	accuracy=71.801683	lr=0.000100
+Batch [0049]/[0193]: evaluated
+Batch [0099]/[0193]: evaluated
+Batch [0149]/[0193]: evaluated
+[Epoch 027] training: accuracy=71.819916
+[Epoch 027] speed: 289 samples/sec	time cost: 645.238424
+[Epoch 027] validation: acc-top1=34.273802 acc-top5=65.353789
+wrote 2 events to disk
+Epoch[028] Batch [0049]/[1320]	Speed: 221.060474 samples/sec	accuracy=71.671875	lr=0.000100
+Epoch[028] Batch [0099]/[1320]	Speed: 296.145481 samples/sec	accuracy=71.835938	lr=0.000100
+Epoch[028] Batch [0149]/[1320]	Speed: 292.152476 samples/sec	accuracy=71.875000	lr=0.000100
+Epoch[028] Batch [0199]/[1320]	Speed: 292.605670 samples/sec	accuracy=72.160156	lr=0.000100
+Epoch[028] Batch [0249]/[1320]	Speed: 293.590636 samples/sec	accuracy=72.159375	lr=0.000100
+Epoch[028] Batch [0299]/[1320]	Speed: 293.844434 samples/sec	accuracy=72.135417	lr=0.000100
+Epoch[028] Batch [0349]/[1320]	Speed: 297.189911 samples/sec	accuracy=72.183036	lr=0.000100
+Epoch[028] Batch [0399]/[1320]	Speed: 292.290417 samples/sec	accuracy=72.177734	lr=0.000100
+Epoch[028] Batch [0449]/[1320]	Speed: 292.163646 samples/sec	accuracy=72.086806	lr=0.000100
+Epoch[028] Batch [0499]/[1320]	Speed: 296.247631 samples/sec	accuracy=72.098438	lr=0.000100
+Epoch[028] Batch [0549]/[1320]	Speed: 296.251479 samples/sec	accuracy=72.008523	lr=0.000100
+Epoch[028] Batch [0599]/[1320]	Speed: 295.623663 samples/sec	accuracy=71.962240	lr=0.000100
+Epoch[028] Batch [0649]/[1320]	Speed: 297.074409 samples/sec	accuracy=71.877404	lr=0.000100
+Epoch[028] Batch [0699]/[1320]	Speed: 292.843790 samples/sec	accuracy=71.906250	lr=0.000100
+Epoch[028] Batch [0749]/[1320]	Speed: 294.340676 samples/sec	accuracy=71.958333	lr=0.000100
+Epoch[028] Batch [0799]/[1320]	Speed: 295.343996 samples/sec	accuracy=71.957031	lr=0.000100
+Epoch[028] Batch [0849]/[1320]	Speed: 295.447955 samples/sec	accuracy=71.952206	lr=0.000100
+Epoch[028] Batch [0899]/[1320]	Speed: 296.039401 samples/sec	accuracy=71.938368	lr=0.000100
+Epoch[028] Batch [0949]/[1320]	Speed: 294.148429 samples/sec	accuracy=71.986842	lr=0.000100
+Epoch[028] Batch [0999]/[1320]	Speed: 296.293050 samples/sec	accuracy=71.986719	lr=0.000100
+Epoch[028] Batch [1049]/[1320]	Speed: 292.123995 samples/sec	accuracy=71.973214	lr=0.000100
+Epoch[028] Batch [1099]/[1320]	Speed: 293.381827 samples/sec	accuracy=71.981534	lr=0.000100
+Epoch[028] Batch [1149]/[1320]	Speed: 294.849291 samples/sec	accuracy=71.991848	lr=0.000100
+Epoch[028] Batch [1199]/[1320]	Speed: 294.066498 samples/sec	accuracy=72.000000	lr=0.000100
+Epoch[028] Batch [1249]/[1320]	Speed: 295.231594 samples/sec	accuracy=72.013750	lr=0.000100
+Epoch[028] Batch [1299]/[1320]	Speed: 295.791799 samples/sec	accuracy=71.933894	lr=0.000100
+Batch [0049]/[0193]: evaluated
+Batch [0099]/[0193]: evaluated
+Batch [0149]/[0193]: evaluated
+[Epoch 028] training: accuracy=71.913471
+[Epoch 028] speed: 290 samples/sec	time cost: 643.054460
+[Epoch 028] validation: acc-top1=34.370952 acc-top5=65.378076
+wrote 2 events to disk
+Epoch[029] Batch [0049]/[1319]	Speed: 219.470635 samples/sec	accuracy=71.718750	lr=0.000100
+Epoch[029] Batch [0099]/[1319]	Speed: 293.110747 samples/sec	accuracy=71.750000	lr=0.000100
+Epoch[029] Batch [0149]/[1319]	Speed: 297.631571 samples/sec	accuracy=72.041667	lr=0.000100
+Epoch[029] Batch [0199]/[1319]	Speed: 292.846179 samples/sec	accuracy=72.078125	lr=0.000100
+Epoch[029] Batch [0249]/[1319]	Speed: 296.631024 samples/sec	accuracy=71.981250	lr=0.000100
+Epoch[029] Batch [0299]/[1319]	Speed: 293.684004 samples/sec	accuracy=71.955729	lr=0.000100
+Epoch[029] Batch [0349]/[1319]	Speed: 295.154163 samples/sec	accuracy=72.049107	lr=0.000100
+Epoch[029] Batch [0399]/[1319]	Speed: 294.582363 samples/sec	accuracy=72.011719	lr=0.000100
+Epoch[029] Batch [0449]/[1319]	Speed: 290.450532 samples/sec	accuracy=72.036458	lr=0.000100
+Epoch[029] Batch [0499]/[1319]	Speed: 293.700816 samples/sec	accuracy=72.117188	lr=0.000100
+Epoch[029] Batch [0549]/[1319]	Speed: 292.782630 samples/sec	accuracy=72.029830	lr=0.000100
+Epoch[029] Batch [0599]/[1319]	Speed: 292.581706 samples/sec	accuracy=72.054688	lr=0.000100
+Epoch[029] Batch [0649]/[1319]	Speed: 293.963345 samples/sec	accuracy=72.050481	lr=0.000100
+Epoch[029] Batch [0699]/[1319]	Speed: 293.732613 samples/sec	accuracy=72.032366	lr=0.000100
+Epoch[029] Batch [0749]/[1319]	Speed: 293.204450 samples/sec	accuracy=72.070833	lr=0.000100
+Epoch[029] Batch [0799]/[1319]	Speed: 294.208391 samples/sec	accuracy=72.030273	lr=0.000100
+Epoch[029] Batch [0849]/[1319]	Speed: 294.242462 samples/sec	accuracy=72.055147	lr=0.000100
+Epoch[029] Batch [0899]/[1319]	Speed: 294.535508 samples/sec	accuracy=72.034722	lr=0.000100
+Epoch[029] Batch [0949]/[1319]	Speed: 293.077516 samples/sec	accuracy=72.015625	lr=0.000100
+Epoch[029] Batch [0999]/[1319]	Speed: 293.166194 samples/sec	accuracy=72.054688	lr=0.000100
+Epoch[029] Batch [1049]/[1319]	Speed: 296.074718 samples/sec	accuracy=72.097470	lr=0.000100
+Epoch[029] Batch [1099]/[1319]	Speed: 295.093488 samples/sec	accuracy=72.120028	lr=0.000100
+Epoch[029] Batch [1149]/[1319]	Speed: 294.332611 samples/sec	accuracy=72.116848	lr=0.000100
+Epoch[029] Batch [1199]/[1319]	Speed: 293.746673 samples/sec	accuracy=72.104818	lr=0.000100
+Epoch[029] Batch [1249]/[1319]	Speed: 293.694711 samples/sec	accuracy=72.090000	lr=0.000100
+Epoch[029] Batch [1299]/[1319]	Speed: 299.657670 samples/sec	accuracy=72.084135	lr=0.000100
+Batch [0049]/[0193]: evaluated
+Batch [0099]/[0193]: evaluated
+Batch [0149]/[0193]: evaluated
+[Epoch 029] training: accuracy=72.096522
+[Epoch 029] speed: 290 samples/sec	time cost: 644.550880
+[Epoch 029] validation: acc-top1=34.318329 acc-top5=65.459035
+wrote 2 events to disk
+wrote 1 event to disk

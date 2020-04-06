@@ -1,0 +1,467 @@
+2019-12-20 03:36:14,331 - root - INFO - Namespace(accumulate=4, attention_dropout=0.1, batch_size=32, cpu=None, dataset='126gb', dev_batch_size=32, dropout=0.1, early_stop=None, epochs=3, epsilon=1e-06, gpu=8, log_interval=10, lr=3e-05, lr_decay='linear', max_len=128, model_name='xlnet_cased_l24_h1024_a16', model_parameters=None, only_inference=False, output_dir='./output_dir', pad=True, seed=5, task_name='MNLI', training_steps=10000, warmup_ratio=0.1)
+2019-12-20 03:36:14,331 - root - INFO - Using gradient accumulation. Effective batch size = batch_size * accumulate = 128
+2019-12-20 03:37:08,112 - root - INFO - processing dataset...
+2019-12-20 03:38:01,999 - root - INFO - Namespace(accumulate=4, attention_dropout=0.1, batch_size=32, cpu=None, dataset='126gb', dev_batch_size=32, dropout=0.1, early_stop=None, epochs=3, epsilon=1e-06, gpu=8, log_interval=100, lr=3e-05, lr_decay='linear', max_len=128, model_name='xlnet_cased_l24_h1024_a16', model_parameters=None, only_inference=False, output_dir='./output_dir', pad=True, seed=5, task_name='MNLI', training_steps=10000, warmup_ratio=0.1)
+2019-12-20 03:38:01,999 - root - INFO - Using gradient accumulation. Effective batch size = batch_size * accumulate = 128
+2019-12-20 03:38:47,448 - root - INFO - processing dataset...
+2019-12-20 03:39:28,706 - root - INFO - Now we are doing XLNet classification training on [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)]!
+2019-12-20 03:39:28,721 - root - INFO - training steps=10000.000000s
+2019-12-20 03:41:37,226 - root - INFO - [Epoch 1 Batch 100/12276] loss=1.1177, lr=0.0000007
+2019-12-20 03:43:19,794 - root - INFO - [Epoch 1 Batch 200/12276] loss=1.1120, lr=0.0000015
+2019-12-20 03:45:02,516 - root - INFO - [Epoch 1 Batch 300/12276] loss=1.1033, lr=0.0000022
+2019-12-20 03:46:45,584 - root - INFO - [Epoch 1 Batch 400/12276] loss=1.1075, lr=0.0000030
+2019-12-20 03:48:30,179 - root - INFO - [Epoch 1 Batch 500/12276] loss=1.1022, lr=0.0000037
+2019-12-20 03:50:11,664 - root - INFO - [Epoch 1 Batch 600/12276] loss=1.0979, lr=0.0000045
+2019-12-20 03:51:54,577 - root - INFO - [Epoch 1 Batch 700/12276] loss=1.0956, lr=0.0000052
+2019-12-20 03:53:37,077 - root - INFO - [Epoch 1 Batch 800/12276] loss=1.0868, lr=0.0000060
+2019-12-20 03:55:20,041 - root - INFO - [Epoch 1 Batch 900/12276] loss=1.0762, lr=0.0000067
+2019-12-20 03:57:02,591 - root - INFO - [Epoch 1 Batch 1000/12276] loss=1.0481, lr=0.0000075
+2019-12-20 03:58:46,443 - root - INFO - [Epoch 1 Batch 1100/12276] loss=1.0144, lr=0.0000082
+2019-12-20 04:00:28,765 - root - INFO - [Epoch 1 Batch 1200/12276] loss=0.9591, lr=0.0000090
+2019-12-20 04:02:10,955 - root - INFO - [Epoch 1 Batch 1300/12276] loss=0.8479, lr=0.0000097
+2019-12-20 04:03:54,649 - root - INFO - [Epoch 1 Batch 1400/12276] loss=0.7492, lr=0.0000105
+2019-12-20 04:05:36,754 - root - INFO - [Epoch 1 Batch 1500/12276] loss=0.6518, lr=0.0000112
+2019-12-20 04:07:20,328 - root - INFO - [Epoch 1 Batch 1600/12276] loss=0.5745, lr=0.0000120
+2019-12-20 04:09:02,953 - root - INFO - [Epoch 1 Batch 1700/12276] loss=0.5601, lr=0.0000127
+2019-12-20 04:10:45,662 - root - INFO - [Epoch 1 Batch 1800/12276] loss=0.4986, lr=0.0000135
+2019-12-20 04:12:29,961 - root - INFO - [Epoch 1 Batch 1900/12276] loss=0.5164, lr=0.0000142
+2019-12-20 04:14:13,837 - root - INFO - [Epoch 1 Batch 2000/12276] loss=0.4703, lr=0.0000150
+2019-12-20 04:15:55,873 - root - INFO - [Epoch 1 Batch 2100/12276] loss=0.4615, lr=0.0000157
+2019-12-20 04:17:38,945 - root - INFO - [Epoch 1 Batch 2200/12276] loss=0.4626, lr=0.0000165
+2019-12-20 04:19:22,315 - root - INFO - [Epoch 1 Batch 2300/12276] loss=0.4686, lr=0.0000172
+2019-12-20 04:21:05,047 - root - INFO - [Epoch 1 Batch 2400/12276] loss=0.4585, lr=0.0000180
+2019-12-20 04:22:47,663 - root - INFO - [Epoch 1 Batch 2500/12276] loss=0.4513, lr=0.0000187
+2019-12-20 04:24:30,872 - root - INFO - [Epoch 1 Batch 2600/12276] loss=0.4423, lr=0.0000195
+2019-12-20 04:26:14,248 - root - INFO - [Epoch 1 Batch 2700/12276] loss=0.4479, lr=0.0000202
+2019-12-20 04:27:58,954 - root - INFO - [Epoch 1 Batch 2800/12276] loss=0.4230, lr=0.0000210
+2019-12-20 04:29:41,646 - root - INFO - [Epoch 1 Batch 2900/12276] loss=0.4272, lr=0.0000217
+2019-12-20 04:31:25,159 - root - INFO - [Epoch 1 Batch 3000/12276] loss=0.4320, lr=0.0000225
+2019-12-20 04:33:07,300 - root - INFO - [Epoch 1 Batch 3100/12276] loss=0.4330, lr=0.0000232
+2019-12-20 04:34:50,317 - root - INFO - [Epoch 1 Batch 3200/12276] loss=0.4148, lr=0.0000240
+2019-12-20 04:36:33,177 - root - INFO - [Epoch 1 Batch 3300/12276] loss=0.4307, lr=0.0000247
+2019-12-20 04:38:15,702 - root - INFO - [Epoch 1 Batch 3400/12276] loss=0.4243, lr=0.0000255
+2019-12-20 04:39:57,204 - root - INFO - [Epoch 1 Batch 3500/12276] loss=0.3997, lr=0.0000262
+2019-12-20 04:41:39,305 - root - INFO - [Epoch 1 Batch 3600/12276] loss=0.4047, lr=0.0000270
+2019-12-20 04:43:21,335 - root - INFO - [Epoch 1 Batch 3700/12276] loss=0.3932, lr=0.0000277
+2019-12-20 04:45:03,833 - root - INFO - [Epoch 1 Batch 3800/12276] loss=0.4036, lr=0.0000285
+2019-12-20 04:46:46,004 - root - INFO - [Epoch 1 Batch 3900/12276] loss=0.4037, lr=0.0000292
+2019-12-20 04:48:27,959 - root - INFO - [Epoch 1 Batch 4000/12276] loss=0.3879, lr=0.0000300
+2019-12-20 04:50:09,471 - root - INFO - [Epoch 1 Batch 4100/12276] loss=0.4009, lr=0.0000299
+2019-12-20 04:51:53,780 - root - INFO - [Epoch 1 Batch 4200/12276] loss=0.4057, lr=0.0000298
+2019-12-20 04:53:40,103 - root - INFO - [Epoch 1 Batch 4300/12276] loss=0.4021, lr=0.0000298
+2019-12-20 04:55:23,165 - root - INFO - [Epoch 1 Batch 4400/12276] loss=0.3827, lr=0.0000297
+2019-12-20 04:57:06,702 - root - INFO - [Epoch 1 Batch 4500/12276] loss=0.4097, lr=0.0000296
+2019-12-20 04:58:51,451 - root - INFO - [Epoch 1 Batch 4600/12276] loss=0.3770, lr=0.0000295
+2019-12-20 05:00:35,183 - root - INFO - [Epoch 1 Batch 4700/12276] loss=0.4124, lr=0.0000294
+2019-12-20 05:02:18,657 - root - INFO - [Epoch 1 Batch 4800/12276] loss=0.3600, lr=0.0000293
+2019-12-20 05:04:01,296 - root - INFO - [Epoch 1 Batch 4900/12276] loss=0.3979, lr=0.0000293
+2019-12-20 05:05:44,442 - root - INFO - [Epoch 1 Batch 5000/12276] loss=0.3971, lr=0.0000292
+2019-12-20 05:07:27,829 - root - INFO - [Epoch 1 Batch 5100/12276] loss=0.3686, lr=0.0000291
+2019-12-20 05:09:11,660 - root - INFO - [Epoch 1 Batch 5200/12276] loss=0.3715, lr=0.0000290
+2019-12-20 05:10:55,113 - root - INFO - [Epoch 1 Batch 5300/12276] loss=0.3650, lr=0.0000289
+2019-12-20 05:12:38,407 - root - INFO - [Epoch 1 Batch 5400/12276] loss=0.3798, lr=0.0000288
+2019-12-20 05:14:21,917 - root - INFO - [Epoch 1 Batch 5500/12276] loss=0.3561, lr=0.0000288
+2019-12-20 05:16:05,068 - root - INFO - [Epoch 1 Batch 5600/12276] loss=0.3754, lr=0.0000287
+2019-12-20 05:17:48,564 - root - INFO - [Epoch 1 Batch 5700/12276] loss=0.3707, lr=0.0000286
+2019-12-20 05:19:31,066 - root - INFO - [Epoch 1 Batch 5800/12276] loss=0.3700, lr=0.0000285
+2019-12-20 05:21:13,947 - root - INFO - [Epoch 1 Batch 5900/12276] loss=0.3740, lr=0.0000284
+2019-12-20 05:22:56,827 - root - INFO - [Epoch 1 Batch 6000/12276] loss=0.3734, lr=0.0000283
+2019-12-20 05:24:40,181 - root - INFO - [Epoch 1 Batch 6100/12276] loss=0.3633, lr=0.0000283
+2019-12-20 05:26:23,049 - root - INFO - [Epoch 1 Batch 6200/12276] loss=0.3687, lr=0.0000282
+2019-12-20 05:28:06,179 - root - INFO - [Epoch 1 Batch 6300/12276] loss=0.3523, lr=0.0000281
+2019-12-20 05:29:48,813 - root - INFO - [Epoch 1 Batch 6400/12276] loss=0.3898, lr=0.0000280
+2019-12-20 05:31:31,404 - root - INFO - [Epoch 1 Batch 6500/12276] loss=0.3592, lr=0.0000279
+2019-12-20 05:33:14,298 - root - INFO - [Epoch 1 Batch 6600/12276] loss=0.3549, lr=0.0000278
+2019-12-20 05:34:57,987 - root - INFO - [Epoch 1 Batch 6700/12276] loss=0.3603, lr=0.0000278
+2019-12-20 05:36:40,469 - root - INFO - [Epoch 1 Batch 6800/12276] loss=0.3354, lr=0.0000277
+2019-12-20 05:38:23,148 - root - INFO - [Epoch 1 Batch 6900/12276] loss=0.3498, lr=0.0000276
+2019-12-20 05:40:05,758 - root - INFO - [Epoch 1 Batch 7000/12276] loss=0.3842, lr=0.0000275
+2019-12-20 05:41:48,747 - root - INFO - [Epoch 1 Batch 7100/12276] loss=0.3494, lr=0.0000274
+2019-12-20 05:43:31,862 - root - INFO - [Epoch 1 Batch 7200/12276] loss=0.3491, lr=0.0000273
+2019-12-20 05:45:15,007 - root - INFO - [Epoch 1 Batch 7300/12276] loss=0.3426, lr=0.0000273
+2019-12-20 05:46:59,420 - root - INFO - [Epoch 1 Batch 7400/12276] loss=0.3728, lr=0.0000272
+2019-12-20 05:48:41,964 - root - INFO - [Epoch 1 Batch 7500/12276] loss=0.3673, lr=0.0000271
+2019-12-20 05:50:24,428 - root - INFO - [Epoch 1 Batch 7600/12276] loss=0.3725, lr=0.0000270
+2019-12-20 05:52:08,224 - root - INFO - [Epoch 1 Batch 7700/12276] loss=0.3554, lr=0.0000269
+2019-12-20 05:53:50,932 - root - INFO - [Epoch 1 Batch 7800/12276] loss=0.3472, lr=0.0000268
+2019-12-20 05:55:33,754 - root - INFO - [Epoch 1 Batch 7900/12276] loss=0.3643, lr=0.0000268
+2019-12-20 05:57:16,146 - root - INFO - [Epoch 1 Batch 8000/12276] loss=0.3629, lr=0.0000267
+2019-12-20 05:58:59,481 - root - INFO - [Epoch 1 Batch 8100/12276] loss=0.3375, lr=0.0000266
+2019-12-20 06:00:42,478 - root - INFO - [Epoch 1 Batch 8200/12276] loss=0.3524, lr=0.0000265
+2019-12-20 06:02:26,711 - root - INFO - [Epoch 1 Batch 8300/12276] loss=0.3564, lr=0.0000264
+2019-12-20 06:04:08,986 - root - INFO - [Epoch 1 Batch 8400/12276] loss=0.3348, lr=0.0000263
+2019-12-20 06:05:53,430 - root - INFO - [Epoch 1 Batch 8500/12276] loss=0.3611, lr=0.0000263
+2019-12-20 06:07:36,382 - root - INFO - [Epoch 1 Batch 8600/12276] loss=0.3566, lr=0.0000262
+2019-12-20 06:09:20,171 - root - INFO - [Epoch 1 Batch 8700/12276] loss=0.3699, lr=0.0000261
+2019-12-20 06:11:03,483 - root - INFO - [Epoch 1 Batch 8800/12276] loss=0.3566, lr=0.0000260
+2019-12-20 06:12:47,239 - root - INFO - [Epoch 1 Batch 8900/12276] loss=0.3425, lr=0.0000259
+2019-12-20 06:14:29,253 - root - INFO - [Epoch 1 Batch 9000/12276] loss=0.3316, lr=0.0000258
+2019-12-20 06:16:12,422 - root - INFO - [Epoch 1 Batch 9100/12276] loss=0.3852, lr=0.0000258
+2019-12-20 06:17:55,100 - root - INFO - [Epoch 1 Batch 9200/12276] loss=0.3690, lr=0.0000257
+2019-12-20 06:19:38,801 - root - INFO - [Epoch 1 Batch 9300/12276] loss=0.3558, lr=0.0000256
+2019-12-20 06:21:22,459 - root - INFO - [Epoch 1 Batch 9400/12276] loss=0.3421, lr=0.0000255
+2019-12-20 06:23:06,661 - root - INFO - [Epoch 1 Batch 9500/12276] loss=0.3357, lr=0.0000254
+2019-12-20 06:24:49,100 - root - INFO - [Epoch 1 Batch 9600/12276] loss=0.3513, lr=0.0000253
+2019-12-20 06:26:32,071 - root - INFO - [Epoch 1 Batch 9700/12276] loss=0.3241, lr=0.0000253
+2019-12-20 06:28:15,649 - root - INFO - [Epoch 1 Batch 9800/12276] loss=0.3401, lr=0.0000252
+2019-12-20 06:29:58,511 - root - INFO - [Epoch 1 Batch 9900/12276] loss=0.3350, lr=0.0000251
+2019-12-20 06:31:41,507 - root - INFO - [Epoch 1 Batch 10000/12276] loss=0.3574, lr=0.0000250
+2019-12-20 06:33:24,501 - root - INFO - [Epoch 1 Batch 10100/12276] loss=0.3205, lr=0.0000249
+2019-12-20 06:35:07,081 - root - INFO - [Epoch 1 Batch 10200/12276] loss=0.3422, lr=0.0000248
+2019-12-20 06:36:50,814 - root - INFO - [Epoch 1 Batch 10300/12276] loss=0.3483, lr=0.0000248
+2019-12-20 06:38:32,965 - root - INFO - [Epoch 1 Batch 10400/12276] loss=0.3511, lr=0.0000247
+2019-12-20 06:40:15,691 - root - INFO - [Epoch 1 Batch 10500/12276] loss=0.3383, lr=0.0000246
+2019-12-20 06:41:58,761 - root - INFO - [Epoch 1 Batch 10600/12276] loss=0.3364, lr=0.0000245
+2019-12-20 06:43:40,932 - root - INFO - [Epoch 1 Batch 10700/12276] loss=0.3487, lr=0.0000244
+2019-12-20 06:45:23,494 - root - INFO - [Epoch 1 Batch 10800/12276] loss=0.3180, lr=0.0000243
+2019-12-20 06:47:07,057 - root - INFO - [Epoch 1 Batch 10900/12276] loss=0.3278, lr=0.0000243
+2019-12-20 06:48:49,891 - root - INFO - [Epoch 1 Batch 11000/12276] loss=0.3280, lr=0.0000242
+2019-12-20 06:50:33,074 - root - INFO - [Epoch 1 Batch 11100/12276] loss=0.3216, lr=0.0000241
+2019-12-20 06:52:17,541 - root - INFO - [Epoch 1 Batch 11200/12276] loss=0.3442, lr=0.0000240
+2019-12-20 06:54:00,367 - root - INFO - [Epoch 1 Batch 11300/12276] loss=0.3346, lr=0.0000239
+2019-12-20 06:55:44,055 - root - INFO - [Epoch 1 Batch 11400/12276] loss=0.3334, lr=0.0000238
+2019-12-20 06:57:27,269 - root - INFO - [Epoch 1 Batch 11500/12276] loss=0.3050, lr=0.0000238
+2019-12-20 06:59:10,192 - root - INFO - [Epoch 1 Batch 11600/12276] loss=0.3353, lr=0.0000237
+2019-12-20 07:00:54,338 - root - INFO - [Epoch 1 Batch 11700/12276] loss=0.3228, lr=0.0000236
+2019-12-20 07:02:38,328 - root - INFO - [Epoch 1 Batch 11800/12276] loss=0.3169, lr=0.0000235
+2019-12-20 07:04:22,375 - root - INFO - [Epoch 1 Batch 11900/12276] loss=0.3290, lr=0.0000234
+2019-12-20 07:06:06,283 - root - INFO - [Epoch 1 Batch 12000/12276] loss=0.3172, lr=0.0000233
+2019-12-20 07:07:48,779 - root - INFO - [Epoch 1 Batch 12100/12276] loss=0.3263, lr=0.0000233
+2019-12-20 07:09:31,204 - root - INFO - [Epoch 1 Batch 12200/12276] loss=0.3296, lr=0.0000232
+2019-12-20 07:10:49,575 - root - INFO - Now we are doing evaluation on dev_matched with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2019-12-20 07:11:27,979 - root - INFO - [Batch 100/307] loss=0.2970
+2019-12-20 07:12:05,550 - root - INFO - [Batch 200/307] loss=0.2870
+2019-12-20 07:12:43,241 - root - INFO - [Batch 300/307] loss=0.3181
+2019-12-20 07:12:45,987 - root - INFO - validation metrics:accuracy:0.8918
+2019-12-20 07:12:45,990 - root - INFO - Time cost=116.41s, throughput=84.39 samples/s
+2019-12-20 07:12:45,991 - root - INFO - Now we are doing evaluation on dev_mismatched with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2019-12-20 07:13:24,019 - root - INFO - [Batch 100/308] loss=0.2980
+2019-12-20 07:14:03,535 - root - INFO - [Batch 200/308] loss=0.2988
+2019-12-20 07:14:41,587 - root - INFO - [Batch 300/308] loss=0.2977
+2019-12-20 07:14:44,690 - root - INFO - validation metrics:accuracy:0.8925
+2019-12-20 07:14:44,690 - root - INFO - Time cost=118.70s, throughput=83.03 samples/s
+2019-12-20 07:14:51,967 - root - INFO - params saved in: ./output_dir/model_xlnet_MNLI_0.params
+2019-12-20 07:14:51,977 - root - INFO - Time cost=12922.25s
+2019-12-20 07:16:37,354 - root - INFO - [Epoch 2 Batch 100/12276] loss=0.2341, lr=0.0000230
+2019-12-20 07:18:20,044 - root - INFO - [Epoch 2 Batch 200/12276] loss=0.2363, lr=0.0000229
+2019-12-20 07:20:05,014 - root - INFO - [Epoch 2 Batch 300/12276] loss=0.2451, lr=0.0000229
+2019-12-20 07:21:48,438 - root - INFO - [Epoch 2 Batch 400/12276] loss=0.2353, lr=0.0000228
+2019-12-20 07:23:34,219 - root - INFO - [Epoch 2 Batch 500/12276] loss=0.2367, lr=0.0000227
+2019-12-20 07:25:18,834 - root - INFO - [Epoch 2 Batch 600/12276] loss=0.2519, lr=0.0000226
+2019-12-20 07:27:01,755 - root - INFO - [Epoch 2 Batch 700/12276] loss=0.2391, lr=0.0000225
+2019-12-20 07:28:46,048 - root - INFO - [Epoch 2 Batch 800/12276] loss=0.2217, lr=0.0000224
+2019-12-20 07:30:30,599 - root - INFO - [Epoch 2 Batch 900/12276] loss=0.2393, lr=0.0000224
+2019-12-20 07:32:14,498 - root - INFO - [Epoch 2 Batch 1000/12276] loss=0.2331, lr=0.0000223
+2019-12-20 07:33:59,467 - root - INFO - [Epoch 2 Batch 1100/12276] loss=0.2469, lr=0.0000222
+2019-12-20 07:35:43,376 - root - INFO - [Epoch 2 Batch 1200/12276] loss=0.2298, lr=0.0000221
+2019-12-20 07:37:27,102 - root - INFO - [Epoch 2 Batch 1300/12276] loss=0.2585, lr=0.0000220
+2019-12-20 07:39:10,900 - root - INFO - [Epoch 2 Batch 1400/12276] loss=0.2412, lr=0.0000219
+2019-12-20 07:40:56,467 - root - INFO - [Epoch 2 Batch 1500/12276] loss=0.2534, lr=0.0000219
+2019-12-20 07:42:40,285 - root - INFO - [Epoch 2 Batch 1600/12276] loss=0.2248, lr=0.0000218
+2019-12-20 07:44:24,461 - root - INFO - [Epoch 2 Batch 1700/12276] loss=0.2621, lr=0.0000217
+2019-12-20 07:46:08,037 - root - INFO - [Epoch 2 Batch 1800/12276] loss=0.2196, lr=0.0000216
+2019-12-20 07:47:51,525 - root - INFO - [Epoch 2 Batch 1900/12276] loss=0.2378, lr=0.0000215
+2019-12-20 07:49:36,813 - root - INFO - [Epoch 2 Batch 2000/12276] loss=0.2642, lr=0.0000214
+2019-12-20 07:51:21,675 - root - INFO - [Epoch 2 Batch 2100/12276] loss=0.2547, lr=0.0000214
+2019-12-20 07:53:05,953 - root - INFO - [Epoch 2 Batch 2200/12276] loss=0.2421, lr=0.0000213
+2019-12-20 07:54:51,829 - root - INFO - [Epoch 2 Batch 2300/12276] loss=0.2650, lr=0.0000212
+2019-12-20 07:56:37,049 - root - INFO - [Epoch 2 Batch 2400/12276] loss=0.2435, lr=0.0000211
+2019-12-20 07:58:22,401 - root - INFO - [Epoch 2 Batch 2500/12276] loss=0.2293, lr=0.0000210
+2019-12-20 08:00:06,309 - root - INFO - [Epoch 2 Batch 2600/12276] loss=0.2445, lr=0.0000209
+2019-12-20 08:01:51,616 - root - INFO - [Epoch 2 Batch 2700/12276] loss=0.2360, lr=0.0000209
+2019-12-20 08:03:37,394 - root - INFO - [Epoch 2 Batch 2800/12276] loss=0.2347, lr=0.0000208
+2019-12-20 08:05:22,508 - root - INFO - [Epoch 2 Batch 2900/12276] loss=0.2577, lr=0.0000207
+2019-12-20 08:07:07,925 - root - INFO - [Epoch 2 Batch 3000/12276] loss=0.2218, lr=0.0000206
+2019-12-20 08:08:51,932 - root - INFO - [Epoch 2 Batch 3100/12276] loss=0.2322, lr=0.0000205
+2019-12-20 08:10:35,691 - root - INFO - [Epoch 2 Batch 3200/12276] loss=0.2326, lr=0.0000204
+2019-12-20 08:12:19,857 - root - INFO - [Epoch 2 Batch 3300/12276] loss=0.2676, lr=0.0000204
+2019-12-20 08:14:04,319 - root - INFO - [Epoch 2 Batch 3400/12276] loss=0.2588, lr=0.0000203
+2019-12-20 08:15:48,461 - root - INFO - [Epoch 2 Batch 3500/12276] loss=0.2361, lr=0.0000202
+2019-12-20 08:17:33,851 - root - INFO - [Epoch 2 Batch 3600/12276] loss=0.2517, lr=0.0000201
+2019-12-20 08:19:18,356 - root - INFO - [Epoch 2 Batch 3700/12276] loss=0.2643, lr=0.0000200
+2019-12-20 08:21:03,428 - root - INFO - [Epoch 2 Batch 3800/12276] loss=0.2517, lr=0.0000199
+2019-12-20 08:22:48,356 - root - INFO - [Epoch 2 Batch 3900/12276] loss=0.2483, lr=0.0000199
+2019-12-20 08:24:32,624 - root - INFO - [Epoch 2 Batch 4000/12276] loss=0.2600, lr=0.0000198
+2019-12-20 08:26:17,728 - root - INFO - [Epoch 2 Batch 4100/12276] loss=0.2408, lr=0.0000197
+2019-12-20 08:28:01,957 - root - INFO - [Epoch 2 Batch 4200/12276] loss=0.2701, lr=0.0000196
+2019-12-20 08:29:46,913 - root - INFO - [Epoch 2 Batch 4300/12276] loss=0.2345, lr=0.0000195
+2019-12-20 08:31:32,344 - root - INFO - [Epoch 2 Batch 4400/12276] loss=0.2240, lr=0.0000194
+2019-12-20 08:33:16,534 - root - INFO - [Epoch 2 Batch 4500/12276] loss=0.2602, lr=0.0000194
+2019-12-20 08:35:01,877 - root - INFO - [Epoch 2 Batch 4600/12276] loss=0.2336, lr=0.0000193
+2019-12-20 08:36:45,969 - root - INFO - [Epoch 2 Batch 4700/12276] loss=0.2356, lr=0.0000192
+2019-12-20 08:38:31,815 - root - INFO - [Epoch 2 Batch 4800/12276] loss=0.2328, lr=0.0000191
+2019-12-20 08:40:16,220 - root - INFO - [Epoch 2 Batch 4900/12276] loss=0.2401, lr=0.0000190
+2019-12-20 08:42:00,150 - root - INFO - [Epoch 2 Batch 5000/12276] loss=0.2356, lr=0.0000189
+2019-12-20 08:43:44,651 - root - INFO - [Epoch 2 Batch 5100/12276] loss=0.2436, lr=0.0000189
+2019-12-20 08:45:30,198 - root - INFO - [Epoch 2 Batch 5200/12276] loss=0.2567, lr=0.0000188
+2019-12-20 08:47:14,426 - root - INFO - [Epoch 2 Batch 5300/12276] loss=0.2552, lr=0.0000187
+2019-12-20 08:48:58,039 - root - INFO - [Epoch 2 Batch 5400/12276] loss=0.2624, lr=0.0000186
+2019-12-20 08:50:42,552 - root - INFO - [Epoch 2 Batch 5500/12276] loss=0.2468, lr=0.0000185
+2019-12-20 08:52:27,485 - root - INFO - [Epoch 2 Batch 5600/12276] loss=0.2327, lr=0.0000184
+2019-12-20 08:54:11,961 - root - INFO - [Epoch 2 Batch 5700/12276] loss=0.2487, lr=0.0000184
+2019-12-20 08:55:56,066 - root - INFO - [Epoch 2 Batch 5800/12276] loss=0.2355, lr=0.0000183
+2019-12-20 08:57:42,588 - root - INFO - [Epoch 2 Batch 5900/12276] loss=0.2406, lr=0.0000182
+2019-12-20 08:59:26,912 - root - INFO - [Epoch 2 Batch 6000/12276] loss=0.2354, lr=0.0000181
+2019-12-20 09:01:11,476 - root - INFO - [Epoch 2 Batch 6100/12276] loss=0.2579, lr=0.0000180
+2019-12-20 09:02:56,295 - root - INFO - [Epoch 2 Batch 6200/12276] loss=0.2369, lr=0.0000179
+2019-12-20 09:04:42,697 - root - INFO - [Epoch 2 Batch 6300/12276] loss=0.2434, lr=0.0000179
+2019-12-20 09:06:27,613 - root - INFO - [Epoch 2 Batch 6400/12276] loss=0.2359, lr=0.0000178
+2019-12-20 09:08:13,260 - root - INFO - [Epoch 2 Batch 6500/12276] loss=0.2278, lr=0.0000177
+2019-12-20 09:09:57,978 - root - INFO - [Epoch 2 Batch 6600/12276] loss=0.2470, lr=0.0000176
+2019-12-20 09:11:43,163 - root - INFO - [Epoch 2 Batch 6700/12276] loss=0.2347, lr=0.0000175
+2019-12-20 09:13:28,015 - root - INFO - [Epoch 2 Batch 6800/12276] loss=0.2343, lr=0.0000174
+2019-12-20 09:15:12,775 - root - INFO - [Epoch 2 Batch 6900/12276] loss=0.2447, lr=0.0000174
+2019-12-20 09:16:56,957 - root - INFO - [Epoch 2 Batch 7000/12276] loss=0.2491, lr=0.0000173
+2019-12-20 09:18:42,262 - root - INFO - [Epoch 2 Batch 7100/12276] loss=0.2404, lr=0.0000172
+2019-12-20 09:20:27,898 - root - INFO - [Epoch 2 Batch 7200/12276] loss=0.2488, lr=0.0000171
+2019-12-20 09:22:13,069 - root - INFO - [Epoch 2 Batch 7300/12276] loss=0.2429, lr=0.0000170
+2019-12-20 09:23:57,209 - root - INFO - [Epoch 2 Batch 7400/12276] loss=0.2349, lr=0.0000169
+2019-12-20 09:25:43,525 - root - INFO - [Epoch 2 Batch 7500/12276] loss=0.2295, lr=0.0000169
+2019-12-20 09:27:29,584 - root - INFO - [Epoch 2 Batch 7600/12276] loss=0.2277, lr=0.0000168
+2019-12-20 09:29:14,306 - root - INFO - [Epoch 2 Batch 7700/12276] loss=0.2352, lr=0.0000167
+2019-12-20 09:30:58,115 - root - INFO - [Epoch 2 Batch 7800/12276] loss=0.2387, lr=0.0000166
+2019-12-20 09:32:43,355 - root - INFO - [Epoch 2 Batch 7900/12276] loss=0.2323, lr=0.0000165
+2019-12-20 09:34:29,317 - root - INFO - [Epoch 2 Batch 8000/12276] loss=0.2361, lr=0.0000164
+2019-12-20 09:36:14,005 - root - INFO - [Epoch 2 Batch 8100/12276] loss=0.2355, lr=0.0000164
+2019-12-20 09:37:59,972 - root - INFO - [Epoch 2 Batch 8200/12276] loss=0.2281, lr=0.0000163
+2019-12-20 09:39:44,770 - root - INFO - [Epoch 2 Batch 8300/12276] loss=0.2257, lr=0.0000162
+2019-12-20 09:41:30,383 - root - INFO - [Epoch 2 Batch 8400/12276] loss=0.2691, lr=0.0000161
+2019-12-20 09:43:15,689 - root - INFO - [Epoch 2 Batch 8500/12276] loss=0.2439, lr=0.0000160
+2019-12-20 09:45:01,034 - root - INFO - [Epoch 2 Batch 8600/12276] loss=0.2359, lr=0.0000159
+2019-12-20 09:46:45,852 - root - INFO - [Epoch 2 Batch 8700/12276] loss=0.2275, lr=0.0000159
+2019-12-20 09:48:29,376 - root - INFO - [Epoch 2 Batch 8800/12276] loss=0.2142, lr=0.0000158
+2019-12-20 09:50:15,120 - root - INFO - [Epoch 2 Batch 8900/12276] loss=0.2320, lr=0.0000157
+2019-12-20 09:52:00,273 - root - INFO - [Epoch 2 Batch 9000/12276] loss=0.2480, lr=0.0000156
+2019-12-20 09:53:44,625 - root - INFO - [Epoch 2 Batch 9100/12276] loss=0.2504, lr=0.0000155
+2019-12-20 09:55:29,092 - root - INFO - [Epoch 2 Batch 9200/12276] loss=0.2330, lr=0.0000154
+2019-12-20 09:57:15,253 - root - INFO - [Epoch 2 Batch 9300/12276] loss=0.2063, lr=0.0000154
+2019-12-20 09:59:00,130 - root - INFO - [Epoch 2 Batch 9400/12276] loss=0.2091, lr=0.0000153
+2019-12-20 10:00:45,456 - root - INFO - [Epoch 2 Batch 9500/12276] loss=0.2399, lr=0.0000152
+2019-12-20 10:02:31,041 - root - INFO - [Epoch 2 Batch 9600/12276] loss=0.2134, lr=0.0000151
+2019-12-20 10:04:16,735 - root - INFO - [Epoch 2 Batch 9700/12276] loss=0.2556, lr=0.0000150
+2019-12-20 10:06:02,164 - root - INFO - [Epoch 2 Batch 9800/12276] loss=0.2381, lr=0.0000149
+2019-12-20 10:07:47,953 - root - INFO - [Epoch 2 Batch 9900/12276] loss=0.2244, lr=0.0000149
+2019-12-20 10:09:32,024 - root - INFO - [Epoch 2 Batch 10000/12276] loss=0.2453, lr=0.0000148
+2019-12-20 10:11:17,023 - root - INFO - [Epoch 2 Batch 10100/12276] loss=0.2276, lr=0.0000147
+2019-12-20 10:13:02,123 - root - INFO - [Epoch 2 Batch 10200/12276] loss=0.2351, lr=0.0000146
+2019-12-20 10:14:46,681 - root - INFO - [Epoch 2 Batch 10300/12276] loss=0.2219, lr=0.0000145
+2019-12-20 10:16:31,198 - root - INFO - [Epoch 2 Batch 10400/12276] loss=0.2176, lr=0.0000144
+2019-12-20 10:18:15,761 - root - INFO - [Epoch 2 Batch 10500/12276] loss=0.2286, lr=0.0000144
+2019-12-20 10:20:01,447 - root - INFO - [Epoch 2 Batch 10600/12276] loss=0.2370, lr=0.0000143
+2019-12-20 10:21:47,314 - root - INFO - [Epoch 2 Batch 10700/12276] loss=0.2370, lr=0.0000142
+2019-12-20 10:23:32,740 - root - INFO - [Epoch 2 Batch 10800/12276] loss=0.2480, lr=0.0000141
+2019-12-20 10:25:18,241 - root - INFO - [Epoch 2 Batch 10900/12276] loss=0.2348, lr=0.0000140
+2019-12-20 10:27:02,458 - root - INFO - [Epoch 2 Batch 11000/12276] loss=0.2330, lr=0.0000139
+2019-12-20 10:28:46,796 - root - INFO - [Epoch 2 Batch 11100/12276] loss=0.2248, lr=0.0000139
+2019-12-20 10:30:30,182 - root - INFO - [Epoch 2 Batch 11200/12276] loss=0.2312, lr=0.0000138
+2019-12-20 10:32:16,033 - root - INFO - [Epoch 2 Batch 11300/12276] loss=0.2234, lr=0.0000137
+2019-12-20 10:34:00,189 - root - INFO - [Epoch 2 Batch 11400/12276] loss=0.2235, lr=0.0000136
+2019-12-20 10:35:44,684 - root - INFO - [Epoch 2 Batch 11500/12276] loss=0.2241, lr=0.0000135
+2019-12-20 10:37:28,632 - root - INFO - [Epoch 2 Batch 11600/12276] loss=0.2415, lr=0.0000134
+2019-12-20 10:39:14,379 - root - INFO - [Epoch 2 Batch 11700/12276] loss=0.2465, lr=0.0000134
+2019-12-20 10:40:58,261 - root - INFO - [Epoch 2 Batch 11800/12276] loss=0.2163, lr=0.0000133
+2019-12-20 10:42:43,057 - root - INFO - [Epoch 2 Batch 11900/12276] loss=0.2149, lr=0.0000132
+2019-12-20 10:44:28,122 - root - INFO - [Epoch 2 Batch 12000/12276] loss=0.2272, lr=0.0000131
+2019-12-20 10:46:13,155 - root - INFO - [Epoch 2 Batch 12100/12276] loss=0.2389, lr=0.0000130
+2019-12-20 10:47:58,494 - root - INFO - [Epoch 2 Batch 12200/12276] loss=0.2417, lr=0.0000129
+2019-12-20 10:49:18,532 - root - INFO - Now we are doing evaluation on dev_matched with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2019-12-20 10:49:56,998 - root - INFO - [Batch 100/307] loss=0.2891
+2019-12-20 10:50:34,976 - root - INFO - [Batch 200/307] loss=0.2696
+2019-12-20 10:51:13,984 - root - INFO - [Batch 300/307] loss=0.3072
+2019-12-20 10:51:16,844 - root - INFO - validation metrics:accuracy:0.8993
+2019-12-20 10:51:16,844 - root - INFO - Time cost=118.31s, throughput=83.03 samples/s
+2019-12-20 10:51:16,844 - root - INFO - Now we are doing evaluation on dev_mismatched with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2019-12-20 10:51:54,930 - root - INFO - [Batch 100/308] loss=0.2816
+2019-12-20 10:52:33,235 - root - INFO - [Batch 200/308] loss=0.2879
+2019-12-20 10:53:11,009 - root - INFO - [Batch 300/308] loss=0.3071
+2019-12-20 10:53:14,129 - root - INFO - validation metrics:accuracy:0.8991
+2019-12-20 10:53:14,129 - root - INFO - Time cost=117.28s, throughput=84.04 samples/s
+2019-12-20 10:53:21,967 - root - INFO - params saved in: ./output_dir/model_xlnet_MNLI_1.params
+2019-12-20 10:53:21,970 - root - INFO - Time cost=13109.99s
+2019-12-20 10:55:05,717 - root - INFO - [Epoch 3 Batch 100/12276] loss=0.1482, lr=0.0000128
+2019-12-20 10:56:49,728 - root - INFO - [Epoch 3 Batch 200/12276] loss=0.1383, lr=0.0000127
+2019-12-20 10:58:33,948 - root - INFO - [Epoch 3 Batch 300/12276] loss=0.1534, lr=0.0000126
+2019-12-20 11:00:18,261 - root - INFO - [Epoch 3 Batch 400/12276] loss=0.1322, lr=0.0000125
+2019-12-20 11:02:03,323 - root - INFO - [Epoch 3 Batch 500/12276] loss=0.1248, lr=0.0000125
+2019-12-20 11:03:49,083 - root - INFO - [Epoch 3 Batch 600/12276] loss=0.1190, lr=0.0000124
+2019-12-20 11:05:35,425 - root - INFO - [Epoch 3 Batch 700/12276] loss=0.1514, lr=0.0000123
+2019-12-20 11:07:20,752 - root - INFO - [Epoch 3 Batch 800/12276] loss=0.1356, lr=0.0000122
+2019-12-20 11:09:05,774 - root - INFO - [Epoch 3 Batch 900/12276] loss=0.1456, lr=0.0000121
+2019-12-20 11:10:50,436 - root - INFO - [Epoch 3 Batch 1000/12276] loss=0.1306, lr=0.0000120
+2019-12-20 11:12:36,055 - root - INFO - [Epoch 3 Batch 1100/12276] loss=0.1416, lr=0.0000120
+2019-12-20 11:14:21,741 - root - INFO - [Epoch 3 Batch 1200/12276] loss=0.1471, lr=0.0000119
+2019-12-20 11:16:05,984 - root - INFO - [Epoch 3 Batch 1300/12276] loss=0.1405, lr=0.0000118
+2019-12-20 11:17:50,182 - root - INFO - [Epoch 3 Batch 1400/12276] loss=0.1191, lr=0.0000117
+2019-12-20 11:19:33,995 - root - INFO - [Epoch 3 Batch 1500/12276] loss=0.1461, lr=0.0000116
+2019-12-20 11:21:17,465 - root - INFO - [Epoch 3 Batch 1600/12276] loss=0.1469, lr=0.0000115
+2019-12-20 11:23:02,159 - root - INFO - [Epoch 3 Batch 1700/12276] loss=0.1390, lr=0.0000115
+2019-12-20 11:24:45,914 - root - INFO - [Epoch 3 Batch 1800/12276] loss=0.1488, lr=0.0000114
+2019-12-20 11:26:31,657 - root - INFO - [Epoch 3 Batch 1900/12276] loss=0.1389, lr=0.0000113
+2019-12-20 11:28:16,922 - root - INFO - [Epoch 3 Batch 2000/12276] loss=0.1398, lr=0.0000112
+2019-12-20 11:30:01,896 - root - INFO - [Epoch 3 Batch 2100/12276] loss=0.1437, lr=0.0000111
+2019-12-20 11:31:45,588 - root - INFO - [Epoch 3 Batch 2200/12276] loss=0.1497, lr=0.0000110
+2019-12-20 11:33:30,067 - root - INFO - [Epoch 3 Batch 2300/12276] loss=0.1369, lr=0.0000110
+2019-12-20 11:35:15,730 - root - INFO - [Epoch 3 Batch 2400/12276] loss=0.1434, lr=0.0000109
+2019-12-20 11:37:00,354 - root - INFO - [Epoch 3 Batch 2500/12276] loss=0.1490, lr=0.0000108
+2019-12-20 11:38:45,062 - root - INFO - [Epoch 3 Batch 2600/12276] loss=0.1272, lr=0.0000107
+2019-12-20 11:40:29,173 - root - INFO - [Epoch 3 Batch 2700/12276] loss=0.1425, lr=0.0000106
+2019-12-20 11:42:15,335 - root - INFO - [Epoch 3 Batch 2800/12276] loss=0.1466, lr=0.0000105
+2019-12-20 11:44:00,793 - root - INFO - [Epoch 3 Batch 2900/12276] loss=0.1235, lr=0.0000105
+2019-12-20 11:45:45,336 - root - INFO - [Epoch 3 Batch 3000/12276] loss=0.1450, lr=0.0000104
+2019-12-20 11:47:29,926 - root - INFO - [Epoch 3 Batch 3100/12276] loss=0.1464, lr=0.0000103
+2019-12-20 11:49:15,986 - root - INFO - [Epoch 3 Batch 3200/12276] loss=0.1128, lr=0.0000102
+2019-12-20 11:51:02,583 - root - INFO - [Epoch 3 Batch 3300/12276] loss=0.1308, lr=0.0000101
+2019-12-20 11:52:47,594 - root - INFO - [Epoch 3 Batch 3400/12276] loss=0.1286, lr=0.0000100
+2019-12-20 11:54:32,724 - root - INFO - [Epoch 3 Batch 3500/12276] loss=0.1385, lr=0.0000100
+2019-12-20 11:56:17,778 - root - INFO - [Epoch 3 Batch 3600/12276] loss=0.1452, lr=0.0000099
+2019-12-20 11:58:02,048 - root - INFO - [Epoch 3 Batch 3700/12276] loss=0.1553, lr=0.0000098
+2019-12-20 11:59:46,907 - root - INFO - [Epoch 3 Batch 3800/12276] loss=0.1509, lr=0.0000097
+2019-12-20 12:01:31,378 - root - INFO - [Epoch 3 Batch 3900/12276] loss=0.1285, lr=0.0000096
+2019-12-20 12:03:15,274 - root - INFO - [Epoch 3 Batch 4000/12276] loss=0.1371, lr=0.0000095
+2019-12-20 12:04:59,029 - root - INFO - [Epoch 3 Batch 4100/12276] loss=0.1306, lr=0.0000095
+2019-12-20 12:06:44,332 - root - INFO - [Epoch 3 Batch 4200/12276] loss=0.1315, lr=0.0000094
+2019-12-20 12:08:27,752 - root - INFO - [Epoch 3 Batch 4300/12276] loss=0.1329, lr=0.0000093
+2019-12-20 12:10:12,411 - root - INFO - [Epoch 3 Batch 4400/12276] loss=0.1464, lr=0.0000092
+2019-12-20 12:11:57,477 - root - INFO - [Epoch 3 Batch 4500/12276] loss=0.1404, lr=0.0000091
+2019-12-20 12:13:41,845 - root - INFO - [Epoch 3 Batch 4600/12276] loss=0.1454, lr=0.0000090
+2019-12-20 12:15:26,294 - root - INFO - [Epoch 3 Batch 4700/12276] loss=0.1538, lr=0.0000090
+2019-12-20 12:17:10,548 - root - INFO - [Epoch 3 Batch 4800/12276] loss=0.1450, lr=0.0000089
+2019-12-20 12:18:56,907 - root - INFO - [Epoch 3 Batch 4900/12276] loss=0.1465, lr=0.0000088
+2019-12-20 12:20:41,339 - root - INFO - [Epoch 3 Batch 5000/12276] loss=0.1501, lr=0.0000087
+2019-12-20 12:22:26,225 - root - INFO - [Epoch 3 Batch 5100/12276] loss=0.1517, lr=0.0000086
+2019-12-20 12:24:11,093 - root - INFO - [Epoch 3 Batch 5200/12276] loss=0.1156, lr=0.0000085
+2019-12-20 12:25:55,494 - root - INFO - [Epoch 3 Batch 5300/12276] loss=0.1331, lr=0.0000085
+2019-12-20 12:27:40,114 - root - INFO - [Epoch 3 Batch 5400/12276] loss=0.1496, lr=0.0000084
+2019-12-20 12:29:25,756 - root - INFO - [Epoch 3 Batch 5500/12276] loss=0.1322, lr=0.0000083
+2019-12-20 12:31:10,474 - root - INFO - [Epoch 3 Batch 5600/12276] loss=0.1396, lr=0.0000082
+2019-12-20 12:32:54,686 - root - INFO - [Epoch 3 Batch 5700/12276] loss=0.1417, lr=0.0000081
+2019-12-20 12:34:40,939 - root - INFO - [Epoch 3 Batch 5800/12276] loss=0.1271, lr=0.0000080
+2019-12-20 12:36:25,395 - root - INFO - [Epoch 3 Batch 5900/12276] loss=0.1300, lr=0.0000080
+2019-12-20 12:38:11,448 - root - INFO - [Epoch 3 Batch 6000/12276] loss=0.1298, lr=0.0000079
+2019-12-20 12:39:56,194 - root - INFO - [Epoch 3 Batch 6100/12276] loss=0.1296, lr=0.0000078
+2019-12-20 12:41:41,387 - root - INFO - [Epoch 3 Batch 6200/12276] loss=0.1361, lr=0.0000077
+2019-12-20 12:43:25,943 - root - INFO - [Epoch 3 Batch 6300/12276] loss=0.1210, lr=0.0000076
+2019-12-20 12:45:11,663 - root - INFO - [Epoch 3 Batch 6400/12276] loss=0.1236, lr=0.0000075
+2019-12-20 12:46:56,882 - root - INFO - [Epoch 3 Batch 6500/12276] loss=0.1372, lr=0.0000075
+2019-12-20 12:48:42,558 - root - INFO - [Epoch 3 Batch 6600/12276] loss=0.1263, lr=0.0000074
+2019-12-20 12:50:28,063 - root - INFO - [Epoch 3 Batch 6700/12276] loss=0.1285, lr=0.0000073
+2019-12-20 12:52:12,993 - root - INFO - [Epoch 3 Batch 6800/12276] loss=0.1342, lr=0.0000072
+2019-12-20 12:53:57,728 - root - INFO - [Epoch 3 Batch 6900/12276] loss=0.1451, lr=0.0000071
+2019-12-20 12:55:43,242 - root - INFO - [Epoch 3 Batch 7000/12276] loss=0.1488, lr=0.0000070
+2019-12-20 12:57:27,575 - root - INFO - [Epoch 3 Batch 7100/12276] loss=0.1347, lr=0.0000070
+2019-12-20 12:59:12,689 - root - INFO - [Epoch 3 Batch 7200/12276] loss=0.1230, lr=0.0000069
+2019-12-20 13:00:56,406 - root - INFO - [Epoch 3 Batch 7300/12276] loss=0.1340, lr=0.0000068
+2019-12-20 13:02:41,553 - root - INFO - [Epoch 3 Batch 7400/12276] loss=0.1377, lr=0.0000067
+2019-12-20 13:04:26,053 - root - INFO - [Epoch 3 Batch 7500/12276] loss=0.1521, lr=0.0000066
+2019-12-20 13:06:11,193 - root - INFO - [Epoch 3 Batch 7600/12276] loss=0.1423, lr=0.0000065
+2019-12-20 13:07:56,750 - root - INFO - [Epoch 3 Batch 7700/12276] loss=0.1348, lr=0.0000065
+2019-12-20 13:09:41,241 - root - INFO - [Epoch 3 Batch 7800/12276] loss=0.1326, lr=0.0000064
+2019-12-20 13:11:26,242 - root - INFO - [Epoch 3 Batch 7900/12276] loss=0.1327, lr=0.0000063
+2019-12-20 13:13:10,508 - root - INFO - [Epoch 3 Batch 8000/12276] loss=0.1488, lr=0.0000062
+2019-12-20 13:14:54,544 - root - INFO - [Epoch 3 Batch 8100/12276] loss=0.1301, lr=0.0000061
+2019-12-20 13:16:38,706 - root - INFO - [Epoch 3 Batch 8200/12276] loss=0.1179, lr=0.0000060
+2019-12-20 13:18:23,148 - root - INFO - [Epoch 3 Batch 8300/12276] loss=0.1274, lr=0.0000060
+2019-12-20 13:20:06,179 - root - INFO - [Epoch 3 Batch 8400/12276] loss=0.1329, lr=0.0000059
+2019-12-20 13:21:50,652 - root - INFO - [Epoch 3 Batch 8500/12276] loss=0.1395, lr=0.0000058
+2019-12-20 13:23:35,216 - root - INFO - [Epoch 3 Batch 8600/12276] loss=0.1327, lr=0.0000057
+2019-12-20 13:25:19,517 - root - INFO - [Epoch 3 Batch 8700/12276] loss=0.1144, lr=0.0000056
+2019-12-20 13:27:03,972 - root - INFO - [Epoch 3 Batch 8800/12276] loss=0.1326, lr=0.0000055
+2019-12-20 13:28:48,498 - root - INFO - [Epoch 3 Batch 8900/12276] loss=0.1238, lr=0.0000055
+2019-12-20 13:30:34,081 - root - INFO - [Epoch 3 Batch 9000/12276] loss=0.1245, lr=0.0000054
+2019-12-20 13:32:18,403 - root - INFO - [Epoch 3 Batch 9100/12276] loss=0.1143, lr=0.0000053
+2019-12-20 13:34:03,580 - root - INFO - [Epoch 3 Batch 9200/12276] loss=0.1264, lr=0.0000052
+2019-12-20 13:35:48,865 - root - INFO - [Epoch 3 Batch 9300/12276] loss=0.1278, lr=0.0000051
+2019-12-20 13:37:32,778 - root - INFO - [Epoch 3 Batch 9400/12276] loss=0.1523, lr=0.0000050
+2019-12-20 13:39:17,463 - root - INFO - [Epoch 3 Batch 9500/12276] loss=0.1388, lr=0.0000050
+2019-12-20 13:41:02,524 - root - INFO - [Epoch 3 Batch 9600/12276] loss=0.1274, lr=0.0000049
+2019-12-20 13:42:48,500 - root - INFO - [Epoch 3 Batch 9700/12276] loss=0.1337, lr=0.0000048
+2019-12-20 13:44:32,969 - root - INFO - [Epoch 3 Batch 9800/12276] loss=0.1360, lr=0.0000047
+2019-12-20 13:46:17,274 - root - INFO - [Epoch 3 Batch 9900/12276] loss=0.1180, lr=0.0000046
+2019-12-20 13:48:04,487 - root - INFO - [Epoch 3 Batch 10000/12276] loss=0.1375, lr=0.0000045
+2019-12-20 13:49:48,307 - root - INFO - [Epoch 3 Batch 10100/12276] loss=0.1161, lr=0.0000045
+2019-12-20 13:51:32,976 - root - INFO - [Epoch 3 Batch 10200/12276] loss=0.1376, lr=0.0000044
+2019-12-20 13:53:17,569 - root - INFO - [Epoch 3 Batch 10300/12276] loss=0.1303, lr=0.0000043
+2019-12-20 13:55:01,832 - root - INFO - [Epoch 3 Batch 10400/12276] loss=0.1183, lr=0.0000042
+2019-12-20 13:56:45,533 - root - INFO - [Epoch 3 Batch 10500/12276] loss=0.1288, lr=0.0000041
+2019-12-20 13:58:30,528 - root - INFO - [Epoch 3 Batch 10600/12276] loss=0.1482, lr=0.0000040
+2019-12-20 14:00:15,503 - root - INFO - [Epoch 3 Batch 10700/12276] loss=0.1280, lr=0.0000040
+2019-12-20 14:02:00,300 - root - INFO - [Epoch 3 Batch 10800/12276] loss=0.1313, lr=0.0000039
+2019-12-20 14:03:45,147 - root - INFO - [Epoch 3 Batch 10900/12276] loss=0.1456, lr=0.0000038
+2019-12-20 14:05:29,161 - root - INFO - [Epoch 3 Batch 11000/12276] loss=0.1413, lr=0.0000037
+2019-12-20 14:07:14,422 - root - INFO - [Epoch 3 Batch 11100/12276] loss=0.1390, lr=0.0000036
+2019-12-20 14:08:58,101 - root - INFO - [Epoch 3 Batch 11200/12276] loss=0.1382, lr=0.0000035
+2019-12-20 14:10:42,365 - root - INFO - [Epoch 3 Batch 11300/12276] loss=0.1351, lr=0.0000035
+2019-12-20 14:12:27,518 - root - INFO - [Epoch 3 Batch 11400/12276] loss=0.1345, lr=0.0000034
+2019-12-20 14:14:13,305 - root - INFO - [Epoch 3 Batch 11500/12276] loss=0.1331, lr=0.0000033
+2019-12-20 14:15:58,157 - root - INFO - [Epoch 3 Batch 11600/12276] loss=0.1488, lr=0.0000032
+2019-12-20 14:17:42,533 - root - INFO - [Epoch 3 Batch 11700/12276] loss=0.1465, lr=0.0000031
+2019-12-20 14:19:26,346 - root - INFO - [Epoch 3 Batch 11800/12276] loss=0.1208, lr=0.0000030
+2019-12-20 14:21:10,191 - root - INFO - [Epoch 3 Batch 11900/12276] loss=0.1448, lr=0.0000030
+2019-12-20 14:22:54,954 - root - INFO - [Epoch 3 Batch 12000/12276] loss=0.1372, lr=0.0000029
+2019-12-20 14:24:39,964 - root - INFO - [Epoch 3 Batch 12100/12276] loss=0.1432, lr=0.0000028
+2019-12-20 14:26:24,481 - root - INFO - [Epoch 3 Batch 12200/12276] loss=0.1247, lr=0.0000027
+2019-12-20 14:27:43,407 - root - INFO - Now we are doing evaluation on dev_matched with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2019-12-20 14:28:23,234 - root - INFO - [Batch 100/307] loss=0.3576
+2019-12-20 14:29:02,380 - root - INFO - [Batch 200/307] loss=0.3197
+2019-12-20 14:29:41,054 - root - INFO - [Batch 300/307] loss=0.3759
+2019-12-20 14:29:43,916 - root - INFO - validation metrics:accuracy:0.8970
+2019-12-20 14:29:43,917 - root - INFO - Time cost=120.51s, throughput=81.52 samples/s
+2019-12-20 14:29:43,931 - root - INFO - Now we are doing evaluation on dev_mismatched with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2019-12-20 14:30:22,777 - root - INFO - [Batch 100/308] loss=0.3519
+2019-12-20 14:31:01,430 - root - INFO - [Batch 200/308] loss=0.3437
+2019-12-20 14:31:39,701 - root - INFO - [Batch 300/308] loss=0.3701
+2019-12-20 14:31:42,814 - root - INFO - validation metrics:accuracy:0.8979
+2019-12-20 14:31:42,815 - root - INFO - Time cost=118.88s, throughput=82.91 samples/s
+2019-12-20 14:31:50,022 - root - INFO - params saved in: ./output_dir/model_xlnet_MNLI_2.params
+2019-12-20 14:31:50,025 - root - INFO - Time cost=13108.06s
+2019-12-20 14:33:34,616 - root - INFO - [Epoch 4 Batch 100/12276] loss=0.0864, lr=0.0000026
+2019-12-20 14:35:18,688 - root - INFO - [Epoch 4 Batch 200/12276] loss=0.0853, lr=0.0000025
+2019-12-20 14:37:03,006 - root - INFO - [Epoch 4 Batch 300/12276] loss=0.0950, lr=0.0000024
+2019-12-20 14:38:46,805 - root - INFO - [Epoch 4 Batch 400/12276] loss=0.0991, lr=0.0000023
+2019-12-20 14:40:31,634 - root - INFO - [Epoch 4 Batch 500/12276] loss=0.0834, lr=0.0000022
+2019-12-20 14:42:16,496 - root - INFO - [Epoch 4 Batch 600/12276] loss=0.0993, lr=0.0000021
+2019-12-20 14:44:01,388 - root - INFO - [Epoch 4 Batch 700/12276] loss=0.0956, lr=0.0000021
+2019-12-20 14:45:46,074 - root - INFO - [Epoch 4 Batch 800/12276] loss=0.0878, lr=0.0000020
+2019-12-20 14:47:30,853 - root - INFO - [Epoch 4 Batch 900/12276] loss=0.0830, lr=0.0000019
+2019-12-20 14:49:15,762 - root - INFO - [Epoch 4 Batch 1000/12276] loss=0.0779, lr=0.0000018
+2019-12-20 14:51:01,372 - root - INFO - [Epoch 4 Batch 1100/12276] loss=0.0938, lr=0.0000017
+2019-12-20 14:52:46,363 - root - INFO - [Epoch 4 Batch 1200/12276] loss=0.0888, lr=0.0000016
+2019-12-20 14:54:32,345 - root - INFO - [Epoch 4 Batch 1300/12276] loss=0.0835, lr=0.0000016
+2019-12-20 14:56:17,402 - root - INFO - [Epoch 4 Batch 1400/12276] loss=0.0992, lr=0.0000015
+2019-12-20 14:58:01,702 - root - INFO - [Epoch 4 Batch 1500/12276] loss=0.1019, lr=0.0000014
+2019-12-20 14:59:47,553 - root - INFO - [Epoch 4 Batch 1600/12276] loss=0.0785, lr=0.0000013
+2019-12-20 15:01:31,686 - root - INFO - [Epoch 4 Batch 1700/12276] loss=0.0933, lr=0.0000012
+2019-12-20 15:03:15,821 - root - INFO - [Epoch 4 Batch 1800/12276] loss=0.1028, lr=0.0000011
+2019-12-20 15:05:00,977 - root - INFO - [Epoch 4 Batch 1900/12276] loss=0.0889, lr=0.0000011
+2019-12-20 15:06:45,589 - root - INFO - [Epoch 4 Batch 2000/12276] loss=0.0986, lr=0.0000010
+2019-12-20 15:08:31,222 - root - INFO - [Epoch 4 Batch 2100/12276] loss=0.0891, lr=0.0000009
+2019-12-20 15:10:15,133 - root - INFO - [Epoch 4 Batch 2200/12276] loss=0.0783, lr=0.0000008
+2019-12-20 15:11:58,686 - root - INFO - [Epoch 4 Batch 2300/12276] loss=0.0837, lr=0.0000007
+2019-12-20 15:13:43,426 - root - INFO - [Epoch 4 Batch 2400/12276] loss=0.0825, lr=0.0000006
+2019-12-20 15:15:27,380 - root - INFO - [Epoch 4 Batch 2500/12276] loss=0.0730, lr=0.0000006
+2019-12-20 15:17:12,808 - root - INFO - [Epoch 4 Batch 2600/12276] loss=0.0832, lr=0.0000005
+2019-12-20 15:18:57,850 - root - INFO - [Epoch 4 Batch 2700/12276] loss=0.0802, lr=0.0000004
+2019-12-20 15:20:42,622 - root - INFO - [Epoch 4 Batch 2800/12276] loss=0.0981, lr=0.0000003
+2019-12-20 15:22:27,077 - root - INFO - [Epoch 4 Batch 2900/12276] loss=0.0920, lr=0.0000002
+2019-12-20 15:24:10,421 - root - INFO - [Epoch 4 Batch 3000/12276] loss=0.0773, lr=0.0000001
+2019-12-20 15:25:54,598 - root - INFO - [Epoch 4 Batch 3100/12276] loss=0.0899, lr=0.0000001
+2019-12-20 15:27:08,857 - root - INFO - Finish training step: 10000
+2019-12-20 15:27:08,858 - root - INFO - Now we are doing evaluation on dev_matched with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2019-12-20 15:27:48,586 - root - INFO - [Batch 100/307] loss=0.4141
+2019-12-20 15:28:26,553 - root - INFO - [Batch 200/307] loss=0.3605
+2019-12-20 15:29:04,337 - root - INFO - [Batch 300/307] loss=0.4335
+2019-12-20 15:29:07,095 - root - INFO - validation metrics:accuracy:0.8975
+2019-12-20 15:29:07,095 - root - INFO - Time cost=118.24s, throughput=83.09 samples/s
+2019-12-20 15:29:07,107 - root - INFO - Now we are doing evaluation on dev_mismatched with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2019-12-20 15:29:45,994 - root - INFO - [Batch 100/308] loss=0.4043
+2019-12-20 15:30:23,860 - root - INFO - [Batch 200/308] loss=0.3996
+2019-12-20 15:31:01,863 - root - INFO - [Batch 300/308] loss=0.4250
+2019-12-20 15:31:05,134 - root - INFO - validation metrics:accuracy:0.8981
+2019-12-20 15:31:05,134 - root - INFO - Time cost=118.03s, throughput=83.51 samples/s
+2019-12-20 15:31:13,090 - root - INFO - params saved in: ./output_dir/model_xlnet_MNLI_3.params
+2019-12-20 15:31:13,093 - root - INFO - Time cost=3563.07s
+2019-12-20 15:31:14,814 - root - INFO - Best model at epoch 2. Validation metrics:accuracy:0.8993
+2019-12-20 15:31:14,814 - root - INFO - Now we are doing testing on test_matched with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2019-12-20 15:33:12,589 - root - INFO - Time cost=117.77s, throughput=83.41 samples/s
+2019-12-20 15:33:12,597 - root - INFO - Now we are doing testing on test_mismatched with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2019-12-20 15:35:09,383 - root - INFO - Time cost=116.79s, throughput=84.39 samples/s
