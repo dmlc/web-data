@@ -1,0 +1,1 @@
+python3 run_glue.py --gpu 8 --batch_size 128 --task CoLA --lr 3e-5 --training_steps 3000 --warmup_ratio 0.1888

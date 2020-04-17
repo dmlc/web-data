@@ -1,0 +1,1282 @@
+2020-01-19 16:42:14,955 - root - INFO - Namespace(accumulate=None, attention_dropout=0.1, batch_size=128, dataset='126gb', dev_batch_size=32, dropout=0.1, early_stop=None, epochs=3, epsilon=1e-06, gpu=8, log_interval=10, lr=3e-05, lr_decay='linear', max_len=128, model_name='xlnet_cased_l12_h768_a12', model_parameters=None, only_inference=False, optimizer='Adam', output_dir='./output_dir', pad=True, seed=2, task_name='MNLI', training_steps=10000, warmup_ratio=0.07)
+2020-01-19 16:42:44,916 - root - INFO - processing dataset...
+2020-01-19 16:44:35,008 - root - INFO - Now we are doing XLNet classification training on [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)]!
+2020-01-19 16:44:35,015 - root - INFO - training steps=10000
+2020-01-19 16:45:25,739 - root - INFO - Time cost for the first forward-backward =50.71s
+2020-01-19 16:45:36,450 - root - INFO - [Epoch 1 Batch 10/3072] loss=1.1135, lr=0.0000004
+2020-01-19 16:45:50,071 - root - INFO - [Epoch 1 Batch 20/3072] loss=1.1056, lr=0.0000008
+2020-01-19 16:45:59,791 - root - INFO - [Epoch 1 Batch 30/3072] loss=1.1045, lr=0.0000012
+2020-01-19 16:46:08,530 - root - INFO - [Epoch 1 Batch 40/3072] loss=1.1062, lr=0.0000017
+2020-01-19 16:46:17,136 - root - INFO - [Epoch 1 Batch 50/3072] loss=1.1020, lr=0.0000021
+2020-01-19 16:46:25,997 - root - INFO - [Epoch 1 Batch 60/3072] loss=1.0988, lr=0.0000025
+2020-01-19 16:46:35,361 - root - INFO - [Epoch 1 Batch 70/3072] loss=1.0906, lr=0.0000030
+2020-01-19 16:46:44,252 - root - INFO - [Epoch 1 Batch 80/3072] loss=1.0988, lr=0.0000034
+2020-01-19 16:46:52,787 - root - INFO - [Epoch 1 Batch 90/3072] loss=1.0988, lr=0.0000038
+2020-01-19 16:47:01,521 - root - INFO - [Epoch 1 Batch 100/3072] loss=1.0983, lr=0.0000042
+2020-01-19 16:47:09,835 - root - INFO - [Epoch 1 Batch 110/3072] loss=1.0900, lr=0.0000047
+2020-01-19 16:47:18,733 - root - INFO - [Epoch 1 Batch 120/3072] loss=1.0903, lr=0.0000051
+2020-01-19 16:47:27,560 - root - INFO - [Epoch 1 Batch 130/3072] loss=1.0834, lr=0.0000055
+2020-01-19 16:47:36,047 - root - INFO - [Epoch 1 Batch 140/3072] loss=1.0785, lr=0.0000060
+2020-01-19 16:47:46,025 - root - INFO - [Epoch 1 Batch 150/3072] loss=1.0657, lr=0.0000064
+2020-01-19 16:47:54,819 - root - INFO - [Epoch 1 Batch 160/3072] loss=1.0449, lr=0.0000068
+2020-01-19 16:48:03,319 - root - INFO - [Epoch 1 Batch 170/3072] loss=1.0264, lr=0.0000072
+2020-01-19 16:48:13,677 - root - INFO - [Epoch 1 Batch 180/3072] loss=1.0176, lr=0.0000077
+2020-01-19 16:48:22,953 - root - INFO - [Epoch 1 Batch 190/3072] loss=0.9846, lr=0.0000081
+2020-01-19 16:48:31,107 - root - INFO - [Epoch 1 Batch 200/3072] loss=0.9605, lr=0.0000085
+2020-01-19 16:48:39,701 - root - INFO - [Epoch 1 Batch 210/3072] loss=0.9069, lr=0.0000090
+2020-01-19 16:48:48,364 - root - INFO - [Epoch 1 Batch 220/3072] loss=0.9272, lr=0.0000094
+2020-01-19 16:48:56,849 - root - INFO - [Epoch 1 Batch 230/3072] loss=0.8703, lr=0.0000098
+2020-01-19 16:49:06,331 - root - INFO - [Epoch 1 Batch 240/3072] loss=0.8518, lr=0.0000102
+2020-01-19 16:49:15,002 - root - INFO - [Epoch 1 Batch 250/3072] loss=0.8809, lr=0.0000107
+2020-01-19 16:49:26,925 - root - INFO - [Epoch 1 Batch 260/3072] loss=0.8245, lr=0.0000111
+2020-01-19 16:49:36,048 - root - INFO - [Epoch 1 Batch 270/3072] loss=0.7737, lr=0.0000115
+2020-01-19 16:49:44,410 - root - INFO - [Epoch 1 Batch 280/3072] loss=0.7566, lr=0.0000120
+2020-01-19 16:49:53,241 - root - INFO - [Epoch 1 Batch 290/3072] loss=0.7388, lr=0.0000124
+2020-01-19 16:50:01,989 - root - INFO - [Epoch 1 Batch 300/3072] loss=0.7709, lr=0.0000128
+2020-01-19 16:50:11,320 - root - INFO - [Epoch 1 Batch 310/3072] loss=0.7703, lr=0.0000132
+2020-01-19 16:50:20,440 - root - INFO - [Epoch 1 Batch 320/3072] loss=0.7287, lr=0.0000137
+2020-01-19 16:50:29,260 - root - INFO - [Epoch 1 Batch 330/3072] loss=0.7092, lr=0.0000141
+2020-01-19 16:50:37,968 - root - INFO - [Epoch 1 Batch 340/3072] loss=0.7216, lr=0.0000145
+2020-01-19 16:50:46,554 - root - INFO - [Epoch 1 Batch 350/3072] loss=0.6678, lr=0.0000150
+2020-01-19 16:50:55,444 - root - INFO - [Epoch 1 Batch 360/3072] loss=0.7241, lr=0.0000154
+2020-01-19 16:51:04,362 - root - INFO - [Epoch 1 Batch 370/3072] loss=0.6311, lr=0.0000158
+2020-01-19 16:51:14,664 - root - INFO - [Epoch 1 Batch 380/3072] loss=0.6496, lr=0.0000162
+2020-01-19 16:51:23,284 - root - INFO - [Epoch 1 Batch 390/3072] loss=0.6664, lr=0.0000167
+2020-01-19 16:51:32,242 - root - INFO - [Epoch 1 Batch 400/3072] loss=0.6811, lr=0.0000171
+2020-01-19 16:51:41,713 - root - INFO - [Epoch 1 Batch 410/3072] loss=0.6850, lr=0.0000175
+2020-01-19 16:51:50,081 - root - INFO - [Epoch 1 Batch 420/3072] loss=0.6444, lr=0.0000180
+2020-01-19 16:51:59,421 - root - INFO - [Epoch 1 Batch 430/3072] loss=0.6390, lr=0.0000184
+2020-01-19 16:52:07,945 - root - INFO - [Epoch 1 Batch 440/3072] loss=0.6189, lr=0.0000188
+2020-01-19 16:52:16,311 - root - INFO - [Epoch 1 Batch 450/3072] loss=0.6011, lr=0.0000192
+2020-01-19 16:52:25,140 - root - INFO - [Epoch 1 Batch 460/3072] loss=0.6033, lr=0.0000197
+2020-01-19 16:52:33,684 - root - INFO - [Epoch 1 Batch 470/3072] loss=0.5835, lr=0.0000201
+2020-01-19 16:52:42,693 - root - INFO - [Epoch 1 Batch 480/3072] loss=0.6180, lr=0.0000205
+2020-01-19 16:52:51,475 - root - INFO - [Epoch 1 Batch 490/3072] loss=0.6047, lr=0.0000210
+2020-01-19 16:53:00,361 - root - INFO - [Epoch 1 Batch 500/3072] loss=0.5759, lr=0.0000214
+2020-01-19 16:53:09,456 - root - INFO - [Epoch 1 Batch 510/3072] loss=0.6087, lr=0.0000218
+2020-01-19 16:53:18,079 - root - INFO - [Epoch 1 Batch 520/3072] loss=0.5884, lr=0.0000222
+2020-01-19 16:53:26,927 - root - INFO - [Epoch 1 Batch 530/3072] loss=0.6008, lr=0.0000227
+2020-01-19 16:53:35,680 - root - INFO - [Epoch 1 Batch 540/3072] loss=0.5712, lr=0.0000231
+2020-01-19 16:53:44,353 - root - INFO - [Epoch 1 Batch 550/3072] loss=0.5806, lr=0.0000235
+2020-01-19 16:53:53,588 - root - INFO - [Epoch 1 Batch 560/3072] loss=0.5745, lr=0.0000240
+2020-01-19 16:54:02,131 - root - INFO - [Epoch 1 Batch 570/3072] loss=0.5491, lr=0.0000244
+2020-01-19 16:54:10,654 - root - INFO - [Epoch 1 Batch 580/3072] loss=0.5559, lr=0.0000248
+2020-01-19 16:54:18,675 - root - INFO - [Epoch 1 Batch 590/3072] loss=0.5918, lr=0.0000252
+2020-01-19 16:54:27,463 - root - INFO - [Epoch 1 Batch 600/3072] loss=0.5979, lr=0.0000257
+2020-01-19 16:54:36,105 - root - INFO - [Epoch 1 Batch 610/3072] loss=0.5945, lr=0.0000261
+2020-01-19 16:54:44,568 - root - INFO - [Epoch 1 Batch 620/3072] loss=0.5466, lr=0.0000265
+2020-01-19 16:54:53,393 - root - INFO - [Epoch 1 Batch 630/3072] loss=0.6314, lr=0.0000270
+2020-01-19 16:55:02,802 - root - INFO - [Epoch 1 Batch 640/3072] loss=0.5505, lr=0.0000274
+2020-01-19 16:55:11,731 - root - INFO - [Epoch 1 Batch 650/3072] loss=0.5789, lr=0.0000278
+2020-01-19 16:55:20,928 - root - INFO - [Epoch 1 Batch 660/3072] loss=0.5885, lr=0.0000282
+2020-01-19 16:55:29,913 - root - INFO - [Epoch 1 Batch 670/3072] loss=0.5391, lr=0.0000287
+2020-01-19 16:55:38,737 - root - INFO - [Epoch 1 Batch 680/3072] loss=0.5572, lr=0.0000291
+2020-01-19 16:55:47,171 - root - INFO - [Epoch 1 Batch 690/3072] loss=0.5301, lr=0.0000295
+2020-01-19 16:55:55,700 - root - INFO - [Epoch 1 Batch 700/3072] loss=0.5402, lr=0.0000300
+2020-01-19 16:56:04,231 - root - INFO - [Epoch 1 Batch 710/3072] loss=0.5284, lr=0.0000300
+2020-01-19 16:56:12,942 - root - INFO - [Epoch 1 Batch 720/3072] loss=0.5467, lr=0.0000299
+2020-01-19 16:56:21,818 - root - INFO - [Epoch 1 Batch 730/3072] loss=0.5622, lr=0.0000299
+2020-01-19 16:56:30,667 - root - INFO - [Epoch 1 Batch 740/3072] loss=0.5482, lr=0.0000299
+2020-01-19 16:56:39,440 - root - INFO - [Epoch 1 Batch 750/3072] loss=0.5394, lr=0.0000298
+2020-01-19 16:56:48,076 - root - INFO - [Epoch 1 Batch 760/3072] loss=0.5194, lr=0.0000298
+2020-01-19 16:56:56,548 - root - INFO - [Epoch 1 Batch 770/3072] loss=0.5237, lr=0.0000298
+2020-01-19 16:57:05,827 - root - INFO - [Epoch 1 Batch 780/3072] loss=0.5039, lr=0.0000297
+2020-01-19 16:57:14,486 - root - INFO - [Epoch 1 Batch 790/3072] loss=0.5242, lr=0.0000297
+2020-01-19 16:57:23,390 - root - INFO - [Epoch 1 Batch 800/3072] loss=0.5708, lr=0.0000297
+2020-01-19 16:57:31,984 - root - INFO - [Epoch 1 Batch 810/3072] loss=0.5377, lr=0.0000296
+2020-01-19 16:57:40,753 - root - INFO - [Epoch 1 Batch 820/3072] loss=0.5915, lr=0.0000296
+2020-01-19 16:57:49,488 - root - INFO - [Epoch 1 Batch 830/3072] loss=0.5351, lr=0.0000296
+2020-01-19 16:57:57,982 - root - INFO - [Epoch 1 Batch 840/3072] loss=0.5250, lr=0.0000296
+2020-01-19 16:58:06,910 - root - INFO - [Epoch 1 Batch 850/3072] loss=0.5521, lr=0.0000295
+2020-01-19 16:58:15,842 - root - INFO - [Epoch 1 Batch 860/3072] loss=0.5076, lr=0.0000295
+2020-01-19 16:58:24,592 - root - INFO - [Epoch 1 Batch 870/3072] loss=0.5212, lr=0.0000295
+2020-01-19 16:58:33,464 - root - INFO - [Epoch 1 Batch 880/3072] loss=0.5496, lr=0.0000294
+2020-01-19 16:58:42,454 - root - INFO - [Epoch 1 Batch 890/3072] loss=0.5291, lr=0.0000294
+2020-01-19 16:58:50,911 - root - INFO - [Epoch 1 Batch 900/3072] loss=0.5654, lr=0.0000294
+2020-01-19 16:58:59,797 - root - INFO - [Epoch 1 Batch 910/3072] loss=0.5396, lr=0.0000293
+2020-01-19 16:59:07,826 - root - INFO - [Epoch 1 Batch 920/3072] loss=0.5128, lr=0.0000293
+2020-01-19 16:59:16,305 - root - INFO - [Epoch 1 Batch 930/3072] loss=0.4977, lr=0.0000293
+2020-01-19 16:59:24,767 - root - INFO - [Epoch 1 Batch 940/3072] loss=0.5006, lr=0.0000292
+2020-01-19 16:59:33,499 - root - INFO - [Epoch 1 Batch 950/3072] loss=0.5139, lr=0.0000292
+2020-01-19 16:59:42,177 - root - INFO - [Epoch 1 Batch 960/3072] loss=0.5315, lr=0.0000292
+2020-01-19 16:59:50,684 - root - INFO - [Epoch 1 Batch 970/3072] loss=0.5278, lr=0.0000291
+2020-01-19 16:59:59,276 - root - INFO - [Epoch 1 Batch 980/3072] loss=0.5039, lr=0.0000291
+2020-01-19 17:00:08,204 - root - INFO - [Epoch 1 Batch 990/3072] loss=0.4897, lr=0.0000291
+2020-01-19 17:00:17,022 - root - INFO - [Epoch 1 Batch 1000/3072] loss=0.5133, lr=0.0000290
+2020-01-19 17:00:25,947 - root - INFO - [Epoch 1 Batch 1010/3072] loss=0.4892, lr=0.0000290
+2020-01-19 17:00:35,035 - root - INFO - [Epoch 1 Batch 1020/3072] loss=0.5139, lr=0.0000290
+2020-01-19 17:00:43,648 - root - INFO - [Epoch 1 Batch 1030/3072] loss=0.5146, lr=0.0000289
+2020-01-19 17:00:52,273 - root - INFO - [Epoch 1 Batch 1040/3072] loss=0.4832, lr=0.0000289
+2020-01-19 17:01:01,021 - root - INFO - [Epoch 1 Batch 1050/3072] loss=0.4728, lr=0.0000289
+2020-01-19 17:01:09,947 - root - INFO - [Epoch 1 Batch 1060/3072] loss=0.5150, lr=0.0000288
+2020-01-19 17:01:18,486 - root - INFO - [Epoch 1 Batch 1070/3072] loss=0.4987, lr=0.0000288
+2020-01-19 17:01:26,791 - root - INFO - [Epoch 1 Batch 1080/3072] loss=0.5306, lr=0.0000288
+2020-01-19 17:01:35,591 - root - INFO - [Epoch 1 Batch 1090/3072] loss=0.4953, lr=0.0000287
+2020-01-19 17:01:44,504 - root - INFO - [Epoch 1 Batch 1100/3072] loss=0.4927, lr=0.0000287
+2020-01-19 17:01:53,595 - root - INFO - [Epoch 1 Batch 1110/3072] loss=0.5135, lr=0.0000287
+2020-01-19 17:02:02,497 - root - INFO - [Epoch 1 Batch 1120/3072] loss=0.5002, lr=0.0000286
+2020-01-19 17:02:11,772 - root - INFO - [Epoch 1 Batch 1130/3072] loss=0.4886, lr=0.0000286
+2020-01-19 17:02:20,395 - root - INFO - [Epoch 1 Batch 1140/3072] loss=0.4534, lr=0.0000286
+2020-01-19 17:02:28,859 - root - INFO - [Epoch 1 Batch 1150/3072] loss=0.5164, lr=0.0000286
+2020-01-19 17:02:37,431 - root - INFO - [Epoch 1 Batch 1160/3072] loss=0.5168, lr=0.0000285
+2020-01-19 17:02:46,180 - root - INFO - [Epoch 1 Batch 1170/3072] loss=0.4657, lr=0.0000285
+2020-01-19 17:02:55,114 - root - INFO - [Epoch 1 Batch 1180/3072] loss=0.5098, lr=0.0000285
+2020-01-19 17:03:03,723 - root - INFO - [Epoch 1 Batch 1190/3072] loss=0.4820, lr=0.0000284
+2020-01-19 17:03:12,490 - root - INFO - [Epoch 1 Batch 1200/3072] loss=0.4835, lr=0.0000284
+2020-01-19 17:03:21,052 - root - INFO - [Epoch 1 Batch 1210/3072] loss=0.4754, lr=0.0000284
+2020-01-19 17:03:29,964 - root - INFO - [Epoch 1 Batch 1220/3072] loss=0.5233, lr=0.0000283
+2020-01-19 17:03:38,700 - root - INFO - [Epoch 1 Batch 1230/3072] loss=0.4672, lr=0.0000283
+2020-01-19 17:03:47,610 - root - INFO - [Epoch 1 Batch 1240/3072] loss=0.4785, lr=0.0000283
+2020-01-19 17:03:56,425 - root - INFO - [Epoch 1 Batch 1250/3072] loss=0.4828, lr=0.0000282
+2020-01-19 17:04:06,518 - root - INFO - [Epoch 1 Batch 1260/3072] loss=0.4595, lr=0.0000282
+2020-01-19 17:04:14,925 - root - INFO - [Epoch 1 Batch 1270/3072] loss=0.4790, lr=0.0000282
+2020-01-19 17:04:29,550 - root - INFO - [Epoch 1 Batch 1280/3072] loss=0.4765, lr=0.0000281
+2020-01-19 17:04:38,201 - root - INFO - [Epoch 1 Batch 1290/3072] loss=0.4897, lr=0.0000281
+2020-01-19 17:04:47,332 - root - INFO - [Epoch 1 Batch 1300/3072] loss=0.5017, lr=0.0000281
+2020-01-19 17:04:56,114 - root - INFO - [Epoch 1 Batch 1310/3072] loss=0.4805, lr=0.0000280
+2020-01-19 17:05:05,113 - root - INFO - [Epoch 1 Batch 1320/3072] loss=0.4734, lr=0.0000280
+2020-01-19 17:05:13,612 - root - INFO - [Epoch 1 Batch 1330/3072] loss=0.4921, lr=0.0000280
+2020-01-19 17:05:22,061 - root - INFO - [Epoch 1 Batch 1340/3072] loss=0.4211, lr=0.0000279
+2020-01-19 17:05:30,794 - root - INFO - [Epoch 1 Batch 1350/3072] loss=0.4843, lr=0.0000279
+2020-01-19 17:05:40,233 - root - INFO - [Epoch 1 Batch 1360/3072] loss=0.4924, lr=0.0000279
+2020-01-19 17:05:48,790 - root - INFO - [Epoch 1 Batch 1370/3072] loss=0.4829, lr=0.0000278
+2020-01-19 17:05:57,014 - root - INFO - [Epoch 1 Batch 1380/3072] loss=0.4864, lr=0.0000278
+2020-01-19 17:06:05,653 - root - INFO - [Epoch 1 Batch 1390/3072] loss=0.4629, lr=0.0000278
+2020-01-19 17:06:14,251 - root - INFO - [Epoch 1 Batch 1400/3072] loss=0.4780, lr=0.0000277
+2020-01-19 17:06:23,206 - root - INFO - [Epoch 1 Batch 1410/3072] loss=0.4792, lr=0.0000277
+2020-01-19 17:06:32,105 - root - INFO - [Epoch 1 Batch 1420/3072] loss=0.4758, lr=0.0000277
+2020-01-19 17:06:40,785 - root - INFO - [Epoch 1 Batch 1430/3072] loss=0.4691, lr=0.0000276
+2020-01-19 17:06:51,843 - root - INFO - [Epoch 1 Batch 1440/3072] loss=0.4935, lr=0.0000276
+2020-01-19 17:07:00,759 - root - INFO - [Epoch 1 Batch 1450/3072] loss=0.4594, lr=0.0000276
+2020-01-19 17:07:09,532 - root - INFO - [Epoch 1 Batch 1460/3072] loss=0.4761, lr=0.0000276
+2020-01-19 17:07:18,194 - root - INFO - [Epoch 1 Batch 1470/3072] loss=0.4527, lr=0.0000275
+2020-01-19 17:07:26,837 - root - INFO - [Epoch 1 Batch 1480/3072] loss=0.4617, lr=0.0000275
+2020-01-19 17:07:35,995 - root - INFO - [Epoch 1 Batch 1490/3072] loss=0.4551, lr=0.0000275
+2020-01-19 17:07:44,543 - root - INFO - [Epoch 1 Batch 1500/3072] loss=0.4710, lr=0.0000274
+2020-01-19 17:07:53,217 - root - INFO - [Epoch 1 Batch 1510/3072] loss=0.4643, lr=0.0000274
+2020-01-19 17:08:01,740 - root - INFO - [Epoch 1 Batch 1520/3072] loss=0.4963, lr=0.0000274
+2020-01-19 17:08:10,461 - root - INFO - [Epoch 1 Batch 1530/3072] loss=0.4759, lr=0.0000273
+2020-01-19 17:08:18,866 - root - INFO - [Epoch 1 Batch 1540/3072] loss=0.5057, lr=0.0000273
+2020-01-19 17:08:27,561 - root - INFO - [Epoch 1 Batch 1550/3072] loss=0.4600, lr=0.0000273
+2020-01-19 17:08:36,399 - root - INFO - [Epoch 1 Batch 1560/3072] loss=0.4810, lr=0.0000272
+2020-01-19 17:08:45,010 - root - INFO - [Epoch 1 Batch 1570/3072] loss=0.4533, lr=0.0000272
+2020-01-19 17:08:57,572 - root - INFO - [Epoch 1 Batch 1580/3072] loss=0.4922, lr=0.0000272
+2020-01-19 17:09:06,254 - root - INFO - [Epoch 1 Batch 1590/3072] loss=0.4619, lr=0.0000271
+2020-01-19 17:09:15,001 - root - INFO - [Epoch 1 Batch 1600/3072] loss=0.4428, lr=0.0000271
+2020-01-19 17:09:23,807 - root - INFO - [Epoch 1 Batch 1610/3072] loss=0.4717, lr=0.0000271
+2020-01-19 17:09:32,113 - root - INFO - [Epoch 1 Batch 1620/3072] loss=0.4268, lr=0.0000270
+2020-01-19 17:09:41,002 - root - INFO - [Epoch 1 Batch 1630/3072] loss=0.4944, lr=0.0000270
+2020-01-19 17:09:49,903 - root - INFO - [Epoch 1 Batch 1640/3072] loss=0.4863, lr=0.0000270
+2020-01-19 17:09:58,345 - root - INFO - [Epoch 1 Batch 1650/3072] loss=0.4735, lr=0.0000269
+2020-01-19 17:10:09,547 - root - INFO - [Epoch 1 Batch 1660/3072] loss=0.4690, lr=0.0000269
+2020-01-19 17:10:18,104 - root - INFO - [Epoch 1 Batch 1670/3072] loss=0.4518, lr=0.0000269
+2020-01-19 17:10:27,232 - root - INFO - [Epoch 1 Batch 1680/3072] loss=0.4671, lr=0.0000268
+2020-01-19 17:10:35,914 - root - INFO - [Epoch 1 Batch 1690/3072] loss=0.4440, lr=0.0000268
+2020-01-19 17:10:44,710 - root - INFO - [Epoch 1 Batch 1700/3072] loss=0.4625, lr=0.0000268
+2020-01-19 17:10:53,325 - root - INFO - [Epoch 1 Batch 1710/3072] loss=0.4750, lr=0.0000267
+2020-01-19 17:11:02,251 - root - INFO - [Epoch 1 Batch 1720/3072] loss=0.4659, lr=0.0000267
+2020-01-19 17:11:11,185 - root - INFO - [Epoch 1 Batch 1730/3072] loss=0.4918, lr=0.0000267
+2020-01-19 17:11:19,577 - root - INFO - [Epoch 1 Batch 1740/3072] loss=0.4140, lr=0.0000266
+2020-01-19 17:11:29,117 - root - INFO - [Epoch 1 Batch 1750/3072] loss=0.4681, lr=0.0000266
+2020-01-19 17:11:38,157 - root - INFO - [Epoch 1 Batch 1760/3072] loss=0.4675, lr=0.0000266
+2020-01-19 17:11:46,982 - root - INFO - [Epoch 1 Batch 1770/3072] loss=0.4423, lr=0.0000266
+2020-01-19 17:11:55,577 - root - INFO - [Epoch 1 Batch 1780/3072] loss=0.4198, lr=0.0000265
+2020-01-19 17:12:04,339 - root - INFO - [Epoch 1 Batch 1790/3072] loss=0.4673, lr=0.0000265
+2020-01-19 17:12:13,307 - root - INFO - [Epoch 1 Batch 1800/3072] loss=0.4380, lr=0.0000265
+2020-01-19 17:12:22,320 - root - INFO - [Epoch 1 Batch 1810/3072] loss=0.4716, lr=0.0000264
+2020-01-19 17:12:31,001 - root - INFO - [Epoch 1 Batch 1820/3072] loss=0.4536, lr=0.0000264
+2020-01-19 17:12:39,471 - root - INFO - [Epoch 1 Batch 1830/3072] loss=0.4237, lr=0.0000264
+2020-01-19 17:12:49,035 - root - INFO - [Epoch 1 Batch 1840/3072] loss=0.4786, lr=0.0000263
+2020-01-19 17:12:57,471 - root - INFO - [Epoch 1 Batch 1850/3072] loss=0.4663, lr=0.0000263
+2020-01-19 17:13:06,492 - root - INFO - [Epoch 1 Batch 1860/3072] loss=0.4689, lr=0.0000263
+2020-01-19 17:13:15,341 - root - INFO - [Epoch 1 Batch 1870/3072] loss=0.5104, lr=0.0000262
+2020-01-19 17:13:24,057 - root - INFO - [Epoch 1 Batch 1880/3072] loss=0.4876, lr=0.0000262
+2020-01-19 17:13:33,062 - root - INFO - [Epoch 1 Batch 1890/3072] loss=0.4107, lr=0.0000262
+2020-01-19 17:13:42,401 - root - INFO - [Epoch 1 Batch 1900/3072] loss=0.4758, lr=0.0000261
+2020-01-19 17:13:51,235 - root - INFO - [Epoch 1 Batch 1910/3072] loss=0.5005, lr=0.0000261
+2020-01-19 17:13:59,737 - root - INFO - [Epoch 1 Batch 1920/3072] loss=0.4903, lr=0.0000261
+2020-01-19 17:14:08,208 - root - INFO - [Epoch 1 Batch 1930/3072] loss=0.4544, lr=0.0000260
+2020-01-19 17:14:17,256 - root - INFO - [Epoch 1 Batch 1940/3072] loss=0.4110, lr=0.0000260
+2020-01-19 17:14:26,092 - root - INFO - [Epoch 1 Batch 1950/3072] loss=0.4289, lr=0.0000260
+2020-01-19 17:14:35,493 - root - INFO - [Epoch 1 Batch 1960/3072] loss=0.4823, lr=0.0000259
+2020-01-19 17:14:44,092 - root - INFO - [Epoch 1 Batch 1970/3072] loss=0.4803, lr=0.0000259
+2020-01-19 17:14:53,105 - root - INFO - [Epoch 1 Batch 1980/3072] loss=0.4499, lr=0.0000259
+2020-01-19 17:15:01,705 - root - INFO - [Epoch 1 Batch 1990/3072] loss=0.4361, lr=0.0000258
+2020-01-19 17:15:10,294 - root - INFO - [Epoch 1 Batch 2000/3072] loss=0.4727, lr=0.0000258
+2020-01-19 17:15:18,708 - root - INFO - [Epoch 1 Batch 2010/3072] loss=0.4215, lr=0.0000258
+2020-01-19 17:15:27,314 - root - INFO - [Epoch 1 Batch 2020/3072] loss=0.4352, lr=0.0000257
+2020-01-19 17:15:36,170 - root - INFO - [Epoch 1 Batch 2030/3072] loss=0.4504, lr=0.0000257
+2020-01-19 17:15:44,974 - root - INFO - [Epoch 1 Batch 2040/3072] loss=0.4609, lr=0.0000257
+2020-01-19 17:15:53,803 - root - INFO - [Epoch 1 Batch 2050/3072] loss=0.4436, lr=0.0000256
+2020-01-19 17:16:02,371 - root - INFO - [Epoch 1 Batch 2060/3072] loss=0.4457, lr=0.0000256
+2020-01-19 17:16:10,897 - root - INFO - [Epoch 1 Batch 2070/3072] loss=0.4381, lr=0.0000256
+2020-01-19 17:16:19,623 - root - INFO - [Epoch 1 Batch 2080/3072] loss=0.4517, lr=0.0000256
+2020-01-19 17:16:28,288 - root - INFO - [Epoch 1 Batch 2090/3072] loss=0.4626, lr=0.0000255
+2020-01-19 17:16:36,941 - root - INFO - [Epoch 1 Batch 2100/3072] loss=0.4521, lr=0.0000255
+2020-01-19 17:16:45,862 - root - INFO - [Epoch 1 Batch 2110/3072] loss=0.4212, lr=0.0000255
+2020-01-19 17:16:54,624 - root - INFO - [Epoch 1 Batch 2120/3072] loss=0.4594, lr=0.0000254
+2020-01-19 17:17:03,471 - root - INFO - [Epoch 1 Batch 2130/3072] loss=0.4593, lr=0.0000254
+2020-01-19 17:17:12,124 - root - INFO - [Epoch 1 Batch 2140/3072] loss=0.4659, lr=0.0000254
+2020-01-19 17:17:20,755 - root - INFO - [Epoch 1 Batch 2150/3072] loss=0.4136, lr=0.0000253
+2020-01-19 17:17:29,078 - root - INFO - [Epoch 1 Batch 2160/3072] loss=0.4359, lr=0.0000253
+2020-01-19 17:17:38,081 - root - INFO - [Epoch 1 Batch 2170/3072] loss=0.4297, lr=0.0000253
+2020-01-19 17:17:46,493 - root - INFO - [Epoch 1 Batch 2180/3072] loss=0.4325, lr=0.0000252
+2020-01-19 17:17:56,288 - root - INFO - [Epoch 1 Batch 2190/3072] loss=0.4694, lr=0.0000252
+2020-01-19 17:18:04,986 - root - INFO - [Epoch 1 Batch 2200/3072] loss=0.4165, lr=0.0000252
+2020-01-19 17:18:13,705 - root - INFO - [Epoch 1 Batch 2210/3072] loss=0.4239, lr=0.0000251
+2020-01-19 17:18:22,233 - root - INFO - [Epoch 1 Batch 2220/3072] loss=0.4426, lr=0.0000251
+2020-01-19 17:18:30,794 - root - INFO - [Epoch 1 Batch 2230/3072] loss=0.4643, lr=0.0000251
+2020-01-19 17:18:39,127 - root - INFO - [Epoch 1 Batch 2240/3072] loss=0.4081, lr=0.0000250
+2020-01-19 17:18:50,977 - root - INFO - [Epoch 1 Batch 2250/3072] loss=0.4221, lr=0.0000250
+2020-01-19 17:19:01,483 - root - INFO - [Epoch 1 Batch 2260/3072] loss=0.4763, lr=0.0000250
+2020-01-19 17:19:10,195 - root - INFO - [Epoch 1 Batch 2270/3072] loss=0.4697, lr=0.0000249
+2020-01-19 17:19:18,659 - root - INFO - [Epoch 1 Batch 2280/3072] loss=0.4048, lr=0.0000249
+2020-01-19 17:19:27,129 - root - INFO - [Epoch 1 Batch 2290/3072] loss=0.4228, lr=0.0000249
+2020-01-19 17:19:36,097 - root - INFO - [Epoch 1 Batch 2300/3072] loss=0.4777, lr=0.0000248
+2020-01-19 17:19:45,131 - root - INFO - [Epoch 1 Batch 2310/3072] loss=0.4500, lr=0.0000248
+2020-01-19 17:19:54,187 - root - INFO - [Epoch 1 Batch 2320/3072] loss=0.4221, lr=0.0000248
+2020-01-19 17:20:02,490 - root - INFO - [Epoch 1 Batch 2330/3072] loss=0.4651, lr=0.0000247
+2020-01-19 17:20:11,318 - root - INFO - [Epoch 1 Batch 2340/3072] loss=0.4641, lr=0.0000247
+2020-01-19 17:20:20,495 - root - INFO - [Epoch 1 Batch 2350/3072] loss=0.4376, lr=0.0000247
+2020-01-19 17:20:28,754 - root - INFO - [Epoch 1 Batch 2360/3072] loss=0.4407, lr=0.0000246
+2020-01-19 17:20:37,073 - root - INFO - [Epoch 1 Batch 2370/3072] loss=0.4201, lr=0.0000246
+2020-01-19 17:20:45,585 - root - INFO - [Epoch 1 Batch 2380/3072] loss=0.4351, lr=0.0000246
+2020-01-19 17:20:53,774 - root - INFO - [Epoch 1 Batch 2390/3072] loss=0.4307, lr=0.0000246
+2020-01-19 17:21:02,843 - root - INFO - [Epoch 1 Batch 2400/3072] loss=0.4407, lr=0.0000245
+2020-01-19 17:21:11,490 - root - INFO - [Epoch 1 Batch 2410/3072] loss=0.4227, lr=0.0000245
+2020-01-19 17:21:20,554 - root - INFO - [Epoch 1 Batch 2420/3072] loss=0.4333, lr=0.0000245
+2020-01-19 17:21:29,952 - root - INFO - [Epoch 1 Batch 2430/3072] loss=0.4604, lr=0.0000244
+2020-01-19 17:21:38,504 - root - INFO - [Epoch 1 Batch 2440/3072] loss=0.4328, lr=0.0000244
+2020-01-19 17:21:47,043 - root - INFO - [Epoch 1 Batch 2450/3072] loss=0.4697, lr=0.0000244
+2020-01-19 17:21:55,252 - root - INFO - [Epoch 1 Batch 2460/3072] loss=0.4318, lr=0.0000243
+2020-01-19 17:22:04,025 - root - INFO - [Epoch 1 Batch 2470/3072] loss=0.4406, lr=0.0000243
+2020-01-19 17:22:13,318 - root - INFO - [Epoch 1 Batch 2480/3072] loss=0.4556, lr=0.0000243
+2020-01-19 17:22:21,853 - root - INFO - [Epoch 1 Batch 2490/3072] loss=0.4214, lr=0.0000242
+2020-01-19 17:22:30,560 - root - INFO - [Epoch 1 Batch 2500/3072] loss=0.4427, lr=0.0000242
+2020-01-19 17:22:39,801 - root - INFO - [Epoch 1 Batch 2510/3072] loss=0.4377, lr=0.0000242
+2020-01-19 17:22:49,217 - root - INFO - [Epoch 1 Batch 2520/3072] loss=0.4781, lr=0.0000241
+2020-01-19 17:22:58,043 - root - INFO - [Epoch 1 Batch 2530/3072] loss=0.4144, lr=0.0000241
+2020-01-19 17:23:06,678 - root - INFO - [Epoch 1 Batch 2540/3072] loss=0.4511, lr=0.0000241
+2020-01-19 17:23:15,938 - root - INFO - [Epoch 1 Batch 2550/3072] loss=0.4271, lr=0.0000240
+2020-01-19 17:23:25,050 - root - INFO - [Epoch 1 Batch 2560/3072] loss=0.4492, lr=0.0000240
+2020-01-19 17:23:33,796 - root - INFO - [Epoch 1 Batch 2570/3072] loss=0.4683, lr=0.0000240
+2020-01-19 17:23:42,353 - root - INFO - [Epoch 1 Batch 2580/3072] loss=0.4486, lr=0.0000239
+2020-01-19 17:23:51,684 - root - INFO - [Epoch 1 Batch 2590/3072] loss=0.4420, lr=0.0000239
+2020-01-19 17:24:00,340 - root - INFO - [Epoch 1 Batch 2600/3072] loss=0.4316, lr=0.0000239
+2020-01-19 17:24:09,147 - root - INFO - [Epoch 1 Batch 2610/3072] loss=0.3943, lr=0.0000238
+2020-01-19 17:24:17,750 - root - INFO - [Epoch 1 Batch 2620/3072] loss=0.4539, lr=0.0000238
+2020-01-19 17:24:27,070 - root - INFO - [Epoch 1 Batch 2630/3072] loss=0.4316, lr=0.0000238
+2020-01-19 17:24:35,530 - root - INFO - [Epoch 1 Batch 2640/3072] loss=0.3778, lr=0.0000237
+2020-01-19 17:24:43,746 - root - INFO - [Epoch 1 Batch 2650/3072] loss=0.4328, lr=0.0000237
+2020-01-19 17:24:52,455 - root - INFO - [Epoch 1 Batch 2660/3072] loss=0.4550, lr=0.0000237
+2020-01-19 17:25:01,392 - root - INFO - [Epoch 1 Batch 2670/3072] loss=0.4319, lr=0.0000236
+2020-01-19 17:25:10,098 - root - INFO - [Epoch 1 Batch 2680/3072] loss=0.4075, lr=0.0000236
+2020-01-19 17:25:19,007 - root - INFO - [Epoch 1 Batch 2690/3072] loss=0.4261, lr=0.0000236
+2020-01-19 17:25:28,018 - root - INFO - [Epoch 1 Batch 2700/3072] loss=0.4410, lr=0.0000236
+2020-01-19 17:25:36,578 - root - INFO - [Epoch 1 Batch 2710/3072] loss=0.4316, lr=0.0000235
+2020-01-19 17:25:45,056 - root - INFO - [Epoch 1 Batch 2720/3072] loss=0.4045, lr=0.0000235
+2020-01-19 17:25:53,508 - root - INFO - [Epoch 1 Batch 2730/3072] loss=0.3966, lr=0.0000235
+2020-01-19 17:26:01,953 - root - INFO - [Epoch 1 Batch 2740/3072] loss=0.4311, lr=0.0000234
+2020-01-19 17:26:10,682 - root - INFO - [Epoch 1 Batch 2750/3072] loss=0.4175, lr=0.0000234
+2020-01-19 17:26:19,773 - root - INFO - [Epoch 1 Batch 2760/3072] loss=0.4009, lr=0.0000234
+2020-01-19 17:26:28,720 - root - INFO - [Epoch 1 Batch 2770/3072] loss=0.4308, lr=0.0000233
+2020-01-19 17:26:37,518 - root - INFO - [Epoch 1 Batch 2780/3072] loss=0.4403, lr=0.0000233
+2020-01-19 17:26:45,939 - root - INFO - [Epoch 1 Batch 2790/3072] loss=0.4239, lr=0.0000233
+2020-01-19 17:26:54,752 - root - INFO - [Epoch 1 Batch 2800/3072] loss=0.4145, lr=0.0000232
+2020-01-19 17:27:03,447 - root - INFO - [Epoch 1 Batch 2810/3072] loss=0.4388, lr=0.0000232
+2020-01-19 17:27:12,019 - root - INFO - [Epoch 1 Batch 2820/3072] loss=0.4110, lr=0.0000232
+2020-01-19 17:27:20,710 - root - INFO - [Epoch 1 Batch 2830/3072] loss=0.4549, lr=0.0000231
+2020-01-19 17:27:29,666 - root - INFO - [Epoch 1 Batch 2840/3072] loss=0.4417, lr=0.0000231
+2020-01-19 17:27:38,332 - root - INFO - [Epoch 1 Batch 2850/3072] loss=0.3892, lr=0.0000231
+2020-01-19 17:27:47,221 - root - INFO - [Epoch 1 Batch 2860/3072] loss=0.4515, lr=0.0000230
+2020-01-19 17:27:55,758 - root - INFO - [Epoch 1 Batch 2870/3072] loss=0.4444, lr=0.0000230
+2020-01-19 17:28:04,522 - root - INFO - [Epoch 1 Batch 2880/3072] loss=0.4092, lr=0.0000230
+2020-01-19 17:28:13,133 - root - INFO - [Epoch 1 Batch 2890/3072] loss=0.4252, lr=0.0000229
+2020-01-19 17:28:22,392 - root - INFO - [Epoch 1 Batch 2900/3072] loss=0.3938, lr=0.0000229
+2020-01-19 17:28:32,801 - root - INFO - [Epoch 1 Batch 2910/3072] loss=0.4532, lr=0.0000229
+2020-01-19 17:28:42,376 - root - INFO - [Epoch 1 Batch 2920/3072] loss=0.4159, lr=0.0000228
+2020-01-19 17:28:51,201 - root - INFO - [Epoch 1 Batch 2930/3072] loss=0.3626, lr=0.0000228
+2020-01-19 17:28:59,524 - root - INFO - [Epoch 1 Batch 2940/3072] loss=0.4616, lr=0.0000228
+2020-01-19 17:29:11,549 - root - INFO - [Epoch 1 Batch 2950/3072] loss=0.4425, lr=0.0000227
+2020-01-19 17:29:20,305 - root - INFO - [Epoch 1 Batch 2960/3072] loss=0.4288, lr=0.0000227
+2020-01-19 17:29:29,016 - root - INFO - [Epoch 1 Batch 2970/3072] loss=0.4218, lr=0.0000227
+2020-01-19 17:29:37,742 - root - INFO - [Epoch 1 Batch 2980/3072] loss=0.3976, lr=0.0000226
+2020-01-19 17:29:46,231 - root - INFO - [Epoch 1 Batch 2990/3072] loss=0.4547, lr=0.0000226
+2020-01-19 17:29:56,247 - root - INFO - [Epoch 1 Batch 3000/3072] loss=0.4275, lr=0.0000226
+2020-01-19 17:30:04,955 - root - INFO - [Epoch 1 Batch 3010/3072] loss=0.4218, lr=0.0000226
+2020-01-19 17:30:13,928 - root - INFO - [Epoch 1 Batch 3020/3072] loss=0.3817, lr=0.0000225
+2020-01-19 17:30:22,799 - root - INFO - [Epoch 1 Batch 3030/3072] loss=0.4585, lr=0.0000225
+2020-01-19 17:30:31,734 - root - INFO - [Epoch 1 Batch 3040/3072] loss=0.4808, lr=0.0000225
+2020-01-19 17:30:41,018 - root - INFO - [Epoch 1 Batch 3050/3072] loss=0.4280, lr=0.0000224
+2020-01-19 17:30:49,689 - root - INFO - [Epoch 1 Batch 3060/3072] loss=0.4234, lr=0.0000224
+2020-01-19 17:30:58,390 - root - INFO - [Epoch 1 Batch 3070/3072] loss=0.4151, lr=0.0000224
+2020-01-19 17:30:59,982 - root - INFO - Now we are doing evaluation on dev_matched with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2020-01-19 17:31:01,837 - root - INFO - [Batch 10/307] loss=0.3829
+2020-01-19 17:31:03,725 - root - INFO - [Batch 20/307] loss=0.4210
+2020-01-19 17:31:05,559 - root - INFO - [Batch 30/307] loss=0.3918
+2020-01-19 17:31:07,418 - root - INFO - [Batch 40/307] loss=0.3611
+2020-01-19 17:31:09,302 - root - INFO - [Batch 50/307] loss=0.4180
+2020-01-19 17:31:11,166 - root - INFO - [Batch 60/307] loss=0.3690
+2020-01-19 17:31:13,034 - root - INFO - [Batch 70/307] loss=0.3392
+2020-01-19 17:31:14,843 - root - INFO - [Batch 80/307] loss=0.4052
+2020-01-19 17:31:16,719 - root - INFO - [Batch 90/307] loss=0.4249
+2020-01-19 17:31:18,563 - root - INFO - [Batch 100/307] loss=0.3557
+2020-01-19 17:31:20,387 - root - INFO - [Batch 110/307] loss=0.4291
+2020-01-19 17:31:22,182 - root - INFO - [Batch 120/307] loss=0.3602
+2020-01-19 17:31:23,967 - root - INFO - [Batch 130/307] loss=0.4160
+2020-01-19 17:31:25,824 - root - INFO - [Batch 140/307] loss=0.3724
+2020-01-19 17:31:27,640 - root - INFO - [Batch 150/307] loss=0.3465
+2020-01-19 17:31:29,450 - root - INFO - [Batch 160/307] loss=0.4307
+2020-01-19 17:31:31,188 - root - INFO - [Batch 170/307] loss=0.3833
+2020-01-19 17:31:32,838 - root - INFO - [Batch 180/307] loss=0.3193
+2020-01-19 17:31:34,551 - root - INFO - [Batch 190/307] loss=0.3807
+2020-01-19 17:31:36,281 - root - INFO - [Batch 200/307] loss=0.3526
+2020-01-19 17:31:38,007 - root - INFO - [Batch 210/307] loss=0.4406
+2020-01-19 17:31:39,751 - root - INFO - [Batch 220/307] loss=0.3190
+2020-01-19 17:31:41,514 - root - INFO - [Batch 230/307] loss=0.3274
+2020-01-19 17:31:43,258 - root - INFO - [Batch 240/307] loss=0.3951
+2020-01-19 17:31:45,047 - root - INFO - [Batch 250/307] loss=0.4638
+2020-01-19 17:31:46,851 - root - INFO - [Batch 260/307] loss=0.4474
+2020-01-19 17:31:48,577 - root - INFO - [Batch 270/307] loss=0.3641
+2020-01-19 17:31:50,422 - root - INFO - [Batch 280/307] loss=0.3582
+2020-01-19 17:31:52,161 - root - INFO - [Batch 290/307] loss=0.3865
+2020-01-19 17:31:53,948 - root - INFO - [Batch 300/307] loss=0.3604
+2020-01-19 17:31:55,258 - root - INFO - validation metrics:accuracy:0.8530
+2020-01-19 17:31:55,259 - root - INFO - Time cost=55.28s, throughput=177.72 samples/s
+2020-01-19 17:31:55,259 - root - INFO - Now we are doing evaluation on dev_mismatched with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2020-01-19 17:31:57,113 - root - INFO - [Batch 10/308] loss=0.4012
+2020-01-19 17:31:58,915 - root - INFO - [Batch 20/308] loss=0.4075
+2020-01-19 17:32:00,749 - root - INFO - [Batch 30/308] loss=0.2794
+2020-01-19 17:32:02,660 - root - INFO - [Batch 40/308] loss=0.3949
+2020-01-19 17:32:04,486 - root - INFO - [Batch 50/308] loss=0.3896
+2020-01-19 17:32:06,374 - root - INFO - [Batch 60/308] loss=0.3524
+2020-01-19 17:32:08,234 - root - INFO - [Batch 70/308] loss=0.3734
+2020-01-19 17:32:10,097 - root - INFO - [Batch 80/308] loss=0.4046
+2020-01-19 17:32:11,918 - root - INFO - [Batch 90/308] loss=0.3378
+2020-01-19 17:32:13,676 - root - INFO - [Batch 100/308] loss=0.3525
+2020-01-19 17:32:15,404 - root - INFO - [Batch 110/308] loss=0.4359
+2020-01-19 17:32:17,105 - root - INFO - [Batch 120/308] loss=0.3398
+2020-01-19 17:32:18,828 - root - INFO - [Batch 130/308] loss=0.4077
+2020-01-19 17:32:20,536 - root - INFO - [Batch 140/308] loss=0.3295
+2020-01-19 17:32:22,197 - root - INFO - [Batch 150/308] loss=0.3487
+2020-01-19 17:32:23,888 - root - INFO - [Batch 160/308] loss=0.4220
+2020-01-19 17:32:25,616 - root - INFO - [Batch 170/308] loss=0.4126
+2020-01-19 17:32:27,354 - root - INFO - [Batch 180/308] loss=0.4579
+2020-01-19 17:32:29,077 - root - INFO - [Batch 190/308] loss=0.3643
+2020-01-19 17:32:30,820 - root - INFO - [Batch 200/308] loss=0.4013
+2020-01-19 17:32:32,556 - root - INFO - [Batch 210/308] loss=0.4033
+2020-01-19 17:32:34,293 - root - INFO - [Batch 220/308] loss=0.3673
+2020-01-19 17:32:36,002 - root - INFO - [Batch 230/308] loss=0.4355
+2020-01-19 17:32:37,659 - root - INFO - [Batch 240/308] loss=0.3737
+2020-01-19 17:32:39,439 - root - INFO - [Batch 250/308] loss=0.3284
+2020-01-19 17:32:41,178 - root - INFO - [Batch 260/308] loss=0.4576
+2020-01-19 17:32:42,907 - root - INFO - [Batch 270/308] loss=0.3671
+2020-01-19 17:32:44,623 - root - INFO - [Batch 280/308] loss=0.3325
+2020-01-19 17:32:46,328 - root - INFO - [Batch 290/308] loss=0.4199
+2020-01-19 17:32:48,052 - root - INFO - [Batch 300/308] loss=0.3977
+2020-01-19 17:32:49,480 - root - INFO - validation metrics:accuracy:0.8525
+2020-01-19 17:32:49,480 - root - INFO - Time cost=54.22s, throughput=181.77 samples/s
+2020-01-19 17:32:50,410 - root - INFO - params saved in: ./output_dir/model_xlnet_MNLI_0.params
+2020-01-19 17:32:50,412 - root - INFO - Time cost=2895.39s
+2020-01-19 17:33:00,614 - root - INFO - [Epoch 2 Batch 10/3072] loss=0.3315, lr=0.0000223
+2020-01-19 17:33:11,209 - root - INFO - [Epoch 2 Batch 20/3072] loss=0.3294, lr=0.0000223
+2020-01-19 17:33:19,898 - root - INFO - [Epoch 2 Batch 30/3072] loss=0.3204, lr=0.0000223
+2020-01-19 17:33:28,271 - root - INFO - [Epoch 2 Batch 40/3072] loss=0.3319, lr=0.0000222
+2020-01-19 17:33:36,979 - root - INFO - [Epoch 2 Batch 50/3072] loss=0.3871, lr=0.0000222
+2020-01-19 17:33:47,360 - root - INFO - [Epoch 2 Batch 60/3072] loss=0.3550, lr=0.0000222
+2020-01-19 17:33:56,142 - root - INFO - [Epoch 2 Batch 70/3072] loss=0.3361, lr=0.0000221
+2020-01-19 17:34:04,935 - root - INFO - [Epoch 2 Batch 80/3072] loss=0.3525, lr=0.0000221
+2020-01-19 17:34:13,746 - root - INFO - [Epoch 2 Batch 90/3072] loss=0.3651, lr=0.0000221
+2020-01-19 17:34:30,355 - root - INFO - [Epoch 2 Batch 100/3072] loss=0.4067, lr=0.0000220
+2020-01-19 17:34:39,421 - root - INFO - [Epoch 2 Batch 110/3072] loss=0.3574, lr=0.0000220
+2020-01-19 17:34:48,526 - root - INFO - [Epoch 2 Batch 120/3072] loss=0.3073, lr=0.0000220
+2020-01-19 17:34:57,125 - root - INFO - [Epoch 2 Batch 130/3072] loss=0.3422, lr=0.0000219
+2020-01-19 17:35:06,015 - root - INFO - [Epoch 2 Batch 140/3072] loss=0.3140, lr=0.0000219
+2020-01-19 17:35:14,621 - root - INFO - [Epoch 2 Batch 150/3072] loss=0.2995, lr=0.0000219
+2020-01-19 17:35:23,362 - root - INFO - [Epoch 2 Batch 160/3072] loss=0.3689, lr=0.0000218
+2020-01-19 17:35:32,274 - root - INFO - [Epoch 2 Batch 170/3072] loss=0.3592, lr=0.0000218
+2020-01-19 17:35:41,292 - root - INFO - [Epoch 2 Batch 180/3072] loss=0.3795, lr=0.0000218
+2020-01-19 17:35:51,313 - root - INFO - [Epoch 2 Batch 190/3072] loss=0.3410, lr=0.0000217
+2020-01-19 17:36:00,797 - root - INFO - [Epoch 2 Batch 200/3072] loss=0.3819, lr=0.0000217
+2020-01-19 17:36:09,886 - root - INFO - [Epoch 2 Batch 210/3072] loss=0.3862, lr=0.0000217
+2020-01-19 17:36:18,341 - root - INFO - [Epoch 2 Batch 220/3072] loss=0.3279, lr=0.0000216
+2020-01-19 17:36:26,960 - root - INFO - [Epoch 2 Batch 230/3072] loss=0.3321, lr=0.0000216
+2020-01-19 17:36:36,037 - root - INFO - [Epoch 2 Batch 240/3072] loss=0.3328, lr=0.0000216
+2020-01-19 17:36:44,824 - root - INFO - [Epoch 2 Batch 250/3072] loss=0.3866, lr=0.0000215
+2020-01-19 17:36:53,894 - root - INFO - [Epoch 2 Batch 260/3072] loss=0.3389, lr=0.0000215
+2020-01-19 17:37:02,819 - root - INFO - [Epoch 2 Batch 270/3072] loss=0.3716, lr=0.0000215
+2020-01-19 17:37:11,671 - root - INFO - [Epoch 2 Batch 280/3072] loss=0.3706, lr=0.0000214
+2020-01-19 17:37:20,709 - root - INFO - [Epoch 2 Batch 290/3072] loss=0.3577, lr=0.0000214
+2020-01-19 17:37:29,330 - root - INFO - [Epoch 2 Batch 300/3072] loss=0.3458, lr=0.0000214
+2020-01-19 17:37:38,285 - root - INFO - [Epoch 2 Batch 310/3072] loss=0.3059, lr=0.0000214
+2020-01-19 17:37:47,129 - root - INFO - [Epoch 2 Batch 320/3072] loss=0.3427, lr=0.0000213
+2020-01-19 17:37:56,127 - root - INFO - [Epoch 2 Batch 330/3072] loss=0.3444, lr=0.0000213
+2020-01-19 17:38:04,916 - root - INFO - [Epoch 2 Batch 340/3072] loss=0.3097, lr=0.0000213
+2020-01-19 17:38:13,729 - root - INFO - [Epoch 2 Batch 350/3072] loss=0.3220, lr=0.0000212
+2020-01-19 17:38:23,926 - root - INFO - [Epoch 2 Batch 360/3072] loss=0.3165, lr=0.0000212
+2020-01-19 17:38:33,175 - root - INFO - [Epoch 2 Batch 370/3072] loss=0.3676, lr=0.0000212
+2020-01-19 17:38:41,637 - root - INFO - [Epoch 2 Batch 380/3072] loss=0.3232, lr=0.0000211
+2020-01-19 17:38:50,408 - root - INFO - [Epoch 2 Batch 390/3072] loss=0.3129, lr=0.0000211
+2020-01-19 17:38:59,273 - root - INFO - [Epoch 2 Batch 400/3072] loss=0.3335, lr=0.0000211
+2020-01-19 17:39:07,704 - root - INFO - [Epoch 2 Batch 410/3072] loss=0.3094, lr=0.0000210
+2020-01-19 17:39:16,692 - root - INFO - [Epoch 2 Batch 420/3072] loss=0.3162, lr=0.0000210
+2020-01-19 17:39:25,415 - root - INFO - [Epoch 2 Batch 430/3072] loss=0.3455, lr=0.0000210
+2020-01-19 17:39:33,929 - root - INFO - [Epoch 2 Batch 440/3072] loss=0.3782, lr=0.0000209
+2020-01-19 17:39:43,153 - root - INFO - [Epoch 2 Batch 450/3072] loss=0.3524, lr=0.0000209
+2020-01-19 17:39:52,165 - root - INFO - [Epoch 2 Batch 460/3072] loss=0.3286, lr=0.0000209
+2020-01-19 17:40:01,160 - root - INFO - [Epoch 2 Batch 470/3072] loss=0.3373, lr=0.0000208
+2020-01-19 17:40:09,910 - root - INFO - [Epoch 2 Batch 480/3072] loss=0.3216, lr=0.0000208
+2020-01-19 17:40:18,193 - root - INFO - [Epoch 2 Batch 490/3072] loss=0.3267, lr=0.0000208
+2020-01-19 17:40:29,270 - root - INFO - [Epoch 2 Batch 500/3072] loss=0.3730, lr=0.0000207
+2020-01-19 17:40:37,787 - root - INFO - [Epoch 2 Batch 510/3072] loss=0.3706, lr=0.0000207
+2020-01-19 17:40:46,461 - root - INFO - [Epoch 2 Batch 520/3072] loss=0.3613, lr=0.0000207
+2020-01-19 17:40:55,298 - root - INFO - [Epoch 2 Batch 530/3072] loss=0.3592, lr=0.0000206
+2020-01-19 17:41:03,649 - root - INFO - [Epoch 2 Batch 540/3072] loss=0.3137, lr=0.0000206
+2020-01-19 17:41:13,205 - root - INFO - [Epoch 2 Batch 550/3072] loss=0.3669, lr=0.0000206
+2020-01-19 17:41:22,131 - root - INFO - [Epoch 2 Batch 560/3072] loss=0.3594, lr=0.0000205
+2020-01-19 17:41:30,769 - root - INFO - [Epoch 2 Batch 570/3072] loss=0.3179, lr=0.0000205
+2020-01-19 17:41:39,082 - root - INFO - [Epoch 2 Batch 580/3072] loss=0.3461, lr=0.0000205
+2020-01-19 17:41:48,010 - root - INFO - [Epoch 2 Batch 590/3072] loss=0.4044, lr=0.0000204
+2020-01-19 17:41:56,904 - root - INFO - [Epoch 2 Batch 600/3072] loss=0.3452, lr=0.0000204
+2020-01-19 17:42:05,763 - root - INFO - [Epoch 2 Batch 610/3072] loss=0.3030, lr=0.0000204
+2020-01-19 17:42:14,528 - root - INFO - [Epoch 2 Batch 620/3072] loss=0.3199, lr=0.0000204
+2020-01-19 17:42:23,259 - root - INFO - [Epoch 2 Batch 630/3072] loss=0.3229, lr=0.0000203
+2020-01-19 17:42:32,269 - root - INFO - [Epoch 2 Batch 640/3072] loss=0.3496, lr=0.0000203
+2020-01-19 17:42:41,103 - root - INFO - [Epoch 2 Batch 650/3072] loss=0.3371, lr=0.0000203
+2020-01-19 17:42:50,057 - root - INFO - [Epoch 2 Batch 660/3072] loss=0.3486, lr=0.0000202
+2020-01-19 17:42:58,574 - root - INFO - [Epoch 2 Batch 670/3072] loss=0.3841, lr=0.0000202
+2020-01-19 17:43:07,324 - root - INFO - [Epoch 2 Batch 680/3072] loss=0.3329, lr=0.0000202
+2020-01-19 17:43:15,890 - root - INFO - [Epoch 2 Batch 690/3072] loss=0.3523, lr=0.0000201
+2020-01-19 17:43:24,618 - root - INFO - [Epoch 2 Batch 700/3072] loss=0.3688, lr=0.0000201
+2020-01-19 17:43:33,185 - root - INFO - [Epoch 2 Batch 710/3072] loss=0.3366, lr=0.0000201
+2020-01-19 17:43:41,744 - root - INFO - [Epoch 2 Batch 720/3072] loss=0.3791, lr=0.0000200
+2020-01-19 17:43:50,287 - root - INFO - [Epoch 2 Batch 730/3072] loss=0.3125, lr=0.0000200
+2020-01-19 17:43:58,995 - root - INFO - [Epoch 2 Batch 740/3072] loss=0.3334, lr=0.0000200
+2020-01-19 17:44:07,837 - root - INFO - [Epoch 2 Batch 750/3072] loss=0.3412, lr=0.0000199
+2020-01-19 17:44:16,122 - root - INFO - [Epoch 2 Batch 760/3072] loss=0.3441, lr=0.0000199
+2020-01-19 17:44:25,447 - root - INFO - [Epoch 2 Batch 770/3072] loss=0.3219, lr=0.0000199
+2020-01-19 17:44:34,303 - root - INFO - [Epoch 2 Batch 780/3072] loss=0.3255, lr=0.0000198
+2020-01-19 17:44:43,138 - root - INFO - [Epoch 2 Batch 790/3072] loss=0.3661, lr=0.0000198
+2020-01-19 17:44:52,008 - root - INFO - [Epoch 2 Batch 800/3072] loss=0.3713, lr=0.0000198
+2020-01-19 17:45:00,287 - root - INFO - [Epoch 2 Batch 810/3072] loss=0.3930, lr=0.0000197
+2020-01-19 17:45:08,990 - root - INFO - [Epoch 2 Batch 820/3072] loss=0.3758, lr=0.0000197
+2020-01-19 17:45:17,568 - root - INFO - [Epoch 2 Batch 830/3072] loss=0.3412, lr=0.0000197
+2020-01-19 17:45:26,382 - root - INFO - [Epoch 2 Batch 840/3072] loss=0.3354, lr=0.0000196
+2020-01-19 17:45:35,430 - root - INFO - [Epoch 2 Batch 850/3072] loss=0.3483, lr=0.0000196
+2020-01-19 17:45:44,188 - root - INFO - [Epoch 2 Batch 860/3072] loss=0.3551, lr=0.0000196
+2020-01-19 17:45:53,365 - root - INFO - [Epoch 2 Batch 870/3072] loss=0.3643, lr=0.0000195
+2020-01-19 17:46:02,011 - root - INFO - [Epoch 2 Batch 880/3072] loss=0.3126, lr=0.0000195
+2020-01-19 17:46:10,961 - root - INFO - [Epoch 2 Batch 890/3072] loss=0.3590, lr=0.0000195
+2020-01-19 17:46:20,302 - root - INFO - [Epoch 2 Batch 900/3072] loss=0.3362, lr=0.0000194
+2020-01-19 17:46:28,986 - root - INFO - [Epoch 2 Batch 910/3072] loss=0.3428, lr=0.0000194
+2020-01-19 17:46:37,884 - root - INFO - [Epoch 2 Batch 920/3072] loss=0.3546, lr=0.0000194
+2020-01-19 17:46:46,700 - root - INFO - [Epoch 2 Batch 930/3072] loss=0.3161, lr=0.0000194
+2020-01-19 17:46:55,302 - root - INFO - [Epoch 2 Batch 940/3072] loss=0.3728, lr=0.0000193
+2020-01-19 17:47:04,350 - root - INFO - [Epoch 2 Batch 950/3072] loss=0.3355, lr=0.0000193
+2020-01-19 17:47:13,343 - root - INFO - [Epoch 2 Batch 960/3072] loss=0.3480, lr=0.0000193
+2020-01-19 17:47:22,124 - root - INFO - [Epoch 2 Batch 970/3072] loss=0.3760, lr=0.0000192
+2020-01-19 17:47:31,142 - root - INFO - [Epoch 2 Batch 980/3072] loss=0.3581, lr=0.0000192
+2020-01-19 17:47:39,314 - root - INFO - [Epoch 2 Batch 990/3072] loss=0.3209, lr=0.0000192
+2020-01-19 17:47:47,986 - root - INFO - [Epoch 2 Batch 1000/3072] loss=0.3439, lr=0.0000191
+2020-01-19 17:47:56,691 - root - INFO - [Epoch 2 Batch 1010/3072] loss=0.3245, lr=0.0000191
+2020-01-19 17:48:05,498 - root - INFO - [Epoch 2 Batch 1020/3072] loss=0.2999, lr=0.0000191
+2020-01-19 17:48:13,904 - root - INFO - [Epoch 2 Batch 1030/3072] loss=0.3339, lr=0.0000190
+2020-01-19 17:48:22,737 - root - INFO - [Epoch 2 Batch 1040/3072] loss=0.3480, lr=0.0000190
+2020-01-19 17:48:31,523 - root - INFO - [Epoch 2 Batch 1050/3072] loss=0.3351, lr=0.0000190
+2020-01-19 17:48:40,550 - root - INFO - [Epoch 2 Batch 1060/3072] loss=0.3391, lr=0.0000189
+2020-01-19 17:48:48,968 - root - INFO - [Epoch 2 Batch 1070/3072] loss=0.3318, lr=0.0000189
+2020-01-19 17:48:57,791 - root - INFO - [Epoch 2 Batch 1080/3072] loss=0.3897, lr=0.0000189
+2020-01-19 17:49:06,373 - root - INFO - [Epoch 2 Batch 1090/3072] loss=0.3228, lr=0.0000188
+2020-01-19 17:49:14,865 - root - INFO - [Epoch 2 Batch 1100/3072] loss=0.2917, lr=0.0000188
+2020-01-19 17:49:23,094 - root - INFO - [Epoch 2 Batch 1110/3072] loss=0.3416, lr=0.0000188
+2020-01-19 17:49:31,829 - root - INFO - [Epoch 2 Batch 1120/3072] loss=0.3450, lr=0.0000187
+2020-01-19 17:49:40,958 - root - INFO - [Epoch 2 Batch 1130/3072] loss=0.3463, lr=0.0000187
+2020-01-19 17:49:49,408 - root - INFO - [Epoch 2 Batch 1140/3072] loss=0.3380, lr=0.0000187
+2020-01-19 17:49:58,157 - root - INFO - [Epoch 2 Batch 1150/3072] loss=0.3823, lr=0.0000186
+2020-01-19 17:50:07,169 - root - INFO - [Epoch 2 Batch 1160/3072] loss=0.3572, lr=0.0000186
+2020-01-19 17:50:15,884 - root - INFO - [Epoch 2 Batch 1170/3072] loss=0.3444, lr=0.0000186
+2020-01-19 17:50:24,873 - root - INFO - [Epoch 2 Batch 1180/3072] loss=0.3894, lr=0.0000185
+2020-01-19 17:50:33,210 - root - INFO - [Epoch 2 Batch 1190/3072] loss=0.3211, lr=0.0000185
+2020-01-19 17:50:41,909 - root - INFO - [Epoch 2 Batch 1200/3072] loss=0.3549, lr=0.0000185
+2020-01-19 17:50:50,449 - root - INFO - [Epoch 2 Batch 1210/3072] loss=0.3678, lr=0.0000184
+2020-01-19 17:50:58,996 - root - INFO - [Epoch 2 Batch 1220/3072] loss=0.3052, lr=0.0000184
+2020-01-19 17:51:07,889 - root - INFO - [Epoch 2 Batch 1230/3072] loss=0.3594, lr=0.0000184
+2020-01-19 17:51:16,410 - root - INFO - [Epoch 2 Batch 1240/3072] loss=0.3390, lr=0.0000184
+2020-01-19 17:51:26,012 - root - INFO - [Epoch 2 Batch 1250/3072] loss=0.3313, lr=0.0000183
+2020-01-19 17:51:34,623 - root - INFO - [Epoch 2 Batch 1260/3072] loss=0.3643, lr=0.0000183
+2020-01-19 17:51:43,201 - root - INFO - [Epoch 2 Batch 1270/3072] loss=0.3540, lr=0.0000183
+2020-01-19 17:51:51,943 - root - INFO - [Epoch 2 Batch 1280/3072] loss=0.3654, lr=0.0000182
+2020-01-19 17:52:01,105 - root - INFO - [Epoch 2 Batch 1290/3072] loss=0.3268, lr=0.0000182
+2020-01-19 17:52:09,908 - root - INFO - [Epoch 2 Batch 1300/3072] loss=0.3347, lr=0.0000182
+2020-01-19 17:52:18,329 - root - INFO - [Epoch 2 Batch 1310/3072] loss=0.3461, lr=0.0000181
+2020-01-19 17:52:26,984 - root - INFO - [Epoch 2 Batch 1320/3072] loss=0.3615, lr=0.0000181
+2020-01-19 17:52:36,142 - root - INFO - [Epoch 2 Batch 1330/3072] loss=0.3233, lr=0.0000181
+2020-01-19 17:52:44,738 - root - INFO - [Epoch 2 Batch 1340/3072] loss=0.3548, lr=0.0000180
+2020-01-19 17:52:53,288 - root - INFO - [Epoch 2 Batch 1350/3072] loss=0.3207, lr=0.0000180
+2020-01-19 17:53:01,868 - root - INFO - [Epoch 2 Batch 1360/3072] loss=0.3596, lr=0.0000180
+2020-01-19 17:53:10,545 - root - INFO - [Epoch 2 Batch 1370/3072] loss=0.3212, lr=0.0000179
+2020-01-19 17:53:19,359 - root - INFO - [Epoch 2 Batch 1380/3072] loss=0.3414, lr=0.0000179
+2020-01-19 17:53:28,121 - root - INFO - [Epoch 2 Batch 1390/3072] loss=0.3504, lr=0.0000179
+2020-01-19 17:53:36,889 - root - INFO - [Epoch 2 Batch 1400/3072] loss=0.3297, lr=0.0000178
+2020-01-19 17:53:45,659 - root - INFO - [Epoch 2 Batch 1410/3072] loss=0.3330, lr=0.0000178
+2020-01-19 17:53:54,411 - root - INFO - [Epoch 2 Batch 1420/3072] loss=0.3200, lr=0.0000178
+2020-01-19 17:54:03,248 - root - INFO - [Epoch 2 Batch 1430/3072] loss=0.3735, lr=0.0000177
+2020-01-19 17:54:11,995 - root - INFO - [Epoch 2 Batch 1440/3072] loss=0.3265, lr=0.0000177
+2020-01-19 17:54:20,208 - root - INFO - [Epoch 2 Batch 1450/3072] loss=0.3590, lr=0.0000177
+2020-01-19 17:54:28,905 - root - INFO - [Epoch 2 Batch 1460/3072] loss=0.3335, lr=0.0000176
+2020-01-19 17:54:37,524 - root - INFO - [Epoch 2 Batch 1470/3072] loss=0.3549, lr=0.0000176
+2020-01-19 17:54:46,507 - root - INFO - [Epoch 2 Batch 1480/3072] loss=0.3530, lr=0.0000176
+2020-01-19 17:54:54,860 - root - INFO - [Epoch 2 Batch 1490/3072] loss=0.3318, lr=0.0000175
+2020-01-19 17:55:03,492 - root - INFO - [Epoch 2 Batch 1500/3072] loss=0.3313, lr=0.0000175
+2020-01-19 17:55:12,994 - root - INFO - [Epoch 2 Batch 1510/3072] loss=0.3376, lr=0.0000175
+2020-01-19 17:55:21,649 - root - INFO - [Epoch 2 Batch 1520/3072] loss=0.3614, lr=0.0000174
+2020-01-19 17:55:31,056 - root - INFO - [Epoch 2 Batch 1530/3072] loss=0.3137, lr=0.0000174
+2020-01-19 17:55:39,864 - root - INFO - [Epoch 2 Batch 1540/3072] loss=0.3288, lr=0.0000174
+2020-01-19 17:55:49,798 - root - INFO - [Epoch 2 Batch 1550/3072] loss=0.3075, lr=0.0000174
+2020-01-19 17:55:58,397 - root - INFO - [Epoch 2 Batch 1560/3072] loss=0.3716, lr=0.0000173
+2020-01-19 17:56:07,002 - root - INFO - [Epoch 2 Batch 1570/3072] loss=0.3491, lr=0.0000173
+2020-01-19 17:56:16,630 - root - INFO - [Epoch 2 Batch 1580/3072] loss=0.3435, lr=0.0000173
+2020-01-19 17:56:25,832 - root - INFO - [Epoch 2 Batch 1590/3072] loss=0.3274, lr=0.0000172
+2020-01-19 17:56:34,345 - root - INFO - [Epoch 2 Batch 1600/3072] loss=0.3302, lr=0.0000172
+2020-01-19 17:56:43,733 - root - INFO - [Epoch 2 Batch 1610/3072] loss=0.3555, lr=0.0000172
+2020-01-19 17:56:52,653 - root - INFO - [Epoch 2 Batch 1620/3072] loss=0.3471, lr=0.0000171
+2020-01-19 17:57:01,646 - root - INFO - [Epoch 2 Batch 1630/3072] loss=0.3398, lr=0.0000171
+2020-01-19 17:57:10,216 - root - INFO - [Epoch 2 Batch 1640/3072] loss=0.3367, lr=0.0000171
+2020-01-19 17:57:18,658 - root - INFO - [Epoch 2 Batch 1650/3072] loss=0.3401, lr=0.0000170
+2020-01-19 17:57:26,911 - root - INFO - [Epoch 2 Batch 1660/3072] loss=0.3417, lr=0.0000170
+2020-01-19 17:57:36,042 - root - INFO - [Epoch 2 Batch 1670/3072] loss=0.3306, lr=0.0000170
+2020-01-19 17:57:45,204 - root - INFO - [Epoch 2 Batch 1680/3072] loss=0.3436, lr=0.0000169
+2020-01-19 17:57:53,707 - root - INFO - [Epoch 2 Batch 1690/3072] loss=0.3417, lr=0.0000169
+2020-01-19 17:58:04,418 - root - INFO - [Epoch 2 Batch 1700/3072] loss=0.3227, lr=0.0000169
+2020-01-19 17:58:13,096 - root - INFO - [Epoch 2 Batch 1710/3072] loss=0.3547, lr=0.0000168
+2020-01-19 17:58:21,970 - root - INFO - [Epoch 2 Batch 1720/3072] loss=0.3318, lr=0.0000168
+2020-01-19 17:58:30,465 - root - INFO - [Epoch 2 Batch 1730/3072] loss=0.3279, lr=0.0000168
+2020-01-19 17:58:39,076 - root - INFO - [Epoch 2 Batch 1740/3072] loss=0.3520, lr=0.0000167
+2020-01-19 17:58:47,639 - root - INFO - [Epoch 2 Batch 1750/3072] loss=0.2950, lr=0.0000167
+2020-01-19 17:58:56,986 - root - INFO - [Epoch 2 Batch 1760/3072] loss=0.2987, lr=0.0000167
+2020-01-19 17:59:06,192 - root - INFO - [Epoch 2 Batch 1770/3072] loss=0.3758, lr=0.0000166
+2020-01-19 17:59:14,835 - root - INFO - [Epoch 2 Batch 1780/3072] loss=0.3344, lr=0.0000166
+2020-01-19 17:59:23,286 - root - INFO - [Epoch 2 Batch 1790/3072] loss=0.3417, lr=0.0000166
+2020-01-19 17:59:31,378 - root - INFO - [Epoch 2 Batch 1800/3072] loss=0.3283, lr=0.0000165
+2020-01-19 17:59:41,734 - root - INFO - [Epoch 2 Batch 1810/3072] loss=0.3185, lr=0.0000165
+2020-01-19 17:59:50,931 - root - INFO - [Epoch 2 Batch 1820/3072] loss=0.3403, lr=0.0000165
+2020-01-19 17:59:59,761 - root - INFO - [Epoch 2 Batch 1830/3072] loss=0.3442, lr=0.0000164
+2020-01-19 18:00:08,663 - root - INFO - [Epoch 2 Batch 1840/3072] loss=0.3545, lr=0.0000164
+2020-01-19 18:00:17,116 - root - INFO - [Epoch 2 Batch 1850/3072] loss=0.3503, lr=0.0000164
+2020-01-19 18:00:26,670 - root - INFO - [Epoch 2 Batch 1860/3072] loss=0.3476, lr=0.0000164
+2020-01-19 18:00:35,494 - root - INFO - [Epoch 2 Batch 1870/3072] loss=0.3563, lr=0.0000163
+2020-01-19 18:00:43,893 - root - INFO - [Epoch 2 Batch 1880/3072] loss=0.3447, lr=0.0000163
+2020-01-19 18:00:52,370 - root - INFO - [Epoch 2 Batch 1890/3072] loss=0.3458, lr=0.0000163
+2020-01-19 18:01:01,473 - root - INFO - [Epoch 2 Batch 1900/3072] loss=0.3292, lr=0.0000162
+2020-01-19 18:01:10,353 - root - INFO - [Epoch 2 Batch 1910/3072] loss=0.3622, lr=0.0000162
+2020-01-19 18:01:19,222 - root - INFO - [Epoch 2 Batch 1920/3072] loss=0.3842, lr=0.0000162
+2020-01-19 18:01:27,683 - root - INFO - [Epoch 2 Batch 1930/3072] loss=0.3553, lr=0.0000161
+2020-01-19 18:01:36,718 - root - INFO - [Epoch 2 Batch 1940/3072] loss=0.3083, lr=0.0000161
+2020-01-19 18:01:45,573 - root - INFO - [Epoch 2 Batch 1950/3072] loss=0.3396, lr=0.0000161
+2020-01-19 18:01:55,286 - root - INFO - [Epoch 2 Batch 1960/3072] loss=0.3469, lr=0.0000160
+2020-01-19 18:02:04,673 - root - INFO - [Epoch 2 Batch 1970/3072] loss=0.3133, lr=0.0000160
+2020-01-19 18:02:13,708 - root - INFO - [Epoch 2 Batch 1980/3072] loss=0.3413, lr=0.0000160
+2020-01-19 18:02:22,646 - root - INFO - [Epoch 2 Batch 1990/3072] loss=0.3321, lr=0.0000159
+2020-01-19 18:02:31,442 - root - INFO - [Epoch 2 Batch 2000/3072] loss=0.3388, lr=0.0000159
+2020-01-19 18:02:39,955 - root - INFO - [Epoch 2 Batch 2010/3072] loss=0.3069, lr=0.0000159
+2020-01-19 18:02:48,727 - root - INFO - [Epoch 2 Batch 2020/3072] loss=0.3278, lr=0.0000158
+2020-01-19 18:02:57,754 - root - INFO - [Epoch 2 Batch 2030/3072] loss=0.3874, lr=0.0000158
+2020-01-19 18:03:06,283 - root - INFO - [Epoch 2 Batch 2040/3072] loss=0.3594, lr=0.0000158
+2020-01-19 18:03:15,192 - root - INFO - [Epoch 2 Batch 2050/3072] loss=0.3467, lr=0.0000157
+2020-01-19 18:03:23,546 - root - INFO - [Epoch 2 Batch 2060/3072] loss=0.3182, lr=0.0000157
+2020-01-19 18:03:32,276 - root - INFO - [Epoch 2 Batch 2070/3072] loss=0.3371, lr=0.0000157
+2020-01-19 18:03:42,663 - root - INFO - [Epoch 2 Batch 2080/3072] loss=0.3604, lr=0.0000156
+2020-01-19 18:03:51,420 - root - INFO - [Epoch 2 Batch 2090/3072] loss=0.3498, lr=0.0000156
+2020-01-19 18:04:00,320 - root - INFO - [Epoch 2 Batch 2100/3072] loss=0.3355, lr=0.0000156
+2020-01-19 18:04:09,164 - root - INFO - [Epoch 2 Batch 2110/3072] loss=0.3385, lr=0.0000155
+2020-01-19 18:04:17,674 - root - INFO - [Epoch 2 Batch 2120/3072] loss=0.3859, lr=0.0000155
+2020-01-19 18:04:26,313 - root - INFO - [Epoch 2 Batch 2130/3072] loss=0.3421, lr=0.0000155
+2020-01-19 18:04:35,280 - root - INFO - [Epoch 2 Batch 2140/3072] loss=0.3640, lr=0.0000154
+2020-01-19 18:04:44,136 - root - INFO - [Epoch 2 Batch 2150/3072] loss=0.3665, lr=0.0000154
+2020-01-19 18:04:52,948 - root - INFO - [Epoch 2 Batch 2160/3072] loss=0.3555, lr=0.0000154
+2020-01-19 18:05:01,381 - root - INFO - [Epoch 2 Batch 2170/3072] loss=0.3279, lr=0.0000154
+2020-01-19 18:05:10,133 - root - INFO - [Epoch 2 Batch 2180/3072] loss=0.3271, lr=0.0000153
+2020-01-19 18:05:19,250 - root - INFO - [Epoch 2 Batch 2190/3072] loss=0.3263, lr=0.0000153
+2020-01-19 18:05:27,644 - root - INFO - [Epoch 2 Batch 2200/3072] loss=0.2951, lr=0.0000153
+2020-01-19 18:05:36,754 - root - INFO - [Epoch 2 Batch 2210/3072] loss=0.3350, lr=0.0000152
+2020-01-19 18:05:45,137 - root - INFO - [Epoch 2 Batch 2220/3072] loss=0.3117, lr=0.0000152
+2020-01-19 18:05:53,531 - root - INFO - [Epoch 2 Batch 2230/3072] loss=0.3279, lr=0.0000152
+2020-01-19 18:06:02,443 - root - INFO - [Epoch 2 Batch 2240/3072] loss=0.3786, lr=0.0000151
+2020-01-19 18:06:11,545 - root - INFO - [Epoch 2 Batch 2250/3072] loss=0.3345, lr=0.0000151
+2020-01-19 18:06:20,061 - root - INFO - [Epoch 2 Batch 2260/3072] loss=0.3331, lr=0.0000151
+2020-01-19 18:06:28,883 - root - INFO - [Epoch 2 Batch 2270/3072] loss=0.3412, lr=0.0000150
+2020-01-19 18:06:37,672 - root - INFO - [Epoch 2 Batch 2280/3072] loss=0.3456, lr=0.0000150
+2020-01-19 18:06:46,502 - root - INFO - [Epoch 2 Batch 2290/3072] loss=0.3331, lr=0.0000150
+2020-01-19 18:06:55,679 - root - INFO - [Epoch 2 Batch 2300/3072] loss=0.3860, lr=0.0000149
+2020-01-19 18:07:05,502 - root - INFO - [Epoch 2 Batch 2310/3072] loss=0.3127, lr=0.0000149
+2020-01-19 18:07:14,096 - root - INFO - [Epoch 2 Batch 2320/3072] loss=0.3270, lr=0.0000149
+2020-01-19 18:07:22,703 - root - INFO - [Epoch 2 Batch 2330/3072] loss=0.3349, lr=0.0000148
+2020-01-19 18:07:31,632 - root - INFO - [Epoch 2 Batch 2340/3072] loss=0.3429, lr=0.0000148
+2020-01-19 18:07:40,390 - root - INFO - [Epoch 2 Batch 2350/3072] loss=0.3429, lr=0.0000148
+2020-01-19 18:07:48,998 - root - INFO - [Epoch 2 Batch 2360/3072] loss=0.3324, lr=0.0000147
+2020-01-19 18:07:57,893 - root - INFO - [Epoch 2 Batch 2370/3072] loss=0.3477, lr=0.0000147
+2020-01-19 18:08:06,518 - root - INFO - [Epoch 2 Batch 2380/3072] loss=0.3310, lr=0.0000147
+2020-01-19 18:08:15,068 - root - INFO - [Epoch 2 Batch 2390/3072] loss=0.3306, lr=0.0000146
+2020-01-19 18:08:23,860 - root - INFO - [Epoch 2 Batch 2400/3072] loss=0.3468, lr=0.0000146
+2020-01-19 18:08:32,694 - root - INFO - [Epoch 2 Batch 2410/3072] loss=0.3710, lr=0.0000146
+2020-01-19 18:08:41,101 - root - INFO - [Epoch 2 Batch 2420/3072] loss=0.3285, lr=0.0000145
+2020-01-19 18:08:49,998 - root - INFO - [Epoch 2 Batch 2430/3072] loss=0.3631, lr=0.0000145
+2020-01-19 18:09:00,289 - root - INFO - [Epoch 2 Batch 2440/3072] loss=0.2943, lr=0.0000145
+2020-01-19 18:09:09,323 - root - INFO - [Epoch 2 Batch 2450/3072] loss=0.2986, lr=0.0000144
+2020-01-19 18:09:17,746 - root - INFO - [Epoch 2 Batch 2460/3072] loss=0.3374, lr=0.0000144
+2020-01-19 18:09:26,633 - root - INFO - [Epoch 2 Batch 2470/3072] loss=0.3151, lr=0.0000144
+2020-01-19 18:09:35,489 - root - INFO - [Epoch 2 Batch 2480/3072] loss=0.3338, lr=0.0000144
+2020-01-19 18:09:44,323 - root - INFO - [Epoch 2 Batch 2490/3072] loss=0.3785, lr=0.0000143
+2020-01-19 18:09:53,204 - root - INFO - [Epoch 2 Batch 2500/3072] loss=0.3255, lr=0.0000143
+2020-01-19 18:10:01,840 - root - INFO - [Epoch 2 Batch 2510/3072] loss=0.3510, lr=0.0000143
+2020-01-19 18:10:10,314 - root - INFO - [Epoch 2 Batch 2520/3072] loss=0.3406, lr=0.0000142
+2020-01-19 18:10:19,467 - root - INFO - [Epoch 2 Batch 2530/3072] loss=0.3499, lr=0.0000142
+2020-01-19 18:10:28,384 - root - INFO - [Epoch 2 Batch 2540/3072] loss=0.3331, lr=0.0000142
+2020-01-19 18:10:36,882 - root - INFO - [Epoch 2 Batch 2550/3072] loss=0.3334, lr=0.0000141
+2020-01-19 18:10:45,824 - root - INFO - [Epoch 2 Batch 2560/3072] loss=0.3520, lr=0.0000141
+2020-01-19 18:10:54,543 - root - INFO - [Epoch 2 Batch 2570/3072] loss=0.3216, lr=0.0000141
+2020-01-19 18:11:03,450 - root - INFO - [Epoch 2 Batch 2580/3072] loss=0.3249, lr=0.0000140
+2020-01-19 18:11:12,280 - root - INFO - [Epoch 2 Batch 2590/3072] loss=0.3018, lr=0.0000140
+2020-01-19 18:11:23,105 - root - INFO - [Epoch 2 Batch 2600/3072] loss=0.3085, lr=0.0000140
+2020-01-19 18:11:31,826 - root - INFO - [Epoch 2 Batch 2610/3072] loss=0.3339, lr=0.0000139
+2020-01-19 18:11:40,468 - root - INFO - [Epoch 2 Batch 2620/3072] loss=0.3609, lr=0.0000139
+2020-01-19 18:11:49,373 - root - INFO - [Epoch 2 Batch 2630/3072] loss=0.3292, lr=0.0000139
+2020-01-19 18:11:58,032 - root - INFO - [Epoch 2 Batch 2640/3072] loss=0.3212, lr=0.0000138
+2020-01-19 18:12:06,736 - root - INFO - [Epoch 2 Batch 2650/3072] loss=0.3120, lr=0.0000138
+2020-01-19 18:12:15,954 - root - INFO - [Epoch 2 Batch 2660/3072] loss=0.3269, lr=0.0000138
+2020-01-19 18:12:24,815 - root - INFO - [Epoch 2 Batch 2670/3072] loss=0.3259, lr=0.0000137
+2020-01-19 18:12:34,138 - root - INFO - [Epoch 2 Batch 2680/3072] loss=0.3413, lr=0.0000137
+2020-01-19 18:12:43,149 - root - INFO - [Epoch 2 Batch 2690/3072] loss=0.3318, lr=0.0000137
+2020-01-19 18:12:51,657 - root - INFO - [Epoch 2 Batch 2700/3072] loss=0.3535, lr=0.0000136
+2020-01-19 18:13:02,123 - root - INFO - [Epoch 2 Batch 2710/3072] loss=0.3605, lr=0.0000136
+2020-01-19 18:13:11,163 - root - INFO - [Epoch 2 Batch 2720/3072] loss=0.3635, lr=0.0000136
+2020-01-19 18:13:19,478 - root - INFO - [Epoch 2 Batch 2730/3072] loss=0.3415, lr=0.0000135
+2020-01-19 18:13:28,421 - root - INFO - [Epoch 2 Batch 2740/3072] loss=0.3226, lr=0.0000135
+2020-01-19 18:13:37,070 - root - INFO - [Epoch 2 Batch 2750/3072] loss=0.3483, lr=0.0000135
+2020-01-19 18:13:45,876 - root - INFO - [Epoch 2 Batch 2760/3072] loss=0.3085, lr=0.0000134
+2020-01-19 18:13:54,911 - root - INFO - [Epoch 2 Batch 2770/3072] loss=0.2914, lr=0.0000134
+2020-01-19 18:14:03,450 - root - INFO - [Epoch 2 Batch 2780/3072] loss=0.3355, lr=0.0000134
+2020-01-19 18:14:12,307 - root - INFO - [Epoch 2 Batch 2790/3072] loss=0.2947, lr=0.0000134
+2020-01-19 18:14:20,731 - root - INFO - [Epoch 2 Batch 2800/3072] loss=0.3191, lr=0.0000133
+2020-01-19 18:14:29,500 - root - INFO - [Epoch 2 Batch 2810/3072] loss=0.3018, lr=0.0000133
+2020-01-19 18:14:38,467 - root - INFO - [Epoch 2 Batch 2820/3072] loss=0.3340, lr=0.0000133
+2020-01-19 18:14:47,163 - root - INFO - [Epoch 2 Batch 2830/3072] loss=0.3438, lr=0.0000132
+2020-01-19 18:14:55,754 - root - INFO - [Epoch 2 Batch 2840/3072] loss=0.3191, lr=0.0000132
+2020-01-19 18:15:06,064 - root - INFO - [Epoch 2 Batch 2850/3072] loss=0.3308, lr=0.0000132
+2020-01-19 18:15:14,784 - root - INFO - [Epoch 2 Batch 2860/3072] loss=0.3375, lr=0.0000131
+2020-01-19 18:15:23,840 - root - INFO - [Epoch 2 Batch 2870/3072] loss=0.2945, lr=0.0000131
+2020-01-19 18:15:32,571 - root - INFO - [Epoch 2 Batch 2880/3072] loss=0.3140, lr=0.0000131
+2020-01-19 18:15:41,008 - root - INFO - [Epoch 2 Batch 2890/3072] loss=0.3500, lr=0.0000130
+2020-01-19 18:15:49,140 - root - INFO - [Epoch 2 Batch 2900/3072] loss=0.2868, lr=0.0000130
+2020-01-19 18:15:57,991 - root - INFO - [Epoch 2 Batch 2910/3072] loss=0.3432, lr=0.0000130
+2020-01-19 18:16:06,629 - root - INFO - [Epoch 2 Batch 2920/3072] loss=0.3168, lr=0.0000129
+2020-01-19 18:16:14,917 - root - INFO - [Epoch 2 Batch 2930/3072] loss=0.3633, lr=0.0000129
+2020-01-19 18:16:23,674 - root - INFO - [Epoch 2 Batch 2940/3072] loss=0.2934, lr=0.0000129
+2020-01-19 18:16:32,633 - root - INFO - [Epoch 2 Batch 2950/3072] loss=0.3316, lr=0.0000128
+2020-01-19 18:16:41,591 - root - INFO - [Epoch 2 Batch 2960/3072] loss=0.3521, lr=0.0000128
+2020-01-19 18:16:49,939 - root - INFO - [Epoch 2 Batch 2970/3072] loss=0.3263, lr=0.0000128
+2020-01-19 18:16:58,894 - root - INFO - [Epoch 2 Batch 2980/3072] loss=0.3433, lr=0.0000127
+2020-01-19 18:17:07,601 - root - INFO - [Epoch 2 Batch 2990/3072] loss=0.3557, lr=0.0000127
+2020-01-19 18:17:16,642 - root - INFO - [Epoch 2 Batch 3000/3072] loss=0.3404, lr=0.0000127
+2020-01-19 18:17:25,635 - root - INFO - [Epoch 2 Batch 3010/3072] loss=0.3490, lr=0.0000126
+2020-01-19 18:17:36,161 - root - INFO - [Epoch 2 Batch 3020/3072] loss=0.3365, lr=0.0000126
+2020-01-19 18:17:44,935 - root - INFO - [Epoch 2 Batch 3030/3072] loss=0.3177, lr=0.0000126
+2020-01-19 18:17:54,071 - root - INFO - [Epoch 2 Batch 3040/3072] loss=0.3147, lr=0.0000125
+2020-01-19 18:18:03,034 - root - INFO - [Epoch 2 Batch 3050/3072] loss=0.3402, lr=0.0000125
+2020-01-19 18:18:11,664 - root - INFO - [Epoch 2 Batch 3060/3072] loss=0.3304, lr=0.0000125
+2020-01-19 18:18:20,548 - root - INFO - [Epoch 2 Batch 3070/3072] loss=0.3301, lr=0.0000124
+2020-01-19 18:18:22,384 - root - INFO - Now we are doing evaluation on dev_matched with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2020-01-19 18:18:24,113 - root - INFO - [Batch 10/307] loss=0.3468
+2020-01-19 18:18:25,989 - root - INFO - [Batch 20/307] loss=0.3655
+2020-01-19 18:18:27,852 - root - INFO - [Batch 30/307] loss=0.3610
+2020-01-19 18:18:29,717 - root - INFO - [Batch 40/307] loss=0.3217
+2020-01-19 18:18:31,610 - root - INFO - [Batch 50/307] loss=0.3726
+2020-01-19 18:18:33,462 - root - INFO - [Batch 60/307] loss=0.3562
+2020-01-19 18:18:35,337 - root - INFO - [Batch 70/307] loss=0.3005
+2020-01-19 18:18:37,145 - root - INFO - [Batch 80/307] loss=0.3752
+2020-01-19 18:18:39,038 - root - INFO - [Batch 90/307] loss=0.3944
+2020-01-19 18:18:40,881 - root - INFO - [Batch 100/307] loss=0.3343
+2020-01-19 18:18:42,687 - root - INFO - [Batch 110/307] loss=0.3935
+2020-01-19 18:18:44,472 - root - INFO - [Batch 120/307] loss=0.3310
+2020-01-19 18:18:46,295 - root - INFO - [Batch 130/307] loss=0.3830
+2020-01-19 18:18:48,143 - root - INFO - [Batch 140/307] loss=0.3265
+2020-01-19 18:18:49,944 - root - INFO - [Batch 150/307] loss=0.3501
+2020-01-19 18:18:51,756 - root - INFO - [Batch 160/307] loss=0.4161
+2020-01-19 18:18:53,527 - root - INFO - [Batch 170/307] loss=0.3959
+2020-01-19 18:18:55,247 - root - INFO - [Batch 180/307] loss=0.3150
+2020-01-19 18:18:57,021 - root - INFO - [Batch 190/307] loss=0.3639
+2020-01-19 18:18:58,842 - root - INFO - [Batch 200/307] loss=0.3423
+2020-01-19 18:19:00,657 - root - INFO - [Batch 210/307] loss=0.4183
+2020-01-19 18:19:02,523 - root - INFO - [Batch 220/307] loss=0.3146
+2020-01-19 18:19:04,380 - root - INFO - [Batch 230/307] loss=0.2754
+2020-01-19 18:19:06,206 - root - INFO - [Batch 240/307] loss=0.4034
+2020-01-19 18:19:08,039 - root - INFO - [Batch 250/307] loss=0.4716
+2020-01-19 18:19:09,849 - root - INFO - [Batch 260/307] loss=0.4339
+2020-01-19 18:19:11,599 - root - INFO - [Batch 270/307] loss=0.3107
+2020-01-19 18:19:13,467 - root - INFO - [Batch 280/307] loss=0.3738
+2020-01-19 18:19:15,203 - root - INFO - [Batch 290/307] loss=0.3817
+2020-01-19 18:19:16,999 - root - INFO - [Batch 300/307] loss=0.3636
+2020-01-19 18:19:18,315 - root - INFO - validation metrics:accuracy:0.8678
+2020-01-19 18:19:18,316 - root - INFO - Time cost=55.93s, throughput=175.64 samples/s
+2020-01-19 18:19:18,316 - root - INFO - Now we are doing evaluation on dev_mismatched with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2020-01-19 18:19:20,044 - root - INFO - [Batch 10/308] loss=0.3884
+2020-01-19 18:19:21,759 - root - INFO - [Batch 20/308] loss=0.4465
+2020-01-19 18:19:23,478 - root - INFO - [Batch 30/308] loss=0.2637
+2020-01-19 18:19:25,246 - root - INFO - [Batch 40/308] loss=0.4072
+2020-01-19 18:19:26,967 - root - INFO - [Batch 50/308] loss=0.3652
+2020-01-19 18:19:28,748 - root - INFO - [Batch 60/308] loss=0.3387
+2020-01-19 18:19:30,515 - root - INFO - [Batch 70/308] loss=0.3284
+2020-01-19 18:19:32,276 - root - INFO - [Batch 80/308] loss=0.3833
+2020-01-19 18:19:34,008 - root - INFO - [Batch 90/308] loss=0.3395
+2020-01-19 18:19:35,701 - root - INFO - [Batch 100/308] loss=0.3338
+2020-01-19 18:19:37,417 - root - INFO - [Batch 110/308] loss=0.4315
+2020-01-19 18:19:39,117 - root - INFO - [Batch 120/308] loss=0.3360
+2020-01-19 18:19:40,841 - root - INFO - [Batch 130/308] loss=0.3910
+2020-01-19 18:19:42,544 - root - INFO - [Batch 140/308] loss=0.3107
+2020-01-19 18:19:44,187 - root - INFO - [Batch 150/308] loss=0.3248
+2020-01-19 18:19:45,888 - root - INFO - [Batch 160/308] loss=0.4206
+2020-01-19 18:19:47,611 - root - INFO - [Batch 170/308] loss=0.4239
+2020-01-19 18:19:49,350 - root - INFO - [Batch 180/308] loss=0.4133
+2020-01-19 18:19:51,070 - root - INFO - [Batch 190/308] loss=0.3316
+2020-01-19 18:19:52,907 - root - INFO - [Batch 200/308] loss=0.3483
+2020-01-19 18:19:54,748 - root - INFO - [Batch 210/308] loss=0.3786
+2020-01-19 18:19:56,594 - root - INFO - [Batch 220/308] loss=0.3209
+2020-01-19 18:19:58,382 - root - INFO - [Batch 230/308] loss=0.4317
+2020-01-19 18:20:00,128 - root - INFO - [Batch 240/308] loss=0.3470
+2020-01-19 18:20:03,158 - root - INFO - [Batch 250/308] loss=0.3234
+2020-01-19 18:20:05,002 - root - INFO - [Batch 260/308] loss=0.5029
+2020-01-19 18:20:06,818 - root - INFO - [Batch 270/308] loss=0.3480
+2020-01-19 18:20:08,622 - root - INFO - [Batch 280/308] loss=0.3338
+2020-01-19 18:20:10,410 - root - INFO - [Batch 290/308] loss=0.4297
+2020-01-19 18:20:12,229 - root - INFO - [Batch 300/308] loss=0.3846
+2020-01-19 18:20:13,706 - root - INFO - validation metrics:accuracy:0.8641
+2020-01-19 18:20:13,706 - root - INFO - Time cost=55.39s, throughput=177.94 samples/s
+2020-01-19 18:20:14,574 - root - INFO - params saved in: ./output_dir/model_xlnet_MNLI_1.params
+2020-01-19 18:20:14,576 - root - INFO - Time cost=2844.16s
+2020-01-19 18:20:31,802 - root - INFO - [Epoch 3 Batch 10/3072] loss=0.2596, lr=0.0000124
+2020-01-19 18:20:40,916 - root - INFO - [Epoch 3 Batch 20/3072] loss=0.2616, lr=0.0000124
+2020-01-19 18:20:51,093 - root - INFO - [Epoch 3 Batch 30/3072] loss=0.2735, lr=0.0000123
+2020-01-19 18:20:59,575 - root - INFO - [Epoch 3 Batch 40/3072] loss=0.2636, lr=0.0000123
+2020-01-19 18:21:07,963 - root - INFO - [Epoch 3 Batch 50/3072] loss=0.2558, lr=0.0000123
+2020-01-19 18:21:16,696 - root - INFO - [Epoch 3 Batch 60/3072] loss=0.2307, lr=0.0000122
+2020-01-19 18:21:29,288 - root - INFO - [Epoch 3 Batch 70/3072] loss=0.2785, lr=0.0000122
+2020-01-19 18:21:38,275 - root - INFO - [Epoch 3 Batch 80/3072] loss=0.2603, lr=0.0000122
+2020-01-19 18:21:47,217 - root - INFO - [Epoch 3 Batch 90/3072] loss=0.2734, lr=0.0000122
+2020-01-19 18:21:56,327 - root - INFO - [Epoch 3 Batch 100/3072] loss=0.2569, lr=0.0000121
+2020-01-19 18:22:05,205 - root - INFO - [Epoch 3 Batch 110/3072] loss=0.2141, lr=0.0000121
+2020-01-19 18:22:13,849 - root - INFO - [Epoch 3 Batch 120/3072] loss=0.2627, lr=0.0000121
+2020-01-19 18:22:23,002 - root - INFO - [Epoch 3 Batch 130/3072] loss=0.3146, lr=0.0000120
+2020-01-19 18:22:31,595 - root - INFO - [Epoch 3 Batch 140/3072] loss=0.2528, lr=0.0000120
+2020-01-19 18:22:40,843 - root - INFO - [Epoch 3 Batch 150/3072] loss=0.2628, lr=0.0000120
+2020-01-19 18:22:49,914 - root - INFO - [Epoch 3 Batch 160/3072] loss=0.2623, lr=0.0000119
+2020-01-19 18:22:58,668 - root - INFO - [Epoch 3 Batch 170/3072] loss=0.2495, lr=0.0000119
+2020-01-19 18:23:07,596 - root - INFO - [Epoch 3 Batch 180/3072] loss=0.2658, lr=0.0000119
+2020-01-19 18:23:16,725 - root - INFO - [Epoch 3 Batch 190/3072] loss=0.2430, lr=0.0000118
+2020-01-19 18:23:25,407 - root - INFO - [Epoch 3 Batch 200/3072] loss=0.2795, lr=0.0000118
+2020-01-19 18:23:34,158 - root - INFO - [Epoch 3 Batch 210/3072] loss=0.2587, lr=0.0000118
+2020-01-19 18:23:43,308 - root - INFO - [Epoch 3 Batch 220/3072] loss=0.2648, lr=0.0000117
+2020-01-19 18:23:51,755 - root - INFO - [Epoch 3 Batch 230/3072] loss=0.2888, lr=0.0000117
+2020-01-19 18:24:00,252 - root - INFO - [Epoch 3 Batch 240/3072] loss=0.2832, lr=0.0000117
+2020-01-19 18:24:09,210 - root - INFO - [Epoch 3 Batch 250/3072] loss=0.2571, lr=0.0000116
+2020-01-19 18:24:18,471 - root - INFO - [Epoch 3 Batch 260/3072] loss=0.2642, lr=0.0000116
+2020-01-19 18:24:26,874 - root - INFO - [Epoch 3 Batch 270/3072] loss=0.2473, lr=0.0000116
+2020-01-19 18:24:35,735 - root - INFO - [Epoch 3 Batch 280/3072] loss=0.2977, lr=0.0000115
+2020-01-19 18:24:44,419 - root - INFO - [Epoch 3 Batch 290/3072] loss=0.2781, lr=0.0000115
+2020-01-19 18:24:53,324 - root - INFO - [Epoch 3 Batch 300/3072] loss=0.2641, lr=0.0000115
+2020-01-19 18:25:02,266 - root - INFO - [Epoch 3 Batch 310/3072] loss=0.2648, lr=0.0000114
+2020-01-19 18:25:10,500 - root - INFO - [Epoch 3 Batch 320/3072] loss=0.2670, lr=0.0000114
+2020-01-19 18:25:19,177 - root - INFO - [Epoch 3 Batch 330/3072] loss=0.2502, lr=0.0000114
+2020-01-19 18:25:28,178 - root - INFO - [Epoch 3 Batch 340/3072] loss=0.2375, lr=0.0000113
+2020-01-19 18:25:37,781 - root - INFO - [Epoch 3 Batch 350/3072] loss=0.2503, lr=0.0000113
+2020-01-19 18:25:46,581 - root - INFO - [Epoch 3 Batch 360/3072] loss=0.2528, lr=0.0000113
+2020-01-19 18:25:59,889 - root - INFO - [Epoch 3 Batch 370/3072] loss=0.2486, lr=0.0000112
+2020-01-19 18:26:08,704 - root - INFO - [Epoch 3 Batch 380/3072] loss=0.2780, lr=0.0000112
+2020-01-19 18:26:17,751 - root - INFO - [Epoch 3 Batch 390/3072] loss=0.2231, lr=0.0000112
+2020-01-19 18:26:27,069 - root - INFO - [Epoch 3 Batch 400/3072] loss=0.2889, lr=0.0000112
+2020-01-19 18:26:35,331 - root - INFO - [Epoch 3 Batch 410/3072] loss=0.2528, lr=0.0000111
+2020-01-19 18:26:44,017 - root - INFO - [Epoch 3 Batch 420/3072] loss=0.2733, lr=0.0000111
+2020-01-19 18:26:53,194 - root - INFO - [Epoch 3 Batch 430/3072] loss=0.2979, lr=0.0000111
+2020-01-19 18:27:01,753 - root - INFO - [Epoch 3 Batch 440/3072] loss=0.2600, lr=0.0000110
+2020-01-19 18:27:10,283 - root - INFO - [Epoch 3 Batch 450/3072] loss=0.2548, lr=0.0000110
+2020-01-19 18:27:18,789 - root - INFO - [Epoch 3 Batch 460/3072] loss=0.2484, lr=0.0000110
+2020-01-19 18:27:27,571 - root - INFO - [Epoch 3 Batch 470/3072] loss=0.2383, lr=0.0000109
+2020-01-19 18:27:36,941 - root - INFO - [Epoch 3 Batch 480/3072] loss=0.2472, lr=0.0000109
+2020-01-19 18:27:46,843 - root - INFO - [Epoch 3 Batch 490/3072] loss=0.2961, lr=0.0000109
+2020-01-19 18:27:55,678 - root - INFO - [Epoch 3 Batch 500/3072] loss=0.2546, lr=0.0000108
+2020-01-19 18:28:05,768 - root - INFO - [Epoch 3 Batch 510/3072] loss=0.2160, lr=0.0000108
+2020-01-19 18:28:14,554 - root - INFO - [Epoch 3 Batch 520/3072] loss=0.2648, lr=0.0000108
+2020-01-19 18:28:23,027 - root - INFO - [Epoch 3 Batch 530/3072] loss=0.2451, lr=0.0000107
+2020-01-19 18:28:32,414 - root - INFO - [Epoch 3 Batch 540/3072] loss=0.2909, lr=0.0000107
+2020-01-19 18:28:41,451 - root - INFO - [Epoch 3 Batch 550/3072] loss=0.2682, lr=0.0000107
+2020-01-19 18:28:50,412 - root - INFO - [Epoch 3 Batch 560/3072] loss=0.2761, lr=0.0000106
+2020-01-19 18:28:58,962 - root - INFO - [Epoch 3 Batch 570/3072] loss=0.2587, lr=0.0000106
+2020-01-19 18:29:07,677 - root - INFO - [Epoch 3 Batch 580/3072] loss=0.2827, lr=0.0000106
+2020-01-19 18:29:16,722 - root - INFO - [Epoch 3 Batch 590/3072] loss=0.2308, lr=0.0000105
+2020-01-19 18:29:25,475 - root - INFO - [Epoch 3 Batch 600/3072] loss=0.2518, lr=0.0000105
+2020-01-19 18:29:34,482 - root - INFO - [Epoch 3 Batch 610/3072] loss=0.2773, lr=0.0000105
+2020-01-19 18:29:44,208 - root - INFO - [Epoch 3 Batch 620/3072] loss=0.2470, lr=0.0000104
+2020-01-19 18:29:53,337 - root - INFO - [Epoch 3 Batch 630/3072] loss=0.2595, lr=0.0000104
+2020-01-19 18:30:02,364 - root - INFO - [Epoch 3 Batch 640/3072] loss=0.2379, lr=0.0000104
+2020-01-19 18:30:11,310 - root - INFO - [Epoch 3 Batch 650/3072] loss=0.2046, lr=0.0000103
+2020-01-19 18:30:19,878 - root - INFO - [Epoch 3 Batch 660/3072] loss=0.2236, lr=0.0000103
+2020-01-19 18:30:28,647 - root - INFO - [Epoch 3 Batch 670/3072] loss=0.2608, lr=0.0000103
+2020-01-19 18:30:37,349 - root - INFO - [Epoch 3 Batch 680/3072] loss=0.2538, lr=0.0000102
+2020-01-19 18:30:46,497 - root - INFO - [Epoch 3 Batch 690/3072] loss=0.2075, lr=0.0000102
+2020-01-19 18:30:55,314 - root - INFO - [Epoch 3 Batch 700/3072] loss=0.2464, lr=0.0000102
+2020-01-19 18:31:04,381 - root - INFO - [Epoch 3 Batch 710/3072] loss=0.2863, lr=0.0000102
+2020-01-19 18:31:13,501 - root - INFO - [Epoch 3 Batch 720/3072] loss=0.2437, lr=0.0000101
+2020-01-19 18:31:22,582 - root - INFO - [Epoch 3 Batch 730/3072] loss=0.2684, lr=0.0000101
+2020-01-19 18:31:31,181 - root - INFO - [Epoch 3 Batch 740/3072] loss=0.2298, lr=0.0000101
+2020-01-19 18:31:39,874 - root - INFO - [Epoch 3 Batch 750/3072] loss=0.2480, lr=0.0000100
+2020-01-19 18:31:48,505 - root - INFO - [Epoch 3 Batch 760/3072] loss=0.2696, lr=0.0000100
+2020-01-19 18:31:57,427 - root - INFO - [Epoch 3 Batch 770/3072] loss=0.2646, lr=0.0000100
+2020-01-19 18:32:06,203 - root - INFO - [Epoch 3 Batch 780/3072] loss=0.2667, lr=0.0000099
+2020-01-19 18:32:15,147 - root - INFO - [Epoch 3 Batch 790/3072] loss=0.2566, lr=0.0000099
+2020-01-19 18:32:25,052 - root - INFO - [Epoch 3 Batch 800/3072] loss=0.2689, lr=0.0000099
+2020-01-19 18:32:33,978 - root - INFO - [Epoch 3 Batch 810/3072] loss=0.2503, lr=0.0000098
+2020-01-19 18:32:42,863 - root - INFO - [Epoch 3 Batch 820/3072] loss=0.2101, lr=0.0000098
+2020-01-19 18:32:51,605 - root - INFO - [Epoch 3 Batch 830/3072] loss=0.2535, lr=0.0000098
+2020-01-19 18:33:00,721 - root - INFO - [Epoch 3 Batch 840/3072] loss=0.2523, lr=0.0000097
+2020-01-19 18:33:09,580 - root - INFO - [Epoch 3 Batch 850/3072] loss=0.2824, lr=0.0000097
+2020-01-19 18:33:17,899 - root - INFO - [Epoch 3 Batch 860/3072] loss=0.2290, lr=0.0000097
+2020-01-19 18:33:27,021 - root - INFO - [Epoch 3 Batch 870/3072] loss=0.2480, lr=0.0000096
+2020-01-19 18:33:35,377 - root - INFO - [Epoch 3 Batch 880/3072] loss=0.2275, lr=0.0000096
+2020-01-19 18:33:44,401 - root - INFO - [Epoch 3 Batch 890/3072] loss=0.2457, lr=0.0000096
+2020-01-19 18:33:53,210 - root - INFO - [Epoch 3 Batch 900/3072] loss=0.2819, lr=0.0000095
+2020-01-19 18:34:02,067 - root - INFO - [Epoch 3 Batch 910/3072] loss=0.2425, lr=0.0000095
+2020-01-19 18:34:11,273 - root - INFO - [Epoch 3 Batch 920/3072] loss=0.2868, lr=0.0000095
+2020-01-19 18:34:20,554 - root - INFO - [Epoch 3 Batch 930/3072] loss=0.2411, lr=0.0000094
+2020-01-19 18:34:29,729 - root - INFO - [Epoch 3 Batch 940/3072] loss=0.2615, lr=0.0000094
+2020-01-19 18:34:38,274 - root - INFO - [Epoch 3 Batch 950/3072] loss=0.2570, lr=0.0000094
+2020-01-19 18:34:46,499 - root - INFO - [Epoch 3 Batch 960/3072] loss=0.2389, lr=0.0000093
+2020-01-19 18:34:55,126 - root - INFO - [Epoch 3 Batch 970/3072] loss=0.2457, lr=0.0000093
+2020-01-19 18:35:04,322 - root - INFO - [Epoch 3 Batch 980/3072] loss=0.2266, lr=0.0000093
+2020-01-19 18:35:12,881 - root - INFO - [Epoch 3 Batch 990/3072] loss=0.2454, lr=0.0000092
+2020-01-19 18:35:21,907 - root - INFO - [Epoch 3 Batch 1000/3072] loss=0.2477, lr=0.0000092
+2020-01-19 18:35:30,669 - root - INFO - [Epoch 3 Batch 1010/3072] loss=0.2230, lr=0.0000092
+2020-01-19 18:35:39,195 - root - INFO - [Epoch 3 Batch 1020/3072] loss=0.2444, lr=0.0000092
+2020-01-19 18:35:47,950 - root - INFO - [Epoch 3 Batch 1030/3072] loss=0.2483, lr=0.0000091
+2020-01-19 18:35:56,759 - root - INFO - [Epoch 3 Batch 1040/3072] loss=0.2506, lr=0.0000091
+2020-01-19 18:36:05,353 - root - INFO - [Epoch 3 Batch 1050/3072] loss=0.2428, lr=0.0000091
+2020-01-19 18:36:14,267 - root - INFO - [Epoch 3 Batch 1060/3072] loss=0.2746, lr=0.0000090
+2020-01-19 18:36:23,054 - root - INFO - [Epoch 3 Batch 1070/3072] loss=0.2735, lr=0.0000090
+2020-01-19 18:36:32,025 - root - INFO - [Epoch 3 Batch 1080/3072] loss=0.2551, lr=0.0000090
+2020-01-19 18:36:40,654 - root - INFO - [Epoch 3 Batch 1090/3072] loss=0.2377, lr=0.0000089
+2020-01-19 18:36:49,705 - root - INFO - [Epoch 3 Batch 1100/3072] loss=0.2538, lr=0.0000089
+2020-01-19 18:36:58,455 - root - INFO - [Epoch 3 Batch 1110/3072] loss=0.2402, lr=0.0000089
+2020-01-19 18:37:07,573 - root - INFO - [Epoch 3 Batch 1120/3072] loss=0.2880, lr=0.0000088
+2020-01-19 18:37:16,216 - root - INFO - [Epoch 3 Batch 1130/3072] loss=0.2502, lr=0.0000088
+2020-01-19 18:37:24,559 - root - INFO - [Epoch 3 Batch 1140/3072] loss=0.2653, lr=0.0000088
+2020-01-19 18:37:32,933 - root - INFO - [Epoch 3 Batch 1150/3072] loss=0.2628, lr=0.0000087
+2020-01-19 18:37:41,623 - root - INFO - [Epoch 3 Batch 1160/3072] loss=0.2766, lr=0.0000087
+2020-01-19 18:37:53,479 - root - INFO - [Epoch 3 Batch 1170/3072] loss=0.2473, lr=0.0000087
+2020-01-19 18:38:02,206 - root - INFO - [Epoch 3 Batch 1180/3072] loss=0.2409, lr=0.0000086
+2020-01-19 18:38:11,564 - root - INFO - [Epoch 3 Batch 1190/3072] loss=0.2455, lr=0.0000086
+2020-01-19 18:38:20,492 - root - INFO - [Epoch 3 Batch 1200/3072] loss=0.2683, lr=0.0000086
+2020-01-19 18:38:30,027 - root - INFO - [Epoch 3 Batch 1210/3072] loss=0.2549, lr=0.0000085
+2020-01-19 18:38:39,187 - root - INFO - [Epoch 3 Batch 1220/3072] loss=0.2542, lr=0.0000085
+2020-01-19 18:38:47,727 - root - INFO - [Epoch 3 Batch 1230/3072] loss=0.2563, lr=0.0000085
+2020-01-19 18:38:56,400 - root - INFO - [Epoch 3 Batch 1240/3072] loss=0.2018, lr=0.0000084
+2020-01-19 18:39:05,687 - root - INFO - [Epoch 3 Batch 1250/3072] loss=0.2480, lr=0.0000084
+2020-01-19 18:39:14,579 - root - INFO - [Epoch 3 Batch 1260/3072] loss=0.2425, lr=0.0000084
+2020-01-19 18:39:23,392 - root - INFO - [Epoch 3 Batch 1270/3072] loss=0.2685, lr=0.0000083
+2020-01-19 18:39:32,217 - root - INFO - [Epoch 3 Batch 1280/3072] loss=0.2913, lr=0.0000083
+2020-01-19 18:39:40,726 - root - INFO - [Epoch 3 Batch 1290/3072] loss=0.2703, lr=0.0000083
+2020-01-19 18:39:49,498 - root - INFO - [Epoch 3 Batch 1300/3072] loss=0.2471, lr=0.0000082
+2020-01-19 18:39:57,994 - root - INFO - [Epoch 3 Batch 1310/3072] loss=0.2470, lr=0.0000082
+2020-01-19 18:40:06,598 - root - INFO - [Epoch 3 Batch 1320/3072] loss=0.2488, lr=0.0000082
+2020-01-19 18:40:15,373 - root - INFO - [Epoch 3 Batch 1330/3072] loss=0.2446, lr=0.0000082
+2020-01-19 18:40:23,535 - root - INFO - [Epoch 3 Batch 1340/3072] loss=0.2478, lr=0.0000081
+2020-01-19 18:40:33,225 - root - INFO - [Epoch 3 Batch 1350/3072] loss=0.2677, lr=0.0000081
+2020-01-19 18:40:42,024 - root - INFO - [Epoch 3 Batch 1360/3072] loss=0.2767, lr=0.0000081
+2020-01-19 18:40:50,552 - root - INFO - [Epoch 3 Batch 1370/3072] loss=0.2219, lr=0.0000080
+2020-01-19 18:40:59,185 - root - INFO - [Epoch 3 Batch 1380/3072] loss=0.2464, lr=0.0000080
+2020-01-19 18:41:08,066 - root - INFO - [Epoch 3 Batch 1390/3072] loss=0.2446, lr=0.0000080
+2020-01-19 18:41:16,411 - root - INFO - [Epoch 3 Batch 1400/3072] loss=0.2468, lr=0.0000079
+2020-01-19 18:41:25,198 - root - INFO - [Epoch 3 Batch 1410/3072] loss=0.2710, lr=0.0000079
+2020-01-19 18:41:33,894 - root - INFO - [Epoch 3 Batch 1420/3072] loss=0.2471, lr=0.0000079
+2020-01-19 18:41:42,823 - root - INFO - [Epoch 3 Batch 1430/3072] loss=0.2399, lr=0.0000078
+2020-01-19 18:41:51,748 - root - INFO - [Epoch 3 Batch 1440/3072] loss=0.2779, lr=0.0000078
+2020-01-19 18:42:00,334 - root - INFO - [Epoch 3 Batch 1450/3072] loss=0.2589, lr=0.0000078
+2020-01-19 18:42:09,241 - root - INFO - [Epoch 3 Batch 1460/3072] loss=0.2731, lr=0.0000077
+2020-01-19 18:42:17,359 - root - INFO - [Epoch 3 Batch 1470/3072] loss=0.2875, lr=0.0000077
+2020-01-19 18:42:26,019 - root - INFO - [Epoch 3 Batch 1480/3072] loss=0.2625, lr=0.0000077
+2020-01-19 18:42:34,846 - root - INFO - [Epoch 3 Batch 1490/3072] loss=0.2688, lr=0.0000076
+2020-01-19 18:42:43,532 - root - INFO - [Epoch 3 Batch 1500/3072] loss=0.2229, lr=0.0000076
+2020-01-19 18:42:52,246 - root - INFO - [Epoch 3 Batch 1510/3072] loss=0.2595, lr=0.0000076
+2020-01-19 18:43:00,817 - root - INFO - [Epoch 3 Batch 1520/3072] loss=0.2490, lr=0.0000075
+2020-01-19 18:43:09,396 - root - INFO - [Epoch 3 Batch 1530/3072] loss=0.2459, lr=0.0000075
+2020-01-19 18:43:17,983 - root - INFO - [Epoch 3 Batch 1540/3072] loss=0.2246, lr=0.0000075
+2020-01-19 18:43:26,834 - root - INFO - [Epoch 3 Batch 1550/3072] loss=0.2490, lr=0.0000074
+2020-01-19 18:43:35,099 - root - INFO - [Epoch 3 Batch 1560/3072] loss=0.2304, lr=0.0000074
+2020-01-19 18:43:43,479 - root - INFO - [Epoch 3 Batch 1570/3072] loss=0.2611, lr=0.0000074
+2020-01-19 18:43:52,343 - root - INFO - [Epoch 3 Batch 1580/3072] loss=0.2463, lr=0.0000073
+2020-01-19 18:44:00,839 - root - INFO - [Epoch 3 Batch 1590/3072] loss=0.2166, lr=0.0000073
+2020-01-19 18:44:09,866 - root - INFO - [Epoch 3 Batch 1600/3072] loss=0.2634, lr=0.0000073
+2020-01-19 18:44:18,582 - root - INFO - [Epoch 3 Batch 1610/3072] loss=0.2460, lr=0.0000072
+2020-01-19 18:44:27,097 - root - INFO - [Epoch 3 Batch 1620/3072] loss=0.2573, lr=0.0000072
+2020-01-19 18:44:35,712 - root - INFO - [Epoch 3 Batch 1630/3072] loss=0.2405, lr=0.0000072
+2020-01-19 18:44:43,992 - root - INFO - [Epoch 3 Batch 1640/3072] loss=0.2369, lr=0.0000072
+2020-01-19 18:44:52,776 - root - INFO - [Epoch 3 Batch 1650/3072] loss=0.2531, lr=0.0000071
+2020-01-19 18:45:01,288 - root - INFO - [Epoch 3 Batch 1660/3072] loss=0.2569, lr=0.0000071
+2020-01-19 18:45:09,734 - root - INFO - [Epoch 3 Batch 1670/3072] loss=0.2388, lr=0.0000071
+2020-01-19 18:45:18,629 - root - INFO - [Epoch 3 Batch 1680/3072] loss=0.2894, lr=0.0000070
+2020-01-19 18:45:27,487 - root - INFO - [Epoch 3 Batch 1690/3072] loss=0.2864, lr=0.0000070
+2020-01-19 18:45:36,860 - root - INFO - [Epoch 3 Batch 1700/3072] loss=0.2603, lr=0.0000070
+2020-01-19 18:45:45,577 - root - INFO - [Epoch 3 Batch 1710/3072] loss=0.2629, lr=0.0000069
+2020-01-19 18:45:54,361 - root - INFO - [Epoch 3 Batch 1720/3072] loss=0.2281, lr=0.0000069
+2020-01-19 18:46:04,093 - root - INFO - [Epoch 3 Batch 1730/3072] loss=0.2772, lr=0.0000069
+2020-01-19 18:46:14,120 - root - INFO - [Epoch 3 Batch 1740/3072] loss=0.2709, lr=0.0000068
+2020-01-19 18:46:27,919 - root - INFO - [Epoch 3 Batch 1750/3072] loss=0.2858, lr=0.0000068
+2020-01-19 18:46:36,828 - root - INFO - [Epoch 3 Batch 1760/3072] loss=0.2870, lr=0.0000068
+2020-01-19 18:46:45,880 - root - INFO - [Epoch 3 Batch 1770/3072] loss=0.2444, lr=0.0000067
+2020-01-19 18:46:54,673 - root - INFO - [Epoch 3 Batch 1780/3072] loss=0.2438, lr=0.0000067
+2020-01-19 18:47:03,528 - root - INFO - [Epoch 3 Batch 1790/3072] loss=0.2490, lr=0.0000067
+2020-01-19 18:47:12,251 - root - INFO - [Epoch 3 Batch 1800/3072] loss=0.2350, lr=0.0000066
+2020-01-19 18:47:21,352 - root - INFO - [Epoch 3 Batch 1810/3072] loss=0.2707, lr=0.0000066
+2020-01-19 18:47:30,068 - root - INFO - [Epoch 3 Batch 1820/3072] loss=0.2599, lr=0.0000066
+2020-01-19 18:47:38,447 - root - INFO - [Epoch 3 Batch 1830/3072] loss=0.2717, lr=0.0000065
+2020-01-19 18:47:47,752 - root - INFO - [Epoch 3 Batch 1840/3072] loss=0.2488, lr=0.0000065
+2020-01-19 18:47:56,308 - root - INFO - [Epoch 3 Batch 1850/3072] loss=0.2370, lr=0.0000065
+2020-01-19 18:48:05,139 - root - INFO - [Epoch 3 Batch 1860/3072] loss=0.2598, lr=0.0000064
+2020-01-19 18:48:14,082 - root - INFO - [Epoch 3 Batch 1870/3072] loss=0.2699, lr=0.0000064
+2020-01-19 18:48:22,644 - root - INFO - [Epoch 3 Batch 1880/3072] loss=0.2484, lr=0.0000064
+2020-01-19 18:48:31,629 - root - INFO - [Epoch 3 Batch 1890/3072] loss=0.2703, lr=0.0000063
+2020-01-19 18:48:40,766 - root - INFO - [Epoch 3 Batch 1900/3072] loss=0.2539, lr=0.0000063
+2020-01-19 18:48:49,105 - root - INFO - [Epoch 3 Batch 1910/3072] loss=0.2441, lr=0.0000063
+2020-01-19 18:48:57,851 - root - INFO - [Epoch 3 Batch 1920/3072] loss=0.2162, lr=0.0000062
+2020-01-19 18:49:06,653 - root - INFO - [Epoch 3 Batch 1930/3072] loss=0.2406, lr=0.0000062
+2020-01-19 18:49:17,291 - root - INFO - [Epoch 3 Batch 1940/3072] loss=0.2612, lr=0.0000062
+2020-01-19 18:49:25,979 - root - INFO - [Epoch 3 Batch 1950/3072] loss=0.2521, lr=0.0000062
+2020-01-19 18:49:34,562 - root - INFO - [Epoch 3 Batch 1960/3072] loss=0.2489, lr=0.0000061
+2020-01-19 18:49:43,541 - root - INFO - [Epoch 3 Batch 1970/3072] loss=0.2698, lr=0.0000061
+2020-01-19 18:49:51,785 - root - INFO - [Epoch 3 Batch 1980/3072] loss=0.2750, lr=0.0000061
+2020-01-19 18:50:00,593 - root - INFO - [Epoch 3 Batch 1990/3072] loss=0.2643, lr=0.0000060
+2020-01-19 18:50:09,417 - root - INFO - [Epoch 3 Batch 2000/3072] loss=0.2697, lr=0.0000060
+2020-01-19 18:50:18,457 - root - INFO - [Epoch 3 Batch 2010/3072] loss=0.2673, lr=0.0000060
+2020-01-19 18:50:27,405 - root - INFO - [Epoch 3 Batch 2020/3072] loss=0.2728, lr=0.0000059
+2020-01-19 18:50:36,522 - root - INFO - [Epoch 3 Batch 2030/3072] loss=0.2333, lr=0.0000059
+2020-01-19 18:50:45,131 - root - INFO - [Epoch 3 Batch 2040/3072] loss=0.2457, lr=0.0000059
+2020-01-19 18:50:55,023 - root - INFO - [Epoch 3 Batch 2050/3072] loss=0.2447, lr=0.0000058
+2020-01-19 18:51:04,094 - root - INFO - [Epoch 3 Batch 2060/3072] loss=0.2429, lr=0.0000058
+2020-01-19 18:51:12,362 - root - INFO - [Epoch 3 Batch 2070/3072] loss=0.2597, lr=0.0000058
+2020-01-19 18:51:21,578 - root - INFO - [Epoch 3 Batch 2080/3072] loss=0.2376, lr=0.0000057
+2020-01-19 18:51:30,235 - root - INFO - [Epoch 3 Batch 2090/3072] loss=0.2568, lr=0.0000057
+2020-01-19 18:51:38,979 - root - INFO - [Epoch 3 Batch 2100/3072] loss=0.2307, lr=0.0000057
+2020-01-19 18:51:47,523 - root - INFO - [Epoch 3 Batch 2110/3072] loss=0.2464, lr=0.0000056
+2020-01-19 18:51:56,169 - root - INFO - [Epoch 3 Batch 2120/3072] loss=0.2414, lr=0.0000056
+2020-01-19 18:52:04,977 - root - INFO - [Epoch 3 Batch 2130/3072] loss=0.2564, lr=0.0000056
+2020-01-19 18:52:15,366 - root - INFO - [Epoch 3 Batch 2140/3072] loss=0.2552, lr=0.0000055
+2020-01-19 18:52:23,958 - root - INFO - [Epoch 3 Batch 2150/3072] loss=0.2446, lr=0.0000055
+2020-01-19 18:52:32,842 - root - INFO - [Epoch 3 Batch 2160/3072] loss=0.2699, lr=0.0000055
+2020-01-19 18:52:41,580 - root - INFO - [Epoch 3 Batch 2170/3072] loss=0.2555, lr=0.0000054
+2020-01-19 18:52:50,878 - root - INFO - [Epoch 3 Batch 2180/3072] loss=0.2524, lr=0.0000054
+2020-01-19 18:52:59,445 - root - INFO - [Epoch 3 Batch 2190/3072] loss=0.2224, lr=0.0000054
+2020-01-19 18:53:07,945 - root - INFO - [Epoch 3 Batch 2200/3072] loss=0.2693, lr=0.0000053
+2020-01-19 18:53:17,550 - root - INFO - [Epoch 3 Batch 2210/3072] loss=0.2510, lr=0.0000053
+2020-01-19 18:53:26,506 - root - INFO - [Epoch 3 Batch 2220/3072] loss=0.2476, lr=0.0000053
+2020-01-19 18:53:35,367 - root - INFO - [Epoch 3 Batch 2230/3072] loss=0.2642, lr=0.0000052
+2020-01-19 18:53:43,994 - root - INFO - [Epoch 3 Batch 2240/3072] loss=0.2423, lr=0.0000052
+2020-01-19 18:53:52,706 - root - INFO - [Epoch 3 Batch 2250/3072] loss=0.2364, lr=0.0000052
+2020-01-19 18:54:01,257 - root - INFO - [Epoch 3 Batch 2260/3072] loss=0.2144, lr=0.0000052
+2020-01-19 18:54:10,292 - root - INFO - [Epoch 3 Batch 2270/3072] loss=0.2435, lr=0.0000051
+2020-01-19 18:54:19,135 - root - INFO - [Epoch 3 Batch 2280/3072] loss=0.2383, lr=0.0000051
+2020-01-19 18:54:29,895 - root - INFO - [Epoch 3 Batch 2290/3072] loss=0.2750, lr=0.0000051
+2020-01-19 18:54:39,047 - root - INFO - [Epoch 3 Batch 2300/3072] loss=0.2521, lr=0.0000050
+2020-01-19 18:54:47,878 - root - INFO - [Epoch 3 Batch 2310/3072] loss=0.2581, lr=0.0000050
+2020-01-19 18:54:56,685 - root - INFO - [Epoch 3 Batch 2320/3072] loss=0.2388, lr=0.0000050
+2020-01-19 18:55:05,075 - root - INFO - [Epoch 3 Batch 2330/3072] loss=0.2527, lr=0.0000049
+2020-01-19 18:55:14,503 - root - INFO - [Epoch 3 Batch 2340/3072] loss=0.2449, lr=0.0000049
+2020-01-19 18:55:24,669 - root - INFO - [Epoch 3 Batch 2350/3072] loss=0.2519, lr=0.0000049
+2020-01-19 18:55:33,354 - root - INFO - [Epoch 3 Batch 2360/3072] loss=0.2409, lr=0.0000048
+2020-01-19 18:55:42,066 - root - INFO - [Epoch 3 Batch 2370/3072] loss=0.2806, lr=0.0000048
+2020-01-19 18:55:51,130 - root - INFO - [Epoch 3 Batch 2380/3072] loss=0.2362, lr=0.0000048
+2020-01-19 18:55:59,400 - root - INFO - [Epoch 3 Batch 2390/3072] loss=0.2850, lr=0.0000047
+2020-01-19 18:56:09,124 - root - INFO - [Epoch 3 Batch 2400/3072] loss=0.2636, lr=0.0000047
+2020-01-19 18:56:17,373 - root - INFO - [Epoch 3 Batch 2410/3072] loss=0.2417, lr=0.0000047
+2020-01-19 18:56:26,061 - root - INFO - [Epoch 3 Batch 2420/3072] loss=0.2567, lr=0.0000046
+2020-01-19 18:56:34,773 - root - INFO - [Epoch 3 Batch 2430/3072] loss=0.2411, lr=0.0000046
+2020-01-19 18:56:43,104 - root - INFO - [Epoch 3 Batch 2440/3072] loss=0.2328, lr=0.0000046
+2020-01-19 18:56:52,112 - root - INFO - [Epoch 3 Batch 2450/3072] loss=0.2617, lr=0.0000045
+2020-01-19 18:57:01,527 - root - INFO - [Epoch 3 Batch 2460/3072] loss=0.3076, lr=0.0000045
+2020-01-19 18:57:10,201 - root - INFO - [Epoch 3 Batch 2470/3072] loss=0.2604, lr=0.0000045
+2020-01-19 18:57:18,748 - root - INFO - [Epoch 3 Batch 2480/3072] loss=0.2426, lr=0.0000044
+2020-01-19 18:57:27,192 - root - INFO - [Epoch 3 Batch 2490/3072] loss=0.2162, lr=0.0000044
+2020-01-19 18:57:36,183 - root - INFO - [Epoch 3 Batch 2500/3072] loss=0.2491, lr=0.0000044
+2020-01-19 18:57:45,062 - root - INFO - [Epoch 3 Batch 2510/3072] loss=0.2404, lr=0.0000043
+2020-01-19 18:57:53,702 - root - INFO - [Epoch 3 Batch 2520/3072] loss=0.3030, lr=0.0000043
+2020-01-19 18:58:02,789 - root - INFO - [Epoch 3 Batch 2530/3072] loss=0.2381, lr=0.0000043
+2020-01-19 18:58:11,673 - root - INFO - [Epoch 3 Batch 2540/3072] loss=0.2445, lr=0.0000042
+2020-01-19 18:58:20,633 - root - INFO - [Epoch 3 Batch 2550/3072] loss=0.2631, lr=0.0000042
+2020-01-19 18:58:29,249 - root - INFO - [Epoch 3 Batch 2560/3072] loss=0.2668, lr=0.0000042
+2020-01-19 18:58:38,154 - root - INFO - [Epoch 3 Batch 2570/3072] loss=0.2463, lr=0.0000042
+2020-01-19 18:58:47,066 - root - INFO - [Epoch 3 Batch 2580/3072] loss=0.2379, lr=0.0000041
+2020-01-19 18:58:56,104 - root - INFO - [Epoch 3 Batch 2590/3072] loss=0.2548, lr=0.0000041
+2020-01-19 18:59:04,689 - root - INFO - [Epoch 3 Batch 2600/3072] loss=0.2577, lr=0.0000041
+2020-01-19 18:59:12,906 - root - INFO - [Epoch 3 Batch 2610/3072] loss=0.2640, lr=0.0000040
+2020-01-19 18:59:21,570 - root - INFO - [Epoch 3 Batch 2620/3072] loss=0.2601, lr=0.0000040
+2020-01-19 18:59:30,287 - root - INFO - [Epoch 3 Batch 2630/3072] loss=0.2369, lr=0.0000040
+2020-01-19 18:59:39,091 - root - INFO - [Epoch 3 Batch 2640/3072] loss=0.2473, lr=0.0000039
+2020-01-19 18:59:47,833 - root - INFO - [Epoch 3 Batch 2650/3072] loss=0.2538, lr=0.0000039
+2020-01-19 18:59:57,449 - root - INFO - [Epoch 3 Batch 2660/3072] loss=0.2371, lr=0.0000039
+2020-01-19 19:00:06,265 - root - INFO - [Epoch 3 Batch 2670/3072] loss=0.2307, lr=0.0000038
+2020-01-19 19:00:14,992 - root - INFO - [Epoch 3 Batch 2680/3072] loss=0.2057, lr=0.0000038
+2020-01-19 19:00:23,539 - root - INFO - [Epoch 3 Batch 2690/3072] loss=0.2849, lr=0.0000038
+2020-01-19 19:00:32,269 - root - INFO - [Epoch 3 Batch 2700/3072] loss=0.2268, lr=0.0000037
+2020-01-19 19:00:40,980 - root - INFO - [Epoch 3 Batch 2710/3072] loss=0.2348, lr=0.0000037
+2020-01-19 19:00:49,296 - root - INFO - [Epoch 3 Batch 2720/3072] loss=0.2242, lr=0.0000037
+2020-01-19 19:00:58,038 - root - INFO - [Epoch 3 Batch 2730/3072] loss=0.2678, lr=0.0000036
+2020-01-19 19:01:06,821 - root - INFO - [Epoch 3 Batch 2740/3072] loss=0.2800, lr=0.0000036
+2020-01-19 19:01:15,833 - root - INFO - [Epoch 3 Batch 2750/3072] loss=0.2304, lr=0.0000036
+2020-01-19 19:01:25,462 - root - INFO - [Epoch 3 Batch 2760/3072] loss=0.2967, lr=0.0000035
+2020-01-19 19:01:34,195 - root - INFO - [Epoch 3 Batch 2770/3072] loss=0.2561, lr=0.0000035
+2020-01-19 19:01:43,045 - root - INFO - [Epoch 3 Batch 2780/3072] loss=0.2235, lr=0.0000035
+2020-01-19 19:01:51,837 - root - INFO - [Epoch 3 Batch 2790/3072] loss=0.2353, lr=0.0000034
+2020-01-19 19:02:00,604 - root - INFO - [Epoch 3 Batch 2800/3072] loss=0.2497, lr=0.0000034
+2020-01-19 19:02:09,172 - root - INFO - [Epoch 3 Batch 2810/3072] loss=0.2370, lr=0.0000034
+2020-01-19 19:02:18,125 - root - INFO - [Epoch 3 Batch 2820/3072] loss=0.2675, lr=0.0000033
+2020-01-19 19:02:26,948 - root - INFO - [Epoch 3 Batch 2830/3072] loss=0.2288, lr=0.0000033
+2020-01-19 19:02:35,819 - root - INFO - [Epoch 3 Batch 2840/3072] loss=0.2798, lr=0.0000033
+2020-01-19 19:02:44,724 - root - INFO - [Epoch 3 Batch 2850/3072] loss=0.2900, lr=0.0000032
+2020-01-19 19:02:53,369 - root - INFO - [Epoch 3 Batch 2860/3072] loss=0.2446, lr=0.0000032
+2020-01-19 19:03:01,918 - root - INFO - [Epoch 3 Batch 2870/3072] loss=0.2613, lr=0.0000032
+2020-01-19 19:03:10,627 - root - INFO - [Epoch 3 Batch 2880/3072] loss=0.2569, lr=0.0000032
+2020-01-19 19:03:19,834 - root - INFO - [Epoch 3 Batch 2890/3072] loss=0.2468, lr=0.0000031
+2020-01-19 19:03:28,534 - root - INFO - [Epoch 3 Batch 2900/3072] loss=0.2413, lr=0.0000031
+2020-01-19 19:03:37,595 - root - INFO - [Epoch 3 Batch 2910/3072] loss=0.2412, lr=0.0000031
+2020-01-19 19:03:46,489 - root - INFO - [Epoch 3 Batch 2920/3072] loss=0.2237, lr=0.0000030
+2020-01-19 19:03:55,157 - root - INFO - [Epoch 3 Batch 2930/3072] loss=0.2491, lr=0.0000030
+2020-01-19 19:04:03,810 - root - INFO - [Epoch 3 Batch 2940/3072] loss=0.2591, lr=0.0000030
+2020-01-19 19:04:12,478 - root - INFO - [Epoch 3 Batch 2950/3072] loss=0.2611, lr=0.0000029
+2020-01-19 19:04:21,367 - root - INFO - [Epoch 3 Batch 2960/3072] loss=0.2405, lr=0.0000029
+2020-01-19 19:04:29,850 - root - INFO - [Epoch 3 Batch 2970/3072] loss=0.2342, lr=0.0000029
+2020-01-19 19:04:38,678 - root - INFO - [Epoch 3 Batch 2980/3072] loss=0.2778, lr=0.0000028
+2020-01-19 19:04:47,166 - root - INFO - [Epoch 3 Batch 2990/3072] loss=0.2264, lr=0.0000028
+2020-01-19 19:04:55,993 - root - INFO - [Epoch 3 Batch 3000/3072] loss=0.2212, lr=0.0000028
+2020-01-19 19:05:04,683 - root - INFO - [Epoch 3 Batch 3010/3072] loss=0.2405, lr=0.0000027
+2020-01-19 19:05:13,520 - root - INFO - [Epoch 3 Batch 3020/3072] loss=0.2429, lr=0.0000027
+2020-01-19 19:05:22,001 - root - INFO - [Epoch 3 Batch 3030/3072] loss=0.2678, lr=0.0000027
+2020-01-19 19:05:30,913 - root - INFO - [Epoch 3 Batch 3040/3072] loss=0.2624, lr=0.0000026
+2020-01-19 19:05:39,746 - root - INFO - [Epoch 3 Batch 3050/3072] loss=0.2465, lr=0.0000026
+2020-01-19 19:05:49,517 - root - INFO - [Epoch 3 Batch 3060/3072] loss=0.2284, lr=0.0000026
+2020-01-19 19:05:58,286 - root - INFO - [Epoch 3 Batch 3070/3072] loss=0.2542, lr=0.0000025
+2020-01-19 19:06:00,060 - root - INFO - Now we are doing evaluation on dev_matched with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2020-01-19 19:06:01,920 - root - INFO - [Batch 10/307] loss=0.3974
+2020-01-19 19:06:03,906 - root - INFO - [Batch 20/307] loss=0.3997
+2020-01-19 19:06:05,859 - root - INFO - [Batch 30/307] loss=0.3803
+2020-01-19 19:06:07,800 - root - INFO - [Batch 40/307] loss=0.3377
+2020-01-19 19:06:09,785 - root - INFO - [Batch 50/307] loss=0.4052
+2020-01-19 19:06:11,747 - root - INFO - [Batch 60/307] loss=0.4002
+2020-01-19 19:06:14,668 - root - INFO - [Batch 70/307] loss=0.3229
+2020-01-19 19:06:20,115 - root - INFO - [Batch 80/307] loss=0.4208
+2020-01-19 19:06:22,846 - root - INFO - [Batch 90/307] loss=0.4113
+2020-01-19 19:06:24,564 - root - INFO - [Batch 100/307] loss=0.3647
+2020-01-19 19:06:27,217 - root - INFO - [Batch 110/307] loss=0.4138
+2020-01-19 19:06:28,933 - root - INFO - [Batch 120/307] loss=0.3545
+2020-01-19 19:06:30,648 - root - INFO - [Batch 130/307] loss=0.3810
+2020-01-19 19:06:32,386 - root - INFO - [Batch 140/307] loss=0.3480
+2020-01-19 19:06:34,088 - root - INFO - [Batch 150/307] loss=0.3488
+2020-01-19 19:06:35,790 - root - INFO - [Batch 160/307] loss=0.4468
+2020-01-19 19:06:37,474 - root - INFO - [Batch 170/307] loss=0.4389
+2020-01-19 19:06:39,094 - root - INFO - [Batch 180/307] loss=0.3443
+2020-01-19 19:06:40,780 - root - INFO - [Batch 190/307] loss=0.4271
+2020-01-19 19:06:42,503 - root - INFO - [Batch 200/307] loss=0.3334
+2020-01-19 19:06:44,213 - root - INFO - [Batch 210/307] loss=0.4410
+2020-01-19 19:06:45,930 - root - INFO - [Batch 220/307] loss=0.3519
+2020-01-19 19:06:47,672 - root - INFO - [Batch 230/307] loss=0.2847
+2020-01-19 19:06:49,396 - root - INFO - [Batch 240/307] loss=0.4341
+2020-01-19 19:06:51,131 - root - INFO - [Batch 250/307] loss=0.5149
+2020-01-19 19:06:52,807 - root - INFO - [Batch 260/307] loss=0.4742
+2020-01-19 19:06:54,455 - root - INFO - [Batch 270/307] loss=0.3384
+2020-01-19 19:06:56,208 - root - INFO - [Batch 280/307] loss=0.3805
+2020-01-19 19:06:57,842 - root - INFO - [Batch 290/307] loss=0.4161
+2020-01-19 19:06:59,533 - root - INFO - [Batch 300/307] loss=0.3890
+2020-01-19 19:07:00,786 - root - INFO - validation metrics:accuracy:0.8719
+2020-01-19 19:07:00,786 - root - INFO - Time cost=60.73s, throughput=161.78 samples/s
+2020-01-19 19:07:00,787 - root - INFO - Now we are doing evaluation on dev_mismatched with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2020-01-19 19:07:02,547 - root - INFO - [Batch 10/308] loss=0.4403
+2020-01-19 19:07:04,284 - root - INFO - [Batch 20/308] loss=0.4880
+2020-01-19 19:07:06,026 - root - INFO - [Batch 30/308] loss=0.2858
+2020-01-19 19:07:07,803 - root - INFO - [Batch 40/308] loss=0.4236
+2020-01-19 19:07:09,561 - root - INFO - [Batch 50/308] loss=0.3839
+2020-01-19 19:07:11,346 - root - INFO - [Batch 60/308] loss=0.3615
+2020-01-19 19:07:13,099 - root - INFO - [Batch 70/308] loss=0.3733
+2020-01-19 19:07:14,859 - root - INFO - [Batch 80/308] loss=0.4068
+2020-01-19 19:07:16,587 - root - INFO - [Batch 90/308] loss=0.3640
+2020-01-19 19:07:18,294 - root - INFO - [Batch 100/308] loss=0.3455
+2020-01-19 19:07:20,032 - root - INFO - [Batch 110/308] loss=0.4636
+2020-01-19 19:07:21,739 - root - INFO - [Batch 120/308] loss=0.3445
+2020-01-19 19:07:23,455 - root - INFO - [Batch 130/308] loss=0.4126
+2020-01-19 19:07:25,168 - root - INFO - [Batch 140/308] loss=0.3565
+2020-01-19 19:07:26,830 - root - INFO - [Batch 150/308] loss=0.3857
+2020-01-19 19:07:28,539 - root - INFO - [Batch 160/308] loss=0.4606
+2020-01-19 19:07:30,305 - root - INFO - [Batch 170/308] loss=0.4634
+2020-01-19 19:07:32,078 - root - INFO - [Batch 180/308] loss=0.4216
+2020-01-19 19:07:33,840 - root - INFO - [Batch 190/308] loss=0.3542
+2020-01-19 19:07:35,610 - root - INFO - [Batch 200/308] loss=0.3806
+2020-01-19 19:07:37,390 - root - INFO - [Batch 210/308] loss=0.3969
+2020-01-19 19:07:39,164 - root - INFO - [Batch 220/308] loss=0.3464
+2020-01-19 19:07:40,904 - root - INFO - [Batch 230/308] loss=0.4591
+2020-01-19 19:07:42,570 - root - INFO - [Batch 240/308] loss=0.3833
+2020-01-19 19:07:44,351 - root - INFO - [Batch 250/308] loss=0.3488
+2020-01-19 19:07:46,090 - root - INFO - [Batch 260/308] loss=0.5227
+2020-01-19 19:07:47,813 - root - INFO - [Batch 270/308] loss=0.3844
+2020-01-19 19:07:49,530 - root - INFO - [Batch 280/308] loss=0.3601
+2020-01-19 19:07:51,211 - root - INFO - [Batch 290/308] loss=0.4669
+2020-01-19 19:07:52,924 - root - INFO - [Batch 300/308] loss=0.3835
+2020-01-19 19:07:54,343 - root - INFO - validation metrics:accuracy:0.8646
+2020-01-19 19:07:54,343 - root - INFO - Time cost=53.56s, throughput=184.03 samples/s
+2020-01-19 19:07:55,347 - root - INFO - params saved in: ./output_dir/model_xlnet_MNLI_2.params
+2020-01-19 19:07:55,349 - root - INFO - Time cost=2860.77s
+2020-01-19 19:08:11,822 - root - INFO - [Epoch 4 Batch 10/3072] loss=0.2235, lr=0.0000025
+2020-01-19 19:08:20,351 - root - INFO - [Epoch 4 Batch 20/3072] loss=0.2088, lr=0.0000025
+2020-01-19 19:08:28,749 - root - INFO - [Epoch 4 Batch 30/3072] loss=0.2053, lr=0.0000024
+2020-01-19 19:08:38,270 - root - INFO - [Epoch 4 Batch 40/3072] loss=0.2526, lr=0.0000024
+2020-01-19 19:08:46,944 - root - INFO - [Epoch 4 Batch 50/3072] loss=0.2169, lr=0.0000024
+2020-01-19 19:08:56,036 - root - INFO - [Epoch 4 Batch 60/3072] loss=0.2139, lr=0.0000023
+2020-01-19 19:09:04,875 - root - INFO - [Epoch 4 Batch 70/3072] loss=0.2186, lr=0.0000023
+2020-01-19 19:09:13,493 - root - INFO - [Epoch 4 Batch 80/3072] loss=0.2148, lr=0.0000023
+2020-01-19 19:09:22,676 - root - INFO - [Epoch 4 Batch 90/3072] loss=0.1992, lr=0.0000022
+2020-01-19 19:09:31,622 - root - INFO - [Epoch 4 Batch 100/3072] loss=0.2068, lr=0.0000022
+2020-01-19 19:09:40,288 - root - INFO - [Epoch 4 Batch 110/3072] loss=0.2150, lr=0.0000022
+2020-01-19 19:09:48,632 - root - INFO - [Epoch 4 Batch 120/3072] loss=0.2271, lr=0.0000021
+2020-01-19 19:09:57,107 - root - INFO - [Epoch 4 Batch 130/3072] loss=0.2379, lr=0.0000021
+2020-01-19 19:10:05,931 - root - INFO - [Epoch 4 Batch 140/3072] loss=0.2323, lr=0.0000021
+2020-01-19 19:10:14,740 - root - INFO - [Epoch 4 Batch 150/3072] loss=0.2180, lr=0.0000020
+2020-01-19 19:10:24,758 - root - INFO - [Epoch 4 Batch 160/3072] loss=0.2241, lr=0.0000020
+2020-01-19 19:10:33,708 - root - INFO - [Epoch 4 Batch 170/3072] loss=0.2107, lr=0.0000020
+2020-01-19 19:10:42,216 - root - INFO - [Epoch 4 Batch 180/3072] loss=0.2029, lr=0.0000020
+2020-01-19 19:10:50,963 - root - INFO - [Epoch 4 Batch 190/3072] loss=0.2165, lr=0.0000019
+2020-01-19 19:11:00,053 - root - INFO - [Epoch 4 Batch 200/3072] loss=0.1969, lr=0.0000019
+2020-01-19 19:11:09,056 - root - INFO - [Epoch 4 Batch 210/3072] loss=0.1954, lr=0.0000019
+2020-01-19 19:11:17,565 - root - INFO - [Epoch 4 Batch 220/3072] loss=0.1945, lr=0.0000018
+2020-01-19 19:11:26,082 - root - INFO - [Epoch 4 Batch 230/3072] loss=0.2050, lr=0.0000018
+2020-01-19 19:11:34,227 - root - INFO - [Epoch 4 Batch 240/3072] loss=0.2034, lr=0.0000018
+2020-01-19 19:11:43,442 - root - INFO - [Epoch 4 Batch 250/3072] loss=0.2198, lr=0.0000017
+2020-01-19 19:11:52,681 - root - INFO - [Epoch 4 Batch 260/3072] loss=0.2050, lr=0.0000017
+2020-01-19 19:12:01,860 - root - INFO - [Epoch 4 Batch 270/3072] loss=0.2158, lr=0.0000017
+2020-01-19 19:12:10,405 - root - INFO - [Epoch 4 Batch 280/3072] loss=0.2003, lr=0.0000016
+2020-01-19 19:12:19,033 - root - INFO - [Epoch 4 Batch 290/3072] loss=0.1851, lr=0.0000016
+2020-01-19 19:12:28,515 - root - INFO - [Epoch 4 Batch 300/3072] loss=0.1960, lr=0.0000016
+2020-01-19 19:12:37,403 - root - INFO - [Epoch 4 Batch 310/3072] loss=0.2004, lr=0.0000015
+2020-01-19 19:12:45,799 - root - INFO - [Epoch 4 Batch 320/3072] loss=0.2092, lr=0.0000015
+2020-01-19 19:12:54,483 - root - INFO - [Epoch 4 Batch 330/3072] loss=0.2329, lr=0.0000015
+2020-01-19 19:13:03,261 - root - INFO - [Epoch 4 Batch 340/3072] loss=0.2243, lr=0.0000014
+2020-01-19 19:13:12,016 - root - INFO - [Epoch 4 Batch 350/3072] loss=0.2241, lr=0.0000014
+2020-01-19 19:13:20,780 - root - INFO - [Epoch 4 Batch 360/3072] loss=0.2335, lr=0.0000014
+2020-01-19 19:13:30,543 - root - INFO - [Epoch 4 Batch 370/3072] loss=0.2268, lr=0.0000013
+2020-01-19 19:13:39,514 - root - INFO - [Epoch 4 Batch 380/3072] loss=0.2400, lr=0.0000013
+2020-01-19 19:13:48,856 - root - INFO - [Epoch 4 Batch 390/3072] loss=0.2228, lr=0.0000013
+2020-01-19 19:13:58,108 - root - INFO - [Epoch 4 Batch 400/3072] loss=0.1944, lr=0.0000012
+2020-01-19 19:14:06,700 - root - INFO - [Epoch 4 Batch 410/3072] loss=0.2159, lr=0.0000012
+2020-01-19 19:14:15,532 - root - INFO - [Epoch 4 Batch 420/3072] loss=0.2066, lr=0.0000012
+2020-01-19 19:14:31,037 - root - INFO - [Epoch 4 Batch 430/3072] loss=0.2298, lr=0.0000011
+2020-01-19 19:14:39,729 - root - INFO - [Epoch 4 Batch 440/3072] loss=0.2126, lr=0.0000011
+2020-01-19 19:14:49,079 - root - INFO - [Epoch 4 Batch 450/3072] loss=0.1849, lr=0.0000011
+2020-01-19 19:14:57,842 - root - INFO - [Epoch 4 Batch 460/3072] loss=0.2035, lr=0.0000010
+2020-01-19 19:15:06,249 - root - INFO - [Epoch 4 Batch 470/3072] loss=0.1962, lr=0.0000010
+2020-01-19 19:15:15,483 - root - INFO - [Epoch 4 Batch 480/3072] loss=0.1868, lr=0.0000010
+2020-01-19 19:15:24,509 - root - INFO - [Epoch 4 Batch 490/3072] loss=0.2199, lr=0.0000010
+2020-01-19 19:15:32,970 - root - INFO - [Epoch 4 Batch 500/3072] loss=0.2216, lr=0.0000009
+2020-01-19 19:15:41,109 - root - INFO - [Epoch 4 Batch 510/3072] loss=0.2252, lr=0.0000009
+2020-01-19 19:15:50,137 - root - INFO - [Epoch 4 Batch 520/3072] loss=0.2003, lr=0.0000009
+2020-01-19 19:15:58,505 - root - INFO - [Epoch 4 Batch 530/3072] loss=0.2019, lr=0.0000008
+2020-01-19 19:16:07,728 - root - INFO - [Epoch 4 Batch 540/3072] loss=0.2128, lr=0.0000008
+2020-01-19 19:16:17,673 - root - INFO - [Epoch 4 Batch 550/3072] loss=0.1936, lr=0.0000008
+2020-01-19 19:16:26,406 - root - INFO - [Epoch 4 Batch 560/3072] loss=0.2113, lr=0.0000007
+2020-01-19 19:16:35,192 - root - INFO - [Epoch 4 Batch 570/3072] loss=0.1857, lr=0.0000007
+2020-01-19 19:16:43,968 - root - INFO - [Epoch 4 Batch 580/3072] loss=0.2433, lr=0.0000007
+2020-01-19 19:16:52,221 - root - INFO - [Epoch 4 Batch 590/3072] loss=0.1893, lr=0.0000006
+2020-01-19 19:17:01,236 - root - INFO - [Epoch 4 Batch 600/3072] loss=0.2314, lr=0.0000006
+2020-01-19 19:17:09,665 - root - INFO - [Epoch 4 Batch 610/3072] loss=0.1953, lr=0.0000006
+2020-01-19 19:17:18,923 - root - INFO - [Epoch 4 Batch 620/3072] loss=0.2141, lr=0.0000005
+2020-01-19 19:17:27,652 - root - INFO - [Epoch 4 Batch 630/3072] loss=0.2298, lr=0.0000005
+2020-01-19 19:17:36,045 - root - INFO - [Epoch 4 Batch 640/3072] loss=0.2148, lr=0.0000005
+2020-01-19 19:17:44,191 - root - INFO - [Epoch 4 Batch 650/3072] loss=0.2315, lr=0.0000004
+2020-01-19 19:17:52,451 - root - INFO - [Epoch 4 Batch 660/3072] loss=0.2279, lr=0.0000004
+2020-01-19 19:18:01,159 - root - INFO - [Epoch 4 Batch 670/3072] loss=0.2225, lr=0.0000004
+2020-01-19 19:18:10,220 - root - INFO - [Epoch 4 Batch 680/3072] loss=0.2225, lr=0.0000003
+2020-01-19 19:18:18,901 - root - INFO - [Epoch 4 Batch 690/3072] loss=0.1912, lr=0.0000003
+2020-01-19 19:18:27,955 - root - INFO - [Epoch 4 Batch 700/3072] loss=0.2083, lr=0.0000003
+2020-01-19 19:18:36,436 - root - INFO - [Epoch 4 Batch 710/3072] loss=0.1799, lr=0.0000002
+2020-01-19 19:18:45,718 - root - INFO - [Epoch 4 Batch 720/3072] loss=0.1987, lr=0.0000002
+2020-01-19 19:18:54,509 - root - INFO - [Epoch 4 Batch 730/3072] loss=0.2012, lr=0.0000002
+2020-01-19 19:19:03,206 - root - INFO - [Epoch 4 Batch 740/3072] loss=0.1819, lr=0.0000001
+2020-01-19 19:19:12,613 - root - INFO - [Epoch 4 Batch 750/3072] loss=0.2211, lr=0.0000001
+2020-01-19 19:19:21,169 - root - INFO - [Epoch 4 Batch 760/3072] loss=0.1859, lr=0.0000001
+2020-01-19 19:19:29,721 - root - INFO - [Epoch 4 Batch 770/3072] loss=0.2112, lr=0.0000000
+2020-01-19 19:19:38,686 - root - INFO - [Epoch 4 Batch 780/3072] loss=0.2310, lr=0.0000000
+2020-01-19 19:19:42,188 - root - INFO - Finish training step: 10000
+2020-01-19 19:19:42,188 - root - INFO - Now we are doing evaluation on dev_matched with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2020-01-19 19:19:43,882 - root - INFO - [Batch 10/307] loss=0.4321
+2020-01-19 19:19:45,692 - root - INFO - [Batch 20/307] loss=0.4281
+2020-01-19 19:19:47,475 - root - INFO - [Batch 30/307] loss=0.4072
+2020-01-19 19:19:49,226 - root - INFO - [Batch 40/307] loss=0.3526
+2020-01-19 19:19:50,988 - root - INFO - [Batch 50/307] loss=0.4172
+2020-01-19 19:19:52,754 - root - INFO - [Batch 60/307] loss=0.4126
+2020-01-19 19:19:54,514 - root - INFO - [Batch 70/307] loss=0.3291
+2020-01-19 19:19:56,231 - root - INFO - [Batch 80/307] loss=0.4413
+2020-01-19 19:19:58,006 - root - INFO - [Batch 90/307] loss=0.4251
+2020-01-19 19:19:59,749 - root - INFO - [Batch 100/307] loss=0.3931
+2020-01-19 19:20:01,466 - root - INFO - [Batch 110/307] loss=0.4408
+2020-01-19 19:20:03,206 - root - INFO - [Batch 120/307] loss=0.3619
+2020-01-19 19:20:04,910 - root - INFO - [Batch 130/307] loss=0.4034
+2020-01-19 19:20:06,661 - root - INFO - [Batch 140/307] loss=0.3697
+2020-01-19 19:20:08,382 - root - INFO - [Batch 150/307] loss=0.3629
+2020-01-19 19:20:10,114 - root - INFO - [Batch 160/307] loss=0.4650
+2020-01-19 19:20:11,807 - root - INFO - [Batch 170/307] loss=0.4520
+2020-01-19 19:20:13,447 - root - INFO - [Batch 180/307] loss=0.3580
+2020-01-19 19:20:15,136 - root - INFO - [Batch 190/307] loss=0.4467
+2020-01-19 19:20:16,864 - root - INFO - [Batch 200/307] loss=0.3451
+2020-01-19 19:20:18,582 - root - INFO - [Batch 210/307] loss=0.4571
+2020-01-19 19:20:20,316 - root - INFO - [Batch 220/307] loss=0.3757
+2020-01-19 19:20:22,066 - root - INFO - [Batch 230/307] loss=0.2891
+2020-01-19 19:20:23,788 - root - INFO - [Batch 240/307] loss=0.4511
+2020-01-19 19:20:25,512 - root - INFO - [Batch 250/307] loss=0.5528
+2020-01-19 19:20:27,178 - root - INFO - [Batch 260/307] loss=0.5019
+2020-01-19 19:20:28,816 - root - INFO - [Batch 270/307] loss=0.3569
+2020-01-19 19:20:30,552 - root - INFO - [Batch 280/307] loss=0.3940
+2020-01-19 19:20:32,165 - root - INFO - [Batch 290/307] loss=0.4335
+2020-01-19 19:20:33,844 - root - INFO - [Batch 300/307] loss=0.4051
+2020-01-19 19:20:35,083 - root - INFO - validation metrics:accuracy:0.8714
+2020-01-19 19:20:35,084 - root - INFO - Time cost=52.90s, throughput=185.72 samples/s
+2020-01-19 19:20:35,085 - root - INFO - Now we are doing evaluation on dev_mismatched with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2020-01-19 19:20:36,845 - root - INFO - [Batch 10/308] loss=0.4684
+2020-01-19 19:20:38,596 - root - INFO - [Batch 20/308] loss=0.5325
+2020-01-19 19:20:40,357 - root - INFO - [Batch 30/308] loss=0.2965
+2020-01-19 19:20:42,162 - root - INFO - [Batch 40/308] loss=0.4393
+2020-01-19 19:20:43,914 - root - INFO - [Batch 50/308] loss=0.4109
+2020-01-19 19:20:45,706 - root - INFO - [Batch 60/308] loss=0.3782
+2020-01-19 19:20:47,484 - root - INFO - [Batch 70/308] loss=0.3914
+2020-01-19 19:20:49,263 - root - INFO - [Batch 80/308] loss=0.4316
+2020-01-19 19:20:51,006 - root - INFO - [Batch 90/308] loss=0.3815
+2020-01-19 19:20:52,716 - root - INFO - [Batch 100/308] loss=0.3704
+2020-01-19 19:20:54,454 - root - INFO - [Batch 110/308] loss=0.4964
+2020-01-19 19:20:56,171 - root - INFO - [Batch 120/308] loss=0.3558
+2020-01-19 19:20:57,899 - root - INFO - [Batch 130/308] loss=0.4403
+2020-01-19 19:20:59,729 - root - INFO - [Batch 140/308] loss=0.3829
+2020-01-19 19:21:01,498 - root - INFO - [Batch 150/308] loss=0.4061
+2020-01-19 19:21:03,326 - root - INFO - [Batch 160/308] loss=0.4941
+2020-01-19 19:21:05,163 - root - INFO - [Batch 170/308] loss=0.4948
+2020-01-19 19:21:07,020 - root - INFO - [Batch 180/308] loss=0.4449
+2020-01-19 19:21:08,843 - root - INFO - [Batch 190/308] loss=0.3731
+2020-01-19 19:21:10,685 - root - INFO - [Batch 200/308] loss=0.3973
+2020-01-19 19:21:12,540 - root - INFO - [Batch 210/308] loss=0.4198
+2020-01-19 19:21:14,388 - root - INFO - [Batch 220/308] loss=0.3629
+2020-01-19 19:21:16,195 - root - INFO - [Batch 230/308] loss=0.4838
+2020-01-19 19:21:17,955 - root - INFO - [Batch 240/308] loss=0.4223
+2020-01-19 19:21:19,853 - root - INFO - [Batch 250/308] loss=0.3673
+2020-01-19 19:21:21,704 - root - INFO - [Batch 260/308] loss=0.5614
+2020-01-19 19:21:23,521 - root - INFO - [Batch 270/308] loss=0.4065
+2020-01-19 19:21:25,265 - root - INFO - [Batch 280/308] loss=0.3727
+2020-01-19 19:21:26,977 - root - INFO - [Batch 290/308] loss=0.4939
+2020-01-19 19:21:28,720 - root - INFO - [Batch 300/308] loss=0.4007
+2020-01-19 19:21:30,163 - root - INFO - validation metrics:accuracy:0.8645
+2020-01-19 19:21:30,163 - root - INFO - Time cost=55.08s, throughput=178.95 samples/s
+2020-01-19 19:21:31,018 - root - INFO - params saved in: ./output_dir/model_xlnet_MNLI_3.params
+2020-01-19 19:21:31,020 - root - INFO - Time cost=815.67s
+2020-01-19 19:21:31,726 - root - INFO - Best model at epoch 3. Validation metrics:accuracy:0.8719
+2020-01-19 19:21:31,727 - root - INFO - Now we are doing testing on test_matched with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2020-01-19 19:22:24,163 - root - INFO - Time cost=52.44s, throughput=187.35 samples/s
+2020-01-19 19:22:24,170 - root - INFO - Now we are doing testing on test_mismatched with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2020-01-19 19:23:16,453 - root - INFO - Time cost=52.28s, throughput=188.51 samples/s

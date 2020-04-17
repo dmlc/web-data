@@ -1,0 +1,636 @@
+2020-01-08 09:55:28,697 - root - INFO - Now we are doing XLNet classification training on [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)]!
+2020-01-08 09:55:28,708 - root - INFO - training steps=3000.000000s
+2020-01-08 09:55:49,374 - root - INFO - Time cost for the first forward-backward =20.66s
+2020-01-08 09:56:06,891 - root - INFO - [Epoch 1 Batch 10/67] loss=0.7699, lr=0.0000005
+2020-01-08 09:56:20,698 - root - INFO - [Epoch 1 Batch 20/67] loss=0.7437, lr=0.0000010
+2020-01-08 09:56:34,169 - root - INFO - [Epoch 1 Batch 30/67] loss=0.6933, lr=0.0000015
+2020-01-08 09:56:48,108 - root - INFO - [Epoch 1 Batch 40/67] loss=0.6582, lr=0.0000021
+2020-01-08 09:57:02,090 - root - INFO - [Epoch 1 Batch 50/67] loss=0.6136, lr=0.0000026
+2020-01-08 09:57:16,056 - root - INFO - [Epoch 1 Batch 60/67] loss=0.6059, lr=0.0000031
+2020-01-08 09:57:26,143 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2020-01-08 09:57:28,948 - root - INFO - [Batch 10/33] loss=0.6807
+2020-01-08 09:57:31,554 - root - INFO - [Batch 20/33] loss=0.6183
+2020-01-08 09:57:34,153 - root - INFO - [Batch 30/33] loss=0.6408
+2020-01-08 09:57:34,997 - root - INFO - validation metrics:mcc:0.0000
+2020-01-08 09:57:34,998 - root - INFO - Time cost=8.85s, throughput=119.27 samples/s
+2020-01-08 09:57:37,531 - root - INFO - params saved in: ./output_dir/model_xlnet_CoLA_0.params
+2020-01-08 09:57:37,533 - root - INFO - Time cost=128.82s
+2020-01-08 09:57:51,145 - root - INFO - [Epoch 2 Batch 10/67] loss=0.6166, lr=0.0000040
+2020-01-08 09:58:04,879 - root - INFO - [Epoch 2 Batch 20/67] loss=0.6011, lr=0.0000046
+2020-01-08 09:58:18,460 - root - INFO - [Epoch 2 Batch 30/67] loss=0.6225, lr=0.0000051
+2020-01-08 09:58:32,035 - root - INFO - [Epoch 2 Batch 40/67] loss=0.6127, lr=0.0000056
+2020-01-08 09:58:46,010 - root - INFO - [Epoch 2 Batch 50/67] loss=0.5974, lr=0.0000061
+2020-01-08 09:58:59,632 - root - INFO - [Epoch 2 Batch 60/67] loss=0.6060, lr=0.0000067
+2020-01-08 09:59:09,608 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2020-01-08 09:59:12,207 - root - INFO - [Batch 10/33] loss=0.6480
+2020-01-08 09:59:14,767 - root - INFO - [Batch 20/33] loss=0.6022
+2020-01-08 09:59:17,322 - root - INFO - [Batch 30/33] loss=0.6171
+2020-01-08 09:59:18,163 - root - INFO - validation metrics:mcc:0.0000
+2020-01-08 09:59:18,163 - root - INFO - Time cost=8.55s, throughput=123.44 samples/s
+2020-01-08 09:59:20,619 - root - INFO - params saved in: ./output_dir/model_xlnet_CoLA_1.params
+2020-01-08 09:59:20,621 - root - INFO - Time cost=103.09s
+2020-01-08 09:59:34,400 - root - INFO - [Epoch 3 Batch 10/67] loss=0.6064, lr=0.0000076
+2020-01-08 09:59:48,516 - root - INFO - [Epoch 3 Batch 20/67] loss=0.6266, lr=0.0000081
+2020-01-08 10:00:02,715 - root - INFO - [Epoch 3 Batch 30/67] loss=0.6174, lr=0.0000086
+2020-01-08 10:00:17,101 - root - INFO - [Epoch 3 Batch 40/67] loss=0.5949, lr=0.0000092
+2020-01-08 10:00:30,597 - root - INFO - [Epoch 3 Batch 50/67] loss=0.5962, lr=0.0000097
+2020-01-08 10:00:44,297 - root - INFO - [Epoch 3 Batch 60/67] loss=0.6115, lr=0.0000102
+2020-01-08 10:00:54,128 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2020-01-08 10:00:56,730 - root - INFO - [Batch 10/33] loss=0.6572
+2020-01-08 10:00:59,283 - root - INFO - [Batch 20/33] loss=0.6112
+2020-01-08 10:01:01,797 - root - INFO - [Batch 30/33] loss=0.6254
+2020-01-08 10:01:02,601 - root - INFO - validation metrics:mcc:0.0000
+2020-01-08 10:01:02,601 - root - INFO - Time cost=8.47s, throughput=124.63 samples/s
+2020-01-08 10:01:04,962 - root - INFO - params saved in: ./output_dir/model_xlnet_CoLA_2.params
+2020-01-08 10:01:04,963 - root - INFO - Time cost=104.34s
+2020-01-08 10:01:19,394 - root - INFO - [Epoch 4 Batch 10/67] loss=0.5834, lr=0.0000111
+2020-01-08 10:01:32,769 - root - INFO - [Epoch 4 Batch 20/67] loss=0.6126, lr=0.0000117
+2020-01-08 10:01:46,281 - root - INFO - [Epoch 4 Batch 30/67] loss=0.6080, lr=0.0000122
+2020-01-08 10:02:00,606 - root - INFO - [Epoch 4 Batch 40/67] loss=0.6034, lr=0.0000127
+2020-01-08 10:02:14,822 - root - INFO - [Epoch 4 Batch 50/67] loss=0.6174, lr=0.0000133
+2020-01-08 10:02:29,211 - root - INFO - [Epoch 4 Batch 60/67] loss=0.6291, lr=0.0000138
+2020-01-08 10:02:39,419 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2020-01-08 10:02:42,195 - root - INFO - [Batch 10/33] loss=0.6501
+2020-01-08 10:02:44,948 - root - INFO - [Batch 20/33] loss=0.5952
+2020-01-08 10:02:47,716 - root - INFO - [Batch 30/33] loss=0.6227
+2020-01-08 10:02:48,529 - root - INFO - validation metrics:mcc:0.0000
+2020-01-08 10:02:48,529 - root - INFO - Time cost=9.11s, throughput=115.92 samples/s
+2020-01-08 10:02:50,950 - root - INFO - params saved in: ./output_dir/model_xlnet_CoLA_3.params
+2020-01-08 10:02:50,952 - root - INFO - Time cost=105.99s
+2020-01-08 10:03:05,471 - root - INFO - [Epoch 5 Batch 10/67] loss=0.6142, lr=0.0000147
+2020-01-08 10:03:19,545 - root - INFO - [Epoch 5 Batch 20/67] loss=0.6005, lr=0.0000152
+2020-01-08 10:03:33,465 - root - INFO - [Epoch 5 Batch 30/67] loss=0.6357, lr=0.0000157
+2020-01-08 10:03:47,155 - root - INFO - [Epoch 5 Batch 40/67] loss=0.5946, lr=0.0000163
+2020-01-08 10:04:00,799 - root - INFO - [Epoch 5 Batch 50/67] loss=0.5858, lr=0.0000168
+2020-01-08 10:04:15,170 - root - INFO - [Epoch 5 Batch 60/67] loss=0.6054, lr=0.0000173
+2020-01-08 10:04:25,180 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2020-01-08 10:04:27,806 - root - INFO - [Batch 10/33] loss=0.6271
+2020-01-08 10:04:30,367 - root - INFO - [Batch 20/33] loss=0.5786
+2020-01-08 10:04:32,898 - root - INFO - [Batch 30/33] loss=0.5865
+2020-01-08 10:04:33,720 - root - INFO - validation metrics:mcc:0.0000
+2020-01-08 10:04:33,721 - root - INFO - Time cost=8.54s, throughput=123.64 samples/s
+2020-01-08 10:04:36,351 - root - INFO - params saved in: ./output_dir/model_xlnet_CoLA_4.params
+2020-01-08 10:04:36,353 - root - INFO - Time cost=105.40s
+2020-01-08 10:04:50,491 - root - INFO - [Epoch 6 Batch 10/67] loss=0.5751, lr=0.0000182
+2020-01-08 10:05:04,264 - root - INFO - [Epoch 6 Batch 20/67] loss=0.6186, lr=0.0000188
+2020-01-08 10:05:17,572 - root - INFO - [Epoch 6 Batch 30/67] loss=0.6019, lr=0.0000193
+2020-01-08 10:05:31,735 - root - INFO - [Epoch 6 Batch 40/67] loss=0.6044, lr=0.0000198
+2020-01-08 10:05:46,257 - root - INFO - [Epoch 6 Batch 50/67] loss=0.5733, lr=0.0000204
+2020-01-08 10:06:00,650 - root - INFO - [Epoch 6 Batch 60/67] loss=0.5531, lr=0.0000209
+2020-01-08 10:06:10,654 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2020-01-08 10:06:13,455 - root - INFO - [Batch 10/33] loss=0.5825
+2020-01-08 10:06:16,146 - root - INFO - [Batch 20/33] loss=0.5402
+2020-01-08 10:06:18,817 - root - INFO - [Batch 30/33] loss=0.5592
+2020-01-08 10:06:19,686 - root - INFO - validation metrics:mcc:0.3303
+2020-01-08 10:06:19,686 - root - INFO - Time cost=9.03s, throughput=116.93 samples/s
+2020-01-08 10:06:22,240 - root - INFO - params saved in: ./output_dir/model_xlnet_CoLA_5.params
+2020-01-08 10:06:22,241 - root - INFO - Time cost=105.89s
+2020-01-08 10:06:36,317 - root - INFO - [Epoch 7 Batch 10/67] loss=0.5156, lr=0.0000218
+2020-01-08 10:06:50,242 - root - INFO - [Epoch 7 Batch 20/67] loss=0.5499, lr=0.0000223
+2020-01-08 10:07:04,405 - root - INFO - [Epoch 7 Batch 30/67] loss=0.5201, lr=0.0000228
+2020-01-08 10:07:18,460 - root - INFO - [Epoch 7 Batch 40/67] loss=0.4908, lr=0.0000234
+2020-01-08 10:07:32,721 - root - INFO - [Epoch 7 Batch 50/67] loss=0.4407, lr=0.0000239
+2020-01-08 10:07:46,392 - root - INFO - [Epoch 7 Batch 60/67] loss=0.4493, lr=0.0000244
+2020-01-08 10:07:56,019 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2020-01-08 10:07:58,568 - root - INFO - [Batch 10/33] loss=0.6019
+2020-01-08 10:08:01,084 - root - INFO - [Batch 20/33] loss=0.5984
+2020-01-08 10:08:03,600 - root - INFO - [Batch 30/33] loss=0.4969
+2020-01-08 10:08:04,404 - root - INFO - validation metrics:mcc:0.4420
+2020-01-08 10:08:04,404 - root - INFO - Time cost=8.38s, throughput=125.95 samples/s
+2020-01-08 10:08:07,041 - root - INFO - params saved in: ./output_dir/model_xlnet_CoLA_6.params
+2020-01-08 10:08:07,043 - root - INFO - Time cost=104.80s
+2020-01-08 10:08:20,583 - root - INFO - [Epoch 8 Batch 10/67] loss=0.3636, lr=0.0000253
+2020-01-08 10:08:33,919 - root - INFO - [Epoch 8 Batch 20/67] loss=0.3699, lr=0.0000259
+2020-01-08 10:08:47,943 - root - INFO - [Epoch 8 Batch 30/67] loss=0.3807, lr=0.0000264
+2020-01-08 10:09:01,988 - root - INFO - [Epoch 8 Batch 40/67] loss=0.3810, lr=0.0000269
+2020-01-08 10:09:15,969 - root - INFO - [Epoch 8 Batch 50/67] loss=0.3516, lr=0.0000275
+2020-01-08 10:09:29,788 - root - INFO - [Epoch 8 Batch 60/67] loss=0.3657, lr=0.0000280
+2020-01-08 10:09:39,608 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2020-01-08 10:09:42,159 - root - INFO - [Batch 10/33] loss=0.4251
+2020-01-08 10:09:44,671 - root - INFO - [Batch 20/33] loss=0.4741
+2020-01-08 10:09:47,178 - root - INFO - [Batch 30/33] loss=0.3397
+2020-01-08 10:09:47,978 - root - INFO - validation metrics:mcc:0.5641
+2020-01-08 10:09:47,978 - root - INFO - Time cost=8.37s, throughput=126.17 samples/s
+2020-01-08 10:09:50,413 - root - INFO - params saved in: ./output_dir/model_xlnet_CoLA_7.params
+2020-01-08 10:09:50,415 - root - INFO - Time cost=103.37s
+2020-01-08 10:10:04,364 - root - INFO - [Epoch 9 Batch 10/67] loss=0.3075, lr=0.0000289
+2020-01-08 10:10:18,255 - root - INFO - [Epoch 9 Batch 20/67] loss=0.2940, lr=0.0000294
+2020-01-08 10:10:32,178 - root - INFO - [Epoch 9 Batch 30/67] loss=0.2741, lr=0.0000299
+2020-01-08 10:10:46,133 - root - INFO - [Epoch 9 Batch 40/67] loss=0.2517, lr=0.0000299
+2020-01-08 10:10:59,838 - root - INFO - [Epoch 9 Batch 50/67] loss=0.2791, lr=0.0000298
+2020-01-08 10:11:14,387 - root - INFO - [Epoch 9 Batch 60/67] loss=0.2511, lr=0.0000296
+2020-01-08 10:11:24,872 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2020-01-08 10:11:27,705 - root - INFO - [Batch 10/33] loss=0.4588
+2020-01-08 10:11:30,593 - root - INFO - [Batch 20/33] loss=0.5195
+2020-01-08 10:11:33,517 - root - INFO - [Batch 30/33] loss=0.3727
+2020-01-08 10:11:34,413 - root - INFO - validation metrics:mcc:0.5961
+2020-01-08 10:11:34,413 - root - INFO - Time cost=9.54s, throughput=110.68 samples/s
+2020-01-08 10:11:36,769 - root - INFO - params saved in: ./output_dir/model_xlnet_CoLA_8.params
+2020-01-08 10:11:36,771 - root - INFO - Time cost=106.36s
+2020-01-08 10:11:50,205 - root - INFO - [Epoch 10 Batch 10/67] loss=0.2026, lr=0.0000294
+2020-01-08 10:12:03,855 - root - INFO - [Epoch 10 Batch 20/67] loss=0.2132, lr=0.0000293
+2020-01-08 10:12:17,998 - root - INFO - [Epoch 10 Batch 30/67] loss=0.1950, lr=0.0000292
+2020-01-08 10:12:32,252 - root - INFO - [Epoch 10 Batch 40/67] loss=0.2270, lr=0.0000291
+2020-01-08 10:12:46,255 - root - INFO - [Epoch 10 Batch 50/67] loss=0.2171, lr=0.0000289
+2020-01-08 10:13:00,160 - root - INFO - [Epoch 10 Batch 60/67] loss=0.1961, lr=0.0000288
+2020-01-08 10:13:10,570 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2020-01-08 10:13:13,177 - root - INFO - [Batch 10/33] loss=0.6349
+2020-01-08 10:13:15,759 - root - INFO - [Batch 20/33] loss=0.6098
+2020-01-08 10:13:18,344 - root - INFO - [Batch 30/33] loss=0.4582
+2020-01-08 10:13:19,209 - root - INFO - validation metrics:mcc:0.5385
+2020-01-08 10:13:19,210 - root - INFO - Time cost=8.64s, throughput=122.23 samples/s
+2020-01-08 10:13:21,677 - root - INFO - params saved in: ./output_dir/model_xlnet_CoLA_9.params
+2020-01-08 10:13:21,681 - root - INFO - Time cost=104.91s
+2020-01-08 10:13:35,350 - root - INFO - [Epoch 11 Batch 10/67] loss=0.1210, lr=0.0000286
+2020-01-08 10:13:48,983 - root - INFO - [Epoch 11 Batch 20/67] loss=0.1960, lr=0.0000285
+2020-01-08 10:14:02,175 - root - INFO - [Epoch 11 Batch 30/67] loss=0.1249, lr=0.0000284
+2020-01-08 10:14:15,536 - root - INFO - [Epoch 11 Batch 40/67] loss=0.1542, lr=0.0000282
+2020-01-08 10:14:29,653 - root - INFO - [Epoch 11 Batch 50/67] loss=0.1457, lr=0.0000281
+2020-01-08 10:14:43,443 - root - INFO - [Epoch 11 Batch 60/67] loss=0.1612, lr=0.0000280
+2020-01-08 10:14:53,669 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2020-01-08 10:14:56,385 - root - INFO - [Batch 10/33] loss=0.6527
+2020-01-08 10:14:58,917 - root - INFO - [Batch 20/33] loss=0.7014
+2020-01-08 10:15:01,443 - root - INFO - [Batch 30/33] loss=0.4756
+2020-01-08 10:15:02,248 - root - INFO - validation metrics:mcc:0.5735
+2020-01-08 10:15:02,248 - root - INFO - Time cost=8.58s, throughput=123.09 samples/s
+2020-01-08 10:15:04,616 - root - INFO - params saved in: ./output_dir/model_xlnet_CoLA_10.params
+2020-01-08 10:15:04,618 - root - INFO - Time cost=102.94s
+2020-01-08 10:15:18,868 - root - INFO - [Epoch 12 Batch 10/67] loss=0.1175, lr=0.0000278
+2020-01-08 10:15:32,515 - root - INFO - [Epoch 12 Batch 20/67] loss=0.1476, lr=0.0000277
+2020-01-08 10:15:45,949 - root - INFO - [Epoch 12 Batch 30/67] loss=0.1135, lr=0.0000275
+2020-01-08 10:15:59,612 - root - INFO - [Epoch 12 Batch 40/67] loss=0.1220, lr=0.0000274
+2020-01-08 10:16:13,319 - root - INFO - [Epoch 12 Batch 50/67] loss=0.1410, lr=0.0000273
+2020-01-08 10:16:26,781 - root - INFO - [Epoch 12 Batch 60/67] loss=0.1192, lr=0.0000272
+2020-01-08 10:16:36,909 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2020-01-08 10:16:39,821 - root - INFO - [Batch 10/33] loss=0.5947
+2020-01-08 10:16:42,629 - root - INFO - [Batch 20/33] loss=0.6977
+2020-01-08 10:16:45,371 - root - INFO - [Batch 30/33] loss=0.4601
+2020-01-08 10:16:46,253 - root - INFO - validation metrics:mcc:0.6533
+2020-01-08 10:16:46,254 - root - INFO - Time cost=9.34s, throughput=113.02 samples/s
+2020-01-08 10:16:48,882 - root - INFO - params saved in: ./output_dir/model_xlnet_CoLA_11.params
+2020-01-08 10:16:48,885 - root - INFO - Time cost=104.27s
+2020-01-08 10:17:03,555 - root - INFO - [Epoch 13 Batch 10/67] loss=0.0689, lr=0.0000270
+2020-01-08 10:17:17,705 - root - INFO - [Epoch 13 Batch 20/67] loss=0.0933, lr=0.0000268
+2020-01-08 10:17:31,981 - root - INFO - [Epoch 13 Batch 30/67] loss=0.1028, lr=0.0000267
+2020-01-08 10:17:46,571 - root - INFO - [Epoch 13 Batch 40/67] loss=0.1064, lr=0.0000266
+2020-01-08 10:18:00,620 - root - INFO - [Epoch 13 Batch 50/67] loss=0.0749, lr=0.0000265
+2020-01-08 10:18:14,615 - root - INFO - [Epoch 13 Batch 60/67] loss=0.1153, lr=0.0000263
+2020-01-08 10:18:24,675 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2020-01-08 10:18:27,492 - root - INFO - [Batch 10/33] loss=0.7505
+2020-01-08 10:18:30,141 - root - INFO - [Batch 20/33] loss=0.7479
+2020-01-08 10:18:32,657 - root - INFO - [Batch 30/33] loss=0.5120
+2020-01-08 10:18:33,460 - root - INFO - validation metrics:mcc:0.6282
+2020-01-08 10:18:33,460 - root - INFO - Time cost=8.78s, throughput=120.21 samples/s
+2020-01-08 10:18:35,866 - root - INFO - params saved in: ./output_dir/model_xlnet_CoLA_12.params
+2020-01-08 10:18:35,869 - root - INFO - Time cost=106.98s
+2020-01-08 10:18:49,706 - root - INFO - [Epoch 14 Batch 10/67] loss=0.0602, lr=0.0000261
+2020-01-08 10:19:03,858 - root - INFO - [Epoch 14 Batch 20/67] loss=0.1085, lr=0.0000260
+2020-01-08 10:19:17,666 - root - INFO - [Epoch 14 Batch 30/67] loss=0.1012, lr=0.0000259
+2020-01-08 10:19:30,906 - root - INFO - [Epoch 14 Batch 40/67] loss=0.1115, lr=0.0000258
+2020-01-08 10:19:45,067 - root - INFO - [Epoch 14 Batch 50/67] loss=0.1040, lr=0.0000256
+2020-01-08 10:19:59,165 - root - INFO - [Epoch 14 Batch 60/67] loss=0.0685, lr=0.0000255
+2020-01-08 10:20:08,715 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2020-01-08 10:20:11,261 - root - INFO - [Batch 10/33] loss=0.7180
+2020-01-08 10:20:13,783 - root - INFO - [Batch 20/33] loss=0.7875
+2020-01-08 10:20:16,301 - root - INFO - [Batch 30/33] loss=0.5783
+2020-01-08 10:20:17,104 - root - INFO - validation metrics:mcc:0.6406
+2020-01-08 10:20:17,104 - root - INFO - Time cost=8.39s, throughput=125.89 samples/s
+2020-01-08 10:20:19,530 - root - INFO - params saved in: ./output_dir/model_xlnet_CoLA_13.params
+2020-01-08 10:20:19,533 - root - INFO - Time cost=103.66s
+2020-01-08 10:20:33,106 - root - INFO - [Epoch 15 Batch 10/67] loss=0.0421, lr=0.0000253
+2020-01-08 10:20:47,251 - root - INFO - [Epoch 15 Batch 20/67] loss=0.0771, lr=0.0000252
+2020-01-08 10:21:01,514 - root - INFO - [Epoch 15 Batch 30/67] loss=0.0546, lr=0.0000251
+2020-01-08 10:21:15,655 - root - INFO - [Epoch 15 Batch 40/67] loss=0.0665, lr=0.0000249
+2020-01-08 10:21:29,644 - root - INFO - [Epoch 15 Batch 50/67] loss=0.0626, lr=0.0000248
+2020-01-08 10:21:43,018 - root - INFO - [Epoch 15 Batch 60/67] loss=0.0585, lr=0.0000247
+2020-01-08 10:21:53,055 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2020-01-08 10:21:55,877 - root - INFO - [Batch 10/33] loss=0.8307
+2020-01-08 10:21:58,665 - root - INFO - [Batch 20/33] loss=0.8010
+2020-01-08 10:22:01,449 - root - INFO - [Batch 30/33] loss=0.5866
+2020-01-08 10:22:02,334 - root - INFO - validation metrics:mcc:0.6252
+2020-01-08 10:22:02,334 - root - INFO - Time cost=9.28s, throughput=113.81 samples/s
+2020-01-08 10:22:04,744 - root - INFO - params saved in: ./output_dir/model_xlnet_CoLA_14.params
+2020-01-08 10:22:04,745 - root - INFO - Time cost=105.21s
+2020-01-08 10:22:18,687 - root - INFO - [Epoch 16 Batch 10/67] loss=0.0629, lr=0.0000245
+2020-01-08 10:22:31,803 - root - INFO - [Epoch 16 Batch 20/67] loss=0.0607, lr=0.0000244
+2020-01-08 10:22:45,566 - root - INFO - [Epoch 16 Batch 30/67] loss=0.0552, lr=0.0000242
+2020-01-08 10:22:58,827 - root - INFO - [Epoch 16 Batch 40/67] loss=0.0450, lr=0.0000241
+2020-01-08 10:23:12,812 - root - INFO - [Epoch 16 Batch 50/67] loss=0.0558, lr=0.0000240
+2020-01-08 10:23:26,879 - root - INFO - [Epoch 16 Batch 60/67] loss=0.0681, lr=0.0000239
+2020-01-08 10:23:37,139 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2020-01-08 10:23:40,082 - root - INFO - [Batch 10/33] loss=0.8404
+2020-01-08 10:23:42,984 - root - INFO - [Batch 20/33] loss=0.8163
+2020-01-08 10:23:45,844 - root - INFO - [Batch 30/33] loss=0.5341
+2020-01-08 10:23:46,737 - root - INFO - validation metrics:mcc:0.6257
+2020-01-08 10:23:46,737 - root - INFO - Time cost=9.60s, throughput=110.02 samples/s
+2020-01-08 10:23:49,223 - root - INFO - params saved in: ./output_dir/model_xlnet_CoLA_15.params
+2020-01-08 10:23:49,226 - root - INFO - Time cost=104.48s
+2020-01-08 10:24:03,362 - root - INFO - [Epoch 17 Batch 10/67] loss=0.0402, lr=0.0000237
+2020-01-08 10:24:17,480 - root - INFO - [Epoch 17 Batch 20/67] loss=0.0669, lr=0.0000235
+2020-01-08 10:24:30,967 - root - INFO - [Epoch 17 Batch 30/67] loss=0.0531, lr=0.0000234
+2020-01-08 10:24:44,660 - root - INFO - [Epoch 17 Batch 40/67] loss=0.0372, lr=0.0000233
+2020-01-08 10:24:58,615 - root - INFO - [Epoch 17 Batch 50/67] loss=0.0459, lr=0.0000232
+2020-01-08 10:25:12,878 - root - INFO - [Epoch 17 Batch 60/67] loss=0.0588, lr=0.0000230
+2020-01-08 10:25:22,656 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2020-01-08 10:25:25,191 - root - INFO - [Batch 10/33] loss=0.9121
+2020-01-08 10:25:27,700 - root - INFO - [Batch 20/33] loss=0.8768
+2020-01-08 10:25:30,210 - root - INFO - [Batch 30/33] loss=0.6579
+2020-01-08 10:25:31,013 - root - INFO - validation metrics:mcc:0.6190
+2020-01-08 10:25:31,013 - root - INFO - Time cost=8.36s, throughput=126.36 samples/s
+2020-01-08 10:25:33,482 - root - INFO - params saved in: ./output_dir/model_xlnet_CoLA_16.params
+2020-01-08 10:25:33,485 - root - INFO - Time cost=104.26s
+2020-01-08 10:25:47,574 - root - INFO - [Epoch 18 Batch 10/67] loss=0.0447, lr=0.0000228
+2020-01-08 10:26:01,366 - root - INFO - [Epoch 18 Batch 20/67] loss=0.0285, lr=0.0000227
+2020-01-08 10:26:15,234 - root - INFO - [Epoch 18 Batch 30/67] loss=0.0543, lr=0.0000226
+2020-01-08 10:26:28,886 - root - INFO - [Epoch 18 Batch 40/67] loss=0.0281, lr=0.0000225
+2020-01-08 10:26:42,700 - root - INFO - [Epoch 18 Batch 50/67] loss=0.0415, lr=0.0000223
+2020-01-08 10:26:57,440 - root - INFO - [Epoch 18 Batch 60/67] loss=0.0416, lr=0.0000222
+2020-01-08 10:27:07,853 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2020-01-08 10:27:10,790 - root - INFO - [Batch 10/33] loss=0.7518
+2020-01-08 10:27:13,673 - root - INFO - [Batch 20/33] loss=0.8741
+2020-01-08 10:27:16,408 - root - INFO - [Batch 30/33] loss=0.5999
+2020-01-08 10:27:17,315 - root - INFO - validation metrics:mcc:0.6480
+2020-01-08 10:27:17,315 - root - INFO - Time cost=9.46s, throughput=111.61 samples/s
+2020-01-08 10:27:19,671 - root - INFO - params saved in: ./output_dir/model_xlnet_CoLA_17.params
+2020-01-08 10:27:19,674 - root - INFO - Time cost=106.19s
+2020-01-08 10:27:33,732 - root - INFO - [Epoch 19 Batch 10/67] loss=0.0377, lr=0.0000220
+2020-01-08 10:27:47,966 - root - INFO - [Epoch 19 Batch 20/67] loss=0.0288, lr=0.0000219
+2020-01-08 10:28:01,985 - root - INFO - [Epoch 19 Batch 30/67] loss=0.0271, lr=0.0000218
+2020-01-08 10:28:16,331 - root - INFO - [Epoch 19 Batch 40/67] loss=0.0402, lr=0.0000216
+2020-01-08 10:28:30,656 - root - INFO - [Epoch 19 Batch 50/67] loss=0.0424, lr=0.0000215
+2020-01-08 10:28:45,124 - root - INFO - [Epoch 19 Batch 60/67] loss=0.0530, lr=0.0000214
+2020-01-08 10:28:55,586 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2020-01-08 10:28:58,279 - root - INFO - [Batch 10/33] loss=1.0586
+2020-01-08 10:29:00,803 - root - INFO - [Batch 20/33] loss=1.1989
+2020-01-08 10:29:03,321 - root - INFO - [Batch 30/33] loss=0.8978
+2020-01-08 10:29:04,125 - root - INFO - validation metrics:mcc:0.6175
+2020-01-08 10:29:04,126 - root - INFO - Time cost=8.54s, throughput=123.67 samples/s
+2020-01-08 10:29:06,674 - root - INFO - params saved in: ./output_dir/model_xlnet_CoLA_18.params
+2020-01-08 10:29:06,677 - root - INFO - Time cost=107.00s
+2020-01-08 10:29:21,270 - root - INFO - [Epoch 20 Batch 10/67] loss=0.0288, lr=0.0000212
+2020-01-08 10:29:35,210 - root - INFO - [Epoch 20 Batch 20/67] loss=0.0518, lr=0.0000211
+2020-01-08 10:29:49,465 - root - INFO - [Epoch 20 Batch 30/67] loss=0.0363, lr=0.0000209
+2020-01-08 10:30:03,844 - root - INFO - [Epoch 20 Batch 40/67] loss=0.0258, lr=0.0000208
+2020-01-08 10:30:18,328 - root - INFO - [Epoch 20 Batch 50/67] loss=0.0443, lr=0.0000207
+2020-01-08 10:30:31,964 - root - INFO - [Epoch 20 Batch 60/67] loss=0.0292, lr=0.0000206
+2020-01-08 10:30:41,770 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2020-01-08 10:30:44,363 - root - INFO - [Batch 10/33] loss=0.9560
+2020-01-08 10:30:46,930 - root - INFO - [Batch 20/33] loss=1.1195
+2020-01-08 10:30:49,493 - root - INFO - [Batch 30/33] loss=0.7217
+2020-01-08 10:30:50,313 - root - INFO - validation metrics:mcc:0.6357
+2020-01-08 10:30:50,313 - root - INFO - Time cost=8.54s, throughput=123.61 samples/s
+2020-01-08 10:30:52,792 - root - INFO - params saved in: ./output_dir/model_xlnet_CoLA_19.params
+2020-01-08 10:30:52,794 - root - INFO - Time cost=106.12s
+2020-01-08 10:31:06,838 - root - INFO - [Epoch 21 Batch 10/67] loss=0.0454, lr=0.0000203
+2020-01-08 10:31:20,094 - root - INFO - [Epoch 21 Batch 20/67] loss=0.0307, lr=0.0000202
+2020-01-08 10:31:33,420 - root - INFO - [Epoch 21 Batch 30/67] loss=0.0217, lr=0.0000201
+2020-01-08 10:31:47,740 - root - INFO - [Epoch 21 Batch 40/67] loss=0.0201, lr=0.0000200
+2020-01-08 10:32:01,298 - root - INFO - [Epoch 21 Batch 50/67] loss=0.0500, lr=0.0000199
+2020-01-08 10:32:14,825 - root - INFO - [Epoch 21 Batch 60/67] loss=0.0286, lr=0.0000197
+2020-01-08 10:32:24,406 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2020-01-08 10:32:26,998 - root - INFO - [Batch 10/33] loss=0.9287
+2020-01-08 10:32:29,568 - root - INFO - [Batch 20/33] loss=1.0200
+2020-01-08 10:32:32,140 - root - INFO - [Batch 30/33] loss=0.6370
+2020-01-08 10:32:32,964 - root - INFO - validation metrics:mcc:0.6406
+2020-01-08 10:32:32,964 - root - INFO - Time cost=8.56s, throughput=123.40 samples/s
+2020-01-08 10:32:35,285 - root - INFO - params saved in: ./output_dir/model_xlnet_CoLA_20.params
+2020-01-08 10:32:35,287 - root - INFO - Time cost=102.49s
+2020-01-08 10:32:48,891 - root - INFO - [Epoch 22 Batch 10/67] loss=0.0340, lr=0.0000195
+2020-01-08 10:33:02,232 - root - INFO - [Epoch 22 Batch 20/67] loss=0.0279, lr=0.0000194
+2020-01-08 10:33:15,855 - root - INFO - [Epoch 22 Batch 30/67] loss=0.0269, lr=0.0000193
+2020-01-08 10:33:29,736 - root - INFO - [Epoch 22 Batch 40/67] loss=0.0256, lr=0.0000192
+2020-01-08 10:33:43,598 - root - INFO - [Epoch 22 Batch 50/67] loss=0.0384, lr=0.0000190
+2020-01-08 10:33:57,425 - root - INFO - [Epoch 22 Batch 60/67] loss=0.0338, lr=0.0000189
+2020-01-08 10:34:06,813 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2020-01-08 10:34:09,352 - root - INFO - [Batch 10/33] loss=1.0753
+2020-01-08 10:34:11,871 - root - INFO - [Batch 20/33] loss=1.2083
+2020-01-08 10:34:14,387 - root - INFO - [Batch 30/33] loss=0.7754
+2020-01-08 10:34:15,193 - root - INFO - validation metrics:mcc:0.6098
+2020-01-08 10:34:15,193 - root - INFO - Time cost=8.38s, throughput=126.03 samples/s
+2020-01-08 10:34:17,727 - root - INFO - params saved in: ./output_dir/model_xlnet_CoLA_21.params
+2020-01-08 10:34:17,729 - root - INFO - Time cost=102.44s
+2020-01-08 10:34:31,989 - root - INFO - [Epoch 23 Batch 10/67] loss=0.0285, lr=0.0000187
+2020-01-08 10:34:46,732 - root - INFO - [Epoch 23 Batch 20/67] loss=0.0155, lr=0.0000186
+2020-01-08 10:35:01,243 - root - INFO - [Epoch 23 Batch 30/67] loss=0.0127, lr=0.0000185
+2020-01-08 10:35:15,418 - root - INFO - [Epoch 23 Batch 40/67] loss=0.0290, lr=0.0000183
+2020-01-08 10:35:28,977 - root - INFO - [Epoch 23 Batch 50/67] loss=0.0241, lr=0.0000182
+2020-01-08 10:35:42,590 - root - INFO - [Epoch 23 Batch 60/67] loss=0.0155, lr=0.0000181
+2020-01-08 10:35:52,368 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2020-01-08 10:35:54,965 - root - INFO - [Batch 10/33] loss=1.1246
+2020-01-08 10:35:57,533 - root - INFO - [Batch 20/33] loss=1.2925
+2020-01-08 10:36:00,100 - root - INFO - [Batch 30/33] loss=0.9954
+2020-01-08 10:36:00,918 - root - INFO - validation metrics:mcc:0.6043
+2020-01-08 10:36:00,918 - root - INFO - Time cost=8.55s, throughput=123.52 samples/s
+2020-01-08 10:36:03,617 - root - INFO - params saved in: ./output_dir/model_xlnet_CoLA_22.params
+2020-01-08 10:36:03,620 - root - INFO - Time cost=105.89s
+2020-01-08 10:36:17,814 - root - INFO - [Epoch 24 Batch 10/67] loss=0.0210, lr=0.0000179
+2020-01-08 10:36:31,765 - root - INFO - [Epoch 24 Batch 20/67] loss=0.0165, lr=0.0000177
+2020-01-08 10:36:45,537 - root - INFO - [Epoch 24 Batch 30/67] loss=0.0262, lr=0.0000176
+2020-01-08 10:36:58,774 - root - INFO - [Epoch 24 Batch 40/67] loss=0.0305, lr=0.0000175
+2020-01-08 10:37:12,114 - root - INFO - [Epoch 24 Batch 50/67] loss=0.0110, lr=0.0000174
+2020-01-08 10:37:25,339 - root - INFO - [Epoch 24 Batch 60/67] loss=0.0152, lr=0.0000173
+2020-01-08 10:37:35,236 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2020-01-08 10:37:37,934 - root - INFO - [Batch 10/33] loss=1.1275
+2020-01-08 10:37:40,431 - root - INFO - [Batch 20/33] loss=1.1955
+2020-01-08 10:37:42,930 - root - INFO - [Batch 30/33] loss=0.8287
+2020-01-08 10:37:43,726 - root - INFO - validation metrics:mcc:0.6265
+2020-01-08 10:37:43,726 - root - INFO - Time cost=8.49s, throughput=124.38 samples/s
+2020-01-08 10:37:46,107 - root - INFO - params saved in: ./output_dir/model_xlnet_CoLA_23.params
+2020-01-08 10:37:46,109 - root - INFO - Time cost=102.49s
+2020-01-08 10:37:59,745 - root - INFO - [Epoch 25 Batch 10/67] loss=0.0260, lr=0.0000170
+2020-01-08 10:38:13,230 - root - INFO - [Epoch 25 Batch 20/67] loss=0.0130, lr=0.0000169
+2020-01-08 10:38:26,696 - root - INFO - [Epoch 25 Batch 30/67] loss=0.0131, lr=0.0000168
+2020-01-08 10:38:39,924 - root - INFO - [Epoch 25 Batch 40/67] loss=0.0106, lr=0.0000167
+2020-01-08 10:38:54,341 - root - INFO - [Epoch 25 Batch 50/67] loss=0.0255, lr=0.0000166
+2020-01-08 10:39:08,434 - root - INFO - [Epoch 25 Batch 60/67] loss=0.0313, lr=0.0000164
+2020-01-08 10:39:18,156 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2020-01-08 10:39:20,964 - root - INFO - [Batch 10/33] loss=1.2375
+2020-01-08 10:39:23,461 - root - INFO - [Batch 20/33] loss=1.2431
+2020-01-08 10:39:25,954 - root - INFO - [Batch 30/33] loss=0.9407
+2020-01-08 10:39:26,773 - root - INFO - validation metrics:mcc:0.6115
+2020-01-08 10:39:26,773 - root - INFO - Time cost=8.62s, throughput=122.55 samples/s
+2020-01-08 10:39:29,308 - root - INFO - params saved in: ./output_dir/model_xlnet_CoLA_24.params
+2020-01-08 10:39:29,310 - root - INFO - Time cost=103.20s
+2020-01-08 10:39:43,479 - root - INFO - [Epoch 26 Batch 10/67] loss=0.0123, lr=0.0000162
+2020-01-08 10:39:57,473 - root - INFO - [Epoch 26 Batch 20/67] loss=0.0112, lr=0.0000161
+2020-01-08 10:40:10,871 - root - INFO - [Epoch 26 Batch 30/67] loss=0.0117, lr=0.0000160
+2020-01-08 10:40:25,647 - root - INFO - [Epoch 26 Batch 40/67] loss=0.0296, lr=0.0000159
+2020-01-08 10:40:40,070 - root - INFO - [Epoch 26 Batch 50/67] loss=0.0149, lr=0.0000157
+2020-01-08 10:40:53,820 - root - INFO - [Epoch 26 Batch 60/67] loss=0.0179, lr=0.0000156
+2020-01-08 10:41:03,543 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2020-01-08 10:41:06,140 - root - INFO - [Batch 10/33] loss=1.1027
+2020-01-08 10:41:08,702 - root - INFO - [Batch 20/33] loss=1.2308
+2020-01-08 10:41:11,262 - root - INFO - [Batch 30/33] loss=0.8405
+2020-01-08 10:41:12,078 - root - INFO - validation metrics:mcc:0.6367
+2020-01-08 10:41:12,078 - root - INFO - Time cost=8.53s, throughput=123.73 samples/s
+2020-01-08 10:41:14,633 - root - INFO - params saved in: ./output_dir/model_xlnet_CoLA_25.params
+2020-01-08 10:41:14,635 - root - INFO - Time cost=105.32s
+2020-01-08 10:41:28,541 - root - INFO - [Epoch 27 Batch 10/67] loss=0.0175, lr=0.0000154
+2020-01-08 10:41:42,316 - root - INFO - [Epoch 27 Batch 20/67] loss=0.0105, lr=0.0000153
+2020-01-08 10:41:55,992 - root - INFO - [Epoch 27 Batch 30/67] loss=0.0157, lr=0.0000151
+2020-01-08 10:42:10,603 - root - INFO - [Epoch 27 Batch 40/67] loss=0.0235, lr=0.0000150
+2020-01-08 10:42:25,081 - root - INFO - [Epoch 27 Batch 50/67] loss=0.0326, lr=0.0000149
+2020-01-08 10:42:39,596 - root - INFO - [Epoch 27 Batch 60/67] loss=0.0150, lr=0.0000148
+2020-01-08 10:42:49,683 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2020-01-08 10:42:52,380 - root - INFO - [Batch 10/33] loss=1.0645
+2020-01-08 10:42:54,897 - root - INFO - [Batch 20/33] loss=1.2073
+2020-01-08 10:42:57,402 - root - INFO - [Batch 30/33] loss=0.7890
+2020-01-08 10:42:58,204 - root - INFO - validation metrics:mcc:0.6480
+2020-01-08 10:42:58,205 - root - INFO - Time cost=8.52s, throughput=123.92 samples/s
+2020-01-08 10:43:00,621 - root - INFO - params saved in: ./output_dir/model_xlnet_CoLA_26.params
+2020-01-08 10:43:00,623 - root - INFO - Time cost=105.99s
+2020-01-08 10:43:14,046 - root - INFO - [Epoch 28 Batch 10/67] loss=0.0101, lr=0.0000146
+2020-01-08 10:43:27,746 - root - INFO - [Epoch 28 Batch 20/67] loss=0.0093, lr=0.0000144
+2020-01-08 10:43:41,315 - root - INFO - [Epoch 28 Batch 30/67] loss=0.0195, lr=0.0000143
+2020-01-08 10:43:54,449 - root - INFO - [Epoch 28 Batch 40/67] loss=0.0049, lr=0.0000142
+2020-01-08 10:44:08,076 - root - INFO - [Epoch 28 Batch 50/67] loss=0.0317, lr=0.0000141
+2020-01-08 10:44:22,021 - root - INFO - [Epoch 28 Batch 60/67] loss=0.0106, lr=0.0000140
+2020-01-08 10:44:31,973 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2020-01-08 10:44:34,793 - root - INFO - [Batch 10/33] loss=1.2897
+2020-01-08 10:44:37,378 - root - INFO - [Batch 20/33] loss=1.2527
+2020-01-08 10:44:39,941 - root - INFO - [Batch 30/33] loss=0.8921
+2020-01-08 10:44:40,758 - root - INFO - validation metrics:mcc:0.6347
+2020-01-08 10:44:40,758 - root - INFO - Time cost=8.78s, throughput=120.21 samples/s
+2020-01-08 10:44:43,241 - root - INFO - params saved in: ./output_dir/model_xlnet_CoLA_27.params
+2020-01-08 10:44:43,243 - root - INFO - Time cost=102.62s
+2020-01-08 10:44:57,150 - root - INFO - [Epoch 29 Batch 10/67] loss=0.0107, lr=0.0000137
+2020-01-08 10:45:11,282 - root - INFO - [Epoch 29 Batch 20/67] loss=0.0085, lr=0.0000136
+2020-01-08 10:45:25,337 - root - INFO - [Epoch 29 Batch 30/67] loss=0.0163, lr=0.0000135
+2020-01-08 10:45:39,417 - root - INFO - [Epoch 29 Batch 40/67] loss=0.0147, lr=0.0000134
+2020-01-08 10:45:54,168 - root - INFO - [Epoch 29 Batch 50/67] loss=0.0082, lr=0.0000132
+2020-01-08 10:46:08,105 - root - INFO - [Epoch 29 Batch 60/67] loss=0.0083, lr=0.0000131
+2020-01-08 10:46:18,073 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2020-01-08 10:46:20,660 - root - INFO - [Batch 10/33] loss=1.1969
+2020-01-08 10:46:23,230 - root - INFO - [Batch 20/33] loss=1.2842
+2020-01-08 10:46:25,817 - root - INFO - [Batch 30/33] loss=0.8885
+2020-01-08 10:46:26,645 - root - INFO - validation metrics:mcc:0.6538
+2020-01-08 10:46:26,645 - root - INFO - Time cost=8.57s, throughput=123.19 samples/s
+2020-01-08 10:46:29,156 - root - INFO - params saved in: ./output_dir/model_xlnet_CoLA_28.params
+2020-01-08 10:46:29,158 - root - INFO - Time cost=105.91s
+2020-01-08 10:46:43,268 - root - INFO - [Epoch 30 Batch 10/67] loss=0.0114, lr=0.0000129
+2020-01-08 10:46:56,616 - root - INFO - [Epoch 30 Batch 20/67] loss=0.0073, lr=0.0000128
+2020-01-08 10:47:10,414 - root - INFO - [Epoch 30 Batch 30/67] loss=0.0228, lr=0.0000127
+2020-01-08 10:47:24,157 - root - INFO - [Epoch 30 Batch 40/67] loss=0.0044, lr=0.0000125
+2020-01-08 10:47:38,195 - root - INFO - [Epoch 30 Batch 50/67] loss=0.0094, lr=0.0000124
+2020-01-08 10:47:52,559 - root - INFO - [Epoch 30 Batch 60/67] loss=0.0160, lr=0.0000123
+2020-01-08 10:48:03,199 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2020-01-08 10:48:06,050 - root - INFO - [Batch 10/33] loss=1.0863
+2020-01-08 10:48:08,709 - root - INFO - [Batch 20/33] loss=1.1885
+2020-01-08 10:48:11,452 - root - INFO - [Batch 30/33] loss=0.7891
+2020-01-08 10:48:12,300 - root - INFO - validation metrics:mcc:0.6562
+2020-01-08 10:48:12,300 - root - INFO - Time cost=9.10s, throughput=116.03 samples/s
+2020-01-08 10:48:14,704 - root - INFO - params saved in: ./output_dir/model_xlnet_CoLA_29.params
+2020-01-08 10:48:14,706 - root - INFO - Time cost=105.55s
+2020-01-08 10:48:29,038 - root - INFO - [Epoch 31 Batch 10/67] loss=0.0045, lr=0.0000121
+2020-01-08 10:48:43,342 - root - INFO - [Epoch 31 Batch 20/67] loss=0.0130, lr=0.0000120
+2020-01-08 10:48:56,940 - root - INFO - [Epoch 31 Batch 30/67] loss=0.0140, lr=0.0000118
+2020-01-08 10:49:10,288 - root - INFO - [Epoch 31 Batch 40/67] loss=0.0094, lr=0.0000117
+2020-01-08 10:49:23,625 - root - INFO - [Epoch 31 Batch 50/67] loss=0.0080, lr=0.0000116
+2020-01-08 10:49:37,030 - root - INFO - [Epoch 31 Batch 60/67] loss=0.0158, lr=0.0000115
+2020-01-08 10:49:46,984 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2020-01-08 10:49:49,721 - root - INFO - [Batch 10/33] loss=1.2022
+2020-01-08 10:49:52,406 - root - INFO - [Batch 20/33] loss=1.2545
+2020-01-08 10:49:54,978 - root - INFO - [Batch 30/33] loss=0.8585
+2020-01-08 10:49:55,795 - root - INFO - validation metrics:mcc:0.6682
+2020-01-08 10:49:55,795 - root - INFO - Time cost=8.81s, throughput=119.86 samples/s
+2020-01-08 10:49:58,227 - root - INFO - params saved in: ./output_dir/model_xlnet_CoLA_30.params
+2020-01-08 10:49:58,228 - root - INFO - Time cost=103.52s
+2020-01-08 10:50:12,689 - root - INFO - [Epoch 32 Batch 10/67] loss=0.0108, lr=0.0000113
+2020-01-08 10:50:26,942 - root - INFO - [Epoch 32 Batch 20/67] loss=0.0081, lr=0.0000111
+2020-01-08 10:50:40,751 - root - INFO - [Epoch 32 Batch 30/67] loss=0.0076, lr=0.0000110
+2020-01-08 10:50:54,113 - root - INFO - [Epoch 32 Batch 40/67] loss=0.0116, lr=0.0000109
+2020-01-08 10:51:07,846 - root - INFO - [Epoch 32 Batch 50/67] loss=0.0077, lr=0.0000108
+2020-01-08 10:51:22,075 - root - INFO - [Epoch 32 Batch 60/67] loss=0.0048, lr=0.0000106
+2020-01-08 10:51:31,911 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2020-01-08 10:51:34,507 - root - INFO - [Batch 10/33] loss=1.2227
+2020-01-08 10:51:37,099 - root - INFO - [Batch 20/33] loss=1.3117
+2020-01-08 10:51:39,702 - root - INFO - [Batch 30/33] loss=0.8423
+2020-01-08 10:51:40,533 - root - INFO - validation metrics:mcc:0.6680
+2020-01-08 10:51:40,533 - root - INFO - Time cost=8.62s, throughput=122.48 samples/s
+2020-01-08 10:51:42,929 - root - INFO - params saved in: ./output_dir/model_xlnet_CoLA_31.params
+2020-01-08 10:51:42,931 - root - INFO - Time cost=104.70s
+2020-01-08 10:51:56,325 - root - INFO - [Epoch 33 Batch 10/67] loss=0.0081, lr=0.0000104
+2020-01-08 10:52:10,228 - root - INFO - [Epoch 33 Batch 20/67] loss=0.0087, lr=0.0000103
+2020-01-08 10:52:23,949 - root - INFO - [Epoch 33 Batch 30/67] loss=0.0055, lr=0.0000102
+2020-01-08 10:52:37,242 - root - INFO - [Epoch 33 Batch 40/67] loss=0.0063, lr=0.0000101
+2020-01-08 10:52:50,882 - root - INFO - [Epoch 33 Batch 50/67] loss=0.0041, lr=0.0000099
+2020-01-08 10:53:04,962 - root - INFO - [Epoch 33 Batch 60/67] loss=0.0028, lr=0.0000098
+2020-01-08 10:53:14,668 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2020-01-08 10:53:17,264 - root - INFO - [Batch 10/33] loss=1.2641
+2020-01-08 10:53:19,828 - root - INFO - [Batch 20/33] loss=1.3997
+2020-01-08 10:53:22,391 - root - INFO - [Batch 30/33] loss=0.8478
+2020-01-08 10:53:23,220 - root - INFO - validation metrics:mcc:0.6580
+2020-01-08 10:53:23,221 - root - INFO - Time cost=8.55s, throughput=123.48 samples/s
+2020-01-08 10:53:25,562 - root - INFO - params saved in: ./output_dir/model_xlnet_CoLA_32.params
+2020-01-08 10:53:25,564 - root - INFO - Time cost=102.63s
+2020-01-08 10:53:39,702 - root - INFO - [Epoch 34 Batch 10/67] loss=0.0122, lr=0.0000096
+2020-01-08 10:53:53,967 - root - INFO - [Epoch 34 Batch 20/67] loss=0.0029, lr=0.0000095
+2020-01-08 10:54:07,632 - root - INFO - [Epoch 34 Batch 30/67] loss=0.0068, lr=0.0000094
+2020-01-08 10:54:21,426 - root - INFO - [Epoch 34 Batch 40/67] loss=0.0037, lr=0.0000092
+2020-01-08 10:54:35,121 - root - INFO - [Epoch 34 Batch 50/67] loss=0.0189, lr=0.0000091
+2020-01-08 10:54:49,157 - root - INFO - [Epoch 34 Batch 60/67] loss=0.0023, lr=0.0000090
+2020-01-08 10:54:58,687 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2020-01-08 10:55:01,362 - root - INFO - [Batch 10/33] loss=1.2482
+2020-01-08 10:55:03,864 - root - INFO - [Batch 20/33] loss=1.3790
+2020-01-08 10:55:06,356 - root - INFO - [Batch 30/33] loss=0.8817
+2020-01-08 10:55:07,152 - root - INFO - validation metrics:mcc:0.6602
+2020-01-08 10:55:07,153 - root - INFO - Time cost=8.46s, throughput=124.75 samples/s
+2020-01-08 10:55:09,676 - root - INFO - params saved in: ./output_dir/model_xlnet_CoLA_33.params
+2020-01-08 10:55:09,678 - root - INFO - Time cost=104.11s
+2020-01-08 10:55:23,040 - root - INFO - [Epoch 35 Batch 10/67] loss=0.0040, lr=0.0000088
+2020-01-08 10:55:36,246 - root - INFO - [Epoch 35 Batch 20/67] loss=0.0039, lr=0.0000087
+2020-01-08 10:55:51,082 - root - INFO - [Epoch 35 Batch 30/67] loss=0.0091, lr=0.0000085
+2020-01-08 10:56:06,095 - root - INFO - [Epoch 35 Batch 40/67] loss=0.0026, lr=0.0000084
+2020-01-08 10:56:19,896 - root - INFO - [Epoch 35 Batch 50/67] loss=0.0114, lr=0.0000083
+2020-01-08 10:56:33,807 - root - INFO - [Epoch 35 Batch 60/67] loss=0.0043, lr=0.0000082
+2020-01-08 10:56:43,334 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2020-01-08 10:56:46,036 - root - INFO - [Batch 10/33] loss=1.2784
+2020-01-08 10:56:48,553 - root - INFO - [Batch 20/33] loss=1.4607
+2020-01-08 10:56:51,061 - root - INFO - [Batch 30/33] loss=0.8871
+2020-01-08 10:56:51,864 - root - INFO - validation metrics:mcc:0.6562
+2020-01-08 10:56:51,864 - root - INFO - Time cost=8.53s, throughput=123.80 samples/s
+2020-01-08 10:56:54,371 - root - INFO - params saved in: ./output_dir/model_xlnet_CoLA_34.params
+2020-01-08 10:56:54,372 - root - INFO - Time cost=104.69s
+2020-01-08 10:57:08,216 - root - INFO - [Epoch 36 Batch 10/67] loss=0.0086, lr=0.0000080
+2020-01-08 10:57:22,139 - root - INFO - [Epoch 36 Batch 20/67] loss=0.0091, lr=0.0000078
+2020-01-08 10:57:36,699 - root - INFO - [Epoch 36 Batch 30/67] loss=0.0058, lr=0.0000077
+2020-01-08 10:57:50,617 - root - INFO - [Epoch 36 Batch 40/67] loss=0.0021, lr=0.0000076
+2020-01-08 10:58:04,800 - root - INFO - [Epoch 36 Batch 50/67] loss=0.0114, lr=0.0000075
+2020-01-08 10:58:18,686 - root - INFO - [Epoch 36 Batch 60/67] loss=0.0025, lr=0.0000073
+2020-01-08 10:58:27,994 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2020-01-08 10:58:30,534 - root - INFO - [Batch 10/33] loss=1.2732
+2020-01-08 10:58:33,054 - root - INFO - [Batch 20/33] loss=1.4047
+2020-01-08 10:58:35,569 - root - INFO - [Batch 30/33] loss=0.8802
+2020-01-08 10:58:36,372 - root - INFO - validation metrics:mcc:0.6580
+2020-01-08 10:58:36,372 - root - INFO - Time cost=8.38s, throughput=126.05 samples/s
+2020-01-08 10:58:38,740 - root - INFO - params saved in: ./output_dir/model_xlnet_CoLA_35.params
+2020-01-08 10:58:38,742 - root - INFO - Time cost=104.37s
+2020-01-08 10:58:52,696 - root - INFO - [Epoch 37 Batch 10/67] loss=0.0090, lr=0.0000071
+2020-01-08 10:59:06,902 - root - INFO - [Epoch 37 Batch 20/67] loss=0.0026, lr=0.0000070
+2020-01-08 10:59:20,816 - root - INFO - [Epoch 37 Batch 30/67] loss=0.0084, lr=0.0000069
+2020-01-08 10:59:34,230 - root - INFO - [Epoch 37 Batch 40/67] loss=0.0033, lr=0.0000068
+2020-01-08 10:59:48,030 - root - INFO - [Epoch 37 Batch 50/67] loss=0.0070, lr=0.0000066
+2020-01-08 11:00:02,334 - root - INFO - [Epoch 37 Batch 60/67] loss=0.0045, lr=0.0000065
+2020-01-08 11:00:12,135 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2020-01-08 11:00:14,731 - root - INFO - [Batch 10/33] loss=1.2833
+2020-01-08 11:00:17,297 - root - INFO - [Batch 20/33] loss=1.4346
+2020-01-08 11:00:19,847 - root - INFO - [Batch 30/33] loss=0.9092
+2020-01-08 11:00:20,654 - root - INFO - validation metrics:mcc:0.6703
+2020-01-08 11:00:20,654 - root - INFO - Time cost=8.52s, throughput=123.96 samples/s
+2020-01-08 11:00:23,119 - root - INFO - params saved in: ./output_dir/model_xlnet_CoLA_36.params
+2020-01-08 11:00:23,120 - root - INFO - Time cost=104.38s
+2020-01-08 11:00:37,323 - root - INFO - [Epoch 38 Batch 10/67] loss=0.0031, lr=0.0000063
+2020-01-08 11:00:51,419 - root - INFO - [Epoch 38 Batch 20/67] loss=0.0036, lr=0.0000062
+2020-01-08 11:01:06,016 - root - INFO - [Epoch 38 Batch 30/67] loss=0.0079, lr=0.0000061
+2020-01-08 11:01:20,146 - root - INFO - [Epoch 38 Batch 40/67] loss=0.0022, lr=0.0000059
+2020-01-08 11:01:34,456 - root - INFO - [Epoch 38 Batch 50/67] loss=0.0028, lr=0.0000058
+2020-01-08 11:01:48,336 - root - INFO - [Epoch 38 Batch 60/67] loss=0.0024, lr=0.0000057
+2020-01-08 11:01:58,373 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2020-01-08 11:02:01,013 - root - INFO - [Batch 10/33] loss=1.4156
+2020-01-08 11:02:03,650 - root - INFO - [Batch 20/33] loss=1.4880
+2020-01-08 11:02:06,287 - root - INFO - [Batch 30/33] loss=0.9526
+2020-01-08 11:02:07,155 - root - INFO - validation metrics:mcc:0.6538
+2020-01-08 11:02:07,155 - root - INFO - Time cost=8.78s, throughput=120.25 samples/s
+2020-01-08 11:02:09,651 - root - INFO - params saved in: ./output_dir/model_xlnet_CoLA_37.params
+2020-01-08 11:02:09,654 - root - INFO - Time cost=106.53s
+2020-01-08 11:02:24,030 - root - INFO - [Epoch 39 Batch 10/67] loss=0.0108, lr=0.0000055
+2020-01-08 11:02:38,483 - root - INFO - [Epoch 39 Batch 20/67] loss=0.0052, lr=0.0000054
+2020-01-08 11:02:52,862 - root - INFO - [Epoch 39 Batch 30/67] loss=0.0100, lr=0.0000052
+2020-01-08 11:03:07,028 - root - INFO - [Epoch 39 Batch 40/67] loss=0.0021, lr=0.0000051
+2020-01-08 11:03:20,856 - root - INFO - [Epoch 39 Batch 50/67] loss=0.0009, lr=0.0000050
+2020-01-08 11:03:35,138 - root - INFO - [Epoch 39 Batch 60/67] loss=0.0045, lr=0.0000049
+2020-01-08 11:03:44,875 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2020-01-08 11:03:47,533 - root - INFO - [Batch 10/33] loss=1.3542
+2020-01-08 11:03:50,052 - root - INFO - [Batch 20/33] loss=1.4619
+2020-01-08 11:03:52,566 - root - INFO - [Batch 30/33] loss=0.9692
+2020-01-08 11:03:53,368 - root - INFO - validation metrics:mcc:0.6605
+2020-01-08 11:03:53,368 - root - INFO - Time cost=8.49s, throughput=124.34 samples/s
+2020-01-08 11:03:55,860 - root - INFO - params saved in: ./output_dir/model_xlnet_CoLA_38.params
+2020-01-08 11:03:55,862 - root - INFO - Time cost=106.21s
+2020-01-08 11:04:10,026 - root - INFO - [Epoch 40 Batch 10/67] loss=0.0007, lr=0.0000047
+2020-01-08 11:04:24,119 - root - INFO - [Epoch 40 Batch 20/67] loss=0.0018, lr=0.0000045
+2020-01-08 11:04:38,642 - root - INFO - [Epoch 40 Batch 30/67] loss=0.0076, lr=0.0000044
+2020-01-08 11:04:52,855 - root - INFO - [Epoch 40 Batch 40/67] loss=0.0082, lr=0.0000043
+2020-01-08 11:05:07,027 - root - INFO - [Epoch 40 Batch 50/67] loss=0.0091, lr=0.0000042
+2020-01-08 11:05:20,991 - root - INFO - [Epoch 40 Batch 60/67] loss=0.0038, lr=0.0000040
+2020-01-08 11:05:30,421 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2020-01-08 11:05:32,978 - root - INFO - [Batch 10/33] loss=1.3475
+2020-01-08 11:05:35,507 - root - INFO - [Batch 20/33] loss=1.4669
+2020-01-08 11:05:38,036 - root - INFO - [Batch 30/33] loss=0.9427
+2020-01-08 11:05:38,843 - root - INFO - validation metrics:mcc:0.6518
+2020-01-08 11:05:38,844 - root - INFO - Time cost=8.42s, throughput=125.37 samples/s
+2020-01-08 11:05:41,524 - root - INFO - params saved in: ./output_dir/model_xlnet_CoLA_39.params
+2020-01-08 11:05:41,526 - root - INFO - Time cost=105.66s
+2020-01-08 11:05:55,755 - root - INFO - [Epoch 41 Batch 10/67] loss=0.0025, lr=0.0000038
+2020-01-08 11:06:09,975 - root - INFO - [Epoch 41 Batch 20/67] loss=0.0090, lr=0.0000037
+2020-01-08 11:06:23,901 - root - INFO - [Epoch 41 Batch 30/67] loss=0.0074, lr=0.0000036
+2020-01-08 11:06:37,668 - root - INFO - [Epoch 41 Batch 40/67] loss=0.0018, lr=0.0000035
+2020-01-08 11:06:52,038 - root - INFO - [Epoch 41 Batch 50/67] loss=0.0022, lr=0.0000033
+2020-01-08 11:07:05,841 - root - INFO - [Epoch 41 Batch 60/67] loss=0.0011, lr=0.0000032
+2020-01-08 11:07:15,593 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2020-01-08 11:07:18,290 - root - INFO - [Batch 10/33] loss=1.3059
+2020-01-08 11:07:20,838 - root - INFO - [Batch 20/33] loss=1.4755
+2020-01-08 11:07:23,385 - root - INFO - [Batch 30/33] loss=0.9288
+2020-01-08 11:07:24,196 - root - INFO - validation metrics:mcc:0.6628
+2020-01-08 11:07:24,196 - root - INFO - Time cost=8.60s, throughput=122.75 samples/s
+2020-01-08 11:07:26,627 - root - INFO - params saved in: ./output_dir/model_xlnet_CoLA_40.params
+2020-01-08 11:07:26,628 - root - INFO - Time cost=105.10s
+2020-01-08 11:07:40,185 - root - INFO - [Epoch 42 Batch 10/67] loss=0.0015, lr=0.0000030
+2020-01-08 11:07:53,964 - root - INFO - [Epoch 42 Batch 20/67] loss=0.0088, lr=0.0000029
+2020-01-08 11:08:07,224 - root - INFO - [Epoch 42 Batch 30/67] loss=0.0009, lr=0.0000028
+2020-01-08 11:08:21,071 - root - INFO - [Epoch 42 Batch 40/67] loss=0.0088, lr=0.0000026
+2020-01-08 11:08:34,904 - root - INFO - [Epoch 42 Batch 50/67] loss=0.0054, lr=0.0000025
+2020-01-08 11:08:48,237 - root - INFO - [Epoch 42 Batch 60/67] loss=0.0114, lr=0.0000024
+2020-01-08 11:08:57,925 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2020-01-08 11:09:00,467 - root - INFO - [Batch 10/33] loss=1.3001
+2020-01-08 11:09:02,993 - root - INFO - [Batch 20/33] loss=1.4422
+2020-01-08 11:09:05,513 - root - INFO - [Batch 30/33] loss=0.9084
+2020-01-08 11:09:06,332 - root - INFO - validation metrics:mcc:0.6628
+2020-01-08 11:09:06,332 - root - INFO - Time cost=8.41s, throughput=125.61 samples/s
+2020-01-08 11:09:08,780 - root - INFO - params saved in: ./output_dir/model_xlnet_CoLA_41.params
+2020-01-08 11:09:08,783 - root - INFO - Time cost=102.15s
+2020-01-08 11:09:22,369 - root - INFO - [Epoch 43 Batch 10/67] loss=0.0061, lr=0.0000022
+2020-01-08 11:09:36,015 - root - INFO - [Epoch 43 Batch 20/67] loss=0.0066, lr=0.0000021
+2020-01-08 11:09:49,821 - root - INFO - [Epoch 43 Batch 30/67] loss=0.0171, lr=0.0000019
+2020-01-08 11:10:03,665 - root - INFO - [Epoch 43 Batch 40/67] loss=0.0082, lr=0.0000018
+2020-01-08 11:10:18,488 - root - INFO - [Epoch 43 Batch 50/67] loss=0.0028, lr=0.0000017
+2020-01-08 11:10:33,026 - root - INFO - [Epoch 43 Batch 60/67] loss=0.0074, lr=0.0000016
+2020-01-08 11:10:43,070 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2020-01-08 11:10:45,854 - root - INFO - [Batch 10/33] loss=1.3206
+2020-01-08 11:10:48,411 - root - INFO - [Batch 20/33] loss=1.4690
+2020-01-08 11:10:50,968 - root - INFO - [Batch 30/33] loss=0.9385
+2020-01-08 11:10:51,784 - root - INFO - validation metrics:mcc:0.6531
+2020-01-08 11:10:51,784 - root - INFO - Time cost=8.71s, throughput=121.19 samples/s
+2020-01-08 11:10:54,362 - root - INFO - params saved in: ./output_dir/model_xlnet_CoLA_42.params
+2020-01-08 11:10:54,364 - root - INFO - Time cost=105.58s
+2020-01-08 11:11:08,185 - root - INFO - [Epoch 44 Batch 10/67] loss=0.0051, lr=0.0000014
+2020-01-08 11:11:21,669 - root - INFO - [Epoch 44 Batch 20/67] loss=0.0027, lr=0.0000012
+2020-01-08 11:11:35,009 - root - INFO - [Epoch 44 Batch 30/67] loss=0.0003, lr=0.0000011
+2020-01-08 11:11:48,725 - root - INFO - [Epoch 44 Batch 40/67] loss=0.0047, lr=0.0000010
+2020-01-08 11:12:03,055 - root - INFO - [Epoch 44 Batch 50/67] loss=0.0032, lr=0.0000009
+2020-01-08 11:12:17,093 - root - INFO - [Epoch 44 Batch 60/67] loss=0.0017, lr=0.0000007
+2020-01-08 11:12:27,366 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2020-01-08 11:12:29,969 - root - INFO - [Batch 10/33] loss=1.3098
+2020-01-08 11:12:32,534 - root - INFO - [Batch 20/33] loss=1.4588
+2020-01-08 11:12:35,096 - root - INFO - [Batch 30/33] loss=0.9348
+2020-01-08 11:12:35,913 - root - INFO - validation metrics:mcc:0.6554
+2020-01-08 11:12:35,913 - root - INFO - Time cost=8.55s, throughput=123.55 samples/s
+2020-01-08 11:12:38,244 - root - INFO - params saved in: ./output_dir/model_xlnet_CoLA_43.params
+2020-01-08 11:12:38,247 - root - INFO - Time cost=103.88s
+2020-01-08 11:12:52,201 - root - INFO - [Epoch 45 Batch 10/67] loss=0.0014, lr=0.0000005
+2020-01-08 11:13:06,076 - root - INFO - [Epoch 45 Batch 20/67] loss=0.0024, lr=0.0000004
+2020-01-08 11:13:20,024 - root - INFO - [Epoch 45 Batch 30/67] loss=0.0012, lr=0.0000003
+2020-01-08 11:13:33,862 - root - INFO - [Epoch 45 Batch 40/67] loss=0.0025, lr=0.0000002
+2020-01-08 11:13:47,648 - root - INFO - [Epoch 45 Batch 50/67] loss=0.0022, lr=0.0000000
+2020-01-08 11:13:50,392 - root - INFO - Finish training step: 3000
+2020-01-08 11:13:50,393 - root - INFO - Now we are doing evaluation on dev with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2020-01-08 11:13:52,983 - root - INFO - [Batch 10/33] loss=1.3159
+2020-01-08 11:13:55,546 - root - INFO - [Batch 20/33] loss=1.4684
+2020-01-08 11:13:58,104 - root - INFO - [Batch 30/33] loss=0.9414
+2020-01-08 11:13:58,926 - root - INFO - validation metrics:mcc:0.6531
+2020-01-08 11:13:58,926 - root - INFO - Time cost=8.53s, throughput=123.76 samples/s
+2020-01-08 11:14:01,516 - root - INFO - params saved in: ./output_dir/model_xlnet_CoLA_44.params
+2020-01-08 11:14:01,518 - root - INFO - Time cost=83.27s
+2020-01-08 11:14:02,707 - root - INFO - Best model at epoch 37. Validation metrics:mcc:0.6703
+2020-01-08 11:14:02,707 - root - INFO - Now we are doing testing on test with [gpu(0), gpu(1), gpu(2), gpu(3), gpu(4), gpu(5), gpu(6), gpu(7)].
+2020-01-08 11:14:11,182 - root - INFO - Time cost=8.47s, throughput=128.39 samples/s

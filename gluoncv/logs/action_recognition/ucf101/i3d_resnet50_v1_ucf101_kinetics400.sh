@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+
+CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 python ./scripts/action-recognition/train_recognizer.py \
+    --dataset ucf101 \
+    --data-dir /home/ubuntu/.mxnet/datasets/ucf101/rawframes \
+    --train-list /home/ubuntu/.mxnet/datasets/ucf101/ucfTrainTestlist/ucf101_train_split_1_rawframes.txt \
+    --val-list /home/ubuntu/.mxnet/datasets/ucf101/ucfTrainTestlist/ucf101_val_split_1_rawframes.txt \
+    --mode hybrid \
+    --dtype float32 \
+    --prefetch-ratio 1.0 \
+    --model i3d_resnet50_v1_ucf101 \
+    --num-classes 101 \
+    --batch-size 8 \
+    --num-gpus 8 \
+    --num-data-workers 32 \
+    --input-size 224 \
+    --new-height 256 \
+    --new-width 340 \
+    --new-length 32 \
+    --new-step 2 \
+    --lr 0.001 \
+    --lr-decay 0.1 \
+    --lr-mode step \
+    --lr-decay-epoch 20,40,50 \
+    --momentum 0.9 \
+    --wd 0.0001 \
+    --num-epochs 50 \
+    --scale-ratios 1.0,0.8 \
+    --save-frequency 5 \
+    --clip-grad 40 \
+    --log-interval 20 \
+    --logging-file i3d_resnet50_v1_ucf101_kinetics400.log \
+    --save-dir ./logs/

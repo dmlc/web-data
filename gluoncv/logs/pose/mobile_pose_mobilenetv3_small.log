@@ -1,0 +1,981 @@
+Namespace(batch_size=32, data_dir='~/.mxnet/datasets/coco', dtype='float32', input_size='256,192', last_gamma=False, log_interval=100, logging_file='mobile_pose_mobilenetv3_small.log', lr=0.001, lr_decay=0.1, lr_decay_epoch='90,120', lr_decay_period=0, lr_mode='step', mean='0.485,0.456,0.406', mode='hybrid', model='mobile_pose_mobilenetv3_small', no_wd=False, num_epochs=140, num_gpus=8, num_joints=17, num_workers=60, save_dir='params_mobile_pose_mobilenetv3_small', save_frequency=1, sigma=2, std='0.229,0.224,0.225', use_pretrained=False, use_pretrained_base=True, warmup_epochs=0, warmup_lr=0.0, wd=0.0)
+Epoch[0] Batch [99]	Speed: 704.934927 samples/sec	loss=0.001114	lr=0.001000	heatmap_accuracy=0.159
+Epoch[0] Batch [199]	Speed: 1084.079935 samples/sec	loss=0.001028	lr=0.001000	heatmap_accuracy=0.250
+Epoch[0] Batch [299]	Speed: 1078.144773 samples/sec	loss=0.000975	lr=0.001000	heatmap_accuracy=0.305
+Epoch[0] Batch [399]	Speed: 1155.092642 samples/sec	loss=0.000939	lr=0.001000	heatmap_accuracy=0.344
+Epoch[0] Batch [499]	Speed: 1132.142226 samples/sec	loss=0.000910	lr=0.001000	heatmap_accuracy=0.374
+Epoch[0]		Speed: 1026 samples/sec over 145 secs	loss=0.000890
+
+Epoch[1] Batch [99]	Speed: 855.874065 samples/sec	loss=0.000760	lr=0.001000	heatmap_accuracy=0.531
+Epoch[1] Batch [199]	Speed: 1212.861365 samples/sec	loss=0.000753	lr=0.001000	heatmap_accuracy=0.535
+Epoch[1] Batch [299]	Speed: 1224.809832 samples/sec	loss=0.000747	lr=0.001000	heatmap_accuracy=0.542
+Epoch[1] Batch [399]	Speed: 1229.689173 samples/sec	loss=0.000741	lr=0.001000	heatmap_accuracy=0.546
+Epoch[1] Batch [499]	Speed: 1178.557120 samples/sec	loss=0.000736	lr=0.001000	heatmap_accuracy=0.551
+Epoch[1]		Speed: 1110 samples/sec over 134 secs	loss=0.000733
+
+Epoch[2] Batch [99]	Speed: 825.581470 samples/sec	loss=0.000703	lr=0.001000	heatmap_accuracy=0.579
+Epoch[2] Batch [199]	Speed: 1202.336269 samples/sec	loss=0.000700	lr=0.001000	heatmap_accuracy=0.583
+Epoch[2] Batch [299]	Speed: 1224.542786 samples/sec	loss=0.000696	lr=0.001000	heatmap_accuracy=0.586
+Epoch[2] Batch [399]	Speed: 1161.487513 samples/sec	loss=0.000694	lr=0.001000	heatmap_accuracy=0.588
+Epoch[2] Batch [499]	Speed: 1205.981318 samples/sec	loss=0.000693	lr=0.001000	heatmap_accuracy=0.590
+Epoch[2]		Speed: 1125 samples/sec over 132 secs	loss=0.000691
+
+Epoch[3] Batch [99]	Speed: 818.442520 samples/sec	loss=0.000675	lr=0.001000	heatmap_accuracy=0.606
+Epoch[3] Batch [199]	Speed: 1183.715962 samples/sec	loss=0.000674	lr=0.001000	heatmap_accuracy=0.606
+Epoch[3] Batch [299]	Speed: 1145.373029 samples/sec	loss=0.000671	lr=0.001000	heatmap_accuracy=0.609
+Epoch[3] Batch [399]	Speed: 1190.183010 samples/sec	loss=0.000669	lr=0.001000	heatmap_accuracy=0.610
+Epoch[3] Batch [499]	Speed: 1207.203847 samples/sec	loss=0.000667	lr=0.001000	heatmap_accuracy=0.611
+Epoch[3]		Speed: 1109 samples/sec over 134 secs	loss=0.000666
+
+Epoch[4] Batch [99]	Speed: 806.959703 samples/sec	loss=0.000655	lr=0.001000	heatmap_accuracy=0.620
+Epoch[4] Batch [199]	Speed: 1194.466865 samples/sec	loss=0.000655	lr=0.001000	heatmap_accuracy=0.618
+Epoch[4] Batch [299]	Speed: 1193.884671 samples/sec	loss=0.000654	lr=0.001000	heatmap_accuracy=0.620
+Epoch[4] Batch [399]	Speed: 1201.832884 samples/sec	loss=0.000654	lr=0.001000	heatmap_accuracy=0.621
+Epoch[4] Batch [499]	Speed: 1149.501355 samples/sec	loss=0.000653	lr=0.001000	heatmap_accuracy=0.622
+Epoch[4]		Speed: 1106 samples/sec over 135 secs	loss=0.000652
+
+Epoch[5] Batch [99]	Speed: 772.839706 samples/sec	loss=0.000641	lr=0.001000	heatmap_accuracy=0.631
+Epoch[5] Batch [199]	Speed: 1185.258218 samples/sec	loss=0.000639	lr=0.001000	heatmap_accuracy=0.633
+Epoch[5] Batch [299]	Speed: 1188.841907 samples/sec	loss=0.000638	lr=0.001000	heatmap_accuracy=0.633
+Epoch[5] Batch [399]	Speed: 1214.940564 samples/sec	loss=0.000639	lr=0.001000	heatmap_accuracy=0.633
+Epoch[5] Batch [499]	Speed: 1140.567103 samples/sec	loss=0.000639	lr=0.001000	heatmap_accuracy=0.633
+Epoch[5]		Speed: 1071 samples/sec over 139 secs	loss=0.000638
+
+Epoch[6] Batch [99]	Speed: 801.633163 samples/sec	loss=0.000626	lr=0.001000	heatmap_accuracy=0.644
+Epoch[6] Batch [199]	Speed: 1198.961816 samples/sec	loss=0.000630	lr=0.001000	heatmap_accuracy=0.642
+Epoch[6] Batch [299]	Speed: 1167.696329 samples/sec	loss=0.000630	lr=0.001000	heatmap_accuracy=0.642
+Epoch[6] Batch [399]	Speed: 1226.343888 samples/sec	loss=0.000629	lr=0.001000	heatmap_accuracy=0.642
+Epoch[6] Batch [499]	Speed: 1196.840015 samples/sec	loss=0.000628	lr=0.001000	heatmap_accuracy=0.642
+Epoch[6]		Speed: 1118 samples/sec over 133 secs	loss=0.000628
+
+Epoch[7] Batch [99]	Speed: 809.617419 samples/sec	loss=0.000620	lr=0.001000	heatmap_accuracy=0.648
+Epoch[7] Batch [199]	Speed: 1146.859790 samples/sec	loss=0.000622	lr=0.001000	heatmap_accuracy=0.648
+Epoch[7] Batch [299]	Speed: 1120.669489 samples/sec	loss=0.000620	lr=0.001000	heatmap_accuracy=0.649
+Epoch[7] Batch [399]	Speed: 1195.020831 samples/sec	loss=0.000621	lr=0.001000	heatmap_accuracy=0.648
+Epoch[7] Batch [499]	Speed: 1152.153237 samples/sec	loss=0.000620	lr=0.001000	heatmap_accuracy=0.649
+Epoch[7]		Speed: 1075 samples/sec over 138 secs	loss=0.000619
+
+Epoch[8] Batch [99]	Speed: 801.217134 samples/sec	loss=0.000611	lr=0.001000	heatmap_accuracy=0.658
+Epoch[8] Batch [199]	Speed: 1166.745817 samples/sec	loss=0.000612	lr=0.001000	heatmap_accuracy=0.656
+Epoch[8] Batch [299]	Speed: 1176.639824 samples/sec	loss=0.000613	lr=0.001000	heatmap_accuracy=0.655
+Epoch[8] Batch [399]	Speed: 1180.741712 samples/sec	loss=0.000611	lr=0.001000	heatmap_accuracy=0.656
+Epoch[8] Batch [499]	Speed: 1179.379274 samples/sec	loss=0.000611	lr=0.001000	heatmap_accuracy=0.656
+Epoch[8]		Speed: 1096 samples/sec over 136 secs	loss=0.000611
+
+Epoch[9] Batch [99]	Speed: 782.798696 samples/sec	loss=0.000605	lr=0.001000	heatmap_accuracy=0.663
+Epoch[9] Batch [199]	Speed: 1147.782115 samples/sec	loss=0.000605	lr=0.001000	heatmap_accuracy=0.662
+Epoch[9] Batch [299]	Speed: 1172.247070 samples/sec	loss=0.000606	lr=0.001000	heatmap_accuracy=0.661
+Epoch[9] Batch [399]	Speed: 1180.925491 samples/sec	loss=0.000606	lr=0.001000	heatmap_accuracy=0.661
+Epoch[9] Batch [499]	Speed: 1159.510716 samples/sec	loss=0.000605	lr=0.001000	heatmap_accuracy=0.661
+Epoch[9]		Speed: 1086 samples/sec over 137 secs	loss=0.000605
+
+Epoch[10] Batch [99]	Speed: 814.233142 samples/sec	loss=0.000600	lr=0.001000	heatmap_accuracy=0.667
+Epoch[10] Batch [199]	Speed: 1177.614720 samples/sec	loss=0.000600	lr=0.001000	heatmap_accuracy=0.666
+Epoch[10] Batch [299]	Speed: 1160.127580 samples/sec	loss=0.000600	lr=0.001000	heatmap_accuracy=0.665
+Epoch[10] Batch [399]	Speed: 1148.305601 samples/sec	loss=0.000600	lr=0.001000	heatmap_accuracy=0.665
+Epoch[10] Batch [499]	Speed: 1123.717649 samples/sec	loss=0.000599	lr=0.001000	heatmap_accuracy=0.665
+Epoch[10]		Speed: 1070 samples/sec over 139 secs	loss=0.000599
+
+Epoch[11] Batch [99]	Speed: 808.396839 samples/sec	loss=0.000598	lr=0.001000	heatmap_accuracy=0.666
+Epoch[11] Batch [199]	Speed: 1168.599627 samples/sec	loss=0.000595	lr=0.001000	heatmap_accuracy=0.669
+Epoch[11] Batch [299]	Speed: 1173.374239 samples/sec	loss=0.000595	lr=0.001000	heatmap_accuracy=0.669
+Epoch[11] Batch [399]	Speed: 1144.621247 samples/sec	loss=0.000596	lr=0.001000	heatmap_accuracy=0.668
+Epoch[11] Batch [499]	Speed: 1131.581587 samples/sec	loss=0.000595	lr=0.001000	heatmap_accuracy=0.669
+Epoch[11]		Speed: 1072 samples/sec over 139 secs	loss=0.000595
+
+Epoch[12] Batch [99]	Speed: 790.399435 samples/sec	loss=0.000592	lr=0.001000	heatmap_accuracy=0.674
+Epoch[12] Batch [199]	Speed: 1169.582948 samples/sec	loss=0.000591	lr=0.001000	heatmap_accuracy=0.673
+Epoch[12] Batch [299]	Speed: 1181.639033 samples/sec	loss=0.000592	lr=0.001000	heatmap_accuracy=0.672
+Epoch[12] Batch [399]	Speed: 1177.614681 samples/sec	loss=0.000591	lr=0.001000	heatmap_accuracy=0.672
+Epoch[12] Batch [499]	Speed: 1190.506301 samples/sec	loss=0.000591	lr=0.001000	heatmap_accuracy=0.672
+Epoch[12]		Speed: 1081 samples/sec over 138 secs	loss=0.000591
+
+Epoch[13] Batch [99]	Speed: 804.807387 samples/sec	loss=0.000583	lr=0.001000	heatmap_accuracy=0.678
+Epoch[13] Batch [199]	Speed: 1150.104520 samples/sec	loss=0.000585	lr=0.001000	heatmap_accuracy=0.676
+Epoch[13] Batch [299]	Speed: 1133.505098 samples/sec	loss=0.000586	lr=0.001000	heatmap_accuracy=0.675
+Epoch[13] Batch [399]	Speed: 1148.650307 samples/sec	loss=0.000587	lr=0.001000	heatmap_accuracy=0.674
+Epoch[13] Batch [499]	Speed: 1124.080274 samples/sec	loss=0.000587	lr=0.001000	heatmap_accuracy=0.674
+Epoch[13]		Speed: 1059 samples/sec over 141 secs	loss=0.000587
+
+Epoch[14] Batch [99]	Speed: 808.932991 samples/sec	loss=0.000582	lr=0.001000	heatmap_accuracy=0.678
+Epoch[14] Batch [199]	Speed: 1146.906818 samples/sec	loss=0.000582	lr=0.001000	heatmap_accuracy=0.678
+Epoch[14] Batch [299]	Speed: 1162.307518 samples/sec	loss=0.000583	lr=0.001000	heatmap_accuracy=0.678
+Epoch[14] Batch [399]	Speed: 1155.337674 samples/sec	loss=0.000583	lr=0.001000	heatmap_accuracy=0.678
+Epoch[14] Batch [499]	Speed: 1140.952701 samples/sec	loss=0.000583	lr=0.001000	heatmap_accuracy=0.678
+Epoch[14]		Speed: 1052 samples/sec over 142 secs	loss=0.000583
+
+Epoch[15] Batch [99]	Speed: 792.100823 samples/sec	loss=0.000581	lr=0.001000	heatmap_accuracy=0.680
+Epoch[15] Batch [199]	Speed: 1171.955402 samples/sec	loss=0.000580	lr=0.001000	heatmap_accuracy=0.681
+Epoch[15] Batch [299]	Speed: 1160.641289 samples/sec	loss=0.000580	lr=0.001000	heatmap_accuracy=0.681
+Epoch[15] Batch [399]	Speed: 1173.751073 samples/sec	loss=0.000578	lr=0.001000	heatmap_accuracy=0.682
+Epoch[15] Batch [499]	Speed: 1156.640903 samples/sec	loss=0.000578	lr=0.001000	heatmap_accuracy=0.682
+Epoch[15]		Speed: 1081 samples/sec over 138 secs	loss=0.000578
+
+Epoch[16] Batch [99]	Speed: 807.804291 samples/sec	loss=0.000578	lr=0.001000	heatmap_accuracy=0.686
+Epoch[16] Batch [199]	Speed: 1170.090364 samples/sec	loss=0.000576	lr=0.001000	heatmap_accuracy=0.685
+Epoch[16] Batch [299]	Speed: 1185.649245 samples/sec	loss=0.000575	lr=0.001000	heatmap_accuracy=0.684
+Epoch[16] Batch [399]	Speed: 1197.710529 samples/sec	loss=0.000576	lr=0.001000	heatmap_accuracy=0.684
+Epoch[16] Batch [499]	Speed: 1192.186640 samples/sec	loss=0.000576	lr=0.001000	heatmap_accuracy=0.684
+Epoch[16]		Speed: 1088 samples/sec over 137 secs	loss=0.000576
+
+Epoch[17] Batch [99]	Speed: 787.794369 samples/sec	loss=0.000571	lr=0.001000	heatmap_accuracy=0.686
+Epoch[17] Batch [199]	Speed: 1176.642583 samples/sec	loss=0.000571	lr=0.001000	heatmap_accuracy=0.686
+Epoch[17] Batch [299]	Speed: 1188.756592 samples/sec	loss=0.000572	lr=0.001000	heatmap_accuracy=0.686
+Epoch[17] Batch [399]	Speed: 1195.613972 samples/sec	loss=0.000573	lr=0.001000	heatmap_accuracy=0.686
+Epoch[17] Batch [499]	Speed: 1148.272801 samples/sec	loss=0.000573	lr=0.001000	heatmap_accuracy=0.686
+Epoch[17]		Speed: 1085 samples/sec over 137 secs	loss=0.000573
+
+Epoch[18] Batch [99]	Speed: 783.707781 samples/sec	loss=0.000570	lr=0.001000	heatmap_accuracy=0.689
+Epoch[18] Batch [199]	Speed: 1181.609190 samples/sec	loss=0.000570	lr=0.001000	heatmap_accuracy=0.688
+Epoch[18] Batch [299]	Speed: 1177.780525 samples/sec	loss=0.000570	lr=0.001000	heatmap_accuracy=0.687
+Epoch[18] Batch [399]	Speed: 1168.828157 samples/sec	loss=0.000571	lr=0.001000	heatmap_accuracy=0.687
+Epoch[18] Batch [499]	Speed: 1114.986779 samples/sec	loss=0.000570	lr=0.001000	heatmap_accuracy=0.688
+Epoch[18]		Speed: 1028 samples/sec over 145 secs	loss=0.000570
+
+Epoch[19] Batch [99]	Speed: 852.379100 samples/sec	loss=0.000567	lr=0.001000	heatmap_accuracy=0.691
+Epoch[19] Batch [199]	Speed: 1189.362513 samples/sec	loss=0.000569	lr=0.001000	heatmap_accuracy=0.691
+Epoch[19] Batch [299]	Speed: 1177.234395 samples/sec	loss=0.000567	lr=0.001000	heatmap_accuracy=0.691
+Epoch[19] Batch [399]	Speed: 1140.230912 samples/sec	loss=0.000567	lr=0.001000	heatmap_accuracy=0.691
+Epoch[19] Batch [499]	Speed: 1166.511776 samples/sec	loss=0.000567	lr=0.001000	heatmap_accuracy=0.691
+Epoch[19]		Speed: 1099 samples/sec over 136 secs	loss=0.000567
+
+Epoch[20] Batch [99]	Speed: 854.697585 samples/sec	loss=0.000561	lr=0.001000	heatmap_accuracy=0.693
+Epoch[20] Batch [199]	Speed: 1170.246417 samples/sec	loss=0.000563	lr=0.001000	heatmap_accuracy=0.693
+Epoch[20] Batch [299]	Speed: 1162.169789 samples/sec	loss=0.000564	lr=0.001000	heatmap_accuracy=0.692
+Epoch[20] Batch [399]	Speed: 1179.006547 samples/sec	loss=0.000564	lr=0.001000	heatmap_accuracy=0.693
+Epoch[20] Batch [499]	Speed: 1169.191687 samples/sec	loss=0.000565	lr=0.001000	heatmap_accuracy=0.692
+Epoch[20]		Speed: 1095 samples/sec over 136 secs	loss=0.000565
+
+Epoch[21] Batch [99]	Speed: 845.118167 samples/sec	loss=0.000559	lr=0.001000	heatmap_accuracy=0.697
+Epoch[21] Batch [199]	Speed: 1171.254654 samples/sec	loss=0.000561	lr=0.001000	heatmap_accuracy=0.696
+Epoch[21] Batch [299]	Speed: 1174.634198 samples/sec	loss=0.000562	lr=0.001000	heatmap_accuracy=0.696
+Epoch[21] Batch [399]	Speed: 1131.163102 samples/sec	loss=0.000561	lr=0.001000	heatmap_accuracy=0.696
+Epoch[21] Batch [499]	Speed: 1071.413118 samples/sec	loss=0.000562	lr=0.001000	heatmap_accuracy=0.696
+Epoch[21]		Speed: 1078 samples/sec over 138 secs	loss=0.000561
+
+Epoch[22] Batch [99]	Speed: 795.063921 samples/sec	loss=0.000557	lr=0.001000	heatmap_accuracy=0.697
+Epoch[22] Batch [199]	Speed: 1159.923327 samples/sec	loss=0.000559	lr=0.001000	heatmap_accuracy=0.696
+Epoch[22] Batch [299]	Speed: 1140.052281 samples/sec	loss=0.000560	lr=0.001000	heatmap_accuracy=0.696
+Epoch[22] Batch [399]	Speed: 1176.529591 samples/sec	loss=0.000560	lr=0.001000	heatmap_accuracy=0.696
+Epoch[22] Batch [499]	Speed: 1163.565547 samples/sec	loss=0.000561	lr=0.001000	heatmap_accuracy=0.695
+Epoch[22]		Speed: 1086 samples/sec over 137 secs	loss=0.000561
+
+Epoch[23] Batch [99]	Speed: 795.183118 samples/sec	loss=0.000556	lr=0.001000	heatmap_accuracy=0.699
+Epoch[23] Batch [199]	Speed: 1172.233069 samples/sec	loss=0.000557	lr=0.001000	heatmap_accuracy=0.699
+Epoch[23] Batch [299]	Speed: 1179.803595 samples/sec	loss=0.000557	lr=0.001000	heatmap_accuracy=0.698
+Epoch[23] Batch [399]	Speed: 1194.917739 samples/sec	loss=0.000558	lr=0.001000	heatmap_accuracy=0.698
+Epoch[23] Batch [499]	Speed: 1196.609282 samples/sec	loss=0.000557	lr=0.001000	heatmap_accuracy=0.699
+Epoch[23]		Speed: 1104 samples/sec over 135 secs	loss=0.000558
+
+Epoch[24] Batch [99]	Speed: 787.161173 samples/sec	loss=0.000557	lr=0.001000	heatmap_accuracy=0.696
+Epoch[24] Batch [199]	Speed: 1173.294309 samples/sec	loss=0.000558	lr=0.001000	heatmap_accuracy=0.697
+Epoch[24] Batch [299]	Speed: 1195.448952 samples/sec	loss=0.000558	lr=0.001000	heatmap_accuracy=0.698
+Epoch[24] Batch [399]	Speed: 1166.511041 samples/sec	loss=0.000557	lr=0.001000	heatmap_accuracy=0.699
+Epoch[24] Batch [499]	Speed: 1159.358114 samples/sec	loss=0.000557	lr=0.001000	heatmap_accuracy=0.699
+Epoch[24]		Speed: 1091 samples/sec over 136 secs	loss=0.000556
+
+Epoch[25] Batch [99]	Speed: 783.709257 samples/sec	loss=0.000552	lr=0.001000	heatmap_accuracy=0.701
+Epoch[25] Batch [199]	Speed: 1198.560448 samples/sec	loss=0.000553	lr=0.001000	heatmap_accuracy=0.700
+Epoch[25] Batch [299]	Speed: 1175.414059 samples/sec	loss=0.000554	lr=0.001000	heatmap_accuracy=0.701
+Epoch[25] Batch [399]	Speed: 1169.224853 samples/sec	loss=0.000554	lr=0.001000	heatmap_accuracy=0.701
+Epoch[25] Batch [499]	Speed: 1151.534213 samples/sec	loss=0.000554	lr=0.001000	heatmap_accuracy=0.701
+Epoch[25]		Speed: 1069 samples/sec over 139 secs	loss=0.000554
+
+Epoch[26] Batch [99]	Speed: 796.128993 samples/sec	loss=0.000549	lr=0.001000	heatmap_accuracy=0.705
+Epoch[26] Batch [199]	Speed: 1172.251844 samples/sec	loss=0.000552	lr=0.001000	heatmap_accuracy=0.701
+Epoch[26] Batch [299]	Speed: 1184.789959 samples/sec	loss=0.000552	lr=0.001000	heatmap_accuracy=0.702
+Epoch[26] Batch [399]	Speed: 1182.094185 samples/sec	loss=0.000553	lr=0.001000	heatmap_accuracy=0.701
+Epoch[26] Batch [499]	Speed: 1156.799708 samples/sec	loss=0.000553	lr=0.001000	heatmap_accuracy=0.702
+Epoch[26]		Speed: 1089 samples/sec over 137 secs	loss=0.000553
+
+Epoch[27] Batch [99]	Speed: 808.983802 samples/sec	loss=0.000551	lr=0.001000	heatmap_accuracy=0.705
+Epoch[27] Batch [199]	Speed: 1187.644930 samples/sec	loss=0.000550	lr=0.001000	heatmap_accuracy=0.704
+Epoch[27] Batch [299]	Speed: 1182.442341 samples/sec	loss=0.000551	lr=0.001000	heatmap_accuracy=0.703
+Epoch[27] Batch [399]	Speed: 1181.975016 samples/sec	loss=0.000551	lr=0.001000	heatmap_accuracy=0.703
+Epoch[27] Batch [499]	Speed: 1124.832963 samples/sec	loss=0.000551	lr=0.001000	heatmap_accuracy=0.703
+Epoch[27]		Speed: 1081 samples/sec over 138 secs	loss=0.000551
+
+Epoch[28] Batch [99]	Speed: 798.831206 samples/sec	loss=0.000547	lr=0.001000	heatmap_accuracy=0.705
+Epoch[28] Batch [199]	Speed: 1179.967242 samples/sec	loss=0.000547	lr=0.001000	heatmap_accuracy=0.705
+Epoch[28] Batch [299]	Speed: 1159.590269 samples/sec	loss=0.000547	lr=0.001000	heatmap_accuracy=0.705
+Epoch[28] Batch [399]	Speed: 1156.731989 samples/sec	loss=0.000548	lr=0.001000	heatmap_accuracy=0.705
+Epoch[28] Batch [499]	Speed: 1096.817213 samples/sec	loss=0.000548	lr=0.001000	heatmap_accuracy=0.705
+Epoch[28]		Speed: 1058 samples/sec over 141 secs	loss=0.000548
+
+Epoch[29] Batch [99]	Speed: 804.411030 samples/sec	loss=0.000547	lr=0.001000	heatmap_accuracy=0.705
+Epoch[29] Batch [199]	Speed: 1140.245333 samples/sec	loss=0.000548	lr=0.001000	heatmap_accuracy=0.706
+Epoch[29] Batch [299]	Speed: 1158.334756 samples/sec	loss=0.000548	lr=0.001000	heatmap_accuracy=0.706
+Epoch[29] Batch [399]	Speed: 1151.053556 samples/sec	loss=0.000548	lr=0.001000	heatmap_accuracy=0.706
+Epoch[29] Batch [499]	Speed: 1146.070395 samples/sec	loss=0.000548	lr=0.001000	heatmap_accuracy=0.705
+Epoch[29]		Speed: 1070 samples/sec over 139 secs	loss=0.000548
+
+Epoch[30] Batch [99]	Speed: 791.874243 samples/sec	loss=0.000548	lr=0.001000	heatmap_accuracy=0.707
+Epoch[30] Batch [199]	Speed: 1160.017123 samples/sec	loss=0.000548	lr=0.001000	heatmap_accuracy=0.706
+Epoch[30] Batch [299]	Speed: 1173.671707 samples/sec	loss=0.000547	lr=0.001000	heatmap_accuracy=0.707
+Epoch[30] Batch [399]	Speed: 1178.067939 samples/sec	loss=0.000546	lr=0.001000	heatmap_accuracy=0.708
+Epoch[30] Batch [499]	Speed: 1153.790580 samples/sec	loss=0.000546	lr=0.001000	heatmap_accuracy=0.707
+Epoch[30]		Speed: 1068 samples/sec over 139 secs	loss=0.000546
+
+Epoch[31] Batch [99]	Speed: 799.958696 samples/sec	loss=0.000546	lr=0.001000	heatmap_accuracy=0.706
+Epoch[31] Batch [199]	Speed: 1165.963940 samples/sec	loss=0.000545	lr=0.001000	heatmap_accuracy=0.708
+Epoch[31] Batch [299]	Speed: 1172.201985 samples/sec	loss=0.000545	lr=0.001000	heatmap_accuracy=0.707
+Epoch[31] Batch [399]	Speed: 1180.469188 samples/sec	loss=0.000544	lr=0.001000	heatmap_accuracy=0.708
+Epoch[31] Batch [499]	Speed: 1154.059061 samples/sec	loss=0.000544	lr=0.001000	heatmap_accuracy=0.708
+Epoch[31]		Speed: 1089 samples/sec over 137 secs	loss=0.000545
+
+Epoch[32] Batch [99]	Speed: 779.612401 samples/sec	loss=0.000543	lr=0.001000	heatmap_accuracy=0.711
+Epoch[32] Batch [199]	Speed: 1138.308540 samples/sec	loss=0.000543	lr=0.001000	heatmap_accuracy=0.710
+Epoch[32] Batch [299]	Speed: 1177.504420 samples/sec	loss=0.000543	lr=0.001000	heatmap_accuracy=0.709
+Epoch[32] Batch [399]	Speed: 1194.860083 samples/sec	loss=0.000543	lr=0.001000	heatmap_accuracy=0.710
+Epoch[32] Batch [499]	Speed: 1118.295814 samples/sec	loss=0.000542	lr=0.001000	heatmap_accuracy=0.710
+Epoch[32]		Speed: 1079 samples/sec over 138 secs	loss=0.000542
+
+Epoch[33] Batch [99]	Speed: 784.491322 samples/sec	loss=0.000543	lr=0.001000	heatmap_accuracy=0.710
+Epoch[33] Batch [199]	Speed: 1168.545983 samples/sec	loss=0.000541	lr=0.001000	heatmap_accuracy=0.710
+Epoch[33] Batch [299]	Speed: 1159.814011 samples/sec	loss=0.000542	lr=0.001000	heatmap_accuracy=0.711
+Epoch[33] Batch [399]	Speed: 1164.845194 samples/sec	loss=0.000542	lr=0.001000	heatmap_accuracy=0.711
+Epoch[33] Batch [499]	Speed: 1213.148791 samples/sec	loss=0.000542	lr=0.001000	heatmap_accuracy=0.710
+Epoch[33]		Speed: 1080 samples/sec over 138 secs	loss=0.000542
+
+Epoch[34] Batch [99]	Speed: 785.436950 samples/sec	loss=0.000540	lr=0.001000	heatmap_accuracy=0.709
+Epoch[34] Batch [199]	Speed: 1196.579998 samples/sec	loss=0.000540	lr=0.001000	heatmap_accuracy=0.710
+Epoch[34] Batch [299]	Speed: 1147.461633 samples/sec	loss=0.000540	lr=0.001000	heatmap_accuracy=0.711
+Epoch[34] Batch [399]	Speed: 1163.970261 samples/sec	loss=0.000540	lr=0.001000	heatmap_accuracy=0.711
+Epoch[34] Batch [499]	Speed: 1119.758513 samples/sec	loss=0.000540	lr=0.001000	heatmap_accuracy=0.711
+Epoch[34]		Speed: 1076 samples/sec over 138 secs	loss=0.000539
+
+Epoch[35] Batch [99]	Speed: 786.609387 samples/sec	loss=0.000538	lr=0.001000	heatmap_accuracy=0.712
+Epoch[35] Batch [199]	Speed: 1195.644713 samples/sec	loss=0.000537	lr=0.001000	heatmap_accuracy=0.713
+Epoch[35] Batch [299]	Speed: 1171.087092 samples/sec	loss=0.000536	lr=0.001000	heatmap_accuracy=0.714
+Epoch[35] Batch [399]	Speed: 1194.940492 samples/sec	loss=0.000537	lr=0.001000	heatmap_accuracy=0.714
+Epoch[35] Batch [499]	Speed: 1142.737686 samples/sec	loss=0.000538	lr=0.001000	heatmap_accuracy=0.714
+Epoch[35]		Speed: 1082 samples/sec over 138 secs	loss=0.000538
+
+Epoch[36] Batch [99]	Speed: 780.582561 samples/sec	loss=0.000537	lr=0.001000	heatmap_accuracy=0.714
+Epoch[36] Batch [199]	Speed: 1179.821031 samples/sec	loss=0.000537	lr=0.001000	heatmap_accuracy=0.714
+Epoch[36] Batch [299]	Speed: 1162.437301 samples/sec	loss=0.000537	lr=0.001000	heatmap_accuracy=0.713
+Epoch[36] Batch [399]	Speed: 1194.646714 samples/sec	loss=0.000539	lr=0.001000	heatmap_accuracy=0.713
+Epoch[36] Batch [499]	Speed: 1186.211481 samples/sec	loss=0.000539	lr=0.001000	heatmap_accuracy=0.712
+Epoch[36]		Speed: 1089 samples/sec over 137 secs	loss=0.000538
+
+Epoch[37] Batch [99]	Speed: 798.580921 samples/sec	loss=0.000535	lr=0.001000	heatmap_accuracy=0.714
+Epoch[37] Batch [199]	Speed: 1191.554380 samples/sec	loss=0.000535	lr=0.001000	heatmap_accuracy=0.715
+Epoch[37] Batch [299]	Speed: 1193.216146 samples/sec	loss=0.000537	lr=0.001000	heatmap_accuracy=0.714
+Epoch[37] Batch [399]	Speed: 1178.106885 samples/sec	loss=0.000537	lr=0.001000	heatmap_accuracy=0.714
+Epoch[37] Batch [499]	Speed: 1132.914049 samples/sec	loss=0.000537	lr=0.001000	heatmap_accuracy=0.713
+Epoch[37]		Speed: 1092 samples/sec over 136 secs	loss=0.000537
+
+Epoch[38] Batch [99]	Speed: 785.098454 samples/sec	loss=0.000534	lr=0.001000	heatmap_accuracy=0.715
+Epoch[38] Batch [199]	Speed: 1166.935549 samples/sec	loss=0.000533	lr=0.001000	heatmap_accuracy=0.715
+Epoch[38] Batch [299]	Speed: 1166.846413 samples/sec	loss=0.000534	lr=0.001000	heatmap_accuracy=0.716
+Epoch[38] Batch [399]	Speed: 1157.306581 samples/sec	loss=0.000534	lr=0.001000	heatmap_accuracy=0.716
+Epoch[38] Batch [499]	Speed: 1124.029369 samples/sec	loss=0.000534	lr=0.001000	heatmap_accuracy=0.716
+Epoch[38]		Speed: 1046 samples/sec over 142 secs	loss=0.000534
+
+Epoch[39] Batch [99]	Speed: 798.181214 samples/sec	loss=0.000534	lr=0.001000	heatmap_accuracy=0.713
+Epoch[39] Batch [199]	Speed: 1172.794602 samples/sec	loss=0.000535	lr=0.001000	heatmap_accuracy=0.715
+Epoch[39] Batch [299]	Speed: 1180.259319 samples/sec	loss=0.000536	lr=0.001000	heatmap_accuracy=0.715
+Epoch[39] Batch [399]	Speed: 1184.016477 samples/sec	loss=0.000535	lr=0.001000	heatmap_accuracy=0.715
+Epoch[39] Batch [499]	Speed: 1142.770876 samples/sec	loss=0.000535	lr=0.001000	heatmap_accuracy=0.715
+Epoch[39]		Speed: 1088 samples/sec over 137 secs	loss=0.000535
+
+Epoch[40] Batch [99]	Speed: 779.994256 samples/sec	loss=0.000535	lr=0.001000	heatmap_accuracy=0.717
+Epoch[40] Batch [199]	Speed: 1204.121431 samples/sec	loss=0.000534	lr=0.001000	heatmap_accuracy=0.717
+Epoch[40] Batch [299]	Speed: 1180.822699 samples/sec	loss=0.000534	lr=0.001000	heatmap_accuracy=0.716
+Epoch[40] Batch [399]	Speed: 1159.169423 samples/sec	loss=0.000535	lr=0.001000	heatmap_accuracy=0.715
+Epoch[40] Batch [499]	Speed: 1178.679753 samples/sec	loss=0.000534	lr=0.001000	heatmap_accuracy=0.716
+Epoch[40]		Speed: 1092 samples/sec over 136 secs	loss=0.000534
+
+Epoch[41] Batch [99]	Speed: 796.514948 samples/sec	loss=0.000532	lr=0.001000	heatmap_accuracy=0.718
+Epoch[41] Batch [199]	Speed: 1180.141168 samples/sec	loss=0.000531	lr=0.001000	heatmap_accuracy=0.718
+Epoch[41] Batch [299]	Speed: 1186.652078 samples/sec	loss=0.000533	lr=0.001000	heatmap_accuracy=0.718
+Epoch[41] Batch [399]	Speed: 1196.626432 samples/sec	loss=0.000532	lr=0.001000	heatmap_accuracy=0.717
+Epoch[41] Batch [499]	Speed: 1195.110653 samples/sec	loss=0.000532	lr=0.001000	heatmap_accuracy=0.718
+Epoch[41]		Speed: 1103 samples/sec over 135 secs	loss=0.000532
+
+Epoch[42] Batch [99]	Speed: 794.796794 samples/sec	loss=0.000529	lr=0.001000	heatmap_accuracy=0.720
+Epoch[42] Batch [199]	Speed: 1183.790662 samples/sec	loss=0.000529	lr=0.001000	heatmap_accuracy=0.720
+Epoch[42] Batch [299]	Speed: 1147.640373 samples/sec	loss=0.000531	lr=0.001000	heatmap_accuracy=0.719
+Epoch[42] Batch [399]	Speed: 1158.331782 samples/sec	loss=0.000531	lr=0.001000	heatmap_accuracy=0.718
+Epoch[42] Batch [499]	Speed: 1110.098298 samples/sec	loss=0.000531	lr=0.001000	heatmap_accuracy=0.718
+Epoch[42]		Speed: 1041 samples/sec over 143 secs	loss=0.000531
+
+Epoch[43] Batch [99]	Speed: 799.594763 samples/sec	loss=0.000526	lr=0.001000	heatmap_accuracy=0.723
+Epoch[43] Batch [199]	Speed: 1159.060362 samples/sec	loss=0.000528	lr=0.001000	heatmap_accuracy=0.721
+Epoch[43] Batch [299]	Speed: 1185.647752 samples/sec	loss=0.000529	lr=0.001000	heatmap_accuracy=0.720
+Epoch[43] Batch [399]	Speed: 1193.117501 samples/sec	loss=0.000530	lr=0.001000	heatmap_accuracy=0.720
+Epoch[43] Batch [499]	Speed: 1121.662452 samples/sec	loss=0.000530	lr=0.001000	heatmap_accuracy=0.720
+Epoch[43]		Speed: 1085 samples/sec over 137 secs	loss=0.000530
+
+Epoch[44] Batch [99]	Speed: 764.754260 samples/sec	loss=0.000528	lr=0.001000	heatmap_accuracy=0.720
+Epoch[44] Batch [199]	Speed: 1174.078297 samples/sec	loss=0.000527	lr=0.001000	heatmap_accuracy=0.720
+Epoch[44] Batch [299]	Speed: 1147.667801 samples/sec	loss=0.000528	lr=0.001000	heatmap_accuracy=0.720
+Epoch[44] Batch [399]	Speed: 1147.328699 samples/sec	loss=0.000529	lr=0.001000	heatmap_accuracy=0.719
+Epoch[44] Batch [499]	Speed: 1149.962722 samples/sec	loss=0.000530	lr=0.001000	heatmap_accuracy=0.720
+Epoch[44]		Speed: 1066 samples/sec over 140 secs	loss=0.000530
+
+Epoch[45] Batch [99]	Speed: 792.164258 samples/sec	loss=0.000528	lr=0.001000	heatmap_accuracy=0.721
+Epoch[45] Batch [199]	Speed: 1170.463828 samples/sec	loss=0.000527	lr=0.001000	heatmap_accuracy=0.722
+Epoch[45] Batch [299]	Speed: 868.872217 samples/sec	loss=0.000528	lr=0.001000	heatmap_accuracy=0.721
+Epoch[45] Batch [399]	Speed: 1169.571380 samples/sec	loss=0.000528	lr=0.001000	heatmap_accuracy=0.721
+Epoch[45] Batch [499]	Speed: 1162.017681 samples/sec	loss=0.000528	lr=0.001000	heatmap_accuracy=0.721
+Epoch[45]		Speed: 1033 samples/sec over 144 secs	loss=0.000529
+
+Epoch[46] Batch [99]	Speed: 790.084048 samples/sec	loss=0.000527	lr=0.001000	heatmap_accuracy=0.722
+Epoch[46] Batch [199]	Speed: 1180.471356 samples/sec	loss=0.000527	lr=0.001000	heatmap_accuracy=0.722
+Epoch[46] Batch [299]	Speed: 1167.986211 samples/sec	loss=0.000527	lr=0.001000	heatmap_accuracy=0.722
+Epoch[46] Batch [399]	Speed: 1198.279772 samples/sec	loss=0.000527	lr=0.001000	heatmap_accuracy=0.722
+Epoch[46] Batch [499]	Speed: 1166.077141 samples/sec	loss=0.000527	lr=0.001000	heatmap_accuracy=0.721
+Epoch[46]		Speed: 1093 samples/sec over 136 secs	loss=0.000528
+
+Epoch[47] Batch [99]	Speed: 770.694420 samples/sec	loss=0.000528	lr=0.001000	heatmap_accuracy=0.720
+Epoch[47] Batch [199]	Speed: 1171.724420 samples/sec	loss=0.000528	lr=0.001000	heatmap_accuracy=0.719
+Epoch[47] Batch [299]	Speed: 1157.247259 samples/sec	loss=0.000527	lr=0.001000	heatmap_accuracy=0.720
+Epoch[47] Batch [399]	Speed: 1181.699959 samples/sec	loss=0.000527	lr=0.001000	heatmap_accuracy=0.720
+Epoch[47] Batch [499]	Speed: 1133.120990 samples/sec	loss=0.000528	lr=0.001000	heatmap_accuracy=0.720
+Epoch[47]		Speed: 1045 samples/sec over 143 secs	loss=0.000528
+
+Epoch[48] Batch [99]	Speed: 777.240640 samples/sec	loss=0.000525	lr=0.001000	heatmap_accuracy=0.725
+Epoch[48] Batch [199]	Speed: 1173.606296 samples/sec	loss=0.000526	lr=0.001000	heatmap_accuracy=0.724
+Epoch[48] Batch [299]	Speed: 1179.843563 samples/sec	loss=0.000525	lr=0.001000	heatmap_accuracy=0.724
+Epoch[48] Batch [399]	Speed: 1170.056014 samples/sec	loss=0.000525	lr=0.001000	heatmap_accuracy=0.724
+Epoch[48] Batch [499]	Speed: 1191.242189 samples/sec	loss=0.000525	lr=0.001000	heatmap_accuracy=0.723
+Epoch[48]		Speed: 1088 samples/sec over 137 secs	loss=0.000525
+
+Epoch[49] Batch [99]	Speed: 786.517933 samples/sec	loss=0.000522	lr=0.001000	heatmap_accuracy=0.726
+Epoch[49] Batch [199]	Speed: 1201.326198 samples/sec	loss=0.000523	lr=0.001000	heatmap_accuracy=0.726
+Epoch[49] Batch [299]	Speed: 1163.908273 samples/sec	loss=0.000524	lr=0.001000	heatmap_accuracy=0.724
+Epoch[49] Batch [399]	Speed: 1178.258774 samples/sec	loss=0.000525	lr=0.001000	heatmap_accuracy=0.724
+Epoch[49] Batch [499]	Speed: 1190.962234 samples/sec	loss=0.000525	lr=0.001000	heatmap_accuracy=0.723
+Epoch[49]		Speed: 1094 samples/sec over 136 secs	loss=0.000525
+
+Epoch[50] Batch [99]	Speed: 806.574390 samples/sec	loss=0.000522	lr=0.001000	heatmap_accuracy=0.724
+Epoch[50] Batch [199]	Speed: 1216.095218 samples/sec	loss=0.000522	lr=0.001000	heatmap_accuracy=0.725
+Epoch[50] Batch [299]	Speed: 1177.483489 samples/sec	loss=0.000522	lr=0.001000	heatmap_accuracy=0.725
+Epoch[50] Batch [399]	Speed: 1181.871378 samples/sec	loss=0.000522	lr=0.001000	heatmap_accuracy=0.726
+Epoch[50] Batch [499]	Speed: 1175.123874 samples/sec	loss=0.000522	lr=0.001000	heatmap_accuracy=0.725
+Epoch[50]		Speed: 1106 samples/sec over 135 secs	loss=0.000523
+
+Epoch[51] Batch [99]	Speed: 792.150179 samples/sec	loss=0.000522	lr=0.001000	heatmap_accuracy=0.724
+Epoch[51] Batch [199]	Speed: 1180.647923 samples/sec	loss=0.000522	lr=0.001000	heatmap_accuracy=0.725
+Epoch[51] Batch [299]	Speed: 1196.086738 samples/sec	loss=0.000523	lr=0.001000	heatmap_accuracy=0.725
+Epoch[51] Batch [399]	Speed: 1191.124684 samples/sec	loss=0.000523	lr=0.001000	heatmap_accuracy=0.725
+Epoch[51] Batch [499]	Speed: 1172.875412 samples/sec	loss=0.000523	lr=0.001000	heatmap_accuracy=0.725
+Epoch[51]		Speed: 1098 samples/sec over 136 secs	loss=0.000523
+
+Epoch[52] Batch [99]	Speed: 796.636318 samples/sec	loss=0.000520	lr=0.001000	heatmap_accuracy=0.726
+Epoch[52] Batch [199]	Speed: 1206.362474 samples/sec	loss=0.000522	lr=0.001000	heatmap_accuracy=0.724
+Epoch[52] Batch [299]	Speed: 1176.108084 samples/sec	loss=0.000521	lr=0.001000	heatmap_accuracy=0.725
+Epoch[52] Batch [399]	Speed: 1178.660203 samples/sec	loss=0.000522	lr=0.001000	heatmap_accuracy=0.725
+Epoch[52] Batch [499]	Speed: 1218.406174 samples/sec	loss=0.000522	lr=0.001000	heatmap_accuracy=0.725
+Epoch[52]		Speed: 1112 samples/sec over 134 secs	loss=0.000522
+
+Epoch[53] Batch [99]	Speed: 811.536567 samples/sec	loss=0.000523	lr=0.001000	heatmap_accuracy=0.727
+Epoch[53] Batch [199]	Speed: 1175.452404 samples/sec	loss=0.000521	lr=0.001000	heatmap_accuracy=0.727
+Epoch[53] Batch [299]	Speed: 1234.631437 samples/sec	loss=0.000522	lr=0.001000	heatmap_accuracy=0.727
+Epoch[53] Batch [399]	Speed: 1200.103024 samples/sec	loss=0.000522	lr=0.001000	heatmap_accuracy=0.726
+Epoch[53] Batch [499]	Speed: 1133.782070 samples/sec	loss=0.000521	lr=0.001000	heatmap_accuracy=0.727
+Epoch[53]		Speed: 1103 samples/sec over 135 secs	loss=0.000521
+
+Epoch[54] Batch [99]	Speed: 794.114302 samples/sec	loss=0.000521	lr=0.001000	heatmap_accuracy=0.726
+Epoch[54] Batch [199]	Speed: 1191.968508 samples/sec	loss=0.000520	lr=0.001000	heatmap_accuracy=0.726
+Epoch[54] Batch [299]	Speed: 1194.160769 samples/sec	loss=0.000520	lr=0.001000	heatmap_accuracy=0.726
+Epoch[54] Batch [399]	Speed: 1169.285817 samples/sec	loss=0.000521	lr=0.001000	heatmap_accuracy=0.726
+Epoch[54] Batch [499]	Speed: 1179.919824 samples/sec	loss=0.000521	lr=0.001000	heatmap_accuracy=0.726
+Epoch[54]		Speed: 1092 samples/sec over 136 secs	loss=0.000521
+
+Epoch[55] Batch [99]	Speed: 782.244429 samples/sec	loss=0.000518	lr=0.001000	heatmap_accuracy=0.728
+Epoch[55] Batch [199]	Speed: 1181.894860 samples/sec	loss=0.000517	lr=0.001000	heatmap_accuracy=0.729
+Epoch[55] Batch [299]	Speed: 1171.597873 samples/sec	loss=0.000517	lr=0.001000	heatmap_accuracy=0.730
+Epoch[55] Batch [399]	Speed: 1158.005832 samples/sec	loss=0.000519	lr=0.001000	heatmap_accuracy=0.729
+Epoch[55] Batch [499]	Speed: 1188.696094 samples/sec	loss=0.000519	lr=0.001000	heatmap_accuracy=0.728
+Epoch[55]		Speed: 1087 samples/sec over 137 secs	loss=0.000519
+
+Epoch[56] Batch [99]	Speed: 789.915419 samples/sec	loss=0.000519	lr=0.001000	heatmap_accuracy=0.728
+Epoch[56] Batch [199]	Speed: 1176.008589 samples/sec	loss=0.000518	lr=0.001000	heatmap_accuracy=0.730
+Epoch[56] Batch [299]	Speed: 1193.058163 samples/sec	loss=0.000518	lr=0.001000	heatmap_accuracy=0.729
+Epoch[56] Batch [399]	Speed: 1197.827600 samples/sec	loss=0.000518	lr=0.001000	heatmap_accuracy=0.728
+Epoch[56] Batch [499]	Speed: 1185.504895 samples/sec	loss=0.000518	lr=0.001000	heatmap_accuracy=0.729
+Epoch[56]		Speed: 1100 samples/sec over 135 secs	loss=0.000519
+
+Epoch[57] Batch [99]	Speed: 785.105136 samples/sec	loss=0.000516	lr=0.001000	heatmap_accuracy=0.729
+Epoch[57] Batch [199]	Speed: 1191.057273 samples/sec	loss=0.000517	lr=0.001000	heatmap_accuracy=0.729
+Epoch[57] Batch [299]	Speed: 1190.086422 samples/sec	loss=0.000518	lr=0.001000	heatmap_accuracy=0.728
+Epoch[57] Batch [399]	Speed: 1167.213190 samples/sec	loss=0.000518	lr=0.001000	heatmap_accuracy=0.728
+Epoch[57] Batch [499]	Speed: 1160.537231 samples/sec	loss=0.000518	lr=0.001000	heatmap_accuracy=0.728
+Epoch[57]		Speed: 1092 samples/sec over 136 secs	loss=0.000518
+
+Epoch[58] Batch [99]	Speed: 790.306697 samples/sec	loss=0.000513	lr=0.001000	heatmap_accuracy=0.731
+Epoch[58] Batch [199]	Speed: 1188.944731 samples/sec	loss=0.000514	lr=0.001000	heatmap_accuracy=0.730
+Epoch[58] Batch [299]	Speed: 1165.913754 samples/sec	loss=0.000516	lr=0.001000	heatmap_accuracy=0.730
+Epoch[58] Batch [399]	Speed: 1165.833166 samples/sec	loss=0.000516	lr=0.001000	heatmap_accuracy=0.730
+Epoch[58] Batch [499]	Speed: 1177.672764 samples/sec	loss=0.000517	lr=0.001000	heatmap_accuracy=0.730
+Epoch[58]		Speed: 1081 samples/sec over 138 secs	loss=0.000517
+
+Epoch[59] Batch [99]	Speed: 799.500872 samples/sec	loss=0.000517	lr=0.001000	heatmap_accuracy=0.730
+Epoch[59] Batch [199]	Speed: 1204.506588 samples/sec	loss=0.000516	lr=0.001000	heatmap_accuracy=0.729
+Epoch[59] Batch [299]	Speed: 1176.096554 samples/sec	loss=0.000516	lr=0.001000	heatmap_accuracy=0.730
+Epoch[59] Batch [399]	Speed: 1179.613051 samples/sec	loss=0.000516	lr=0.001000	heatmap_accuracy=0.730
+Epoch[59] Batch [499]	Speed: 1189.388467 samples/sec	loss=0.000516	lr=0.001000	heatmap_accuracy=0.730
+Epoch[59]		Speed: 1104 samples/sec over 135 secs	loss=0.000516
+
+Epoch[60] Batch [99]	Speed: 807.712236 samples/sec	loss=0.000516	lr=0.001000	heatmap_accuracy=0.731
+Epoch[60] Batch [199]	Speed: 1198.095819 samples/sec	loss=0.000515	lr=0.001000	heatmap_accuracy=0.731
+Epoch[60] Batch [299]	Speed: 1209.464863 samples/sec	loss=0.000516	lr=0.001000	heatmap_accuracy=0.731
+Epoch[60] Batch [399]	Speed: 1195.479684 samples/sec	loss=0.000515	lr=0.001000	heatmap_accuracy=0.731
+Epoch[60] Batch [499]	Speed: 1219.750898 samples/sec	loss=0.000515	lr=0.001000	heatmap_accuracy=0.731
+Epoch[60]		Speed: 1119 samples/sec over 133 secs	loss=0.000515
+
+Epoch[61] Batch [99]	Speed: 800.127962 samples/sec	loss=0.000514	lr=0.001000	heatmap_accuracy=0.733
+Epoch[61] Batch [199]	Speed: 1206.343174 samples/sec	loss=0.000513	lr=0.001000	heatmap_accuracy=0.734
+Epoch[61] Batch [299]	Speed: 1224.215124 samples/sec	loss=0.000514	lr=0.001000	heatmap_accuracy=0.733
+Epoch[61] Batch [399]	Speed: 1205.848401 samples/sec	loss=0.000514	lr=0.001000	heatmap_accuracy=0.733
+Epoch[61] Batch [499]	Speed: 1172.287410 samples/sec	loss=0.000515	lr=0.001000	heatmap_accuracy=0.731
+Epoch[61]		Speed: 1112 samples/sec over 134 secs	loss=0.000515
+
+Epoch[62] Batch [99]	Speed: 794.741984 samples/sec	loss=0.000511	lr=0.001000	heatmap_accuracy=0.732
+Epoch[62] Batch [199]	Speed: 1184.754558 samples/sec	loss=0.000513	lr=0.001000	heatmap_accuracy=0.732
+Epoch[62] Batch [299]	Speed: 1185.443079 samples/sec	loss=0.000514	lr=0.001000	heatmap_accuracy=0.731
+Epoch[62] Batch [399]	Speed: 1184.247264 samples/sec	loss=0.000516	lr=0.001000	heatmap_accuracy=0.730
+Epoch[62] Batch [499]	Speed: 1201.329169 samples/sec	loss=0.000515	lr=0.001000	heatmap_accuracy=0.730
+Epoch[62]		Speed: 1086 samples/sec over 137 secs	loss=0.000515
+
+Epoch[63] Batch [99]	Speed: 794.872982 samples/sec	loss=0.000512	lr=0.001000	heatmap_accuracy=0.732
+Epoch[63] Batch [199]	Speed: 1174.233631 samples/sec	loss=0.000515	lr=0.001000	heatmap_accuracy=0.731
+Epoch[63] Batch [299]	Speed: 1210.123124 samples/sec	loss=0.000515	lr=0.001000	heatmap_accuracy=0.731
+Epoch[63] Batch [399]	Speed: 1185.009395 samples/sec	loss=0.000514	lr=0.001000	heatmap_accuracy=0.731
+Epoch[63] Batch [499]	Speed: 1205.802901 samples/sec	loss=0.000515	lr=0.001000	heatmap_accuracy=0.731
+Epoch[63]		Speed: 1101 samples/sec over 135 secs	loss=0.000514
+
+Epoch[64] Batch [99]	Speed: 791.752118 samples/sec	loss=0.000512	lr=0.001000	heatmap_accuracy=0.734
+Epoch[64] Batch [199]	Speed: 1192.052075 samples/sec	loss=0.000513	lr=0.001000	heatmap_accuracy=0.733
+Epoch[64] Batch [299]	Speed: 1196.449599 samples/sec	loss=0.000512	lr=0.001000	heatmap_accuracy=0.733
+Epoch[64] Batch [399]	Speed: 1181.925290 samples/sec	loss=0.000512	lr=0.001000	heatmap_accuracy=0.733
+Epoch[64] Batch [499]	Speed: 1202.998625 samples/sec	loss=0.000513	lr=0.001000	heatmap_accuracy=0.733
+Epoch[64]		Speed: 1104 samples/sec over 135 secs	loss=0.000513
+
+Epoch[65] Batch [99]	Speed: 789.609476 samples/sec	loss=0.000512	lr=0.001000	heatmap_accuracy=0.734
+Epoch[65] Batch [199]	Speed: 1187.094537 samples/sec	loss=0.000514	lr=0.001000	heatmap_accuracy=0.732
+Epoch[65] Batch [299]	Speed: 1197.601923 samples/sec	loss=0.000513	lr=0.001000	heatmap_accuracy=0.733
+Epoch[65] Batch [399]	Speed: 1176.244266 samples/sec	loss=0.000513	lr=0.001000	heatmap_accuracy=0.732
+Epoch[65] Batch [499]	Speed: 1168.196542 samples/sec	loss=0.000513	lr=0.001000	heatmap_accuracy=0.732
+Epoch[65]		Speed: 1100 samples/sec over 135 secs	loss=0.000513
+
+Epoch[66] Batch [99]	Speed: 791.494854 samples/sec	loss=0.000511	lr=0.001000	heatmap_accuracy=0.736
+Epoch[66] Batch [199]	Speed: 1163.604069 samples/sec	loss=0.000511	lr=0.001000	heatmap_accuracy=0.735
+Epoch[66] Batch [299]	Speed: 1180.297267 samples/sec	loss=0.000510	lr=0.001000	heatmap_accuracy=0.735
+Epoch[66] Batch [399]	Speed: 1177.778845 samples/sec	loss=0.000511	lr=0.001000	heatmap_accuracy=0.734
+Epoch[66] Batch [499]	Speed: 1123.801259 samples/sec	loss=0.000512	lr=0.001000	heatmap_accuracy=0.734
+Epoch[66]		Speed: 1080 samples/sec over 138 secs	loss=0.000512
+
+Epoch[67] Batch [99]	Speed: 784.549915 samples/sec	loss=0.000509	lr=0.001000	heatmap_accuracy=0.737
+Epoch[67] Batch [199]	Speed: 1192.641728 samples/sec	loss=0.000509	lr=0.001000	heatmap_accuracy=0.735
+Epoch[67] Batch [299]	Speed: 1174.822044 samples/sec	loss=0.000509	lr=0.001000	heatmap_accuracy=0.735
+Epoch[67] Batch [399]	Speed: 1143.474915 samples/sec	loss=0.000510	lr=0.001000	heatmap_accuracy=0.734
+Epoch[67] Batch [499]	Speed: 1198.988538 samples/sec	loss=0.000511	lr=0.001000	heatmap_accuracy=0.734
+Epoch[67]		Speed: 1087 samples/sec over 137 secs	loss=0.000512
+
+Epoch[68] Batch [99]	Speed: 790.995016 samples/sec	loss=0.000509	lr=0.001000	heatmap_accuracy=0.734
+Epoch[68] Batch [199]	Speed: 1224.407018 samples/sec	loss=0.000511	lr=0.001000	heatmap_accuracy=0.734
+Epoch[68] Batch [299]	Speed: 1209.194457 samples/sec	loss=0.000511	lr=0.001000	heatmap_accuracy=0.734
+Epoch[68] Batch [399]	Speed: 1192.892469 samples/sec	loss=0.000512	lr=0.001000	heatmap_accuracy=0.734
+Epoch[68] Batch [499]	Speed: 1189.828936 samples/sec	loss=0.000511	lr=0.001000	heatmap_accuracy=0.734
+Epoch[68]		Speed: 1113 samples/sec over 134 secs	loss=0.000511
+
+Epoch[69] Batch [99]	Speed: 787.357864 samples/sec	loss=0.000509	lr=0.001000	heatmap_accuracy=0.736
+Epoch[69] Batch [199]	Speed: 1208.300228 samples/sec	loss=0.000510	lr=0.001000	heatmap_accuracy=0.736
+Epoch[69] Batch [299]	Speed: 1192.694507 samples/sec	loss=0.000510	lr=0.001000	heatmap_accuracy=0.735
+Epoch[69] Batch [399]	Speed: 1193.145568 samples/sec	loss=0.000510	lr=0.001000	heatmap_accuracy=0.735
+Epoch[69] Batch [499]	Speed: 1242.180723 samples/sec	loss=0.000510	lr=0.001000	heatmap_accuracy=0.735
+Epoch[69]		Speed: 1115 samples/sec over 134 secs	loss=0.000510
+
+Epoch[70] Batch [99]	Speed: 794.942400 samples/sec	loss=0.000507	lr=0.001000	heatmap_accuracy=0.736
+Epoch[70] Batch [199]	Speed: 1182.504066 samples/sec	loss=0.000510	lr=0.001000	heatmap_accuracy=0.736
+Epoch[70] Batch [299]	Speed: 1217.298079 samples/sec	loss=0.000508	lr=0.001000	heatmap_accuracy=0.736
+Epoch[70] Batch [399]	Speed: 1195.282912 samples/sec	loss=0.000509	lr=0.001000	heatmap_accuracy=0.736
+Epoch[70] Batch [499]	Speed: 1170.593716 samples/sec	loss=0.000510	lr=0.001000	heatmap_accuracy=0.735
+Epoch[70]		Speed: 1097 samples/sec over 136 secs	loss=0.000510
+
+Epoch[71] Batch [99]	Speed: 796.623747 samples/sec	loss=0.000508	lr=0.001000	heatmap_accuracy=0.736
+Epoch[71] Batch [199]	Speed: 1221.419073 samples/sec	loss=0.000509	lr=0.001000	heatmap_accuracy=0.736
+Epoch[71] Batch [299]	Speed: 1184.837927 samples/sec	loss=0.000510	lr=0.001000	heatmap_accuracy=0.735
+Epoch[71] Batch [399]	Speed: 1187.117282 samples/sec	loss=0.000509	lr=0.001000	heatmap_accuracy=0.736
+Epoch[71] Batch [499]	Speed: 1139.807216 samples/sec	loss=0.000509	lr=0.001000	heatmap_accuracy=0.736
+Epoch[71]		Speed: 1100 samples/sec over 135 secs	loss=0.000509
+
+Epoch[72] Batch [99]	Speed: 760.442308 samples/sec	loss=0.000510	lr=0.001000	heatmap_accuracy=0.734
+Epoch[72] Batch [199]	Speed: 1191.837352 samples/sec	loss=0.000508	lr=0.001000	heatmap_accuracy=0.736
+Epoch[72] Batch [299]	Speed: 1158.049782 samples/sec	loss=0.000508	lr=0.001000	heatmap_accuracy=0.736
+Epoch[72] Batch [399]	Speed: 1158.850393 samples/sec	loss=0.000508	lr=0.001000	heatmap_accuracy=0.736
+Epoch[72] Batch [499]	Speed: 1172.599860 samples/sec	loss=0.000508	lr=0.001000	heatmap_accuracy=0.736
+Epoch[72]		Speed: 1074 samples/sec over 139 secs	loss=0.000508
+
+Epoch[73] Batch [99]	Speed: 796.257219 samples/sec	loss=0.000505	lr=0.001000	heatmap_accuracy=0.738
+Epoch[73] Batch [199]	Speed: 1188.874960 samples/sec	loss=0.000505	lr=0.001000	heatmap_accuracy=0.739
+Epoch[73] Batch [299]	Speed: 1188.077259 samples/sec	loss=0.000506	lr=0.001000	heatmap_accuracy=0.739
+Epoch[73] Batch [399]	Speed: 1207.533886 samples/sec	loss=0.000508	lr=0.001000	heatmap_accuracy=0.737
+Epoch[73] Batch [499]	Speed: 1227.469433 samples/sec	loss=0.000508	lr=0.001000	heatmap_accuracy=0.737
+Epoch[73]		Speed: 1103 samples/sec over 135 secs	loss=0.000508
+
+Epoch[74] Batch [99]	Speed: 775.965257 samples/sec	loss=0.000506	lr=0.001000	heatmap_accuracy=0.737
+Epoch[74] Batch [199]	Speed: 1185.071571 samples/sec	loss=0.000505	lr=0.001000	heatmap_accuracy=0.738
+Epoch[74] Batch [299]	Speed: 1216.034013 samples/sec	loss=0.000506	lr=0.001000	heatmap_accuracy=0.738
+Epoch[74] Batch [399]	Speed: 1164.829575 samples/sec	loss=0.000507	lr=0.001000	heatmap_accuracy=0.737
+Epoch[74] Batch [499]	Speed: 1196.848366 samples/sec	loss=0.000507	lr=0.001000	heatmap_accuracy=0.737
+Epoch[74]		Speed: 1088 samples/sec over 137 secs	loss=0.000507
+
+Epoch[75] Batch [99]	Speed: 787.760332 samples/sec	loss=0.000505	lr=0.001000	heatmap_accuracy=0.739
+Epoch[75] Batch [199]	Speed: 1169.288147 samples/sec	loss=0.000506	lr=0.001000	heatmap_accuracy=0.737
+Epoch[75] Batch [299]	Speed: 1161.519364 samples/sec	loss=0.000506	lr=0.001000	heatmap_accuracy=0.737
+Epoch[75] Batch [399]	Speed: 1174.856340 samples/sec	loss=0.000507	lr=0.001000	heatmap_accuracy=0.737
+Epoch[75] Batch [499]	Speed: 1167.126929 samples/sec	loss=0.000507	lr=0.001000	heatmap_accuracy=0.737
+Epoch[75]		Speed: 1089 samples/sec over 137 secs	loss=0.000507
+
+Epoch[76] Batch [99]	Speed: 780.338441 samples/sec	loss=0.000504	lr=0.001000	heatmap_accuracy=0.737
+Epoch[76] Batch [199]	Speed: 1160.046261 samples/sec	loss=0.000505	lr=0.001000	heatmap_accuracy=0.738
+Epoch[76] Batch [299]	Speed: 1159.809488 samples/sec	loss=0.000506	lr=0.001000	heatmap_accuracy=0.738
+Epoch[76] Batch [399]	Speed: 1165.255882 samples/sec	loss=0.000506	lr=0.001000	heatmap_accuracy=0.737
+Epoch[76] Batch [499]	Speed: 1202.394501 samples/sec	loss=0.000507	lr=0.001000	heatmap_accuracy=0.737
+Epoch[76]		Speed: 1087 samples/sec over 137 secs	loss=0.000507
+
+Epoch[77] Batch [99]	Speed: 789.990396 samples/sec	loss=0.000506	lr=0.001000	heatmap_accuracy=0.738
+Epoch[77] Batch [199]	Speed: 1170.927035 samples/sec	loss=0.000505	lr=0.001000	heatmap_accuracy=0.740
+Epoch[77] Batch [299]	Speed: 1159.336583 samples/sec	loss=0.000504	lr=0.001000	heatmap_accuracy=0.740
+Epoch[77] Batch [399]	Speed: 1178.902704 samples/sec	loss=0.000504	lr=0.001000	heatmap_accuracy=0.740
+Epoch[77] Batch [499]	Speed: 1217.587944 samples/sec	loss=0.000505	lr=0.001000	heatmap_accuracy=0.739
+Epoch[77]		Speed: 1093 samples/sec over 136 secs	loss=0.000505
+
+Epoch[78] Batch [99]	Speed: 782.830405 samples/sec	loss=0.000502	lr=0.001000	heatmap_accuracy=0.740
+Epoch[78] Batch [199]	Speed: 1145.748460 samples/sec	loss=0.000503	lr=0.001000	heatmap_accuracy=0.740
+Epoch[78] Batch [299]	Speed: 1190.726341 samples/sec	loss=0.000504	lr=0.001000	heatmap_accuracy=0.739
+Epoch[78] Batch [399]	Speed: 1187.917282 samples/sec	loss=0.000505	lr=0.001000	heatmap_accuracy=0.738
+Epoch[78] Batch [499]	Speed: 1185.761521 samples/sec	loss=0.000505	lr=0.001000	heatmap_accuracy=0.738
+Epoch[78]		Speed: 1092 samples/sec over 136 secs	loss=0.000505
+
+Epoch[79] Batch [99]	Speed: 789.241768 samples/sec	loss=0.000506	lr=0.001000	heatmap_accuracy=0.738
+Epoch[79] Batch [199]	Speed: 1164.455732 samples/sec	loss=0.000506	lr=0.001000	heatmap_accuracy=0.737
+Epoch[79] Batch [299]	Speed: 1191.405509 samples/sec	loss=0.000507	lr=0.001000	heatmap_accuracy=0.737
+Epoch[79] Batch [399]	Speed: 1178.151546 samples/sec	loss=0.000506	lr=0.001000	heatmap_accuracy=0.738
+Epoch[79] Batch [499]	Speed: 1154.572014 samples/sec	loss=0.000506	lr=0.001000	heatmap_accuracy=0.738
+Epoch[79]		Speed: 1075 samples/sec over 139 secs	loss=0.000506
+
+Epoch[80] Batch [99]	Speed: 792.727649 samples/sec	loss=0.000505	lr=0.001000	heatmap_accuracy=0.737
+Epoch[80] Batch [199]	Speed: 1195.217344 samples/sec	loss=0.000505	lr=0.001000	heatmap_accuracy=0.738
+Epoch[80] Batch [299]	Speed: 1195.970379 samples/sec	loss=0.000505	lr=0.001000	heatmap_accuracy=0.738
+Epoch[80] Batch [399]	Speed: 1202.485017 samples/sec	loss=0.000504	lr=0.001000	heatmap_accuracy=0.738
+Epoch[80] Batch [499]	Speed: 1180.736350 samples/sec	loss=0.000505	lr=0.001000	heatmap_accuracy=0.738
+Epoch[80]		Speed: 1099 samples/sec over 136 secs	loss=0.000505
+
+Epoch[81] Batch [99]	Speed: 809.155019 samples/sec	loss=0.000503	lr=0.001000	heatmap_accuracy=0.741
+Epoch[81] Batch [199]	Speed: 1181.151540 samples/sec	loss=0.000502	lr=0.001000	heatmap_accuracy=0.741
+Epoch[81] Batch [299]	Speed: 1201.207421 samples/sec	loss=0.000503	lr=0.001000	heatmap_accuracy=0.740
+Epoch[81] Batch [399]	Speed: 1183.520838 samples/sec	loss=0.000504	lr=0.001000	heatmap_accuracy=0.739
+Epoch[81] Batch [499]	Speed: 1203.512564 samples/sec	loss=0.000504	lr=0.001000	heatmap_accuracy=0.739
+Epoch[81]		Speed: 1096 samples/sec over 136 secs	loss=0.000504
+
+Epoch[82] Batch [99]	Speed: 796.451978 samples/sec	loss=0.000503	lr=0.001000	heatmap_accuracy=0.740
+Epoch[82] Batch [199]	Speed: 1188.294048 samples/sec	loss=0.000505	lr=0.001000	heatmap_accuracy=0.739
+Epoch[82] Batch [299]	Speed: 1219.025074 samples/sec	loss=0.000503	lr=0.001000	heatmap_accuracy=0.739
+Epoch[82] Batch [399]	Speed: 1222.673187 samples/sec	loss=0.000504	lr=0.001000	heatmap_accuracy=0.739
+Epoch[82] Batch [499]	Speed: 1195.031791 samples/sec	loss=0.000504	lr=0.001000	heatmap_accuracy=0.739
+Epoch[82]		Speed: 1097 samples/sec over 136 secs	loss=0.000504
+
+Epoch[83] Batch [99]	Speed: 781.081640 samples/sec	loss=0.000504	lr=0.001000	heatmap_accuracy=0.740
+Epoch[83] Batch [199]	Speed: 1198.570750 samples/sec	loss=0.000504	lr=0.001000	heatmap_accuracy=0.740
+Epoch[83] Batch [299]	Speed: 1180.389547 samples/sec	loss=0.000503	lr=0.001000	heatmap_accuracy=0.740
+Epoch[83] Batch [399]	Speed: 1192.548185 samples/sec	loss=0.000504	lr=0.001000	heatmap_accuracy=0.739
+Epoch[83] Batch [499]	Speed: 1186.624919 samples/sec	loss=0.000503	lr=0.001000	heatmap_accuracy=0.740
+Epoch[83]		Speed: 1094 samples/sec over 136 secs	loss=0.000504
+
+Epoch[84] Batch [99]	Speed: 788.416444 samples/sec	loss=0.000501	lr=0.001000	heatmap_accuracy=0.740
+Epoch[84] Batch [199]	Speed: 1177.144827 samples/sec	loss=0.000501	lr=0.001000	heatmap_accuracy=0.741
+Epoch[84] Batch [299]	Speed: 1198.431008 samples/sec	loss=0.000501	lr=0.001000	heatmap_accuracy=0.740
+Epoch[84] Batch [399]	Speed: 1174.043944 samples/sec	loss=0.000502	lr=0.001000	heatmap_accuracy=0.740
+Epoch[84] Batch [499]	Speed: 1193.069007 samples/sec	loss=0.000502	lr=0.001000	heatmap_accuracy=0.740
+Epoch[84]		Speed: 1096 samples/sec over 136 secs	loss=0.000502
+
+Epoch[85] Batch [99]	Speed: 789.219185 samples/sec	loss=0.000499	lr=0.001000	heatmap_accuracy=0.743
+Epoch[85] Batch [199]	Speed: 1180.653415 samples/sec	loss=0.000500	lr=0.001000	heatmap_accuracy=0.742
+Epoch[85] Batch [299]	Speed: 1195.721872 samples/sec	loss=0.000501	lr=0.001000	heatmap_accuracy=0.741
+Epoch[85] Batch [399]	Speed: 1216.630888 samples/sec	loss=0.000501	lr=0.001000	heatmap_accuracy=0.741
+Epoch[85] Batch [499]	Speed: 1196.360069 samples/sec	loss=0.000501	lr=0.001000	heatmap_accuracy=0.741
+Epoch[85]		Speed: 1105 samples/sec over 135 secs	loss=0.000502
+
+Epoch[86] Batch [99]	Speed: 780.642404 samples/sec	loss=0.000503	lr=0.001000	heatmap_accuracy=0.741
+Epoch[86] Batch [199]	Speed: 1187.090915 samples/sec	loss=0.000502	lr=0.001000	heatmap_accuracy=0.743
+Epoch[86] Batch [299]	Speed: 1163.071130 samples/sec	loss=0.000502	lr=0.001000	heatmap_accuracy=0.743
+Epoch[86] Batch [399]	Speed: 1188.194505 samples/sec	loss=0.000502	lr=0.001000	heatmap_accuracy=0.742
+Epoch[86] Batch [499]	Speed: 1185.638300 samples/sec	loss=0.000501	lr=0.001000	heatmap_accuracy=0.742
+Epoch[86]		Speed: 1090 samples/sec over 137 secs	loss=0.000501
+
+Epoch[87] Batch [99]	Speed: 782.571154 samples/sec	loss=0.000499	lr=0.001000	heatmap_accuracy=0.742
+Epoch[87] Batch [199]	Speed: 1215.179026 samples/sec	loss=0.000499	lr=0.001000	heatmap_accuracy=0.743
+Epoch[87] Batch [299]	Speed: 1171.631687 samples/sec	loss=0.000500	lr=0.001000	heatmap_accuracy=0.742
+Epoch[87] Batch [399]	Speed: 1175.899556 samples/sec	loss=0.000501	lr=0.001000	heatmap_accuracy=0.742
+Epoch[87] Batch [499]	Speed: 1168.251361 samples/sec	loss=0.000501	lr=0.001000	heatmap_accuracy=0.742
+Epoch[87]		Speed: 1094 samples/sec over 136 secs	loss=0.000501
+
+Epoch[88] Batch [99]	Speed: 786.873195 samples/sec	loss=0.000500	lr=0.001000	heatmap_accuracy=0.743
+Epoch[88] Batch [199]	Speed: 1184.886160 samples/sec	loss=0.000500	lr=0.001000	heatmap_accuracy=0.744
+Epoch[88] Batch [299]	Speed: 1195.495177 samples/sec	loss=0.000500	lr=0.001000	heatmap_accuracy=0.743
+Epoch[88] Batch [399]	Speed: 1185.328010 samples/sec	loss=0.000501	lr=0.001000	heatmap_accuracy=0.742
+Epoch[88] Batch [499]	Speed: 1227.967619 samples/sec	loss=0.000501	lr=0.001000	heatmap_accuracy=0.742
+Epoch[88]		Speed: 1108 samples/sec over 134 secs	loss=0.000501
+
+Epoch[89] Batch [99]	Speed: 790.533772 samples/sec	loss=0.000502	lr=0.001000	heatmap_accuracy=0.742
+Epoch[89] Batch [199]	Speed: 1187.289673 samples/sec	loss=0.000501	lr=0.001000	heatmap_accuracy=0.743
+Epoch[89] Batch [299]	Speed: 1161.613092 samples/sec	loss=0.000500	lr=0.001000	heatmap_accuracy=0.743
+Epoch[89] Batch [399]	Speed: 1165.110867 samples/sec	loss=0.000500	lr=0.001000	heatmap_accuracy=0.742
+Epoch[89] Batch [499]	Speed: 1099.424535 samples/sec	loss=0.000500	lr=0.001000	heatmap_accuracy=0.743
+Epoch[89]		Speed: 1060 samples/sec over 140 secs	loss=0.000500
+
+Epoch[90] Batch [99]	Speed: 790.332210 samples/sec	loss=0.000493	lr=0.000100	heatmap_accuracy=0.746
+Epoch[90] Batch [199]	Speed: 1148.958422 samples/sec	loss=0.000493	lr=0.000100	heatmap_accuracy=0.746
+Epoch[90] Batch [299]	Speed: 1177.881379 samples/sec	loss=0.000492	lr=0.000100	heatmap_accuracy=0.747
+Epoch[90] Batch [399]	Speed: 1170.652398 samples/sec	loss=0.000491	lr=0.000100	heatmap_accuracy=0.748
+Epoch[90] Batch [499]	Speed: 1145.959407 samples/sec	loss=0.000491	lr=0.000100	heatmap_accuracy=0.748
+Epoch[90]		Speed: 1075 samples/sec over 139 secs	loss=0.000490
+
+Epoch[91] Batch [99]	Speed: 791.357863 samples/sec	loss=0.000487	lr=0.000100	heatmap_accuracy=0.752
+Epoch[91] Batch [199]	Speed: 1168.520981 samples/sec	loss=0.000487	lr=0.000100	heatmap_accuracy=0.752
+Epoch[91] Batch [299]	Speed: 1206.796876 samples/sec	loss=0.000487	lr=0.000100	heatmap_accuracy=0.752
+Epoch[91] Batch [399]	Speed: 1189.200149 samples/sec	loss=0.000486	lr=0.000100	heatmap_accuracy=0.752
+Epoch[91] Batch [499]	Speed: 1153.665026 samples/sec	loss=0.000486	lr=0.000100	heatmap_accuracy=0.753
+Epoch[91]		Speed: 1095 samples/sec over 136 secs	loss=0.000485
+
+Epoch[92] Batch [99]	Speed: 787.057061 samples/sec	loss=0.000484	lr=0.000100	heatmap_accuracy=0.754
+Epoch[92] Batch [199]	Speed: 1191.196199 samples/sec	loss=0.000484	lr=0.000100	heatmap_accuracy=0.754
+Epoch[92] Batch [299]	Speed: 1182.454178 samples/sec	loss=0.000483	lr=0.000100	heatmap_accuracy=0.754
+Epoch[92] Batch [399]	Speed: 1195.092722 samples/sec	loss=0.000484	lr=0.000100	heatmap_accuracy=0.754
+Epoch[92] Batch [499]	Speed: 1142.018423 samples/sec	loss=0.000484	lr=0.000100	heatmap_accuracy=0.754
+Epoch[92]		Speed: 1085 samples/sec over 137 secs	loss=0.000484
+
+Epoch[93] Batch [99]	Speed: 772.760252 samples/sec	loss=0.000481	lr=0.000100	heatmap_accuracy=0.757
+Epoch[93] Batch [199]	Speed: 1198.009398 samples/sec	loss=0.000482	lr=0.000100	heatmap_accuracy=0.756
+Epoch[93] Batch [299]	Speed: 1171.916299 samples/sec	loss=0.000482	lr=0.000100	heatmap_accuracy=0.755
+Epoch[93] Batch [399]	Speed: 1174.999883 samples/sec	loss=0.000482	lr=0.000100	heatmap_accuracy=0.755
+Epoch[93] Batch [499]	Speed: 1138.117313 samples/sec	loss=0.000482	lr=0.000100	heatmap_accuracy=0.755
+Epoch[93]		Speed: 1074 samples/sec over 139 secs	loss=0.000482
+
+Epoch[94] Batch [99]	Speed: 795.509126 samples/sec	loss=0.000479	lr=0.000100	heatmap_accuracy=0.756
+Epoch[94] Batch [199]	Speed: 1159.856106 samples/sec	loss=0.000481	lr=0.000100	heatmap_accuracy=0.755
+Epoch[94] Batch [299]	Speed: 1183.109782 samples/sec	loss=0.000481	lr=0.000100	heatmap_accuracy=0.755
+Epoch[94] Batch [399]	Speed: 1164.916406 samples/sec	loss=0.000481	lr=0.000100	heatmap_accuracy=0.755
+Epoch[94] Batch [499]	Speed: 1168.535568 samples/sec	loss=0.000481	lr=0.000100	heatmap_accuracy=0.755
+Epoch[94]		Speed: 1092 samples/sec over 136 secs	loss=0.000481
+
+Epoch[95] Batch [99]	Speed: 781.117654 samples/sec	loss=0.000480	lr=0.000100	heatmap_accuracy=0.756
+Epoch[95] Batch [199]	Speed: 1175.870170 samples/sec	loss=0.000479	lr=0.000100	heatmap_accuracy=0.757
+Epoch[95] Batch [299]	Speed: 1186.751257 samples/sec	loss=0.000479	lr=0.000100	heatmap_accuracy=0.758
+Epoch[95] Batch [399]	Speed: 1172.763462 samples/sec	loss=0.000479	lr=0.000100	heatmap_accuracy=0.757
+Epoch[95] Batch [499]	Speed: 1160.350401 samples/sec	loss=0.000479	lr=0.000100	heatmap_accuracy=0.757
+Epoch[95]		Speed: 1086 samples/sec over 137 secs	loss=0.000480
+
+Epoch[96] Batch [99]	Speed: 788.467061 samples/sec	loss=0.000479	lr=0.000100	heatmap_accuracy=0.758
+Epoch[96] Batch [199]	Speed: 1195.901420 samples/sec	loss=0.000481	lr=0.000100	heatmap_accuracy=0.755
+Epoch[96] Batch [299]	Speed: 1154.067247 samples/sec	loss=0.000481	lr=0.000100	heatmap_accuracy=0.756
+Epoch[96] Batch [399]	Speed: 1185.736825 samples/sec	loss=0.000480	lr=0.000100	heatmap_accuracy=0.756
+Epoch[96] Batch [499]	Speed: 1228.709407 samples/sec	loss=0.000480	lr=0.000100	heatmap_accuracy=0.757
+Epoch[96]		Speed: 1100 samples/sec over 135 secs	loss=0.000480
+
+Epoch[97] Batch [99]	Speed: 795.609710 samples/sec	loss=0.000480	lr=0.000100	heatmap_accuracy=0.756
+Epoch[97] Batch [199]	Speed: 1183.587411 samples/sec	loss=0.000479	lr=0.000100	heatmap_accuracy=0.757
+Epoch[97] Batch [299]	Speed: 1175.391220 samples/sec	loss=0.000480	lr=0.000100	heatmap_accuracy=0.757
+Epoch[97] Batch [399]	Speed: 1173.982290 samples/sec	loss=0.000479	lr=0.000100	heatmap_accuracy=0.757
+Epoch[97] Batch [499]	Speed: 1151.910777 samples/sec	loss=0.000480	lr=0.000100	heatmap_accuracy=0.757
+Epoch[97]		Speed: 1082 samples/sec over 138 secs	loss=0.000480
+
+Epoch[98] Batch [99]	Speed: 782.110690 samples/sec	loss=0.000479	lr=0.000100	heatmap_accuracy=0.758
+Epoch[98] Batch [199]	Speed: 1229.301552 samples/sec	loss=0.000480	lr=0.000100	heatmap_accuracy=0.757
+Epoch[98] Batch [299]	Speed: 1214.944427 samples/sec	loss=0.000480	lr=0.000100	heatmap_accuracy=0.757
+Epoch[98] Batch [399]	Speed: 1121.443020 samples/sec	loss=0.000480	lr=0.000100	heatmap_accuracy=0.757
+Epoch[98] Batch [499]	Speed: 1169.104344 samples/sec	loss=0.000479	lr=0.000100	heatmap_accuracy=0.757
+Epoch[98]		Speed: 1095 samples/sec over 136 secs	loss=0.000479
+
+Epoch[99] Batch [99]	Speed: 800.220789 samples/sec	loss=0.000481	lr=0.000100	heatmap_accuracy=0.757
+Epoch[99] Batch [199]	Speed: 1193.562714 samples/sec	loss=0.000480	lr=0.000100	heatmap_accuracy=0.757
+Epoch[99] Batch [299]	Speed: 1185.831451 samples/sec	loss=0.000479	lr=0.000100	heatmap_accuracy=0.757
+Epoch[99] Batch [399]	Speed: 1178.912321 samples/sec	loss=0.000478	lr=0.000100	heatmap_accuracy=0.758
+Epoch[99] Batch [499]	Speed: 1177.128993 samples/sec	loss=0.000478	lr=0.000100	heatmap_accuracy=0.758
+Epoch[99]		Speed: 1099 samples/sec over 136 secs	loss=0.000478
+
+Epoch[100] Batch [99]	Speed: 779.428013 samples/sec	loss=0.000476	lr=0.000100	heatmap_accuracy=0.760
+Epoch[100] Batch [199]	Speed: 1196.763339 samples/sec	loss=0.000478	lr=0.000100	heatmap_accuracy=0.760
+Epoch[100] Batch [299]	Speed: 1197.052540 samples/sec	loss=0.000478	lr=0.000100	heatmap_accuracy=0.759
+Epoch[100] Batch [399]	Speed: 1169.976829 samples/sec	loss=0.000478	lr=0.000100	heatmap_accuracy=0.759
+Epoch[100] Batch [499]	Speed: 1181.865862 samples/sec	loss=0.000478	lr=0.000100	heatmap_accuracy=0.759
+Epoch[100]		Speed: 1095 samples/sec over 136 secs	loss=0.000477
+
+Epoch[101] Batch [99]	Speed: 806.626075 samples/sec	loss=0.000477	lr=0.000100	heatmap_accuracy=0.759
+Epoch[101] Batch [199]	Speed: 1182.813205 samples/sec	loss=0.000477	lr=0.000100	heatmap_accuracy=0.759
+Epoch[101] Batch [299]	Speed: 1205.456147 samples/sec	loss=0.000478	lr=0.000100	heatmap_accuracy=0.758
+Epoch[101] Batch [399]	Speed: 1207.649666 samples/sec	loss=0.000478	lr=0.000100	heatmap_accuracy=0.759
+Epoch[101] Batch [499]	Speed: 1215.276512 samples/sec	loss=0.000478	lr=0.000100	heatmap_accuracy=0.759
+Epoch[101]		Speed: 1112 samples/sec over 134 secs	loss=0.000478
+
+Epoch[102] Batch [99]	Speed: 796.812193 samples/sec	loss=0.000477	lr=0.000100	heatmap_accuracy=0.758
+Epoch[102] Batch [199]	Speed: 1191.746646 samples/sec	loss=0.000477	lr=0.000100	heatmap_accuracy=0.760
+Epoch[102] Batch [299]	Speed: 1179.054410 samples/sec	loss=0.000478	lr=0.000100	heatmap_accuracy=0.759
+Epoch[102] Batch [399]	Speed: 1180.688727 samples/sec	loss=0.000478	lr=0.000100	heatmap_accuracy=0.759
+Epoch[102] Batch [499]	Speed: 1173.445049 samples/sec	loss=0.000478	lr=0.000100	heatmap_accuracy=0.758
+Epoch[102]		Speed: 1095 samples/sec over 136 secs	loss=0.000478
+
+Epoch[103] Batch [99]	Speed: 794.637162 samples/sec	loss=0.000480	lr=0.000100	heatmap_accuracy=0.756
+Epoch[103] Batch [199]	Speed: 1190.609109 samples/sec	loss=0.000481	lr=0.000100	heatmap_accuracy=0.756
+Epoch[103] Batch [299]	Speed: 1175.080354 samples/sec	loss=0.000480	lr=0.000100	heatmap_accuracy=0.756
+Epoch[103] Batch [399]	Speed: 1202.989500 samples/sec	loss=0.000479	lr=0.000100	heatmap_accuracy=0.757
+Epoch[103] Batch [499]	Speed: 1150.525626 samples/sec	loss=0.000478	lr=0.000100	heatmap_accuracy=0.758
+Epoch[103]		Speed: 1091 samples/sec over 136 secs	loss=0.000478
+
+Epoch[104] Batch [99]	Speed: 775.173026 samples/sec	loss=0.000478	lr=0.000100	heatmap_accuracy=0.759
+Epoch[104] Batch [199]	Speed: 1172.260444 samples/sec	loss=0.000478	lr=0.000100	heatmap_accuracy=0.758
+Epoch[104] Batch [299]	Speed: 1195.100770 samples/sec	loss=0.000477	lr=0.000100	heatmap_accuracy=0.758
+Epoch[104] Batch [399]	Speed: 1212.006837 samples/sec	loss=0.000478	lr=0.000100	heatmap_accuracy=0.758
+Epoch[104] Batch [499]	Speed: 1185.328625 samples/sec	loss=0.000477	lr=0.000100	heatmap_accuracy=0.759
+Epoch[104]		Speed: 1099 samples/sec over 136 secs	loss=0.000477
+
+Epoch[105] Batch [99]	Speed: 814.114665 samples/sec	loss=0.000475	lr=0.000100	heatmap_accuracy=0.762
+Epoch[105] Batch [199]	Speed: 1193.578170 samples/sec	loss=0.000475	lr=0.000100	heatmap_accuracy=0.760
+Epoch[105] Batch [299]	Speed: 1189.876772 samples/sec	loss=0.000475	lr=0.000100	heatmap_accuracy=0.761
+Epoch[105] Batch [399]	Speed: 1177.512478 samples/sec	loss=0.000476	lr=0.000100	heatmap_accuracy=0.760
+Epoch[105] Batch [499]	Speed: 1209.671634 samples/sec	loss=0.000476	lr=0.000100	heatmap_accuracy=0.759
+Epoch[105]		Speed: 1099 samples/sec over 135 secs	loss=0.000477
+
+Epoch[106] Batch [99]	Speed: 793.331183 samples/sec	loss=0.000476	lr=0.000100	heatmap_accuracy=0.760
+Epoch[106] Batch [199]	Speed: 1200.345358 samples/sec	loss=0.000476	lr=0.000100	heatmap_accuracy=0.760
+Epoch[106] Batch [299]	Speed: 1220.393177 samples/sec	loss=0.000476	lr=0.000100	heatmap_accuracy=0.759
+Epoch[106] Batch [399]	Speed: 1218.762717 samples/sec	loss=0.000476	lr=0.000100	heatmap_accuracy=0.760
+Epoch[106] Batch [499]	Speed: 1195.768465 samples/sec	loss=0.000476	lr=0.000100	heatmap_accuracy=0.760
+Epoch[106]		Speed: 1114 samples/sec over 134 secs	loss=0.000476
+
+Epoch[107] Batch [99]	Speed: 797.361154 samples/sec	loss=0.000476	lr=0.000100	heatmap_accuracy=0.757
+Epoch[107] Batch [199]	Speed: 1189.242573 samples/sec	loss=0.000477	lr=0.000100	heatmap_accuracy=0.759
+Epoch[107] Batch [299]	Speed: 1193.072281 samples/sec	loss=0.000477	lr=0.000100	heatmap_accuracy=0.759
+Epoch[107] Batch [399]	Speed: 1170.161901 samples/sec	loss=0.000477	lr=0.000100	heatmap_accuracy=0.759
+Epoch[107] Batch [499]	Speed: 1186.749119 samples/sec	loss=0.000477	lr=0.000100	heatmap_accuracy=0.759
+Epoch[107]		Speed: 1085 samples/sec over 137 secs	loss=0.000477
+
+Epoch[108] Batch [99]	Speed: 784.818040 samples/sec	loss=0.000478	lr=0.000100	heatmap_accuracy=0.757
+Epoch[108] Batch [199]	Speed: 1192.395542 samples/sec	loss=0.000477	lr=0.000100	heatmap_accuracy=0.758
+Epoch[108] Batch [299]	Speed: 1178.872494 samples/sec	loss=0.000478	lr=0.000100	heatmap_accuracy=0.758
+Epoch[108] Batch [399]	Speed: 1196.816056 samples/sec	loss=0.000478	lr=0.000100	heatmap_accuracy=0.759
+Epoch[108] Batch [499]	Speed: 1178.104429 samples/sec	loss=0.000478	lr=0.000100	heatmap_accuracy=0.758
+Epoch[108]		Speed: 1096 samples/sec over 136 secs	loss=0.000477
+
+Epoch[109] Batch [99]	Speed: 792.070486 samples/sec	loss=0.000476	lr=0.000100	heatmap_accuracy=0.759
+Epoch[109] Batch [199]	Speed: 1189.504391 samples/sec	loss=0.000476	lr=0.000100	heatmap_accuracy=0.760
+Epoch[109] Batch [299]	Speed: 1188.098371 samples/sec	loss=0.000475	lr=0.000100	heatmap_accuracy=0.760
+Epoch[109] Batch [399]	Speed: 1196.762125 samples/sec	loss=0.000475	lr=0.000100	heatmap_accuracy=0.761
+Epoch[109] Batch [499]	Speed: 1172.954849 samples/sec	loss=0.000475	lr=0.000100	heatmap_accuracy=0.760
+Epoch[109]		Speed: 1101 samples/sec over 135 secs	loss=0.000475
+
+Epoch[110] Batch [99]	Speed: 778.316530 samples/sec	loss=0.000475	lr=0.000100	heatmap_accuracy=0.761
+Epoch[110] Batch [199]	Speed: 1172.296702 samples/sec	loss=0.000475	lr=0.000100	heatmap_accuracy=0.761
+Epoch[110] Batch [299]	Speed: 1194.942380 samples/sec	loss=0.000475	lr=0.000100	heatmap_accuracy=0.761
+Epoch[110] Batch [399]	Speed: 1171.535415 samples/sec	loss=0.000475	lr=0.000100	heatmap_accuracy=0.761
+Epoch[110] Batch [499]	Speed: 1170.186756 samples/sec	loss=0.000475	lr=0.000100	heatmap_accuracy=0.761
+Epoch[110]		Speed: 1085 samples/sec over 137 secs	loss=0.000475
+
+Epoch[111] Batch [99]	Speed: 799.771815 samples/sec	loss=0.000477	lr=0.000100	heatmap_accuracy=0.761
+Epoch[111] Batch [199]	Speed: 1212.151118 samples/sec	loss=0.000476	lr=0.000100	heatmap_accuracy=0.759
+Epoch[111] Batch [299]	Speed: 1179.055251 samples/sec	loss=0.000475	lr=0.000100	heatmap_accuracy=0.760
+Epoch[111] Batch [399]	Speed: 1204.848646 samples/sec	loss=0.000475	lr=0.000100	heatmap_accuracy=0.760
+Epoch[111] Batch [499]	Speed: 1205.356198 samples/sec	loss=0.000476	lr=0.000100	heatmap_accuracy=0.760
+Epoch[111]		Speed: 1115 samples/sec over 134 secs	loss=0.000476
+
+Epoch[112] Batch [99]	Speed: 787.307995 samples/sec	loss=0.000475	lr=0.000100	heatmap_accuracy=0.760
+Epoch[112] Batch [199]	Speed: 1192.165421 samples/sec	loss=0.000475	lr=0.000100	heatmap_accuracy=0.760
+Epoch[112] Batch [299]	Speed: 1179.756008 samples/sec	loss=0.000475	lr=0.000100	heatmap_accuracy=0.761
+Epoch[112] Batch [399]	Speed: 1173.151990 samples/sec	loss=0.000474	lr=0.000100	heatmap_accuracy=0.761
+Epoch[112] Batch [499]	Speed: 1196.961439 samples/sec	loss=0.000474	lr=0.000100	heatmap_accuracy=0.761
+Epoch[112]		Speed: 1096 samples/sec over 136 secs	loss=0.000475
+
+Epoch[113] Batch [99]	Speed: 799.341226 samples/sec	loss=0.000474	lr=0.000100	heatmap_accuracy=0.761
+Epoch[113] Batch [199]	Speed: 1170.866359 samples/sec	loss=0.000475	lr=0.000100	heatmap_accuracy=0.760
+Epoch[113] Batch [299]	Speed: 1169.261497 samples/sec	loss=0.000475	lr=0.000100	heatmap_accuracy=0.760
+Epoch[113] Batch [399]	Speed: 1161.565868 samples/sec	loss=0.000475	lr=0.000100	heatmap_accuracy=0.761
+Epoch[113] Batch [499]	Speed: 1167.143511 samples/sec	loss=0.000475	lr=0.000100	heatmap_accuracy=0.761
+Epoch[113]		Speed: 1089 samples/sec over 137 secs	loss=0.000474
+
+Epoch[114] Batch [99]	Speed: 777.685439 samples/sec	loss=0.000475	lr=0.000100	heatmap_accuracy=0.761
+Epoch[114] Batch [199]	Speed: 1148.885901 samples/sec	loss=0.000474	lr=0.000100	heatmap_accuracy=0.762
+Epoch[114] Batch [299]	Speed: 1198.129335 samples/sec	loss=0.000474	lr=0.000100	heatmap_accuracy=0.761
+Epoch[114] Batch [399]	Speed: 1167.192712 samples/sec	loss=0.000475	lr=0.000100	heatmap_accuracy=0.761
+Epoch[114] Batch [499]	Speed: 1182.457433 samples/sec	loss=0.000474	lr=0.000100	heatmap_accuracy=0.761
+Epoch[114]		Speed: 1086 samples/sec over 137 secs	loss=0.000475
+
+Epoch[115] Batch [99]	Speed: 786.715438 samples/sec	loss=0.000473	lr=0.000100	heatmap_accuracy=0.759
+Epoch[115] Batch [199]	Speed: 1194.257368 samples/sec	loss=0.000474	lr=0.000100	heatmap_accuracy=0.761
+Epoch[115] Batch [299]	Speed: 1184.937967 samples/sec	loss=0.000473	lr=0.000100	heatmap_accuracy=0.761
+Epoch[115] Batch [399]	Speed: 1169.441795 samples/sec	loss=0.000474	lr=0.000100	heatmap_accuracy=0.761
+Epoch[115] Batch [499]	Speed: 1187.282190 samples/sec	loss=0.000474	lr=0.000100	heatmap_accuracy=0.761
+Epoch[115]		Speed: 1099 samples/sec over 135 secs	loss=0.000474
+
+Epoch[116] Batch [99]	Speed: 794.104552 samples/sec	loss=0.000477	lr=0.000100	heatmap_accuracy=0.760
+Epoch[116] Batch [199]	Speed: 1173.942834 samples/sec	loss=0.000476	lr=0.000100	heatmap_accuracy=0.760
+Epoch[116] Batch [299]	Speed: 1182.121683 samples/sec	loss=0.000476	lr=0.000100	heatmap_accuracy=0.760
+Epoch[116] Batch [399]	Speed: 1165.156673 samples/sec	loss=0.000475	lr=0.000100	heatmap_accuracy=0.760
+Epoch[116] Batch [499]	Speed: 1169.024257 samples/sec	loss=0.000475	lr=0.000100	heatmap_accuracy=0.760
+Epoch[116]		Speed: 1074 samples/sec over 139 secs	loss=0.000475
+
+Epoch[117] Batch [99]	Speed: 784.197636 samples/sec	loss=0.000473	lr=0.000100	heatmap_accuracy=0.761
+Epoch[117] Batch [199]	Speed: 1171.314513 samples/sec	loss=0.000473	lr=0.000100	heatmap_accuracy=0.761
+Epoch[117] Batch [299]	Speed: 1154.141850 samples/sec	loss=0.000475	lr=0.000100	heatmap_accuracy=0.761
+Epoch[117] Batch [399]	Speed: 1148.542074 samples/sec	loss=0.000474	lr=0.000100	heatmap_accuracy=0.761
+Epoch[117] Batch [499]	Speed: 1181.129011 samples/sec	loss=0.000474	lr=0.000100	heatmap_accuracy=0.761
+Epoch[117]		Speed: 1085 samples/sec over 137 secs	loss=0.000474
+
+Epoch[118] Batch [99]	Speed: 789.489483 samples/sec	loss=0.000476	lr=0.000100	heatmap_accuracy=0.760
+Epoch[118] Batch [199]	Speed: 1164.988323 samples/sec	loss=0.000474	lr=0.000100	heatmap_accuracy=0.761
+Epoch[118] Batch [299]	Speed: 1191.260150 samples/sec	loss=0.000474	lr=0.000100	heatmap_accuracy=0.761
+Epoch[118] Batch [399]	Speed: 1195.303975 samples/sec	loss=0.000474	lr=0.000100	heatmap_accuracy=0.761
+Epoch[118] Batch [499]	Speed: 1184.693774 samples/sec	loss=0.000474	lr=0.000100	heatmap_accuracy=0.761
+Epoch[118]		Speed: 1085 samples/sec over 137 secs	loss=0.000474
+
+Epoch[119] Batch [99]	Speed: 783.932511 samples/sec	loss=0.000472	lr=0.000100	heatmap_accuracy=0.764
+Epoch[119] Batch [199]	Speed: 1196.709106 samples/sec	loss=0.000473	lr=0.000100	heatmap_accuracy=0.763
+Epoch[119] Batch [299]	Speed: 1191.263467 samples/sec	loss=0.000474	lr=0.000100	heatmap_accuracy=0.762
+Epoch[119] Batch [399]	Speed: 1168.649701 samples/sec	loss=0.000474	lr=0.000100	heatmap_accuracy=0.762
+Epoch[119] Batch [499]	Speed: 1206.248255 samples/sec	loss=0.000473	lr=0.000100	heatmap_accuracy=0.762
+Epoch[119]		Speed: 1092 samples/sec over 136 secs	loss=0.000473
+
+Epoch[120] Batch [99]	Speed: 796.362617 samples/sec	loss=0.000476	lr=0.000010	heatmap_accuracy=0.762
+Epoch[120] Batch [199]	Speed: 1228.906369 samples/sec	loss=0.000475	lr=0.000010	heatmap_accuracy=0.761
+Epoch[120] Batch [299]	Speed: 1160.473878 samples/sec	loss=0.000474	lr=0.000010	heatmap_accuracy=0.762
+Epoch[120] Batch [399]	Speed: 1162.597034 samples/sec	loss=0.000474	lr=0.000010	heatmap_accuracy=0.762
+Epoch[120] Batch [499]	Speed: 1178.735185 samples/sec	loss=0.000473	lr=0.000010	heatmap_accuracy=0.763
+Epoch[120]		Speed: 1097 samples/sec over 136 secs	loss=0.000472
+
+Epoch[121] Batch [99]	Speed: 780.425887 samples/sec	loss=0.000473	lr=0.000010	heatmap_accuracy=0.761
+Epoch[121] Batch [199]	Speed: 1175.670093 samples/sec	loss=0.000472	lr=0.000010	heatmap_accuracy=0.762
+Epoch[121] Batch [299]	Speed: 1173.613030 samples/sec	loss=0.000472	lr=0.000010	heatmap_accuracy=0.763
+Epoch[121] Batch [399]	Speed: 1178.731213 samples/sec	loss=0.000473	lr=0.000010	heatmap_accuracy=0.762
+Epoch[121] Batch [499]	Speed: 1206.147186 samples/sec	loss=0.000473	lr=0.000010	heatmap_accuracy=0.763
+Epoch[121]		Speed: 1088 samples/sec over 137 secs	loss=0.000473
+
+Epoch[122] Batch [99]	Speed: 786.065008 samples/sec	loss=0.000473	lr=0.000010	heatmap_accuracy=0.762
+Epoch[122] Batch [199]	Speed: 1200.643718 samples/sec	loss=0.000472	lr=0.000010	heatmap_accuracy=0.763
+Epoch[122] Batch [299]	Speed: 1159.618597 samples/sec	loss=0.000471	lr=0.000010	heatmap_accuracy=0.763
+Epoch[122] Batch [399]	Speed: 1162.740694 samples/sec	loss=0.000472	lr=0.000010	heatmap_accuracy=0.762
+Epoch[122] Batch [499]	Speed: 1123.443069 samples/sec	loss=0.000472	lr=0.000010	heatmap_accuracy=0.763
+Epoch[122]		Speed: 1079 samples/sec over 138 secs	loss=0.000472
+
+Epoch[123] Batch [99]	Speed: 784.930443 samples/sec	loss=0.000475	lr=0.000010	heatmap_accuracy=0.760
+Epoch[123] Batch [199]	Speed: 1177.320995 samples/sec	loss=0.000474	lr=0.000010	heatmap_accuracy=0.761
+Epoch[123] Batch [299]	Speed: 1185.151361 samples/sec	loss=0.000473	lr=0.000010	heatmap_accuracy=0.761
+Epoch[123] Batch [399]	Speed: 1174.206639 samples/sec	loss=0.000473	lr=0.000010	heatmap_accuracy=0.761
+Epoch[123] Batch [499]	Speed: 1196.715761 samples/sec	loss=0.000473	lr=0.000010	heatmap_accuracy=0.762
+Epoch[123]		Speed: 1084 samples/sec over 137 secs	loss=0.000473
+
+Epoch[124] Batch [99]	Speed: 783.878159 samples/sec	loss=0.000474	lr=0.000010	heatmap_accuracy=0.762
+Epoch[124] Batch [199]	Speed: 1175.961836 samples/sec	loss=0.000473	lr=0.000010	heatmap_accuracy=0.762
+Epoch[124] Batch [299]	Speed: 1210.717307 samples/sec	loss=0.000473	lr=0.000010	heatmap_accuracy=0.762
+Epoch[124] Batch [399]	Speed: 1179.760908 samples/sec	loss=0.000473	lr=0.000010	heatmap_accuracy=0.762
+Epoch[124] Batch [499]	Speed: 1144.309259 samples/sec	loss=0.000473	lr=0.000010	heatmap_accuracy=0.762
+Epoch[124]		Speed: 1090 samples/sec over 137 secs	loss=0.000473
+
+Epoch[125] Batch [99]	Speed: 785.227355 samples/sec	loss=0.000471	lr=0.000010	heatmap_accuracy=0.762
+Epoch[125] Batch [199]	Speed: 1097.710879 samples/sec	loss=0.000471	lr=0.000010	heatmap_accuracy=0.763
+Epoch[125] Batch [299]	Speed: 1182.266526 samples/sec	loss=0.000473	lr=0.000010	heatmap_accuracy=0.763
+Epoch[125] Batch [399]	Speed: 1177.972584 samples/sec	loss=0.000472	lr=0.000010	heatmap_accuracy=0.763
+Epoch[125] Batch [499]	Speed: 1158.891943 samples/sec	loss=0.000472	lr=0.000010	heatmap_accuracy=0.763
+Epoch[125]		Speed: 1055 samples/sec over 141 secs	loss=0.000472
+
+Epoch[126] Batch [99]	Speed: 807.070634 samples/sec	loss=0.000473	lr=0.000010	heatmap_accuracy=0.762
+Epoch[126] Batch [199]	Speed: 1167.976720 samples/sec	loss=0.000472	lr=0.000010	heatmap_accuracy=0.763
+Epoch[126] Batch [299]	Speed: 1150.892773 samples/sec	loss=0.000472	lr=0.000010	heatmap_accuracy=0.763
+Epoch[126] Batch [399]	Speed: 1147.191628 samples/sec	loss=0.000471	lr=0.000010	heatmap_accuracy=0.763
+Epoch[126] Batch [499]	Speed: 1144.757216 samples/sec	loss=0.000471	lr=0.000010	heatmap_accuracy=0.763
+Epoch[126]		Speed: 1046 samples/sec over 142 secs	loss=0.000472
+
+Epoch[127] Batch [99]	Speed: 798.046418 samples/sec	loss=0.000472	lr=0.000010	heatmap_accuracy=0.764
+Epoch[127] Batch [199]	Speed: 1165.331572 samples/sec	loss=0.000472	lr=0.000010	heatmap_accuracy=0.763
+Epoch[127] Batch [299]	Speed: 1147.961679 samples/sec	loss=0.000472	lr=0.000010	heatmap_accuracy=0.764
+Epoch[127] Batch [399]	Speed: 1149.918337 samples/sec	loss=0.000471	lr=0.000010	heatmap_accuracy=0.764
+Epoch[127] Batch [499]	Speed: 1144.126812 samples/sec	loss=0.000471	lr=0.000010	heatmap_accuracy=0.764
+Epoch[127]		Speed: 1070 samples/sec over 139 secs	loss=0.000471
+
+Epoch[128] Batch [99]	Speed: 786.714499 samples/sec	loss=0.000467	lr=0.000010	heatmap_accuracy=0.767
+Epoch[128] Batch [199]	Speed: 1179.547908 samples/sec	loss=0.000470	lr=0.000010	heatmap_accuracy=0.765
+Epoch[128] Batch [299]	Speed: 1176.005331 samples/sec	loss=0.000471	lr=0.000010	heatmap_accuracy=0.765
+Epoch[128] Batch [399]	Speed: 1185.923197 samples/sec	loss=0.000472	lr=0.000010	heatmap_accuracy=0.764
+Epoch[128] Batch [499]	Speed: 1186.633613 samples/sec	loss=0.000471	lr=0.000010	heatmap_accuracy=0.764
+Epoch[128]		Speed: 1094 samples/sec over 136 secs	loss=0.000471
+
+Epoch[129] Batch [99]	Speed: 820.259963 samples/sec	loss=0.000472	lr=0.000010	heatmap_accuracy=0.763
+Epoch[129] Batch [199]	Speed: 1169.395525 samples/sec	loss=0.000471	lr=0.000010	heatmap_accuracy=0.764
+Epoch[129] Batch [299]	Speed: 1180.526230 samples/sec	loss=0.000471	lr=0.000010	heatmap_accuracy=0.764
+Epoch[129] Batch [399]	Speed: 1172.977158 samples/sec	loss=0.000472	lr=0.000010	heatmap_accuracy=0.763
+Epoch[129] Batch [499]	Speed: 1089.943695 samples/sec	loss=0.000472	lr=0.000010	heatmap_accuracy=0.763
+Epoch[129]		Speed: 1082 samples/sec over 138 secs	loss=0.000471
+
+Epoch[130] Batch [99]	Speed: 784.921911 samples/sec	loss=0.000469	lr=0.000010	heatmap_accuracy=0.763
+Epoch[130] Batch [199]	Speed: 1188.277701 samples/sec	loss=0.000471	lr=0.000010	heatmap_accuracy=0.764
+Epoch[130] Batch [299]	Speed: 1144.048684 samples/sec	loss=0.000471	lr=0.000010	heatmap_accuracy=0.763
+Epoch[130] Batch [399]	Speed: 1140.851683 samples/sec	loss=0.000472	lr=0.000010	heatmap_accuracy=0.763
+Epoch[130] Batch [499]	Speed: 1097.338688 samples/sec	loss=0.000472	lr=0.000010	heatmap_accuracy=0.763
+Epoch[130]		Speed: 1044 samples/sec over 143 secs	loss=0.000472
+
+Epoch[131] Batch [99]	Speed: 806.068740 samples/sec	loss=0.000472	lr=0.000010	heatmap_accuracy=0.764
+Epoch[131] Batch [199]	Speed: 1197.652363 samples/sec	loss=0.000471	lr=0.000010	heatmap_accuracy=0.764
+Epoch[131] Batch [299]	Speed: 1182.420778 samples/sec	loss=0.000470	lr=0.000010	heatmap_accuracy=0.765
+Epoch[131] Batch [399]	Speed: 1202.540313 samples/sec	loss=0.000470	lr=0.000010	heatmap_accuracy=0.765
+Epoch[131] Batch [499]	Speed: 1183.731974 samples/sec	loss=0.000470	lr=0.000010	heatmap_accuracy=0.765
+Epoch[131]		Speed: 1107 samples/sec over 135 secs	loss=0.000470
+
+Epoch[132] Batch [99]	Speed: 779.429530 samples/sec	loss=0.000470	lr=0.000010	heatmap_accuracy=0.764
+Epoch[132] Batch [199]	Speed: 1151.780678 samples/sec	loss=0.000472	lr=0.000010	heatmap_accuracy=0.763
+Epoch[132] Batch [299]	Speed: 1172.278170 samples/sec	loss=0.000472	lr=0.000010	heatmap_accuracy=0.763
+Epoch[132] Batch [399]	Speed: 1189.075106 samples/sec	loss=0.000472	lr=0.000010	heatmap_accuracy=0.763
+Epoch[132] Batch [499]	Speed: 1184.989674 samples/sec	loss=0.000472	lr=0.000010	heatmap_accuracy=0.763
+Epoch[132]		Speed: 1077 samples/sec over 138 secs	loss=0.000472
+
+Epoch[133] Batch [99]	Speed: 792.506220 samples/sec	loss=0.000472	lr=0.000010	heatmap_accuracy=0.762
+Epoch[133] Batch [199]	Speed: 1146.383920 samples/sec	loss=0.000472	lr=0.000010	heatmap_accuracy=0.764
+Epoch[133] Batch [299]	Speed: 1195.205850 samples/sec	loss=0.000471	lr=0.000010	heatmap_accuracy=0.764
+Epoch[133] Batch [399]	Speed: 1137.504514 samples/sec	loss=0.000471	lr=0.000010	heatmap_accuracy=0.764
+Epoch[133] Batch [499]	Speed: 1138.580282 samples/sec	loss=0.000471	lr=0.000010	heatmap_accuracy=0.764
+Epoch[133]		Speed: 1060 samples/sec over 140 secs	loss=0.000471
+
+Epoch[134] Batch [99]	Speed: 799.657646 samples/sec	loss=0.000471	lr=0.000010	heatmap_accuracy=0.763
+Epoch[134] Batch [199]	Speed: 1191.688449 samples/sec	loss=0.000471	lr=0.000010	heatmap_accuracy=0.763
+Epoch[134] Batch [299]	Speed: 1170.383554 samples/sec	loss=0.000470	lr=0.000010	heatmap_accuracy=0.764
+Epoch[134] Batch [399]	Speed: 1173.660751 samples/sec	loss=0.000471	lr=0.000010	heatmap_accuracy=0.764
+Epoch[134] Batch [499]	Speed: 1105.117116 samples/sec	loss=0.000472	lr=0.000010	heatmap_accuracy=0.764
+Epoch[134]		Speed: 1078 samples/sec over 138 secs	loss=0.000471
+
+Epoch[135] Batch [99]	Speed: 792.125366 samples/sec	loss=0.000472	lr=0.000010	heatmap_accuracy=0.762
+Epoch[135] Batch [199]	Speed: 1186.439611 samples/sec	loss=0.000471	lr=0.000010	heatmap_accuracy=0.763
+Epoch[135] Batch [299]	Speed: 1190.805904 samples/sec	loss=0.000471	lr=0.000010	heatmap_accuracy=0.763
+Epoch[135] Batch [399]	Speed: 1195.603575 samples/sec	loss=0.000471	lr=0.000010	heatmap_accuracy=0.763
+Epoch[135] Batch [499]	Speed: 1214.320915 samples/sec	loss=0.000472	lr=0.000010	heatmap_accuracy=0.763
+Epoch[135]		Speed: 1092 samples/sec over 136 secs	loss=0.000472
+
+Epoch[136] Batch [99]	Speed: 788.824335 samples/sec	loss=0.000469	lr=0.000010	heatmap_accuracy=0.765
+Epoch[136] Batch [199]	Speed: 1163.071823 samples/sec	loss=0.000470	lr=0.000010	heatmap_accuracy=0.764
+Epoch[136] Batch [299]	Speed: 1198.320573 samples/sec	loss=0.000471	lr=0.000010	heatmap_accuracy=0.763
+Epoch[136] Batch [399]	Speed: 1160.122266 samples/sec	loss=0.000472	lr=0.000010	heatmap_accuracy=0.763
+Epoch[136] Batch [499]	Speed: 1156.226141 samples/sec	loss=0.000472	lr=0.000010	heatmap_accuracy=0.763
+Epoch[136]		Speed: 1075 samples/sec over 138 secs	loss=0.000472
+
+Epoch[137] Batch [99]	Speed: 794.455545 samples/sec	loss=0.000474	lr=0.000010	heatmap_accuracy=0.762
+Epoch[137] Batch [199]	Speed: 1179.101047 samples/sec	loss=0.000473	lr=0.000010	heatmap_accuracy=0.762
+Epoch[137] Batch [299]	Speed: 1197.817124 samples/sec	loss=0.000471	lr=0.000010	heatmap_accuracy=0.764
+Epoch[137] Batch [399]	Speed: 1179.455034 samples/sec	loss=0.000471	lr=0.000010	heatmap_accuracy=0.763
+Epoch[137] Batch [499]	Speed: 1223.759908 samples/sec	loss=0.000472	lr=0.000010	heatmap_accuracy=0.763
+Epoch[137]		Speed: 1107 samples/sec over 134 secs	loss=0.000471
+
+Epoch[138] Batch [99]	Speed: 785.199092 samples/sec	loss=0.000473	lr=0.000010	heatmap_accuracy=0.763
+Epoch[138] Batch [199]	Speed: 1158.929355 samples/sec	loss=0.000472	lr=0.000010	heatmap_accuracy=0.763
+Epoch[138] Batch [299]	Speed: 1202.657832 samples/sec	loss=0.000472	lr=0.000010	heatmap_accuracy=0.763
+Epoch[138] Batch [399]	Speed: 1187.488904 samples/sec	loss=0.000472	lr=0.000010	heatmap_accuracy=0.763
+Epoch[138] Batch [499]	Speed: 1184.524358 samples/sec	loss=0.000472	lr=0.000010	heatmap_accuracy=0.763
+Epoch[138]		Speed: 1084 samples/sec over 137 secs	loss=0.000472
+
+Epoch[139] Batch [99]	Speed: 802.378523 samples/sec	loss=0.000469	lr=0.000010	heatmap_accuracy=0.765
+Epoch[139] Batch [199]	Speed: 1171.312098 samples/sec	loss=0.000470	lr=0.000010	heatmap_accuracy=0.765
+Epoch[139] Batch [299]	Speed: 1189.418863 samples/sec	loss=0.000471	lr=0.000010	heatmap_accuracy=0.764
+Epoch[139] Batch [399]	Speed: 1178.200232 samples/sec	loss=0.000471	lr=0.000010	heatmap_accuracy=0.764
+Epoch[139] Batch [499]	Speed: 1202.681123 samples/sec	loss=0.000471	lr=0.000010	heatmap_accuracy=0.764
+Epoch[139]		Speed: 1104 samples/sec over 135 secs	loss=0.000472
+

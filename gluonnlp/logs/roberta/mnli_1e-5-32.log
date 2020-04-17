@@ -1,0 +1,1548 @@
+INFO:root:Namespace(accumulate=None, batch_size=32, bert_dataset='openwebtext_ccnews_stories_books_cased', bert_model='roberta_12_768_12', dev_batch_size=8, dtype='float32', early_stop=2, epochs=10, epsilon=1e-06, gpu=1, log_interval=100, lr=1e-05, max_len=128, model_parameters=None, only_inference=False, output_dir='./output_dir', pad=False, pretrained_bert_parameters=None, seed=2, task_name='MNLI', warmup_ratio=0.06)
+INFO:root:processing dataset...
+INFO:root:Now we are doing BERT classification training on gpu(1)!
+INFO:root:[Epoch 1 Batch 100/12276] loss=1.1039, lr=0.0000001, metrics:accuracy:0.3291
+INFO:root:[Epoch 1 Batch 200/12276] loss=1.1012, lr=0.0000003, metrics:accuracy:0.3330
+INFO:root:[Epoch 1 Batch 300/12276] loss=1.1005, lr=0.0000004, metrics:accuracy:0.3308
+INFO:root:[Epoch 1 Batch 400/12276] loss=1.0980, lr=0.0000005, metrics:accuracy:0.3348
+INFO:root:[Epoch 1 Batch 500/12276] loss=1.0981, lr=0.0000007, metrics:accuracy:0.3359
+INFO:root:[Epoch 1 Batch 600/12276] loss=1.0958, lr=0.0000008, metrics:accuracy:0.3404
+INFO:root:[Epoch 1 Batch 700/12276] loss=1.0821, lr=0.0000009, metrics:accuracy:0.3533
+INFO:root:[Epoch 1 Batch 800/12276] loss=1.0386, lr=0.0000011, metrics:accuracy:0.3716
+INFO:root:[Epoch 1 Batch 900/12276] loss=0.9773, lr=0.0000012, metrics:accuracy:0.3929
+INFO:root:[Epoch 1 Batch 1000/12276] loss=0.9240, lr=0.0000014, metrics:accuracy:0.4135
+INFO:root:[Epoch 1 Batch 1100/12276] loss=0.8182, lr=0.0000015, metrics:accuracy:0.4356
+INFO:root:[Epoch 1 Batch 1200/12276] loss=0.7256, lr=0.0000016, metrics:accuracy:0.4573
+INFO:root:[Epoch 1 Batch 1300/12276] loss=0.6907, lr=0.0000018, metrics:accuracy:0.4773
+INFO:root:[Epoch 1 Batch 1400/12276] loss=0.6693, lr=0.0000019, metrics:accuracy:0.4950
+INFO:root:[Epoch 1 Batch 1500/12276] loss=0.6349, lr=0.0000020, metrics:accuracy:0.5118
+INFO:root:[Epoch 1 Batch 1600/12276] loss=0.6293, lr=0.0000022, metrics:accuracy:0.5263
+INFO:root:[Epoch 1 Batch 1700/12276] loss=0.6123, lr=0.0000023, metrics:accuracy:0.5395
+INFO:root:[Epoch 1 Batch 1800/12276] loss=0.6283, lr=0.0000024, metrics:accuracy:0.5510
+INFO:root:[Epoch 1 Batch 1900/12276] loss=0.5676, lr=0.0000026, metrics:accuracy:0.5630
+INFO:root:[Epoch 1 Batch 2000/12276] loss=0.5814, lr=0.0000027, metrics:accuracy:0.5737
+INFO:root:[Epoch 1 Batch 2100/12276] loss=0.5815, lr=0.0000029, metrics:accuracy:0.5831
+INFO:root:[Epoch 1 Batch 2200/12276] loss=0.5744, lr=0.0000030, metrics:accuracy:0.5917
+INFO:root:[Epoch 1 Batch 2300/12276] loss=0.5658, lr=0.0000031, metrics:accuracy:0.5994
+INFO:root:[Epoch 1 Batch 2400/12276] loss=0.5659, lr=0.0000033, metrics:accuracy:0.6064
+INFO:root:[Epoch 1 Batch 2500/12276] loss=0.5626, lr=0.0000034, metrics:accuracy:0.6130
+INFO:root:[Epoch 1 Batch 2600/12276] loss=0.5488, lr=0.0000035, metrics:accuracy:0.6197
+INFO:root:[Epoch 1 Batch 2700/12276] loss=0.5517, lr=0.0000037, metrics:accuracy:0.6258
+INFO:root:[Epoch 1 Batch 2800/12276] loss=0.5469, lr=0.0000038, metrics:accuracy:0.6317
+INFO:root:[Epoch 1 Batch 2900/12276] loss=0.5323, lr=0.0000039, metrics:accuracy:0.6369
+INFO:root:[Epoch 1 Batch 3000/12276] loss=0.5350, lr=0.0000041, metrics:accuracy:0.6418
+INFO:root:[Epoch 1 Batch 3100/12276] loss=0.5232, lr=0.0000042, metrics:accuracy:0.6469
+INFO:root:[Epoch 1 Batch 3200/12276] loss=0.5407, lr=0.0000043, metrics:accuracy:0.6511
+INFO:root:[Epoch 1 Batch 3300/12276] loss=0.5536, lr=0.0000045, metrics:accuracy:0.6552
+INFO:root:[Epoch 1 Batch 3400/12276] loss=0.4970, lr=0.0000046, metrics:accuracy:0.6598
+INFO:root:[Epoch 1 Batch 3500/12276] loss=0.5200, lr=0.0000048, metrics:accuracy:0.6637
+INFO:root:[Epoch 1 Batch 3600/12276] loss=0.5221, lr=0.0000049, metrics:accuracy:0.6674
+INFO:root:[Epoch 1 Batch 3700/12276] loss=0.4897, lr=0.0000050, metrics:accuracy:0.6711
+INFO:root:[Epoch 1 Batch 3800/12276] loss=0.5068, lr=0.0000052, metrics:accuracy:0.6746
+INFO:root:[Epoch 1 Batch 3900/12276] loss=0.4994, lr=0.0000053, metrics:accuracy:0.6779
+INFO:root:[Epoch 1 Batch 4000/12276] loss=0.4986, lr=0.0000054, metrics:accuracy:0.6811
+INFO:root:[Epoch 1 Batch 4100/12276] loss=0.4893, lr=0.0000056, metrics:accuracy:0.6842
+INFO:root:[Epoch 1 Batch 4200/12276] loss=0.5023, lr=0.0000057, metrics:accuracy:0.6871
+INFO:root:[Epoch 1 Batch 4300/12276] loss=0.4717, lr=0.0000058, metrics:accuracy:0.6902
+INFO:root:[Epoch 1 Batch 4400/12276] loss=0.5117, lr=0.0000060, metrics:accuracy:0.6927
+INFO:root:[Epoch 1 Batch 4500/12276] loss=0.4813, lr=0.0000061, metrics:accuracy:0.6954
+INFO:root:[Epoch 1 Batch 4600/12276] loss=0.5090, lr=0.0000062, metrics:accuracy:0.6978
+INFO:root:[Epoch 1 Batch 4700/12276] loss=0.5112, lr=0.0000064, metrics:accuracy:0.6999
+INFO:root:[Epoch 1 Batch 4800/12276] loss=0.4676, lr=0.0000065, metrics:accuracy:0.7024
+INFO:root:[Epoch 1 Batch 4900/12276] loss=0.4764, lr=0.0000067, metrics:accuracy:0.7048
+INFO:root:[Epoch 1 Batch 5000/12276] loss=0.4861, lr=0.0000068, metrics:accuracy:0.7069
+INFO:root:[Epoch 1 Batch 5100/12276] loss=0.4812, lr=0.0000069, metrics:accuracy:0.7089
+INFO:root:[Epoch 1 Batch 5200/12276] loss=0.4974, lr=0.0000071, metrics:accuracy:0.7108
+INFO:root:[Epoch 1 Batch 5300/12276] loss=0.4728, lr=0.0000072, metrics:accuracy:0.7128
+INFO:root:[Epoch 1 Batch 5400/12276] loss=0.4472, lr=0.0000073, metrics:accuracy:0.7148
+INFO:root:[Epoch 1 Batch 5500/12276] loss=0.4800, lr=0.0000075, metrics:accuracy:0.7166
+INFO:root:[Epoch 1 Batch 5600/12276] loss=0.4498, lr=0.0000076, metrics:accuracy:0.7185
+INFO:root:[Epoch 1 Batch 5700/12276] loss=0.4731, lr=0.0000077, metrics:accuracy:0.7201
+INFO:root:[Epoch 1 Batch 5800/12276] loss=0.4604, lr=0.0000079, metrics:accuracy:0.7220
+INFO:root:[Epoch 1 Batch 5900/12276] loss=0.4744, lr=0.0000080, metrics:accuracy:0.7236
+INFO:root:[Epoch 1 Batch 6000/12276] loss=0.4721, lr=0.0000081, metrics:accuracy:0.7252
+INFO:root:[Epoch 1 Batch 6100/12276] loss=0.4368, lr=0.0000083, metrics:accuracy:0.7270
+INFO:root:[Epoch 1 Batch 6200/12276] loss=0.4749, lr=0.0000084, metrics:accuracy:0.7284
+INFO:root:[Epoch 1 Batch 6300/12276] loss=0.4409, lr=0.0000086, metrics:accuracy:0.7300
+INFO:root:[Epoch 1 Batch 6400/12276] loss=0.4502, lr=0.0000087, metrics:accuracy:0.7316
+INFO:root:[Epoch 1 Batch 6500/12276] loss=0.4902, lr=0.0000088, metrics:accuracy:0.7328
+INFO:root:[Epoch 1 Batch 6600/12276] loss=0.4378, lr=0.0000090, metrics:accuracy:0.7342
+INFO:root:[Epoch 1 Batch 6700/12276] loss=0.4382, lr=0.0000091, metrics:accuracy:0.7356
+INFO:root:[Epoch 1 Batch 6800/12276] loss=0.4451, lr=0.0000092, metrics:accuracy:0.7370
+INFO:root:[Epoch 1 Batch 6900/12276] loss=0.4456, lr=0.0000094, metrics:accuracy:0.7383
+INFO:root:[Epoch 1 Batch 7000/12276] loss=0.4331, lr=0.0000095, metrics:accuracy:0.7397
+INFO:root:[Epoch 1 Batch 7100/12276] loss=0.4591, lr=0.0000096, metrics:accuracy:0.7409
+INFO:root:[Epoch 1 Batch 7200/12276] loss=0.4467, lr=0.0000098, metrics:accuracy:0.7422
+INFO:root:[Epoch 1 Batch 7300/12276] loss=0.4373, lr=0.0000099, metrics:accuracy:0.7435
+INFO:root:[Epoch 1 Batch 7400/12276] loss=0.4459, lr=0.0000100, metrics:accuracy:0.7446
+INFO:root:[Epoch 1 Batch 7500/12276] loss=0.4277, lr=0.0000100, metrics:accuracy:0.7459
+INFO:root:[Epoch 1 Batch 7600/12276] loss=0.4464, lr=0.0000100, metrics:accuracy:0.7470
+INFO:root:[Epoch 1 Batch 7700/12276] loss=0.4371, lr=0.0000100, metrics:accuracy:0.7481
+INFO:root:[Epoch 1 Batch 7800/12276] loss=0.4309, lr=0.0000100, metrics:accuracy:0.7492
+INFO:root:[Epoch 1 Batch 7900/12276] loss=0.4617, lr=0.0000100, metrics:accuracy:0.7502
+INFO:root:[Epoch 1 Batch 8000/12276] loss=0.4507, lr=0.0000099, metrics:accuracy:0.7511
+INFO:root:[Epoch 1 Batch 8100/12276] loss=0.4604, lr=0.0000099, metrics:accuracy:0.7520
+INFO:root:[Epoch 1 Batch 8200/12276] loss=0.4550, lr=0.0000099, metrics:accuracy:0.7530
+INFO:root:[Epoch 1 Batch 8300/12276] loss=0.4407, lr=0.0000099, metrics:accuracy:0.7539
+INFO:root:[Epoch 1 Batch 8400/12276] loss=0.4407, lr=0.0000099, metrics:accuracy:0.7548
+INFO:root:[Epoch 1 Batch 8500/12276] loss=0.4221, lr=0.0000099, metrics:accuracy:0.7558
+INFO:root:[Epoch 1 Batch 8600/12276] loss=0.4161, lr=0.0000099, metrics:accuracy:0.7569
+INFO:root:[Epoch 1 Batch 8700/12276] loss=0.4299, lr=0.0000099, metrics:accuracy:0.7578
+INFO:root:[Epoch 1 Batch 8800/12276] loss=0.4453, lr=0.0000099, metrics:accuracy:0.7586
+INFO:root:[Epoch 1 Batch 8900/12276] loss=0.4388, lr=0.0000099, metrics:accuracy:0.7594
+INFO:root:[Epoch 1 Batch 9000/12276] loss=0.4167, lr=0.0000099, metrics:accuracy:0.7602
+INFO:root:[Epoch 1 Batch 9100/12276] loss=0.4537, lr=0.0000098, metrics:accuracy:0.7610
+INFO:root:[Epoch 1 Batch 9200/12276] loss=0.4285, lr=0.0000098, metrics:accuracy:0.7618
+INFO:root:[Epoch 1 Batch 9300/12276] loss=0.4278, lr=0.0000098, metrics:accuracy:0.7626
+INFO:root:[Epoch 1 Batch 9400/12276] loss=0.4295, lr=0.0000098, metrics:accuracy:0.7633
+INFO:root:[Epoch 1 Batch 9500/12276] loss=0.4236, lr=0.0000098, metrics:accuracy:0.7642
+INFO:root:[Epoch 1 Batch 9600/12276] loss=0.4172, lr=0.0000098, metrics:accuracy:0.7649
+INFO:root:[Epoch 1 Batch 9700/12276] loss=0.4341, lr=0.0000098, metrics:accuracy:0.7656
+INFO:root:[Epoch 1 Batch 9800/12276] loss=0.4149, lr=0.0000098, metrics:accuracy:0.7664
+INFO:root:[Epoch 1 Batch 9900/12276] loss=0.4204, lr=0.0000098, metrics:accuracy:0.7671
+INFO:root:[Epoch 1 Batch 10000/12276] loss=0.4319, lr=0.0000098, metrics:accuracy:0.7678
+INFO:root:[Epoch 1 Batch 10100/12276] loss=0.4398, lr=0.0000098, metrics:accuracy:0.7685
+INFO:root:[Epoch 1 Batch 10200/12276] loss=0.4171, lr=0.0000098, metrics:accuracy:0.7692
+INFO:root:[Epoch 1 Batch 10300/12276] loss=0.4410, lr=0.0000097, metrics:accuracy:0.7698
+INFO:root:[Epoch 1 Batch 10400/12276] loss=0.4342, lr=0.0000097, metrics:accuracy:0.7703
+INFO:root:[Epoch 1 Batch 10500/12276] loss=0.3955, lr=0.0000097, metrics:accuracy:0.7711
+INFO:root:[Epoch 1 Batch 10600/12276] loss=0.4218, lr=0.0000097, metrics:accuracy:0.7717
+INFO:root:[Epoch 1 Batch 10700/12276] loss=0.4237, lr=0.0000097, metrics:accuracy:0.7723
+INFO:root:[Epoch 1 Batch 10800/12276] loss=0.4469, lr=0.0000097, metrics:accuracy:0.7729
+INFO:root:[Epoch 1 Batch 10900/12276] loss=0.3999, lr=0.0000097, metrics:accuracy:0.7736
+INFO:root:[Epoch 1 Batch 11000/12276] loss=0.4282, lr=0.0000097, metrics:accuracy:0.7742
+INFO:root:[Epoch 1 Batch 11100/12276] loss=0.4364, lr=0.0000097, metrics:accuracy:0.7747
+INFO:root:[Epoch 1 Batch 11200/12276] loss=0.4268, lr=0.0000097, metrics:accuracy:0.7753
+INFO:root:[Epoch 1 Batch 11300/12276] loss=0.4296, lr=0.0000097, metrics:accuracy:0.7757
+INFO:root:[Epoch 1 Batch 11400/12276] loss=0.4174, lr=0.0000097, metrics:accuracy:0.7763
+INFO:root:[Epoch 1 Batch 11500/12276] loss=0.4384, lr=0.0000096, metrics:accuracy:0.7768
+INFO:root:[Epoch 1 Batch 11600/12276] loss=0.4159, lr=0.0000096, metrics:accuracy:0.7774
+INFO:root:[Epoch 1 Batch 11700/12276] loss=0.4158, lr=0.0000096, metrics:accuracy:0.7779
+INFO:root:[Epoch 1 Batch 11800/12276] loss=0.4184, lr=0.0000096, metrics:accuracy:0.7784
+INFO:root:[Epoch 1 Batch 11900/12276] loss=0.3994, lr=0.0000096, metrics:accuracy:0.7790
+INFO:root:[Epoch 1 Batch 12000/12276] loss=0.4095, lr=0.0000096, metrics:accuracy:0.7795
+INFO:root:[Epoch 1 Batch 12100/12276] loss=0.4102, lr=0.0000096, metrics:accuracy:0.7800
+INFO:root:[Epoch 1 Batch 12200/12276] loss=0.4239, lr=0.0000096, metrics:accuracy:0.7805
+INFO:root:Now we are doing evaluation on dev_matched with gpu(1).
+INFO:root:[Batch 100/1227] loss=0.3688, metrics:accuracy:0.8488
+INFO:root:[Batch 200/1227] loss=0.3771, metrics:accuracy:0.8494
+INFO:root:[Batch 300/1227] loss=0.3672, metrics:accuracy:0.8492
+INFO:root:[Batch 400/1227] loss=0.3620, metrics:accuracy:0.8541
+INFO:root:[Batch 500/1227] loss=0.4019, metrics:accuracy:0.8515
+INFO:root:[Batch 600/1227] loss=0.3577, metrics:accuracy:0.8529
+INFO:root:[Batch 700/1227] loss=0.3836, metrics:accuracy:0.8521
+INFO:root:[Batch 800/1227] loss=0.3567, metrics:accuracy:0.8531
+INFO:root:[Batch 900/1227] loss=0.3763, metrics:accuracy:0.8524
+INFO:root:[Batch 1000/1227] loss=0.4307, metrics:accuracy:0.8502
+INFO:root:[Batch 1100/1227] loss=0.4051, metrics:accuracy:0.8493
+INFO:root:[Batch 1200/1227] loss=0.3847, metrics:accuracy:0.8490
+INFO:root:validation metrics:accuracy:0.8493
+INFO:root:Time cost=29.24s, throughput=335.69 samples/s
+INFO:root:Now we are doing evaluation on dev_mismatched with gpu(1).
+INFO:root:[Batch 100/1229] loss=0.3697, metrics:accuracy:0.8650
+INFO:root:[Batch 200/1229] loss=0.3680, metrics:accuracy:0.8612
+INFO:root:[Batch 300/1229] loss=0.3427, metrics:accuracy:0.8629
+INFO:root:[Batch 400/1229] loss=0.3698, metrics:accuracy:0.8609
+INFO:root:[Batch 500/1229] loss=0.3766, metrics:accuracy:0.8580
+INFO:root:[Batch 600/1229] loss=0.3354, metrics:accuracy:0.8617
+INFO:root:[Batch 700/1229] loss=0.3854, metrics:accuracy:0.8604
+INFO:root:[Batch 800/1229] loss=0.3645, metrics:accuracy:0.8591
+INFO:root:[Batch 900/1229] loss=0.3898, metrics:accuracy:0.8575
+INFO:root:[Batch 1000/1229] loss=0.3571, metrics:accuracy:0.8591
+INFO:root:[Batch 1100/1229] loss=0.4014, metrics:accuracy:0.8592
+INFO:root:[Batch 1200/1229] loss=0.3778, metrics:accuracy:0.8586
+INFO:root:validation metrics:accuracy:0.8590
+INFO:root:Time cost=28.82s, throughput=341.15 samples/s
+INFO:root:params saved in: ./output_dir/model_bert_MNLI_0.params
+INFO:root:Time cost=1893.16s
+INFO:root:[Epoch 2 Batch 100/12276] loss=0.3709, lr=0.0000096, metrics:accuracy:0.8591
+INFO:root:[Epoch 2 Batch 200/12276] loss=0.3655, lr=0.0000096, metrics:accuracy:0.8609
+INFO:root:[Epoch 2 Batch 300/12276] loss=0.3820, lr=0.0000095, metrics:accuracy:0.8588
+INFO:root:[Epoch 2 Batch 400/12276] loss=0.3815, lr=0.0000095, metrics:accuracy:0.8584
+INFO:root:[Epoch 2 Batch 500/12276] loss=0.3783, lr=0.0000095, metrics:accuracy:0.8589
+INFO:root:[Epoch 2 Batch 600/12276] loss=0.3787, lr=0.0000095, metrics:accuracy:0.8586
+INFO:root:[Epoch 2 Batch 700/12276] loss=0.3625, lr=0.0000095, metrics:accuracy:0.8599
+INFO:root:[Epoch 2 Batch 800/12276] loss=0.3625, lr=0.0000095, metrics:accuracy:0.8610
+INFO:root:[Epoch 2 Batch 900/12276] loss=0.3586, lr=0.0000095, metrics:accuracy:0.8618
+INFO:root:[Epoch 2 Batch 1000/12276] loss=0.3607, lr=0.0000095, metrics:accuracy:0.8618
+INFO:root:[Epoch 2 Batch 1100/12276] loss=0.3851, lr=0.0000095, metrics:accuracy:0.8618
+INFO:root:[Epoch 2 Batch 1200/12276] loss=0.3621, lr=0.0000095, metrics:accuracy:0.8619
+INFO:root:[Epoch 2 Batch 1300/12276] loss=0.3662, lr=0.0000095, metrics:accuracy:0.8621
+INFO:root:[Epoch 2 Batch 1400/12276] loss=0.3744, lr=0.0000095, metrics:accuracy:0.8619
+INFO:root:[Epoch 2 Batch 1500/12276] loss=0.3521, lr=0.0000094, metrics:accuracy:0.8626
+INFO:root:[Epoch 2 Batch 1600/12276] loss=0.3788, lr=0.0000094, metrics:accuracy:0.8625
+INFO:root:[Epoch 2 Batch 1700/12276] loss=0.3721, lr=0.0000094, metrics:accuracy:0.8624
+INFO:root:[Epoch 2 Batch 1800/12276] loss=0.3871, lr=0.0000094, metrics:accuracy:0.8617
+INFO:root:[Epoch 2 Batch 1900/12276] loss=0.3685, lr=0.0000094, metrics:accuracy:0.8618
+INFO:root:[Epoch 2 Batch 2000/12276] loss=0.3705, lr=0.0000094, metrics:accuracy:0.8618
+INFO:root:[Epoch 2 Batch 2100/12276] loss=0.3677, lr=0.0000094, metrics:accuracy:0.8618
+INFO:root:[Epoch 2 Batch 2200/12276] loss=0.3789, lr=0.0000094, metrics:accuracy:0.8614
+INFO:root:[Epoch 2 Batch 2300/12276] loss=0.3630, lr=0.0000094, metrics:accuracy:0.8616
+INFO:root:[Epoch 2 Batch 2400/12276] loss=0.3740, lr=0.0000094, metrics:accuracy:0.8615
+INFO:root:[Epoch 2 Batch 2500/12276] loss=0.3796, lr=0.0000094, metrics:accuracy:0.8613
+INFO:root:[Epoch 2 Batch 2600/12276] loss=0.3706, lr=0.0000093, metrics:accuracy:0.8612
+INFO:root:[Epoch 2 Batch 2700/12276] loss=0.3725, lr=0.0000093, metrics:accuracy:0.8612
+INFO:root:[Epoch 2 Batch 2800/12276] loss=0.3485, lr=0.0000093, metrics:accuracy:0.8614
+INFO:root:[Epoch 2 Batch 2900/12276] loss=0.3472, lr=0.0000093, metrics:accuracy:0.8618
+INFO:root:[Epoch 2 Batch 3000/12276] loss=0.3516, lr=0.0000093, metrics:accuracy:0.8621
+INFO:root:[Epoch 2 Batch 3100/12276] loss=0.3697, lr=0.0000093, metrics:accuracy:0.8620
+INFO:root:[Epoch 2 Batch 3200/12276] loss=0.3855, lr=0.0000093, metrics:accuracy:0.8619
+INFO:root:[Epoch 2 Batch 3300/12276] loss=0.3818, lr=0.0000093, metrics:accuracy:0.8617
+INFO:root:[Epoch 2 Batch 3400/12276] loss=0.3461, lr=0.0000093, metrics:accuracy:0.8620
+INFO:root:[Epoch 2 Batch 3500/12276] loss=0.3447, lr=0.0000093, metrics:accuracy:0.8624
+INFO:root:[Epoch 2 Batch 3600/12276] loss=0.3545, lr=0.0000093, metrics:accuracy:0.8627
+INFO:root:[Epoch 2 Batch 3700/12276] loss=0.3412, lr=0.0000093, metrics:accuracy:0.8629
+INFO:root:[Epoch 2 Batch 3800/12276] loss=0.3631, lr=0.0000092, metrics:accuracy:0.8630
+INFO:root:[Epoch 2 Batch 3900/12276] loss=0.3804, lr=0.0000092, metrics:accuracy:0.8627
+INFO:root:[Epoch 2 Batch 4000/12276] loss=0.3667, lr=0.0000092, metrics:accuracy:0.8628
+INFO:root:[Epoch 2 Batch 4100/12276] loss=0.3690, lr=0.0000092, metrics:accuracy:0.8626
+INFO:root:[Epoch 2 Batch 4200/12276] loss=0.3557, lr=0.0000092, metrics:accuracy:0.8628
+INFO:root:[Epoch 2 Batch 4300/12276] loss=0.3729, lr=0.0000092, metrics:accuracy:0.8626
+INFO:root:[Epoch 2 Batch 4400/12276] loss=0.3671, lr=0.0000092, metrics:accuracy:0.8625
+INFO:root:[Epoch 2 Batch 4500/12276] loss=0.3577, lr=0.0000092, metrics:accuracy:0.8626
+INFO:root:[Epoch 2 Batch 4600/12276] loss=0.3662, lr=0.0000092, metrics:accuracy:0.8625
+INFO:root:[Epoch 2 Batch 4700/12276] loss=0.3553, lr=0.0000092, metrics:accuracy:0.8626
+INFO:root:[Epoch 2 Batch 4800/12276] loss=0.3418, lr=0.0000092, metrics:accuracy:0.8628
+INFO:root:[Epoch 2 Batch 4900/12276] loss=0.3878, lr=0.0000091, metrics:accuracy:0.8626
+INFO:root:[Epoch 2 Batch 5000/12276] loss=0.3588, lr=0.0000091, metrics:accuracy:0.8626
+INFO:root:[Epoch 2 Batch 5100/12276] loss=0.3577, lr=0.0000091, metrics:accuracy:0.8625
+INFO:root:[Epoch 2 Batch 5200/12276] loss=0.3558, lr=0.0000091, metrics:accuracy:0.8626
+INFO:root:[Epoch 2 Batch 5300/12276] loss=0.3498, lr=0.0000091, metrics:accuracy:0.8627
+INFO:root:[Epoch 2 Batch 5400/12276] loss=0.3774, lr=0.0000091, metrics:accuracy:0.8627
+INFO:root:[Epoch 2 Batch 5500/12276] loss=0.3519, lr=0.0000091, metrics:accuracy:0.8628
+INFO:root:[Epoch 2 Batch 5600/12276] loss=0.3807, lr=0.0000091, metrics:accuracy:0.8626
+INFO:root:[Epoch 2 Batch 5700/12276] loss=0.3395, lr=0.0000091, metrics:accuracy:0.8627
+INFO:root:[Epoch 2 Batch 5800/12276] loss=0.3560, lr=0.0000091, metrics:accuracy:0.8627
+INFO:root:[Epoch 2 Batch 5900/12276] loss=0.3565, lr=0.0000091, metrics:accuracy:0.8627
+INFO:root:[Epoch 2 Batch 6000/12276] loss=0.3682, lr=0.0000091, metrics:accuracy:0.8627
+INFO:root:[Epoch 2 Batch 6100/12276] loss=0.3618, lr=0.0000090, metrics:accuracy:0.8627
+INFO:root:[Epoch 2 Batch 6200/12276] loss=0.3410, lr=0.0000090, metrics:accuracy:0.8629
+INFO:root:[Epoch 2 Batch 6300/12276] loss=0.3646, lr=0.0000090, metrics:accuracy:0.8629
+INFO:root:[Epoch 2 Batch 6400/12276] loss=0.3624, lr=0.0000090, metrics:accuracy:0.8629
+INFO:root:[Epoch 2 Batch 6500/12276] loss=0.3765, lr=0.0000090, metrics:accuracy:0.8628
+INFO:root:[Epoch 2 Batch 6600/12276] loss=0.3516, lr=0.0000090, metrics:accuracy:0.8628
+INFO:root:[Epoch 2 Batch 6700/12276] loss=0.3482, lr=0.0000090, metrics:accuracy:0.8630
+INFO:root:[Epoch 2 Batch 6800/12276] loss=0.3683, lr=0.0000090, metrics:accuracy:0.8630
+INFO:root:[Epoch 2 Batch 6900/12276] loss=0.3896, lr=0.0000090, metrics:accuracy:0.8628
+INFO:root:[Epoch 2 Batch 7000/12276] loss=0.3540, lr=0.0000090, metrics:accuracy:0.8628
+INFO:root:[Epoch 2 Batch 7100/12276] loss=0.3543, lr=0.0000090, metrics:accuracy:0.8628
+INFO:root:[Epoch 2 Batch 7200/12276] loss=0.3738, lr=0.0000090, metrics:accuracy:0.8628
+INFO:root:[Epoch 2 Batch 7300/12276] loss=0.3404, lr=0.0000089, metrics:accuracy:0.8630
+INFO:root:[Epoch 2 Batch 7400/12276] loss=0.3727, lr=0.0000089, metrics:accuracy:0.8629
+INFO:root:[Epoch 2 Batch 7500/12276] loss=0.3471, lr=0.0000089, metrics:accuracy:0.8631
+INFO:root:[Epoch 2 Batch 7600/12276] loss=0.3817, lr=0.0000089, metrics:accuracy:0.8630
+INFO:root:[Epoch 2 Batch 7700/12276] loss=0.3802, lr=0.0000089, metrics:accuracy:0.8630
+INFO:root:[Epoch 2 Batch 7800/12276] loss=0.3699, lr=0.0000089, metrics:accuracy:0.8629
+INFO:root:[Epoch 2 Batch 7900/12276] loss=0.3811, lr=0.0000089, metrics:accuracy:0.8627
+INFO:root:[Epoch 2 Batch 8000/12276] loss=0.3582, lr=0.0000089, metrics:accuracy:0.8628
+INFO:root:[Epoch 2 Batch 8100/12276] loss=0.3673, lr=0.0000089, metrics:accuracy:0.8628
+INFO:root:[Epoch 2 Batch 8200/12276] loss=0.3734, lr=0.0000089, metrics:accuracy:0.8628
+INFO:root:[Epoch 2 Batch 8300/12276] loss=0.3527, lr=0.0000089, metrics:accuracy:0.8628
+INFO:root:[Epoch 2 Batch 8400/12276] loss=0.3424, lr=0.0000088, metrics:accuracy:0.8629
+INFO:root:[Epoch 2 Batch 8500/12276] loss=0.3587, lr=0.0000088, metrics:accuracy:0.8629
+INFO:root:[Epoch 2 Batch 8600/12276] loss=0.3786, lr=0.0000088, metrics:accuracy:0.8628
+INFO:root:[Epoch 2 Batch 8700/12276] loss=0.3336, lr=0.0000088, metrics:accuracy:0.8629
+INFO:root:[Epoch 2 Batch 8800/12276] loss=0.3401, lr=0.0000088, metrics:accuracy:0.8630
+INFO:root:[Epoch 2 Batch 8900/12276] loss=0.3720, lr=0.0000088, metrics:accuracy:0.8630
+INFO:root:[Epoch 2 Batch 9000/12276] loss=0.3604, lr=0.0000088, metrics:accuracy:0.8630
+INFO:root:[Epoch 2 Batch 9100/12276] loss=0.3653, lr=0.0000088, metrics:accuracy:0.8629
+INFO:root:[Epoch 2 Batch 9200/12276] loss=0.3464, lr=0.0000088, metrics:accuracy:0.8630
+INFO:root:[Epoch 2 Batch 9300/12276] loss=0.3604, lr=0.0000088, metrics:accuracy:0.8630
+INFO:root:[Epoch 2 Batch 9400/12276] loss=0.3430, lr=0.0000088, metrics:accuracy:0.8631
+INFO:root:[Epoch 2 Batch 9500/12276] loss=0.3504, lr=0.0000088, metrics:accuracy:0.8631
+INFO:root:[Epoch 2 Batch 9600/12276] loss=0.3573, lr=0.0000087, metrics:accuracy:0.8631
+INFO:root:[Epoch 2 Batch 9700/12276] loss=0.3592, lr=0.0000087, metrics:accuracy:0.8631
+INFO:root:[Epoch 2 Batch 9800/12276] loss=0.3592, lr=0.0000087, metrics:accuracy:0.8631
+INFO:root:[Epoch 2 Batch 9900/12276] loss=0.3502, lr=0.0000087, metrics:accuracy:0.8632
+INFO:root:[Epoch 2 Batch 10000/12276] loss=0.3503, lr=0.0000087, metrics:accuracy:0.8632
+INFO:root:[Epoch 2 Batch 10100/12276] loss=0.3532, lr=0.0000087, metrics:accuracy:0.8632
+INFO:root:[Epoch 2 Batch 10200/12276] loss=0.3580, lr=0.0000087, metrics:accuracy:0.8632
+INFO:root:[Epoch 2 Batch 10300/12276] loss=0.3729, lr=0.0000087, metrics:accuracy:0.8632
+INFO:root:[Epoch 2 Batch 10400/12276] loss=0.3541, lr=0.0000087, metrics:accuracy:0.8633
+INFO:root:[Epoch 2 Batch 10500/12276] loss=0.3752, lr=0.0000087, metrics:accuracy:0.8632
+INFO:root:[Epoch 2 Batch 10600/12276] loss=0.3544, lr=0.0000087, metrics:accuracy:0.8633
+INFO:root:[Epoch 2 Batch 10700/12276] loss=0.3697, lr=0.0000086, metrics:accuracy:0.8633
+INFO:root:[Epoch 2 Batch 10800/12276] loss=0.3535, lr=0.0000086, metrics:accuracy:0.8633
+INFO:root:[Epoch 2 Batch 10900/12276] loss=0.3475, lr=0.0000086, metrics:accuracy:0.8633
+INFO:root:[Epoch 2 Batch 11000/12276] loss=0.3526, lr=0.0000086, metrics:accuracy:0.8633
+INFO:root:[Epoch 2 Batch 11100/12276] loss=0.3675, lr=0.0000086, metrics:accuracy:0.8634
+INFO:root:[Epoch 2 Batch 11200/12276] loss=0.3598, lr=0.0000086, metrics:accuracy:0.8634
+INFO:root:[Epoch 2 Batch 11300/12276] loss=0.3446, lr=0.0000086, metrics:accuracy:0.8634
+INFO:root:[Epoch 2 Batch 11400/12276] loss=0.3358, lr=0.0000086, metrics:accuracy:0.8635
+INFO:root:[Epoch 2 Batch 11500/12276] loss=0.3629, lr=0.0000086, metrics:accuracy:0.8635
+INFO:root:[Epoch 2 Batch 11600/12276] loss=0.3476, lr=0.0000086, metrics:accuracy:0.8635
+INFO:root:[Epoch 2 Batch 11700/12276] loss=0.3636, lr=0.0000086, metrics:accuracy:0.8635
+INFO:root:[Epoch 2 Batch 11800/12276] loss=0.3436, lr=0.0000086, metrics:accuracy:0.8635
+INFO:root:[Epoch 2 Batch 11900/12276] loss=0.3557, lr=0.0000085, metrics:accuracy:0.8636
+INFO:root:[Epoch 2 Batch 12000/12276] loss=0.3532, lr=0.0000085, metrics:accuracy:0.8636
+INFO:root:[Epoch 2 Batch 12100/12276] loss=0.3424, lr=0.0000085, metrics:accuracy:0.8637
+INFO:root:[Epoch 2 Batch 12200/12276] loss=0.3549, lr=0.0000085, metrics:accuracy:0.8637
+INFO:root:Now we are doing evaluation on dev_matched with gpu(1).
+INFO:root:[Batch 100/1227] loss=0.3512, metrics:accuracy:0.8650
+INFO:root:[Batch 200/1227] loss=0.3524, metrics:accuracy:0.8694
+INFO:root:[Batch 300/1227] loss=0.3682, metrics:accuracy:0.8667
+INFO:root:[Batch 400/1227] loss=0.3543, metrics:accuracy:0.8703
+INFO:root:[Batch 500/1227] loss=0.3803, metrics:accuracy:0.8702
+INFO:root:[Batch 600/1227] loss=0.3181, metrics:accuracy:0.8725
+INFO:root:[Batch 700/1227] loss=0.3654, metrics:accuracy:0.8705
+INFO:root:[Batch 800/1227] loss=0.3277, metrics:accuracy:0.8723
+INFO:root:[Batch 900/1227] loss=0.3540, metrics:accuracy:0.8718
+INFO:root:[Batch 1000/1227] loss=0.4164, metrics:accuracy:0.8685
+INFO:root:[Batch 1100/1227] loss=0.4181, metrics:accuracy:0.8668
+INFO:root:[Batch 1200/1227] loss=0.3798, metrics:accuracy:0.8657
+INFO:root:validation metrics:accuracy:0.8661
+INFO:root:Time cost=27.41s, throughput=358.09 samples/s
+INFO:root:Now we are doing evaluation on dev_mismatched with gpu(1).
+INFO:root:[Batch 100/1229] loss=0.3907, metrics:accuracy:0.8612
+INFO:root:[Batch 200/1229] loss=0.3732, metrics:accuracy:0.8619
+INFO:root:[Batch 300/1229] loss=0.3392, metrics:accuracy:0.8667
+INFO:root:[Batch 400/1229] loss=0.3457, metrics:accuracy:0.8688
+INFO:root:[Batch 500/1229] loss=0.3865, metrics:accuracy:0.8670
+INFO:root:[Batch 600/1229] loss=0.3137, metrics:accuracy:0.8698
+INFO:root:[Batch 700/1229] loss=0.3835, metrics:accuracy:0.8693
+INFO:root:[Batch 800/1229] loss=0.3771, metrics:accuracy:0.8670
+INFO:root:[Batch 900/1229] loss=0.3721, metrics:accuracy:0.8669
+INFO:root:[Batch 1000/1229] loss=0.3333, metrics:accuracy:0.8681
+INFO:root:[Batch 1100/1229] loss=0.3743, metrics:accuracy:0.8691
+INFO:root:[Batch 1200/1229] loss=0.3776, metrics:accuracy:0.8678
+INFO:root:validation metrics:accuracy:0.8680
+INFO:root:Time cost=26.99s, throughput=364.27 samples/s
+INFO:root:params saved in: ./output_dir/model_bert_MNLI_1.params
+INFO:root:Time cost=1872.61s
+INFO:root:[Epoch 3 Batch 100/12276] loss=0.3111, lr=0.0000085, metrics:accuracy:0.8865
+INFO:root:[Epoch 3 Batch 200/12276] loss=0.2654, lr=0.0000085, metrics:accuracy:0.8914
+INFO:root:[Epoch 3 Batch 300/12276] loss=0.2889, lr=0.0000085, metrics:accuracy:0.8934
+INFO:root:[Epoch 3 Batch 400/12276] loss=0.3136, lr=0.0000085, metrics:accuracy:0.8909
+INFO:root:[Epoch 3 Batch 500/12276] loss=0.2983, lr=0.0000085, metrics:accuracy:0.8902
+INFO:root:[Epoch 3 Batch 600/12276] loss=0.2799, lr=0.0000085, metrics:accuracy:0.8912
+INFO:root:[Epoch 3 Batch 700/12276] loss=0.2965, lr=0.0000084, metrics:accuracy:0.8907
+INFO:root:[Epoch 3 Batch 800/12276] loss=0.2841, lr=0.0000084, metrics:accuracy:0.8917
+INFO:root:[Epoch 3 Batch 900/12276] loss=0.3058, lr=0.0000084, metrics:accuracy:0.8909
+INFO:root:[Epoch 3 Batch 1000/12276] loss=0.3036, lr=0.0000084, metrics:accuracy:0.8898
+INFO:root:[Epoch 3 Batch 1100/12276] loss=0.3034, lr=0.0000084, metrics:accuracy:0.8897
+INFO:root:[Epoch 3 Batch 1200/12276] loss=0.3093, lr=0.0000084, metrics:accuracy:0.8892
+INFO:root:[Epoch 3 Batch 1300/12276] loss=0.2994, lr=0.0000084, metrics:accuracy:0.8896
+INFO:root:[Epoch 3 Batch 1400/12276] loss=0.2955, lr=0.0000084, metrics:accuracy:0.8899
+INFO:root:[Epoch 3 Batch 1500/12276] loss=0.2907, lr=0.0000084, metrics:accuracy:0.8896
+INFO:root:[Epoch 3 Batch 1600/12276] loss=0.2800, lr=0.0000084, metrics:accuracy:0.8904
+INFO:root:[Epoch 3 Batch 1700/12276] loss=0.3013, lr=0.0000084, metrics:accuracy:0.8905
+INFO:root:[Epoch 3 Batch 1800/12276] loss=0.2903, lr=0.0000084, metrics:accuracy:0.8904
+INFO:root:[Epoch 3 Batch 1900/12276] loss=0.2820, lr=0.0000083, metrics:accuracy:0.8909
+INFO:root:[Epoch 3 Batch 2000/12276] loss=0.3083, lr=0.0000083, metrics:accuracy:0.8905
+INFO:root:[Epoch 3 Batch 2100/12276] loss=0.2982, lr=0.0000083, metrics:accuracy:0.8904
+INFO:root:[Epoch 3 Batch 2200/12276] loss=0.3049, lr=0.0000083, metrics:accuracy:0.8903
+INFO:root:[Epoch 3 Batch 2300/12276] loss=0.3000, lr=0.0000083, metrics:accuracy:0.8901
+INFO:root:[Epoch 3 Batch 2400/12276] loss=0.2872, lr=0.0000083, metrics:accuracy:0.8900
+INFO:root:[Epoch 3 Batch 2500/12276] loss=0.2848, lr=0.0000083, metrics:accuracy:0.8902
+INFO:root:[Epoch 3 Batch 2600/12276] loss=0.3328, lr=0.0000083, metrics:accuracy:0.8899
+INFO:root:[Epoch 3 Batch 2700/12276] loss=0.3029, lr=0.0000083, metrics:accuracy:0.8897
+INFO:root:[Epoch 3 Batch 2800/12276] loss=0.3289, lr=0.0000083, metrics:accuracy:0.8892
+INFO:root:[Epoch 3 Batch 2900/12276] loss=0.3013, lr=0.0000083, metrics:accuracy:0.8890
+INFO:root:[Epoch 3 Batch 3000/12276] loss=0.2855, lr=0.0000082, metrics:accuracy:0.8891
+INFO:root:[Epoch 3 Batch 3100/12276] loss=0.2952, lr=0.0000082, metrics:accuracy:0.8893
+INFO:root:[Epoch 3 Batch 3200/12276] loss=0.2977, lr=0.0000082, metrics:accuracy:0.8892
+INFO:root:[Epoch 3 Batch 3300/12276] loss=0.2829, lr=0.0000082, metrics:accuracy:0.8893
+INFO:root:[Epoch 3 Batch 3400/12276] loss=0.2756, lr=0.0000082, metrics:accuracy:0.8897
+INFO:root:[Epoch 3 Batch 3500/12276] loss=0.2760, lr=0.0000082, metrics:accuracy:0.8898
+INFO:root:[Epoch 3 Batch 3600/12276] loss=0.3029, lr=0.0000082, metrics:accuracy:0.8897
+INFO:root:[Epoch 3 Batch 3700/12276] loss=0.2953, lr=0.0000082, metrics:accuracy:0.8898
+INFO:root:[Epoch 3 Batch 3800/12276] loss=0.2814, lr=0.0000082, metrics:accuracy:0.8899
+INFO:root:[Epoch 3 Batch 3900/12276] loss=0.2910, lr=0.0000082, metrics:accuracy:0.8899
+INFO:root:[Epoch 3 Batch 4000/12276] loss=0.3027, lr=0.0000082, metrics:accuracy:0.8898
+INFO:root:[Epoch 3 Batch 4100/12276] loss=0.3108, lr=0.0000082, metrics:accuracy:0.8898
+INFO:root:[Epoch 3 Batch 4200/12276] loss=0.2961, lr=0.0000081, metrics:accuracy:0.8898
+INFO:root:[Epoch 3 Batch 4300/12276] loss=0.2988, lr=0.0000081, metrics:accuracy:0.8899
+INFO:root:[Epoch 3 Batch 4400/12276] loss=0.2937, lr=0.0000081, metrics:accuracy:0.8900
+INFO:root:[Epoch 3 Batch 4500/12276] loss=0.3092, lr=0.0000081, metrics:accuracy:0.8900
+INFO:root:[Epoch 3 Batch 4600/12276] loss=0.2870, lr=0.0000081, metrics:accuracy:0.8900
+INFO:root:[Epoch 3 Batch 4700/12276] loss=0.2933, lr=0.0000081, metrics:accuracy:0.8901
+INFO:root:[Epoch 3 Batch 4800/12276] loss=0.2788, lr=0.0000081, metrics:accuracy:0.8904
+INFO:root:[Epoch 3 Batch 4900/12276] loss=0.3017, lr=0.0000081, metrics:accuracy:0.8903
+INFO:root:[Epoch 3 Batch 5000/12276] loss=0.2933, lr=0.0000081, metrics:accuracy:0.8904
+INFO:root:[Epoch 3 Batch 5100/12276] loss=0.3230, lr=0.0000081, metrics:accuracy:0.8902
+INFO:root:[Epoch 3 Batch 5200/12276] loss=0.2933, lr=0.0000081, metrics:accuracy:0.8901
+INFO:root:[Epoch 3 Batch 5300/12276] loss=0.2785, lr=0.0000081, metrics:accuracy:0.8902
+INFO:root:[Epoch 3 Batch 5400/12276] loss=0.2983, lr=0.0000080, metrics:accuracy:0.8903
+INFO:root:[Epoch 3 Batch 5500/12276] loss=0.3015, lr=0.0000080, metrics:accuracy:0.8903
+INFO:root:[Epoch 3 Batch 5600/12276] loss=0.2836, lr=0.0000080, metrics:accuracy:0.8903
+INFO:root:[Epoch 3 Batch 5700/12276] loss=0.2963, lr=0.0000080, metrics:accuracy:0.8904
+INFO:root:[Epoch 3 Batch 5800/12276] loss=0.3030, lr=0.0000080, metrics:accuracy:0.8904
+INFO:root:[Epoch 3 Batch 5900/12276] loss=0.2773, lr=0.0000080, metrics:accuracy:0.8904
+INFO:root:[Epoch 3 Batch 6000/12276] loss=0.3087, lr=0.0000080, metrics:accuracy:0.8902
+INFO:root:[Epoch 3 Batch 6100/12276] loss=0.3040, lr=0.0000080, metrics:accuracy:0.8902
+INFO:root:[Epoch 3 Batch 6200/12276] loss=0.3048, lr=0.0000080, metrics:accuracy:0.8902
+INFO:root:[Epoch 3 Batch 6300/12276] loss=0.2904, lr=0.0000080, metrics:accuracy:0.8901
+INFO:root:[Epoch 3 Batch 6400/12276] loss=0.2891, lr=0.0000080, metrics:accuracy:0.8901
+INFO:root:[Epoch 3 Batch 6500/12276] loss=0.2937, lr=0.0000079, metrics:accuracy:0.8901
+INFO:root:[Epoch 3 Batch 6600/12276] loss=0.3184, lr=0.0000079, metrics:accuracy:0.8900
+INFO:root:[Epoch 3 Batch 6700/12276] loss=0.2966, lr=0.0000079, metrics:accuracy:0.8900
+INFO:root:[Epoch 3 Batch 6800/12276] loss=0.2750, lr=0.0000079, metrics:accuracy:0.8901
+INFO:root:[Epoch 3 Batch 6900/12276] loss=0.3056, lr=0.0000079, metrics:accuracy:0.8901
+INFO:root:[Epoch 3 Batch 7000/12276] loss=0.2867, lr=0.0000079, metrics:accuracy:0.8902
+INFO:root:[Epoch 3 Batch 7100/12276] loss=0.2887, lr=0.0000079, metrics:accuracy:0.8903
+INFO:root:[Epoch 3 Batch 7200/12276] loss=0.2926, lr=0.0000079, metrics:accuracy:0.8904
+INFO:root:[Epoch 3 Batch 7300/12276] loss=0.2830, lr=0.0000079, metrics:accuracy:0.8904
+INFO:root:[Epoch 3 Batch 7400/12276] loss=0.2881, lr=0.0000079, metrics:accuracy:0.8905
+INFO:root:[Epoch 3 Batch 7500/12276] loss=0.2870, lr=0.0000079, metrics:accuracy:0.8905
+INFO:root:[Epoch 3 Batch 7600/12276] loss=0.3042, lr=0.0000079, metrics:accuracy:0.8904
+INFO:root:[Epoch 3 Batch 7700/12276] loss=0.2811, lr=0.0000078, metrics:accuracy:0.8905
+INFO:root:[Epoch 3 Batch 7800/12276] loss=0.3008, lr=0.0000078, metrics:accuracy:0.8905
+INFO:root:[Epoch 3 Batch 7900/12276] loss=0.2862, lr=0.0000078, metrics:accuracy:0.8907
+INFO:root:[Epoch 3 Batch 8000/12276] loss=0.3011, lr=0.0000078, metrics:accuracy:0.8906
+INFO:root:[Epoch 3 Batch 8100/12276] loss=0.2890, lr=0.0000078, metrics:accuracy:0.8907
+INFO:root:[Epoch 3 Batch 8200/12276] loss=0.2865, lr=0.0000078, metrics:accuracy:0.8907
+INFO:root:[Epoch 3 Batch 8300/12276] loss=0.2957, lr=0.0000078, metrics:accuracy:0.8906
+INFO:root:[Epoch 3 Batch 8400/12276] loss=0.2912, lr=0.0000078, metrics:accuracy:0.8906
+INFO:root:[Epoch 3 Batch 8500/12276] loss=0.2949, lr=0.0000078, metrics:accuracy:0.8906
+INFO:root:[Epoch 3 Batch 8600/12276] loss=0.3054, lr=0.0000078, metrics:accuracy:0.8905
+INFO:root:[Epoch 3 Batch 8700/12276] loss=0.2837, lr=0.0000078, metrics:accuracy:0.8906
+INFO:root:[Epoch 3 Batch 8800/12276] loss=0.2804, lr=0.0000077, metrics:accuracy:0.8906
+INFO:root:[Epoch 3 Batch 8900/12276] loss=0.2928, lr=0.0000077, metrics:accuracy:0.8906
+INFO:root:[Epoch 3 Batch 9000/12276] loss=0.3191, lr=0.0000077, metrics:accuracy:0.8905
+INFO:root:[Epoch 3 Batch 9100/12276] loss=0.2948, lr=0.0000077, metrics:accuracy:0.8904
+INFO:root:[Epoch 3 Batch 9200/12276] loss=0.2903, lr=0.0000077, metrics:accuracy:0.8905
+INFO:root:[Epoch 3 Batch 9300/12276] loss=0.2649, lr=0.0000077, metrics:accuracy:0.8906
+INFO:root:[Epoch 3 Batch 9400/12276] loss=0.3042, lr=0.0000077, metrics:accuracy:0.8906
+INFO:root:[Epoch 3 Batch 9500/12276] loss=0.2890, lr=0.0000077, metrics:accuracy:0.8906
+INFO:root:[Epoch 3 Batch 9600/12276] loss=0.2773, lr=0.0000077, metrics:accuracy:0.8907
+INFO:root:[Epoch 3 Batch 9700/12276] loss=0.2653, lr=0.0000077, metrics:accuracy:0.8908
+INFO:root:[Epoch 3 Batch 9800/12276] loss=0.2720, lr=0.0000077, metrics:accuracy:0.8909
+INFO:root:[Epoch 3 Batch 9900/12276] loss=0.2963, lr=0.0000077, metrics:accuracy:0.8909
+INFO:root:[Epoch 3 Batch 10000/12276] loss=0.2938, lr=0.0000076, metrics:accuracy:0.8908
+INFO:root:[Epoch 3 Batch 10100/12276] loss=0.2755, lr=0.0000076, metrics:accuracy:0.8909
+INFO:root:[Epoch 3 Batch 10200/12276] loss=0.3077, lr=0.0000076, metrics:accuracy:0.8909
+INFO:root:[Epoch 3 Batch 10300/12276] loss=0.2746, lr=0.0000076, metrics:accuracy:0.8910
+INFO:root:[Epoch 3 Batch 10400/12276] loss=0.2857, lr=0.0000076, metrics:accuracy:0.8909
+INFO:root:[Epoch 3 Batch 10500/12276] loss=0.2914, lr=0.0000076, metrics:accuracy:0.8910
+INFO:root:[Epoch 3 Batch 10600/12276] loss=0.2879, lr=0.0000076, metrics:accuracy:0.8910
+INFO:root:[Epoch 3 Batch 10700/12276] loss=0.2934, lr=0.0000076, metrics:accuracy:0.8909
+INFO:root:[Epoch 3 Batch 10800/12276] loss=0.3091, lr=0.0000076, metrics:accuracy:0.8908
+INFO:root:[Epoch 3 Batch 10900/12276] loss=0.2725, lr=0.0000076, metrics:accuracy:0.8909
+INFO:root:[Epoch 3 Batch 11000/12276] loss=0.2848, lr=0.0000076, metrics:accuracy:0.8910
+INFO:root:[Epoch 3 Batch 11100/12276] loss=0.2801, lr=0.0000075, metrics:accuracy:0.8910
+INFO:root:[Epoch 3 Batch 11200/12276] loss=0.2991, lr=0.0000075, metrics:accuracy:0.8910
+INFO:root:[Epoch 3 Batch 11300/12276] loss=0.2849, lr=0.0000075, metrics:accuracy:0.8910
+INFO:root:[Epoch 3 Batch 11400/12276] loss=0.2928, lr=0.0000075, metrics:accuracy:0.8910
+INFO:root:[Epoch 3 Batch 11500/12276] loss=0.2827, lr=0.0000075, metrics:accuracy:0.8910
+INFO:root:[Epoch 3 Batch 11600/12276] loss=0.2916, lr=0.0000075, metrics:accuracy:0.8911
+INFO:root:[Epoch 3 Batch 11700/12276] loss=0.2833, lr=0.0000075, metrics:accuracy:0.8910
+INFO:root:[Epoch 3 Batch 11800/12276] loss=0.2974, lr=0.0000075, metrics:accuracy:0.8910
+INFO:root:[Epoch 3 Batch 11900/12276] loss=0.2968, lr=0.0000075, metrics:accuracy:0.8909
+INFO:root:[Epoch 3 Batch 12000/12276] loss=0.2917, lr=0.0000075, metrics:accuracy:0.8909
+INFO:root:[Epoch 3 Batch 12100/12276] loss=0.2914, lr=0.0000075, metrics:accuracy:0.8910
+INFO:root:[Epoch 3 Batch 12200/12276] loss=0.2986, lr=0.0000075, metrics:accuracy:0.8910
+INFO:root:Now we are doing evaluation on dev_matched with gpu(1).
+INFO:root:[Batch 100/1227] loss=0.3524, metrics:accuracy:0.8688
+INFO:root:[Batch 200/1227] loss=0.3569, metrics:accuracy:0.8725
+INFO:root:[Batch 300/1227] loss=0.3505, metrics:accuracy:0.8700
+INFO:root:[Batch 400/1227] loss=0.3512, metrics:accuracy:0.8716
+INFO:root:[Batch 500/1227] loss=0.3585, metrics:accuracy:0.8758
+INFO:root:[Batch 600/1227] loss=0.3222, metrics:accuracy:0.8777
+INFO:root:[Batch 700/1227] loss=0.3540, metrics:accuracy:0.8768
+INFO:root:[Batch 800/1227] loss=0.3453, metrics:accuracy:0.8764
+INFO:root:[Batch 900/1227] loss=0.3451, metrics:accuracy:0.8756
+INFO:root:[Batch 1000/1227] loss=0.3965, metrics:accuracy:0.8739
+INFO:root:[Batch 1100/1227] loss=0.4183, metrics:accuracy:0.8720
+INFO:root:[Batch 1200/1227] loss=0.3667, metrics:accuracy:0.8721
+INFO:root:validation metrics:accuracy:0.8726
+INFO:root:Time cost=26.19s, throughput=374.83 samples/s
+INFO:root:Now we are doing evaluation on dev_mismatched with gpu(1).
+INFO:root:[Batch 100/1229] loss=0.3939, metrics:accuracy:0.8675
+INFO:root:[Batch 200/1229] loss=0.3632, metrics:accuracy:0.8712
+INFO:root:[Batch 300/1229] loss=0.3242, metrics:accuracy:0.8750
+INFO:root:[Batch 400/1229] loss=0.3522, metrics:accuracy:0.8741
+INFO:root:[Batch 500/1229] loss=0.3561, metrics:accuracy:0.8730
+INFO:root:[Batch 600/1229] loss=0.3294, metrics:accuracy:0.8744
+INFO:root:[Batch 700/1229] loss=0.3826, metrics:accuracy:0.8739
+INFO:root:[Batch 800/1229] loss=0.3498, metrics:accuracy:0.8727
+INFO:root:[Batch 900/1229] loss=0.3554, metrics:accuracy:0.8733
+INFO:root:[Batch 1000/1229] loss=0.3379, metrics:accuracy:0.8740
+INFO:root:[Batch 1100/1229] loss=0.3798, metrics:accuracy:0.8738
+INFO:root:[Batch 1200/1229] loss=0.3864, metrics:accuracy:0.8728
+INFO:root:validation metrics:accuracy:0.8731
+INFO:root:Time cost=26.54s, throughput=370.48 samples/s
+INFO:root:params saved in: ./output_dir/model_bert_MNLI_2.params
+INFO:root:Time cost=1838.79s
+INFO:root:[Epoch 4 Batch 100/12276] loss=0.2425, lr=0.0000074, metrics:accuracy:0.9122
+INFO:root:[Epoch 4 Batch 200/12276] loss=0.2506, lr=0.0000074, metrics:accuracy:0.9094
+INFO:root:[Epoch 4 Batch 300/12276] loss=0.2513, lr=0.0000074, metrics:accuracy:0.9073
+INFO:root:[Epoch 4 Batch 400/12276] loss=0.2352, lr=0.0000074, metrics:accuracy:0.9105
+INFO:root:[Epoch 4 Batch 500/12276] loss=0.2264, lr=0.0000074, metrics:accuracy:0.9125
+INFO:root:[Epoch 4 Batch 600/12276] loss=0.2306, lr=0.0000074, metrics:accuracy:0.9132
+INFO:root:[Epoch 4 Batch 700/12276] loss=0.2371, lr=0.0000074, metrics:accuracy:0.9132
+INFO:root:[Epoch 4 Batch 800/12276] loss=0.2471, lr=0.0000074, metrics:accuracy:0.9129
+INFO:root:[Epoch 4 Batch 900/12276] loss=0.2284, lr=0.0000074, metrics:accuracy:0.9134
+INFO:root:[Epoch 4 Batch 1000/12276] loss=0.2480, lr=0.0000074, metrics:accuracy:0.9135
+INFO:root:[Epoch 4 Batch 1100/12276] loss=0.2254, lr=0.0000074, metrics:accuracy:0.9140
+INFO:root:[Epoch 4 Batch 1200/12276] loss=0.2406, lr=0.0000073, metrics:accuracy:0.9139
+INFO:root:[Epoch 4 Batch 1300/12276] loss=0.2436, lr=0.0000073, metrics:accuracy:0.9137
+INFO:root:[Epoch 4 Batch 1400/12276] loss=0.2426, lr=0.0000073, metrics:accuracy:0.9133
+INFO:root:[Epoch 4 Batch 1500/12276] loss=0.2197, lr=0.0000073, metrics:accuracy:0.9137
+INFO:root:[Epoch 4 Batch 1600/12276] loss=0.2272, lr=0.0000073, metrics:accuracy:0.9139
+INFO:root:[Epoch 4 Batch 1700/12276] loss=0.2473, lr=0.0000073, metrics:accuracy:0.9134
+INFO:root:[Epoch 4 Batch 1800/12276] loss=0.2280, lr=0.0000073, metrics:accuracy:0.9135
+INFO:root:[Epoch 4 Batch 1900/12276] loss=0.2550, lr=0.0000073, metrics:accuracy:0.9134
+INFO:root:[Epoch 4 Batch 2000/12276] loss=0.2375, lr=0.0000073, metrics:accuracy:0.9133
+INFO:root:[Epoch 4 Batch 2100/12276] loss=0.2270, lr=0.0000073, metrics:accuracy:0.9134
+INFO:root:[Epoch 4 Batch 2200/12276] loss=0.2338, lr=0.0000073, metrics:accuracy:0.9133
+INFO:root:[Epoch 4 Batch 2300/12276] loss=0.2430, lr=0.0000072, metrics:accuracy:0.9133
+INFO:root:[Epoch 4 Batch 2400/12276] loss=0.2403, lr=0.0000072, metrics:accuracy:0.9132
+INFO:root:[Epoch 4 Batch 2500/12276] loss=0.2506, lr=0.0000072, metrics:accuracy:0.9131
+INFO:root:[Epoch 4 Batch 2600/12276] loss=0.2170, lr=0.0000072, metrics:accuracy:0.9135
+INFO:root:[Epoch 4 Batch 2700/12276] loss=0.2432, lr=0.0000072, metrics:accuracy:0.9133
+INFO:root:[Epoch 4 Batch 2800/12276] loss=0.2342, lr=0.0000072, metrics:accuracy:0.9134
+INFO:root:[Epoch 4 Batch 2900/12276] loss=0.2389, lr=0.0000072, metrics:accuracy:0.9135
+INFO:root:[Epoch 4 Batch 3000/12276] loss=0.2389, lr=0.0000072, metrics:accuracy:0.9136
+INFO:root:[Epoch 4 Batch 3100/12276] loss=0.2541, lr=0.0000072, metrics:accuracy:0.9134
+INFO:root:[Epoch 4 Batch 3200/12276] loss=0.2510, lr=0.0000072, metrics:accuracy:0.9132
+INFO:root:[Epoch 4 Batch 3300/12276] loss=0.2461, lr=0.0000072, metrics:accuracy:0.9132
+INFO:root:[Epoch 4 Batch 3400/12276] loss=0.2266, lr=0.0000072, metrics:accuracy:0.9134
+INFO:root:[Epoch 4 Batch 3500/12276] loss=0.2403, lr=0.0000071, metrics:accuracy:0.9133
+INFO:root:[Epoch 4 Batch 3600/12276] loss=0.2425, lr=0.0000071, metrics:accuracy:0.9133
+INFO:root:[Epoch 4 Batch 3700/12276] loss=0.2135, lr=0.0000071, metrics:accuracy:0.9135
+INFO:root:[Epoch 4 Batch 3800/12276] loss=0.2420, lr=0.0000071, metrics:accuracy:0.9134
+INFO:root:[Epoch 4 Batch 3900/12276] loss=0.2694, lr=0.0000071, metrics:accuracy:0.9131
+INFO:root:[Epoch 4 Batch 4000/12276] loss=0.2177, lr=0.0000071, metrics:accuracy:0.9133
+INFO:root:[Epoch 4 Batch 4100/12276] loss=0.2331, lr=0.0000071, metrics:accuracy:0.9133
+INFO:root:[Epoch 4 Batch 4200/12276] loss=0.2285, lr=0.0000071, metrics:accuracy:0.9134
+INFO:root:[Epoch 4 Batch 4300/12276] loss=0.2441, lr=0.0000071, metrics:accuracy:0.9133
+INFO:root:[Epoch 4 Batch 4400/12276] loss=0.2428, lr=0.0000071, metrics:accuracy:0.9133
+INFO:root:[Epoch 4 Batch 4500/12276] loss=0.2293, lr=0.0000071, metrics:accuracy:0.9135
+INFO:root:[Epoch 4 Batch 4600/12276] loss=0.2376, lr=0.0000070, metrics:accuracy:0.9135
+INFO:root:[Epoch 4 Batch 4700/12276] loss=0.2472, lr=0.0000070, metrics:accuracy:0.9133
+INFO:root:[Epoch 4 Batch 4800/12276] loss=0.2407, lr=0.0000070, metrics:accuracy:0.9133
+INFO:root:[Epoch 4 Batch 4900/12276] loss=0.2419, lr=0.0000070, metrics:accuracy:0.9133
+INFO:root:[Epoch 4 Batch 5000/12276] loss=0.2468, lr=0.0000070, metrics:accuracy:0.9134
+INFO:root:[Epoch 4 Batch 5100/12276] loss=0.2386, lr=0.0000070, metrics:accuracy:0.9134
+INFO:root:[Epoch 4 Batch 5200/12276] loss=0.2293, lr=0.0000070, metrics:accuracy:0.9134
+INFO:root:[Epoch 4 Batch 5300/12276] loss=0.2628, lr=0.0000070, metrics:accuracy:0.9133
+INFO:root:[Epoch 4 Batch 5400/12276] loss=0.2385, lr=0.0000070, metrics:accuracy:0.9133
+INFO:root:[Epoch 4 Batch 5500/12276] loss=0.2316, lr=0.0000070, metrics:accuracy:0.9133
+INFO:root:[Epoch 4 Batch 5600/12276] loss=0.2446, lr=0.0000070, metrics:accuracy:0.9133
+INFO:root:[Epoch 4 Batch 5700/12276] loss=0.2514, lr=0.0000070, metrics:accuracy:0.9132
+INFO:root:[Epoch 4 Batch 5800/12276] loss=0.2404, lr=0.0000069, metrics:accuracy:0.9132
+INFO:root:[Epoch 4 Batch 5900/12276] loss=0.2309, lr=0.0000069, metrics:accuracy:0.9132
+INFO:root:[Epoch 4 Batch 6000/12276] loss=0.2373, lr=0.0000069, metrics:accuracy:0.9132
+INFO:root:[Epoch 4 Batch 6100/12276] loss=0.2475, lr=0.0000069, metrics:accuracy:0.9131
+INFO:root:[Epoch 4 Batch 6200/12276] loss=0.2230, lr=0.0000069, metrics:accuracy:0.9133
+INFO:root:[Epoch 4 Batch 6300/12276] loss=0.2371, lr=0.0000069, metrics:accuracy:0.9133
+INFO:root:[Epoch 4 Batch 6400/12276] loss=0.2316, lr=0.0000069, metrics:accuracy:0.9133
+INFO:root:[Epoch 4 Batch 6500/12276] loss=0.2688, lr=0.0000069, metrics:accuracy:0.9131
+INFO:root:[Epoch 4 Batch 6600/12276] loss=0.2344, lr=0.0000069, metrics:accuracy:0.9131
+INFO:root:[Epoch 4 Batch 6700/12276] loss=0.2473, lr=0.0000069, metrics:accuracy:0.9130
+INFO:root:[Epoch 4 Batch 6800/12276] loss=0.2585, lr=0.0000069, metrics:accuracy:0.9130
+INFO:root:[Epoch 4 Batch 6900/12276] loss=0.2442, lr=0.0000068, metrics:accuracy:0.9129
+INFO:root:[Epoch 4 Batch 7000/12276] loss=0.2605, lr=0.0000068, metrics:accuracy:0.9129
+INFO:root:[Epoch 4 Batch 7100/12276] loss=0.2349, lr=0.0000068, metrics:accuracy:0.9129
+INFO:root:[Epoch 4 Batch 7200/12276] loss=0.2291, lr=0.0000068, metrics:accuracy:0.9130
+INFO:root:[Epoch 4 Batch 7300/12276] loss=0.2524, lr=0.0000068, metrics:accuracy:0.9129
+INFO:root:[Epoch 4 Batch 7400/12276] loss=0.2469, lr=0.0000068, metrics:accuracy:0.9129
+INFO:root:[Epoch 4 Batch 7500/12276] loss=0.2291, lr=0.0000068, metrics:accuracy:0.9130
+INFO:root:[Epoch 4 Batch 7600/12276] loss=0.2374, lr=0.0000068, metrics:accuracy:0.9129
+INFO:root:[Epoch 4 Batch 7700/12276] loss=0.2472, lr=0.0000068, metrics:accuracy:0.9128
+INFO:root:[Epoch 4 Batch 7800/12276] loss=0.2519, lr=0.0000068, metrics:accuracy:0.9128
+INFO:root:[Epoch 4 Batch 7900/12276] loss=0.2375, lr=0.0000068, metrics:accuracy:0.9128
+INFO:root:[Epoch 4 Batch 8000/12276] loss=0.2482, lr=0.0000068, metrics:accuracy:0.9127
+INFO:root:[Epoch 4 Batch 8100/12276] loss=0.2275, lr=0.0000067, metrics:accuracy:0.9128
+INFO:root:[Epoch 4 Batch 8200/12276] loss=0.2328, lr=0.0000067, metrics:accuracy:0.9128
+INFO:root:[Epoch 4 Batch 8300/12276] loss=0.2642, lr=0.0000067, metrics:accuracy:0.9127
+INFO:root:[Epoch 4 Batch 8400/12276] loss=0.2611, lr=0.0000067, metrics:accuracy:0.9126
+INFO:root:[Epoch 4 Batch 8500/12276] loss=0.2551, lr=0.0000067, metrics:accuracy:0.9125
+INFO:root:[Epoch 4 Batch 8600/12276] loss=0.2259, lr=0.0000067, metrics:accuracy:0.9126
+INFO:root:[Epoch 4 Batch 8700/12276] loss=0.2470, lr=0.0000067, metrics:accuracy:0.9127
+INFO:root:[Epoch 4 Batch 8800/12276] loss=0.2587, lr=0.0000067, metrics:accuracy:0.9126
+INFO:root:[Epoch 4 Batch 8900/12276] loss=0.2203, lr=0.0000067, metrics:accuracy:0.9127
+INFO:root:[Epoch 4 Batch 9000/12276] loss=0.2436, lr=0.0000067, metrics:accuracy:0.9127
+INFO:root:[Epoch 4 Batch 9100/12276] loss=0.2498, lr=0.0000067, metrics:accuracy:0.9127
+INFO:root:[Epoch 4 Batch 9200/12276] loss=0.2397, lr=0.0000066, metrics:accuracy:0.9128
+INFO:root:[Epoch 4 Batch 9300/12276] loss=0.2593, lr=0.0000066, metrics:accuracy:0.9127
+INFO:root:[Epoch 4 Batch 9400/12276] loss=0.2552, lr=0.0000066, metrics:accuracy:0.9126
+INFO:root:[Epoch 4 Batch 9500/12276] loss=0.2508, lr=0.0000066, metrics:accuracy:0.9126
+INFO:root:[Epoch 4 Batch 9600/12276] loss=0.2465, lr=0.0000066, metrics:accuracy:0.9125
+INFO:root:[Epoch 4 Batch 9700/12276] loss=0.2338, lr=0.0000066, metrics:accuracy:0.9125
+INFO:root:[Epoch 4 Batch 9800/12276] loss=0.2463, lr=0.0000066, metrics:accuracy:0.9125
+INFO:root:[Epoch 4 Batch 9900/12276] loss=0.2395, lr=0.0000066, metrics:accuracy:0.9125
+INFO:root:[Epoch 4 Batch 10000/12276] loss=0.2570, lr=0.0000066, metrics:accuracy:0.9124
+INFO:root:[Epoch 4 Batch 10100/12276] loss=0.2455, lr=0.0000066, metrics:accuracy:0.9124
+INFO:root:[Epoch 4 Batch 10200/12276] loss=0.2589, lr=0.0000066, metrics:accuracy:0.9123
+INFO:root:[Epoch 4 Batch 10300/12276] loss=0.2302, lr=0.0000066, metrics:accuracy:0.9124
+INFO:root:[Epoch 4 Batch 10400/12276] loss=0.2417, lr=0.0000065, metrics:accuracy:0.9125
+INFO:root:[Epoch 4 Batch 10500/12276] loss=0.2583, lr=0.0000065, metrics:accuracy:0.9125
+INFO:root:[Epoch 4 Batch 10600/12276] loss=0.2543, lr=0.0000065, metrics:accuracy:0.9124
+INFO:root:[Epoch 4 Batch 10700/12276] loss=0.2353, lr=0.0000065, metrics:accuracy:0.9124
+INFO:root:[Epoch 4 Batch 10800/12276] loss=0.2739, lr=0.0000065, metrics:accuracy:0.9123
+INFO:root:[Epoch 4 Batch 10900/12276] loss=0.2527, lr=0.0000065, metrics:accuracy:0.9123
+INFO:root:[Epoch 4 Batch 11000/12276] loss=0.2387, lr=0.0000065, metrics:accuracy:0.9123
+INFO:root:[Epoch 4 Batch 11100/12276] loss=0.2468, lr=0.0000065, metrics:accuracy:0.9124
+INFO:root:[Epoch 4 Batch 11200/12276] loss=0.2664, lr=0.0000065, metrics:accuracy:0.9123
+INFO:root:[Epoch 4 Batch 11300/12276] loss=0.2420, lr=0.0000065, metrics:accuracy:0.9123
+INFO:root:[Epoch 4 Batch 11400/12276] loss=0.2274, lr=0.0000065, metrics:accuracy:0.9123
+INFO:root:[Epoch 4 Batch 11500/12276] loss=0.2455, lr=0.0000064, metrics:accuracy:0.9123
+INFO:root:[Epoch 4 Batch 11600/12276] loss=0.2351, lr=0.0000064, metrics:accuracy:0.9123
+INFO:root:[Epoch 4 Batch 11700/12276] loss=0.2552, lr=0.0000064, metrics:accuracy:0.9123
+INFO:root:[Epoch 4 Batch 11800/12276] loss=0.2513, lr=0.0000064, metrics:accuracy:0.9122
+INFO:root:[Epoch 4 Batch 11900/12276] loss=0.2416, lr=0.0000064, metrics:accuracy:0.9122
+INFO:root:[Epoch 4 Batch 12000/12276] loss=0.2470, lr=0.0000064, metrics:accuracy:0.9122
+INFO:root:[Epoch 4 Batch 12100/12276] loss=0.2426, lr=0.0000064, metrics:accuracy:0.9122
+INFO:root:[Epoch 4 Batch 12200/12276] loss=0.2400, lr=0.0000064, metrics:accuracy:0.9122
+INFO:root:Now we are doing evaluation on dev_matched with gpu(1).
+INFO:root:[Batch 100/1227] loss=0.3799, metrics:accuracy:0.8750
+INFO:root:[Batch 200/1227] loss=0.3971, metrics:accuracy:0.8731
+INFO:root:[Batch 300/1227] loss=0.3579, metrics:accuracy:0.8729
+INFO:root:[Batch 400/1227] loss=0.3944, metrics:accuracy:0.8766
+INFO:root:[Batch 500/1227] loss=0.3886, metrics:accuracy:0.8792
+INFO:root:[Batch 600/1227] loss=0.3553, metrics:accuracy:0.8821
+INFO:root:[Batch 700/1227] loss=0.4158, metrics:accuracy:0.8798
+INFO:root:[Batch 800/1227] loss=0.3776, metrics:accuracy:0.8802
+INFO:root:[Batch 900/1227] loss=0.3579, metrics:accuracy:0.8803
+INFO:root:[Batch 1000/1227] loss=0.4332, metrics:accuracy:0.8785
+INFO:root:[Batch 1100/1227] loss=0.4357, metrics:accuracy:0.8772
+INFO:root:[Batch 1200/1227] loss=0.4093, metrics:accuracy:0.8762
+INFO:root:validation metrics:accuracy:0.8769
+INFO:root:Time cost=26.39s, throughput=372.00 samples/s
+INFO:root:Now we are doing evaluation on dev_mismatched with gpu(1).
+INFO:root:[Batch 100/1229] loss=0.4355, metrics:accuracy:0.8725
+INFO:root:[Batch 200/1229] loss=0.3935, metrics:accuracy:0.8700
+INFO:root:[Batch 300/1229] loss=0.3723, metrics:accuracy:0.8783
+INFO:root:[Batch 400/1229] loss=0.4027, metrics:accuracy:0.8781
+INFO:root:[Batch 500/1229] loss=0.3951, metrics:accuracy:0.8762
+INFO:root:[Batch 600/1229] loss=0.3795, metrics:accuracy:0.8773
+INFO:root:[Batch 700/1229] loss=0.4544, metrics:accuracy:0.8741
+INFO:root:[Batch 800/1229] loss=0.3535, metrics:accuracy:0.8752
+INFO:root:[Batch 900/1229] loss=0.4116, metrics:accuracy:0.8747
+INFO:root:[Batch 1000/1229] loss=0.3745, metrics:accuracy:0.8736
+INFO:root:[Batch 1100/1229] loss=0.4227, metrics:accuracy:0.8726
+INFO:root:[Batch 1200/1229] loss=0.4300, metrics:accuracy:0.8719
+INFO:root:validation metrics:accuracy:0.8723
+INFO:root:Time cost=26.51s, throughput=370.85 samples/s
+INFO:root:params saved in: ./output_dir/model_bert_MNLI_3.params
+INFO:root:Time cost=1788.46s
+INFO:root:[Epoch 5 Batch 100/12276] loss=0.1885, lr=0.0000064, metrics:accuracy:0.9313
+INFO:root:[Epoch 5 Batch 200/12276] loss=0.1918, lr=0.0000064, metrics:accuracy:0.9316
+INFO:root:[Epoch 5 Batch 300/12276] loss=0.2098, lr=0.0000064, metrics:accuracy:0.9303
+INFO:root:[Epoch 5 Batch 400/12276] loss=0.2025, lr=0.0000063, metrics:accuracy:0.9290
+INFO:root:[Epoch 5 Batch 500/12276] loss=0.1960, lr=0.0000063, metrics:accuracy:0.9295
+INFO:root:[Epoch 5 Batch 600/12276] loss=0.1697, lr=0.0000063, metrics:accuracy:0.9320
+INFO:root:[Epoch 5 Batch 700/12276] loss=0.1966, lr=0.0000063, metrics:accuracy:0.9319
+INFO:root:[Epoch 5 Batch 800/12276] loss=0.1781, lr=0.0000063, metrics:accuracy:0.9331
+INFO:root:[Epoch 5 Batch 900/12276] loss=0.1933, lr=0.0000063, metrics:accuracy:0.9330
+INFO:root:[Epoch 5 Batch 1000/12276] loss=0.2116, lr=0.0000063, metrics:accuracy:0.9325
+INFO:root:[Epoch 5 Batch 1100/12276] loss=0.2004, lr=0.0000063, metrics:accuracy:0.9324
+INFO:root:[Epoch 5 Batch 1200/12276] loss=0.2070, lr=0.0000063, metrics:accuracy:0.9320
+INFO:root:[Epoch 5 Batch 1300/12276] loss=0.1905, lr=0.0000063, metrics:accuracy:0.9318
+INFO:root:[Epoch 5 Batch 1400/12276] loss=0.1941, lr=0.0000063, metrics:accuracy:0.9318
+INFO:root:[Epoch 5 Batch 1500/12276] loss=0.1960, lr=0.0000063, metrics:accuracy:0.9316
+INFO:root:[Epoch 5 Batch 1600/12276] loss=0.1877, lr=0.0000062, metrics:accuracy:0.9317
+INFO:root:[Epoch 5 Batch 1700/12276] loss=0.1890, lr=0.0000062, metrics:accuracy:0.9317
+INFO:root:[Epoch 5 Batch 1800/12276] loss=0.1821, lr=0.0000062, metrics:accuracy:0.9319
+INFO:root:[Epoch 5 Batch 1900/12276] loss=0.2096, lr=0.0000062, metrics:accuracy:0.9317
+INFO:root:[Epoch 5 Batch 2000/12276] loss=0.2011, lr=0.0000062, metrics:accuracy:0.9314
+INFO:root:[Epoch 5 Batch 2100/12276] loss=0.2010, lr=0.0000062, metrics:accuracy:0.9313
+INFO:root:[Epoch 5 Batch 2200/12276] loss=0.2178, lr=0.0000062, metrics:accuracy:0.9308
+INFO:root:[Epoch 5 Batch 2300/12276] loss=0.2010, lr=0.0000062, metrics:accuracy:0.9307
+INFO:root:[Epoch 5 Batch 2400/12276] loss=0.1801, lr=0.0000062, metrics:accuracy:0.9310
+INFO:root:[Epoch 5 Batch 2500/12276] loss=0.1933, lr=0.0000062, metrics:accuracy:0.9309
+INFO:root:[Epoch 5 Batch 2600/12276] loss=0.2032, lr=0.0000062, metrics:accuracy:0.9308
+INFO:root:[Epoch 5 Batch 2700/12276] loss=0.1934, lr=0.0000061, metrics:accuracy:0.9308
+INFO:root:[Epoch 5 Batch 2800/12276] loss=0.2084, lr=0.0000061, metrics:accuracy:0.9307
+INFO:root:[Epoch 5 Batch 2900/12276] loss=0.1961, lr=0.0000061, metrics:accuracy:0.9307
+INFO:root:[Epoch 5 Batch 3000/12276] loss=0.1914, lr=0.0000061, metrics:accuracy:0.9306
+INFO:root:[Epoch 5 Batch 3100/12276] loss=0.1858, lr=0.0000061, metrics:accuracy:0.9309
+INFO:root:[Epoch 5 Batch 3200/12276] loss=0.2219, lr=0.0000061, metrics:accuracy:0.9305
+INFO:root:[Epoch 5 Batch 3300/12276] loss=0.2035, lr=0.0000061, metrics:accuracy:0.9304
+INFO:root:[Epoch 5 Batch 3400/12276] loss=0.2068, lr=0.0000061, metrics:accuracy:0.9303
+INFO:root:[Epoch 5 Batch 3500/12276] loss=0.1998, lr=0.0000061, metrics:accuracy:0.9303
+INFO:root:[Epoch 5 Batch 3600/12276] loss=0.1956, lr=0.0000061, metrics:accuracy:0.9303
+INFO:root:[Epoch 5 Batch 3700/12276] loss=0.1959, lr=0.0000061, metrics:accuracy:0.9304
+INFO:root:[Epoch 5 Batch 3800/12276] loss=0.1923, lr=0.0000061, metrics:accuracy:0.9305
+INFO:root:[Epoch 5 Batch 3900/12276] loss=0.2087, lr=0.0000060, metrics:accuracy:0.9303
+INFO:root:[Epoch 5 Batch 4000/12276] loss=0.2040, lr=0.0000060, metrics:accuracy:0.9302
+INFO:root:[Epoch 5 Batch 4100/12276] loss=0.1936, lr=0.0000060, metrics:accuracy:0.9302
+INFO:root:[Epoch 5 Batch 4200/12276] loss=0.1723, lr=0.0000060, metrics:accuracy:0.9304
+INFO:root:[Epoch 5 Batch 4300/12276] loss=0.2188, lr=0.0000060, metrics:accuracy:0.9302
+INFO:root:[Epoch 5 Batch 4400/12276] loss=0.1874, lr=0.0000060, metrics:accuracy:0.9303
+INFO:root:[Epoch 5 Batch 4500/12276] loss=0.2203, lr=0.0000060, metrics:accuracy:0.9301
+INFO:root:[Epoch 5 Batch 4600/12276] loss=0.2120, lr=0.0000060, metrics:accuracy:0.9299
+INFO:root:[Epoch 5 Batch 4700/12276] loss=0.1936, lr=0.0000060, metrics:accuracy:0.9299
+INFO:root:[Epoch 5 Batch 4800/12276] loss=0.2045, lr=0.0000060, metrics:accuracy:0.9299
+INFO:root:[Epoch 5 Batch 4900/12276] loss=0.2224, lr=0.0000060, metrics:accuracy:0.9298
+INFO:root:[Epoch 5 Batch 5000/12276] loss=0.1860, lr=0.0000059, metrics:accuracy:0.9299
+INFO:root:[Epoch 5 Batch 5100/12276] loss=0.2054, lr=0.0000059, metrics:accuracy:0.9298
+INFO:root:[Epoch 5 Batch 5200/12276] loss=0.2027, lr=0.0000059, metrics:accuracy:0.9297
+INFO:root:[Epoch 5 Batch 5300/12276] loss=0.2075, lr=0.0000059, metrics:accuracy:0.9296
+INFO:root:[Epoch 5 Batch 5400/12276] loss=0.2123, lr=0.0000059, metrics:accuracy:0.9296
+INFO:root:[Epoch 5 Batch 5500/12276] loss=0.1907, lr=0.0000059, metrics:accuracy:0.9296
+INFO:root:[Epoch 5 Batch 5600/12276] loss=0.1952, lr=0.0000059, metrics:accuracy:0.9296
+INFO:root:[Epoch 5 Batch 5700/12276] loss=0.2014, lr=0.0000059, metrics:accuracy:0.9296
+INFO:root:[Epoch 5 Batch 5800/12276] loss=0.1950, lr=0.0000059, metrics:accuracy:0.9295
+INFO:root:[Epoch 5 Batch 5900/12276] loss=0.1963, lr=0.0000059, metrics:accuracy:0.9296
+INFO:root:[Epoch 5 Batch 6000/12276] loss=0.1923, lr=0.0000059, metrics:accuracy:0.9296
+INFO:root:[Epoch 5 Batch 6100/12276] loss=0.2088, lr=0.0000059, metrics:accuracy:0.9295
+INFO:root:[Epoch 5 Batch 6200/12276] loss=0.1914, lr=0.0000058, metrics:accuracy:0.9296
+INFO:root:[Epoch 5 Batch 6300/12276] loss=0.2146, lr=0.0000058, metrics:accuracy:0.9295
+INFO:root:[Epoch 5 Batch 6400/12276] loss=0.2196, lr=0.0000058, metrics:accuracy:0.9294
+INFO:root:[Epoch 5 Batch 6500/12276] loss=0.1843, lr=0.0000058, metrics:accuracy:0.9295
+INFO:root:[Epoch 5 Batch 6600/12276] loss=0.2062, lr=0.0000058, metrics:accuracy:0.9295
+INFO:root:[Epoch 5 Batch 6700/12276] loss=0.1997, lr=0.0000058, metrics:accuracy:0.9295
+INFO:root:[Epoch 5 Batch 6800/12276] loss=0.2087, lr=0.0000058, metrics:accuracy:0.9295
+INFO:root:[Epoch 5 Batch 6900/12276] loss=0.2036, lr=0.0000058, metrics:accuracy:0.9295
+INFO:root:[Epoch 5 Batch 7000/12276] loss=0.2192, lr=0.0000058, metrics:accuracy:0.9293
+INFO:root:[Epoch 5 Batch 7100/12276] loss=0.1841, lr=0.0000058, metrics:accuracy:0.9293
+INFO:root:[Epoch 5 Batch 7200/12276] loss=0.1919, lr=0.0000058, metrics:accuracy:0.9293
+INFO:root:[Epoch 5 Batch 7300/12276] loss=0.2086, lr=0.0000057, metrics:accuracy:0.9292
+INFO:root:[Epoch 5 Batch 7400/12276] loss=0.2046, lr=0.0000057, metrics:accuracy:0.9291
+INFO:root:[Epoch 5 Batch 7500/12276] loss=0.2123, lr=0.0000057, metrics:accuracy:0.9291
+INFO:root:[Epoch 5 Batch 7600/12276] loss=0.1982, lr=0.0000057, metrics:accuracy:0.9290
+INFO:root:[Epoch 5 Batch 7700/12276] loss=0.1872, lr=0.0000057, metrics:accuracy:0.9291
+INFO:root:[Epoch 5 Batch 7800/12276] loss=0.1963, lr=0.0000057, metrics:accuracy:0.9291
+INFO:root:[Epoch 5 Batch 7900/12276] loss=0.1974, lr=0.0000057, metrics:accuracy:0.9291
+INFO:root:[Epoch 5 Batch 8000/12276] loss=0.2155, lr=0.0000057, metrics:accuracy:0.9290
+INFO:root:[Epoch 5 Batch 8100/12276] loss=0.1983, lr=0.0000057, metrics:accuracy:0.9290
+INFO:root:[Epoch 5 Batch 8200/12276] loss=0.1989, lr=0.0000057, metrics:accuracy:0.9290
+INFO:root:[Epoch 5 Batch 8300/12276] loss=0.2103, lr=0.0000057, metrics:accuracy:0.9290
+INFO:root:[Epoch 5 Batch 8400/12276] loss=0.2087, lr=0.0000057, metrics:accuracy:0.9289
+INFO:root:[Epoch 5 Batch 8500/12276] loss=0.2041, lr=0.0000056, metrics:accuracy:0.9289
+INFO:root:[Epoch 5 Batch 8600/12276] loss=0.1992, lr=0.0000056, metrics:accuracy:0.9289
+INFO:root:[Epoch 5 Batch 8700/12276] loss=0.2076, lr=0.0000056, metrics:accuracy:0.9289
+INFO:root:[Epoch 5 Batch 8800/12276] loss=0.2148, lr=0.0000056, metrics:accuracy:0.9289
+INFO:root:[Epoch 5 Batch 8900/12276] loss=0.2180, lr=0.0000056, metrics:accuracy:0.9288
+INFO:root:[Epoch 5 Batch 9000/12276] loss=0.1786, lr=0.0000056, metrics:accuracy:0.9289
+INFO:root:[Epoch 5 Batch 9100/12276] loss=0.2223, lr=0.0000056, metrics:accuracy:0.9288
+INFO:root:[Epoch 5 Batch 9200/12276] loss=0.1853, lr=0.0000056, metrics:accuracy:0.9289
+INFO:root:[Epoch 5 Batch 9300/12276] loss=0.2108, lr=0.0000056, metrics:accuracy:0.9288
+INFO:root:[Epoch 5 Batch 9400/12276] loss=0.1998, lr=0.0000056, metrics:accuracy:0.9288
+INFO:root:[Epoch 5 Batch 9500/12276] loss=0.1970, lr=0.0000056, metrics:accuracy:0.9288
+INFO:root:[Epoch 5 Batch 9600/12276] loss=0.1949, lr=0.0000055, metrics:accuracy:0.9289
+INFO:root:[Epoch 5 Batch 9700/12276] loss=0.2183, lr=0.0000055, metrics:accuracy:0.9288
+INFO:root:[Epoch 5 Batch 9800/12276] loss=0.2194, lr=0.0000055, metrics:accuracy:0.9286
+INFO:root:[Epoch 5 Batch 9900/12276] loss=0.1921, lr=0.0000055, metrics:accuracy:0.9287
+INFO:root:[Epoch 5 Batch 10000/12276] loss=0.2046, lr=0.0000055, metrics:accuracy:0.9287
+INFO:root:[Epoch 5 Batch 10100/12276] loss=0.1937, lr=0.0000055, metrics:accuracy:0.9286
+INFO:root:[Epoch 5 Batch 10200/12276] loss=0.1857, lr=0.0000055, metrics:accuracy:0.9287
+INFO:root:[Epoch 5 Batch 10300/12276] loss=0.2272, lr=0.0000055, metrics:accuracy:0.9286
+INFO:root:[Epoch 5 Batch 10400/12276] loss=0.1986, lr=0.0000055, metrics:accuracy:0.9287
+INFO:root:[Epoch 5 Batch 10500/12276] loss=0.1951, lr=0.0000055, metrics:accuracy:0.9287
+INFO:root:[Epoch 5 Batch 10600/12276] loss=0.2080, lr=0.0000055, metrics:accuracy:0.9286
+INFO:root:[Epoch 5 Batch 10700/12276] loss=0.1681, lr=0.0000055, metrics:accuracy:0.9288
+INFO:root:[Epoch 5 Batch 10800/12276] loss=0.2173, lr=0.0000054, metrics:accuracy:0.9287
+INFO:root:[Epoch 5 Batch 10900/12276] loss=0.1854, lr=0.0000054, metrics:accuracy:0.9287
+INFO:root:[Epoch 5 Batch 11000/12276] loss=0.2003, lr=0.0000054, metrics:accuracy:0.9287
+INFO:root:[Epoch 5 Batch 11100/12276] loss=0.1832, lr=0.0000054, metrics:accuracy:0.9288
+INFO:root:[Epoch 5 Batch 11200/12276] loss=0.2089, lr=0.0000054, metrics:accuracy:0.9288
+INFO:root:[Epoch 5 Batch 11300/12276] loss=0.2028, lr=0.0000054, metrics:accuracy:0.9288
+INFO:root:[Epoch 5 Batch 11400/12276] loss=0.1959, lr=0.0000054, metrics:accuracy:0.9288
+INFO:root:[Epoch 5 Batch 11500/12276] loss=0.2150, lr=0.0000054, metrics:accuracy:0.9287
+INFO:root:[Epoch 5 Batch 11600/12276] loss=0.1968, lr=0.0000054, metrics:accuracy:0.9288
+INFO:root:[Epoch 5 Batch 11700/12276] loss=0.2121, lr=0.0000054, metrics:accuracy:0.9287
+INFO:root:[Epoch 5 Batch 11800/12276] loss=0.1965, lr=0.0000054, metrics:accuracy:0.9287
+INFO:root:[Epoch 5 Batch 11900/12276] loss=0.1971, lr=0.0000054, metrics:accuracy:0.9287
+INFO:root:[Epoch 5 Batch 12000/12276] loss=0.2098, lr=0.0000053, metrics:accuracy:0.9287
+INFO:root:[Epoch 5 Batch 12100/12276] loss=0.1852, lr=0.0000053, metrics:accuracy:0.9287
+INFO:root:[Epoch 5 Batch 12200/12276] loss=0.2040, lr=0.0000053, metrics:accuracy:0.9286
+INFO:root:Now we are doing evaluation on dev_matched with gpu(1).
+INFO:root:[Batch 100/1227] loss=0.4472, metrics:accuracy:0.8562
+INFO:root:[Batch 200/1227] loss=0.4390, metrics:accuracy:0.8631
+INFO:root:[Batch 300/1227] loss=0.4237, metrics:accuracy:0.8692
+INFO:root:[Batch 400/1227] loss=0.4050, metrics:accuracy:0.8747
+INFO:root:[Batch 500/1227] loss=0.4332, metrics:accuracy:0.8752
+INFO:root:[Batch 600/1227] loss=0.3672, metrics:accuracy:0.8781
+INFO:root:[Batch 700/1227] loss=0.4698, metrics:accuracy:0.8759
+INFO:root:[Batch 800/1227] loss=0.4055, metrics:accuracy:0.8767
+INFO:root:[Batch 900/1227] loss=0.4231, metrics:accuracy:0.8760
+INFO:root:[Batch 1000/1227] loss=0.4959, metrics:accuracy:0.8741
+INFO:root:[Batch 1100/1227] loss=0.4880, metrics:accuracy:0.8731
+INFO:root:[Batch 1200/1227] loss=0.4539, metrics:accuracy:0.8726
+INFO:root:validation metrics:accuracy:0.8736
+INFO:root:Time cost=26.58s, throughput=369.27 samples/s
+INFO:root:Now we are doing evaluation on dev_mismatched with gpu(1).
+INFO:root:[Batch 100/1229] loss=0.5214, metrics:accuracy:0.8650
+INFO:root:[Batch 200/1229] loss=0.4059, metrics:accuracy:0.8681
+INFO:root:[Batch 300/1229] loss=0.4111, metrics:accuracy:0.8717
+INFO:root:[Batch 400/1229] loss=0.4596, metrics:accuracy:0.8703
+INFO:root:[Batch 500/1229] loss=0.4315, metrics:accuracy:0.8702
+INFO:root:[Batch 600/1229] loss=0.4226, metrics:accuracy:0.8719
+INFO:root:[Batch 700/1229] loss=0.5130, metrics:accuracy:0.8696
+INFO:root:[Batch 800/1229] loss=0.4070, metrics:accuracy:0.8703
+INFO:root:[Batch 900/1229] loss=0.4665, metrics:accuracy:0.8701
+INFO:root:[Batch 1000/1229] loss=0.4349, metrics:accuracy:0.8699
+INFO:root:[Batch 1100/1229] loss=0.4761, metrics:accuracy:0.8691
+INFO:root:[Batch 1200/1229] loss=0.4817, metrics:accuracy:0.8680
+INFO:root:validation metrics:accuracy:0.8685
+INFO:root:Time cost=26.59s, throughput=369.80 samples/s
+INFO:root:params saved in: ./output_dir/model_bert_MNLI_4.params
+INFO:root:Time cost=1800.37s
+INFO:root:[Epoch 6 Batch 100/12276] loss=0.1645, lr=0.0000053, metrics:accuracy:0.9444
+INFO:root:[Epoch 6 Batch 200/12276] loss=0.1642, lr=0.0000053, metrics:accuracy:0.9439
+INFO:root:[Epoch 6 Batch 300/12276] loss=0.1704, lr=0.0000053, metrics:accuracy:0.9432
+INFO:root:[Epoch 6 Batch 400/12276] loss=0.1651, lr=0.0000053, metrics:accuracy:0.9433
+INFO:root:[Epoch 6 Batch 500/12276] loss=0.1444, lr=0.0000053, metrics:accuracy:0.9453
+INFO:root:[Epoch 6 Batch 600/12276] loss=0.1603, lr=0.0000053, metrics:accuracy:0.9447
+INFO:root:[Epoch 6 Batch 700/12276] loss=0.1782, lr=0.0000053, metrics:accuracy:0.9440
+INFO:root:[Epoch 6 Batch 800/12276] loss=0.1490, lr=0.0000052, metrics:accuracy:0.9445
+INFO:root:[Epoch 6 Batch 900/12276] loss=0.1467, lr=0.0000052, metrics:accuracy:0.9452
+INFO:root:[Epoch 6 Batch 1000/12276] loss=0.1591, lr=0.0000052, metrics:accuracy:0.9454
+INFO:root:[Epoch 6 Batch 1100/12276] loss=0.1545, lr=0.0000052, metrics:accuracy:0.9456
+INFO:root:[Epoch 6 Batch 1200/12276] loss=0.1765, lr=0.0000052, metrics:accuracy:0.9449
+INFO:root:[Epoch 6 Batch 1300/12276] loss=0.1495, lr=0.0000052, metrics:accuracy:0.9449
+INFO:root:[Epoch 6 Batch 1400/12276] loss=0.1496, lr=0.0000052, metrics:accuracy:0.9449
+INFO:root:[Epoch 6 Batch 1500/12276] loss=0.1687, lr=0.0000052, metrics:accuracy:0.9448
+INFO:root:[Epoch 6 Batch 1600/12276] loss=0.1633, lr=0.0000052, metrics:accuracy:0.9447
+INFO:root:[Epoch 6 Batch 1700/12276] loss=0.1800, lr=0.0000052, metrics:accuracy:0.9446
+INFO:root:[Epoch 6 Batch 1800/12276] loss=0.1683, lr=0.0000052, metrics:accuracy:0.9443
+INFO:root:[Epoch 6 Batch 1900/12276] loss=0.1646, lr=0.0000052, metrics:accuracy:0.9441
+INFO:root:[Epoch 6 Batch 2000/12276] loss=0.1521, lr=0.0000051, metrics:accuracy:0.9443
+INFO:root:[Epoch 6 Batch 2100/12276] loss=0.1661, lr=0.0000051, metrics:accuracy:0.9443
+INFO:root:[Epoch 6 Batch 2200/12276] loss=0.1745, lr=0.0000051, metrics:accuracy:0.9438
+INFO:root:[Epoch 6 Batch 2300/12276] loss=0.1705, lr=0.0000051, metrics:accuracy:0.9437
+INFO:root:[Epoch 6 Batch 2400/12276] loss=0.1579, lr=0.0000051, metrics:accuracy:0.9438
+INFO:root:[Epoch 6 Batch 2500/12276] loss=0.1765, lr=0.0000051, metrics:accuracy:0.9436
+INFO:root:[Epoch 6 Batch 2600/12276] loss=0.1577, lr=0.0000051, metrics:accuracy:0.9437
+INFO:root:[Epoch 6 Batch 2700/12276] loss=0.1630, lr=0.0000051, metrics:accuracy:0.9438
+INFO:root:[Epoch 6 Batch 2800/12276] loss=0.1633, lr=0.0000051, metrics:accuracy:0.9439
+INFO:root:[Epoch 6 Batch 2900/12276] loss=0.1590, lr=0.0000051, metrics:accuracy:0.9439
+INFO:root:[Epoch 6 Batch 3000/12276] loss=0.1778, lr=0.0000051, metrics:accuracy:0.9438
+INFO:root:[Epoch 6 Batch 3100/12276] loss=0.1643, lr=0.0000050, metrics:accuracy:0.9438
+INFO:root:[Epoch 6 Batch 3200/12276] loss=0.1881, lr=0.0000050, metrics:accuracy:0.9436
+INFO:root:[Epoch 6 Batch 3300/12276] loss=0.1547, lr=0.0000050, metrics:accuracy:0.9436
+INFO:root:[Epoch 6 Batch 3400/12276] loss=0.1852, lr=0.0000050, metrics:accuracy:0.9434
+INFO:root:[Epoch 6 Batch 3500/12276] loss=0.1747, lr=0.0000050, metrics:accuracy:0.9433
+INFO:root:[Epoch 6 Batch 3600/12276] loss=0.1742, lr=0.0000050, metrics:accuracy:0.9433
+INFO:root:[Epoch 6 Batch 3700/12276] loss=0.1790, lr=0.0000050, metrics:accuracy:0.9431
+INFO:root:[Epoch 6 Batch 3800/12276] loss=0.1706, lr=0.0000050, metrics:accuracy:0.9431
+INFO:root:[Epoch 6 Batch 3900/12276] loss=0.1740, lr=0.0000050, metrics:accuracy:0.9430
+INFO:root:[Epoch 6 Batch 4000/12276] loss=0.1688, lr=0.0000050, metrics:accuracy:0.9430
+INFO:root:[Epoch 6 Batch 4100/12276] loss=0.1798, lr=0.0000050, metrics:accuracy:0.9429
+INFO:root:[Epoch 6 Batch 4200/12276] loss=0.1550, lr=0.0000050, metrics:accuracy:0.9430
+INFO:root:[Epoch 6 Batch 4300/12276] loss=0.1781, lr=0.0000049, metrics:accuracy:0.9430
+INFO:root:[Epoch 6 Batch 4400/12276] loss=0.1624, lr=0.0000049, metrics:accuracy:0.9430
+INFO:root:[Epoch 6 Batch 4500/12276] loss=0.1600, lr=0.0000049, metrics:accuracy:0.9430
+INFO:root:[Epoch 6 Batch 4600/12276] loss=0.1649, lr=0.0000049, metrics:accuracy:0.9430
+INFO:root:[Epoch 6 Batch 4700/12276] loss=0.1807, lr=0.0000049, metrics:accuracy:0.9428
+INFO:root:[Epoch 6 Batch 4800/12276] loss=0.1598, lr=0.0000049, metrics:accuracy:0.9428
+INFO:root:[Epoch 6 Batch 4900/12276] loss=0.1651, lr=0.0000049, metrics:accuracy:0.9428
+INFO:root:[Epoch 6 Batch 5000/12276] loss=0.1578, lr=0.0000049, metrics:accuracy:0.9429
+INFO:root:[Epoch 6 Batch 5100/12276] loss=0.1771, lr=0.0000049, metrics:accuracy:0.9428
+INFO:root:[Epoch 6 Batch 5200/12276] loss=0.1743, lr=0.0000049, metrics:accuracy:0.9428
+INFO:root:[Epoch 6 Batch 5300/12276] loss=0.1545, lr=0.0000049, metrics:accuracy:0.9429
+INFO:root:[Epoch 6 Batch 5400/12276] loss=0.1600, lr=0.0000048, metrics:accuracy:0.9429
+INFO:root:[Epoch 6 Batch 5500/12276] loss=0.1598, lr=0.0000048, metrics:accuracy:0.9429
+INFO:root:[Epoch 6 Batch 5600/12276] loss=0.1731, lr=0.0000048, metrics:accuracy:0.9428
+INFO:root:[Epoch 6 Batch 5700/12276] loss=0.1624, lr=0.0000048, metrics:accuracy:0.9428
+INFO:root:[Epoch 6 Batch 5800/12276] loss=0.1554, lr=0.0000048, metrics:accuracy:0.9428
+INFO:root:[Epoch 6 Batch 5900/12276] loss=0.1675, lr=0.0000048, metrics:accuracy:0.9428
+INFO:root:[Epoch 6 Batch 6000/12276] loss=0.1612, lr=0.0000048, metrics:accuracy:0.9429
+INFO:root:[Epoch 6 Batch 6100/12276] loss=0.1719, lr=0.0000048, metrics:accuracy:0.9428
+INFO:root:[Epoch 6 Batch 6200/12276] loss=0.1717, lr=0.0000048, metrics:accuracy:0.9428
+INFO:root:[Epoch 6 Batch 6300/12276] loss=0.1798, lr=0.0000048, metrics:accuracy:0.9427
+INFO:root:[Epoch 6 Batch 6400/12276] loss=0.1512, lr=0.0000048, metrics:accuracy:0.9427
+INFO:root:[Epoch 6 Batch 6500/12276] loss=0.1631, lr=0.0000048, metrics:accuracy:0.9428
+INFO:root:[Epoch 6 Batch 6600/12276] loss=0.1873, lr=0.0000047, metrics:accuracy:0.9427
+INFO:root:[Epoch 6 Batch 6700/12276] loss=0.1702, lr=0.0000047, metrics:accuracy:0.9427
+INFO:root:[Epoch 6 Batch 6800/12276] loss=0.1827, lr=0.0000047, metrics:accuracy:0.9426
+INFO:root:[Epoch 6 Batch 6900/12276] loss=0.1740, lr=0.0000047, metrics:accuracy:0.9425
+INFO:root:[Epoch 6 Batch 7000/12276] loss=0.1652, lr=0.0000047, metrics:accuracy:0.9425
+INFO:root:[Epoch 6 Batch 7100/12276] loss=0.1530, lr=0.0000047, metrics:accuracy:0.9426
+INFO:root:[Epoch 6 Batch 7200/12276] loss=0.1850, lr=0.0000047, metrics:accuracy:0.9425
+INFO:root:[Epoch 6 Batch 7300/12276] loss=0.1639, lr=0.0000047, metrics:accuracy:0.9426
+INFO:root:[Epoch 6 Batch 7400/12276] loss=0.1907, lr=0.0000047, metrics:accuracy:0.9424
+INFO:root:[Epoch 6 Batch 7500/12276] loss=0.1628, lr=0.0000047, metrics:accuracy:0.9425
+INFO:root:[Epoch 6 Batch 7600/12276] loss=0.1879, lr=0.0000047, metrics:accuracy:0.9424
+INFO:root:[Epoch 6 Batch 7700/12276] loss=0.1529, lr=0.0000046, metrics:accuracy:0.9425
+INFO:root:[Epoch 6 Batch 7800/12276] loss=0.1802, lr=0.0000046, metrics:accuracy:0.9424
+INFO:root:[Epoch 6 Batch 7900/12276] loss=0.1538, lr=0.0000046, metrics:accuracy:0.9426
+INFO:root:[Epoch 6 Batch 8000/12276] loss=0.1959, lr=0.0000046, metrics:accuracy:0.9424
+INFO:root:[Epoch 6 Batch 8100/12276] loss=0.1697, lr=0.0000046, metrics:accuracy:0.9424
+INFO:root:[Epoch 6 Batch 8200/12276] loss=0.1658, lr=0.0000046, metrics:accuracy:0.9425
+INFO:root:[Epoch 6 Batch 8300/12276] loss=0.1694, lr=0.0000046, metrics:accuracy:0.9424
+INFO:root:[Epoch 6 Batch 8400/12276] loss=0.1650, lr=0.0000046, metrics:accuracy:0.9424
+INFO:root:[Epoch 6 Batch 8500/12276] loss=0.1719, lr=0.0000046, metrics:accuracy:0.9424
+INFO:root:[Epoch 6 Batch 8600/12276] loss=0.1663, lr=0.0000046, metrics:accuracy:0.9424
+INFO:root:[Epoch 6 Batch 8700/12276] loss=0.1804, lr=0.0000046, metrics:accuracy:0.9423
+INFO:root:[Epoch 6 Batch 8800/12276] loss=0.1596, lr=0.0000046, metrics:accuracy:0.9423
+INFO:root:[Epoch 6 Batch 8900/12276] loss=0.1876, lr=0.0000045, metrics:accuracy:0.9422
+INFO:root:[Epoch 6 Batch 9000/12276] loss=0.1514, lr=0.0000045, metrics:accuracy:0.9422
+INFO:root:[Epoch 6 Batch 9100/12276] loss=0.1514, lr=0.0000045, metrics:accuracy:0.9423
+INFO:root:[Epoch 6 Batch 9200/12276] loss=0.1652, lr=0.0000045, metrics:accuracy:0.9423
+INFO:root:[Epoch 6 Batch 9300/12276] loss=0.1707, lr=0.0000045, metrics:accuracy:0.9422
+INFO:root:[Epoch 6 Batch 9400/12276] loss=0.1723, lr=0.0000045, metrics:accuracy:0.9422
+INFO:root:[Epoch 6 Batch 9500/12276] loss=0.1719, lr=0.0000045, metrics:accuracy:0.9422
+INFO:root:[Epoch 6 Batch 9600/12276] loss=0.1622, lr=0.0000045, metrics:accuracy:0.9422
+INFO:root:[Epoch 6 Batch 9700/12276] loss=0.1615, lr=0.0000045, metrics:accuracy:0.9422
+INFO:root:[Epoch 6 Batch 9800/12276] loss=0.1869, lr=0.0000045, metrics:accuracy:0.9421
+INFO:root:[Epoch 6 Batch 9900/12276] loss=0.1771, lr=0.0000045, metrics:accuracy:0.9420
+INFO:root:[Epoch 6 Batch 10000/12276] loss=0.1669, lr=0.0000045, metrics:accuracy:0.9420
+INFO:root:[Epoch 6 Batch 10100/12276] loss=0.1714, lr=0.0000044, metrics:accuracy:0.9420
+INFO:root:[Epoch 6 Batch 10200/12276] loss=0.1826, lr=0.0000044, metrics:accuracy:0.9419
+INFO:root:[Epoch 6 Batch 10300/12276] loss=0.1641, lr=0.0000044, metrics:accuracy:0.9419
+INFO:root:[Epoch 6 Batch 10400/12276] loss=0.1735, lr=0.0000044, metrics:accuracy:0.9419
+INFO:root:[Epoch 6 Batch 10500/12276] loss=0.1855, lr=0.0000044, metrics:accuracy:0.9418
+INFO:root:[Epoch 6 Batch 10600/12276] loss=0.1696, lr=0.0000044, metrics:accuracy:0.9418
+INFO:root:[Epoch 6 Batch 10700/12276] loss=0.1782, lr=0.0000044, metrics:accuracy:0.9418
+INFO:root:[Epoch 6 Batch 10800/12276] loss=0.1532, lr=0.0000044, metrics:accuracy:0.9418
+INFO:root:[Epoch 6 Batch 10900/12276] loss=0.1793, lr=0.0000044, metrics:accuracy:0.9417
+INFO:root:[Epoch 6 Batch 11000/12276] loss=0.1680, lr=0.0000044, metrics:accuracy:0.9417
+INFO:root:[Epoch 6 Batch 11100/12276] loss=0.1732, lr=0.0000044, metrics:accuracy:0.9417
+INFO:root:[Epoch 6 Batch 11200/12276] loss=0.1775, lr=0.0000043, metrics:accuracy:0.9416
+INFO:root:[Epoch 6 Batch 11300/12276] loss=0.1552, lr=0.0000043, metrics:accuracy:0.9416
+INFO:root:[Epoch 6 Batch 11400/12276] loss=0.1598, lr=0.0000043, metrics:accuracy:0.9417
+INFO:root:[Epoch 6 Batch 11500/12276] loss=0.1807, lr=0.0000043, metrics:accuracy:0.9416
+INFO:root:[Epoch 6 Batch 11600/12276] loss=0.1854, lr=0.0000043, metrics:accuracy:0.9415
+INFO:root:[Epoch 6 Batch 11700/12276] loss=0.1653, lr=0.0000043, metrics:accuracy:0.9415
+INFO:root:[Epoch 6 Batch 11800/12276] loss=0.1708, lr=0.0000043, metrics:accuracy:0.9415
+INFO:root:[Epoch 6 Batch 11900/12276] loss=0.1686, lr=0.0000043, metrics:accuracy:0.9415
+INFO:root:[Epoch 6 Batch 12000/12276] loss=0.1844, lr=0.0000043, metrics:accuracy:0.9414
+INFO:root:[Epoch 6 Batch 12100/12276] loss=0.1664, lr=0.0000043, metrics:accuracy:0.9414
+INFO:root:[Epoch 6 Batch 12200/12276] loss=0.1608, lr=0.0000043, metrics:accuracy:0.9415
+INFO:root:Now we are doing evaluation on dev_matched with gpu(1).
+INFO:root:[Batch 100/1227] loss=0.4476, metrics:accuracy:0.8675
+INFO:root:[Batch 200/1227] loss=0.4832, metrics:accuracy:0.8662
+INFO:root:[Batch 300/1227] loss=0.4672, metrics:accuracy:0.8683
+INFO:root:[Batch 400/1227] loss=0.4602, metrics:accuracy:0.8725
+INFO:root:[Batch 500/1227] loss=0.4812, metrics:accuracy:0.8738
+INFO:root:[Batch 600/1227] loss=0.4100, metrics:accuracy:0.8767
+INFO:root:[Batch 700/1227] loss=0.5177, metrics:accuracy:0.8739
+INFO:root:[Batch 800/1227] loss=0.4583, metrics:accuracy:0.8756
+INFO:root:[Batch 900/1227] loss=0.4306, metrics:accuracy:0.8758
+INFO:root:[Batch 1000/1227] loss=0.5124, metrics:accuracy:0.8736
+INFO:root:[Batch 1100/1227] loss=0.5245, metrics:accuracy:0.8730
+INFO:root:[Batch 1200/1227] loss=0.5045, metrics:accuracy:0.8730
+INFO:root:validation metrics:accuracy:0.8738
+INFO:root:Time cost=27.04s, throughput=363.04 samples/s
+INFO:root:Now we are doing evaluation on dev_mismatched with gpu(1).
+INFO:root:[Batch 100/1229] loss=0.5452, metrics:accuracy:0.8625
+INFO:root:[Batch 200/1229] loss=0.4795, metrics:accuracy:0.8631
+INFO:root:[Batch 300/1229] loss=0.4656, metrics:accuracy:0.8688
+INFO:root:[Batch 400/1229] loss=0.4844, metrics:accuracy:0.8694
+INFO:root:[Batch 500/1229] loss=0.4685, metrics:accuracy:0.8708
+INFO:root:[Batch 600/1229] loss=0.4526, metrics:accuracy:0.8727
+INFO:root:[Batch 700/1229] loss=0.5438, metrics:accuracy:0.8691
+INFO:root:[Batch 800/1229] loss=0.4401, metrics:accuracy:0.8686
+INFO:root:[Batch 900/1229] loss=0.4934, metrics:accuracy:0.8686
+INFO:root:[Batch 1000/1229] loss=0.4552, metrics:accuracy:0.8684
+INFO:root:[Batch 1100/1229] loss=0.5071, metrics:accuracy:0.8685
+INFO:root:[Batch 1200/1229] loss=0.5295, metrics:accuracy:0.8677
+INFO:root:validation metrics:accuracy:0.8681
+INFO:root:Time cost=26.70s, throughput=368.22 samples/s
+INFO:root:params saved in: ./output_dir/model_bert_MNLI_5.params
+INFO:root:Time cost=1805.46s
+INFO:root:[Epoch 7 Batch 100/12276] loss=0.1285, lr=0.0000042, metrics:accuracy:0.9559
+INFO:root:[Epoch 7 Batch 200/12276] loss=0.1515, lr=0.0000042, metrics:accuracy:0.9531
+INFO:root:[Epoch 7 Batch 300/12276] loss=0.1303, lr=0.0000042, metrics:accuracy:0.9539
+INFO:root:[Epoch 7 Batch 400/12276] loss=0.1401, lr=0.0000042, metrics:accuracy:0.9533
+INFO:root:[Epoch 7 Batch 500/12276] loss=0.1327, lr=0.0000042, metrics:accuracy:0.9532
+INFO:root:[Epoch 7 Batch 600/12276] loss=0.1373, lr=0.0000042, metrics:accuracy:0.9529
+INFO:root:[Epoch 7 Batch 700/12276] loss=0.1508, lr=0.0000042, metrics:accuracy:0.9530
+INFO:root:[Epoch 7 Batch 800/12276] loss=0.1445, lr=0.0000042, metrics:accuracy:0.9529
+INFO:root:[Epoch 7 Batch 900/12276] loss=0.1487, lr=0.0000042, metrics:accuracy:0.9527
+INFO:root:[Epoch 7 Batch 1000/12276] loss=0.1329, lr=0.0000042, metrics:accuracy:0.9528
+INFO:root:[Epoch 7 Batch 1100/12276] loss=0.1593, lr=0.0000042, metrics:accuracy:0.9521
+INFO:root:[Epoch 7 Batch 1200/12276] loss=0.1403, lr=0.0000041, metrics:accuracy:0.9521
+INFO:root:[Epoch 7 Batch 1300/12276] loss=0.1259, lr=0.0000041, metrics:accuracy:0.9526
+INFO:root:[Epoch 7 Batch 1400/12276] loss=0.1435, lr=0.0000041, metrics:accuracy:0.9524
+INFO:root:[Epoch 7 Batch 1500/12276] loss=0.1484, lr=0.0000041, metrics:accuracy:0.9521
+INFO:root:[Epoch 7 Batch 1600/12276] loss=0.1482, lr=0.0000041, metrics:accuracy:0.9521
+INFO:root:[Epoch 7 Batch 1700/12276] loss=0.1440, lr=0.0000041, metrics:accuracy:0.9522
+INFO:root:[Epoch 7 Batch 1800/12276] loss=0.1384, lr=0.0000041, metrics:accuracy:0.9522
+INFO:root:[Epoch 7 Batch 1900/12276] loss=0.1542, lr=0.0000041, metrics:accuracy:0.9520
+INFO:root:[Epoch 7 Batch 2000/12276] loss=0.1574, lr=0.0000041, metrics:accuracy:0.9518
+INFO:root:[Epoch 7 Batch 2100/12276] loss=0.1436, lr=0.0000041, metrics:accuracy:0.9518
+INFO:root:[Epoch 7 Batch 2200/12276] loss=0.1251, lr=0.0000041, metrics:accuracy:0.9521
+INFO:root:[Epoch 7 Batch 2300/12276] loss=0.1311, lr=0.0000041, metrics:accuracy:0.9522
+INFO:root:[Epoch 7 Batch 2400/12276] loss=0.1333, lr=0.0000040, metrics:accuracy:0.9524
+INFO:root:[Epoch 7 Batch 2500/12276] loss=0.1308, lr=0.0000040, metrics:accuracy:0.9526
+INFO:root:[Epoch 7 Batch 2600/12276] loss=0.1455, lr=0.0000040, metrics:accuracy:0.9525
+INFO:root:[Epoch 7 Batch 2700/12276] loss=0.1423, lr=0.0000040, metrics:accuracy:0.9525
+INFO:root:[Epoch 7 Batch 2800/12276] loss=0.1455, lr=0.0000040, metrics:accuracy:0.9524
+INFO:root:[Epoch 7 Batch 2900/12276] loss=0.1408, lr=0.0000040, metrics:accuracy:0.9525
+INFO:root:[Epoch 7 Batch 3000/12276] loss=0.1498, lr=0.0000040, metrics:accuracy:0.9524
+INFO:root:[Epoch 7 Batch 3100/12276] loss=0.1578, lr=0.0000040, metrics:accuracy:0.9522
+INFO:root:[Epoch 7 Batch 3200/12276] loss=0.1383, lr=0.0000040, metrics:accuracy:0.9523
+INFO:root:[Epoch 7 Batch 3300/12276] loss=0.1664, lr=0.0000040, metrics:accuracy:0.9521
+INFO:root:[Epoch 7 Batch 3400/12276] loss=0.1310, lr=0.0000040, metrics:accuracy:0.9521
+INFO:root:[Epoch 7 Batch 3500/12276] loss=0.1466, lr=0.0000039, metrics:accuracy:0.9522
+INFO:root:[Epoch 7 Batch 3600/12276] loss=0.1362, lr=0.0000039, metrics:accuracy:0.9523
+INFO:root:[Epoch 7 Batch 3700/12276] loss=0.1440, lr=0.0000039, metrics:accuracy:0.9524
+INFO:root:[Epoch 7 Batch 3800/12276] loss=0.1549, lr=0.0000039, metrics:accuracy:0.9523
+INFO:root:[Epoch 7 Batch 3900/12276] loss=0.1278, lr=0.0000039, metrics:accuracy:0.9524
+INFO:root:[Epoch 7 Batch 4000/12276] loss=0.1509, lr=0.0000039, metrics:accuracy:0.9523
+INFO:root:[Epoch 7 Batch 4100/12276] loss=0.1447, lr=0.0000039, metrics:accuracy:0.9523
+INFO:root:[Epoch 7 Batch 4200/12276] loss=0.1257, lr=0.0000039, metrics:accuracy:0.9524
+INFO:root:[Epoch 7 Batch 4300/12276] loss=0.1358, lr=0.0000039, metrics:accuracy:0.9525
+INFO:root:[Epoch 7 Batch 4400/12276] loss=0.1297, lr=0.0000039, metrics:accuracy:0.9525
+INFO:root:[Epoch 7 Batch 4500/12276] loss=0.1622, lr=0.0000039, metrics:accuracy:0.9524
+INFO:root:[Epoch 7 Batch 4600/12276] loss=0.1346, lr=0.0000039, metrics:accuracy:0.9525
+INFO:root:[Epoch 7 Batch 4700/12276] loss=0.1541, lr=0.0000038, metrics:accuracy:0.9524
+INFO:root:[Epoch 7 Batch 4800/12276] loss=0.1352, lr=0.0000038, metrics:accuracy:0.9524
+INFO:root:[Epoch 7 Batch 4900/12276] loss=0.1429, lr=0.0000038, metrics:accuracy:0.9523
+INFO:root:[Epoch 7 Batch 5000/12276] loss=0.1421, lr=0.0000038, metrics:accuracy:0.9523
+INFO:root:[Epoch 7 Batch 5100/12276] loss=0.1569, lr=0.0000038, metrics:accuracy:0.9522
+INFO:root:[Epoch 7 Batch 5200/12276] loss=0.1292, lr=0.0000038, metrics:accuracy:0.9523
+INFO:root:[Epoch 7 Batch 5300/12276] loss=0.1383, lr=0.0000038, metrics:accuracy:0.9523
+INFO:root:[Epoch 7 Batch 5400/12276] loss=0.1330, lr=0.0000038, metrics:accuracy:0.9524
+INFO:root:[Epoch 7 Batch 5500/12276] loss=0.1465, lr=0.0000038, metrics:accuracy:0.9524
+INFO:root:[Epoch 7 Batch 5600/12276] loss=0.1417, lr=0.0000038, metrics:accuracy:0.9523
+INFO:root:[Epoch 7 Batch 5700/12276] loss=0.1370, lr=0.0000038, metrics:accuracy:0.9523
+INFO:root:[Epoch 7 Batch 5800/12276] loss=0.1399, lr=0.0000038, metrics:accuracy:0.9523
+INFO:root:[Epoch 7 Batch 5900/12276] loss=0.1380, lr=0.0000037, metrics:accuracy:0.9522
+INFO:root:[Epoch 7 Batch 6000/12276] loss=0.1491, lr=0.0000037, metrics:accuracy:0.9523
+INFO:root:[Epoch 7 Batch 6100/12276] loss=0.1334, lr=0.0000037, metrics:accuracy:0.9524
+INFO:root:[Epoch 7 Batch 6200/12276] loss=0.1500, lr=0.0000037, metrics:accuracy:0.9524
+INFO:root:[Epoch 7 Batch 6300/12276] loss=0.1592, lr=0.0000037, metrics:accuracy:0.9523
+INFO:root:[Epoch 7 Batch 6400/12276] loss=0.1468, lr=0.0000037, metrics:accuracy:0.9522
+INFO:root:[Epoch 7 Batch 6500/12276] loss=0.1307, lr=0.0000037, metrics:accuracy:0.9523
+INFO:root:[Epoch 7 Batch 6600/12276] loss=0.1441, lr=0.0000037, metrics:accuracy:0.9522
+INFO:root:[Epoch 7 Batch 6700/12276] loss=0.1378, lr=0.0000037, metrics:accuracy:0.9522
+INFO:root:[Epoch 7 Batch 6800/12276] loss=0.1347, lr=0.0000037, metrics:accuracy:0.9523
+INFO:root:[Epoch 7 Batch 6900/12276] loss=0.1559, lr=0.0000037, metrics:accuracy:0.9522
+INFO:root:[Epoch 7 Batch 7000/12276] loss=0.1361, lr=0.0000036, metrics:accuracy:0.9522
+INFO:root:[Epoch 7 Batch 7100/12276] loss=0.1622, lr=0.0000036, metrics:accuracy:0.9521
+INFO:root:[Epoch 7 Batch 7200/12276] loss=0.1376, lr=0.0000036, metrics:accuracy:0.9521
+INFO:root:[Epoch 7 Batch 7300/12276] loss=0.1462, lr=0.0000036, metrics:accuracy:0.9521
+INFO:root:[Epoch 7 Batch 7400/12276] loss=0.1497, lr=0.0000036, metrics:accuracy:0.9520
+INFO:root:[Epoch 7 Batch 7500/12276] loss=0.1498, lr=0.0000036, metrics:accuracy:0.9520
+INFO:root:[Epoch 7 Batch 7600/12276] loss=0.1503, lr=0.0000036, metrics:accuracy:0.9520
+INFO:root:[Epoch 7 Batch 7700/12276] loss=0.1407, lr=0.0000036, metrics:accuracy:0.9520
+INFO:root:[Epoch 7 Batch 7800/12276] loss=0.1333, lr=0.0000036, metrics:accuracy:0.9520
+INFO:root:[Epoch 7 Batch 7900/12276] loss=0.1745, lr=0.0000036, metrics:accuracy:0.9519
+INFO:root:[Epoch 7 Batch 8000/12276] loss=0.1294, lr=0.0000036, metrics:accuracy:0.9519
+INFO:root:[Epoch 7 Batch 8100/12276] loss=0.1355, lr=0.0000036, metrics:accuracy:0.9520
+INFO:root:[Epoch 7 Batch 8200/12276] loss=0.1328, lr=0.0000035, metrics:accuracy:0.9520
+INFO:root:[Epoch 7 Batch 8300/12276] loss=0.1435, lr=0.0000035, metrics:accuracy:0.9520
+INFO:root:[Epoch 7 Batch 8400/12276] loss=0.1487, lr=0.0000035, metrics:accuracy:0.9520
+INFO:root:[Epoch 7 Batch 8500/12276] loss=0.1339, lr=0.0000035, metrics:accuracy:0.9520
+INFO:root:[Epoch 7 Batch 8600/12276] loss=0.1288, lr=0.0000035, metrics:accuracy:0.9521
+INFO:root:[Epoch 7 Batch 8700/12276] loss=0.1538, lr=0.0000035, metrics:accuracy:0.9521
+INFO:root:[Epoch 7 Batch 8800/12276] loss=0.1585, lr=0.0000035, metrics:accuracy:0.9519
+INFO:root:[Epoch 7 Batch 8900/12276] loss=0.1428, lr=0.0000035, metrics:accuracy:0.9519
+INFO:root:[Epoch 7 Batch 9000/12276] loss=0.1557, lr=0.0000035, metrics:accuracy:0.9519
+INFO:root:[Epoch 7 Batch 9100/12276] loss=0.1360, lr=0.0000035, metrics:accuracy:0.9519
+INFO:root:[Epoch 7 Batch 9200/12276] loss=0.1458, lr=0.0000035, metrics:accuracy:0.9519
+INFO:root:[Epoch 7 Batch 9300/12276] loss=0.1366, lr=0.0000034, metrics:accuracy:0.9519
+INFO:root:[Epoch 7 Batch 9400/12276] loss=0.1429, lr=0.0000034, metrics:accuracy:0.9519
+INFO:root:[Epoch 7 Batch 9500/12276] loss=0.1523, lr=0.0000034, metrics:accuracy:0.9518
+INFO:root:[Epoch 7 Batch 9600/12276] loss=0.1519, lr=0.0000034, metrics:accuracy:0.9518
+INFO:root:[Epoch 7 Batch 9700/12276] loss=0.1455, lr=0.0000034, metrics:accuracy:0.9518
+INFO:root:[Epoch 7 Batch 9800/12276] loss=0.1553, lr=0.0000034, metrics:accuracy:0.9517
+INFO:root:[Epoch 7 Batch 9900/12276] loss=0.1599, lr=0.0000034, metrics:accuracy:0.9517
+INFO:root:[Epoch 7 Batch 10000/12276] loss=0.1375, lr=0.0000034, metrics:accuracy:0.9517
+INFO:root:[Epoch 7 Batch 10100/12276] loss=0.1401, lr=0.0000034, metrics:accuracy:0.9517
+INFO:root:[Epoch 7 Batch 10200/12276] loss=0.1320, lr=0.0000034, metrics:accuracy:0.9517
+INFO:root:[Epoch 7 Batch 10300/12276] loss=0.1518, lr=0.0000034, metrics:accuracy:0.9517
+INFO:root:[Epoch 7 Batch 10400/12276] loss=0.1378, lr=0.0000034, metrics:accuracy:0.9517
+INFO:root:[Epoch 7 Batch 10500/12276] loss=0.1478, lr=0.0000033, metrics:accuracy:0.9517
+INFO:root:[Epoch 7 Batch 10600/12276] loss=0.1501, lr=0.0000033, metrics:accuracy:0.9517
+INFO:root:[Epoch 7 Batch 10700/12276] loss=0.1298, lr=0.0000033, metrics:accuracy:0.9517
+INFO:root:[Epoch 7 Batch 10800/12276] loss=0.1659, lr=0.0000033, metrics:accuracy:0.9516
+INFO:root:[Epoch 7 Batch 10900/12276] loss=0.1423, lr=0.0000033, metrics:accuracy:0.9516
+INFO:root:[Epoch 7 Batch 11000/12276] loss=0.1327, lr=0.0000033, metrics:accuracy:0.9517
+INFO:root:[Epoch 7 Batch 11100/12276] loss=0.1498, lr=0.0000033, metrics:accuracy:0.9517
+INFO:root:[Epoch 7 Batch 11200/12276] loss=0.1380, lr=0.0000033, metrics:accuracy:0.9517
+INFO:root:[Epoch 7 Batch 11300/12276] loss=0.1466, lr=0.0000033, metrics:accuracy:0.9517
+INFO:root:[Epoch 7 Batch 11400/12276] loss=0.1390, lr=0.0000033, metrics:accuracy:0.9518
+INFO:root:[Epoch 7 Batch 11500/12276] loss=0.1262, lr=0.0000033, metrics:accuracy:0.9518
+INFO:root:[Epoch 7 Batch 11600/12276] loss=0.1480, lr=0.0000032, metrics:accuracy:0.9518
+INFO:root:[Epoch 7 Batch 11700/12276] loss=0.1716, lr=0.0000032, metrics:accuracy:0.9518
+INFO:root:[Epoch 7 Batch 11800/12276] loss=0.1446, lr=0.0000032, metrics:accuracy:0.9518
+INFO:root:[Epoch 7 Batch 11900/12276] loss=0.1494, lr=0.0000032, metrics:accuracy:0.9518
+INFO:root:[Epoch 7 Batch 12000/12276] loss=0.1192, lr=0.0000032, metrics:accuracy:0.9518
+INFO:root:[Epoch 7 Batch 12100/12276] loss=0.1344, lr=0.0000032, metrics:accuracy:0.9519
+INFO:root:[Epoch 7 Batch 12200/12276] loss=0.1379, lr=0.0000032, metrics:accuracy:0.9519
+INFO:root:Now we are doing evaluation on dev_matched with gpu(1).
+INFO:root:[Batch 100/1227] loss=0.5484, metrics:accuracy:0.8600
+INFO:root:[Batch 200/1227] loss=0.5489, metrics:accuracy:0.8631
+INFO:root:[Batch 300/1227] loss=0.5227, metrics:accuracy:0.8696
+INFO:root:[Batch 400/1227] loss=0.5229, metrics:accuracy:0.8719
+INFO:root:[Batch 500/1227] loss=0.5449, metrics:accuracy:0.8732
+INFO:root:[Batch 600/1227] loss=0.4837, metrics:accuracy:0.8769
+INFO:root:[Batch 700/1227] loss=0.5872, metrics:accuracy:0.8754
+INFO:root:[Batch 800/1227] loss=0.5188, metrics:accuracy:0.8758
+INFO:root:[Batch 900/1227] loss=0.5266, metrics:accuracy:0.8761
+INFO:root:[Batch 1000/1227] loss=0.6162, metrics:accuracy:0.8744
+INFO:root:[Batch 1100/1227] loss=0.6255, metrics:accuracy:0.8727
+INFO:root:[Batch 1200/1227] loss=0.5899, metrics:accuracy:0.8726
+INFO:root:validation metrics:accuracy:0.8733
+INFO:root:Time cost=27.43s, throughput=357.91 samples/s
+INFO:root:Now we are doing evaluation on dev_mismatched with gpu(1).
+INFO:root:[Batch 100/1229] loss=0.6091, metrics:accuracy:0.8575
+INFO:root:[Batch 200/1229] loss=0.5571, metrics:accuracy:0.8644
+INFO:root:[Batch 300/1229] loss=0.5414, metrics:accuracy:0.8679
+INFO:root:[Batch 400/1229] loss=0.5513, metrics:accuracy:0.8688
+INFO:root:[Batch 500/1229] loss=0.5432, metrics:accuracy:0.8690
+INFO:root:[Batch 600/1229] loss=0.5127, metrics:accuracy:0.8719
+INFO:root:[Batch 700/1229] loss=0.6342, metrics:accuracy:0.8693
+INFO:root:[Batch 800/1229] loss=0.5152, metrics:accuracy:0.8697
+INFO:root:[Batch 900/1229] loss=0.5724, metrics:accuracy:0.8693
+INFO:root:[Batch 1000/1229] loss=0.5425, metrics:accuracy:0.8688
+INFO:root:[Batch 1100/1229] loss=0.6138, metrics:accuracy:0.8683
+INFO:root:[Batch 1200/1229] loss=0.6049, metrics:accuracy:0.8674
+INFO:root:validation metrics:accuracy:0.8681
+INFO:root:Time cost=27.99s, throughput=351.24 samples/s
+INFO:root:params saved in: ./output_dir/model_bert_MNLI_6.params
+INFO:root:Time cost=1888.59s
+INFO:root:[Epoch 8 Batch 100/12276] loss=0.1257, lr=0.0000032, metrics:accuracy:0.9584
+INFO:root:[Epoch 8 Batch 200/12276] loss=0.1139, lr=0.0000032, metrics:accuracy:0.9587
+INFO:root:[Epoch 8 Batch 300/12276] loss=0.1281, lr=0.0000032, metrics:accuracy:0.9576
+INFO:root:[Epoch 8 Batch 400/12276] loss=0.1190, lr=0.0000032, metrics:accuracy:0.9584
+INFO:root:[Epoch 8 Batch 500/12276] loss=0.0946, lr=0.0000031, metrics:accuracy:0.9601
+INFO:root:[Epoch 8 Batch 600/12276] loss=0.1203, lr=0.0000031, metrics:accuracy:0.9601
+INFO:root:[Epoch 8 Batch 700/12276] loss=0.1132, lr=0.0000031, metrics:accuracy:0.9605
+INFO:root:[Epoch 8 Batch 800/12276] loss=0.1431, lr=0.0000031, metrics:accuracy:0.9598
+INFO:root:[Epoch 8 Batch 900/12276] loss=0.1305, lr=0.0000031, metrics:accuracy:0.9592
+INFO:root:[Epoch 8 Batch 1000/12276] loss=0.1381, lr=0.0000031, metrics:accuracy:0.9587
+INFO:root:[Epoch 8 Batch 1100/12276] loss=0.1253, lr=0.0000031, metrics:accuracy:0.9584
+INFO:root:[Epoch 8 Batch 1200/12276] loss=0.1144, lr=0.0000031, metrics:accuracy:0.9586
+INFO:root:[Epoch 8 Batch 1300/12276] loss=0.1201, lr=0.0000031, metrics:accuracy:0.9590
+INFO:root:[Epoch 8 Batch 1400/12276] loss=0.1350, lr=0.0000031, metrics:accuracy:0.9588
+INFO:root:[Epoch 8 Batch 1500/12276] loss=0.1240, lr=0.0000031, metrics:accuracy:0.9586
+INFO:root:[Epoch 8 Batch 1600/12276] loss=0.1222, lr=0.0000031, metrics:accuracy:0.9587
+INFO:root:[Epoch 8 Batch 1700/12276] loss=0.1335, lr=0.0000030, metrics:accuracy:0.9587
+INFO:root:[Epoch 8 Batch 1800/12276] loss=0.1209, lr=0.0000030, metrics:accuracy:0.9587
+INFO:root:[Epoch 8 Batch 1900/12276] loss=0.1040, lr=0.0000030, metrics:accuracy:0.9592
+INFO:root:[Epoch 8 Batch 2000/12276] loss=0.1244, lr=0.0000030, metrics:accuracy:0.9593
+INFO:root:[Epoch 8 Batch 2100/12276] loss=0.1324, lr=0.0000030, metrics:accuracy:0.9592
+INFO:root:[Epoch 8 Batch 2200/12276] loss=0.1257, lr=0.0000030, metrics:accuracy:0.9594
+INFO:root:[Epoch 8 Batch 2300/12276] loss=0.1278, lr=0.0000030, metrics:accuracy:0.9594
+INFO:root:[Epoch 8 Batch 2400/12276] loss=0.1387, lr=0.0000030, metrics:accuracy:0.9594
+INFO:root:[Epoch 8 Batch 2500/12276] loss=0.1245, lr=0.0000030, metrics:accuracy:0.9593
+INFO:root:[Epoch 8 Batch 2600/12276] loss=0.1310, lr=0.0000030, metrics:accuracy:0.9592
+INFO:root:[Epoch 8 Batch 2700/12276] loss=0.1099, lr=0.0000030, metrics:accuracy:0.9593
+INFO:root:[Epoch 8 Batch 2800/12276] loss=0.1014, lr=0.0000029, metrics:accuracy:0.9596
+INFO:root:[Epoch 8 Batch 2900/12276] loss=0.1222, lr=0.0000029, metrics:accuracy:0.9598
+INFO:root:[Epoch 8 Batch 3000/12276] loss=0.1188, lr=0.0000029, metrics:accuracy:0.9599
+INFO:root:[Epoch 8 Batch 3100/12276] loss=0.1236, lr=0.0000029, metrics:accuracy:0.9600
+INFO:root:[Epoch 8 Batch 3200/12276] loss=0.1344, lr=0.0000029, metrics:accuracy:0.9600
+INFO:root:[Epoch 8 Batch 3300/12276] loss=0.1189, lr=0.0000029, metrics:accuracy:0.9600
+INFO:root:[Epoch 8 Batch 3400/12276] loss=0.1206, lr=0.0000029, metrics:accuracy:0.9601
+INFO:root:[Epoch 8 Batch 3500/12276] loss=0.1245, lr=0.0000029, metrics:accuracy:0.9600
+INFO:root:[Epoch 8 Batch 3600/12276] loss=0.1108, lr=0.0000029, metrics:accuracy:0.9601
+INFO:root:[Epoch 8 Batch 3700/12276] loss=0.1393, lr=0.0000029, metrics:accuracy:0.9600
+INFO:root:[Epoch 8 Batch 3800/12276] loss=0.1297, lr=0.0000029, metrics:accuracy:0.9599
+INFO:root:[Epoch 8 Batch 3900/12276] loss=0.1170, lr=0.0000029, metrics:accuracy:0.9600
+INFO:root:[Epoch 8 Batch 4000/12276] loss=0.1276, lr=0.0000028, metrics:accuracy:0.9600
+INFO:root:[Epoch 8 Batch 4100/12276] loss=0.1526, lr=0.0000028, metrics:accuracy:0.9598
+INFO:root:[Epoch 8 Batch 4200/12276] loss=0.1170, lr=0.0000028, metrics:accuracy:0.9599
+INFO:root:[Epoch 8 Batch 4300/12276] loss=0.1317, lr=0.0000028, metrics:accuracy:0.9598
+INFO:root:[Epoch 8 Batch 4400/12276] loss=0.1196, lr=0.0000028, metrics:accuracy:0.9598
+INFO:root:[Epoch 8 Batch 4500/12276] loss=0.1283, lr=0.0000028, metrics:accuracy:0.9597
+INFO:root:[Epoch 8 Batch 4600/12276] loss=0.1282, lr=0.0000028, metrics:accuracy:0.9597
+INFO:root:[Epoch 8 Batch 4700/12276] loss=0.1237, lr=0.0000028, metrics:accuracy:0.9597
+INFO:root:[Epoch 8 Batch 4800/12276] loss=0.1195, lr=0.0000028, metrics:accuracy:0.9598
+INFO:root:[Epoch 8 Batch 4900/12276] loss=0.1377, lr=0.0000028, metrics:accuracy:0.9598
+INFO:root:[Epoch 8 Batch 5000/12276] loss=0.1198, lr=0.0000028, metrics:accuracy:0.9598
+INFO:root:[Epoch 8 Batch 5100/12276] loss=0.1170, lr=0.0000027, metrics:accuracy:0.9598
+INFO:root:[Epoch 8 Batch 5200/12276] loss=0.1220, lr=0.0000027, metrics:accuracy:0.9598
+INFO:root:[Epoch 8 Batch 5300/12276] loss=0.1298, lr=0.0000027, metrics:accuracy:0.9599
+INFO:root:[Epoch 8 Batch 5400/12276] loss=0.1387, lr=0.0000027, metrics:accuracy:0.9599
+INFO:root:[Epoch 8 Batch 5500/12276] loss=0.1344, lr=0.0000027, metrics:accuracy:0.9599
+INFO:root:[Epoch 8 Batch 5600/12276] loss=0.1312, lr=0.0000027, metrics:accuracy:0.9598
+INFO:root:[Epoch 8 Batch 5700/12276] loss=0.1333, lr=0.0000027, metrics:accuracy:0.9598
+INFO:root:[Epoch 8 Batch 5800/12276] loss=0.1234, lr=0.0000027, metrics:accuracy:0.9598
+INFO:root:[Epoch 8 Batch 5900/12276] loss=0.1208, lr=0.0000027, metrics:accuracy:0.9598
+INFO:root:[Epoch 8 Batch 6000/12276] loss=0.1299, lr=0.0000027, metrics:accuracy:0.9598
+INFO:root:[Epoch 8 Batch 6100/12276] loss=0.1240, lr=0.0000027, metrics:accuracy:0.9598
+INFO:root:[Epoch 8 Batch 6200/12276] loss=0.1060, lr=0.0000027, metrics:accuracy:0.9599
+INFO:root:[Epoch 8 Batch 6300/12276] loss=0.1273, lr=0.0000026, metrics:accuracy:0.9599
+INFO:root:[Epoch 8 Batch 6400/12276] loss=0.1183, lr=0.0000026, metrics:accuracy:0.9599
+INFO:root:[Epoch 8 Batch 6500/12276] loss=0.1318, lr=0.0000026, metrics:accuracy:0.9599
+INFO:root:[Epoch 8 Batch 6600/12276] loss=0.1299, lr=0.0000026, metrics:accuracy:0.9599
+INFO:root:[Epoch 8 Batch 6700/12276] loss=0.1135, lr=0.0000026, metrics:accuracy:0.9599
+INFO:root:[Epoch 8 Batch 6800/12276] loss=0.1167, lr=0.0000026, metrics:accuracy:0.9599
+INFO:root:[Epoch 8 Batch 6900/12276] loss=0.1253, lr=0.0000026, metrics:accuracy:0.9600
+INFO:root:[Epoch 8 Batch 7000/12276] loss=0.1186, lr=0.0000026, metrics:accuracy:0.9600
+INFO:root:[Epoch 8 Batch 7100/12276] loss=0.1406, lr=0.0000026, metrics:accuracy:0.9600
+INFO:root:[Epoch 8 Batch 7200/12276] loss=0.1181, lr=0.0000026, metrics:accuracy:0.9600
+INFO:root:[Epoch 8 Batch 7300/12276] loss=0.1242, lr=0.0000026, metrics:accuracy:0.9600
+INFO:root:[Epoch 8 Batch 7400/12276] loss=0.1282, lr=0.0000025, metrics:accuracy:0.9599
+INFO:root:[Epoch 8 Batch 7500/12276] loss=0.1236, lr=0.0000025, metrics:accuracy:0.9600
+INFO:root:[Epoch 8 Batch 7600/12276] loss=0.1136, lr=0.0000025, metrics:accuracy:0.9600
+INFO:root:[Epoch 8 Batch 7700/12276] loss=0.1271, lr=0.0000025, metrics:accuracy:0.9600
+INFO:root:[Epoch 8 Batch 7800/12276] loss=0.1150, lr=0.0000025, metrics:accuracy:0.9600
+INFO:root:[Epoch 8 Batch 7900/12276] loss=0.1112, lr=0.0000025, metrics:accuracy:0.9601
+INFO:root:[Epoch 8 Batch 8000/12276] loss=0.1126, lr=0.0000025, metrics:accuracy:0.9601
+INFO:root:[Epoch 8 Batch 8100/12276] loss=0.1127, lr=0.0000025, metrics:accuracy:0.9601
+INFO:root:[Epoch 8 Batch 8200/12276] loss=0.1228, lr=0.0000025, metrics:accuracy:0.9602
+INFO:root:[Epoch 8 Batch 8300/12276] loss=0.1396, lr=0.0000025, metrics:accuracy:0.9601
+INFO:root:[Epoch 8 Batch 8400/12276] loss=0.1309, lr=0.0000025, metrics:accuracy:0.9601
+INFO:root:[Epoch 8 Batch 8500/12276] loss=0.1149, lr=0.0000025, metrics:accuracy:0.9601
+INFO:root:[Epoch 8 Batch 8600/12276] loss=0.1392, lr=0.0000024, metrics:accuracy:0.9600
+INFO:root:[Epoch 8 Batch 8700/12276] loss=0.1146, lr=0.0000024, metrics:accuracy:0.9601
+INFO:root:[Epoch 8 Batch 8800/12276] loss=0.1161, lr=0.0000024, metrics:accuracy:0.9601
+INFO:root:[Epoch 8 Batch 8900/12276] loss=0.1477, lr=0.0000024, metrics:accuracy:0.9599
+INFO:root:[Epoch 8 Batch 9000/12276] loss=0.1396, lr=0.0000024, metrics:accuracy:0.9599
+INFO:root:[Epoch 8 Batch 9100/12276] loss=0.1153, lr=0.0000024, metrics:accuracy:0.9599
+INFO:root:[Epoch 8 Batch 9200/12276] loss=0.1089, lr=0.0000024, metrics:accuracy:0.9599
+INFO:root:[Epoch 8 Batch 9300/12276] loss=0.1232, lr=0.0000024, metrics:accuracy:0.9599
+INFO:root:[Epoch 8 Batch 9400/12276] loss=0.1071, lr=0.0000024, metrics:accuracy:0.9600
+INFO:root:[Epoch 8 Batch 9500/12276] loss=0.1275, lr=0.0000024, metrics:accuracy:0.9600
+INFO:root:[Epoch 8 Batch 9600/12276] loss=0.1123, lr=0.0000024, metrics:accuracy:0.9600
+INFO:root:[Epoch 8 Batch 9700/12276] loss=0.1174, lr=0.0000023, metrics:accuracy:0.9600
+INFO:root:[Epoch 8 Batch 9800/12276] loss=0.1321, lr=0.0000023, metrics:accuracy:0.9600
+INFO:root:[Epoch 8 Batch 9900/12276] loss=0.1185, lr=0.0000023, metrics:accuracy:0.9600
+INFO:root:[Epoch 8 Batch 10000/12276] loss=0.1301, lr=0.0000023, metrics:accuracy:0.9600
+INFO:root:[Epoch 8 Batch 10100/12276] loss=0.1156, lr=0.0000023, metrics:accuracy:0.9601
+INFO:root:[Epoch 8 Batch 10200/12276] loss=0.1468, lr=0.0000023, metrics:accuracy:0.9600
+INFO:root:[Epoch 8 Batch 10300/12276] loss=0.1419, lr=0.0000023, metrics:accuracy:0.9599
+INFO:root:[Epoch 8 Batch 10400/12276] loss=0.1503, lr=0.0000023, metrics:accuracy:0.9598
+INFO:root:[Epoch 8 Batch 10500/12276] loss=0.1218, lr=0.0000023, metrics:accuracy:0.9598
+INFO:root:[Epoch 8 Batch 10600/12276] loss=0.1229, lr=0.0000023, metrics:accuracy:0.9598
+INFO:root:[Epoch 8 Batch 10700/12276] loss=0.1392, lr=0.0000023, metrics:accuracy:0.9598
+INFO:root:[Epoch 8 Batch 10800/12276] loss=0.1181, lr=0.0000023, metrics:accuracy:0.9598
+INFO:root:[Epoch 8 Batch 10900/12276] loss=0.1191, lr=0.0000022, metrics:accuracy:0.9598
+INFO:root:[Epoch 8 Batch 11000/12276] loss=0.1290, lr=0.0000022, metrics:accuracy:0.9598
+INFO:root:[Epoch 8 Batch 11100/12276] loss=0.1493, lr=0.0000022, metrics:accuracy:0.9597
+INFO:root:[Epoch 8 Batch 11200/12276] loss=0.1163, lr=0.0000022, metrics:accuracy:0.9598
+INFO:root:[Epoch 8 Batch 11300/12276] loss=0.1327, lr=0.0000022, metrics:accuracy:0.9597
+INFO:root:[Epoch 8 Batch 11400/12276] loss=0.1200, lr=0.0000022, metrics:accuracy:0.9598
+INFO:root:[Epoch 8 Batch 11500/12276] loss=0.1182, lr=0.0000022, metrics:accuracy:0.9598
+INFO:root:[Epoch 8 Batch 11600/12276] loss=0.1301, lr=0.0000022, metrics:accuracy:0.9598
+INFO:root:[Epoch 8 Batch 11700/12276] loss=0.1148, lr=0.0000022, metrics:accuracy:0.9598
+INFO:root:[Epoch 8 Batch 11800/12276] loss=0.1178, lr=0.0000022, metrics:accuracy:0.9599
+INFO:root:[Epoch 8 Batch 11900/12276] loss=0.1341, lr=0.0000022, metrics:accuracy:0.9598
+INFO:root:[Epoch 8 Batch 12000/12276] loss=0.1253, lr=0.0000021, metrics:accuracy:0.9599
+INFO:root:[Epoch 8 Batch 12100/12276] loss=0.1138, lr=0.0000021, metrics:accuracy:0.9599
+INFO:root:[Epoch 8 Batch 12200/12276] loss=0.1158, lr=0.0000021, metrics:accuracy:0.9599
+INFO:root:Now we are doing evaluation on dev_matched with gpu(1).
+INFO:root:[Batch 100/1227] loss=0.5569, metrics:accuracy:0.8650
+INFO:root:[Batch 200/1227] loss=0.5827, metrics:accuracy:0.8688
+INFO:root:[Batch 300/1227] loss=0.5616, metrics:accuracy:0.8733
+INFO:root:[Batch 400/1227] loss=0.5742, metrics:accuracy:0.8741
+INFO:root:[Batch 500/1227] loss=0.5614, metrics:accuracy:0.8762
+INFO:root:[Batch 600/1227] loss=0.5313, metrics:accuracy:0.8790
+INFO:root:[Batch 700/1227] loss=0.6137, metrics:accuracy:0.8773
+INFO:root:[Batch 800/1227] loss=0.5459, metrics:accuracy:0.8775
+INFO:root:[Batch 900/1227] loss=0.5221, metrics:accuracy:0.8781
+INFO:root:[Batch 1000/1227] loss=0.6559, metrics:accuracy:0.8755
+INFO:root:[Batch 1100/1227] loss=0.6439, metrics:accuracy:0.8749
+INFO:root:[Batch 1200/1227] loss=0.6058, metrics:accuracy:0.8749
+INFO:root:validation metrics:accuracy:0.8757
+INFO:root:Time cost=29.38s, throughput=334.09 samples/s
+INFO:root:Now we are doing evaluation on dev_mismatched with gpu(1).
+INFO:root:[Batch 100/1229] loss=0.6629, metrics:accuracy:0.8525
+INFO:root:[Batch 200/1229] loss=0.5715, metrics:accuracy:0.8606
+INFO:root:[Batch 300/1229] loss=0.5633, metrics:accuracy:0.8683
+INFO:root:[Batch 400/1229] loss=0.5816, metrics:accuracy:0.8700
+INFO:root:[Batch 500/1229] loss=0.5763, metrics:accuracy:0.8702
+INFO:root:[Batch 600/1229] loss=0.5413, metrics:accuracy:0.8708
+INFO:root:[Batch 700/1229] loss=0.6884, metrics:accuracy:0.8671
+INFO:root:[Batch 800/1229] loss=0.5717, metrics:accuracy:0.8675
+INFO:root:[Batch 900/1229] loss=0.5937, metrics:accuracy:0.8676
+INFO:root:[Batch 1000/1229] loss=0.5902, metrics:accuracy:0.8666
+INFO:root:[Batch 1100/1229] loss=0.6377, metrics:accuracy:0.8667
+INFO:root:[Batch 1200/1229] loss=0.6533, metrics:accuracy:0.8659
+INFO:root:validation metrics:accuracy:0.8662
+INFO:root:Time cost=28.92s, throughput=339.95 samples/s
+INFO:root:params saved in: ./output_dir/model_bert_MNLI_7.params
+INFO:root:Time cost=1894.24s
+INFO:root:[Epoch 9 Batch 100/12276] loss=0.1012, lr=0.0000021, metrics:accuracy:0.9653
+INFO:root:[Epoch 9 Batch 200/12276] loss=0.1095, lr=0.0000021, metrics:accuracy:0.9653
+INFO:root:[Epoch 9 Batch 300/12276] loss=0.1005, lr=0.0000021, metrics:accuracy:0.9652
+INFO:root:[Epoch 9 Batch 400/12276] loss=0.0959, lr=0.0000021, metrics:accuracy:0.9662
+INFO:root:[Epoch 9 Batch 500/12276] loss=0.1177, lr=0.0000021, metrics:accuracy:0.9659
+INFO:root:[Epoch 9 Batch 600/12276] loss=0.1206, lr=0.0000021, metrics:accuracy:0.9653
+INFO:root:[Epoch 9 Batch 700/12276] loss=0.1114, lr=0.0000021, metrics:accuracy:0.9648
+INFO:root:[Epoch 9 Batch 800/12276] loss=0.1080, lr=0.0000021, metrics:accuracy:0.9654
+INFO:root:[Epoch 9 Batch 900/12276] loss=0.0969, lr=0.0000020, metrics:accuracy:0.9661
+INFO:root:[Epoch 9 Batch 1000/12276] loss=0.1179, lr=0.0000020, metrics:accuracy:0.9658
+INFO:root:[Epoch 9 Batch 1100/12276] loss=0.1048, lr=0.0000020, metrics:accuracy:0.9662
+INFO:root:[Epoch 9 Batch 1200/12276] loss=0.1050, lr=0.0000020, metrics:accuracy:0.9663
+INFO:root:[Epoch 9 Batch 1300/12276] loss=0.1027, lr=0.0000020, metrics:accuracy:0.9665
+INFO:root:[Epoch 9 Batch 1400/12276] loss=0.0926, lr=0.0000020, metrics:accuracy:0.9667
+INFO:root:[Epoch 9 Batch 1500/12276] loss=0.1303, lr=0.0000020, metrics:accuracy:0.9665
+INFO:root:[Epoch 9 Batch 1600/12276] loss=0.1305, lr=0.0000020, metrics:accuracy:0.9660
+INFO:root:[Epoch 9 Batch 1700/12276] loss=0.0960, lr=0.0000020, metrics:accuracy:0.9662
+INFO:root:[Epoch 9 Batch 1800/12276] loss=0.1057, lr=0.0000020, metrics:accuracy:0.9663
+INFO:root:[Epoch 9 Batch 1900/12276] loss=0.1007, lr=0.0000020, metrics:accuracy:0.9666
+INFO:root:[Epoch 9 Batch 2000/12276] loss=0.0953, lr=0.0000020, metrics:accuracy:0.9668
+INFO:root:[Epoch 9 Batch 2100/12276] loss=0.0981, lr=0.0000019, metrics:accuracy:0.9669
+INFO:root:[Epoch 9 Batch 2200/12276] loss=0.1135, lr=0.0000019, metrics:accuracy:0.9669
+INFO:root:[Epoch 9 Batch 2300/12276] loss=0.1063, lr=0.0000019, metrics:accuracy:0.9670
+INFO:root:[Epoch 9 Batch 2400/12276] loss=0.0822, lr=0.0000019, metrics:accuracy:0.9674
+INFO:root:[Epoch 9 Batch 2500/12276] loss=0.1239, lr=0.0000019, metrics:accuracy:0.9672
+INFO:root:[Epoch 9 Batch 2600/12276] loss=0.1074, lr=0.0000019, metrics:accuracy:0.9672
+INFO:root:[Epoch 9 Batch 2700/12276] loss=0.1208, lr=0.0000019, metrics:accuracy:0.9670
+INFO:root:[Epoch 9 Batch 2800/12276] loss=0.1194, lr=0.0000019, metrics:accuracy:0.9670
+INFO:root:[Epoch 9 Batch 2900/12276] loss=0.1226, lr=0.0000019, metrics:accuracy:0.9668
+INFO:root:[Epoch 9 Batch 3000/12276] loss=0.1145, lr=0.0000019, metrics:accuracy:0.9668
+INFO:root:[Epoch 9 Batch 3100/12276] loss=0.1076, lr=0.0000019, metrics:accuracy:0.9668
+INFO:root:[Epoch 9 Batch 3200/12276] loss=0.1011, lr=0.0000018, metrics:accuracy:0.9669
+INFO:root:[Epoch 9 Batch 3300/12276] loss=0.1121, lr=0.0000018, metrics:accuracy:0.9669
+INFO:root:[Epoch 9 Batch 3400/12276] loss=0.1133, lr=0.0000018, metrics:accuracy:0.9668
+INFO:root:[Epoch 9 Batch 3500/12276] loss=0.1165, lr=0.0000018, metrics:accuracy:0.9667
+INFO:root:[Epoch 9 Batch 3600/12276] loss=0.1096, lr=0.0000018, metrics:accuracy:0.9666
+INFO:root:[Epoch 9 Batch 3700/12276] loss=0.0947, lr=0.0000018, metrics:accuracy:0.9667
+INFO:root:[Epoch 9 Batch 3800/12276] loss=0.1183, lr=0.0000018, metrics:accuracy:0.9666
+INFO:root:[Epoch 9 Batch 3900/12276] loss=0.1061, lr=0.0000018, metrics:accuracy:0.9666
+INFO:root:[Epoch 9 Batch 4000/12276] loss=0.1273, lr=0.0000018, metrics:accuracy:0.9665
+INFO:root:[Epoch 9 Batch 4100/12276] loss=0.1265, lr=0.0000018, metrics:accuracy:0.9664
+INFO:root:[Epoch 9 Batch 4200/12276] loss=0.1197, lr=0.0000018, metrics:accuracy:0.9664
+INFO:root:[Epoch 9 Batch 4300/12276] loss=0.1056, lr=0.0000018, metrics:accuracy:0.9663
+INFO:root:[Epoch 9 Batch 4400/12276] loss=0.1112, lr=0.0000017, metrics:accuracy:0.9663
+INFO:root:[Epoch 9 Batch 4500/12276] loss=0.1034, lr=0.0000017, metrics:accuracy:0.9663
+INFO:root:[Epoch 9 Batch 4600/12276] loss=0.1058, lr=0.0000017, metrics:accuracy:0.9663
+INFO:root:[Epoch 9 Batch 4700/12276] loss=0.1257, lr=0.0000017, metrics:accuracy:0.9662
+INFO:root:[Epoch 9 Batch 4800/12276] loss=0.1273, lr=0.0000017, metrics:accuracy:0.9661
+INFO:root:[Epoch 9 Batch 4900/12276] loss=0.0983, lr=0.0000017, metrics:accuracy:0.9662
+INFO:root:[Epoch 9 Batch 5000/12276] loss=0.1081, lr=0.0000017, metrics:accuracy:0.9662
+INFO:root:[Epoch 9 Batch 5100/12276] loss=0.1383, lr=0.0000017, metrics:accuracy:0.9661
+INFO:root:[Epoch 9 Batch 5200/12276] loss=0.1030, lr=0.0000017, metrics:accuracy:0.9661
+INFO:root:[Epoch 9 Batch 5300/12276] loss=0.1039, lr=0.0000017, metrics:accuracy:0.9661
+INFO:root:[Epoch 9 Batch 5400/12276] loss=0.1197, lr=0.0000017, metrics:accuracy:0.9660
+INFO:root:[Epoch 9 Batch 5500/12276] loss=0.1089, lr=0.0000016, metrics:accuracy:0.9660
+INFO:root:[Epoch 9 Batch 5600/12276] loss=0.1118, lr=0.0000016, metrics:accuracy:0.9660
+INFO:root:[Epoch 9 Batch 5700/12276] loss=0.1158, lr=0.0000016, metrics:accuracy:0.9660
+INFO:root:[Epoch 9 Batch 5800/12276] loss=0.1030, lr=0.0000016, metrics:accuracy:0.9661
+INFO:root:[Epoch 9 Batch 5900/12276] loss=0.0933, lr=0.0000016, metrics:accuracy:0.9661
+INFO:root:[Epoch 9 Batch 6000/12276] loss=0.1032, lr=0.0000016, metrics:accuracy:0.9662
+INFO:root:[Epoch 9 Batch 6100/12276] loss=0.1239, lr=0.0000016, metrics:accuracy:0.9661
+INFO:root:[Epoch 9 Batch 6200/12276] loss=0.1254, lr=0.0000016, metrics:accuracy:0.9661
+INFO:root:[Epoch 9 Batch 6300/12276] loss=0.1014, lr=0.0000016, metrics:accuracy:0.9661
+INFO:root:[Epoch 9 Batch 6400/12276] loss=0.1176, lr=0.0000016, metrics:accuracy:0.9661
+INFO:root:[Epoch 9 Batch 6500/12276] loss=0.1010, lr=0.0000016, metrics:accuracy:0.9662
+INFO:root:[Epoch 9 Batch 6600/12276] loss=0.1228, lr=0.0000016, metrics:accuracy:0.9661
+INFO:root:[Epoch 9 Batch 6700/12276] loss=0.0852, lr=0.0000015, metrics:accuracy:0.9662
+INFO:root:[Epoch 9 Batch 6800/12276] loss=0.1002, lr=0.0000015, metrics:accuracy:0.9663
+INFO:root:[Epoch 9 Batch 6900/12276] loss=0.1136, lr=0.0000015, metrics:accuracy:0.9662
+INFO:root:[Epoch 9 Batch 7000/12276] loss=0.0937, lr=0.0000015, metrics:accuracy:0.9663
+INFO:root:[Epoch 9 Batch 7100/12276] loss=0.1235, lr=0.0000015, metrics:accuracy:0.9663
+INFO:root:[Epoch 9 Batch 7200/12276] loss=0.1044, lr=0.0000015, metrics:accuracy:0.9663
+INFO:root:[Epoch 9 Batch 7300/12276] loss=0.0912, lr=0.0000015, metrics:accuracy:0.9663
+INFO:root:[Epoch 9 Batch 7400/12276] loss=0.1114, lr=0.0000015, metrics:accuracy:0.9663
+INFO:root:[Epoch 9 Batch 7500/12276] loss=0.1192, lr=0.0000015, metrics:accuracy:0.9663
+INFO:root:[Epoch 9 Batch 7600/12276] loss=0.1045, lr=0.0000015, metrics:accuracy:0.9663
+INFO:root:[Epoch 9 Batch 7700/12276] loss=0.1210, lr=0.0000015, metrics:accuracy:0.9662
+INFO:root:[Epoch 9 Batch 7800/12276] loss=0.0879, lr=0.0000014, metrics:accuracy:0.9663
+INFO:root:[Epoch 9 Batch 7900/12276] loss=0.1163, lr=0.0000014, metrics:accuracy:0.9663
+INFO:root:[Epoch 9 Batch 8000/12276] loss=0.1038, lr=0.0000014, metrics:accuracy:0.9664
+INFO:root:[Epoch 9 Batch 8100/12276] loss=0.1170, lr=0.0000014, metrics:accuracy:0.9664
+INFO:root:[Epoch 9 Batch 8200/12276] loss=0.1156, lr=0.0000014, metrics:accuracy:0.9663
+INFO:root:[Epoch 9 Batch 8300/12276] loss=0.1103, lr=0.0000014, metrics:accuracy:0.9663
+INFO:root:[Epoch 9 Batch 8400/12276] loss=0.1305, lr=0.0000014, metrics:accuracy:0.9663
+INFO:root:[Epoch 9 Batch 8500/12276] loss=0.1002, lr=0.0000014, metrics:accuracy:0.9663
+INFO:root:[Epoch 9 Batch 8600/12276] loss=0.1278, lr=0.0000014, metrics:accuracy:0.9662
+INFO:root:[Epoch 9 Batch 8700/12276] loss=0.1149, lr=0.0000014, metrics:accuracy:0.9662
+INFO:root:[Epoch 9 Batch 8800/12276] loss=0.1162, lr=0.0000014, metrics:accuracy:0.9661
+INFO:root:[Epoch 9 Batch 8900/12276] loss=0.1152, lr=0.0000014, metrics:accuracy:0.9661
+INFO:root:[Epoch 9 Batch 9000/12276] loss=0.1212, lr=0.0000013, metrics:accuracy:0.9661
+INFO:root:[Epoch 9 Batch 9100/12276] loss=0.1046, lr=0.0000013, metrics:accuracy:0.9661
+INFO:root:[Epoch 9 Batch 9200/12276] loss=0.1123, lr=0.0000013, metrics:accuracy:0.9661
+INFO:root:[Epoch 9 Batch 9300/12276] loss=0.0908, lr=0.0000013, metrics:accuracy:0.9661
+INFO:root:[Epoch 9 Batch 9400/12276] loss=0.1086, lr=0.0000013, metrics:accuracy:0.9661
+INFO:root:[Epoch 9 Batch 9500/12276] loss=0.1277, lr=0.0000013, metrics:accuracy:0.9661
+INFO:root:[Epoch 9 Batch 9600/12276] loss=0.1247, lr=0.0000013, metrics:accuracy:0.9661
+INFO:root:[Epoch 9 Batch 9700/12276] loss=0.1034, lr=0.0000013, metrics:accuracy:0.9661
+INFO:root:[Epoch 9 Batch 9800/12276] loss=0.1141, lr=0.0000013, metrics:accuracy:0.9661
+INFO:root:[Epoch 9 Batch 9900/12276] loss=0.1001, lr=0.0000013, metrics:accuracy:0.9661
+INFO:root:[Epoch 9 Batch 10000/12276] loss=0.0908, lr=0.0000013, metrics:accuracy:0.9662
+INFO:root:[Epoch 9 Batch 10100/12276] loss=0.1083, lr=0.0000012, metrics:accuracy:0.9662
+INFO:root:[Epoch 9 Batch 10200/12276] loss=0.0943, lr=0.0000012, metrics:accuracy:0.9662
+INFO:root:[Epoch 9 Batch 10300/12276] loss=0.1113, lr=0.0000012, metrics:accuracy:0.9662
+INFO:root:[Epoch 9 Batch 10400/12276] loss=0.1004, lr=0.0000012, metrics:accuracy:0.9663
+INFO:root:[Epoch 9 Batch 10500/12276] loss=0.1106, lr=0.0000012, metrics:accuracy:0.9662
+INFO:root:[Epoch 9 Batch 10600/12276] loss=0.1353, lr=0.0000012, metrics:accuracy:0.9662
+INFO:root:[Epoch 9 Batch 10700/12276] loss=0.1015, lr=0.0000012, metrics:accuracy:0.9662
+INFO:root:[Epoch 9 Batch 10800/12276] loss=0.1460, lr=0.0000012, metrics:accuracy:0.9661
+INFO:root:[Epoch 9 Batch 10900/12276] loss=0.0999, lr=0.0000012, metrics:accuracy:0.9661
+INFO:root:[Epoch 9 Batch 11000/12276] loss=0.0952, lr=0.0000012, metrics:accuracy:0.9662
+INFO:root:[Epoch 9 Batch 11100/12276] loss=0.1029, lr=0.0000012, metrics:accuracy:0.9662
+INFO:root:[Epoch 9 Batch 11200/12276] loss=0.1217, lr=0.0000012, metrics:accuracy:0.9662
+INFO:root:[Epoch 9 Batch 11300/12276] loss=0.1199, lr=0.0000011, metrics:accuracy:0.9662
+INFO:root:[Epoch 9 Batch 11400/12276] loss=0.1036, lr=0.0000011, metrics:accuracy:0.9662
+INFO:root:[Epoch 9 Batch 11500/12276] loss=0.1201, lr=0.0000011, metrics:accuracy:0.9662
+INFO:root:[Epoch 9 Batch 11600/12276] loss=0.1107, lr=0.0000011, metrics:accuracy:0.9662
+INFO:root:[Epoch 9 Batch 11700/12276] loss=0.1047, lr=0.0000011, metrics:accuracy:0.9662
+INFO:root:[Epoch 9 Batch 11800/12276] loss=0.1327, lr=0.0000011, metrics:accuracy:0.9662
+INFO:root:[Epoch 9 Batch 11900/12276] loss=0.0999, lr=0.0000011, metrics:accuracy:0.9662
+INFO:root:[Epoch 9 Batch 12000/12276] loss=0.1171, lr=0.0000011, metrics:accuracy:0.9662
+INFO:root:[Epoch 9 Batch 12100/12276] loss=0.1217, lr=0.0000011, metrics:accuracy:0.9662
+INFO:root:[Epoch 9 Batch 12200/12276] loss=0.1343, lr=0.0000011, metrics:accuracy:0.9661
+INFO:root:Now we are doing evaluation on dev_matched with gpu(1).
+INFO:root:[Batch 100/1227] loss=0.5993, metrics:accuracy:0.8625
+INFO:root:[Batch 200/1227] loss=0.6138, metrics:accuracy:0.8675
+INFO:root:[Batch 300/1227] loss=0.5927, metrics:accuracy:0.8700
+INFO:root:[Batch 400/1227] loss=0.6076, metrics:accuracy:0.8700
+INFO:root:[Batch 500/1227] loss=0.5822, metrics:accuracy:0.8725
+INFO:root:[Batch 600/1227] loss=0.5412, metrics:accuracy:0.8752
+INFO:root:[Batch 700/1227] loss=0.6240, metrics:accuracy:0.8754
+INFO:root:[Batch 800/1227] loss=0.5658, metrics:accuracy:0.8766
+INFO:root:[Batch 900/1227] loss=0.5600, metrics:accuracy:0.8768
+INFO:root:[Batch 1000/1227] loss=0.6745, metrics:accuracy:0.8758
+INFO:root:[Batch 1100/1227] loss=0.6793, metrics:accuracy:0.8749
+INFO:root:[Batch 1200/1227] loss=0.6424, metrics:accuracy:0.8743
+INFO:root:validation metrics:accuracy:0.8751
+INFO:root:Time cost=28.64s, throughput=342.78 samples/s
+INFO:root:Now we are doing evaluation on dev_mismatched with gpu(1).
+INFO:root:[Batch 100/1229] loss=0.6897, metrics:accuracy:0.8625
+INFO:root:[Batch 200/1229] loss=0.5800, metrics:accuracy:0.8675
+INFO:root:[Batch 300/1229] loss=0.5972, metrics:accuracy:0.8688
+INFO:root:[Batch 400/1229] loss=0.6260, metrics:accuracy:0.8694
+INFO:root:[Batch 500/1229] loss=0.6019, metrics:accuracy:0.8700
+INFO:root:[Batch 600/1229] loss=0.5744, metrics:accuracy:0.8706
+INFO:root:[Batch 700/1229] loss=0.7257, metrics:accuracy:0.8675
+INFO:root:[Batch 800/1229] loss=0.5691, metrics:accuracy:0.8684
+INFO:root:[Batch 900/1229] loss=0.6339, metrics:accuracy:0.8685
+INFO:root:[Batch 1000/1229] loss=0.6433, metrics:accuracy:0.8666
+INFO:root:[Batch 1100/1229] loss=0.6769, metrics:accuracy:0.8661
+INFO:root:[Batch 1200/1229] loss=0.6918, metrics:accuracy:0.8650
+INFO:root:validation metrics:accuracy:0.8652
+INFO:root:Time cost=28.43s, throughput=345.82 samples/s
+INFO:root:params saved in: ./output_dir/model_bert_MNLI_8.params
+INFO:root:Time cost=1895.04s
+INFO:root:[Epoch 10 Batch 100/12276] loss=0.0854, lr=0.0000011, metrics:accuracy:0.9719
+INFO:root:[Epoch 10 Batch 200/12276] loss=0.0991, lr=0.0000010, metrics:accuracy:0.9716
+INFO:root:[Epoch 10 Batch 300/12276] loss=0.1302, lr=0.0000010, metrics:accuracy:0.9673
+INFO:root:[Epoch 10 Batch 400/12276] loss=0.0898, lr=0.0000010, metrics:accuracy:0.9684
+INFO:root:[Epoch 10 Batch 500/12276] loss=0.1044, lr=0.0000010, metrics:accuracy:0.9683
+INFO:root:[Epoch 10 Batch 600/12276] loss=0.0954, lr=0.0000010, metrics:accuracy:0.9686
+INFO:root:[Epoch 10 Batch 700/12276] loss=0.0743, lr=0.0000010, metrics:accuracy:0.9697
+INFO:root:[Epoch 10 Batch 800/12276] loss=0.1063, lr=0.0000010, metrics:accuracy:0.9694
+INFO:root:[Epoch 10 Batch 900/12276] loss=0.1062, lr=0.0000010, metrics:accuracy:0.9692
+INFO:root:[Epoch 10 Batch 1000/12276] loss=0.0926, lr=0.0000010, metrics:accuracy:0.9695
+INFO:root:[Epoch 10 Batch 1100/12276] loss=0.0994, lr=0.0000010, metrics:accuracy:0.9694
+INFO:root:[Epoch 10 Batch 1200/12276] loss=0.0988, lr=0.0000010, metrics:accuracy:0.9695
+INFO:root:[Epoch 10 Batch 1300/12276] loss=0.1170, lr=0.0000009, metrics:accuracy:0.9691
+INFO:root:[Epoch 10 Batch 1400/12276] loss=0.0992, lr=0.0000009, metrics:accuracy:0.9691
+INFO:root:[Epoch 10 Batch 1500/12276] loss=0.0963, lr=0.0000009, metrics:accuracy:0.9693
+INFO:root:[Epoch 10 Batch 1600/12276] loss=0.0979, lr=0.0000009, metrics:accuracy:0.9695
+INFO:root:[Epoch 10 Batch 1700/12276] loss=0.0983, lr=0.0000009, metrics:accuracy:0.9695
+INFO:root:[Epoch 10 Batch 1800/12276] loss=0.0918, lr=0.0000009, metrics:accuracy:0.9697
+INFO:root:[Epoch 10 Batch 1900/12276] loss=0.0930, lr=0.0000009, metrics:accuracy:0.9698
+INFO:root:[Epoch 10 Batch 2000/12276] loss=0.1099, lr=0.0000009, metrics:accuracy:0.9697
+INFO:root:[Epoch 10 Batch 2100/12276] loss=0.1007, lr=0.0000009, metrics:accuracy:0.9697
+INFO:root:[Epoch 10 Batch 2200/12276] loss=0.0989, lr=0.0000009, metrics:accuracy:0.9696
+INFO:root:[Epoch 10 Batch 2300/12276] loss=0.0929, lr=0.0000009, metrics:accuracy:0.9697
+INFO:root:[Epoch 10 Batch 2400/12276] loss=0.1055, lr=0.0000009, metrics:accuracy:0.9697
+INFO:root:[Epoch 10 Batch 2500/12276] loss=0.0980, lr=0.0000008, metrics:accuracy:0.9697
+INFO:root:[Epoch 10 Batch 2600/12276] loss=0.0884, lr=0.0000008, metrics:accuracy:0.9698
+INFO:root:[Epoch 10 Batch 2700/12276] loss=0.1034, lr=0.0000008, metrics:accuracy:0.9698
+INFO:root:[Epoch 10 Batch 2800/12276] loss=0.0890, lr=0.0000008, metrics:accuracy:0.9700
+INFO:root:[Epoch 10 Batch 2900/12276] loss=0.0959, lr=0.0000008, metrics:accuracy:0.9700
+INFO:root:[Epoch 10 Batch 3000/12276] loss=0.0951, lr=0.0000008, metrics:accuracy:0.9700
+INFO:root:[Epoch 10 Batch 3100/12276] loss=0.0784, lr=0.0000008, metrics:accuracy:0.9702
+INFO:root:[Epoch 10 Batch 3200/12276] loss=0.1006, lr=0.0000008, metrics:accuracy:0.9702
+INFO:root:[Epoch 10 Batch 3300/12276] loss=0.0989, lr=0.0000008, metrics:accuracy:0.9703
+INFO:root:[Epoch 10 Batch 3400/12276] loss=0.1129, lr=0.0000008, metrics:accuracy:0.9702
+INFO:root:[Epoch 10 Batch 3500/12276] loss=0.1114, lr=0.0000008, metrics:accuracy:0.9701
+INFO:root:[Epoch 10 Batch 3600/12276] loss=0.1121, lr=0.0000007, metrics:accuracy:0.9700
+INFO:root:[Epoch 10 Batch 3700/12276] loss=0.0884, lr=0.0000007, metrics:accuracy:0.9700
+INFO:root:[Epoch 10 Batch 3800/12276] loss=0.1064, lr=0.0000007, metrics:accuracy:0.9700
+INFO:root:[Epoch 10 Batch 3900/12276] loss=0.0895, lr=0.0000007, metrics:accuracy:0.9701
+INFO:root:[Epoch 10 Batch 4000/12276] loss=0.0939, lr=0.0000007, metrics:accuracy:0.9702
+INFO:root:[Epoch 10 Batch 4100/12276] loss=0.1143, lr=0.0000007, metrics:accuracy:0.9701
+INFO:root:[Epoch 10 Batch 4200/12276] loss=0.0887, lr=0.0000007, metrics:accuracy:0.9702
+INFO:root:[Epoch 10 Batch 4300/12276] loss=0.1001, lr=0.0000007, metrics:accuracy:0.9703
+INFO:root:[Epoch 10 Batch 4400/12276] loss=0.0922, lr=0.0000007, metrics:accuracy:0.9703
+INFO:root:[Epoch 10 Batch 4500/12276] loss=0.1152, lr=0.0000007, metrics:accuracy:0.9702
+INFO:root:[Epoch 10 Batch 4600/12276] loss=0.0885, lr=0.0000007, metrics:accuracy:0.9703
+INFO:root:[Epoch 10 Batch 4700/12276] loss=0.1033, lr=0.0000007, metrics:accuracy:0.9702
+INFO:root:[Epoch 10 Batch 4800/12276] loss=0.0963, lr=0.0000006, metrics:accuracy:0.9703
+INFO:root:[Epoch 10 Batch 4900/12276] loss=0.1091, lr=0.0000006, metrics:accuracy:0.9703
+INFO:root:[Epoch 10 Batch 5000/12276] loss=0.1180, lr=0.0000006, metrics:accuracy:0.9701
+INFO:root:[Epoch 10 Batch 5100/12276] loss=0.0991, lr=0.0000006, metrics:accuracy:0.9702
+INFO:root:[Epoch 10 Batch 5200/12276] loss=0.0934, lr=0.0000006, metrics:accuracy:0.9702
+INFO:root:[Epoch 10 Batch 5300/12276] loss=0.1145, lr=0.0000006, metrics:accuracy:0.9702
+INFO:root:[Epoch 10 Batch 5400/12276] loss=0.1039, lr=0.0000006, metrics:accuracy:0.9702
+INFO:root:[Epoch 10 Batch 5500/12276] loss=0.0845, lr=0.0000006, metrics:accuracy:0.9702
+INFO:root:[Epoch 10 Batch 5600/12276] loss=0.1019, lr=0.0000006, metrics:accuracy:0.9702
+INFO:root:[Epoch 10 Batch 5700/12276] loss=0.0837, lr=0.0000006, metrics:accuracy:0.9703
+INFO:root:[Epoch 10 Batch 5800/12276] loss=0.1040, lr=0.0000006, metrics:accuracy:0.9703
+INFO:root:[Epoch 10 Batch 5900/12276] loss=0.0993, lr=0.0000005, metrics:accuracy:0.9703
+INFO:root:[Epoch 10 Batch 6000/12276] loss=0.1022, lr=0.0000005, metrics:accuracy:0.9703
+INFO:root:[Epoch 10 Batch 6100/12276] loss=0.0990, lr=0.0000005, metrics:accuracy:0.9703
+INFO:root:[Epoch 10 Batch 6200/12276] loss=0.0955, lr=0.0000005, metrics:accuracy:0.9704
+INFO:root:[Epoch 10 Batch 6300/12276] loss=0.1325, lr=0.0000005, metrics:accuracy:0.9702
+INFO:root:[Epoch 10 Batch 6400/12276] loss=0.1048, lr=0.0000005, metrics:accuracy:0.9702
+INFO:root:[Epoch 10 Batch 6500/12276] loss=0.0780, lr=0.0000005, metrics:accuracy:0.9702
+INFO:root:[Epoch 10 Batch 6600/12276] loss=0.0946, lr=0.0000005, metrics:accuracy:0.9703
+INFO:root:[Epoch 10 Batch 6700/12276] loss=0.1000, lr=0.0000005, metrics:accuracy:0.9703
+INFO:root:[Epoch 10 Batch 6800/12276] loss=0.1071, lr=0.0000005, metrics:accuracy:0.9703
+INFO:root:[Epoch 10 Batch 6900/12276] loss=0.1085, lr=0.0000005, metrics:accuracy:0.9702
+INFO:root:[Epoch 10 Batch 7000/12276] loss=0.0916, lr=0.0000005, metrics:accuracy:0.9702
+INFO:root:[Epoch 10 Batch 7100/12276] loss=0.1043, lr=0.0000004, metrics:accuracy:0.9702
+INFO:root:[Epoch 10 Batch 7200/12276] loss=0.1142, lr=0.0000004, metrics:accuracy:0.9702
+INFO:root:[Epoch 10 Batch 7300/12276] loss=0.1163, lr=0.0000004, metrics:accuracy:0.9701
+INFO:root:[Epoch 10 Batch 7400/12276] loss=0.0894, lr=0.0000004, metrics:accuracy:0.9702
+INFO:root:[Epoch 10 Batch 7500/12276] loss=0.1017, lr=0.0000004, metrics:accuracy:0.9702
+INFO:root:[Epoch 10 Batch 7600/12276] loss=0.0939, lr=0.0000004, metrics:accuracy:0.9702
+INFO:root:[Epoch 10 Batch 7700/12276] loss=0.1203, lr=0.0000004, metrics:accuracy:0.9701
+INFO:root:[Epoch 10 Batch 7800/12276] loss=0.1074, lr=0.0000004, metrics:accuracy:0.9701
+INFO:root:[Epoch 10 Batch 7900/12276] loss=0.0969, lr=0.0000004, metrics:accuracy:0.9701
+INFO:root:[Epoch 10 Batch 8000/12276] loss=0.1064, lr=0.0000004, metrics:accuracy:0.9700
+INFO:root:[Epoch 10 Batch 8100/12276] loss=0.1024, lr=0.0000004, metrics:accuracy:0.9700
+INFO:root:[Epoch 10 Batch 8200/12276] loss=0.1196, lr=0.0000003, metrics:accuracy:0.9699
+INFO:root:[Epoch 10 Batch 8300/12276] loss=0.0963, lr=0.0000003, metrics:accuracy:0.9700
+INFO:root:[Epoch 10 Batch 8400/12276] loss=0.0872, lr=0.0000003, metrics:accuracy:0.9700
+INFO:root:[Epoch 10 Batch 8500/12276] loss=0.0965, lr=0.0000003, metrics:accuracy:0.9701
+INFO:root:[Epoch 10 Batch 8600/12276] loss=0.1009, lr=0.0000003, metrics:accuracy:0.9701
+INFO:root:[Epoch 10 Batch 8700/12276] loss=0.0912, lr=0.0000003, metrics:accuracy:0.9701
+INFO:root:[Epoch 10 Batch 8800/12276] loss=0.0797, lr=0.0000003, metrics:accuracy:0.9702
+INFO:root:[Epoch 10 Batch 8900/12276] loss=0.0950, lr=0.0000003, metrics:accuracy:0.9703
+INFO:root:[Epoch 10 Batch 9000/12276] loss=0.0948, lr=0.0000003, metrics:accuracy:0.9703
+INFO:root:[Epoch 10 Batch 9100/12276] loss=0.0895, lr=0.0000003, metrics:accuracy:0.9703
+INFO:root:[Epoch 10 Batch 9200/12276] loss=0.0952, lr=0.0000003, metrics:accuracy:0.9703
+INFO:root:[Epoch 10 Batch 9300/12276] loss=0.0804, lr=0.0000003, metrics:accuracy:0.9704
+INFO:root:[Epoch 10 Batch 9400/12276] loss=0.1056, lr=0.0000002, metrics:accuracy:0.9704
+INFO:root:[Epoch 10 Batch 9500/12276] loss=0.1119, lr=0.0000002, metrics:accuracy:0.9703
+INFO:root:[Epoch 10 Batch 9600/12276] loss=0.1068, lr=0.0000002, metrics:accuracy:0.9703
+INFO:root:[Epoch 10 Batch 9700/12276] loss=0.0938, lr=0.0000002, metrics:accuracy:0.9703
+INFO:root:[Epoch 10 Batch 9800/12276] loss=0.0909, lr=0.0000002, metrics:accuracy:0.9703
+INFO:root:[Epoch 10 Batch 9900/12276] loss=0.1042, lr=0.0000002, metrics:accuracy:0.9703
+INFO:root:[Epoch 10 Batch 10000/12276] loss=0.1108, lr=0.0000002, metrics:accuracy:0.9703
+INFO:root:[Epoch 10 Batch 10100/12276] loss=0.0943, lr=0.0000002, metrics:accuracy:0.9703
+INFO:root:[Epoch 10 Batch 10200/12276] loss=0.1033, lr=0.0000002, metrics:accuracy:0.9703
+INFO:root:[Epoch 10 Batch 10300/12276] loss=0.1008, lr=0.0000002, metrics:accuracy:0.9703
+INFO:root:[Epoch 10 Batch 10400/12276] loss=0.1130, lr=0.0000002, metrics:accuracy:0.9703
+INFO:root:[Epoch 10 Batch 10500/12276] loss=0.0946, lr=0.0000002, metrics:accuracy:0.9703
+INFO:root:[Epoch 10 Batch 10600/12276] loss=0.0983, lr=0.0000001, metrics:accuracy:0.9703
+INFO:root:[Epoch 10 Batch 10700/12276] loss=0.1038, lr=0.0000001, metrics:accuracy:0.9703
+INFO:root:[Epoch 10 Batch 10800/12276] loss=0.0965, lr=0.0000001, metrics:accuracy:0.9703
+INFO:root:[Epoch 10 Batch 10900/12276] loss=0.0884, lr=0.0000001, metrics:accuracy:0.9704
+INFO:root:[Epoch 10 Batch 11000/12276] loss=0.0899, lr=0.0000001, metrics:accuracy:0.9704
+INFO:root:[Epoch 10 Batch 11100/12276] loss=0.1061, lr=0.0000001, metrics:accuracy:0.9704
+INFO:root:[Epoch 10 Batch 11200/12276] loss=0.1171, lr=0.0000001, metrics:accuracy:0.9703
+INFO:root:[Epoch 10 Batch 11300/12276] loss=0.0840, lr=0.0000001, metrics:accuracy:0.9704
+INFO:root:[Epoch 10 Batch 11400/12276] loss=0.1044, lr=0.0000001, metrics:accuracy:0.9704
+INFO:root:[Epoch 10 Batch 11500/12276] loss=0.0910, lr=0.0000001, metrics:accuracy:0.9704
+INFO:root:[Epoch 10 Batch 11600/12276] loss=0.0959, lr=0.0000001, metrics:accuracy:0.9704
+INFO:root:[Epoch 10 Batch 11700/12276] loss=0.1054, lr=0.0000000, metrics:accuracy:0.9704
+INFO:root:[Epoch 10 Batch 11800/12276] loss=0.1111, lr=0.0000000, metrics:accuracy:0.9704
+INFO:root:[Epoch 10 Batch 11900/12276] loss=0.0951, lr=0.0000000, metrics:accuracy:0.9704
+INFO:root:[Epoch 10 Batch 12000/12276] loss=0.0968, lr=0.0000000, metrics:accuracy:0.9704
+INFO:root:[Epoch 10 Batch 12100/12276] loss=0.0729, lr=0.0000000, metrics:accuracy:0.9704
+INFO:root:[Epoch 10 Batch 12200/12276] loss=0.0963, lr=0.0000000, metrics:accuracy:0.9705
+INFO:root:Now we are doing evaluation on dev_matched with gpu(1).
+INFO:root:[Batch 100/1227] loss=0.6822, metrics:accuracy:0.8638
+INFO:root:[Batch 200/1227] loss=0.6829, metrics:accuracy:0.8681
+INFO:root:[Batch 300/1227] loss=0.6636, metrics:accuracy:0.8712
+INFO:root:[Batch 400/1227] loss=0.6724, metrics:accuracy:0.8722
+INFO:root:[Batch 500/1227] loss=0.6547, metrics:accuracy:0.8742
+INFO:root:[Batch 600/1227] loss=0.6124, metrics:accuracy:0.8771
+INFO:root:[Batch 700/1227] loss=0.6982, metrics:accuracy:0.8766
+INFO:root:[Batch 800/1227] loss=0.6436, metrics:accuracy:0.8769
+INFO:root:[Batch 900/1227] loss=0.6147, metrics:accuracy:0.8768
+INFO:root:[Batch 1000/1227] loss=0.7603, metrics:accuracy:0.8749
+INFO:root:[Batch 1100/1227] loss=0.7552, metrics:accuracy:0.8741
+INFO:root:[Batch 1200/1227] loss=0.7209, metrics:accuracy:0.8736
+INFO:root:validation metrics:accuracy:0.8745
+INFO:root:Time cost=27.98s, throughput=350.83 samples/s
+INFO:root:Now we are doing evaluation on dev_mismatched with gpu(1).
+INFO:root:[Batch 100/1229] loss=0.7753, metrics:accuracy:0.8562
+INFO:root:[Batch 200/1229] loss=0.6574, metrics:accuracy:0.8656
+INFO:root:[Batch 300/1229] loss=0.6595, metrics:accuracy:0.8675
+INFO:root:[Batch 400/1229] loss=0.6876, metrics:accuracy:0.8697
+INFO:root:[Batch 500/1229] loss=0.6684, metrics:accuracy:0.8710
+INFO:root:[Batch 600/1229] loss=0.6331, metrics:accuracy:0.8723
+INFO:root:[Batch 700/1229] loss=0.8087, metrics:accuracy:0.8686
+INFO:root:[Batch 800/1229] loss=0.6336, metrics:accuracy:0.8694
+INFO:root:[Batch 900/1229] loss=0.7072, metrics:accuracy:0.8696
+INFO:root:[Batch 1000/1229] loss=0.7119, metrics:accuracy:0.8682
+INFO:root:[Batch 1100/1229] loss=0.7469, metrics:accuracy:0.8680
+INFO:root:[Batch 1200/1229] loss=0.7757, metrics:accuracy:0.8665
+INFO:root:validation metrics:accuracy:0.8667
+INFO:root:Time cost=29.61s, throughput=332.04 samples/s
+INFO:root:params saved in: ./output_dir/model_bert_MNLI_9.params
+INFO:root:Time cost=1921.48s
+INFO:root:Best model at epoch 3. Validation metrics:accuracy:0.8769
+INFO:root:Now we are doing testing on test_matched with gpu(1).
+INFO:root:Time cost=25.13s, throughput=390.03 samples/s
+INFO:root:Now we are doing testing on test_mismatched with gpu(1).
+INFO:root:Time cost=28.69s, throughput=343.30 samples/s
