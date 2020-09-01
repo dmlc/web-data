@@ -1,0 +1,685 @@
+Namespace(avg_reprojection=False, batch_size=10, ctx=[gpu(0)], data_path='/home/ubuntu/.mxnet/datasets/kitti/kitti_data', dataset='kitti', disable_automasking=False, disable_median_scaling=False, disparity_smoothness=0.001, eval_eigen_to_benchmark=False, eval_model=None, eval_mono=False, eval_split='eigen', eval_stereo=False, ext_disp_to_eval=None, frame_ids=[0, -1, 1], gpu=0, height=192, hybridize=False, learning_rate=0.0001, load_weights_folder=None, log_dir='./tmp/mono_stereo/', log_frequency=250, max_depth=100.0, min_depth=0.1, model_zoo='monodepth2_resnet18_kitti_mono+stereo_640x192', no_eval=False, no_gpu=False, no_ssim=False, num_epochs=20, num_workers=12, png=True, pose_model_input='pairs', pred_depth_scale_factor=1, pretrained_base=True, pretrained_type='customer', resume=None, save_frequency=1, save_pred_disps=False, scales=[0, 1, 2, 3], scheduler_step_size=15, split='eigen_zhou', start_epoch=0, use_stereo=True, v1_multiscale=False, warmup_epochs=0, width=640)
+MonoDepth2(
+  (encoder): ResnetEncoder(
+    (encoder): ResNetV1b(
+      (conv1): Conv2D(3 -> 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=64)
+      (relu): Activation(relu)
+      (maxpool): MaxPool2D(size=(3, 3), stride=(2, 2), padding=(1, 1), ceil_mode=False, global_pool=False, pool_type=max, layout=NCHW)
+      (layer1): HybridSequential(
+        (0): BasicBlockV1b(
+          (conv1): Conv2D(64 -> 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=64)
+          (relu1): Activation(relu)
+          (conv2): Conv2D(64 -> 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=64)
+          (relu2): Activation(relu)
+        )
+        (1): BasicBlockV1b(
+          (conv1): Conv2D(64 -> 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=64)
+          (relu1): Activation(relu)
+          (conv2): Conv2D(64 -> 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=64)
+          (relu2): Activation(relu)
+        )
+      )
+      (layer2): HybridSequential(
+        (0): BasicBlockV1b(
+          (conv1): Conv2D(64 -> 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+          (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=128)
+          (relu1): Activation(relu)
+          (conv2): Conv2D(128 -> 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=128)
+          (relu2): Activation(relu)
+          (downsample): HybridSequential(
+            (0): Conv2D(64 -> 128, kernel_size=(1, 1), stride=(2, 2), bias=False)
+            (1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=128)
+          )
+        )
+        (1): BasicBlockV1b(
+          (conv1): Conv2D(128 -> 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=128)
+          (relu1): Activation(relu)
+          (conv2): Conv2D(128 -> 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=128)
+          (relu2): Activation(relu)
+        )
+      )
+      (layer3): HybridSequential(
+        (0): BasicBlockV1b(
+          (conv1): Conv2D(128 -> 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+          (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+          (relu1): Activation(relu)
+          (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+          (relu2): Activation(relu)
+          (downsample): HybridSequential(
+            (0): Conv2D(128 -> 256, kernel_size=(1, 1), stride=(2, 2), bias=False)
+            (1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+          )
+        )
+        (1): BasicBlockV1b(
+          (conv1): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+          (relu1): Activation(relu)
+          (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+          (relu2): Activation(relu)
+        )
+      )
+      (layer4): HybridSequential(
+        (0): BasicBlockV1b(
+          (conv1): Conv2D(256 -> 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+          (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=512)
+          (relu1): Activation(relu)
+          (conv2): Conv2D(512 -> 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=512)
+          (relu2): Activation(relu)
+          (downsample): HybridSequential(
+            (0): Conv2D(256 -> 512, kernel_size=(1, 1), stride=(2, 2), bias=False)
+            (1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=512)
+          )
+        )
+        (1): BasicBlockV1b(
+          (conv1): Conv2D(512 -> 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=512)
+          (relu1): Activation(relu)
+          (conv2): Conv2D(512 -> 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=512)
+          (relu2): Activation(relu)
+        )
+      )
+      (avgpool): GlobalAvgPool2D(size=(1, 1), stride=(1, 1), padding=(0, 0), ceil_mode=True, global_pool=True, pool_type=avg, layout=NCHW)
+      (flat): Flatten
+      (fc): Dense(512 -> 1000, linear)
+    )
+  )
+  (decoder): DepthDecoder(
+    (decoder): HybridSequential(
+      (0): ConvBlock(
+        (conv): Conv3x3(
+          (pad): ReflectionPad2D(
+          
+          )
+          (conv): Conv2D(512 -> 256, kernel_size=(3, 3), stride=(1, 1))
+        )
+        (nonlin): ELU(
+        
+        )
+      )
+      (1): ConvBlock(
+        (conv): Conv3x3(
+          (pad): ReflectionPad2D(
+          
+          )
+          (conv): Conv2D(512 -> 256, kernel_size=(3, 3), stride=(1, 1))
+        )
+        (nonlin): ELU(
+        
+        )
+      )
+      (2): ConvBlock(
+        (conv): Conv3x3(
+          (pad): ReflectionPad2D(
+          
+          )
+          (conv): Conv2D(256 -> 128, kernel_size=(3, 3), stride=(1, 1))
+        )
+        (nonlin): ELU(
+        
+        )
+      )
+      (3): ConvBlock(
+        (conv): Conv3x3(
+          (pad): ReflectionPad2D(
+          
+          )
+          (conv): Conv2D(256 -> 128, kernel_size=(3, 3), stride=(1, 1))
+        )
+        (nonlin): ELU(
+        
+        )
+      )
+      (4): ConvBlock(
+        (conv): Conv3x3(
+          (pad): ReflectionPad2D(
+          
+          )
+          (conv): Conv2D(128 -> 64, kernel_size=(3, 3), stride=(1, 1))
+        )
+        (nonlin): ELU(
+        
+        )
+      )
+      (5): ConvBlock(
+        (conv): Conv3x3(
+          (pad): ReflectionPad2D(
+          
+          )
+          (conv): Conv2D(128 -> 64, kernel_size=(3, 3), stride=(1, 1))
+        )
+        (nonlin): ELU(
+        
+        )
+      )
+      (6): ConvBlock(
+        (conv): Conv3x3(
+          (pad): ReflectionPad2D(
+          
+          )
+          (conv): Conv2D(64 -> 32, kernel_size=(3, 3), stride=(1, 1))
+        )
+        (nonlin): ELU(
+        
+        )
+      )
+      (7): ConvBlock(
+        (conv): Conv3x3(
+          (pad): ReflectionPad2D(
+          
+          )
+          (conv): Conv2D(96 -> 32, kernel_size=(3, 3), stride=(1, 1))
+        )
+        (nonlin): ELU(
+        
+        )
+      )
+      (8): ConvBlock(
+        (conv): Conv3x3(
+          (pad): ReflectionPad2D(
+          
+          )
+          (conv): Conv2D(32 -> 16, kernel_size=(3, 3), stride=(1, 1))
+        )
+        (nonlin): ELU(
+        
+        )
+      )
+      (9): ConvBlock(
+        (conv): Conv3x3(
+          (pad): ReflectionPad2D(
+          
+          )
+          (conv): Conv2D(16 -> 16, kernel_size=(3, 3), stride=(1, 1))
+        )
+        (nonlin): ELU(
+        
+        )
+      )
+      (10): Conv3x3(
+        (pad): ReflectionPad2D(
+        
+        )
+        (conv): Conv2D(16 -> 1, kernel_size=(3, 3), stride=(1, 1))
+      )
+      (11): Conv3x3(
+        (pad): ReflectionPad2D(
+        
+        )
+        (conv): Conv2D(32 -> 1, kernel_size=(3, 3), stride=(1, 1))
+      )
+      (12): Conv3x3(
+        (pad): ReflectionPad2D(
+        
+        )
+        (conv): Conv2D(64 -> 1, kernel_size=(3, 3), stride=(1, 1))
+      )
+      (13): Conv3x3(
+        (pad): ReflectionPad2D(
+        
+        )
+        (conv): Conv2D(128 -> 1, kernel_size=(3, 3), stride=(1, 1))
+      )
+    )
+    (sigmoid): Activation(sigmoid)
+  )
+)
+MonoDepth2PoseNet(
+  (encoder): ResnetEncoder(
+    (encoder): ResNetV1b(
+      (conv1): Conv2D(6 -> 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias=False)
+      (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=64)
+      (relu): Activation(relu)
+      (maxpool): MaxPool2D(size=(3, 3), stride=(2, 2), padding=(1, 1), ceil_mode=False, global_pool=False, pool_type=max, layout=NCHW)
+      (layer1): HybridSequential(
+        (0): BasicBlockV1b(
+          (conv1): Conv2D(64 -> 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=64)
+          (relu1): Activation(relu)
+          (conv2): Conv2D(64 -> 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=64)
+          (relu2): Activation(relu)
+        )
+        (1): BasicBlockV1b(
+          (conv1): Conv2D(64 -> 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=64)
+          (relu1): Activation(relu)
+          (conv2): Conv2D(64 -> 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=64)
+          (relu2): Activation(relu)
+        )
+      )
+      (layer2): HybridSequential(
+        (0): BasicBlockV1b(
+          (conv1): Conv2D(64 -> 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+          (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=128)
+          (relu1): Activation(relu)
+          (conv2): Conv2D(128 -> 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=128)
+          (relu2): Activation(relu)
+          (downsample): HybridSequential(
+            (0): Conv2D(64 -> 128, kernel_size=(1, 1), stride=(2, 2), bias=False)
+            (1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=128)
+          )
+        )
+        (1): BasicBlockV1b(
+          (conv1): Conv2D(128 -> 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=128)
+          (relu1): Activation(relu)
+          (conv2): Conv2D(128 -> 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=128)
+          (relu2): Activation(relu)
+        )
+      )
+      (layer3): HybridSequential(
+        (0): BasicBlockV1b(
+          (conv1): Conv2D(128 -> 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+          (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+          (relu1): Activation(relu)
+          (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+          (relu2): Activation(relu)
+          (downsample): HybridSequential(
+            (0): Conv2D(128 -> 256, kernel_size=(1, 1), stride=(2, 2), bias=False)
+            (1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+          )
+        )
+        (1): BasicBlockV1b(
+          (conv1): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+          (relu1): Activation(relu)
+          (conv2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=256)
+          (relu2): Activation(relu)
+        )
+      )
+      (layer4): HybridSequential(
+        (0): BasicBlockV1b(
+          (conv1): Conv2D(256 -> 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+          (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=512)
+          (relu1): Activation(relu)
+          (conv2): Conv2D(512 -> 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=512)
+          (relu2): Activation(relu)
+          (downsample): HybridSequential(
+            (0): Conv2D(256 -> 512, kernel_size=(1, 1), stride=(2, 2), bias=False)
+            (1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=512)
+          )
+        )
+        (1): BasicBlockV1b(
+          (conv1): Conv2D(512 -> 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn1): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=512)
+          (relu1): Activation(relu)
+          (conv2): Conv2D(512 -> 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn2): BatchNorm(axis=1, eps=1e-05, momentum=0.9, fix_gamma=False, use_global_stats=False, in_channels=512)
+          (relu2): Activation(relu)
+        )
+      )
+      (avgpool): GlobalAvgPool2D(size=(1, 1), stride=(1, 1), padding=(0, 0), ceil_mode=True, global_pool=True, pool_type=avg, layout=NCHW)
+      (flat): Flatten
+      (fc): Dense(512 -> 1000, linear)
+    )
+  )
+  (decoder): PoseDecoder(
+    (net): HybridSequential(
+      (0): Conv2D(512 -> 256, kernel_size=(1, 1), stride=(1, 1))
+      (1): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (2): Conv2D(256 -> 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (3): Conv2D(256 -> 12, kernel_size=(1, 1), stride=(1, 1))
+    )
+  )
+)
+Starting Epoch: 0
+Total Epochs: 20
+Epoch 0 iteration 0000/3981: training loss 0.138
+Epoch 0 iteration 0250/3981: training loss 0.126
+Epoch 0 iteration 0500/3981: training loss 0.122
+Epoch 0 iteration 0750/3981: training loss 0.119
+Epoch 0 iteration 1000/3981: training loss 0.117
+Epoch 0 iteration 1250/3981: training loss 0.116
+Epoch 0 iteration 1500/3981: training loss 0.114
+Epoch 0 iteration 1750/3981: training loss 0.113
+Epoch 0 iteration 2000/3981: training loss 0.113
+Epoch 0 iteration 2250/3981: training loss 0.112
+Epoch 0 iteration 2500/3981: training loss 0.111
+Epoch 0 iteration 2750/3981: training loss 0.110
+Epoch 0 iteration 3000/3981: training loss 0.110
+Epoch 0 iteration 3250/3981: training loss 0.109
+Epoch 0 iteration 3500/3981: training loss 0.109
+Epoch 0 iteration 3750/3981: training loss 0.108
+Epoch 0, validation abs_REL: 0.122 sq_REL: 0.984 RMSE: 5.131, RMSE_log: 0.206 Delta_1: 0.851 Delta_2: 0.950 Delta_2: 0.980
+Epoch 1 iteration 0000/3981: training loss 0.101
+Epoch 1 iteration 0250/3981: training loss 0.100
+Epoch 1 iteration 0500/3981: training loss 0.101
+Epoch 1 iteration 0750/3981: training loss 0.100
+Epoch 1 iteration 1000/3981: training loss 0.100
+Epoch 1 iteration 1250/3981: training loss 0.100
+Epoch 1 iteration 1500/3981: training loss 0.100
+Epoch 1 iteration 1750/3981: training loss 0.099
+Epoch 1 iteration 2000/3981: training loss 0.099
+Epoch 1 iteration 2250/3981: training loss 0.099
+Epoch 1 iteration 2500/3981: training loss 0.099
+Epoch 1 iteration 2750/3981: training loss 0.099
+Epoch 1 iteration 3000/3981: training loss 0.099
+Epoch 1 iteration 3250/3981: training loss 0.099
+Epoch 1 iteration 3500/3981: training loss 0.098
+Epoch 1 iteration 3750/3981: training loss 0.098
+Epoch 1, validation abs_REL: 0.105 sq_REL: 0.730 RMSE: 4.681, RMSE_log: 0.197 Delta_1: 0.867 Delta_2: 0.955 Delta_2: 0.981
+Epoch 2 iteration 0000/3981: training loss 0.103
+Epoch 2 iteration 0250/3981: training loss 0.094
+Epoch 2 iteration 0500/3981: training loss 0.095
+Epoch 2 iteration 0750/3981: training loss 0.095
+Epoch 2 iteration 1000/3981: training loss 0.096
+Epoch 2 iteration 1250/3981: training loss 0.095
+Epoch 2 iteration 1500/3981: training loss 0.095
+Epoch 2 iteration 1750/3981: training loss 0.095
+Epoch 2 iteration 2000/3981: training loss 0.095
+Epoch 2 iteration 2250/3981: training loss 0.095
+Epoch 2 iteration 2500/3981: training loss 0.095
+Epoch 2 iteration 2750/3981: training loss 0.095
+Epoch 2 iteration 3000/3981: training loss 0.095
+Epoch 2 iteration 3250/3981: training loss 0.095
+Epoch 2 iteration 3500/3981: training loss 0.095
+Epoch 2 iteration 3750/3981: training loss 0.095
+Epoch 2, validation abs_REL: 0.112 sq_REL: 0.804 RMSE: 4.628, RMSE_log: 0.191 Delta_1: 0.884 Delta_2: 0.961 Delta_2: 0.983
+Epoch 3 iteration 0000/3981: training loss 0.098
+Epoch 3 iteration 0250/3981: training loss 0.092
+Epoch 3 iteration 0500/3981: training loss 0.092
+Epoch 3 iteration 0750/3981: training loss 0.092
+Epoch 3 iteration 1000/3981: training loss 0.092
+Epoch 3 iteration 1250/3981: training loss 0.092
+Epoch 3 iteration 1500/3981: training loss 0.092
+Epoch 3 iteration 1750/3981: training loss 0.092
+Epoch 3 iteration 2000/3981: training loss 0.092
+Epoch 3 iteration 2250/3981: training loss 0.092
+Epoch 3 iteration 2500/3981: training loss 0.093
+Epoch 3 iteration 2750/3981: training loss 0.092
+Epoch 3 iteration 3000/3981: training loss 0.092
+Epoch 3 iteration 3250/3981: training loss 0.092
+Epoch 3 iteration 3500/3981: training loss 0.092
+Epoch 3 iteration 3750/3981: training loss 0.092
+Epoch 3, validation abs_REL: 0.098 sq_REL: 0.717 RMSE: 4.489, RMSE_log: 0.188 Delta_1: 0.894 Delta_2: 0.962 Delta_2: 0.982
+Epoch 4 iteration 0000/3981: training loss 0.093
+Epoch 4 iteration 0250/3981: training loss 0.091
+Epoch 4 iteration 0500/3981: training loss 0.091
+Epoch 4 iteration 0750/3981: training loss 0.091
+Epoch 4 iteration 1000/3981: training loss 0.091
+Epoch 4 iteration 1250/3981: training loss 0.091
+Epoch 4 iteration 1500/3981: training loss 0.091
+Epoch 4 iteration 1750/3981: training loss 0.091
+Epoch 4 iteration 2000/3981: training loss 0.091
+Epoch 4 iteration 2250/3981: training loss 0.091
+Epoch 4 iteration 2500/3981: training loss 0.091
+Epoch 4 iteration 2750/3981: training loss 0.091
+Epoch 4 iteration 3000/3981: training loss 0.091
+Epoch 4 iteration 3250/3981: training loss 0.090
+Epoch 4 iteration 3500/3981: training loss 0.091
+Epoch 4 iteration 3750/3981: training loss 0.090
+Epoch 4, validation abs_REL: 0.093 sq_REL: 0.714 RMSE: 4.437, RMSE_log: 0.186 Delta_1: 0.898 Delta_2: 0.962 Delta_2: 0.982
+Epoch 5 iteration 0000/3981: training loss 0.089
+Epoch 5 iteration 0250/3981: training loss 0.090
+Epoch 5 iteration 0500/3981: training loss 0.089
+Epoch 5 iteration 0750/3981: training loss 0.090
+Epoch 5 iteration 1000/3981: training loss 0.089
+Epoch 5 iteration 1250/3981: training loss 0.090
+Epoch 5 iteration 1500/3981: training loss 0.089
+Epoch 5 iteration 1750/3981: training loss 0.090
+Epoch 5 iteration 2000/3981: training loss 0.089
+Epoch 5 iteration 2250/3981: training loss 0.089
+Epoch 5 iteration 2500/3981: training loss 0.089
+Epoch 5 iteration 2750/3981: training loss 0.089
+Epoch 5 iteration 3000/3981: training loss 0.089
+Epoch 5 iteration 3250/3981: training loss 0.089
+Epoch 5 iteration 3500/3981: training loss 0.089
+Epoch 5 iteration 3750/3981: training loss 0.089
+Epoch 5, validation abs_REL: 0.090 sq_REL: 0.705 RMSE: 4.382, RMSE_log: 0.181 Delta_1: 0.904 Delta_2: 0.965 Delta_2: 0.984
+Epoch 6 iteration 0000/3981: training loss 0.089
+Epoch 6 iteration 0250/3981: training loss 0.089
+Epoch 6 iteration 0500/3981: training loss 0.089
+Epoch 6 iteration 0750/3981: training loss 0.088
+Epoch 6 iteration 1000/3981: training loss 0.088
+Epoch 6 iteration 1250/3981: training loss 0.089
+Epoch 6 iteration 1500/3981: training loss 0.089
+Epoch 6 iteration 1750/3981: training loss 0.089
+Epoch 6 iteration 2000/3981: training loss 0.089
+Epoch 6 iteration 2250/3981: training loss 0.088
+Epoch 6 iteration 2500/3981: training loss 0.088
+Epoch 6 iteration 2750/3981: training loss 0.088
+Epoch 6 iteration 3000/3981: training loss 0.088
+Epoch 6 iteration 3250/3981: training loss 0.088
+Epoch 6 iteration 3500/3981: training loss 0.088
+Epoch 6 iteration 3750/3981: training loss 0.088
+Epoch 6, validation abs_REL: 0.088 sq_REL: 0.701 RMSE: 4.373, RMSE_log: 0.185 Delta_1: 0.905 Delta_2: 0.964 Delta_2: 0.982
+Epoch 7 iteration 0000/3981: training loss 0.091
+Epoch 7 iteration 0250/3981: training loss 0.087
+Epoch 7 iteration 0500/3981: training loss 0.087
+Epoch 7 iteration 0750/3981: training loss 0.087
+Epoch 7 iteration 1000/3981: training loss 0.087
+Epoch 7 iteration 1250/3981: training loss 0.087
+Epoch 7 iteration 1500/3981: training loss 0.087
+Epoch 7 iteration 1750/3981: training loss 0.087
+Epoch 7 iteration 2000/3981: training loss 0.088
+Epoch 7 iteration 2250/3981: training loss 0.087
+Epoch 7 iteration 2500/3981: training loss 0.087
+Epoch 7 iteration 2750/3981: training loss 0.088
+Epoch 7 iteration 3000/3981: training loss 0.088
+Epoch 7 iteration 3250/3981: training loss 0.088
+Epoch 7 iteration 3500/3981: training loss 0.088
+Epoch 7 iteration 3750/3981: training loss 0.087
+Epoch 7, validation abs_REL: 0.088 sq_REL: 0.707 RMSE: 4.392, RMSE_log: 0.184 Delta_1: 0.908 Delta_2: 0.965 Delta_2: 0.982
+Epoch 8 iteration 0000/3981: training loss 0.090
+Epoch 8 iteration 0250/3981: training loss 0.087
+Epoch 8 iteration 0500/3981: training loss 0.087
+Epoch 8 iteration 0750/3981: training loss 0.087
+Epoch 8 iteration 1000/3981: training loss 0.087
+Epoch 8 iteration 1250/3981: training loss 0.087
+Epoch 8 iteration 1500/3981: training loss 0.087
+Epoch 8 iteration 1750/3981: training loss 0.087
+Epoch 8 iteration 2000/3981: training loss 0.087
+Epoch 8 iteration 2250/3981: training loss 0.087
+Epoch 8 iteration 2500/3981: training loss 0.087
+Epoch 8 iteration 2750/3981: training loss 0.087
+Epoch 8 iteration 3000/3981: training loss 0.087
+Epoch 8 iteration 3250/3981: training loss 0.087
+Epoch 8 iteration 3500/3981: training loss 0.087
+Epoch 8 iteration 3750/3981: training loss 0.087
+Epoch 8, validation abs_REL: 0.099 sq_REL: 0.814 RMSE: 4.594, RMSE_log: 0.185 Delta_1: 0.903 Delta_2: 0.965 Delta_2: 0.983
+Epoch 9 iteration 0000/3981: training loss 0.077
+Epoch 9 iteration 0250/3981: training loss 0.086
+Epoch 9 iteration 0500/3981: training loss 0.086
+Epoch 9 iteration 0750/3981: training loss 0.086
+Epoch 9 iteration 1000/3981: training loss 0.086
+Epoch 9 iteration 1250/3981: training loss 0.086
+Epoch 9 iteration 1500/3981: training loss 0.086
+Epoch 9 iteration 1750/3981: training loss 0.086
+Epoch 9 iteration 2000/3981: training loss 0.086
+Epoch 9 iteration 2250/3981: training loss 0.086
+Epoch 9 iteration 2500/3981: training loss 0.086
+Epoch 9 iteration 2750/3981: training loss 0.086
+Epoch 9 iteration 3000/3981: training loss 0.086
+Epoch 9 iteration 3250/3981: training loss 0.086
+Epoch 9 iteration 3500/3981: training loss 0.086
+Epoch 9 iteration 3750/3981: training loss 0.086
+Epoch 9, validation abs_REL: 0.082 sq_REL: 0.637 RMSE: 4.267, RMSE_log: 0.181 Delta_1: 0.910 Delta_2: 0.965 Delta_2: 0.983
+Epoch 10 iteration 0000/3981: training loss 0.083
+Epoch 10 iteration 0250/3981: training loss 0.086
+Epoch 10 iteration 0500/3981: training loss 0.086
+Epoch 10 iteration 0750/3981: training loss 0.085
+Epoch 10 iteration 1000/3981: training loss 0.085
+Epoch 10 iteration 1250/3981: training loss 0.085
+Epoch 10 iteration 1500/3981: training loss 0.085
+Epoch 10 iteration 1750/3981: training loss 0.086
+Epoch 10 iteration 2000/3981: training loss 0.086
+Epoch 10 iteration 2250/3981: training loss 0.086
+Epoch 10 iteration 2500/3981: training loss 0.086
+Epoch 10 iteration 2750/3981: training loss 0.086
+Epoch 10 iteration 3000/3981: training loss 0.086
+Epoch 10 iteration 3250/3981: training loss 0.086
+Epoch 10 iteration 3500/3981: training loss 0.086
+Epoch 10 iteration 3750/3981: training loss 0.086
+Epoch 10, validation abs_REL: 0.089 sq_REL: 0.707 RMSE: 4.330, RMSE_log: 0.181 Delta_1: 0.914 Delta_2: 0.966 Delta_2: 0.983
+Epoch 11 iteration 0000/3981: training loss 0.075
+Epoch 11 iteration 0250/3981: training loss 0.085
+Epoch 11 iteration 0500/3981: training loss 0.085
+Epoch 11 iteration 0750/3981: training loss 0.085
+Epoch 11 iteration 1000/3981: training loss 0.085
+Epoch 11 iteration 1250/3981: training loss 0.085
+Epoch 11 iteration 1500/3981: training loss 0.085
+Epoch 11 iteration 1750/3981: training loss 0.085
+Epoch 11 iteration 2000/3981: training loss 0.085
+Epoch 11 iteration 2250/3981: training loss 0.085
+Epoch 11 iteration 2500/3981: training loss 0.085
+Epoch 11 iteration 2750/3981: training loss 0.085
+Epoch 11 iteration 3000/3981: training loss 0.085
+Epoch 11 iteration 3250/3981: training loss 0.085
+Epoch 11 iteration 3500/3981: training loss 0.085
+Epoch 11 iteration 3750/3981: training loss 0.085
+Epoch 11, validation abs_REL: 0.081 sq_REL: 0.680 RMSE: 4.333, RMSE_log: 0.183 Delta_1: 0.915 Delta_2: 0.965 Delta_2: 0.982
+Epoch 12 iteration 0000/3981: training loss 0.095
+Epoch 12 iteration 0250/3981: training loss 0.086
+Epoch 12 iteration 0500/3981: training loss 0.085
+Epoch 12 iteration 0750/3981: training loss 0.085
+Epoch 12 iteration 1000/3981: training loss 0.085
+Epoch 12 iteration 1250/3981: training loss 0.085
+Epoch 12 iteration 1500/3981: training loss 0.085
+Epoch 12 iteration 1750/3981: training loss 0.085
+Epoch 12 iteration 2000/3981: training loss 0.085
+Epoch 12 iteration 2250/3981: training loss 0.085
+Epoch 12 iteration 2500/3981: training loss 0.085
+Epoch 12 iteration 2750/3981: training loss 0.085
+Epoch 12 iteration 3000/3981: training loss 0.085
+Epoch 12 iteration 3250/3981: training loss 0.085
+Epoch 12 iteration 3500/3981: training loss 0.085
+Epoch 12 iteration 3750/3981: training loss 0.085
+Epoch 12, validation abs_REL: 0.089 sq_REL: 0.707 RMSE: 4.312, RMSE_log: 0.180 Delta_1: 0.916 Delta_2: 0.967 Delta_2: 0.983
+Epoch 13 iteration 0000/3981: training loss 0.087
+Epoch 13 iteration 0250/3981: training loss 0.084
+Epoch 13 iteration 0500/3981: training loss 0.085
+Epoch 13 iteration 0750/3981: training loss 0.084
+Epoch 13 iteration 1000/3981: training loss 0.084
+Epoch 13 iteration 1250/3981: training loss 0.084
+Epoch 13 iteration 1500/3981: training loss 0.084
+Epoch 13 iteration 1750/3981: training loss 0.084
+Epoch 13 iteration 2000/3981: training loss 0.084
+Epoch 13 iteration 2250/3981: training loss 0.084
+Epoch 13 iteration 2500/3981: training loss 0.084
+Epoch 13 iteration 2750/3981: training loss 0.084
+Epoch 13 iteration 3000/3981: training loss 0.084
+Epoch 13 iteration 3250/3981: training loss 0.084
+Epoch 13 iteration 3500/3981: training loss 0.084
+Epoch 13 iteration 3750/3981: training loss 0.084
+Epoch 13, validation abs_REL: 0.085 sq_REL: 0.714 RMSE: 4.299, RMSE_log: 0.180 Delta_1: 0.918 Delta_2: 0.967 Delta_2: 0.983
+Epoch 14 iteration 0000/3981: training loss 0.074
+Epoch 14 iteration 0250/3981: training loss 0.084
+Epoch 14 iteration 0500/3981: training loss 0.084
+Epoch 14 iteration 0750/3981: training loss 0.084
+Epoch 14 iteration 1000/3981: training loss 0.084
+Epoch 14 iteration 1250/3981: training loss 0.084
+Epoch 14 iteration 1500/3981: training loss 0.084
+Epoch 14 iteration 1750/3981: training loss 0.084
+Epoch 14 iteration 2000/3981: training loss 0.084
+Epoch 14 iteration 2250/3981: training loss 0.084
+Epoch 14 iteration 2500/3981: training loss 0.084
+Epoch 14 iteration 2750/3981: training loss 0.084
+Epoch 14 iteration 3000/3981: training loss 0.084
+Epoch 14 iteration 3250/3981: training loss 0.084
+Epoch 14 iteration 3500/3981: training loss 0.084
+Epoch 14 iteration 3750/3981: training loss 0.084
+Epoch 14, validation abs_REL: 0.096 sq_REL: 0.795 RMSE: 4.539, RMSE_log: 0.183 Delta_1: 0.914 Delta_2: 0.967 Delta_2: 0.983
+Epoch 15 iteration 0000/3981: training loss 0.085
+Epoch 15 iteration 0250/3981: training loss 0.083
+Epoch 15 iteration 0500/3981: training loss 0.083
+Epoch 15 iteration 0750/3981: training loss 0.084
+Epoch 15 iteration 1000/3981: training loss 0.083
+Epoch 15 iteration 1250/3981: training loss 0.083
+Epoch 15 iteration 1500/3981: training loss 0.083
+Epoch 15 iteration 1750/3981: training loss 0.083
+Epoch 15 iteration 2000/3981: training loss 0.083
+Epoch 15 iteration 2250/3981: training loss 0.084
+Epoch 15 iteration 2500/3981: training loss 0.084
+Epoch 15 iteration 2750/3981: training loss 0.084
+Epoch 15 iteration 3000/3981: training loss 0.084
+Epoch 15 iteration 3250/3981: training loss 0.083
+Epoch 15 iteration 3500/3981: training loss 0.084
+Epoch 15 iteration 3750/3981: training loss 0.084
+Epoch 15, validation abs_REL: 0.086 sq_REL: 0.736 RMSE: 4.289, RMSE_log: 0.180 Delta_1: 0.920 Delta_2: 0.967 Delta_2: 0.983
+Epoch 16 iteration 0000/3981: training loss 0.089
+Epoch 16 iteration 0250/3981: training loss 0.084
+Epoch 16 iteration 0500/3981: training loss 0.084
+Epoch 16 iteration 0750/3981: training loss 0.084
+Epoch 16 iteration 1000/3981: training loss 0.084
+Epoch 16 iteration 1250/3981: training loss 0.083
+Epoch 16 iteration 1500/3981: training loss 0.083
+Epoch 16 iteration 1750/3981: training loss 0.083
+Epoch 16 iteration 2000/3981: training loss 0.083
+Epoch 16 iteration 2250/3981: training loss 0.083
+Epoch 16 iteration 2500/3981: training loss 0.083
+Epoch 16 iteration 2750/3981: training loss 0.083
+Epoch 16 iteration 3000/3981: training loss 0.083
+Epoch 16 iteration 3250/3981: training loss 0.083
+Epoch 16 iteration 3500/3981: training loss 0.083
+Epoch 16 iteration 3750/3981: training loss 0.083
+Epoch 16, validation abs_REL: 0.086 sq_REL: 0.740 RMSE: 4.378, RMSE_log: 0.180 Delta_1: 0.918 Delta_2: 0.967 Delta_2: 0.983
+Epoch 17 iteration 0000/3981: training loss 0.079
+Epoch 17 iteration 0250/3981: training loss 0.084
+Epoch 17 iteration 0500/3981: training loss 0.084
+Epoch 17 iteration 0750/3981: training loss 0.084
+Epoch 17 iteration 1000/3981: training loss 0.083
+Epoch 17 iteration 1250/3981: training loss 0.083
+Epoch 17 iteration 1500/3981: training loss 0.083
+Epoch 17 iteration 1750/3981: training loss 0.083
+Epoch 17 iteration 2000/3981: training loss 0.083
+Epoch 17 iteration 2250/3981: training loss 0.083
+Epoch 17 iteration 2500/3981: training loss 0.083
+Epoch 17 iteration 2750/3981: training loss 0.083
+Epoch 17 iteration 3000/3981: training loss 0.083
+Epoch 17 iteration 3250/3981: training loss 0.083
+Epoch 17 iteration 3500/3981: training loss 0.083
+Epoch 17 iteration 3750/3981: training loss 0.083
+Epoch 17, validation abs_REL: 0.080 sq_REL: 0.745 RMSE: 4.356, RMSE_log: 0.180 Delta_1: 0.921 Delta_2: 0.967 Delta_2: 0.982
+Epoch 18 iteration 0000/3981: training loss 0.089
+Epoch 18 iteration 0250/3981: training loss 0.084
+Epoch 18 iteration 0500/3981: training loss 0.083
+Epoch 18 iteration 0750/3981: training loss 0.083
+Epoch 18 iteration 1000/3981: training loss 0.083
+Epoch 18 iteration 1250/3981: training loss 0.083
+Epoch 18 iteration 1500/3981: training loss 0.083
+Epoch 18 iteration 1750/3981: training loss 0.083
+Epoch 18 iteration 2000/3981: training loss 0.083
+Epoch 18 iteration 2250/3981: training loss 0.083
+Epoch 18 iteration 2500/3981: training loss 0.083
+Epoch 18 iteration 2750/3981: training loss 0.083
+Epoch 18 iteration 3000/3981: training loss 0.083
+Epoch 18 iteration 3250/3981: training loss 0.083
+Epoch 18 iteration 3500/3981: training loss 0.083
+Epoch 18 iteration 3750/3981: training loss 0.083
+Epoch 18, validation abs_REL: 0.081 sq_REL: 0.703 RMSE: 4.188, RMSE_log: 0.178 Delta_1: 0.921 Delta_2: 0.968 Delta_2: 0.983
+Epoch 19 iteration 0000/3981: training loss 0.075
+Epoch 19 iteration 0250/3981: training loss 0.083
+Epoch 19 iteration 0500/3981: training loss 0.083
+Epoch 19 iteration 0750/3981: training loss 0.083
+Epoch 19 iteration 1000/3981: training loss 0.084
+Epoch 19 iteration 1250/3981: training loss 0.084
+Epoch 19 iteration 1500/3981: training loss 0.084
+Epoch 19 iteration 1750/3981: training loss 0.083
+Epoch 19 iteration 2000/3981: training loss 0.083
+Epoch 19 iteration 2250/3981: training loss 0.083
+Epoch 19 iteration 2500/3981: training loss 0.083
+Epoch 19 iteration 2750/3981: training loss 0.083
+Epoch 19 iteration 3000/3981: training loss 0.083
+Epoch 19 iteration 3250/3981: training loss 0.083
+Epoch 19 iteration 3500/3981: training loss 0.083
+Epoch 19 iteration 3750/3981: training loss 0.083
+Epoch 19, validation abs_REL: 0.091 sq_REL: 0.778 RMSE: 4.420, RMSE_log: 0.181 Delta_1: 0.919 Delta_2: 0.968 Delta_2: 0.983
+Training Finished! Total training time is 28h 19m

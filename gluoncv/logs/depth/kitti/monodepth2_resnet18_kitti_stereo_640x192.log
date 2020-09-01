@@ -1,4 +1,4 @@
-Namespace(avg_reprojection=False, batch_size=12, ctx=[gpu(0)], data_path='/home/ubuntu/PR/gluon-cv/scripts/depth/kitti_data', dataset='kitti', disable_automasking=False, disable_median_scaling=False, disparity_smoothness=0.001, eval_eigen_to_benchmark=False, eval_mono=False, eval_split='eigen', eval_stereo=False, ext_disp_to_eval=None, frame_ids=[0], gpu=0, height=192, hybridize=False, learning_rate=0.0001, load_weights_folder=None, log_dir='./tmp/stereo_hybridize/', log_frequency=250, max_depth=100.0, min_depth=0.1, model_zoo='monodepth2_resnet18_kitti_stereo_640x192', no_eval=False, no_gpu=False, no_ssim=False, num_epochs=20, num_workers=12, png=True, pose_model_input='pairs', pred_depth_scale_factor=1, pretrained_base=True, pretrained_type='customer', resume=None, save_frequency=1, save_pred_disps=False, scales=[0, 1, 2, 3], scheduler_step_size=15, split='eigen_full', use_stereo=True, v1_multiscale=False, width=640)
+Namespace(avg_reprojection=False, batch_size=12, ctx=[gpu(0)], data_path='/home/ubuntu/.mxnet/datasets/kitti/kitti_data', dataset='kitti', disable_automasking=False, disable_median_scaling=False, disparity_smoothness=0.001, eval_eigen_to_benchmark=False, eval_model=None, eval_mono=False, eval_split='eigen', eval_stereo=False, ext_disp_to_eval=None, frame_ids=[0], gpu=0, height=192, hybridize=False, learning_rate=0.0001, load_weights_folder=None, log_dir='./tmp/stereo/', log_frequency=250, max_depth=100.0, min_depth=0.1, model_zoo='monodepth2_resnet18_kitti_stereo_640x192', no_eval=False, no_gpu=False, no_ssim=False, num_epochs=20, num_workers=12, png=False, pose_model_input='pairs', pred_depth_scale_factor=1, pretrained_base=True, pretrained_type='customer', resume=None, save_frequency=1, save_pred_disps=False, scales=[0, 1, 2, 3], scheduler_step_size=15, split='eigen_full', start_epoch=0, use_stereo=True, v1_multiscale=False, warmup_epochs=0, width=640)
 MonoDepth2(
   (encoder): ResnetEncoder(
     (encoder): ResNetV1b(
@@ -235,25 +235,26 @@ MonoDepth2(
     (sigmoid): Activation(sigmoid)
   )
 )
-Strat Training !
-Epoch 0 iteration 0000/3766: training loss 0.243
-Epoch 0 iteration 0250/3766: training loss 0.169
-Epoch 0 iteration 0500/3766: training loss 0.161
-Epoch 0 iteration 0750/3766: training loss 0.156
-Epoch 0 iteration 1000/3766: training loss 0.153
+Starting Epoch: 0
+Total Epochs: 20
+Epoch 0 iteration 0000/3766: training loss 0.204
+Epoch 0 iteration 0250/3766: training loss 0.175
+Epoch 0 iteration 0500/3766: training loss 0.163
+Epoch 0 iteration 0750/3766: training loss 0.157
+Epoch 0 iteration 1000/3766: training loss 0.154
 Epoch 0 iteration 1250/3766: training loss 0.151
 Epoch 0 iteration 1500/3766: training loss 0.149
 Epoch 0 iteration 1750/3766: training loss 0.147
 Epoch 0 iteration 2000/3766: training loss 0.146
-Epoch 0 iteration 2250/3766: training loss 0.145
-Epoch 0 iteration 2500/3766: training loss 0.144
-Epoch 0 iteration 2750/3766: training loss 0.143
-Epoch 0 iteration 3000/3766: training loss 0.142
+Epoch 0 iteration 2250/3766: training loss 0.144
+Epoch 0 iteration 2500/3766: training loss 0.143
+Epoch 0 iteration 2750/3766: training loss 0.142
+Epoch 0 iteration 3000/3766: training loss 0.141
 Epoch 0 iteration 3250/3766: training loss 0.141
-Epoch 0 iteration 3500/3766: training loss 0.141
-Epoch 0 iteration 3750/3766: training loss 0.140
-Epoch 0, validation abs_REL: 0.141 sq_REL: 1.128 RMSE: 5.214, RMSE_log: 0.217 Delta_1: 0.857 Delta_2: 0.951 Delta_2: 0.979
-Epoch 1 iteration 0000/3766: training loss 0.127
+Epoch 0 iteration 3500/3766: training loss 0.140
+Epoch 0 iteration 3750/3766: training loss 0.139
+Epoch 0, validation abs_REL: 0.114 sq_REL: 0.951 RMSE: 5.026, RMSE_log: 0.212 Delta_1: 0.861 Delta_2: 0.949 Delta_2: 0.978
+Epoch 1 iteration 0000/3766: training loss 0.125
 Epoch 1 iteration 0250/3766: training loss 0.129
 Epoch 1 iteration 0500/3766: training loss 0.129
 Epoch 1 iteration 0750/3766: training loss 0.128
@@ -264,31 +265,31 @@ Epoch 1 iteration 1750/3766: training loss 0.127
 Epoch 1 iteration 2000/3766: training loss 0.126
 Epoch 1 iteration 2250/3766: training loss 0.126
 Epoch 1 iteration 2500/3766: training loss 0.126
-Epoch 1 iteration 2750/3766: training loss 0.126
+Epoch 1 iteration 2750/3766: training loss 0.125
 Epoch 1 iteration 3000/3766: training loss 0.125
 Epoch 1 iteration 3250/3766: training loss 0.125
 Epoch 1 iteration 3500/3766: training loss 0.125
-Epoch 1 iteration 3750/3766: training loss 0.125
-Epoch 1, validation abs_REL: 0.105 sq_REL: 0.833 RMSE: 4.667, RMSE_log: 0.197 Delta_1: 0.885 Delta_2: 0.957 Delta_2: 0.981
-Epoch 2 iteration 0000/3766: training loss 0.107
+Epoch 1 iteration 3750/3766: training loss 0.124
+Epoch 1, validation abs_REL: 0.112 sq_REL: 0.913 RMSE: 4.928, RMSE_log: 0.207 Delta_1: 0.882 Delta_2: 0.954 Delta_2: 0.978
+Epoch 2 iteration 0000/3766: training loss 0.112
 Epoch 2 iteration 0250/3766: training loss 0.121
 Epoch 2 iteration 0500/3766: training loss 0.121
-Epoch 2 iteration 0750/3766: training loss 0.121
+Epoch 2 iteration 0750/3766: training loss 0.120
 Epoch 2 iteration 1000/3766: training loss 0.120
 Epoch 2 iteration 1250/3766: training loss 0.120
 Epoch 2 iteration 1500/3766: training loss 0.120
 Epoch 2 iteration 1750/3766: training loss 0.120
 Epoch 2 iteration 2000/3766: training loss 0.120
-Epoch 2 iteration 2250/3766: training loss 0.120
-Epoch 2 iteration 2500/3766: training loss 0.120
-Epoch 2 iteration 2750/3766: training loss 0.120
+Epoch 2 iteration 2250/3766: training loss 0.119
+Epoch 2 iteration 2500/3766: training loss 0.119
+Epoch 2 iteration 2750/3766: training loss 0.119
 Epoch 2 iteration 3000/3766: training loss 0.119
 Epoch 2 iteration 3250/3766: training loss 0.119
 Epoch 2 iteration 3500/3766: training loss 0.119
 Epoch 2 iteration 3750/3766: training loss 0.119
-Epoch 2, validation abs_REL: 0.105 sq_REL: 0.946 RMSE: 5.002, RMSE_log: 0.206 Delta_1: 0.885 Delta_2: 0.954 Delta_2: 0.978
-Epoch 3 iteration 0000/3766: training loss 0.120
-Epoch 3 iteration 0250/3766: training loss 0.116
+Epoch 2, validation abs_REL: 0.099 sq_REL: 0.840 RMSE: 4.720, RMSE_log: 0.197 Delta_1: 0.893 Delta_2: 0.957 Delta_2: 0.980
+Epoch 3 iteration 0000/3766: training loss 0.146
+Epoch 3 iteration 0250/3766: training loss 0.115
 Epoch 3 iteration 0500/3766: training loss 0.116
 Epoch 3 iteration 0750/3766: training loss 0.116
 Epoch 3 iteration 1000/3766: training loss 0.116
@@ -297,14 +298,14 @@ Epoch 3 iteration 1500/3766: training loss 0.116
 Epoch 3 iteration 1750/3766: training loss 0.116
 Epoch 3 iteration 2000/3766: training loss 0.116
 Epoch 3 iteration 2250/3766: training loss 0.116
-Epoch 3 iteration 2500/3766: training loss 0.116
+Epoch 3 iteration 2500/3766: training loss 0.115
 Epoch 3 iteration 2750/3766: training loss 0.115
 Epoch 3 iteration 3000/3766: training loss 0.115
 Epoch 3 iteration 3250/3766: training loss 0.115
 Epoch 3 iteration 3500/3766: training loss 0.115
 Epoch 3 iteration 3750/3766: training loss 0.115
-Epoch 3, validation abs_REL: 0.097 sq_REL: 0.795 RMSE: 4.617, RMSE_log: 0.197 Delta_1: 0.898 Delta_2: 0.958 Delta_2: 0.979
-Epoch 4 iteration 0000/3766: training loss 0.100
+Epoch 3, validation abs_REL: 0.103 sq_REL: 0.931 RMSE: 4.911, RMSE_log: 0.198 Delta_1: 0.895 Delta_2: 0.958 Delta_2: 0.980
+Epoch 4 iteration 0000/3766: training loss 0.131
 Epoch 4 iteration 0250/3766: training loss 0.113
 Epoch 4 iteration 0500/3766: training loss 0.113
 Epoch 4 iteration 0750/3766: training loss 0.113
@@ -315,14 +316,14 @@ Epoch 4 iteration 1750/3766: training loss 0.113
 Epoch 4 iteration 2000/3766: training loss 0.113
 Epoch 4 iteration 2250/3766: training loss 0.113
 Epoch 4 iteration 2500/3766: training loss 0.113
-Epoch 4 iteration 2750/3766: training loss 0.113
-Epoch 4 iteration 3000/3766: training loss 0.113
-Epoch 4 iteration 3250/3766: training loss 0.113
+Epoch 4 iteration 2750/3766: training loss 0.112
+Epoch 4 iteration 3000/3766: training loss 0.112
+Epoch 4 iteration 3250/3766: training loss 0.112
 Epoch 4 iteration 3500/3766: training loss 0.112
 Epoch 4 iteration 3750/3766: training loss 0.112
-Epoch 4, validation abs_REL: 0.110 sq_REL: 0.836 RMSE: 4.575, RMSE_log: 0.196 Delta_1: 0.901 Delta_2: 0.961 Delta_2: 0.981
-Epoch 5 iteration 0000/3766: training loss 0.110
-Epoch 5 iteration 0250/3766: training loss 0.111
+Epoch 4, validation abs_REL: 0.091 sq_REL: 0.820 RMSE: 4.636, RMSE_log: 0.196 Delta_1: 0.903 Delta_2: 0.959 Delta_2: 0.979
+Epoch 5 iteration 0000/3766: training loss 0.126
+Epoch 5 iteration 0250/3766: training loss 0.112
 Epoch 5 iteration 0500/3766: training loss 0.111
 Epoch 5 iteration 0750/3766: training loss 0.111
 Epoch 5 iteration 1000/3766: training loss 0.111
@@ -332,19 +333,19 @@ Epoch 5 iteration 1750/3766: training loss 0.111
 Epoch 5 iteration 2000/3766: training loss 0.111
 Epoch 5 iteration 2250/3766: training loss 0.111
 Epoch 5 iteration 2500/3766: training loss 0.111
-Epoch 5 iteration 2750/3766: training loss 0.111
-Epoch 5 iteration 3000/3766: training loss 0.111
-Epoch 5 iteration 3250/3766: training loss 0.111
+Epoch 5 iteration 2750/3766: training loss 0.110
+Epoch 5 iteration 3000/3766: training loss 0.110
+Epoch 5 iteration 3250/3766: training loss 0.110
 Epoch 5 iteration 3500/3766: training loss 0.110
 Epoch 5 iteration 3750/3766: training loss 0.110
-Epoch 5, validation abs_REL: 0.090 sq_REL: 0.759 RMSE: 4.500, RMSE_log: 0.193 Delta_1: 0.903 Delta_2: 0.960 Delta_2: 0.980
-Epoch 6 iteration 0000/3766: training loss 0.113
-Epoch 6 iteration 0250/3766: training loss 0.111
+Epoch 5, validation abs_REL: 0.085 sq_REL: 0.730 RMSE: 4.532, RMSE_log: 0.196 Delta_1: 0.902 Delta_2: 0.958 Delta_2: 0.979
+Epoch 6 iteration 0000/3766: training loss 0.105
+Epoch 6 iteration 0250/3766: training loss 0.110
 Epoch 6 iteration 0500/3766: training loss 0.110
-Epoch 6 iteration 0750/3766: training loss 0.110
-Epoch 6 iteration 1000/3766: training loss 0.110
+Epoch 6 iteration 0750/3766: training loss 0.109
+Epoch 6 iteration 1000/3766: training loss 0.109
 Epoch 6 iteration 1250/3766: training loss 0.109
-Epoch 6 iteration 1500/3766: training loss 0.110
+Epoch 6 iteration 1500/3766: training loss 0.109
 Epoch 6 iteration 1750/3766: training loss 0.109
 Epoch 6 iteration 2000/3766: training loss 0.109
 Epoch 6 iteration 2250/3766: training loss 0.109
@@ -354,25 +355,25 @@ Epoch 6 iteration 3000/3766: training loss 0.109
 Epoch 6 iteration 3250/3766: training loss 0.109
 Epoch 6 iteration 3500/3766: training loss 0.109
 Epoch 6 iteration 3750/3766: training loss 0.109
-Epoch 6, validation abs_REL: 0.091 sq_REL: 0.795 RMSE: 4.530, RMSE_log: 0.195 Delta_1: 0.907 Delta_2: 0.960 Delta_2: 0.979
-Epoch 7 iteration 0000/3766: training loss 0.092
-Epoch 7 iteration 0250/3766: training loss 0.107
+Epoch 6, validation abs_REL: 0.104 sq_REL: 0.899 RMSE: 4.850, RMSE_log: 0.198 Delta_1: 0.904 Delta_2: 0.960 Delta_2: 0.979
+Epoch 7 iteration 0000/3766: training loss 0.090
+Epoch 7 iteration 0250/3766: training loss 0.108
 Epoch 7 iteration 0500/3766: training loss 0.108
 Epoch 7 iteration 0750/3766: training loss 0.108
-Epoch 7 iteration 1000/3766: training loss 0.107
+Epoch 7 iteration 1000/3766: training loss 0.108
 Epoch 7 iteration 1250/3766: training loss 0.108
-Epoch 7 iteration 1500/3766: training loss 0.108
+Epoch 7 iteration 1500/3766: training loss 0.107
 Epoch 7 iteration 1750/3766: training loss 0.107
-Epoch 7 iteration 2000/3766: training loss 0.108
+Epoch 7 iteration 2000/3766: training loss 0.107
 Epoch 7 iteration 2250/3766: training loss 0.108
-Epoch 7 iteration 2500/3766: training loss 0.108
+Epoch 7 iteration 2500/3766: training loss 0.107
 Epoch 7 iteration 2750/3766: training loss 0.107
 Epoch 7 iteration 3000/3766: training loss 0.107
 Epoch 7 iteration 3250/3766: training loss 0.107
 Epoch 7 iteration 3500/3766: training loss 0.107
 Epoch 7 iteration 3750/3766: training loss 0.107
-Epoch 7, validation abs_REL: 0.104 sq_REL: 0.859 RMSE: 4.711, RMSE_log: 0.201 Delta_1: 0.905 Delta_2: 0.959 Delta_2: 0.978
-Epoch 8 iteration 0000/3766: training loss 0.103
+Epoch 7, validation abs_REL: 0.097 sq_REL: 0.844 RMSE: 4.679, RMSE_log: 0.198 Delta_1: 0.908 Delta_2: 0.959 Delta_2: 0.978
+Epoch 8 iteration 0000/3766: training loss 0.104
 Epoch 8 iteration 0250/3766: training loss 0.106
 Epoch 8 iteration 0500/3766: training loss 0.106
 Epoch 8 iteration 0750/3766: training loss 0.106
@@ -388,43 +389,43 @@ Epoch 8 iteration 3000/3766: training loss 0.106
 Epoch 8 iteration 3250/3766: training loss 0.106
 Epoch 8 iteration 3500/3766: training loss 0.106
 Epoch 8 iteration 3750/3766: training loss 0.106
-Epoch 8, validation abs_REL: 0.084 sq_REL: 0.736 RMSE: 4.447, RMSE_log: 0.193 Delta_1: 0.907 Delta_2: 0.960 Delta_2: 0.979
-Epoch 9 iteration 0000/3766: training loss 0.116
+Epoch 8, validation abs_REL: 0.088 sq_REL: 0.816 RMSE: 4.612, RMSE_log: 0.195 Delta_1: 0.910 Delta_2: 0.960 Delta_2: 0.979
+Epoch 9 iteration 0000/3766: training loss 0.115
 Epoch 9 iteration 0250/3766: training loss 0.105
 Epoch 9 iteration 0500/3766: training loss 0.105
 Epoch 9 iteration 0750/3766: training loss 0.105
 Epoch 9 iteration 1000/3766: training loss 0.105
-Epoch 9 iteration 1250/3766: training loss 0.105
-Epoch 9 iteration 1500/3766: training loss 0.105
+Epoch 9 iteration 1250/3766: training loss 0.106
+Epoch 9 iteration 1500/3766: training loss 0.106
 Epoch 9 iteration 1750/3766: training loss 0.105
-Epoch 9 iteration 2000/3766: training loss 0.105
-Epoch 9 iteration 2250/3766: training loss 0.105
+Epoch 9 iteration 2000/3766: training loss 0.106
+Epoch 9 iteration 2250/3766: training loss 0.106
 Epoch 9 iteration 2500/3766: training loss 0.105
 Epoch 9 iteration 2750/3766: training loss 0.105
 Epoch 9 iteration 3000/3766: training loss 0.105
 Epoch 9 iteration 3250/3766: training loss 0.105
 Epoch 9 iteration 3500/3766: training loss 0.105
 Epoch 9 iteration 3750/3766: training loss 0.105
-Epoch 9, validation abs_REL: 0.087 sq_REL: 0.774 RMSE: 4.490, RMSE_log: 0.193 Delta_1: 0.910 Delta_2: 0.960 Delta_2: 0.979
-Epoch 10 iteration 0000/3766: training loss 0.109
+Epoch 9, validation abs_REL: 0.082 sq_REL: 0.782 RMSE: 4.579, RMSE_log: 0.198 Delta_1: 0.909 Delta_2: 0.958 Delta_2: 0.978
+Epoch 10 iteration 0000/3766: training loss 0.105
 Epoch 10 iteration 0250/3766: training loss 0.105
-Epoch 10 iteration 0500/3766: training loss 0.104
-Epoch 10 iteration 0750/3766: training loss 0.104
-Epoch 10 iteration 1000/3766: training loss 0.104
-Epoch 10 iteration 1250/3766: training loss 0.104
-Epoch 10 iteration 1500/3766: training loss 0.104
-Epoch 10 iteration 1750/3766: training loss 0.104
-Epoch 10 iteration 2000/3766: training loss 0.104
-Epoch 10 iteration 2250/3766: training loss 0.104
-Epoch 10 iteration 2500/3766: training loss 0.104
-Epoch 10 iteration 2750/3766: training loss 0.104
+Epoch 10 iteration 0500/3766: training loss 0.105
+Epoch 10 iteration 0750/3766: training loss 0.106
+Epoch 10 iteration 1000/3766: training loss 0.105
+Epoch 10 iteration 1250/3766: training loss 0.105
+Epoch 10 iteration 1500/3766: training loss 0.105
+Epoch 10 iteration 1750/3766: training loss 0.105
+Epoch 10 iteration 2000/3766: training loss 0.105
+Epoch 10 iteration 2250/3766: training loss 0.105
+Epoch 10 iteration 2500/3766: training loss 0.105
+Epoch 10 iteration 2750/3766: training loss 0.105
 Epoch 10 iteration 3000/3766: training loss 0.104
 Epoch 10 iteration 3250/3766: training loss 0.104
 Epoch 10 iteration 3500/3766: training loss 0.104
 Epoch 10 iteration 3750/3766: training loss 0.104
-Epoch 10, validation abs_REL: 0.085 sq_REL: 0.772 RMSE: 4.512, RMSE_log: 0.195 Delta_1: 0.910 Delta_2: 0.959 Delta_2: 0.979
-Epoch 11 iteration 0000/3766: training loss 0.097
-Epoch 11 iteration 0250/3766: training loss 0.104
+Epoch 10, validation abs_REL: 0.085 sq_REL: 0.730 RMSE: 4.420, RMSE_log: 0.194 Delta_1: 0.913 Delta_2: 0.960 Delta_2: 0.979
+Epoch 11 iteration 0000/3766: training loss 0.103
+Epoch 11 iteration 0250/3766: training loss 0.103
 Epoch 11 iteration 0500/3766: training loss 0.104
 Epoch 11 iteration 0750/3766: training loss 0.104
 Epoch 11 iteration 1000/3766: training loss 0.104
@@ -433,14 +434,14 @@ Epoch 11 iteration 1500/3766: training loss 0.104
 Epoch 11 iteration 1750/3766: training loss 0.104
 Epoch 11 iteration 2000/3766: training loss 0.104
 Epoch 11 iteration 2250/3766: training loss 0.104
-Epoch 11 iteration 2500/3766: training loss 0.103
-Epoch 11 iteration 2750/3766: training loss 0.103
-Epoch 11 iteration 3000/3766: training loss 0.103
-Epoch 11 iteration 3250/3766: training loss 0.103
-Epoch 11 iteration 3500/3766: training loss 0.103
-Epoch 11 iteration 3750/3766: training loss 0.103
-Epoch 11, validation abs_REL: 0.089 sq_REL: 0.835 RMSE: 4.631, RMSE_log: 0.196 Delta_1: 0.912 Delta_2: 0.960 Delta_2: 0.979
-Epoch 12 iteration 0000/3766: training loss 0.089
+Epoch 11 iteration 2500/3766: training loss 0.104
+Epoch 11 iteration 2750/3766: training loss 0.104
+Epoch 11 iteration 3000/3766: training loss 0.104
+Epoch 11 iteration 3250/3766: training loss 0.104
+Epoch 11 iteration 3500/3766: training loss 0.104
+Epoch 11 iteration 3750/3766: training loss 0.104
+Epoch 11, validation abs_REL: 0.103 sq_REL: 0.947 RMSE: 4.969, RMSE_log: 0.200 Delta_1: 0.906 Delta_2: 0.960 Delta_2: 0.979
+Epoch 12 iteration 0000/3766: training loss 0.084
 Epoch 12 iteration 0250/3766: training loss 0.103
 Epoch 12 iteration 0500/3766: training loss 0.103
 Epoch 12 iteration 0750/3766: training loss 0.103
@@ -456,13 +457,13 @@ Epoch 12 iteration 3000/3766: training loss 0.103
 Epoch 12 iteration 3250/3766: training loss 0.103
 Epoch 12 iteration 3500/3766: training loss 0.103
 Epoch 12 iteration 3750/3766: training loss 0.103
-Epoch 12, validation abs_REL: 0.081 sq_REL: 0.807 RMSE: 4.564, RMSE_log: 0.195 Delta_1: 0.913 Delta_2: 0.960 Delta_2: 0.979
-Epoch 13 iteration 0000/3766: training loss 0.109
-Epoch 13 iteration 0250/3766: training loss 0.101
+Epoch 12, validation abs_REL: 0.084 sq_REL: 0.832 RMSE: 4.679, RMSE_log: 0.197 Delta_1: 0.913 Delta_2: 0.959 Delta_2: 0.978
+Epoch 13 iteration 0000/3766: training loss 0.080
+Epoch 13 iteration 0250/3766: training loss 0.102
 Epoch 13 iteration 0500/3766: training loss 0.102
 Epoch 13 iteration 0750/3766: training loss 0.102
 Epoch 13 iteration 1000/3766: training loss 0.102
-Epoch 13 iteration 1250/3766: training loss 0.102
+Epoch 13 iteration 1250/3766: training loss 0.103
 Epoch 13 iteration 1500/3766: training loss 0.102
 Epoch 13 iteration 1750/3766: training loss 0.102
 Epoch 13 iteration 2000/3766: training loss 0.102
@@ -473,8 +474,8 @@ Epoch 13 iteration 3000/3766: training loss 0.102
 Epoch 13 iteration 3250/3766: training loss 0.102
 Epoch 13 iteration 3500/3766: training loss 0.102
 Epoch 13 iteration 3750/3766: training loss 0.102
-Epoch 13, validation abs_REL: 0.092 sq_REL: 0.839 RMSE: 4.648, RMSE_log: 0.194 Delta_1: 0.913 Delta_2: 0.961 Delta_2: 0.979
-Epoch 14 iteration 0000/3766: training loss 0.090
+Epoch 13, validation abs_REL: 0.092 sq_REL: 0.828 RMSE: 4.622, RMSE_log: 0.197 Delta_1: 0.915 Delta_2: 0.960 Delta_2: 0.978
+Epoch 14 iteration 0000/3766: training loss 0.093
 Epoch 14 iteration 0250/3766: training loss 0.101
 Epoch 14 iteration 0500/3766: training loss 0.101
 Epoch 14 iteration 0750/3766: training loss 0.101
@@ -485,13 +486,13 @@ Epoch 14 iteration 1750/3766: training loss 0.101
 Epoch 14 iteration 2000/3766: training loss 0.101
 Epoch 14 iteration 2250/3766: training loss 0.101
 Epoch 14 iteration 2500/3766: training loss 0.101
-Epoch 14 iteration 2750/3766: training loss 0.101
-Epoch 14 iteration 3000/3766: training loss 0.101
-Epoch 14 iteration 3250/3766: training loss 0.101
-Epoch 14 iteration 3500/3766: training loss 0.101
-Epoch 14 iteration 3750/3766: training loss 0.101
-Epoch 14, validation abs_REL: 0.085 sq_REL: 0.758 RMSE: 4.471, RMSE_log: 0.193 Delta_1: 0.914 Delta_2: 0.960 Delta_2: 0.979
-Epoch 15 iteration 0000/3766: training loss 0.093
+Epoch 14 iteration 2750/3766: training loss 0.102
+Epoch 14 iteration 3000/3766: training loss 0.102
+Epoch 14 iteration 3250/3766: training loss 0.102
+Epoch 14 iteration 3500/3766: training loss 0.102
+Epoch 14 iteration 3750/3766: training loss 0.102
+Epoch 14, validation abs_REL: 0.091 sq_REL: 0.804 RMSE: 4.516, RMSE_log: 0.191 Delta_1: 0.918 Delta_2: 0.962 Delta_2: 0.980
+Epoch 15 iteration 0000/3766: training loss 0.119
 Epoch 15 iteration 0250/3766: training loss 0.101
 Epoch 15 iteration 0500/3766: training loss 0.101
 Epoch 15 iteration 0750/3766: training loss 0.101
@@ -507,27 +508,27 @@ Epoch 15 iteration 3000/3766: training loss 0.101
 Epoch 15 iteration 3250/3766: training loss 0.101
 Epoch 15 iteration 3500/3766: training loss 0.101
 Epoch 15 iteration 3750/3766: training loss 0.101
-Epoch 15, validation abs_REL: 0.079 sq_REL: 0.781 RMSE: 4.544, RMSE_log: 0.195 Delta_1: 0.914 Delta_2: 0.960 Delta_2: 0.978
-Epoch 16 iteration 0000/3766: training loss 0.117
-Epoch 16 iteration 0250/3766: training loss 0.101
+Epoch 15, validation abs_REL: 0.080 sq_REL: 0.758 RMSE: 4.466, RMSE_log: 0.193 Delta_1: 0.917 Delta_2: 0.961 Delta_2: 0.978
+Epoch 16 iteration 0000/3766: training loss 0.125
+Epoch 16 iteration 0250/3766: training loss 0.100
 Epoch 16 iteration 0500/3766: training loss 0.100
 Epoch 16 iteration 0750/3766: training loss 0.100
 Epoch 16 iteration 1000/3766: training loss 0.100
 Epoch 16 iteration 1250/3766: training loss 0.100
 Epoch 16 iteration 1500/3766: training loss 0.100
 Epoch 16 iteration 1750/3766: training loss 0.100
-Epoch 16 iteration 2000/3766: training loss 0.100
-Epoch 16 iteration 2250/3766: training loss 0.100
-Epoch 16 iteration 2500/3766: training loss 0.100
-Epoch 16 iteration 2750/3766: training loss 0.100
-Epoch 16 iteration 3000/3766: training loss 0.100
-Epoch 16 iteration 3250/3766: training loss 0.100
-Epoch 16 iteration 3500/3766: training loss 0.100
+Epoch 16 iteration 2000/3766: training loss 0.101
+Epoch 16 iteration 2250/3766: training loss 0.101
+Epoch 16 iteration 2500/3766: training loss 0.101
+Epoch 16 iteration 2750/3766: training loss 0.101
+Epoch 16 iteration 3000/3766: training loss 0.101
+Epoch 16 iteration 3250/3766: training loss 0.101
+Epoch 16 iteration 3500/3766: training loss 0.101
 Epoch 16 iteration 3750/3766: training loss 0.100
-Epoch 16, validation abs_REL: 0.080 sq_REL: 0.736 RMSE: 4.381, RMSE_log: 0.192 Delta_1: 0.917 Delta_2: 0.961 Delta_2: 0.979
+Epoch 16, validation abs_REL: 0.087 sq_REL: 0.853 RMSE: 4.646, RMSE_log: 0.195 Delta_1: 0.917 Delta_2: 0.961 Delta_2: 0.979
 Epoch 17 iteration 0000/3766: training loss 0.101
-Epoch 17 iteration 0250/3766: training loss 0.100
-Epoch 17 iteration 0500/3766: training loss 0.100
+Epoch 17 iteration 0250/3766: training loss 0.101
+Epoch 17 iteration 0500/3766: training loss 0.101
 Epoch 17 iteration 0750/3766: training loss 0.100
 Epoch 17 iteration 1000/3766: training loss 0.100
 Epoch 17 iteration 1250/3766: training loss 0.100
@@ -541,31 +542,31 @@ Epoch 17 iteration 3000/3766: training loss 0.100
 Epoch 17 iteration 3250/3766: training loss 0.100
 Epoch 17 iteration 3500/3766: training loss 0.100
 Epoch 17 iteration 3750/3766: training loss 0.100
-Epoch 17, validation abs_REL: 0.080 sq_REL: 0.764 RMSE: 4.434, RMSE_log: 0.192 Delta_1: 0.918 Delta_2: 0.961 Delta_2: 0.979
-Epoch 18 iteration 0000/3766: training loss 0.098
-Epoch 18 iteration 0250/3766: training loss 0.099
-Epoch 18 iteration 0500/3766: training loss 0.099
-Epoch 18 iteration 0750/3766: training loss 0.099
-Epoch 18 iteration 1000/3766: training loss 0.099
-Epoch 18 iteration 1250/3766: training loss 0.099
-Epoch 18 iteration 1500/3766: training loss 0.099
-Epoch 18 iteration 1750/3766: training loss 0.099
-Epoch 18 iteration 2000/3766: training loss 0.099
-Epoch 18 iteration 2250/3766: training loss 0.099
-Epoch 18 iteration 2500/3766: training loss 0.099
-Epoch 18 iteration 2750/3766: training loss 0.099
-Epoch 18 iteration 3000/3766: training loss 0.099
-Epoch 18 iteration 3250/3766: training loss 0.099
-Epoch 18 iteration 3500/3766: training loss 0.099
-Epoch 18 iteration 3750/3766: training loss 0.099
-Epoch 18, validation abs_REL: 0.078 sq_REL: 0.777 RMSE: 4.505, RMSE_log: 0.194 Delta_1: 0.915 Delta_2: 0.960 Delta_2: 0.978
-Epoch 19 iteration 0000/3766: training loss 0.093
-Epoch 19 iteration 0250/3766: training loss 0.099
-Epoch 19 iteration 0500/3766: training loss 0.099
+Epoch 17, validation abs_REL: 0.079 sq_REL: 0.741 RMSE: 4.458, RMSE_log: 0.191 Delta_1: 0.918 Delta_2: 0.961 Delta_2: 0.979
+Epoch 18 iteration 0000/3766: training loss 0.097
+Epoch 18 iteration 0250/3766: training loss 0.100
+Epoch 18 iteration 0500/3766: training loss 0.100
+Epoch 18 iteration 0750/3766: training loss 0.100
+Epoch 18 iteration 1000/3766: training loss 0.100
+Epoch 18 iteration 1250/3766: training loss 0.100
+Epoch 18 iteration 1500/3766: training loss 0.100
+Epoch 18 iteration 1750/3766: training loss 0.100
+Epoch 18 iteration 2000/3766: training loss 0.100
+Epoch 18 iteration 2250/3766: training loss 0.100
+Epoch 18 iteration 2500/3766: training loss 0.100
+Epoch 18 iteration 2750/3766: training loss 0.100
+Epoch 18 iteration 3000/3766: training loss 0.100
+Epoch 18 iteration 3250/3766: training loss 0.100
+Epoch 18 iteration 3500/3766: training loss 0.100
+Epoch 18 iteration 3750/3766: training loss 0.100
+Epoch 18, validation abs_REL: 0.084 sq_REL: 0.820 RMSE: 4.544, RMSE_log: 0.192 Delta_1: 0.918 Delta_2: 0.961 Delta_2: 0.979
+Epoch 19 iteration 0000/3766: training loss 0.097
+Epoch 19 iteration 0250/3766: training loss 0.100
+Epoch 19 iteration 0500/3766: training loss 0.100
 Epoch 19 iteration 0750/3766: training loss 0.099
 Epoch 19 iteration 1000/3766: training loss 0.099
 Epoch 19 iteration 1250/3766: training loss 0.099
-Epoch 19 iteration 1500/3766: training loss 0.099
+Epoch 19 iteration 1500/3766: training loss 0.100
 Epoch 19 iteration 1750/3766: training loss 0.099
 Epoch 19 iteration 2000/3766: training loss 0.099
 Epoch 19 iteration 2250/3766: training loss 0.099
@@ -575,5 +576,5 @@ Epoch 19 iteration 3000/3766: training loss 0.099
 Epoch 19 iteration 3250/3766: training loss 0.099
 Epoch 19 iteration 3500/3766: training loss 0.099
 Epoch 19 iteration 3750/3766: training loss 0.099
-Epoch 19, validation abs_REL: 0.085 sq_REL: 0.782 RMSE: 4.430, RMSE_log: 0.191 Delta_1: 0.919 Delta_2: 0.962 Delta_2: 0.979
-Training Finished! Total training time is 23h 33m
+Epoch 19, validation abs_REL: 0.089 sq_REL: 0.813 RMSE: 4.549, RMSE_log: 0.194 Delta_1: 0.919 Delta_2: 0.962 Delta_2: 0.979
+Training Finished! Total training time is 19h 28m
